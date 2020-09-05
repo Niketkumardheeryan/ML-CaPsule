@@ -2,7 +2,11 @@
 
 ## Description
 ## Topics
- * Web Scrapper BS
+ ### 1.Extracting  Data
+  A).* Web scrapping -  Tool used :->> Beautiful Soup ,
+    which extract the data from web pages.
+  B).  
+    
 ## summary 
 ##useful urls
 ## licence
