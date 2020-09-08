@@ -8,6 +8,11 @@
     which extract the data from web pages.
   * 
  ### 2.Visualization 
+ * Different types plots in  Seaborn & Matplotlib 
+ ### 3. Basic concepts of statistics
+ * Mean ,Mode, varience, Standard Deviation
+ * Different types of Didtributions Ex. Normal, Log normal
+ * co-varience
   
     
 ## summary 
