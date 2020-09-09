@@ -13,6 +13,10 @@
  * Mean ,Mode, varience, Standard Deviation
  * Different types of Didtributions Ex. Normal, Log normal
  * co-varience
+ * Center limit Theorem
+ * Chebyshev's inequality
+ * Pearson coeffiecent
+ * spearman's Rank correlation
   
     
 ## summary 
