@@ -11,12 +11,14 @@
  * Different types plots in  Seaborn & Matplotlib 
  ### 3. Basic concepts of statistics
  * Mean ,Mode, varience, Standard Deviation
- * Different types of Didtributions Ex. Normal, Log normal
+ * Different types of Didtributions Ex. Normal, Log normal, Binomial 
  * co-varience
  * Center limit Theorem
  * Chebyshev's inequality
  * Pearson coeffiecent
  * spearman's Rank correlation
+ * R square or adjusted R square
+ * T-test ,chi test
   
     
 ## summary 
