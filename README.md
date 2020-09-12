@@ -9,7 +9,9 @@
   * 
  ### 2.Visualization 
  * Different types plots in  Seaborn & Matplotlib 
- ### 3. Basic concepts of statistics
+ ### 3. Basic concepts of statistic
+  A). Descriptive 
+  B). 
  * Mean ,Mode, varience, Standard Deviation
  * Different types of Didtributions Ex. Normal, Log normal, Binomial 
  * co-varience
