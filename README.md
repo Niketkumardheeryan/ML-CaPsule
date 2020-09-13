@@ -20,7 +20,8 @@
  * Pearson coeffiecent
  * spearman's Rank correlation
  * R square or adjusted R square
- * T-test ,chi test
+ * Hypothesis Testing (T-test ,chi-square test,Anova,Z test)
+ * P value
   
     
 ## summary 
