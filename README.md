@@ -11,7 +11,8 @@
  * Different types plots in  Seaborn & Matplotlib 
  ### 3. Basic concepts of statistic
   A). Descriptive 
-  B). 
+  
+  B). Inferential 
  * Mean ,Mode, varience, Standard Deviation
  * Different types of Didtributions Ex. Normal, Log normal, Binomial 
  * co-varience
