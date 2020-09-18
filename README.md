@@ -13,6 +13,7 @@
   A). Descriptive 
   
   B). Inferential 
+  * Probability
  * Mean ,Mode, varience, Standard Deviation
  * Different types of Didtributions Ex. Normal, Log normal, Binomial 
  * co-varience
