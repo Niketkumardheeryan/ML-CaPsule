@@ -25,6 +25,7 @@ __________________________________________________________________________
  * spearman's Rank correlation
  * R square or adjusted R square
  * Hypothesis Testing (T-test ,chi-square test,Anova,Z test)
+ *  Type 1(alpha) & Type 2(Beta) Error
  * P value
   
     
