@@ -1,5 +1,5 @@
 # Master Machine learning
-<img src="https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/ml%20img.jpg" width="500" height="220">
+<img src="https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/ml%20img.jpg" width="450" height="450">
 __________________________________________________________________________
 
 
