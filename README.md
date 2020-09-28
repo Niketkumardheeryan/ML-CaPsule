@@ -12,6 +12,7 @@ __________________________________________________________________________
  ### 2.Visualization 
  * Different types plots in  Seaborn & Matplotlib 
  ### 3. Basic concepts of statistic
+ <img src="https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/download%20statistics.jpg">
   A). Descriptive 
   
   B). Inferential 
@@ -30,6 +31,6 @@ __________________________________________________________________________
   
     
 ## summary 
-##useful urls
+## useful urls
 ## licence
 ## contact details
