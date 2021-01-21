@@ -12,7 +12,9 @@ __________________________________________________________________________
   * 
  ### 2.Visualization 
  * Different types plots in  Seaborn & Matplotlib 
- ### 3. Basic concepts of statistic
+ ### 3. Feature selection 
+  * Link - https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/
+ ### 4. Basic concepts of statistic
  <img src="https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/download%20statistics.jpg">
   A). Descriptive 
   
