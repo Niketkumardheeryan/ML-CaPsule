@@ -9,6 +9,8 @@ The following classification algorithms are implemented in the following code:
 - KNN Classifier
 - Random Forest
 - Decision Tree
+![Drag Racing](Dragster.jpg)
+
 ## Authors
 
 - [@Sakalya Mitra](https://github.com/Sakalya100)
