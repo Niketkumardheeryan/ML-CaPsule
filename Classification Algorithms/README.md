@@ -44,6 +44,11 @@ Decision Tree is a Supervised learning technique that can be used for both class
 
 
 ### Random Forests
+Random Forest is a popular supervised machine learning algorithm. It is a advanced version of the decision tree algorithm and combines a number of decision trees to solve complex problems and increase accuracy of the model.Instead of relying on one decision tree, the random forest takes the prediction from each tree and based on the majority votes of predictions, and it predicts the final output. While working on a complex dataset, the random forest accepts prediction by each decision tree involved and on the basis of the prediction which is made by most decision trees is given as the final output. Read more about random forests 
+[here](https://www.javatpoint.com/machine-learning-random-forest-algorithm).
+
+
+![Drag Racing](Capture1.PNG)
 
 
 ## Authors
