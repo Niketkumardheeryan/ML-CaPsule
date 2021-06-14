@@ -13,12 +13,17 @@ Classification of Galaxies, Stars and Quasars based on the RD14 from the SDSS.**
 
 <p>In this notebook I will try to classify observations of space to be either stars, galaxies or quasars. We will try to have a complete cycle of the data science workflow including querying the database to get the dataset, data analysis and building machine learning models to predict for new data. </p>
 
-
+**Libraries Used**
+1. Pandas
+2. Numpy 
+3. Seaborn
+4. Sklearn
+5. Matplotlib
 
 **Algorithms Used**
 
 I have used RandomForest Classifier and XgBoost Algorithm.
-The accuracy of it is as follows...
+The *accuracy* of it is as follows...
 
 <ul>
   <li>RandomForestClassifier: 99.15 </li>
