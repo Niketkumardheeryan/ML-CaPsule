@@ -1,35 +1,30 @@
-<h1> About Notebook</h1>
+**XGBoost: **
 
-I have acquired this data from kaggle.
-Data set is named as **Sloan Digital Sky Survey Classification
-Classification of Galaxies, Stars and Quasars based on the RD14 from the SDSS.**
+XGBoost is the leading model for working with standard tabular data (the type of data you store in Pandas DataFrames, as opposed to more exotic types of data like images and videos). XGBoost models dominate many Kaggle competitions.
+
+To reach peak accuracy, XGBoost models require more knowledge and model tuning than techniques like Random Forest. After this tutorial, you'ill be able to
+
+Follow the full modeling workflow with XGBoost
+Fine-tune XGBoost models for optimal performance
+XGBoost is an implementation of the Gradient Boosted Decision Trees algorithm
+
+![Image](https://i.imgur.com/e7MIgXk.png)
+
+We go through cycles that repeatedly builds new models and combines them into an ensemble model. We start the cycle by calculating the errors for each observation in the dataset. We then build a new model to predict those. We add predictions from this error-predicting model to the "ensemble of models."
 
 
-<h4>Context</h4>
+**Model Tunning: **
 
-<p>The data consists of 10,000 observations of space taken by the SDSS. Every observation is described by 17 feature columns and 1 class column which identifies it to be either a star, galaxy or quasar.</p>
+**n_estimators** specifies how many times to go through the modeling cycle described above.
 
-<h4>About Problem</h4>
+**Learning Rate** Instead of getting predictions by simply adding up the predictions from each component model, we will multiply the predictions from each model by a small number before adding them in. This means each tree we add to the ensemble helps us less. In practice, this reduces the model's propensity to overfit.
 
-<p>In this notebook I will try to classify observations of space to be either stars, galaxies or quasars. We will try to have a complete cycle of the data science workflow including querying the database to get the dataset, data analysis and building machine learning models to predict for new data. </p>
+So, you can use a higher value of n_estimators without overfitting. If you use early stopping, the appropriate number of trees will be set automatically.
 
-**Libraries Used**
-1. Pandas
-2. Numpy 
-3. Seaborn
-4. Sklearn
-5. Matplotlib
+In general, a small learning rate (and large number of estimators) will yield more accurate XGBoost models, though it will also take the model longer to train since it does more iterations through the cycle.
 
-**Algorithms Used**
+**n_jobs** On larger datasets where runtime is a consideration, you can use parallelism to build your models faster. It's common to set the parameter n_jobs equal to the number of cores on your machine. On smaller datasets, this won't help.
 
-I have used RandomForest Classifier and XgBoost Algorithm.
-The *accuracy* of it is as follows...
+The resulting model won't be any better, so micro-optimizing for fitting time is typically nothing but a distraction. But, it's useful in large datasets where you would otherwise spend a long time waiting during the fit command.
 
-<ul>
-  <li>RandomForestClassifier: 99.15 </li>
-  <li>XgBoost: 99.42 </li>
-</ul>
-
-**Conclusion**
-
-It will help to understand how XgBoost works, what is its importance and improve the learning.
+XGBoost has a multitude of other parameters, but these will go a very long way in helping you fine-tune your XGBoost model for optimal performance.
