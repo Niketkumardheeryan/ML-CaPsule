@@ -1,3 +1,4 @@
+
 # Master Machine learning
 ![Issues](https://img.shields.io/github/issues/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
 ![Pull Requests](https://img.shields.io/github/issues-pr/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
@@ -94,12 +95,38 @@ H). Regression
           - No or Little Autocorrelation
           - Homoscedasticity
  * Multiple Linear Regression
-## summary 
+# Data Scientist
+Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains.<br>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/74819092/122023534-498b4180-cde5-11eb-9aa7-fc1c20aec5fe.png" height=150, width=700>
+ </P>
+ 
+## Why is data science important?
+In business, the goal of data science is to provide intelligence about consumers and campaigns and help companies create strong plans to engage their audience and sell their products.
+<br>
+
+Data scientists must rely on creative insights using big data, the large amounts of information collected through various collection processes, like data mining.
+On an even more fundamental level, big data analytics can help brands understand the customers who ultimately help determine the long-term success of a business or initiative. In addition to targeting the right audience, data science can be used to help companies control the stories of their brands.
+Because big data is a rapidly growing field, there are constantly new tools available, and those tools need experts who can quickly learn their applications. Data scientists can help companies create a business plan to achieve goals based on research and not just intuition.
+<br>
+Data science plays a very important role in security and fraud detection, because the massive amounts of information allow for drilling down to find slight irregularities in data that can expose weaknesses in security systems.It is a driving force between highly specialized user experiences created through personalization and customization. The analysis can be used to make customers feel seen and understood by a company.
+<br>
+
+## What are the six major areas of data science?
+The six major areas of data science include the following:
+
+* Multidisciplinary investigations. Considering large, complex systems with interconnected pieces, data scientists use varying methods to collect large amounts of data.
+* Models and methods for data. Data scientists need to rely on experience and intuition to decide which methods will work best for modeling their data, and they need to adjust those methods continuously to hone in on the insights they seek.
+* Pedagogy. It is up to data scientists to work with companies and clients to determine the best ideologies to apply while collecting and analyzing information about their customers and products.
+* Computing with data. The biggest thing that all data science projects have in common is the necessity to use tools and software to analyze the involved algorithms and statistics, because the size of the pool of information they are working with is so massive.
+* Theory. Data science theory is an evolving and sophisticated professional arena with countless applications.
+* Tool evaluation. There are many tools available for data scientists to use to manipulate and study huge quantities of data, and it's important to always evaluate their effectiveness and keep trying new ones as they become available.
 ## useful urls
 * https://www.kdnuggets.com/2020/06/8-basic-statistics-concepts.html
 * https://www.coursera.org/learn/machine-learning-with-python
 * https://www.w3schools.com/python/python_ml_getting_started.asp
 * https://www.freecodecamp.org/learn/machine-learning-with-python/
+* https://www.greatlearning.in/great-lakes-pgpdsba?&utm_source=Google&utm_medium=Search&utm_campaign=6Cities_Exact_Data_Science_Search_New_DS&adgroup_id=101317851589&campaign_id=10174480218&Keyword=data%20scientist&placement=&utm_content=c&gclid=CjwKCAjwn6GGBhADEiwAruUcKqPCvPIk1X_5mVRXj5prdpSIULnd40QgTB4kChfiFgAL1kDErGeLHRoCapUQAvD_BwE
 ## licence
 ## Have a look 
 
