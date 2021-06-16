@@ -1,10 +1,16 @@
 
-# Master Machine learning
+ # Master Machine learning
+
+
+<a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a> 
 ![Issues](https://img.shields.io/github/issues/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
 ![Pull Requests](https://img.shields.io/github/issues-pr/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
 ![Forks](https://img.shields.io/github/forks/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
 ![Stars](https://img.shields.io/github/stars/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
- 
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"></a>
+ <a href="https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-"></a>
+<a href="https://github.com/Niketkumardheeryan"><img src="https://img.shields.io/maintenance/yes/2021"></a>
+
 __________________________________________________________________________
 
 <img src="https://user-images.githubusercontent.com/74819092/121880620-da9de200-cd2b-11eb-8117-d58e9a103557.png" align="right">
@@ -14,6 +20,12 @@ __________________________________________________________________________
 <p><i> Machine learning technique to  analysis data that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.</i>
 ### Importance of Machine Learning
 Machine learning is important because it gives enterprises a view of trends in customer behavior and business operational patterns, as well as supports the development of new products. Many of today's leading companies, such as Facebook, Google and Uber, make machine learning a central part of their operations. Machine learning has become a significant competitive differentiator for many companies.</p>
+
+## 🌱Pre-requisites
+
+- Python IDE : Install it by using this link [python.org](https://www.python.org/downloads/)
+- If you are new to python programming and want to have a fair knowledge before you start working on it, you can learn it in a simplified way through this [website](https://www.w3schools.com/python/)
+
 
 ## Topics
 
@@ -128,9 +140,8 @@ The six major areas of data science include the following:
 * https://www.freecodecamp.org/learn/machine-learning-with-python/
 * https://www.greatlearning.in/great-lakes-pgpdsba?&utm_source=Google&utm_medium=Search&utm_campaign=6Cities_Exact_Data_Science_Search_New_DS&adgroup_id=101317851589&campaign_id=10174480218&Keyword=data%20scientist&placement=&utm_content=c&gclid=CjwKCAjwn6GGBhADEiwAruUcKqPCvPIk1X_5mVRXj5prdpSIULnd40QgTB4kChfiFgAL1kDErGeLHRoCapUQAvD_BwE
 ## licence
-## Have a look 
 
-
+## Get Started
  
 * Give repositary a star 🌟 if you like the content
  <img src="https://user-images.githubusercontent.com/74819092/117547585-fe477b80-b04d-11eb-9e03-0747dea1b88a.png" width=100>
@@ -142,4 +153,7 @@ The six major areas of data science include the following:
 * Clone the repository using-<br>
 
 ``` git clone https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance- ```
-
+## Contributing Guidelines
+- Have a look at [Contibuting Guidelines](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/CONTRIBUTING_GUIDELINES.md)
+## 👍 OpenSource Programs
+<a href="https://letsgrowmore.in/soc/" target="_blank"> <img src="https://user-images.githubusercontent.com/74819092/122177301-1ad3a080-cea3-11eb-9bab-0c4cb04ec3dd.png" alt="Let's Grow More" width="100" height="80"/> </a>
