@@ -26,13 +26,14 @@ matplotlib
 fbprophet
 
 ### Steps followed
-* 1. Data Preprocessing.
 
-* 2. Data visualization of previous data available.
+Step 1. Data Preprocessing.
 
-* 3. Data preparation for Forecasting.
+Step 2. Data visualization of previous data available.
 
-* 4. Forecasting for coming months.
+Step 3. Data preparation for Forecasting.
+
+Step 4. Forecasting for coming months.
 
 ### Conclusion
 
