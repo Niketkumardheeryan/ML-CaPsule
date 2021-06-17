@@ -1,0 +1,1387 @@
+1.print string
+
+# Write a Python program to print the following string in a specific format (see the output). Go to the editor
+# Sample String : "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are" 
+# Output :
+# Twinkle, twinkle, little star,
+#     How I wonder what you are! 
+#         Up above the world so high,
+#         Like a diamond in the sky. 
+# Twinkle, twinkle, little star, 
+#     How I wonder what you are
+
+print("Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are!") 
+
+2.input age
+# Create a program that asks the user to enter their name and their age.
+# Print out a message addressed to them that tells them the year that they will turn 100 years old.
+
+name = input("What is your name: ")
+age = int(input("How old are you: "))
+year = str((2014 - age)+100)
+print(name + " will be 100 years old in the year " + year)
+
+3.calculate with input
+# Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn. Go to the editor
+# Sample value of n is 5 
+# Expected Result : 615
+
+ame = input("What is your name: ")
+age = int(input("How old are you: "))
+year = str((2014 - age)+100)
+print(name + " will be 100 years old in the year " + year)
+
+4.dimensional array:
+
+# Write a Python program which takes two digits m (row) and n (column) as input and generates a two-dimensional array. 
+# The element value in the i-th row and j-th column of the array should be i*j.
+# Note :
+# i = 0,1.., m-1 
+# j = 0,1, n-1.
+# Input
+# Input number of rows: 3                                                                                       
+# Input number of columns: 4  
+# Output
+# [[0, 0, 0, 0], [0, 1, 2, 3], [0, 2, 4, 6]] 
+
+row_num = int(input("Input number of rows: "))
+col_num = int(input("Input number of columns: "))
+multi_list = [[0 for col in range(col_num)] for row in range(row_num)]
+for row in range(row_num):
+    for col in range(col_num):
+        multi_list[row][col]= row*col
+print(multi_list)
+
+5.check triangle
+# Write a Python program to check a triangle is valid or not 
+
+def triangle_check(l1,l2,l3):
+    if (l1>l2+l3) or (l2>l1+l3) or (l3>l1+l2):
+        print('No, the lengths wont form a triangle')
+    elif (l1==l2+l3) or (l2==l1+l3) or (l3==l1+l2):
+        print('yes, it can form a degenerated triangle')
+    else:
+        print('Yes, a triangle can be formed out of it')
+length1 = int(input('enter side 1\n'))
+length2 = int(input('enter side 2\n'))
+length3 = int(input('enter side 3\n'))
+triangle_check(length1,length2,length3)
+
+6.construct number pattern:
+
+# Write a Python program to construct the following pattern, using a nested loop number.
+# 1                                                                                                             
+# 22                                                                                                            
+# 333                                                                                                           
+# 4444                                                                                                          
+# 55555                                                                                                         
+# 666666                                                                                                        
+# 7777777                                                                                                       
+# 88888888                                                                                                      
+# 999999999  
+
+for i in range(10):
+    print(str(i) * i)
+
+7.construct pattern :
+
+#  Write a Python program to construct the following pattern, using a nested for loop.
+# * 
+# * * 
+# * * * 
+# * * * * 
+# * * * * * 
+# * * * * 
+# * * * 
+# * * 
+# *
+
+n=5;
+for i in range(n):
+    for j in range(i):
+        print ('* ', end="")
+    print('')
+for i in range(n,0,-1):
+    for j in range(i):
+        print('* ', end="")
+    print('')
+
+8.count digit letter:
+ 
+# Write a Python program that accepts a string and calculate the number of digits and letters
+# Sample Data : "Python 3.2"
+# Expected Output :
+# Letters 6 
+# Digits 2
+
+s = input("Input a string")
+d=l=0
+for c in s:
+    if c.isdigit():
+        d=d+1
+    elif c.isalpha():
+        l=l+1
+    else:
+        pass
+print("Letters", l)
+print("Digits", d)
+Fullscreen
+
+9.count even odd solution :
+
+# Count the number of even and odd numbers from a series of numbers
+# Input 
+# numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) # Declaring the tuple
+# Output
+# Number of even numbers : 4                                                                                    
+# Number of odd numbers : 5
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) # Declaring the tuple
+count_odd = 0
+count_even = 0
+for x in numbers:
+        if not x % 2:
+        count_even+=1
+        else:
+        count_odd+=1
+                
+print("Number of even numbers :",count_even)
+print("Number of odd numbers :",count_odd)
+Fullscreen
+
+10.fibonaci generator solution
+# Write a Python program to get the Fibonacci series between 0 to 50
+x,y=0,1
+while y<50:
+    print(y)
+    x,y = y,x+y
+
+11.find number solution
+#  Write a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700
+nl=[]
+for x in range(1500, 2700):
+    if (x%7==0) and (x%5==0):
+        nl.append(str(x))
+print (','.join(nl))
+
+12.guess game solution
+# Generate a random number between 1 and 9 (including 1 and 9).
+# Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right.
+import random
+number = random.randint(1,9)
+guess = 0
+count = 0
+while guess != number and guess != "exit":
+    guess = input("What's your guess?")
+    
+    if guess == "exit":
+        break
+    
+    guess = int(guess)
+    count += 1
+    
+    if guess < number:
+        print("Too low!")
+    elif guess > number:
+        print("Too high!")
+    else:
+        print("You got it!")
+        print("And it only took you",count,"tries!")
+
+13.password validation solution
+# Write a Python program to check the validity of a password (input from users).
+# Validation :
+# At least 1 letter between [a-z] and 1 letter between [A-Z].
+# At least 1 number between [0-9].
+# At least 1 character from [$#@].
+# Minimum length 6 characters.
+# Maximum length 16 characters.
+# Input
+# W3r@100a
+# Output
+# Valid password
+import re
+p= input("Input your password")
+x = True
+while x:  
+    if (len(p)<6 or len(p)>12):
+        break
+    elif not re.search("[a-z]",p):
+        break
+    elif not re.search("[0-9]",p):
+        break
+    elif not re.search("[A-Z]",p):
+        break
+    elif not re.search("[$#@]",p):
+        break
+    elif re.search("\s",p):
+        break
+    else:
+        print("Valid Password")
+        x=False
+        break
+if x:
+    print("Not a Valid Password")
+
+14.triangle types solution
+# Write a Python program to check a triangle is equilateral, isosceles or scalene.
+# Note :
+# An equilateral triangle is a triangle in which all three sides are equal.
+# A scalene triangle is a triangle that has three unequal sides.
+# An isosceles triangle is a triangle with (at least) two equal sides.
+print("Input lengths of the triangle sides: ")
+x = int(input("x: "))
+y = int(input("y: "))
+z = int(input("z: "))
+if x == y == z:
+ print("Equilateral triangle")
+elif x != y != z:
+  print("Scalene triangle")
+else:
+ print("isosceles triangle") 
+    
+15.vowel or consonal solution
+# Write a Python program to check whether an alphabet is a vowel or consonant
+l = input("Input a letter of the alphabet: ")
+if l in ('a', 'e', 'i', 'o', 'u'):
+    print("%s is a vowel." % l)
+elif l == 'y':
+    print("Sometimes letter y stand for vowel, sometimes stand for consonant.")
+else:
+    print("%s is a consonant." % l) 
+
+16.characters to string solution
+# Convert a list of characters into a string
+# Input ['a', 'b', 'c', 'd']
+# Output abcd
+s = ['a', 'b', 'c', 'd']
+str1 = ''.join(s)
+print(str1)
+
+16.check a list contains sublist solution
+# Write a Python program to check whether a list contains a sublist.
+# Input
+# a = [2,4,3,5,7]
+# b = [4,3]
+# c = [3,7]
+# print(is_Sublist(a, b))
+# print(is_Sublist(a, c))
+# Output
+
+def is_Sublist(l, s):
+    sub_set = False
+    if s == []:
+        sub_set = True
+    elif s == l:
+        sub_set = True
+    elif len(s) > len(l):
+        sub_set = False
+ 
+    else:
+        for i in range(len(l)):
+            if l[i] == s[0]:
+                n = 1
+                while (n < len(s)) and (l[i+n] == s[n]):
+                    n += 1
+                
+                if n == len(s):
+                    sub_set = True
+ 
+    return sub_set
+ 
+a = [2,4,3,5,7]
+b = [4,3]
+c = [3,7]
+print(is_Sublist(a, b))
+print(is_Sublist(a, c))
+
+17.common items solution
+# Write a Python program to find common items from two lists.
+# input
+# color1 = "Red", "Green", "Orange", "White"
+# color2 = "Black", "Green", "White", "Pink"
+# output
+# {'Green', 'White'}
+color1 = "Red", "Green", "Orange", "White"
+color2 = "Black", "Green", "White", "Pink"
+print(set(color1) & set(color2))
+
+18.diff between 2 solution
+# Write a Python program to get the difference between the two lists
+# Input 
+# list1 = [1, 2, 3, 4]
+# list2 = [1, 2]
+# Output
+# [3,4]
+list1 = [1, 2, 3, 4]
+list2 = [1, 2]
+print(list(set(list1) - set(list2)))
+
+19.find max solution
+# Write a Python program to get the smallest number from a list.
+# max_num_in_list([1, 2, -8, 0])
+# return 2
+def max_num_in_list( list ):
+    max = list[ 0 ]
+    for a in list:
+        if a > max:
+            max = a
+    return max
+print(max_num_in_list([1, 2, -8, 0])) 
+
+20.frequency of elements solution
+# Write a Python program to get the frequency of the elements in a list.
+# input
+# my_list = [10,10,10,10,20,20,20,20,40,40,50,50,30]
+# outout
+# {10: 4, 20: 4, 40: 2, 50: 2, 30: 1}
+import collections
+my_list = [10,10,10,10,20,20,20,20,40,40,50,50,30]
+print("Original List : ",my_list)
+ctr = collections.Counter(my_list)
+print("Frequency of the elements in the List : ",ctr)
+
+21.permutations solution
+#  Write a Python program to generate all permutations of a list in Python
+# Input [1,2,3]
+# Output [(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)]
+import itertools
+print(list(itertools.permutations([1,2,3])))
+
+22.remove duplicate solution
+# Write a Python program to remove duplicates from a list.
+# Input a = [10,20,30,20,10,50,60,40,80,50,40]
+# Output [10, 20, 30, 50, 60, 40, 80]
+a = [10,20,30,20,10,50,60,40,80,50,40]
+dup_items = set()
+uniq_items = []
+for x in a:
+    if x not in dup_items:
+        uniq_items.append(x)
+        dup_items.add(x)
+print(uniq_items)
+
+23.second smallest solution
+# Write a Python program to find the second smallest number in a list.
+# input
+# second_smallest([1, 2, -8, -2, 0])
+# output
+# -2
+def second_smallest(numbers):
+    a1, a2 = float('inf'), float('inf')
+    for x in numbers:
+        if x <= a1:
+            a1, a2 = x, a1
+        elif x < a2:
+            a2 = x
+    return a2
+print(second_smallest([1, 2, -8, -2, 0]))
+
+24.sum list solution
+# Write a Python program to sum all the items in a list
+# Example sum_list([1,2,-8])
+# Return -5
+def sum_list(items):
+    sum_numbers = 0
+    for x in items:
+        sum_numbers += x
+    return sum_numbers
+print(sum_list([1,2,-8]))
+
+25.caesar encryption solution
+# Write a Python program to create a Caesar encryption
+ 
+# Note : In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques.
+# It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet.
+# For example, with a left shift of 3, D would be replaced by A, E would become B, and so on.
+# The method is named after Julius Caesar, who used it in his private correspondence.
+ 
+# plaintext:  defend the east wall of the castle
+# ciphertext: efgfoe uif fbtu xbmm pg uif dbtumf
+ 
+def caesar_encrypt(realText, step):
+    outText = []
+    cryptText = []
+    
+    uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+ 
+    for eachLetter in realText:
+        if eachLetter in uppercase:
+            index = uppercase.index(eachLetter)
+            crypting = (index + step) % 26
+            cryptText.append(crypting)
+            newLetter = uppercase[crypting]
+            outText.append(newLetter)
+        elif eachLetter in lowercase:
+            index = lowercase.index(eachLetter)
+            crypting = (index + step) % 26
+            cryptText.append(crypting)
+            newLetter = lowercase[crypting]
+            outText.append(newLetter)
+    return outText
+ 
+code = caesar_encrypt('defend the east wall of the castle', 1)
+print()
+print(code)
+print()
+
+26.character exchange solution
+#  Write a Python program to change a given string to a new string where the first and last chars have been exchanged
+def change_sring(str1):
+      return str1[-1:] + str1[1:-1] + str1[:1]
+    
+print(change_sring('abcd'))
+print(change_sring('12345'))
+
+27.count character solution
+# Write a Python program to count the number of characters (character frequency) in a string.
+# Sample String : google'
+# Expected Result : {'g': 2, 'o': 2, 'l': 1, 'e': 1}
+def char_frequency(str1):
+    dict = {}
+    for n in str1:
+        keys = dict.keys()
+        if n in keys:
+            dict[n] += 1
+        else:
+            dict[n] = 1
+    return dict
+print(char_frequency('google'))
+
+
+28.html tag solution
+# Write a Python function to create the HTML string with tags around the word(s).
+# Sample function and result : 
+# add_tags('i', 'Python') -> '<i>Python</i>'
+# add_tags('b', 'Python Tutorial') -> '<b>Python Tutorial </b>'
+ 
+def add_tags(tag, word):
+    return "<%s>%s</%s>" % (tag, word, tag)
+ 
+print(add_tags('i', 'Python'))
+print(add_tags('b', 'Python Tutorial'))
+
+29.longest word solution
+# Write a Python function that takes a list of words and returns the length of the longest one
+def find_longest_word(words_list):
+    word_len = []
+    for n in words_list:
+        word_len.append((len(n), n))
+    word_len.sort()
+    return word_len[-1][1]
+print(find_longest_word(["PHP", "Exercises", "Backend"]))
+
+30.remove nth character solution
+# Write a Python program to remove the nth index character from a nonempty string
+def remove_char(str, n):
+      first_part = str[:n] 
+      last_pasrt = str[n+1:]
+      return first_part + last_pasrt
+    
+print(remove_char('Python', 0))
+print(remove_char('Python', 3))
+print(remove_char('Python', 5))
+
+31.revert word in string solution
+# 'The quick brown fox jumps over the lazy dog.'
+# input : "The quick brown fox jumps over the lazy dog."
+# output : "dog. lazy the over jumps fox brown quick The "
+def reverse_string_words(text):
+    for line in text.split('\n'):
+        return(' '.join(line.split()[::-1]))
+    
+print(reverse_string_words("The quick brown fox jumps over the lazy dog."))
+print(reverse_string_words("Python Exercises."))
+
+32.string length solution
+# Write a Python program to calculate the length of a string.
+def string_length(str1):
+    count = 0
+    for char in str1:
+        count += 1
+    return count
+print(string_length('hello world'))
+
+33.unique word solution
+# Write a Python program that accepts a comma separated sequence of words as input and prints the unique words in sorted form (alphanumerically)
+items = input("Input comma separated sequence of words")
+words = [word for word in items.split(",")]
+print(",".join(sorted(list(set(words)))))
+
+34.word count solution
+#  Write a Python program to count the occurrences of each word in a given sentence
+def word_count(str):
+    counts = dict()
+    words = str.split()
+    for word in words:
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+    return counts
+print( word_count('the quick brown fox jumps over the lazy dog.'))
+
+35.check key exist solution
+# Check if a given key already exists in a dictionary
+# input
+# d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+# is_key_present(5)
+# is_key_present(9)
+# output
+# Key is present in the dictionary                                                                              
+# Key is not present in the dictionary
+d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+def is_key_present(x):
+  if x in d:
+      print('Key is present in the dictionary')
+  else:
+      print('Key is not present in the dictionary')
+is_key_present(5)
+is_key_present(9)
+Fullscreen
+
+36.concatenate solution
+# Write a Python script to concatenate following dictionaries to create a new one
+# Input
+# dic1={1:10, 2:20}
+# dic2={3:30, 4:40}
+# dic3={5:50,6:60}
+# Output
+# {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+ 
+dic1={1:10, 2:20}
+dic2={3:30, 4:40}
+dic3={5:50,6:60}
+dic4 = {}
+for d in (dic1, dic2, dic3): dic4.update(d)
+print(dic4)
+
+37.iterate over dictionary solution
+# Write a Python program to iterate over dictionaries using for loops.
+d = {'x': 10, 'y': 20, 'z': 30} 
+for dict_key, dict_value in d.items():
+    print(dict_key,'->',dict_value)
+
+38.sort solution
+# Write a Python program to sort (ascending and descending) a dictionary by value.
+# Original dictionary :  {0: 0, 1: 2, 2: 1, 3: 4, 4: 3}                                                         
+# Dictionary in ascending order by value :  [(0, 0), (1, 2), (2, 1), (3, 4), (4, 3)]                            
+# Dictionary in descending order by value :  [(4, 3), (3, 4), (2, 1), (1, 2), (0, 0)]
+import operator
+d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+print('Original dictionary : ',d)
+sorted_d = sorted(d.items(), key=operator.itemgetter(0))
+print('Dictionary in ascending order by value : ',sorted_d)
+sorted_d = sorted(d.items(), key=operator.itemgetter(0),reverse=True)
+print('Dictionary in descending order by value : ',sorted_d)
+
+39.square solution
+# Write a Python script to print a dictionary where the keys are numbers between 1 and 15 (both included) and the values are square of keys.
+d=dict()
+for x in range(1,16):
+    d[x]=x**2
+print(d)
+
+40.sum all items solution
+# Sum all the items in a dictionary
+# Input {'data1':100,'data2':-54,'data3':247}
+# Output 293
+my_dict = {'data1':100,'data2':-54,'data3':247}
+print(sum(my_dict.values()))
+
+41.first n lines solution
+# Write a Python program to read first n lines of a file.
+# Use test.txt file
+def file_read_from_head(fname, nlines):
+        from itertools import islice
+        with open(fname) as f:
+                for line in islice(f, nlines):
+                        print(line)
+                        
+file_read_from_head('test.txt',2)
+
+42.ongest word solution
+# Write a python program to find the longest words in a file
+# Using text.txt file in same folder
+def longest_word(filename):
+    with open(filename, 'r') as infile:
+              words = infile.read().split()
+    max_len = len(max(words, key=len))
+    return [word for word in words if len(word) == max_len]
+print(longest_word('test.txt'))
+
+43.random line solution
+# Write a Python program to read a random line from a file.
+# Using test.txt
+import random
+def random_line(fname):
+    lines = open(fname).read().splitlines()
+    return random.choice(lines)
+print(random_line('test.txt'))
+
+44.check parentheses solution
+# Write a Python program to find validity of a string of parentheses, '(', ')', '{', '}', '[' and ']. 
+# These brackets must be close in the correct order, 
+# for example "()" and "()[]{}" are valid but "[)", "({[)]" and "{?{?{" are invalid.
+class py_solution:
+   def is_valid_parenthese(self, str1):
+        stack, pchar = [], {"(": ")", "{": "}", "[": "]"}
+        for parenthese in str1:
+            if parenthese in pchar:
+                stack.append(parenthese)
+            elif len(stack) == 0 or pchar[stack.pop()] != parenthese:
+                return False
+        return len(stack) == 0
+print(py_solution().is_valid_parenthese("(){}[]"))
+print(py_solution().is_valid_parenthese("()[{)}"))
+print(py_solution().is_valid_parenthese("()"))
+Fullscreen
+
+45.circle solution
+# Write a Python class named Circle constructed by a radius and two methods which
+# will compute the area and the perimeter of a circle.
+class Circle():
+    def __init__(self, r):
+        self.radius = r
+    def area(self):
+        return self.radius**2*3.14
+    
+    def perimeter(self):
+        return 2*self.radius*3.14
+NewCircle = Circle(8)
+print(NewCircle.area())
+print(NewCircle.perimeter())
+
+46.convert to int solution
+# Write a Python class to convert a roman numeral to an integer
+# Sample input
+# 'MMMCMLXXXVI'
+# 'MMMM'
+# 'C'
+# Sample output
+# 3986                                                                                                          
+# 4000                                                                                                          
+# 100
+class py_solution:
+    def roman_to_int(self, s):
+        rom_val = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+        int_val = 0
+        for i in range(len(s)):
+            if i > 0 and rom_val[s[i]] > rom_val[s[i - 1]]:
+                int_val += rom_val[s[i]] - 2 * rom_val[s[i - 1]]
+            else:
+                int_val += rom_val[s[i]]
+        return int_val
+print(py_solution().roman_to_int('MMMCMLXXXVI'))
+print(py_solution().roman_to_int('MMMM'))
+print(py_solution().roman_to_int('C'))
+
+47.convert to roman solution
+# Write a Python program to convert an integer to a roman numeral.
+class py_solution:
+    def int_to_Roman(self, num):
+        val = [
+            1000, 900, 500, 400,
+            100, 90, 50, 40,
+            10, 9, 5, 4,
+            1
+            ]
+        syb = [
+            "M", "CM", "D", "CD",
+            "C", "XC", "L", "XL",
+            "X", "IX", "V", "IV",
+            "I"
+            ]
+        roman_num = ''
+        i = 0
+        while  num > 0:
+            for _ in range(num // val[i]):
+                roman_num += syb[i]
+                num -= val[i]
+            i += 1
+        return roman_num
+print(py_solution().int_to_Roman(1))
+print(py_solution().int_to_Roman(4000))
+
+48.get and print solution
+# Write a Python class which has two methods get_String and print_String. 
+# get_String accept a string from the user and print_String print the string in upper case.
+class IOString():
+    def __init__(self):
+        self.str1 = ""
+    def get_String(self):
+        self.str1 = input()
+    def print_String(self):
+        print(self.str1.upper())
+str1 = IOString()
+str1.get_String()
+str1.print_String()
+Fullscreen
+
+49.rectange solution
+# Write a Python class named Rectangle constructed by a length and width and a method which will compute the area of a rectangle.
+class Rectangle():
+    def __init__(self, l, w):
+        self.length = l
+        self.width  = w
+    def rectangle_area(self):
+        return self.length*self.width
+newRectangle = Rectangle(12, 10)
+print(newRectangle.rectangle_area())
+
+50.revert word solution
+# Write a Python class to reverse a string word by word.
+# Input "hello world"
+# Output "world hello"
+class py_solution:
+    def reverse_words(self, s):
+        return ' '.join(reversed(s.split()))
+print(py_solution().reverse_words('hello world'))
+
+51.sum zero solution
+# Write a Python program to find the three elements that sum to zero from a set (array) of n real numbers.
+# Input
+# [-25, -10, -7, -3, 2, 4, 8, 10]
+# Output
+# [[-10, 2, 8], [-7, -3, 10]]
+class py_solution:
+ def threeSum(self, nums):
+        nums, result, i = sorted(nums), [], 0
+        while i < len(nums) - 2:
+            j, k = i + 1, len(nums) - 1
+            while j < k:
+                if nums[i] + nums[j] + nums[k] < 0:
+                    j += 1
+                elif nums[i] + nums[j] + nums[k] > 0:
+                    k -= 1
+                else:
+                    result.append([nums[i], nums[j], nums[k]])
+                    j, k = j + 1, k - 1
+                    while j < k and nums[j] == nums[j - 1]:
+                        j += 1
+                    while j < k and nums[k] == nums[k + 1]:
+                        k -= 1
+            i += 1
+            while i < len(nums) - 2 and nums[i] == nums[i - 1]:
+                i += 1
+        return result
+print(py_solution().threeSum([-25, -10, -7, -3, 2, 4, 8, 10]))
+Fullscreen
+
+51.binary to decimal solution
+# Write a Python program to convert a binary number to decimal number.
+ 
+ 
+b_num = list(input("Input a binary number: "))
+value = 0
+ 
+for i in range(len(b_num)):
+    digit = b_num.pop()
+    if digit == '1':
+        value = value + pow(2, i)
+print("The decimal value of the number is", value)
+
+52.flip a coin solution
+# Write a Python program to flip a coin 1000 times and count heads and tails.
+import random
+import itertools
+results = {
+    'heads': 0,
+    'tails': 0,
+}
+sides = list(results.keys())
+for i in range(10000):
+    results[random.choice(sides)] += 1
+print('Heads:', results['heads'])
+print('Tails:', results['tails'])
+
+
+53.random solution
+#  Write a Python program to generate a series of unique random numbers
+import random
+choices = list(range(100))
+random.shuffle(choices)
+print(choices.pop())
+while choices:
+    print(choices.pop())
+
+54.round up solution
+# Write a Python function to round up a number to specified digits.
+import math
+def roundup(a, digits=0):
+    n = 10**-digits
+    return round(math.ceil(a / n) * n, digits)
+x = 123.01247
+print("Original  Number: ",x)
+print(roundup(x, 0))
+print(roundup(x, 1))
+print(roundup(x, 2))
+print(roundup(x, 3))
+Fullscreen
+
+55.standard deviation solution
+# Write a Python program to calculate the standard deviation of the following data.
+# Input
+# Sample Data:  [4, 2, 5, 8, 6]                                                                                 
+# Output
+# Standard Deviation :  2.23606797749979
+import math
+import sys
+def sd_calc(data):
+    n = len(data)
+    if n <= 1:
+        return 0.0
+    mean, sd = avg_calc(data), 0.0
+    # calculate stan. dev.
+    for el in data:
+        sd += (float(el) - mean)**2
+    sd = math.sqrt(sd / float(n-1))
+    return sd
+def avg_calc(ls):
+    n, mean = len(ls), 0.0
+    if n <= 1:
+        return ls[0]
+    # calculate average
+    for el in ls:
+        mean = mean + float(el)
+    mean = mean / float(n)
+    return mean
+data = [4, 2, 5, 8, 6]
+print("Sample Data: ",data)
+print("Standard Deviation : ",sd_calc(data))
+
+56.convert solution
+#  Write a Python program to convert Year/Month/Day to Day of Year in Python
+import datetime
+today = datetime.datetime.now()
+day_of_year = (today - datetime.datetime(today.year, 1, 1)).days + 1
+print(day_of_year)
+
+57.current time solution
+#  Write a Python program to get the current time in Python.
+import datetime
+print(datetime.datetime.now().time())
+
+58.date time format solution
+# Write a Python script to display the various Date Time formats.
+# a) Current date and time
+# b) Current year
+# c) Month of year
+# d) Week number of the year
+# e) Weekday of the week
+# f) Day of year
+# g) Day of the month
+# h) Day of week
+import time
+import datetime
+print("Current date and time: " , datetime.datetime.now())
+print("Current year: ", datetime.date.today().strftime("%Y"))
+print("Month of year: ", datetime.date.today().strftime("%B"))
+print("Week number of the year: ", datetime.date.today().strftime("%W"))
+print("Weekday of the week: ", datetime.date.today().strftime("%w"))
+print("Day of year: ", datetime.date.today().strftime("%j"))
+print("Day of the month : ", datetime.date.today().strftime("%d"))
+print("Day of week: ", datetime.date.today().strftime("%A"))
+
+58.millisecond solution
+# Write a Python program to get current time in milliseconds in Python
+import time
+milli_sec = int(round(time.time() * 1000))
+print(milli_sec)
+
+59.subtract days solution
+#  Write a Python program to subtract five days from current date
+from datetime import date, timedelta
+dt = date.today() - timedelta(5)
+print('Current Date :',date.today())
+print('5 days before Current Date :',dt)
+
+60.all word contain 5 chracters solution
+# Write a Python program to find all five characters long word in a string.
+# Input
+# 'The quick brown fox jumps over the lazy dog.'
+# Output
+# ['quick', 'brown', 'jumps']
+import re
+text = 'The quick brown fox jumps over the lazy dog.'
+print(re.findall(r"\b\w{5}\b", text))
+
+61.check string solution
+# Write a Python program to check that a string contains only a certain set of characters (in this case a-z, A-Z and 0-9).
+# Input
+# "ABCDEFabcdef123450"
+# "*&%@#!}{"
+# Output
+# True                                                                                                          
+# False
+import re
+def is_allowed_specific_char(string):
+    charRe = re.compile(r'[^a-zA-Z0-9.]')
+    string = charRe.search(string)
+    return not bool(string)
+
+print(is_allowed_specific_char("ABCDEFabcdef123450")) 
+print(is_allowed_specific_char("*&%@#!}{"))
+
+62.find substring solution
+# Write a Python program to find the occurrence and position of the substrings within a string.
+# 
+# Input
+# text = 'Python exercises, PHP exercises, C# exercises'
+# pattern = 'exercises'
+# 
+# Output
+# Found "exercises" at 7:16                                                                                     
+# Found "exercises" at 22:31                                                                                    
+# Found "exercises" at 36:45
+import re
+text = 'Python exercises, PHP exercises, C# exercises'
+pattern = 'exercises'
+for match in re.finditer(pattern, text):
+    s = match.start()
+    e = match.end()
+    print('Found "%s" at %d:%d' % (text[s:e], s, e))
+
+63.keep alphanumeric only solution
+# Write a Python program to remove everything except alphanumeric characters from a string.
+# Input
+# '**//Python Exercises// - 12. '
+# Output
+# PythonExercises12
+import re
+text1 = '**//Python Exercises// - 12. '
+pattern = re.compile('[\W_]+')
+print(pattern.sub('', text1))
+
+64.remove parenthesis solution
+# Write a Python program to remove the parenthesis area in a string.
+# 
+# Input
+# ["example (.com)", "w3resource", "github (.com)", "stackoverflow (.com)"]
+# 
+# Output
+# example                                                                                                       
+# w3resource                                                                                                    
+# github                                                                                                        
+# stackoverflow
+import re
+items = ["example (.com)", "w3resource", "github (.com)", "stackoverflow (.com)"]
+for item in items:
+    print(re.sub(r" ?\([^)]+\)", "", item))
+
+65.remove white space solution
+# Remove all whitespaces from a string
+# 
+# Input
+# ' Python    Exercises '
+# Output
+# PythonExercises
+import re
+text1 = ' Python    Exercises '
+print("Original string:",text1)
+print("Without extra spaces:",re.sub(r'\s+', '',text1))
+Fullscreen
+
+66.remove zero solution
+# Write a Python program to remove leading zeros from an IP address.
+# Input
+# "216.08.094.196"
+# Output
+# 216.8.94.196
+import re
+ip = "216.08.094.196"
+string = re.sub('\.[0]*', '.', ip)
+print(string)
+
+67.array merge intervals solution
+"""
+Given a collection of intervals which are already sorted by start number, merge all overlapping intervals.
+For example,
+Given [[1,3],[2,6],[5,10],[11,16],[15,18],[19,22]],
+return [[1, 10], [11, 18], [19, 22]]
+"""
+org_intervals = [[1,3],[2,6],[5,10],[11,16],[15,18],[19,22]]
+i = 0
+while i < len(org_intervals)-1:
+#     print(org_intervals[i])
+    if org_intervals[i+1][0] < org_intervals[i][1]:
+        org_intervals[i][1]=org_intervals[i+1][1]
+        del org_intervals[i+1]
+        i = i - 1
+    i = i + 1
+print(org_intervals)
+
+68.array rotate solution
+"""
+Rotate an array of n elements to the right by k steps.
+For example, with n = 7 and k = 3,
+the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].
+Note:
+Try to come up as many solutions as you can,
+there are at least 3 different ways to solve this problem.
+"""
+org = [1,2,3,4,5,6,7]
+result = org[:]
+steps = 3
+for idx,num in enumerate(org):
+    if idx+steps < len(org):
+        result[idx+steps] = org[idx]
+    else:
+        result[idx+steps-len(org)] = org[idx]
+print(result)
+
+69.array summary ranges solution
+"""
+Given a sorted integer array without duplicates,
+return the summary of its ranges.
+For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
+"""
+input_array = [0,1,2,4,5,7]
+# input_array = [1,2,3,6,9,11,12,13,14,19,20]
+start=0
+result = []
+# i=0
+# while i <= len(input_array)-1:
+#     print(i, input_array[i])
+#     i = i+1
+while start < len(input_array):
+    
+    # initial end at start position     
+    end = start
+    # continue to move the end pointer if the gap is 1 with beside number
+    # only continue to move if index end+1 is inside array     
+    while end+1<len(input_array) and ((input_array[end+1] - input_array[end]) == 1):
+        end = end + 1
+    # add range to result after calculate     
+    if end!=start:
+        result.append("{0}-->{1}".format(input_array[start], input_array[end]))
+        print(result)
+    else:
+        result.append("{0}".format(input_array[start]))
+        print(result)
+        
+    # change to next range
+    start = end+1
+print(result)
+            
+
+69.array two sum solution
+"""
+Given an array of integers, return indices of the two numbers
+such that they add up to a specific target.
+You may assume that each input would have exactly one solution,
+and you may not use the same element twice.
+Example:
+    Given nums = [2, 7, 11, 15], target = 26,
+    Because nums[0] + nums[1] = 11 + 15 = 26,
+    return [2, 3].
+"""
+# Solution 1
+# Try all 
+input_array = [2, 7, 11, 15]
+target = 26
+result = []
+for i, num in enumerate(input_array):
+    for j in range(i+1, len(input_array)):
+        print(i,j)
+
+70.buble sort implement solution
+# Write a Python program to sort a list of elements using the bubble sort algorithm.
+# Note : According to Wikipedia "Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that
+# repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the 
+# wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted. 
+# The algorithm, which is a comparison sort, is named for the way smaller elements "bubble" to the top of the list. 
+# Although the algorithm is simple, it is too slow and impractical for most problems even when compared to insertion sort. 
+# It can be practical if the input is usually in sort order but may occasionally have some out-of-order elements nearly 
+# in position.
+def bubbleSort(nlist):
+    for passnum in range(len(nlist)-1,0,-1):
+        for i in range(passnum):
+            if nlist[i]>nlist[i+1]:
+                temp = nlist[i]
+                nlist[i] = nlist[i+1]
+                nlist[i+1] = temp
+nlist = [14,46,43,27,57,41,45,21,70]
+bubbleSort(nlist)
+print(nlist)
+
+71.selection sort implement solution
+# Write a Python program to sort a list of elements using the selection sort algorithm.
+# Note : The selection sort improves on the bubble sort by making only one exchange for every pass through the list.
+ 
+def selectionSort(nlist):
+   for fillslot in range(len(nlist)-1,0,-1):
+       maxpos=0
+       for location in range(1,fillslot+1):
+           if nlist[location]>nlist[maxpos]:
+               maxpos = location
+       temp = nlist[fillslot]
+       nlist[fillslot] = nlist[maxpos]
+       nlist[maxpos] = temp
+nlist = [14,46,43,27,57,41,45,21,70]
+selectionSort(nlist)
+print(nlist)
+
+72.shell sort implement solution
+# Write a Python program to sort a list of elements using shell sort algorithm.
+# Note : According to Wikipedia "Shell sort or Shell's method, is an in-place comparison sort. 
+# It can be seen as either a generalization of sorting by exchange (bubble sort) or sorting by insertion (insertion sort). 
+# The method starts by sorting pairs of elements far apart from each other, then progressively reducing the gap between
+# elements to be compared. Starting with far apart elements can move some out-of-place elements into position faster than
+# a simple nearest neighbor exchange."
+ 
+def shellSort(alist):
+    sublistcount = len(alist)//2
+    while sublistcount > 0:
+      for start_position in range(sublistcount):
+        gap_InsertionSort(alist, start_position, sublistcount)
+ 
+      print("After increments of size",sublistcount, "The list is",nlist)
+ 
+      sublistcount = sublistcount // 2
+ 
+def gap_InsertionSort(nlist,start,gap):
+    for i in range(start+gap,len(nlist),gap):
+ 
+        current_value = nlist[i]
+        position = i
+ 
+        while position>=gap and nlist[position-gap]>current_value:
+            nlist[position]=nlist[position-gap]
+            position = position-gap
+ 
+        nlist[position]=current_value
+ 
+ 
+nlist = [14,46,43,27,57,41,45,21,70]
+shellSort(nlist)
+print(nlist)
+
+73.merge sort implement solution
+# Write a Python program to sort a list of elements using the merge sort algorithm.
+# Note: According to Wikipedia "Merge sort (also commonly spelled mergesort) is an O (n log n)
+# comparison-based sorting algorithm. Most implementations produce a stable sort, which means that 
+# the implementation preserves the input order of equal elements in the sorted output."
+# Algorithm:
+# Conceptually, a merge sort works as follows :
+# Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted).
+# Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
+def mergeSort(nlist):
+    print("Splitting ",nlist)
+    if len(nlist)>1:
+        mid = len(nlist)//2
+        lefthalf = nlist[:mid]
+        righthalf = nlist[mid:]
+        mergeSort(lefthalf)
+        mergeSort(righthalf)
+        i=j=k=0       
+        while i < len(lefthalf) and j < len(righthalf):
+            if lefthalf[i] < righthalf[j]:
+                nlist[k]=lefthalf[i]
+                i=i+1
+            else:
+                nlist[k]=righthalf[j]
+                j=j+1
+            k=k+1
+        while i < len(lefthalf):
+            nlist[k]=lefthalf[i]
+            i=i+1
+            k=k+1
+        while j < len(righthalf):
+            nlist[k]=righthalf[j]
+            j=j+1
+            k=k+1
+    print("Merging ",nlist)
+nlist = [14,46,43,27,57,41,45,21,70]
+mergeSort(nlist)
+print(nlist)
+
+
+74.quick sort implement solution
+# Write a Python program to sort a list of elements using the quick sort algorithm.
+# Note : According to Wikipedia "Quicksort is a comparison sort, meaning that it can 
+# sort items of any type for which a "less-than" relation (formally, a total order) is defined. 
+# In efficient implementations it is not a stable sort, meaning that the relative order of equal 
+# sort items is not preserved. Quicksort can operate in-place on an array, requiring small additional
+# amounts of memory to perform the sorting."
+def quickSort(data_list):
+   quickSortHlp(data_list,0,len(data_list)-1)
+def quickSortHlp(data_list,first,last):
+   if first < last:
+       splitpoint = partition(data_list,first,last)
+       quickSortHlp(data_list,first,splitpoint-1)
+       quickSortHlp(data_list,splitpoint+1,last)
+def partition(data_list,first,last):
+   pivotvalue = data_list[first]
+   leftmark = first+1
+   rightmark = last
+   done = False
+   while not done:
+       while leftmark <= rightmark and data_list[leftmark] <= pivotvalue:
+           leftmark = leftmark + 1
+       while data_list[rightmark] >= pivotvalue and rightmark >= leftmark:
+           rightmark = rightmark -1
+       if rightmark < leftmark:
+           done = True
+       else:
+           temp = data_list[leftmark]
+           data_list[leftmark] = data_list[rightmark]
+           data_list[rightmark] = temp
+   temp = data_list[first]
+   data_list[first] = data_list[rightmark]
+   data_list[rightmark] = temp
+   return rightmark
+data_list = [54,26,93,17,77,31,44,55,20]
+quickSort(data_list)
+print(data_list)
+Fullscreen
+
+75.sequential search solution
+# Write a Python program for sequential search.
+# Sequential Search: In computer science, linear search or sequential search is a method for finding a particular value in a list
+# that checks each element in sequence until the desired element is found or the list is exhausted. The list need not be ordered.
+def Sequential_Search(dlist, item):
+    pos = 0
+    found = False
+    
+    while pos < len(dlist) and not found:
+        if dlist[pos] == item:
+            found = True
+        else:
+            pos = pos + 1
+    
+    return found, pos
+print(Sequential_Search([11,23,58,31,56,77,43,12,65,19],31))
+Fullscreen
+
+77.binary search implement solution
+# Write a Python program for binary search. 
+# Binary Search : In computer science, a binary search or half-interval search algorithm finds the position of a target value
+# within a sorted array. The binary search algorithm can be classified as a dichotomies divide-and-conquer search algorithm and 
+# executes in logarithmic time.
+ 
+def binary_search(item_listac,item):
+    first = 0
+    last = len(item_list)-1
+    found = False
+    while( first<=last and not found):
+        mid = (first + last)//2
+        if item_list[mid] == item :
+            found = True
+        else:
+            if item < item_list[mid]:
+                last = mid - 1
+            else:
+                first = mid + 1    
+    return found
+    
+print(binary_search([1,2,3,5,8], 6))
+print(binary_search([1,2,3,5,8], 5))
+
+78.a power by b solution
+# Write a Python program to calculate the value of 'a' to the power 'b'.
+ 
+def power(a,b):
+    if b==0:
+        return 1
+    elif a==0:
+        return 0
+    elif b==1:
+        return a
+    else:
+        return a*power(a,b-1)
+ 
+print(power(3,4))
+Fullscreen
+
+
+79.fibonaci solution
+#  Write a Python program to solve the Fibonacci sequence using recursion.
+ 
+def fibonacci(n):
+  if n == 1 or n == 2:
+    return 1
+  else:
+    return (fibonacci(n - 1) + (fibonacci(n - 2)))
+ 
+print(fibonacci(7))
+
+79.fractorial solution
+# Write a Python program to get the factorial of a non-negative integer.
+ 
+def factorial(n):
+  if n <= 1:
+    return 1
+  else:
+    return n * (factorial(n - 1))
+    
+print(factorial(5))
+
+80.greatest gcd solution
+# Write a Python program to find the greatest common divisor (gcd) of two integers.
+ 
+def Recurgcd(a, b):
+    low = min(a, b)
+    high = max(a, b)
+ 
+    if low == 0:
+        return high
+    elif low == 1:
+        return 1
+    else:
+        return Recurgcd(low, high%low)
+print(Recurgcd(12,14))
+
+81.sum of list solution
+# Write a Python program to calculate the sum of a list of numbers. (in recursion fashion)
+def list_sum(num_List):
+    if len(num_List) == 1:
+        return num_List[0]
+    else:
+        return num_List[0] + list_sum(num_List[1:])
+        
+print(list_sum([2, 4, 5, 6, 7]))
+
+82.planecost=eval(input("Enter plane cost"))
+gst=18
+gstamt=planecost*gst/100
+finalcost=planecost+gstamt
+print("Plane cost is:",planecost)
+print("gst is:",gst,"%")
+print("gst amount is :",gstamt)
+print("finalcost is:",finalcost)
+
+Enter plane cost200
+Plane cost is: 200
+gst is: 18 %
+gst amount is : 36.0
+finalcost is: 236.0
+
+
+***tax is 25%
+
+msalary=eval(input("Enter Montly Salary"))
+tax=25
+gstamt=msalary*tax/100
+FinalSalary=(msalary+gstamt)
+print("Montly Salary is:",msalary)
+print("Tax is:",tax,"%")
+print(" amount is :",gstamt)
+print("FinalSalary is:",FinalSalary)
+
+***
+p=int(input("Enter a pizza price"))
+q=int(input("Enter a Quantity"))
+c=p*q
+d=15
+damt=c*d/100
+billamt=c-damt
+print("Bill Amount is:",c)
+print("Discount Amt is:",damt)
+print("FinalBill is:",billamt)
+
+
+
+
+
+
