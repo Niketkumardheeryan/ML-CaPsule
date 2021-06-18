@@ -108,6 +108,15 @@ H). Regression
           - Homoscedasticity
  * Multiple Linear Regression
 
+# OUR MODELS BASED ON INCREASING COMPLEXITY
+ bitcoin price detection
+ flight delay prediction
+ extract text from PDF using python
+ customer segmentation
+ covid 19 forecasting with prophet
+ emotion recognition based on NLP
+ 
+
 # Data Scientist
 Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains.<br>
 <p align="center">
