@@ -108,12 +108,17 @@ H). Regression
           - Homoscedasticity
  * Multiple Linear Regression
 
-# OUR MODELS BASED ON INCREASING COMPLEXITY
+# Machine Learning Models List 
  *bitcoin price detection
+ 
  *flight delay prediction
+ 
  *extract text from PDF using python
+ 
  *customer segmentation
+ 
  *covid 19 forecasting with prophet
+ 
  *emotion recognition based on NLP
  
 
