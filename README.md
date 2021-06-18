@@ -108,7 +108,7 @@ H). Regression
           - Homoscedasticity
  * Multiple Linear Regression
 
-# Data Scientist
+# Data Science
 Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains.<br>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/74819092/122023534-498b4180-cde5-11eb-9aa7-fc1c20aec5fe.png" height=150, width=700>
@@ -164,6 +164,5 @@ The six major areas of data science include the following:
 
 ## Contributing Guidelines
 - Have a look at [Contibuting Guidelines](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/CONTRIBUTING_GUIDELINES.md)
-## 👍 OpenSource Programs
-<a href="https://letsgrowmore.in/soc/" target="_blank"> <img src="https://user-images.githubusercontent.com/74819092/122177301-1ad3a080-cea3-11eb-9bab-0c4cb04ec3dd.png" alt="Let's Grow More" width="100" height="80"/> </a>
+
 
