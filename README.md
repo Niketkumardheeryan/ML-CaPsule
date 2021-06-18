@@ -109,12 +109,12 @@ H). Regression
  * Multiple Linear Regression
 
 # OUR MODELS BASED ON INCREASING COMPLEXITY
- bitcoin price detection
- flight delay prediction
- extract text from PDF using python
- customer segmentation
- covid 19 forecasting with prophet
- emotion recognition based on NLP
+ *bitcoin price detection
+ *flight delay prediction
+ *extract text from PDF using python
+ *customer segmentation
+ *covid 19 forecasting with prophet
+ *emotion recognition based on NLP
  
 
 # Data Scientist
