@@ -1,0 +1,132 @@
+SQL [STRUCTURED QUERY LANGUAGE]
+SQL is a standard language for accessing and manipulating databases.
+
+What can SQL do?
+SQL can execute queries against a database
+SQL can retrieve data from a database
+SQL can insert records in a database
+SQL can update records in a database
+SQL can delete records from a database
+SQL can create new databases
+SQL can create new tables in a database
+SQL can create stored procedures in a database
+SQL can create views in a database
+SQL can set permissions on tables, procedures, and views
+
+SQL Commands:
+SQL commands are instructions. It is used to communicate with the database. It is also used to perform specific tasks, functions, and queries of data.
+SQL can perform various tasks like create a table, add data to tables, drop the table, modify the table, set permission for users.
+
+Types of SQL Commands :
+There are five types of SQL commands: DDL, DML, DCL, TCL, and DQL.
+
+1. DDL - Data Definition Language : DDL changes the structure of the table like creating a table, deleting a table, altering a table, etc.
+
+Commands that come under DDL :
+- CREATE : It is used to create a new table in the database.
+Syntax : `CREATE TABLE TABLE_NAME (COLUMN_NAME DATATYPES[,....]);`
+Example : `CREATE TABLE EMPLOYEE(Name VARCHAR2(20), Email VARCHAR2(100), DOB DATE);`
+
+- DROP : It is used to delete both the structure and record stored in the table.
+Syntax : `DROP TABLE ;`
+Example : `DROP TABLE EMPLOYEE;`
+
+- ALTER : It is used to alter the structure of the database. 
+Syntax : 
+```
+To add a new column in the table :
+ALTER TABLE table_name ADD column_name COLUMN-definition; 
+
+To modify the existing column of the table :
+ALTER TABLE MODIFY(COLUMN DEFINITION....);
+```
+Example :
+```
+ALTER TABLE STU_DETAILS ADD(ADDRESS VARCHAR2(20));  
+ALTER TABLE STU_DETAILS MODIFY (NAME VARCHAR2(20));  
+```
+
+- TRUNCATE: It is used to delete all the rows from the table and free the space containing the table.
+Syntax : `TRUNCATE TABLE table_name;`
+Example : `TRUNCATE TABLE EMPLOYEE;`
+
+2. DML - Data Manipulation Language : DML commands are used to modify the database. It is responsible for all form of changes in the database.
+
+Commands that come under DML :
+- INSERT : It is used to insert data into the row of a table.
+Syntax :
+```
+INSERT INTO TABLE_NAME    
+(col1, col2, col3,.... col N)  
+VALUES (value1, value2, value3, .... valueN);  
+
+or,
+
+INSERT INTO TABLE_NAME    
+VALUES (value1, value2, value3, .... valueN);    
+```
+Example :
+`INSERT INTO ML_basics-to-advance (Author, Subject) VALUES ("Sonoo", "DBMS");`  
+
+- UPDATE : This command is used to update or modify the value of a column in the table.
+Syntax : `UPDATE table_name SET [column_name1= value1,...column_nameN = valueN] [WHERE CONDITION];`
+Example : 
+```
+UPDATE students    
+SET User_Name = 'Sonoo'    
+WHERE Student_Id = '3';
+```
+
+- DELETE: It is used to remove one or more row from a table.
+Syntax : `DELETE FROM table_name [WHERE condition];`
+Example : `DELETE FROM ML_basics-to-advance  WHERE Author="Sonoo";`
+
+3. DCL - Data Control Language :  DCL commands are used to grant and take back authority from any database user.
+
+Commands that come under DCL :
+- GRANT : It is used to give user access privileges to a database.
+Syntax : `GRANT SELECT, UPDATE ON MY_TABLE TO SOME_USER, ANOTHER_USER;`
+
+- REVOKE : It is used to take back permissions from the user.
+Syntax : `REVOKE SELECT, UPDATE ON MY_TABLE FROM USER1, USER2;`
+
+4. TCL - Tansaction Control Language : TCL commands can only use with DML commands like INSERT, DELETE and UPDATE only. These operations are automatically committed in the database that's why they cannot be used while creating tables or dropping them.
+
+Commands that come under TCL :
+- COMMIT : Commit command is used to save all the transactions to the database.
+Syntax : `COMMIT;`
+Example : 
+```
+DELETE FROM CUSTOMERS  
+WHERE AGE = 25;  
+COMMIT;  
+```
+
+- ROLLBACK : Rollback command is used to undo transactions that have not already been saved to the database.
+Syntax : `ROLLBACK;`
+Example :
+```
+DELETE FROM CUSTOMERS  
+WHERE AGE = 25;  
+ROLLBACK;
+```
+
+- SAVEPOINT : It is used to roll the transaction back to a certain point without rolling back the entire transaction.
+Syntax : `SAVEPOINT SAVEPOINT_NAME;`
+
+5. DQL - Data Query Language : DQL is used to fetch the data from the database.
+
+Command that comes under DQL :
+- SELECT : This is the same as the projection operation of relational algebra. It is used to select the attribute based on the condition described by WHERE clause.
+Syntax : 
+```
+SELECT expressions    
+FROM TABLES    
+WHERE conditions; 
+```
+Example :
+```
+SELECT emp_name  
+FROM employee  
+WHERE age > 20;  
+```
