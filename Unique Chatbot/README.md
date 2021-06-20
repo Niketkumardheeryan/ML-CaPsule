@@ -10,7 +10,7 @@ To setup this chatbot we need to do the follwoing steps.
 5. Deployed Successfully.
 
 ## Description 
-This chatbot is developed using the Natural laguage processing and NLTK. After that we have done the noise cancellation so that it should work fine enough.
+This chatbot is developed using the Natural language processing and NLTK. After that we have done the noise cancellation so that it should work fine enough.
 
 ## Output
 <img src = "Images/chatbot.gif">
