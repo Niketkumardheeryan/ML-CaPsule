@@ -20,4 +20,4 @@ The link to the google colab file (there's some issue in github due to which, it
 <a href="url"><img src="https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot%20(4).png" align="left" height="200" width="300" ></a>
 <a href="url"><img src="https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot%20(8).png" align="left" height="200" width="300" ></a>
 <a href="url"><img src="https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot%20(9).png" align="left" height="200" width="300" ></a>
-<a href="url"><img src="https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot%20(11).png" align="left" height="400" width="600" ></a>
+<a href="url"><img src="https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot%20(11).png" align="left" height="400" width="800" ></a>
