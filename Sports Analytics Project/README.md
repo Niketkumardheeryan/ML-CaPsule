@@ -4,6 +4,9 @@
 In this project we have tried to compare the different stats of two different soccer players to compare there performance and know who comes out on top.
 The link to the google colab file (there's some issue in github due to which, it doesn't show Plotly plots): https://colab.research.google.com/drive/15U3O_3_GmMMQC-yKw5r7V0q4mwQQMkOY?usp=sharing
 
+### Concepts needed: 
+Numpy, Pandas, Visualization, Web Scrapping, Data Cleaning, EDA
+
 ### Steps:
 - Getting the required data from Undestat website
 - Data Cleaning and Exploration for different aspects of the players
