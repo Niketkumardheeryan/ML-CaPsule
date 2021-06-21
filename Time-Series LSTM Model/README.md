@@ -21,7 +21,7 @@ Feel free to try with other Stock just by giving Stock Symbol and Time Period!!.
 ## Model
 Our Model consist of Four LSTM layer with a Dense Layer as Output.
 
-
+![MSE loss](mse_loss.png)
 
 
 
