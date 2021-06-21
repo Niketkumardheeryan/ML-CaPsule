@@ -14,4 +14,4 @@ The link to the google colab file (there's some issue in github due to which, it
 > Libraries used: json, pandas, BeautifulSoup, urlopen, MinMaxScaler, Seaborn, Matplotlib, Plotly
 
 ### Preview:
-- ![Attribute Comparisons](https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot.png = 60*40)
+- <a href="url"><img src="https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot.png" align="left" height="40" width="60" ></a>
