@@ -14,7 +14,7 @@ The link to the google colab file (there's some issue in github due to which, it
 > Libraries used: json, pandas, BeautifulSoup, urlopen, MinMaxScaler, Seaborn, Matplotlib, Plotly
 
 ### Preview:
-<a href="url"><img src="https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot.png" align="left" height="900" width="1600" ></a>
+<a href="url"><img src="https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot.png" align="left" height="400" width="600" ></a>
 <a href="url"><img src="https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot%20(1).png" align="left" height="200" width="300" ></a>
 <a href="url"><img src="https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot%20(2).png" align="left" height="200" width="300" ></a>
 <a href="url"><img src="https://github.com/kaustavr19/Hands-on-ML-Basic-to-Advance-/blob/master/Sports%20Analytics%20Project/assets/newplot%20(4).png" align="left" height="200" width="300" ></a>
