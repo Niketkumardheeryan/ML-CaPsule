@@ -7,3 +7,6 @@ Tesseract library can be downloaded from [here](https://github.com/UB-Mannheim/t
 **LIBRARIES NEEDED**
 - cv2
 - tesseract
+- matplotlib
+
+<a href="https://github.com/manuvarghese0603">Manu Varghese</a>
