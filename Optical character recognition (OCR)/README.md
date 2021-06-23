@@ -8,4 +8,4 @@ Tesseract library can be downloaded from [here](https://github.com/UB-Mannheim/t
 - cv2 (computer Vision)
 - tesseract
 
-<a href="https://github.com/manuvarghese0603">Jagannath Pal</a>
+<a href="https://github.com/manuvarghese0603">Manu Varghese</a>
