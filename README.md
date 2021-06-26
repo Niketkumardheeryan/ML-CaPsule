@@ -178,6 +178,7 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
 * Fork the repository<br>
 
 <img src="https://user-images.githubusercontent.com/74819092/117547550-c8a29280-b04d-11eb-9e6b-d0f84d49e34e.png" width=100>
+
 * Clone the repository using-<br>
 
 ``` git clone https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance- ```
