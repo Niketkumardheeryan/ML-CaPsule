@@ -144,25 +144,45 @@ The six major areas of data science include the following:
 * https://www.freecodecamp.org/learn/machine-learning-with-python/
 
 * https://www.greatlearning.in/great-lakes-pgpdsba?&utm_source=Google&utm_medium=Search&utm_campaign=6Cities_Exact_Data_Science_Search_New_DS&adgroup_id=101317851589&campaign_id=10174480218&Keyword=data%20scientist&placement=&utm_content=c&gclid=CjwKCAjwn6GGBhADEiwAruUcKqPCvPIk1X_5mVRXj5prdpSIULnd40QgTB4kChfiFgAL1kDErGeLHRoCapUQAvD_BwE
-## licence
 
 ## Get Started
-=======
-## licence
+
+This repo shows a good collection of Machine learning with python and data science with algorithms,projects,explanations from basic to advance level.
+It has topics based on machine learning,deep learning,sql,natural language proccessing,object detection,classification,recommendation system,chatbots
+and much more .
+
+## Projects List
+
+<!-- Projects start -->
+<!-- Projects end -->
+
+### Note:
+* Above project list will be scheduled automatically,whenever new projects add to the repo it will add in above table.
+
+## 📖 Code Of Conduct:
+
+You can find our Code of Conduct [here](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/CODE_OF_CONDUCT.md).
+
+## 📝 License  
+
+This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
+
 ## Have a look 
  
-* Give repositary a star 🌟 if you like the content
+* Give it a 🌟 if you ❤ this project.
  <img src="https://user-images.githubusercontent.com/74819092/117547585-fe477b80-b04d-11eb-9e03-0747dea1b88a.png" width=100>
+ 
 * Take a look at the Existing Issues.<br>
 * Create your own Issues, If you have new idea not listed in project.<br>
 * Wait for the Issue to be assigned to you.<br>
 * Fork the repository<br>
+
 <img src="https://user-images.githubusercontent.com/74819092/117547550-c8a29280-b04d-11eb-9e6b-d0f84d49e34e.png" width=100>
 * Clone the repository using-<br>
 
 ``` git clone https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance- ```
 
-## Contributing Guidelines
+## ⚙️ Contribution Guidelines 
 - Have a look at [Contibuting Guidelines](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/CONTRIBUTING_GUIDELINES.md)
 
 
