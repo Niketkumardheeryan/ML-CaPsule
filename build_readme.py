@@ -29,7 +29,7 @@ def Exract_files_names():
 			if(x.text!=".github" and x.text!="CODE_OF_CONDUCT.md" and x.text!="CONTRIBUTING_GUIDELINES.md" and x.text!=".github/workflows" and x.text!="build_readme.py" and x.text!="requirements.txt" and x.text!="README.md" and x.text!="download statistics.jpg" and x.text!="img" and x.text!="ml img.jpg"):
 				temp2={
                 	'fname' : x.text,
-                	'furl': x["href"]
+                	'furl': x["href"].split('/')[-1]
 				   		}
 				temp.append(temp2)
 			else:pass
