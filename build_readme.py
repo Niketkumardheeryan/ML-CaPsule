@@ -5,7 +5,7 @@ import re
 
 
 ROOT_PATH = pathlib.Path(__file__).parent.resolve()
-FEED_URL = 'https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-'
+FEED_URL = 'https://github.com/Akash20x/Hands-on-ML-Basic-to-Advance-'
 
 def replace_chunk(content, marker, chunk, inline=False):
     r = re.compile(
