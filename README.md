@@ -189,6 +189,8 @@ The six major areas of data science include the following:
 
 - [Medical Charges for Smokers and Non-smoker](Medical%20Charges%20for%20Smokers%20and%20Non-smoker)
 
+- [Meteorite Landing Data Analysis](Meteorite%20Landing%20Data%20Analysis)
+
 - [Movie-Recommendation-System](Movie-Recommendation-System)
 
 - [NumPy - Basics](NumPy%20-%20Basics)
