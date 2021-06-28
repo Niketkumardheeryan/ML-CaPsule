@@ -157,6 +157,8 @@ The six major areas of data science include the following:
 
 - [Bitcoin Price Predictor](Bitcoin%20Price%20Predictor)
 
+- [COVID_19-DATA-ANALYSIS](COVID_19-DATA-ANALYSIS)
+
 - [Cheat Sheets](Cheat%20Sheets)
 
 - [Classification Algorithms](Classification%20Algorithms)
@@ -182,6 +184,8 @@ The six major areas of data science include the following:
 - [File of SQL Commands](File%20of%20SQL%20Commands)
 
 - [Flight_delay_prediction_project](Flight_delay_prediction_project)
+
+- [Handwritten Equation Solver using CNN](Handwritten%20Equation%20Solver%20using%20CNN)
 
 - [Medical Charges for Smokers and Non-smoker](Medical%20Charges%20for%20Smokers%20and%20Non-smoker)
 
