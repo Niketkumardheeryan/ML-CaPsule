@@ -144,11 +144,7 @@ The six major areas of data science include the following:
 * https://www.freecodecamp.org/learn/machine-learning-with-python/
 
 * https://www.greatlearning.in/great-lakes-pgpdsba?&utm_source=Google&utm_medium=Search&utm_campaign=6Cities_Exact_Data_Science_Search_New_DS&adgroup_id=101317851589&campaign_id=10174480218&Keyword=data%20scientist&placement=&utm_content=c&gclid=CjwKCAjwn6GGBhADEiwAruUcKqPCvPIk1X_5mVRXj5prdpSIULnd40QgTB4kChfiFgAL1kDErGeLHRoCapUQAvD_BwE
-## licence
 
-## Get Started
-=======
-## licence
 ## Have a look 
  
 * Give repositary a star 🌟 if you like the content
