@@ -134,7 +134,7 @@ The six major areas of data science include the following:
 * Computing with data. The biggest thing that all data science projects have in common is the necessity to use tools and software to analyze the involved algorithms and statistics, because the size of the pool of information they are working with is so massive.
 * Theory. Data science theory is an evolving and sophisticated professional arena with countless applications.
 * Tool evaluation. There are many tools available for data scientists to use to manipulate and study huge quantities of data, and it's important to always evaluate their effectiveness and keep trying new ones as they become available.
-=======
+
 ## summary 
 
 ## useful urls
