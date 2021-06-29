@@ -145,6 +145,7 @@ The six major areas of data science include the following:
 
 * https://www.greatlearning.in/great-lakes-pgpdsba?&utm_source=Google&utm_medium=Search&utm_campaign=6Cities_Exact_Data_Science_Search_New_DS&adgroup_id=101317851589&campaign_id=10174480218&Keyword=data%20scientist&placement=&utm_content=c&gclid=CjwKCAjwn6GGBhADEiwAruUcKqPCvPIk1X_5mVRXj5prdpSIULnd40QgTB4kChfiFgAL1kDErGeLHRoCapUQAvD_BwE
 
+
 ## Get Started
 
 ### This repo shows a good collection of Machine learning with python and data science with algorithms,projects,explanations from basic to advance level.
@@ -165,6 +166,8 @@ You can find our Code of Conduct [here](https://github.com/Niketkumardheeryan/Ha
 ## 📝 License  
 
 This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
+
+
 
 ## Have a look 
  
