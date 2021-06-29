@@ -150,7 +150,7 @@ The six major areas of data science include the following:
 ### This repo shows a good collection of Machine learning with python and data science with algorithms,projects,explanations from basic to advance level.
 ### It has topics based on machine learning, deep learning, sql, natural language proccessing, object detection, classification, recommendation system,chatbots and much more.
 
-## Content List
+## Take a look at existing projects 
 
 <!-- Projects start -->
 | --------------- | 
