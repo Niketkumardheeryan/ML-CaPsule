@@ -270,7 +270,9 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
     <td align="center"><a href="https://github.com/Jagannath8"><img src="https://avatars.githubusercontent.com/u/64650848?v=4" width="100px;" alt=""/><br /><sub><b> Jagannath8 </b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/harshita9621"><img src="https://avatars.githubusercontent.com/u/57454733?v=4" width="100px;" alt=""/><br /><sub><b> Harshita Nayak </b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/ayushgoyal9991"><img src="https://avatars.githubusercontent.com/u/48384864?v=4" width="100px;" alt=""/><br /><sub><b> ayushgoyal9991 </b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/SurajPawarstar"><img src="https://avatars.githubusercontent.com/u/72244495?v=4" width="100px;" alt=""/><br /><sub><b> SurajPawarstar </b></sub></a><br />💻</a></td>
+  </tr>
+  <tr>
+  <td align="center"><a href="https://github.com/SurajPawarstar"><img src="https://avatars.githubusercontent.com/u/72244495?v=4" width="100px;" alt=""/><br /><sub><b> SurajPawarstar </b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/Sumit11081996"><img src="https://avatars.githubusercontent.com/u/68699320?v=4" width="100px;" alt=""/><br /><sub><b> Sumit11081996 </b></sub></a><br />💻</a></td>
         <td align="center"><a href="https://github.com/tanvi355"><img src="https://avatars.githubusercontent.com/u/56465105?v=4" width="100px;" alt=""/><br /><sub><b> Tanvi Bugdani </b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/suy1968"><img src="https://avatars.githubusercontent.com/u/72243026?v=4" width="100px;" alt=""/><br /><sub><b>Suyash Singh
@@ -279,12 +281,10 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
         <td align="center"><a href="https://github.com/nisha331"><img src="https://avatars.githubusercontent.com/u/76838660?v=4" width="100px;" alt=""/><br /><sub><b> Nisha Yadav </b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/NEERAJAP2001"><img src="https://avatars.githubusercontent.com/u/65017645?v=4" width="100px;" alt=""/><br /><sub><b> Neeraj Ap
  </b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/queenish001"><img src="https://avatars.githubusercontent.com/u/77614377?v=4" width="100px;" alt=""/><br /><sub><b> Nishi </b></sub></a><br />💻</a></td>
+ </tr>
+  <tr>
+     <td align="center"><a href="https://github.com/queenish001"><img src="https://avatars.githubusercontent.com/u/77614377?v=4" width="100px;" alt=""/><br /><sub><b> Nishi </b></sub></a><br />💻</a></td>
         <td align="center"><a href="https://github.com/shivani6320"><img src="https://avatars.githubusercontent.com/u/63535949?v=4" width="100px;" alt=""/><br /><sub><b> shivani rana </b></sub></a><br />💻</a></td>
-
-
-
-
   </tr>
 </table>
 
