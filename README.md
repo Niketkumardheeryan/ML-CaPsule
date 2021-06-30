@@ -237,9 +237,11 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
 ## Some awesome Contributors ✨
 
 <table>
+ 
   <tr>
   <td align="center"><a href="https://github.com/Niketkumardheeryan"><img src="https://avatars.githubusercontent.com/u/52290648?v=4" width="100px;" alt=""/><br /><sub><b>Niket kumar Dheeryan (Author)</b></sub></a><br />💻</a></td>
   </tr>
+  
   <tr>
   <td align="center"><a href="https://github.com/abhisheks008"><img src="https://avatars.githubusercontent.com/u/68724349?v=4" width="100px;" alt=""/><br /><sub><b> Abhishek Sharma </b></sub></a><br />💻</a></td>
   <td align="center"><a href="https://github.com/Sakalya100"><img src="https://avatars.githubusercontent.com/u/70064084?v=4" width="100px;" alt=""/><br /><sub><b>Sakalya100
@@ -250,8 +252,9 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
     <td align="center"><a href="https://github.com/Komal-99"><img src="https://avatars.githubusercontent.com/u/74819092?v=4" width="100px;" alt=""/><br /><sub><b> Komal Gupta
  </b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/manuvarghese0603"><img src="https://avatars.githubusercontent.com/u/58263137?v=4" width="100px;" alt=""/><br /><sub><b> Manu Varghese </b></sub></a><br />💻</a></td>
-    </tr>
-    <tr>
+   </tr>
+   
+   <tr>
     <td align="center"><a href="https://github.com/abhishek2chikun"><img src="https://avatars.githubusercontent.com/u/70378339?v=4" width="100px;" alt=""/><br /><sub><b> Abhishek Panigrahi </b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/PadminiRai"><img src="https://avatars.githubusercontent.com/u/59466080?v=4" width="100px;" alt=""/><br /><sub><b> Padmini Rai
  </b></sub></a><br />💻</a></td>
@@ -262,6 +265,7 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
     <td align="center"><a href="https://github.com/ayushi424"><img src="https://avatars.githubusercontent.com/u/68391974?v=4" width="100px;" alt=""/><br /><sub><b> Ayushi Shrivastava</b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/theanshulcode"><img src="https://avatars.githubusercontent.com/u/77589822?v=4" width="100px;" alt=""/><br /><sub><b> Anshul Srivastava </b></sub></a><br />💻</a></td>
   </tr>
+  
   <tr>
     <td align="center"><a href="https://github.com/hr1shu"><img src="https://avatars.githubusercontent.com/u/57145318?v=4" width="100px;" alt=""/><br /><sub><b> RISHAV KUMAR
  </b></sub></a><br />💻</a></td>
@@ -270,9 +274,10 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
     <td align="center"><a href="https://github.com/Jagannath8"><img src="https://avatars.githubusercontent.com/u/64650848?v=4" width="100px;" alt=""/><br /><sub><b> Jagannath8 </b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/harshita9621"><img src="https://avatars.githubusercontent.com/u/57454733?v=4" width="100px;" alt=""/><br /><sub><b> Harshita Nayak </b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/ayushgoyal9991"><img src="https://avatars.githubusercontent.com/u/48384864?v=4" width="100px;" alt=""/><br /><sub><b> ayushgoyal9991 </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/SurajPawarstar"><img src="https://avatars.githubusercontent.com/u/72244495?v=4" width="100px;" alt=""/><br /><sub><b> SurajPawarstar </b></sub></a><br />💻</a></td>
   </tr>
+  
   <tr>
-  <td align="center"><a href="https://github.com/SurajPawarstar"><img src="https://avatars.githubusercontent.com/u/72244495?v=4" width="100px;" alt=""/><br /><sub><b> SurajPawarstar </b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/Sumit11081996"><img src="https://avatars.githubusercontent.com/u/68699320?v=4" width="100px;" alt=""/><br /><sub><b> Sumit11081996 </b></sub></a><br />💻</a></td>
         <td align="center"><a href="https://github.com/tanvi355"><img src="https://avatars.githubusercontent.com/u/56465105?v=4" width="100px;" alt=""/><br /><sub><b> Tanvi Bugdani </b></sub></a><br />💻</a></td>
     <td align="center"><a href="https://github.com/suy1968"><img src="https://avatars.githubusercontent.com/u/72243026?v=4" width="100px;" alt=""/><br /><sub><b>Suyash Singh
@@ -282,6 +287,7 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
     <td align="center"><a href="https://github.com/NEERAJAP2001"><img src="https://avatars.githubusercontent.com/u/65017645?v=4" width="100px;" alt=""/><br /><sub><b> Neeraj Ap
  </b></sub></a><br />💻</a></td>
  </tr>
+ 
   <tr>
      <td align="center"><a href="https://github.com/queenish001"><img src="https://avatars.githubusercontent.com/u/77614377?v=4" width="100px;" alt=""/><br /><sub><b> Nishi </b></sub></a><br />💻</a></td>
         <td align="center"><a href="https://github.com/shivani6320"><img src="https://avatars.githubusercontent.com/u/63535949?v=4" width="100px;" alt=""/><br /><sub><b> shivani rana </b></sub></a><br />💻</a></td>
