@@ -156,6 +156,7 @@ The six major areas of data science include the following:
 <!-- Projects start -->
 | Content List | 
  | --------------- | 
+| [Basics of Power Bi](Basics%20of%20Power%20Bi) |
 | [Basics of the Python](Basics%20of%20the%20Python) |
 | [Bitcoin Price Predictor](Bitcoin%20Price%20Predictor) |
 | [COVID_19-DATA-ANALYSIS](COVID_19-DATA-ANALYSIS) |
@@ -163,6 +164,7 @@ The six major areas of data science include the following:
 | [Classification Algorithms](Classification%20Algorithms) |
 | [Covid19 forecasting with prophet](Covid19%20forecasting%20with%20prophet) |
 | [Customer Segmentation using Machine Learning](Customer%20Segmentation%20using%20Machine%20Learning) |
+| [Data Cleaning Techniques](Data%20Cleaning%20Techniques) |
 | [Different types of Clustering](Different%20types%20of%20Clustering) |
 | [Different types of feature selection techniques](Different%20types%20of%20feature%20selection%20techniques) |
 | [Different_types_of_scaling_Method](Different_types_of_scaling_Method) |
@@ -172,6 +174,7 @@ The six major areas of data science include the following:
 | [Extract_Text_from_PDF_using_Python](Extract_Text_from_PDF_using_Python) |
 | [File of SQL Commands](File%20of%20SQL%20Commands) |
 | [Flight_delay_prediction_project](Flight_delay_prediction_project) |
+| [GUI-JARVIS](GUI-JARVIS) |
 | [Handwritten Equation Solver using CNN](Handwritten%20Equation%20Solver%20using%20CNN) |
 | [Medical Charges for Smokers and Non-smoker](Medical%20Charges%20for%20Smokers%20and%20Non-smoker) |
 | [Meteorite Landing Data Analysis](Meteorite%20Landing%20Data%20Analysis) |
@@ -182,6 +185,7 @@ The six major areas of data science include the following:
 | [Optical character recognition (OCR)](Optical%20character%20recognition%20(OCR)) |
 | [Plant Seedlings Classification](Plant%20Seedlings%20Classification) |
 | [Sentiment analysis for depression based on social media posts](Sentiment%20analysis%20for%20depression%20based%20on%20social%20media%20posts) |
+| [Speech_Emotion_Recognition](Speech_Emotion_Recognition) |
 | [Sports Analytics Project](Sports%20Analytics%20Project) |
 | [Time-Series LSTM Model](Time-Series%20LSTM%20Model) |
 | [Unique Chatbot](Unique%20Chatbot) |
