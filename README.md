@@ -134,7 +134,7 @@ The six major areas of data science include the following:
 * Computing with data. The biggest thing that all data science projects have in common is the necessity to use tools and software to analyze the involved algorithms and statistics, because the size of the pool of information they are working with is so massive.
 * Theory. Data science theory is an evolving and sophisticated professional arena with countless applications.
 * Tool evaluation. There are many tools available for data scientists to use to manipulate and study huge quantities of data, and it's important to always evaluate their effectiveness and keep trying new ones as they become available.
-=======
+
 ## summary 
 
 ## useful urls
@@ -145,20 +145,152 @@ The six major areas of data science include the following:
 
 * https://www.greatlearning.in/great-lakes-pgpdsba?&utm_source=Google&utm_medium=Search&utm_campaign=6Cities_Exact_Data_Science_Search_New_DS&adgroup_id=101317851589&campaign_id=10174480218&Keyword=data%20scientist&placement=&utm_content=c&gclid=CjwKCAjwn6GGBhADEiwAruUcKqPCvPIk1X_5mVRXj5prdpSIULnd40QgTB4kChfiFgAL1kDErGeLHRoCapUQAvD_BwE
 
+
+## Get Started
+
+### This repo shows a good collection of Machine learning with python and data science with algorithms,projects,explanations from basic to advance level.
+### It has topics based on machine learning, deep learning, sql, natural language proccessing, object detection, classification, recommendation system,chatbots and much more.
+
+## Take a look at existing projects 
+
+<!-- Projects start -->
+| Content List | 
+ | --------------- | 
+| [Basics of the Python](Basics%20of%20the%20Python) |
+| [Bitcoin Price Predictor](Bitcoin%20Price%20Predictor) |
+| [COVID_19-DATA-ANALYSIS](COVID_19-DATA-ANALYSIS) |
+| [Cheat Sheets](Cheat%20Sheets) |
+| [Classification Algorithms](Classification%20Algorithms) |
+| [Covid19 forecasting with prophet](Covid19%20forecasting%20with%20prophet) |
+| [Customer Segmentation using Machine Learning](Customer%20Segmentation%20using%20Machine%20Learning) |
+| [Different types of Clustering](Different%20types%20of%20Clustering) |
+| [Different types of feature selection techniques](Different%20types%20of%20feature%20selection%20techniques) |
+| [Different_types_of_scaling_Method](Different_types_of_scaling_Method) |
+| [Email Classifier](Email%20Classifier) |
+| [Emotion Recognition Based on NLP](Emotion%20Recognition%20Based%20on%20NLP) |
+| [Explaination and Example for P value with code](Explaination%20and%20Example%20for%20P%20value%20with%20code) |
+| [Extract_Text_from_PDF_using_Python](Extract_Text_from_PDF_using_Python) |
+| [File of SQL Commands](File%20of%20SQL%20Commands) |
+| [Flight_delay_prediction_project](Flight_delay_prediction_project) |
+| [Handwritten Equation Solver using CNN](Handwritten%20Equation%20Solver%20using%20CNN) |
+| [Medical Charges for Smokers and Non-smoker](Medical%20Charges%20for%20Smokers%20and%20Non-smoker) |
+| [Meteorite Landing Data Analysis](Meteorite%20Landing%20Data%20Analysis) |
+| [Movie-Recommendation-System](Movie-Recommendation-System) |
+| [NumPy - Basics](NumPy%20-%20Basics) |
+| [Object Detection](Object%20Detection) |
+| [Ola Bike Ride Request Demand Forecast](Ola%20Bike%20Ride%20Request%20Demand%20Forecast) |
+| [Optical character recognition (OCR)](Optical%20character%20recognition%20(OCR)) |
+| [Plant Seedlings Classification](Plant%20Seedlings%20Classification) |
+| [Sentiment analysis for depression based on social media posts](Sentiment%20analysis%20for%20depression%20based%20on%20social%20media%20posts) |
+| [Sports Analytics Project](Sports%20Analytics%20Project) |
+| [Time-Series LSTM Model](Time-Series%20LSTM%20Model) |
+| [Unique Chatbot](Unique%20Chatbot) |
+| [Various Plots using Matplot,Seaborn,Pandas](Various%20Plots%20using%20Matplot%2CSeaborn%2CPandas) |
+| [Weather Prediction](Weather%20Prediction) |
+| [XgBoost_Algorithm](XgBoost_Algorithm) |
+| [recommendation_system](recommendation_system) |
+| [Beautiful Soup.ipynb](Beautiful%20Soup.ipynb) |
+| [Ensemble learning.docx](Ensemble%20learning.docx) |
+| [Ensemble-Learning (Stacking)](Ensemble-Learning%20(Stacking)) |
+| [Machine Hack -1.ipynb](Machine%20Hack%20-1.ipynb) |
+| [Sql](Sql) |
+| [Statistics- Basics.ipynb](Statistics-%20Basics.ipynb) |
+| [Test Task_NIket.ipynb](Test%20Task_NIket.ipynb) |
+| [Various_Plots_in_Matplotlib.ipynb](Various_Plots_in_Matplotlib.ipynb) |
+| [Visualization  with Seaborn & Matplotlib.ipynb](Visualization%20%20with%20Seaborn%20%26%20Matplotlib.ipynb) |
+| [buyer_s_time234.ipynb](buyer_s_time234.ipynb) |
+<!-- Projects end -->
+
+### Note:
+* Above project list will be scheduled automatically,whenever new projects add to the repo it will add in above table.
+
+## 📖 Code Of Conduct:
+
+You can find our Code of Conduct [here](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/CODE_OF_CONDUCT.md).
+
+## 📝 License  
+
+This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
+
+
+
 ## Have a look 
  
-* Give repositary a star 🌟 if you like the content
+* Give it a 🌟 if you ❤ this project.
  <img src="https://user-images.githubusercontent.com/74819092/117547585-fe477b80-b04d-11eb-9e03-0747dea1b88a.png" width=100>
+ 
 * Take a look at the Existing Issues.<br>
 * Create your own Issues, If you have new idea not listed in project.<br>
 * Wait for the Issue to be assigned to you.<br>
 * Fork the repository<br>
+
 <img src="https://user-images.githubusercontent.com/74819092/117547550-c8a29280-b04d-11eb-9e6b-d0f84d49e34e.png" width=100>
+
 * Clone the repository using-<br>
 
 ``` git clone https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance- ```
 
-## Contributing Guidelines
+## ⚙️ Contribution Guidelines 
 - Have a look at [Contibuting Guidelines](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/CONTRIBUTING_GUIDELINES.md)
 
+
+## Some awesome Contributors ✨
+
+<table>
+ 
+  <tr>
+  <td align="center"><a href="https://github.com/Niketkumardheeryan"><img src="https://avatars.githubusercontent.com/u/52290648?v=4" width="100px;" alt=""/><br /><sub><b>Niket kumar Dheeryan (Author)</b></sub></a><br />💻</a></td>
+  </tr>
+  
+  <tr>
+  <td align="center"><a href="https://github.com/abhisheks008"><img src="https://avatars.githubusercontent.com/u/68724349?v=4" width="100px;" alt=""/><br /><sub><b> Abhishek Sharma </b></sub></a><br />💻</a></td>
+  <td align="center"><a href="https://github.com/Sakalya100"><img src="https://avatars.githubusercontent.com/u/70064084?v=4" width="100px;" alt=""/><br /><sub><b>Sakalya100
+</b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/kaustavr19"><img src="https://avatars.githubusercontent.com/u/54073521?v=4" width="100px;" alt=""/><br /><sub><b>Kaustav Roy
+</b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/Soumayan-pal01"><img src="https://avatars.githubusercontent.com/u/66107748?v=4" width="100px;" alt=""/><br /><sub><b> Soumayan Pal </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/Komal-99"><img src="https://avatars.githubusercontent.com/u/74819092?v=4" width="100px;" alt=""/><br /><sub><b> Komal Gupta
+ </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/manuvarghese0603"><img src="https://avatars.githubusercontent.com/u/58263137?v=4" width="100px;" alt=""/><br /><sub><b> Manu Varghese </b></sub></a><br />💻</a></td>
+   </tr>
+   
+   <tr>
+    <td align="center"><a href="https://github.com/abhishek2chikun"><img src="https://avatars.githubusercontent.com/u/70378339?v=4" width="100px;" alt=""/><br /><sub><b> Abhishek Panigrahi </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/PadminiRai"><img src="https://avatars.githubusercontent.com/u/59466080?v=4" width="100px;" alt=""/><br /><sub><b> Padmini Rai
+ </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/psyduck1203"><img src="https://avatars.githubusercontent.com/u/58680590?v=4" width="100px;" alt=""/><br /><sub><b> psyduck1203
+ </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/Rutikab12"><img src="https://avatars.githubusercontent.com/u/71027989?v=4" width="100px;" alt=""/><br /><sub><b> Rutik Bhoyar
+ </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/ayushi424"><img src="https://avatars.githubusercontent.com/u/68391974?v=4" width="100px;" alt=""/><br /><sub><b> Ayushi Shrivastava</b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/theanshulcode"><img src="https://avatars.githubusercontent.com/u/77589822?v=4" width="100px;" alt=""/><br /><sub><b> Anshul Srivastava </b></sub></a><br />💻</a></td>
+  </tr>
+  
+  <tr>
+    <td align="center"><a href="https://github.com/hr1shu"><img src="https://avatars.githubusercontent.com/u/57145318?v=4" width="100px;" alt=""/><br /><sub><b> RISHAV KUMAR
+ </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/Megha0606"><img src="https://avatars.githubusercontent.com/u/69664057?v=4" width="100px;" alt=""/><br /><sub><b> Megha0606
+ </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/Jagannath8"><img src="https://avatars.githubusercontent.com/u/64650848?v=4" width="100px;" alt=""/><br /><sub><b> Jagannath8 </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/harshita9621"><img src="https://avatars.githubusercontent.com/u/57454733?v=4" width="100px;" alt=""/><br /><sub><b> Harshita Nayak </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/ayushgoyal9991"><img src="https://avatars.githubusercontent.com/u/48384864?v=4" width="100px;" alt=""/><br /><sub><b> ayushgoyal9991 </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/SurajPawarstar"><img src="https://avatars.githubusercontent.com/u/72244495?v=4" width="100px;" alt=""/><br /><sub><b> SurajPawarstar </b></sub></a><br />💻</a></td>
+  </tr>
+  
+  <tr>
+    <td align="center"><a href="https://github.com/Sumit11081996"><img src="https://avatars.githubusercontent.com/u/68699320?v=4" width="100px;" alt=""/><br /><sub><b> Sumit11081996 </b></sub></a><br />💻</a></td>
+        <td align="center"><a href="https://github.com/tanvi355"><img src="https://avatars.githubusercontent.com/u/56465105?v=4" width="100px;" alt=""/><br /><sub><b> Tanvi Bugdani </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/suy1968"><img src="https://avatars.githubusercontent.com/u/72243026?v=4" width="100px;" alt=""/><br /><sub><b>Suyash Singh
+ </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/abhinav-bhardwaj"><img src="https://avatars.githubusercontent.com/u/35636061?v=4" width="100px;" alt=""/><br /><sub><b> Abhinav Dubey </b></sub></a><br />💻</a></td>
+        <td align="center"><a href="https://github.com/nisha331"><img src="https://avatars.githubusercontent.com/u/76838660?v=4" width="100px;" alt=""/><br /><sub><b> Nisha Yadav </b></sub></a><br />💻</a></td>
+    <td align="center"><a href="https://github.com/NEERAJAP2001"><img src="https://avatars.githubusercontent.com/u/65017645?v=4" width="100px;" alt=""/><br /><sub><b> Neeraj Ap
+ </b></sub></a><br />💻</a></td>
+ </tr>
+ 
+  <tr>
+     <td align="center"><a href="https://github.com/queenish001"><img src="https://avatars.githubusercontent.com/u/77614377?v=4" width="100px;" alt=""/><br /><sub><b> Nishi </b></sub></a><br />💻</a></td>
+        <td align="center"><a href="https://github.com/shivani6320"><img src="https://avatars.githubusercontent.com/u/63535949?v=4" width="100px;" alt=""/><br /><sub><b> shivani rana </b></sub></a><br />💻</a></td>
+  </tr>
+</table>
 
