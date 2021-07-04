@@ -168,6 +168,7 @@ The six major areas of data science include the following:
 | [Different types of Clustering](Different%20types%20of%20Clustering) |
 | [Different types of feature selection techniques](Different%20types%20of%20feature%20selection%20techniques) |
 | [Different_types_of_scaling_Method](Different_types_of_scaling_Method) |
+| [EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main](EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main) |
 | [Email Classifier](Email%20Classifier) |
 | [Emotion Recognition Based on NLP](Emotion%20Recognition%20Based%20on%20NLP) |
 | [Explaination and Example for P value with code](Explaination%20and%20Example%20for%20P%20value%20with%20code) |
@@ -176,6 +177,7 @@ The six major areas of data science include the following:
 | [Flight_delay_prediction_project](Flight_delay_prediction_project) |
 | [GUI-JARVIS](GUI-JARVIS) |
 | [Handwritten Equation Solver using CNN](Handwritten%20Equation%20Solver%20using%20CNN) |
+| [Heart_Predection](Heart_Predection) |
 | [Medical Charges for Smokers and Non-smoker](Medical%20Charges%20for%20Smokers%20and%20Non-smoker) |
 | [Meteorite Landing Data Analysis](Meteorite%20Landing%20Data%20Analysis) |
 | [Movie-Recommendation-System](Movie-Recommendation-System) |
