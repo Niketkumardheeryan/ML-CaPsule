@@ -1,0 +1,73 @@
+{
+  "id": "78e76dae-1e2d-4b54-aa85-e4c98274a46e",
+  "name": "HospitalPune",
+  "auto": true,
+  "contexts": [
+    "hospitalpune"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "details",
+          "lifespan": 1
+        },
+        {
+          "name": "HospitalPune-followup",
+          "lifespan": 7
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "options": [
+                    {
+                      "text": "Jupiter Hospital"
+                    },
+                    {
+                      "text": "Sahyadri Hospital"
+                    },
+                    {
+                      "text": "Global Hospital"
+                    },
+                    {
+                      "text": "Deenanath Mangeshkar Hospital and Research Center"
+                    }
+                  ],
+                  "type": "chips"
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
