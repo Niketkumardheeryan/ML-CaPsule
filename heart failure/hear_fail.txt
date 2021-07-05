@@ -1,0 +1,723 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n",
+    "heart= pd.read_csv('heart_failure.csv')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>age</th>\n",
+       "      <th>anaemia</th>\n",
+       "      <th>creatinine_phosphokinase</th>\n",
+       "      <th>diabetes</th>\n",
+       "      <th>ejection_fraction</th>\n",
+       "      <th>high_blood_pressure</th>\n",
+       "      <th>platelets</th>\n",
+       "      <th>serum_creatinine</th>\n",
+       "      <th>serum_sodium</th>\n",
+       "      <th>sex</th>\n",
+       "      <th>smoking</th>\n",
+       "      <th>time</th>\n",
+       "      <th>DEATH_EVENT</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>75.0</td>\n",
+       "      <td>0</td>\n",
+       "      <td>582</td>\n",
+       "      <td>0</td>\n",
+       "      <td>20</td>\n",
+       "      <td>1</td>\n",
+       "      <td>265000.00</td>\n",
+       "      <td>1.9</td>\n",
+       "      <td>130</td>\n",
+       "      <td>1</td>\n",
+       "      <td>0</td>\n",
+       "      <td>4</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>55.0</td>\n",
+       "      <td>0</td>\n",
+       "      <td>7861</td>\n",
+       "      <td>0</td>\n",
+       "      <td>38</td>\n",
+       "      <td>0</td>\n",
+       "      <td>263358.03</td>\n",
+       "      <td>1.1</td>\n",
+       "      <td>136</td>\n",
+       "      <td>1</td>\n",
+       "      <td>0</td>\n",
+       "      <td>6</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>65.0</td>\n",
+       "      <td>0</td>\n",
+       "      <td>146</td>\n",
+       "      <td>0</td>\n",
+       "      <td>20</td>\n",
+       "      <td>0</td>\n",
+       "      <td>162000.00</td>\n",
+       "      <td>1.3</td>\n",
+       "      <td>129</td>\n",
+       "      <td>1</td>\n",
+       "      <td>1</td>\n",
+       "      <td>7</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>50.0</td>\n",
+       "      <td>1</td>\n",
+       "      <td>111</td>\n",
+       "      <td>0</td>\n",
+       "      <td>20</td>\n",
+       "      <td>0</td>\n",
+       "      <td>210000.00</td>\n",
+       "      <td>1.9</td>\n",
+       "      <td>137</td>\n",
+       "      <td>1</td>\n",
+       "      <td>0</td>\n",
+       "      <td>7</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>65.0</td>\n",
+       "      <td>1</td>\n",
+       "      <td>160</td>\n",
+       "      <td>1</td>\n",
+       "      <td>20</td>\n",
+       "      <td>0</td>\n",
+       "      <td>327000.00</td>\n",
+       "      <td>2.7</td>\n",
+       "      <td>116</td>\n",
+       "      <td>0</td>\n",
+       "      <td>0</td>\n",
+       "      <td>8</td>\n",
+       "      <td>1</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "    age  anaemia  creatinine_phosphokinase  diabetes  ejection_fraction  \\\n",
+       "0  75.0        0                       582         0                 20   \n",
+       "1  55.0        0                      7861         0                 38   \n",
+       "2  65.0        0                       146         0                 20   \n",
+       "3  50.0        1                       111         0                 20   \n",
+       "4  65.0        1                       160         1                 20   \n",
+       "\n",
+       "   high_blood_pressure  platelets  serum_creatinine  serum_sodium  sex  \\\n",
+       "0                    1  265000.00               1.9           130    1   \n",
+       "1                    0  263358.03               1.1           136    1   \n",
+       "2                    0  162000.00               1.3           129    1   \n",
+       "3                    0  210000.00               1.9           137    1   \n",
+       "4                    0  327000.00               2.7           116    0   \n",
+       "\n",
+       "   smoking  time  DEATH_EVENT  \n",
+       "0        0     4            1  \n",
+       "1        0     6            1  \n",
+       "2        1     7            1  \n",
+       "3        0     7            1  \n",
+       "4        0     8            1  "
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "heart.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "heart.dropna(inplace=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0    203\n",
+       "1     96\n",
+       "Name: DEATH_EVENT, dtype: int64"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "heart['DEATH_EVENT'].value_counts()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>age</th>\n",
+       "      <th>anaemia</th>\n",
+       "      <th>creatinine_phosphokinase</th>\n",
+       "      <th>diabetes</th>\n",
+       "      <th>ejection_fraction</th>\n",
+       "      <th>high_blood_pressure</th>\n",
+       "      <th>platelets</th>\n",
+       "      <th>serum_creatinine</th>\n",
+       "      <th>serum_sodium</th>\n",
+       "      <th>sex</th>\n",
+       "      <th>smoking</th>\n",
+       "      <th>time</th>\n",
+       "      <th>DEATH_EVENT</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>count</th>\n",
+       "      <td>299.000000</td>\n",
+       "      <td>299.000000</td>\n",
+       "      <td>299.000000</td>\n",
+       "      <td>299.000000</td>\n",
+       "      <td>299.000000</td>\n",
+       "      <td>299.000000</td>\n",
+       "      <td>299.000000</td>\n",
+       "      <td>299.00000</td>\n",
+       "      <td>299.000000</td>\n",
+       "      <td>299.000000</td>\n",
+       "      <td>299.00000</td>\n",
+       "      <td>299.000000</td>\n",
+       "      <td>299.00000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>mean</th>\n",
+       "      <td>60.833893</td>\n",
+       "      <td>0.431438</td>\n",
+       "      <td>581.839465</td>\n",
+       "      <td>0.418060</td>\n",
+       "      <td>38.083612</td>\n",
+       "      <td>0.351171</td>\n",
+       "      <td>263358.029264</td>\n",
+       "      <td>1.39388</td>\n",
+       "      <td>136.625418</td>\n",
+       "      <td>0.648829</td>\n",
+       "      <td>0.32107</td>\n",
+       "      <td>130.260870</td>\n",
+       "      <td>0.32107</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>std</th>\n",
+       "      <td>11.894809</td>\n",
+       "      <td>0.496107</td>\n",
+       "      <td>970.287881</td>\n",
+       "      <td>0.494067</td>\n",
+       "      <td>11.834841</td>\n",
+       "      <td>0.478136</td>\n",
+       "      <td>97804.236869</td>\n",
+       "      <td>1.03451</td>\n",
+       "      <td>4.412477</td>\n",
+       "      <td>0.478136</td>\n",
+       "      <td>0.46767</td>\n",
+       "      <td>77.614208</td>\n",
+       "      <td>0.46767</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>min</th>\n",
+       "      <td>40.000000</td>\n",
+       "      <td>0.000000</td>\n",
+       "      <td>23.000000</td>\n",
+       "      <td>0.000000</td>\n",
+       "      <td>14.000000</td>\n",
+       "      <td>0.000000</td>\n",
+       "      <td>25100.000000</td>\n",
+       "      <td>0.50000</td>\n",
+       "      <td>113.000000</td>\n",
+       "      <td>0.000000</td>\n",
+       "      <td>0.00000</td>\n",
+       "      <td>4.000000</td>\n",
+       "      <td>0.00000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>25%</th>\n",
+       "      <td>51.000000</td>\n",
+       "      <td>0.000000</td>\n",
+       "      <td>116.500000</td>\n",
+       "      <td>0.000000</td>\n",
+       "      <td>30.000000</td>\n",
+       "      <td>0.000000</td>\n",
+       "      <td>212500.000000</td>\n",
+       "      <td>0.90000</td>\n",
+       "      <td>134.000000</td>\n",
+       "      <td>0.000000</td>\n",
+       "      <td>0.00000</td>\n",
+       "      <td>73.000000</td>\n",
+       "      <td>0.00000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>50%</th>\n",
+       "      <td>60.000000</td>\n",
+       "      <td>0.000000</td>\n",
+       "      <td>250.000000</td>\n",
+       "      <td>0.000000</td>\n",
+       "      <td>38.000000</td>\n",
+       "      <td>0.000000</td>\n",
+       "      <td>262000.000000</td>\n",
+       "      <td>1.10000</td>\n",
+       "      <td>137.000000</td>\n",
+       "      <td>1.000000</td>\n",
+       "      <td>0.00000</td>\n",
+       "      <td>115.000000</td>\n",
+       "      <td>0.00000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>75%</th>\n",
+       "      <td>70.000000</td>\n",
+       "      <td>1.000000</td>\n",
+       "      <td>582.000000</td>\n",
+       "      <td>1.000000</td>\n",
+       "      <td>45.000000</td>\n",
+       "      <td>1.000000</td>\n",
+       "      <td>303500.000000</td>\n",
+       "      <td>1.40000</td>\n",
+       "      <td>140.000000</td>\n",
+       "      <td>1.000000</td>\n",
+       "      <td>1.00000</td>\n",
+       "      <td>203.000000</td>\n",
+       "      <td>1.00000</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>max</th>\n",
+       "      <td>95.000000</td>\n",
+       "      <td>1.000000</td>\n",
+       "      <td>7861.000000</td>\n",
+       "      <td>1.000000</td>\n",
+       "      <td>80.000000</td>\n",
+       "      <td>1.000000</td>\n",
+       "      <td>850000.000000</td>\n",
+       "      <td>9.40000</td>\n",
+       "      <td>148.000000</td>\n",
+       "      <td>1.000000</td>\n",
+       "      <td>1.00000</td>\n",
+       "      <td>285.000000</td>\n",
+       "      <td>1.00000</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "              age     anaemia  creatinine_phosphokinase    diabetes  \\\n",
+       "count  299.000000  299.000000                299.000000  299.000000   \n",
+       "mean    60.833893    0.431438                581.839465    0.418060   \n",
+       "std     11.894809    0.496107                970.287881    0.494067   \n",
+       "min     40.000000    0.000000                 23.000000    0.000000   \n",
+       "25%     51.000000    0.000000                116.500000    0.000000   \n",
+       "50%     60.000000    0.000000                250.000000    0.000000   \n",
+       "75%     70.000000    1.000000                582.000000    1.000000   \n",
+       "max     95.000000    1.000000               7861.000000    1.000000   \n",
+       "\n",
+       "       ejection_fraction  high_blood_pressure      platelets  \\\n",
+       "count         299.000000           299.000000     299.000000   \n",
+       "mean           38.083612             0.351171  263358.029264   \n",
+       "std            11.834841             0.478136   97804.236869   \n",
+       "min            14.000000             0.000000   25100.000000   \n",
+       "25%            30.000000             0.000000  212500.000000   \n",
+       "50%            38.000000             0.000000  262000.000000   \n",
+       "75%            45.000000             1.000000  303500.000000   \n",
+       "max            80.000000             1.000000  850000.000000   \n",
+       "\n",
+       "       serum_creatinine  serum_sodium         sex    smoking        time  \\\n",
+       "count         299.00000    299.000000  299.000000  299.00000  299.000000   \n",
+       "mean            1.39388    136.625418    0.648829    0.32107  130.260870   \n",
+       "std             1.03451      4.412477    0.478136    0.46767   77.614208   \n",
+       "min             0.50000    113.000000    0.000000    0.00000    4.000000   \n",
+       "25%             0.90000    134.000000    0.000000    0.00000   73.000000   \n",
+       "50%             1.10000    137.000000    1.000000    0.00000  115.000000   \n",
+       "75%             1.40000    140.000000    1.000000    1.00000  203.000000   \n",
+       "max             9.40000    148.000000    1.000000    1.00000  285.000000   \n",
+       "\n",
+       "       DEATH_EVENT  \n",
+       "count    299.00000  \n",
+       "mean       0.32107  \n",
+       "std        0.46767  \n",
+       "min        0.00000  \n",
+       "25%        0.00000  \n",
+       "50%        0.00000  \n",
+       "75%        1.00000  \n",
+       "max        1.00000  "
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "heart.describe()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Data Analysis"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'pandas.core.frame.DataFrame'>\n",
+      "Int64Index: 299 entries, 0 to 298\n",
+      "Data columns (total 13 columns):\n",
+      " #   Column                    Non-Null Count  Dtype  \n",
+      "---  ------                    --------------  -----  \n",
+      " 0   age                       299 non-null    float64\n",
+      " 1   anaemia                   299 non-null    int64  \n",
+      " 2   creatinine_phosphokinase  299 non-null    int64  \n",
+      " 3   diabetes                  299 non-null    int64  \n",
+      " 4   ejection_fraction         299 non-null    int64  \n",
+      " 5   high_blood_pressure       299 non-null    int64  \n",
+      " 6   platelets                 299 non-null    float64\n",
+      " 7   serum_creatinine          299 non-null    float64\n",
+      " 8   serum_sodium              299 non-null    int64  \n",
+      " 9   sex                       299 non-null    int64  \n",
+      " 10  smoking                   299 non-null    int64  \n",
+      " 11  time                      299 non-null    int64  \n",
+      " 12  DEATH_EVENT               299 non-null    int64  \n",
+      "dtypes: float64(3), int64(10)\n",
+      "memory usage: 32.7 KB\n"
+     ]
+    }
+   ],
+   "source": [
+    "heart.info()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Target variable with value 0 : 203\n",
+      "Target variable with value 1 : 96\n"
+     ]
+    },
+    {
+     "data": {
+      "image/png": "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\n",
+      "text/plain": [
+       "<Figure size 432x288 with 1 Axes>"
+      ]
+     },
+     "metadata": {
+      "needs_background": "light"
+     },
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "import seaborn as sns\n",
+    "sns.countplot(x = 'DEATH_EVENT',data = heart)\n",
+    "print(\"Target variable with value 0 : \"+ format(len(heart.loc[heart['DEATH_EVENT']==0])))\n",
+    "print(\"Target variable with value 1 : \"+ format(len(heart.loc[heart['DEATH_EVENT']==1])))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Model Creation"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "X = heart.loc[:, heart.columns != 'DEATH_EVENT']\n",
+    "Y = heart['DEATH_EVENT'].values"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from imblearn.over_sampling import RandomOverSampler\n",
+    "oversample=RandomOverSampler(sampling_strategy='minority')\n",
+    "X, Y = oversample.fit_resample(X, Y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from sklearn.preprocessing import MinMaxScaler\n",
+    "scaler = MinMaxScaler()\n",
+    "X = pd.DataFrame(scaler.fit_transform(X), columns=X.columns)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from sklearn.model_selection import train_test_split\n",
+    "X_train,X_test,Y_train,Y_test=train_test_split(X,Y,test_size=0.30,random_state=0)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.9016393442622951"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "from sklearn import metrics\n",
+    "from sklearn.metrics import confusion_matrix \n",
+    "from sklearn.metrics import classification_report \n",
+    "from sklearn.metrics import accuracy_score \n",
+    "from xgboost import XGBClassifier\n",
+    "from sklearn.linear_model import LogisticRegression\n",
+    "from sklearn.ensemble import RandomForestClassifier\n",
+    "from sklearn.tree import DecisionTreeClassifier \n",
+    "from sklearn.svm import SVC\n",
+    "import lightgbm as lgb\n",
+    "model = lgb.LGBMClassifier()\n",
+    "model.fit(X_train,Y_train)\n",
+    "model.score(X_test,Y_test)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Model File"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['model.pkl']"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import joblib \n",
+    "joblib.dump(model, 'model.pkl',compress=1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Sample prediction for Random Input\n",
+    "import numpy as np\n",
+    "load_model = joblib.load('model.pkl')\n",
+    "values = np.transpose(np.array([[65], [1], [113], [1], [60], [1], [203000], [0.9], [140],[0],[0],[94]]))\n",
+    "values.reshape(1, -1)\n",
+    "predictions = load_model.predict(values)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([0])"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "predictions"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Model Comparison"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def compare(model,classifier_name):\n",
+    "    model.fit(X_train,Y_train)\n",
+    "    predictions = model.predict(X_test)\n",
+    "    print('Accuracy for '+ classifier_name +' : '+format(metrics.accuracy_score(Y_test,predictions)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Accuracy for Random Forest : 0.9016393442622951\n",
+      "Accuracy for Decision Tree : 0.8360655737704918\n",
+      "Accuracy for XGBoost Classifier : 0.8770491803278688\n",
+      "Accuracy for Support Vector : 0.7131147540983607\n",
+      "Accuracy for Logistic Regression : 0.7377049180327869\n"
+     ]
+    }
+   ],
+   "source": [
+    "# List of models\n",
+    "models = [[RandomForestClassifier(), \"Random Forest\"],\n",
+    "[DecisionTreeClassifier(),\"Decision Tree\"],\n",
+    "[XGBClassifier(),\"XGBoost Classifier\"],\n",
+    "[SVC(),\"Support Vector\"],\n",
+    "[LogisticRegression(),\"Logistic Regression\"]]\n",
+    "\n",
+    "for model in models:\n",
+    "    compare(model[0],model[1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
