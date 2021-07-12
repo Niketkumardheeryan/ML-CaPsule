@@ -16,10 +16,13 @@ In this project, you will learn about following :
 	2. Bed Availability
 	3.Appointment Schedular
 	- Output
-		1] ![WhatsApp Image 2021-07-04 at 23 06 39](https://user-images.githubusercontent.com/78480983/124394946-3b16b280-dd1f-11eb-88f0-dddc3b2bdf8d.jpeg)
-		2] ![WhatsApp Image 2021-07-04 at 23 08 04](https://user-images.githubusercontent.com/78480983/124395018-803ae480-dd1f-11eb-89a0-4d17803d9925.jpeg)
-		3] ![WhatsApp Image 2021-07-04 at 23 08 30](https://user-images.githubusercontent.com/78480983/124395045-9a74c280-dd1f-11eb-9992-e7f7ca226211.jpeg)	
-		4] ![WhatsApp Image 2021-07-04 at 23 09 16](https://user-images.githubusercontent.com/78480983/124395070-baa48180-dd1f-11eb-95e0-4b49f9ee0f89.jpeg)
-		5] ![WhatsApp Image 2021-07-04 at 23 09 49](https://user-images.githubusercontent.com/78480983/124395093-d1e36f00-dd1f-11eb-98ad-7119e053039d.jpeg)
-		6] ![WhatsApp Image 2021-07-04 at 23 11 27](https://user-images.githubusercontent.com/78480983/124395114-eaec2000-dd1f-11eb-81b1-62782b76c038.jpeg)
-		7] ![WhatsApp Image 2021-07-04 at 23 12 08](https://user-images.githubusercontent.com/78480983/124395131-00614a00-dd20-11eb-954f-c9f1c0898532.jpeg) 
+![1](https://user-images.githubusercontent.com/78480983/125287730-e84e8380-e33a-11eb-8e94-90fd221eec18.jpeg)
+![2](https://user-images.githubusercontent.com/78480983/125287871-10d67d80-e33b-11eb-8506-4577e7bdedcc.jpeg)
+![7](https://user-images.githubusercontent.com/78480983/125288178-7296e780-e33b-11eb-843c-f8db4987a4a6.jpeg)
+![6](https://user-images.githubusercontent.com/78480983/125288177-71fe5100-e33b-11eb-93c0-605fed162417.jpeg)
+![5](https://user-images.githubusercontent.com/78480983/125288175-71fe5100-e33b-11eb-8809-d5844d9d554f.jpeg)
+![4](https://user-images.githubusercontent.com/78480983/125288170-7165ba80-e33b-11eb-9cd4-90a6dc738e1f.jpeg)
+![3](https://user-images.githubusercontent.com/78480983/125288164-70348d80-e33b-11eb-9c4a-5d458d51ddc2.jpeg)
+
+
+
