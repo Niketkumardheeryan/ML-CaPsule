@@ -1,0 +1,17 @@
+[
+  {
+    "id": "f717f6e5-3054-4f13-a8c4-a03c217520ae",
+    "data": [
+      {
+        "text": "global hospital",
+        "meta": "@punehospital",
+        "alias": "punehospital",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

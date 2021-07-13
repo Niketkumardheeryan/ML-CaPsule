@@ -1,0 +1,40 @@
+{
+  "id": "10016846-bab0-4c28-a7bf-ffc5e9f2afd9",
+  "parentId": "78e76dae-1e2d-4b54-aa85-e4c98274a46e",
+  "rootParentId": "78e76dae-1e2d-4b54-aa85-e4c98274a46e",
+  "name": "HospitalPune - yes",
+  "auto": true,
+  "contexts": [
+    "HospitalPune-followup",
+    "end"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "HospitalPune.HospitalPune-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Thanks for contacting us!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

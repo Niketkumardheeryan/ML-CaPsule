@@ -1,0 +1,121 @@
+{
+  "id": "04a670b5-7d66-4e5f-ad1b-2682aa8efc40",
+  "parentId": "78e76dae-1e2d-4b54-aa85-e4c98274a46e",
+  "rootParentId": "78e76dae-1e2d-4b54-aa85-e4c98274a46e",
+  "name": "HospitalPune - jupiter",
+  "auto": true,
+  "contexts": [
+    "details",
+    "HospitalPune-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "HospitalPune.HospitalPune-custom",
+      "affectedContexts": [
+        {
+          "name": "end",
+          "lifespan": 1
+        }
+      ],
+      "parameters": [
+        {
+          "id": "e69a3a5b-baaa-42c7-a357-4221fd968a76",
+          "name": "punehospital",
+          "required": false,
+          "dataType": "@punehospital",
+          "value": "$punehospital",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Do you want to continued?"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "rawUrl": "https://assets.lybrate.com/img/documents/clinic/logo/ec8c7cf75cf291a5a8c6c34c290e2503/Dr.-Rahul-Bade-Orthopedist-Arthroscopy-Sports-Surgeon-Knee-Replacement-Specialist-Pune-98dde6",
+                  "accessibilityText": "Dialogflow across platforms",
+                  "type": "image"
+                },
+                {
+                  "subtitle": "Jupiter Hospital is a multi-specialty, tertiary care Hospital that lays its foundation on a \u0027Patient first\u0027 ideology.",
+                  "actionLink": "https://www.jupiterhospital.com/",
+                  "type": "info",
+                  "title": "Jupiter Hospital"
+                },
+                {
+                  "options": [
+                    {
+                      "link": "https://www.divcommpunecovid.com/ccsbeddashboard/hsr?d-3677810-p\u003d2",
+                      "text": "Bed Availability "
+                    },
+                    {
+                      "link": "https://www.jupiterhospital.com/",
+                      "text": "More Details"
+                    }
+                  ],
+                  "type": "chips"
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "text": "Yes"
+                    },
+                    {
+                      "text": "No"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

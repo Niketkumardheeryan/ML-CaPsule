@@ -1,0 +1,41 @@
+[
+  {
+    "id": "a16f8639-0530-4be6-afc3-af32bc150d7d",
+    "data": [
+      {
+        "text": "appointment book",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "3cccd54a-466c-4686-bce2-7555b690e309",
+    "data": [
+      {
+        "text": "book for me",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "5d4d1f52-b2db-4b87-8d8e-9ca2ec2201dc",
+    "data": [
+      {
+        "text": "appointment booking",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]
