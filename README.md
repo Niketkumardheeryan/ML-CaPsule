@@ -168,12 +168,14 @@ The six major areas of data science include the following:
 | [Covid19 forecasting with prophet](Covid19%20forecasting%20with%20prophet) |
 | [Customer Segmentation using Machine Learning](Customer%20Segmentation%20using%20Machine%20Learning) |
 | [Data Cleaning Techniques](Data%20Cleaning%20Techniques) |
+| [Data Filling and Cleaning Techniques](Data%20Filling%20and%20Cleaning%20Techniques) |
 | [Different types of Clustering](Different%20types%20of%20Clustering) |
 | [Different types of feature selection techniques](Different%20types%20of%20feature%20selection%20techniques) |
 | [Different_types_of_scaling_Method](Different_types_of_scaling_Method) |
 | [EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main](EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main) |
 | [Email Classifier](Email%20Classifier) |
 | [Emotion Recognition Based on NLP](Emotion%20Recognition%20Based%20on%20NLP) |
+| [Ensemble Methds in ML](Ensemble%20Methds%20in%20ML) |
 | [Explaination and Example for P value with code](Explaination%20and%20Example%20for%20P%20value%20with%20code) |
 | [Extract_Text_from_PDF_using_Python](Extract_Text_from_PDF_using_Python) |
 | [File of SQL Commands](File%20of%20SQL%20Commands) |
@@ -199,14 +201,17 @@ The six major areas of data science include the following:
 | [Unique Chatbot](Unique%20Chatbot) |
 | [Various Plots using Matplot,Seaborn,Pandas](Various%20Plots%20using%20Matplot%2CSeaborn%2CPandas) |
 | [Weather Prediction](Weather%20Prediction) |
+| [Web-Scraping-with-Beautiful-Soup-master](Web-Scraping-with-Beautiful-Soup-master) |
 | [XgBoost_Algorithm](XgBoost_Algorithm) |
 | [ensemble-methods-notebooks-master](ensemble-methods-notebooks-master) |
 | [heart failure](heart%20failure) |
 | [recommendation_system](recommendation_system) |
+| [Analysis_of_Temperature_Rise_in_PMSM.ipynb](Analysis_of_Temperature_Rise_in_PMSM.ipynb) |
 | [Beautiful Soup.ipynb](Beautiful%20Soup.ipynb) |
 | [Ensemble learning.docx](Ensemble%20learning.docx) |
 | [Ensemble-Learning (Stacking)](Ensemble-Learning%20(Stacking)) |
 | [Machine Hack -1.ipynb](Machine%20Hack%20-1.ipynb) |
+| [README.md updated file](README.md%20updated%20file) |
 | [Sql](Sql) |
 | [Statistics- Basics.ipynb](Statistics-%20Basics.ipynb) |
 | [Test Task_NIket.ipynb](Test%20Task_NIket.ipynb) |
