@@ -1,5 +1,7 @@
 # Advance Visualizations
 
+View my notebook on Kaggle: [Click here](https://www.kaggle.com/gauravkumar008/advanced-visualizations)<br>
+
 ### Aim:
 **To make the beginners comfortable with plotly in order to make advanced and interactive visualizations :). This notebooks is not focusing on data analysis, just trying to show how to create plots using different columns**
 
