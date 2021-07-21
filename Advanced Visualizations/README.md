@@ -22,3 +22,6 @@ View my notebook on Kaggle: [Click here](https://www.kaggle.com/gauravkumar008/a
 
  - ### Treemap
 ![Treemap](gifs/treemap.gif)
+
+## Author:
+[Gaurav Kumar](https://github.com/Gaurav1401)
