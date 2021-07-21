@@ -13,3 +13,9 @@ View my notebook on Kaggle: [Click here](https://www.kaggle.com/gauravkumar008/a
  - **```Github``` doesn't support the visualizations of Plotly.**
    - **So, either download the .ipynb notebook and run it on your browser**
    - **Or view it on kaggle. The Kaggle link of the same notebook has been provided at the top :)**
+
+### Output:
+**Here are some of the visualizations that I made:**
+
+ - Density plot
+ !(Images/Density_Plot)
