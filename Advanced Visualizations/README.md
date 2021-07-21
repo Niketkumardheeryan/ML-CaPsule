@@ -17,8 +17,8 @@ View my notebook on Kaggle: [Click here](https://www.kaggle.com/gauravkumar008/a
 ## Output:
 **Here are some of the visualizations that I made:**
 
- - ### Density plot
-![Density_Plot](Images/Density_Plot.png)
+ - ### Scatter plot (With Box and Violin plot)
+![Scatter_Plot](gifs/scatterplot.gif)
 
  - ### Treemap
-![Treemap](Images/Treemap.png)
+![Treemap](gifs/treemap.gif)
