@@ -31,5 +31,3 @@ Dataset can be downloaded from [here](https://www.kaggle.com/ozlerhakan/spam-or-
     Accuracy of testing data: 97.57505773672055
  ``` 
  
-
-<a href="https://github.com/Jagannath8">Jagannath Pal</a>
