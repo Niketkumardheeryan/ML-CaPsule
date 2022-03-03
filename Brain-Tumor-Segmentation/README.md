@@ -13,7 +13,8 @@ The basic forms of data augmentation are used here to diversify the training dat
 
 #### Model Architecture
 The model architecture is depicted in this picture.
-![unet-architecture](https://drive.google.com/file/d/172DZoca6n65g28Wg6gEPY23S8t3STq-6/view?usp=sharing)
+
+![unet-architecture](images/u-net-architecture.png)
 
 #### Model Training
 Kaggle GPU kernel was used for training purposes:
@@ -23,15 +24,16 @@ Kaggle GPU kernel was used for training purposes:
 - `Packages Used Versions` -> Pytorch Version: 1.9.1
 
 >Loss graph:
-![loss-graph](https://drive.google.com/file/d/1B9Po3ko3gbxae6WBlUwgR1FOw1xhU-2A/view?usp=sharing)
+
+![loss-graph](images/lossgraph.png)
 
 #### Results
 Mean Dice Score obtained is: 0.720. 
 
 <br>
 
-![result](https://drive.google.com/file/d/1pyZyk9YU-znocCbhtNpo2g0wTQQQnerU/view?usp=sharing)
+![result](images/download.png)
 
 <br>
 
-![result](https://drive.google.com/file/d/1kBBigUTtQzZIFE8kqZ56OoelwNYzBtda/view?usp=sharing)
+![result](images/download (1).png)
