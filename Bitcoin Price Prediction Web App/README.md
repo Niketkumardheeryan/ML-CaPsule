@@ -39,7 +39,7 @@ Lasso Regression - 99 % accuracy
 
 DEPLOYMENT
 
-StreamLit-Share
+StreamLit-Share = Streamlit turns data scripts into shareable web apps in minutes. All in Python. No front‑end experience required. Streamlit’s open-source app framework is a breeze to get started with. It is very easy to use. One just have to connect with the github repo and start deploying it on streamlit share and you are good to go.
 
 
 LIBRARIES NEEDED
