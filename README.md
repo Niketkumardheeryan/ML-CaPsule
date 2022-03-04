@@ -181,6 +181,7 @@ The six major areas of data science include the following:
 | [Explaination and Example for P value with code](Explaination%20and%20Example%20for%20P%20value%20with%20code) |
 | [Exploratory-data-analysis](Exploratory-data-analysis) |
 | [Extract_Text_from_PDF_using_Python](Extract_Text_from_PDF_using_Python) |
+| [Fake_News_Detection](Fake_News_Detection)|
 | [File of SQL Commands](File%20of%20SQL%20Commands) |
 | [Flight_delay_prediction_project](Flight_delay_prediction_project) |
 | [GUI-JARVIS](GUI-JARVIS) |
