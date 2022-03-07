@@ -1,0 +1,1 @@
+### Multivariate Time Series Forecasting of a random dataset using LSTM. Used the libraries Keras, Pandas and Numpy
