@@ -47,7 +47,26 @@ Dataset:https://www.kaggle.com/aungpyaeap/fish-market
 
 About: We are  taking train:test = 7:3.
 
->Results for best model:
+>Results :
+- R2 score Length1 and Weight linear regression:                   53.565
+
+- R2 score Height and Weight linear regression:                    29.536
+
+- R2 score Width and Weight linear regression:                     76.911
+
+- R2 score Length1,Length2,Length3 and Weight multiple regression: 77.975
+
+- R2 score Width,Length1,Height and Weight multiple regression:    63.085
+
+- R2 score Width,Height and Weight multiple regression:            66.866
+
+- R2 score Using Random Forest Regression for Weight:               80.996
+
+- R2 score Using XGBRegressor for Weight:                           92.750
+
+- R2 score Using DNN for Weight:                                    95.975
+
+>Visualiztion for DNN:
 
 >Cross section length:
 
