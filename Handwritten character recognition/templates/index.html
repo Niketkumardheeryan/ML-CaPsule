@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Handwritten character recognition</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="row">
+    <h2 align="center">Select a photo</h2>
+    <p>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+              <h2 style="color:blue;">{{ message }}</h2>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+    </p>
+    {% if filename %}
+        <div align="center">
+            <img src="{{ url_for('display_image', filename=filename) }}" width="400" height="400">
+        </div>
+    {% endif %}
+    <form method="post" action="/" enctype="multipart/form-data">
+        <dl>
+            <p>
+                <input type="file" name="file" class="form-control" autocomplete="off" required>
+            </p>
+        </dl>
+        <p  align="center">
+            <input type="submit" value="Submit" class="btn btn-info">
+        </p>
+    </form>
+</div>
+</div>
+</body>
+</html>
