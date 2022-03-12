@@ -10,13 +10,13 @@
 - flask
 - html
 - css
-- js
+- java script
 
 ## Steps:
 1. Import libraries
 2. Load data from zip file
 3. Analysis the data
-4. Creat CNN model
+4. Create CNN model
 5. Train the model
 6. Save model as .h5 file
 7. Deploy model using flask
