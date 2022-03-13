@@ -8,6 +8,7 @@
 - numpy
 - pandas
 - flask
+- gunicorn
 - html
 - css
 - java script
@@ -21,6 +22,15 @@
 6. Save model as .h5 file
 7. Deploy model using flask
 
+## Deployment process:
+- Create a Heroku Account
+- Log in using email and password
+- Create a heroku application
+- From deployment method choose connect to github
+- Provide github repository link
+- Wait untill successful building and deploying
+- Open your web application
+
 ## How to get data?
 Download data as zip file from the link below and save it as "A_Z Handwritten Data.zip"
 
@@ -33,3 +43,5 @@ https://handwritten-character-recog.herokuapp.com/
 ![My Image](screenshots/img1.png)
 ![My Image](screenshots/img2.png)
 
+## Demo video:
+https://youtu.be/VuDJ0JwNakQ
