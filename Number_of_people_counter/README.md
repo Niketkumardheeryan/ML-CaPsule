@@ -11,6 +11,7 @@ For more information about **HOG** ,you may visit [HistogramOfOrientedGradients]
 
 **The Output of the project gives the number of humans in the frame.**
 
+![](output.png)
 
 
 
