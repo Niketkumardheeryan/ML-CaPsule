@@ -15,3 +15,5 @@ It stands for Term Frequency — Inverse Document Frequency”. This is a techni
 It is called a “bag” of words, because any information about the order or structure of words in the document is discarded. The model is only concerned with whether known words occur in the document, not where in the document.  <br/>  <br/> 
 
 Unlike, bag-of-words, tf-idf creates a normalized count where each word count is divided by the number of documents this word appears in. It makes it a better model than BoW. 
+
+```python``` ```nltk``` ```WordCloud```
