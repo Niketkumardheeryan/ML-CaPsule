@@ -12,4 +12,4 @@ Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
 ##### 7. Split the dataset into train and test sets
 ##### 8. Perform Supervised Classification 
 
-#### Could achieve 97.3% accuracy using Naive Bayes Classifier 
+### Could achieve 97.3% accuracy using Naive Bayes Classifier 
