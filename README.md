@@ -176,6 +176,7 @@ The six major areas of data science include the following:
 | [Different types of Clustering](Different%20types%20of%20Clustering) |
 | [Different types of feature selection techniques](Different%20types%20of%20feature%20selection%20techniques) |
 | [Different_types_of_scaling_Method](Different_types_of_scaling_Method) |
+| [Internet Speed Test](Internet-Speed-Test) |
 | [EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main](EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main) |
 | [Email Classifier](Email%20Classifier) |
 | [Emotion Recognition Based on NLP](Emotion%20Recognition%20Based%20on%20NLP) |
