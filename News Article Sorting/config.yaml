@@ -1,0 +1,14 @@
+mongodb:
+  database: NewsArticle
+  collection : News_Article
+  mongo_url: "mongodb://localhost:27017/"
+
+logs: 
+  logs_dir: logs
+  general_log: general_log
+  general_log_file: running_log.log
+
+model:
+  model_dir: model
+  model_file: model.pkl
+  tfidf_file: transform.pkl

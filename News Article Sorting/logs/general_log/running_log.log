@@ -1,0 +1,22 @@
+[2022-03-26 11:43:33,445: INFO: news_article_sorting] Server is running
+[2022-03-26 11:43:33,446: INFO: news_article_sorting] Start predicting
+[2022-03-26 11:43:33,470: INFO: _internal]  * Restarting with stat
+[2022-03-26 11:43:34,984: INFO: news_article_sorting] Server is running
+[2022-03-26 11:43:34,984: INFO: news_article_sorting] Start predicting
+[2022-03-26 11:43:34,997: WARNING: _internal]  * Debugger is active!
+[2022-03-26 11:43:35,009: INFO: _internal]  * Debugger PIN: 126-578-785
+[2022-03-26 11:43:35,142: INFO: _internal]  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2022-03-26 11:43:38,696: INFO: news_article_sorting] Home Page
+[2022-03-26 11:43:38,703: INFO: _internal] 127.0.0.1 - - [26/Mar/2022 11:43:38] "GET / HTTP/1.1" 200 -
+[2022-03-26 11:43:38,866: INFO: _internal] 127.0.0.1 - - [26/Mar/2022 11:43:38] "GET /static/style.css HTTP/1.1" 200 -
+[2022-03-26 11:43:38,997: INFO: _internal] 127.0.0.1 - - [26/Mar/2022 11:43:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2022-03-26 11:44:03,355: INFO: news_article_sorting] Submit Page
+[2022-03-26 11:44:03,358: INFO: news_article_sorting] Text: Yogi Adityanath's First Decision In 2nd Term: Free Ration Scheme Extended
+Yogi Adityanath, who led his party to a massive victory, is the first Chief Minister in 37 years to return to power after completing a full term in the state.
+[2022-03-26 11:44:03,395: INFO: news_article_sorting] Database Connection
+[2022-03-26 11:44:03,406: INFO: all_utils] Tokenized Text: ['Yogi', 'Adityanath', "'s", 'First', 'Decision', 'In', '2nd', 'Term', ':', 'Free', 'Ration', 'Scheme', 'Extended', 'Yogi', 'Adityanath', ',', 'who', 'led', 'his', 'party', 'to', 'a', 'massive', 'victory', ',', 'is', 'the', 'first', 'Chief', 'Minister', 'in', '37', 'years', 'to', 'return', 'to', 'power', 'after', 'completing', 'a', 'full', 'term', 'in', 'the', 'state', '.']
+[2022-03-26 11:44:03,419: INFO: all_utils] Preprocessed Text: yogi adityanath 's first decis 2nd term : free ration scheme extend yogi adityanath , led hi parti massiv victori , first chief minist 37 year return power complet full term state .
+[2022-03-26 11:44:03,431: INFO: news_article_sorting] Prediction: ['politics']
+[2022-03-26 11:44:03,431: INFO: news_article_sorting] rendering welcome.html
+[2022-03-26 11:44:03,439: INFO: _internal] 127.0.0.1 - - [26/Mar/2022 11:44:03] "POST /submit HTTP/1.1" 200 -
+[2022-03-26 11:44:03,470: INFO: _internal] 127.0.0.1 - - [26/Mar/2022 11:44:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

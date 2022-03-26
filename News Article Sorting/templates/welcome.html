@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>
+        News Article
+    </title>
+</head>
+<link rel="stylesheet" href="static/style.css">
+
+<body align="center" class="wbody">
+
+    <table align="center" border="20px">
+        <tr>
+            <td>
+                <h2 class="color">News Category</h2>
+            </td>
+        </tr>
+        <tr>
+            {% if score[0] == "business" %}
+            <td>
+                <h1 class="news">business</h1>
+            </td>
+            {% elif score[0] == "entertainment" %}
+            <td>
+                <h1 class="news">entertainment</h1>
+            </td>
+            {% elif score[0] == "politics" %}
+            <td>
+                <h1 class="news">politics</h1>
+            </td>
+            {% elif score[0] == "sport" %}
+            <td>
+                <h1 class="news">sport</h1>
+            </td>
+            {% else %}
+            <td>
+                <h1 class="news">tech</h1>
+            </td>
+            {% endif %}
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+.wbody {
+    margin: 200px;
+    background-color: whitesmoke;
+}
+
+table {
+    align-self: center;
+    width: 300px;
+    height: 200px;
+    border-color:blue;
+}
+
+.color {
+    color: red;
+    font-family: cursive;
+    font-size: medium;
+}
+
+.news {
+    color: red;
+}
+
+h3 {
+    font-family: monospace;
+    font-size: xx-large;
+}
+.submit {
+    background-color: firebrick;
+    color: white;
+    width: 125px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+}
+
+.submit:hover {
+    background-color: white;
+    color: firebrick;
+    width: 125px;
+    border-radius: 10px;
+    height: 45px;
+}
+
+textarea:focus,
+input:focus {
+    color: blue;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text {
+    color: tomato;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: whitesmoke;
+}
+
+textarea{
+    float: left;
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+    resize: none;
+    border: 2px solid red;
+}
+body {
+background-color: lightgreen;
+}
+
+form{
+    margin-left: 200px;
+    margin-right:200px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    form{
+        margin-left: 0px;
+        margin-right:0px;
+    }
+    body {
+        background-color: lightblue;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    form {
+        margin-left: 100px;
+        margin-right:100px;
+    }
+    body {
+        background-color:lightcyan;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    form {
+      margin-left: 150px;
+      margin-right:150px;
+  }
+    body{
+      background-color:lightcoral;
+  }
+}
+    
