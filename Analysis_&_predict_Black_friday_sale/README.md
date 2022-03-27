@@ -29,9 +29,9 @@ Linear Regression model
 Evaluate
 
 
-•	Model that use in code:
+•	Models that use in code:
 
-Linear Regression.
+Linear Regression, Decision Tree.
 
 
 
