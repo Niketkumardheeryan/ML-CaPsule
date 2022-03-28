@@ -1,56 +1,42 @@
-PROJECT TITLE
+## PROJECT TITLE : Birds Species Classification
 
-Birds Species Classification
+#### Aim- To classify the different species of bird
 
-GOAL
-
-Aim- To classify the different species of bird
-
-DESCRIPTION
+#### DESCRIPTION
 
 This is a classification problem where we need to classify the different species of birds. We use Xception Transfer Learning Model.
 
-WHAT I HAD DONE
+#### LINK TO WEBAPP:
 
-1. perfromed exploratory data analysis (EDA) on the given dataset
-2. it starts with loading the dataset and viewing the top 5 rows
-3. we calculate statistical data in the dataset
-4. then comes finding correlation between the features and also finding statistical values related to the dataset
-5. data visualization is done with libraries such as matplotlib and seaborn
-6. finally 3 different algorithms are used to find the best algorithm
-7. also accuracy score of each algorithm is calculated for comparison purpose with other algorithms
+https://share.streamlit.io/shreya024/bird-species-classification-web-app/app.py
 
-LINK TO WEBAPP:
+#### GLANCE AT THE WEBAPP
 
-https://share.streamlit.io/shreyaghosh/birds-species-classification-web-app/main/app.py
+![bird1](https://user-images.githubusercontent.com/72400676/160309740-bf22a5e4-4887-4f08-a514-2deaf984d5e1.JPG)
 
-GLANCE AT THE WEBAPP
+![bird2](https://user-images.githubusercontent.com/72400676/160309748-b9cdc5e7-d2c1-466c-bbdd-7ad3cedeaa45.JPG)
 
-![image](https://user-images.githubusercontent.com/78292851/156793113-3f6d9e91-665e-47b1-a1f6-316aaeeb2aa7.png)
+#### MODELS USED
 
-![image](https://user-images.githubusercontent.com/78292851/156793297-039024d7-d263-4444-9bbb-c05e8a945d47.png)
+Xception Transfer Learning Model - 94.9 % accuracy
 
-MODELS USED
-
-Xception Transfer Learning Model - 94 % accuracy
-
-DEPLOYMENT
+#### DEPLOYMENT
 
 StreamLit-Share = Streamlit turns data scripts into shareable web apps in minutes. All in Python. No front‑end experience required. Streamlit’s open-source app framework is a breeze to get started with. It is very easy to use. One just have to connect with the github repo and start deploying it on streamlit share and you are good to go.
 
-LIBRARIES NEEDED
+#### LIBRARIES NEEDED
 
 1. Numpy
-2. Pandas
-3. Matplotlib
-4. Seaborn
-5. Scikit-Learn
+2. Tensorflow
+3. Keras
+4. Xception
+5. Glob
 6. StreamLit
 
-CONCLUSION
+#### CONCLUSION
 
-We can conclude that our Web App predicts the best with Lasso Regression and gives the most accurate results.
+We can conclude that our Web App classifies bird species with the help of Xception Tranfer Learning library.
 
-CONTRIBUTED BY
+#### CONTRIBUTED BY
 
 Shreya Ghosh
