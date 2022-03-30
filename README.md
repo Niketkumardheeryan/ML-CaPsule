@@ -162,12 +162,14 @@ The six major areas of data science include the following:
 | [Basics of ML and DL](Basics%20of%20ML%20and%20DL) |
 | [Basics of Power Bi](Basics%20of%20Power%20Bi) |
 | [Basics of the Python](Basics%20of%20the%20Python) |
+| [Bitcoin Price Prediction Web App](Bitcoin%20Price%20Prediction%20Web%20App) |
 | [Bitcoin Price Predictor](Bitcoin%20Price%20Predictor) |
 | [COVID_19-DATA-ANALYSIS](COVID_19-DATA-ANALYSIS) |
 | [Cheat Sheets](Cheat%20Sheets) |
 | [Class Imbalance problem](Class%20Imbalance%20problem) |
 | [Classification Algorithms](Classification%20Algorithms) |
 | [Covid19 forecasting with prophet](Covid19%20forecasting%20with%20prophet) |
+| [Covid_Third_Wave_Forecasting](Covid_Third_Wave_Forecasting) |
 | [Customer Segmentation using Machine Learning](Customer%20Segmentation%20using%20Machine%20Learning) |
 | [Data Cleaning Techniques](Data%20Cleaning%20Techniques) |
 | [Data Filling and Cleaning Techniques](Data%20Filling%20and%20Cleaning%20Techniques) |
@@ -181,6 +183,7 @@ The six major areas of data science include the following:
 | [Explaination and Example for P value with code](Explaination%20and%20Example%20for%20P%20value%20with%20code) |
 | [Exploratory-data-analysis](Exploratory-data-analysis) |
 | [Extract_Text_from_PDF_using_Python](Extract_Text_from_PDF_using_Python) |
+| [Fake_News_Detection](Fake_News_Detection) |
 | [File of SQL Commands](File%20of%20SQL%20Commands) |
 | [Flight_delay_prediction_project](Flight_delay_prediction_project) |
 | [GUI-JARVIS](GUI-JARVIS) |
