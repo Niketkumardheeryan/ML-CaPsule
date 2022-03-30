@@ -33,3 +33,8 @@ This is a driver drowsiness detection project, that detects if the drivers eyes 
 - Face and Eye Detection using Haar Cascade
 - Eye open or closed prediction using the CNN Model
 - Alert if drowsy
+
+
+## Demo
+<img width="458" alt="image" src="https://user-images.githubusercontent.com/73430464/160766013-f7214357-ecf7-4463-b43f-077c45936da2.png">
+
