@@ -1,6 +1,8 @@
-## PROJECT TITLE : Birds Species Classification
+## PROJECT TITLE : BIRDS SPECIES CLASSIFICATION
 
-#### Aim- To classify the different species of bird
+#### AIM
+
+To classify the different species of bird
 
 #### DESCRIPTION
 
@@ -19,6 +21,10 @@ https://share.streamlit.io/shreya024/bird-species-classification-web-app/app.py
 #### MODELS USED
 
 Xception Transfer Learning Model - 94.9 % accuracy
+
+#### LINK TO .H5 FILE:
+
+https://drive.google.com/file/d/1MXPAFeg029S82cZywaRyRvY9twYq0pNF/view?usp=sharing
 
 #### DEPLOYMENT
 
@@ -39,4 +45,4 @@ We can conclude that our Web App classifies bird species with the help of Xcepti
 
 #### CONTRIBUTED BY
 
-Shreya Ghosh
+![Shreya Ghosh](https://github.com/shreya024)
