@@ -45,4 +45,4 @@ We can conclude that our Web App classifies bird species with the help of Xcepti
 
 #### CONTRIBUTED BY
 
-![Shreya Ghosh](https://github.com/shreya024)
+[Shreya Ghosh](https://github.com/shreya024)
