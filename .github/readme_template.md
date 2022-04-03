@@ -1,27 +1,63 @@
-# Package/Script Name
+**GOAL**
 
-## Short description of package/script
+The goal of this project is to determine the professional role of a person from their Resume 
 
-- If package, list of functionalities/scripts it can perform
-- If standalone script, short description of script explaining what it achieves.
-- List out the libraries imported.
+Dataset can be downloaded from [here](https://www.kaggle.com/snehaanbhawal/resume-dataset)
 
-## Setup instructions
+**MODELS USED**
 
-Explain how to setup and run your package/script in user's system
+-  Logistic Regression
+-  Multinomial Naive Bayes
+-  Decision Trees
+-  Random Forests 
 
-## Detailed explanation of script, if needed
+**LIBRARIES NEEDED**
 
-If code is not explainable using comments, use this sections to explain your script
+- numpy
+- pandas
+- seaborn
+- matplotlib
+- scikit-learn
+- wordcloud
+- nltk
+- time
 
-## Output
+**STEPS BEING FOLLOWED** 
 
-Display images/gifs/videos of output/result of your script so that users can visualize it
+- Load the dataset
+- Import libraries
+- Data Visualization
+- Data Pre-Processing
+- Convert text to numerical data
+- Splitting data into test and train
+- Logistic Regression model
+- Multinomial Naive Bayes model
+- Decision Trees model
+- Random Forests model
+- Comparison of accuracies and training time
 
-## Author(s)
+**CONCLUSION**
+ 
+  By using Logistic Regression 
+ ```
+    Accuracy: 68.6117
+    Training time: 10.22s
+ ``` 
+ 
+ By using Random Forest
+ ```
+    Accuracy: 59.9598
+    Training time: 2.18s
+ ``` 
 
-Name(s) of author(s)
+ By using Multinomial Naive Bayes
+ ```
+    Accuracy: 54.5272
+    Training time: 0.10s
+ ``` 
 
-## Disclaimers, if any
-
-Use this section to mention if any particular disclaimer is required
+ By using Decision Trees
+ ```
+    Accuracy: 53.9235
+    Training time: 2.82s
+ ``` 
