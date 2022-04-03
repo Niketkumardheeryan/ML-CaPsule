@@ -2,12 +2,35 @@
 Cloud computing is a general term for anything that involves delivering hosted services over the internet. These services are divided into three main categories or types of cloud computing: infrastructure as a service (IaaS), platform as a service (PaaS) and software as a service (SaaS).
 
 ## The most popularly used cloud service providers are:-
+- Heroku
+- Elastic
+- Netlify
+- Vercel
 - Amazon Web Services (AWS)
 - Microsoft Azure
--  Google Cloud Platform
+- Google Cloud Platform
 
-There are various different types of free tier services available under them for working and integrating Machine Learning with Cloud. Some of them are:-
+## Lifetime free cloud services:-
+### Heroku: 
+Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps. Their platform is elegant, flexible, and easy to use, offering developers the simplest path to getting their apps to market. Heroku is a cloud platform that lets companies build, deliver, monitor apps, the fastest way to go from idea to URL, bypassing all those infrastructure headaches.
+Heroku's free cloud services begins with the apps - apps which can be deployed to dynos - their lightweight Linux containers that are at the heart of the Heroku platform. When you sign up with Heroku, you automatically get a pool of free dyno hours to use for your apps. When your app runs, it consumes dyno hours.
 
+### Elastic:
+Elastic Cloud is the best way to consume all of Elastic's products across any cloud. Easily deploy in your favorite public cloud, or in multiple clouds, and extend the value of Elastic with cloud-native features. Accelerate results that matter, securely and at scale.
+From document- and field-level security to analyzing data in real time with interactive visualizations, Elastic Cloud (the Elasticsearch managed service) delivers powerful features that readily extend what's possible with the Elastic Stack.
+
+### Netlify:
+Netlify provides automation and intuitive development workflows that enable frontend engineering teams to ship optimal customer experiences on the web at scale, faster, without having to manage servers. Netlify Enterprise, available in the AWS Marketplace, offers a complete web development platform with the highest level of availability, control and security. Netlify unites an entire ecosystem of modern tools and services into a single, simple workflow for building high performance sites and apps.
+
+### Vercel:
+Vercel (formerly known as ZEIT) is a free cloud platform that enables developers to host websites and web services that deploy instantly, scale automatically, and require no supervision. Founded in 2015 by Guillermo Rauch, Vercel offers an intuitive user interface with minimal configuration for hosting static site generators such as Gatsby or Hugo and various CMSes like Contentful, Prismic, or WordPress. Vercel is also a parent company of the Next.js framework and it comes with many cool features:-
+- Deploying your site to a global CDN instantly with a single click
+- Ensuring your site is always online by intelligently monitoring and automatically scaling frontend capacity, and
+- Taking care of SSL certificates or HTTPS on your behalf.
+
+### There are various different types of free tier services available under them for working and integrating Machine Learning with Cloud. Some of them are:-
+
+## Amazon Web Services (AWS)
 1. Amazon SageMaker:
 It provides two months free trial of Machine learning for every data scientist and developer.
 
