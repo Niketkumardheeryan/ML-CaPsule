@@ -5,4 +5,4 @@
 - A simple rock paper scissors python game that uses random module to randomly selects option for computer.
 - It also calculates the scores of both the player and the computer.
 
-![python game](https://user-images.githubusercontent.com/72235546/161619760-bddacca1-9c59-4929-a92c-61d39bce3734.PNG)
+![python game](https://user-images.githubusercontent.com/72235546/161620369-9d94d1e4-3362-473a-9cc9-765a2cfd5893.PNG)
