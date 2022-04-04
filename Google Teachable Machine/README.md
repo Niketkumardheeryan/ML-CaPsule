@@ -20,11 +20,11 @@ Google Teachable Machine Implemented from Scratch
 
 ![keras_model](./images/keras_model.png)
 
-![keras_model_sequential1](./keras_model_sequential1.png)
+![keras_model_sequential1](./images/keras_model_sequential1.png)
 
-![keras_model_sequenial3](./keras_model_sequenial3.png)
+![keras_model_sequenial3](./images/keras_model_sequenial3.png)
 
-![keras_model_sequential1_model](./keras_model_sequential1_model.svg)
+![keras_model_sequential1_model](./images/keras_model_sequential1_model.svg)
 
 #### DEPLOYMENT
 
