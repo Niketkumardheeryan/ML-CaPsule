@@ -1,8 +1,8 @@
-## PROJECT TITLE : BIRDS SPECIES CLASSIFICATION
+## PROJECT TITLE : GOOGLE TEACHABLE MACHINE
 
 #### AIM
 
-To classify the different categories in a given image dataset.
+To implement the Google Teachable Machine Model from scratch.
 
 #### DESCRIPTION
 
@@ -14,11 +14,21 @@ Google Teachable Machine Implemented from Scratch
 
 #### LINK TO .H5 FILE:
 
-./Model/keras_model.h5
+[model](./Model/keras_model.h5)
+
+#### MODEL ARCHITECTURE:
+
+![keras_model](./images/keras_model.png)
+
+![keras_model_sequential1](./keras_model_sequential1.png)
+
+![keras_model_sequenial3](./keras_model_sequenial3.png)
+
+![keras_model_sequential1_model](./keras_model_sequential1_model.svg)
 
 #### DEPLOYMENT
 
-Various methods of deployment include:
+View various methods of deployment [here](./Deployment)
 
 #### LIBRARIES NEEDED
 
