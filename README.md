@@ -18,7 +18,7 @@ __________________________________________________________________________
 
 
 ## Description
-<p><i> Machine learning technique to  analysis data that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.</i>
+<p><i> Machine learning technique to analyze data that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.</i>
 ### Importance of Machine Learning
 Machine learning is important because it gives enterprises a view of trends in customer behavior and business operational patterns, as well as supports the development of new products. Many of today's leading companies, such as Facebook, Google and Uber, make machine learning a central part of their operations. Machine learning has become a significant competitive differentiator for many companies.</p>
 
