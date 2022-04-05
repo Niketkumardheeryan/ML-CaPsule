@@ -208,7 +208,6 @@ The six major areas of data science include the following:
 | [Unique Chatbot](Unique%20Chatbot) |
 | [Various Plots using Matplot,Seaborn,Pandas](Various%20Plots%20using%20Matplot%2CSeaborn%2CPandas) |
 | [Vehicles and Pedestrian Detection](Vehicles%20and%20Pedestrian%20Detection) |
-| [Word Cloud](Word-Cloud) |
 | [Weather Prediction](Weather%20Prediction) |
 | [Web-Scraping-with-Beautiful-Soup-master](Web-Scraping-with-Beautiful-Soup-master) |
 | [XgBoost_Algorithm](XgBoost_Algorithm) |
