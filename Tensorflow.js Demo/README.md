@@ -8,15 +8,12 @@ To classify the different images uploaded by user using the Tensorflow.js librar
 
 This is a classification problem where we need to classify various images. We use Tensorflow.js Mobilenet Model.
 
-#### LINK TO WEBAPP:
 
-https://share.streamlit.io/shreya024/bird-species-classification-web-app/app.py
+#### GLANCE AT THE APPLICATION
 
-#### GLANCE AT THE WEBAPP
+![demo0](https://user-images.githubusercontent.com/72400676/162127323-20d0f666-6b89-4374-bdd3-3ecbb742a89b.JPG)
 
-![bird1](https://user-images.githubusercontent.com/72400676/160309740-bf22a5e4-4887-4f08-a514-2deaf984d5e1.JPG)
-
-![bird2](https://user-images.githubusercontent.com/72400676/160309748-b9cdc5e7-d2c1-466c-bbdd-7ad3cedeaa45.JPG)
+![demo1](https://user-images.githubusercontent.com/72400676/162127349-ac974944-8ef9-4fe2-8f77-d877f8464b2d.JPG)
 
 #### MODELS USED
 
