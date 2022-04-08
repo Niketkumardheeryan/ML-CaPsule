@@ -24,6 +24,10 @@ This TensorFlow.js model does not require you to know about machine learning. It
 #### DEPLOYMENT
 
 Tested on local browser, this demo can be deployed to the web like any other html applications using various deployment methods like github.io or Heroku.
+  
+![demo_output](https://user-images.githubusercontent.com/72400676/162338377-0483a9ee-7083-4c83-8ade-17f4ef8ec8c1.JPG)
+
+This is an output as fetched on the console.
 
 #### LIBRARIES NEEDED
 
