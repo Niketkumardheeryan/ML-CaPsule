@@ -43,6 +43,10 @@ StreamLit-Share = Streamlit turns data scripts into shareable web apps in minute
 
 We can conclude that our Web App corrects misspelled words with the help of Sequence to Sequence Encoder-Decoder Model.
 
+#### REFERENCES
+
+Some utilities functions used in this project are inspired by this [medium post](https://bhashkarkunal.medium.com/spelling-correction-using-deep-learning-how-bi-directional-lstm-with-attention-flow-works-in-366fabcc7a2f) and from [this Deep Spell](https://github.com/MajorTal/DeepSpell/blob/master/keras_spell.py) code, with several distinct changes, additions and customization in this implementation, that result in a better performance.
+
 #### CONTRIBUTED BY
 
 [Shreya Ghosh](https://github.com/shreya024)
