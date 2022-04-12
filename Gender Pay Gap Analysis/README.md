@@ -1,4 +1,4 @@
-# **Stock Price Analysis**
+# **Gender Pay Gap Analysis**
 
 **AIM**
 
