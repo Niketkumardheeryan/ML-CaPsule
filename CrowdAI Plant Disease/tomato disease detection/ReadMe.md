@@ -15,7 +15,7 @@
 
 ### The Model can also Identify a Healthy Tomato Leaf.
 
-## Sample Images
+## Some Sample Images
 
 - Image Shape After Preprocesing: (50, 50, 3)
 
@@ -25,24 +25,8 @@
 ### `Tomato Leaf Image having Bacterial spot`
 ![](https://github.com/srajan-kiyotaka/Tomato-Plant-Disease-Prediction/blob/master/Images/Tomato%20Leaf%20Image%20having%20Bacterial%20spot.png?raw=true)
 
-### `Tomato Leaf Image having Early blight`
-![](https://github.com/srajan-kiyotaka/Tomato-Plant-Disease-Prediction/blob/master/Images/Tomato%20Leaf%20Image%20having%20Early%20blight.png?raw=true)
-
-### `Tomato Leaf Image having Late blight`
-![](https://github.com/srajan-kiyotaka/Tomato-Plant-Disease-Prediction/blob/master/Images/Tomato%20Leaf%20Image%20having%20Late%20blight.png?raw=true)
-
-### `Tomato Leaf Image having Leaf Mold`
-![](https://github.com/srajan-kiyotaka/Tomato-Plant-Disease-Prediction/blob/master/Images/Tomato%20Leaf%20Image%20having%20Leaf%20Mold.png?raw=true)
-
 ## `Tomato Leaf Image having Septoria leaf spot`
 ![](https://github.com/srajan-kiyotaka/Tomato-Plant-Disease-Prediction/blob/master/Images/Tomato%20Leaf%20Image%20having%20Septoria%20leaf%20spot.png?raw=true)
-
-
-### `Tomato Leaf Image having Spider mites Two spotted spider mite`
-![](https://github.com/srajan-kiyotaka/Tomato-Plant-Disease-Prediction/blob/master/Images/Tomato%20Leaf%20Image%20having%20Spider%20mites%20Two%20spotted%20spider%20mite.png?raw=true)
-
-### `Tomato Leaf Image having Target Spot`
-![](https://github.com/srajan-kiyotaka/Tomato-Plant-Disease-Prediction/blob/master/Images/Tomato%20Leaf%20Image%20having%20Target%20Spot.png?raw=true)
 
 ## `Tomato Leaf Image having Tomato Yellow Leaf Curl Virus`
 ![](https://github.com/srajan-kiyotaka/Tomato-Plant-Disease-Prediction/blob/master/Images/Tomato%20Leaf%20Image%20having%20Tomato%20Yellow%20Leaf%20Curl%20Virus.png?raw=true)
