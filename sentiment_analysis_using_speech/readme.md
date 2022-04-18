@@ -1,5 +1,5 @@
 # Sentiment_analysis_from_speech
-We are going to analyse and detect emotion from speech
+We are going to analyse and detect emotion from speech.
 
 # Dataset we are going to use
 1. https://www.kaggle.com/datasets/ejlok1/surrey-audiovisual-expressed-emotion-savee
