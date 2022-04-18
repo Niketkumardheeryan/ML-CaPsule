@@ -158,27 +158,32 @@ The six major areas of data science include the following:
  | --------------- | 
 | [Advanced Visualizations](Advanced%20Visualizations) |
 | [Alzheimer's Disease Predictor](Alzheimer's%20Disease%20Predictor) |
-| [Analysis_&_predict_Black_friday_sale](Analysis_&_predict_Black_friday_sale) |
+| [Analysis And predict_Black_friday_sale](Analysis_&_predict_Black_friday_sale) |
 | [Audio Classification](Audio%20Classification) |
 | [Automatic Summarization of Scientific Papers](Automatic%20Summarization%20of%20Scientific%20Papers) |
 | [Basics of ML and DL](Basics%20of%20ML%20and%20DL) |
 | [Basics of Power Bi](Basics%20of%20Power%20Bi) |
 | [Basics of the Python](Basics%20of%20the%20Python) |
 | [Bidirectional LSTM](Bidirectional%20LSTM) |
+| [Bird Species Classification Web App](Bird%20Species%20Classification%20Web%20App) |
 | [Bitcoin Price Prediction Web App](Bitcoin%20Price%20Prediction%20Web%20App) |
 | [Bitcoin Price Predictor](Bitcoin%20Price%20Predictor) |
+| [CBT_ChatBot](CBT_ChatBot) |
 | [COVID_19-DATA-ANALYSIS](COVID_19-DATA-ANALYSIS) |
 | [Cheat Sheets](Cheat%20Sheets) |
 | [Class Imbalance problem](Class%20Imbalance%20problem) |
 | [Classification Algorithms](Classification%20Algorithms) |
+| [Cloud Details](Cloud%20Details) |
 | [Covid19 forecasting with prophet](Covid19%20forecasting%20with%20prophet) |
 | [Covid_Third_Wave_Forecasting](Covid_Third_Wave_Forecasting) |
+| [CrowdAI Plant Disease](CrowdAI%20Plant%20Disease) |
 | [Customer Segmentation using Machine Learning](Customer%20Segmentation%20using%20Machine%20Learning) |
 | [Data Cleaning Techniques](Data%20Cleaning%20Techniques) |
 | [Data Filling and Cleaning Techniques](Data%20Filling%20and%20Cleaning%20Techniques) |
 | [Different types of Clustering](Different%20types%20of%20Clustering) |
 | [Different types of feature selection techniques](Different%20types%20of%20feature%20selection%20techniques) |
 | [Different_types_of_scaling_Method](Different_types_of_scaling_Method) |
+| [Driver_Drowsiness_Detection](Driver_Drowsiness_Detection) |
 | [EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main](EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main) |
 | [Email Classifier](Email%20Classifier) |
 | [Emotion Recognition Based on NLP](Emotion%20Recognition%20Based%20on%20NLP) |
@@ -188,25 +193,47 @@ The six major areas of data science include the following:
 | [Extract_Text_from_PDF_using_Python](Extract_Text_from_PDF_using_Python) |
 | [Fake_News_Detection](Fake_News_Detection) |
 | [File of SQL Commands](File%20of%20SQL%20Commands) |
+| [Fish-Weight-Estimation](Fish-Weight-Estimation) |
 | [Flight_delay_prediction_project](Flight_delay_prediction_project) |
+| [GDP Prediction](GDP%20Prediction) |
 | [GUI-JARVIS](GUI-JARVIS) |
+| [Gender Pay Gap Analysis](Gender%20Pay%20Gap%20Analysis) |
+| [Google Teachable Machine](Google%20Teachable%20Machine) |
 | [Handwritten Equation Solver using CNN](Handwritten%20Equation%20Solver%20using%20CNN) |
+| [Handwritten character recognition](Handwritten%20character%20recognition) |
 | [Heart_Predection](Heart_Predection) |
+| [HollywoodMarketSynopsis](HollywoodMarketSynopsis) |
+| [IMDB Box Office Prediction](IMDB%20Box%20Office%20Prediction) |
+| [LanguageDetection](LanguageDetection) |
 | [Medical Charges for Smokers and Non-smoker](Medical%20Charges%20for%20Smokers%20and%20Non-smoker) |
 | [Medical_Help_Chatbot](Medical_Help_Chatbot) |
 | [Meteorite Landing Data Analysis](Meteorite%20Landing%20Data%20Analysis) |
 | [Movie-Recommendation-System](Movie-Recommendation-System) |
+| [Movie-Recommender-System using python](Movie-Recommender-System%20using%20python) |
+| [Nasa-Asteroids-Dataset-Analysis](Nasa-Asteroids-Dataset-Analysis) |
 | [NumPy - Basics](NumPy%20-%20Basics) |
+| [Number_of_people_counter](Number_of_people_counter) |
+| [OCR-Medicine-Reader](OCR-Medicine-Reader) |
 | [Object Detection](Object%20Detection) |
 | [Ola Bike Ride Request Demand Forecast](Ola%20Bike%20Ride%20Request%20Demand%20Forecast) |
 | [Optical character recognition (OCR)](Optical%20character%20recognition%20(OCR)) |
 | [Plant Seedlings Classification](Plant%20Seedlings%20Classification) |
+| [R language](R%20language) |
 | [Random forest from scratch](Random%20forest%20from%20scratch) |
 | [Random forest test](Random%20forest%20test) |
+| [Rock Paper Scissors Python Game](Rock%20Paper%20Scissors%20Python%20Game) |
 | [Sentiment analysis for depression based on social media posts](Sentiment%20analysis%20for%20depression%20based%20on%20social%20media%20posts) |
+| [Sentiment-Analysis](Sentiment-Analysis) |
+| [Skin Disease Predictor](Skin%20Disease%20Predictor) |
 | [Spam Mail Detection](Spam%20Mail%20Detection) |
 | [Speech_Emotion_Recognition](Speech_Emotion_Recognition) |
+| [Spelling Corrector](Spelling%20Corrector) |
 | [Sports Analytics Project](Sports%20Analytics%20Project) |
+| [Startup_Profit_Prediction](Startup_Profit_Prediction) |
+| [Stock Price Analysis](Stock%20Price%20Analysis) |
+| [Sudoku Solver using CNN](Sudoku%20Solver%20using%20CNN) |
+| [Tensorflow.js Demo](Tensorflow.js%20Demo) |
+| [Time Series Forecasting with Python](Time%20Series%20Forecasting%20with%20Python) |
 | [Time-Series LSTM Model](Time-Series%20LSTM%20Model) |
 | [Unique Chatbot](Unique%20Chatbot) |
 | [Various Plots using Matplot,Seaborn,Pandas](Various%20Plots%20using%20Matplot%2CSeaborn%2CPandas) |
@@ -216,16 +243,21 @@ The six major areas of data science include the following:
 | [XgBoost_Algorithm](XgBoost_Algorithm) |
 | [ensemble-methods-notebooks-master](ensemble-methods-notebooks-master) |
 | [heart failure](heart%20failure) |
+| [job_Advertisement_detection](job_Advertisement_detection) |
+| [logistic_regression_scratch](logistic_regression_scratch) |
 | [recommendation_system](recommendation_system) |
+| [.DS_Store](.DS_Store) |
 | [Analysis_of_Temperature_Rise_in_PMSM.ipynb](Analysis_of_Temperature_Rise_in_PMSM.ipynb) |
 | [Beautiful Soup.ipynb](Beautiful%20Soup.ipynb) |
 | [Ensemble learning.docx](Ensemble%20learning.docx) |
 | [Ensemble-Learning (Stacking)](Ensemble-Learning%20(Stacking)) |
 | [Machine Hack -1.ipynb](Machine%20Hack%20-1.ipynb) |
 | [README.md updated file](README.md%20updated%20file) |
+| [Role_from_Resume.ipynb](Role_from_Resume.ipynb) |
 | [Sql](Sql) |
 | [Statistics- Basics.ipynb](Statistics-%20Basics.ipynb) |
 | [Test Task_NIket.ipynb](Test%20Task_NIket.ipynb) |
+| [UBER_DATA_ANALYSIS.ipynb](UBER_DATA_ANALYSIS.ipynb) |
 | [Various_Plots_in_Matplotlib.ipynb](Various_Plots_in_Matplotlib.ipynb) |
 | [Visualization  with Seaborn & Matplotlib.ipynb](Visualization%20%20with%20Seaborn%20%26%20Matplotlib.ipynb) |
 | [buyer_s_time234.ipynb](buyer_s_time234.ipynb) |
