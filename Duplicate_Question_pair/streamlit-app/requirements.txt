@@ -1,0 +1,5 @@
+streamlit
+sklearn
+fuzzywuzzy
+distance
+bs4
