@@ -1,16 +1,21 @@
 Website Classification:
+
 Aim:
 To classify the website URL’s to different categories.
+
 Data source : 
 https://www.kaggle.com/datasets/hetulmehta/website-classification
+
 About the dataset:
 This dataset is created by scrapping the text from different websites.
+
 Details:
 There are 4 columns in the dataset.
-Unnamed [0] - Index of the dataset.
-Website_url - URL’s of different websites.
-cleaned_website_text - Text description of the websites.
-Category - Category to which the website belongs to.
+1. Unnamed [0] - Index of the dataset.
+2. Website_url - URL’s of different websites.
+3. cleaned_website_text - Text description of the websites.
+4. Category - Category to which the website belongs to.
+
 Classes of the dataset:
 1.	Travel
 2.	Social Networking and Messaging
@@ -28,6 +33,7 @@ Classes of the dataset:
 14.	Computers and Technology
 15.	Business/corporate
 16.	Adult
+
 Insights from the dataset:
 *	Education and Business-related websites are more in number than any other categories of websites
 *	“News” is the most occurring word with almost 5300 of occurrences.
