@@ -1,4 +1,4 @@
-# quora-question-pairs
+# DUPLICATE QUESTION PAIR 
 A NLP project to find weather given 2 questions are same are not semantically speaking.
 
 Dataset Link - https://www.kaggle.com/c/quora-question-pairs
@@ -12,4 +12,7 @@ Built a StreamLit application to demonstrate the project . In this Application t
 So For Running The Project Run Python Notebook first , data set Train.csv is already provided and then install the following dependency provided in Requirement Section to run The application and get the desired Result .
 
 As The data set is Too Long about 400005 so Be paitent while running python notebook .
+
+For Running The application on Your Local Host Run : StreamLit run app.py .
+Furture You can deploy it to heroku , it is simple to do you will get the commands on heroku when you go there to deploy , Simply run that command your project will be deployed .
 
