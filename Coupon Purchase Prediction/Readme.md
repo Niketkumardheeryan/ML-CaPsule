@@ -14,3 +14,6 @@ Dataset: https://www.kaggle.com/c/coupon-purchase-prediction
 - Time
 - PrettyTable
 
+The Metrics for the best prediction performance using regressor, using all features in the dataset is:
+
+1. Ponpare.jp website
