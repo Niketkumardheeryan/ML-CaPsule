@@ -22,7 +22,7 @@ There are different types of clustering algorithms that deal with all kinds of u
 
 ### Different Clustering Algorithms
 
-The different clustering algorithms are as follows along with their implementation [here](./Clustering%20Algorithms/Clustering_Algorithms.ipynb)
+The different clustering algorithms are as follows along with their implementation [here](./Clustering_Algorithms.ipynb)
 
 - **K-means clustering algorithm**
   K-means clustering is the most commonly used clustering algorithm. It is a centroid-based algorithm and is the simplest unsupervised learning algorithm.This algorithm attempts to minimize the variance of data points within a cluster. K-means is best used for small data sets because it iterates over all data points. In other words, if there are a large number of data points in the data set, it will take longer to classify the data points.K-means does not scale well because it groups data points in this way.
