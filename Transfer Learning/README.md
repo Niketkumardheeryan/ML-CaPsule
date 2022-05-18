@@ -31,7 +31,8 @@ train_model(model, dataloaders, criterion, optimizer, num_epochs=25, is_inceptio
 ```
  streamlit run app.py
 ```
-
+![Image](https://github.com/Ashish-Abraham/ML-CaPsule/blob/TransferLearning/Transfer%20Learning/Images/ui0.png)
+![Image](https://github.com/Ashish-Abraham/ML-CaPsule/blob/TransferLearning/Transfer%20Learning/Images/ui1.png)
 ## To Do:
 
 - Release it as a functional api
