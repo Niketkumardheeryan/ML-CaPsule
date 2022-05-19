@@ -42,3 +42,7 @@ The colab notebook contains a detailed explanation about every step from making 
 
 
 <h3 align="center">Hope you like it <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35px"></h3>
+
+
+## Author
+<a href="https://github.com/GaganpreetKaurKalsi">Gaganpreet Kaur Kalsi<a/>
