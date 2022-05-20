@@ -1,0 +1,11 @@
+body{
+   background-color: azure;
+   display: block;
+   margin: auto;
+   width: 500px;
+   align-items: center;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
