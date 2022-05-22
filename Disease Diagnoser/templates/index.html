@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+    <title>"Diagnoser"
+    </title>
+<body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+
+<div class="topnav">
+  <a class="active" style="margin:left=20px;" href="/">Home</a>
+  <a class="btn btn-default survey" style="margin:left=20px;" href="/survey">Take a Survey</a>
+  
+</div>
+
+<h1 style="text-align:center" class="txt1">Disease Diagnoser Based on Symptoms</h1>
+<h5 style="text-align:center" class="txt2">Select your symptoms</h5>
+<br>
+<div align="center" class="init">
+<label for="name" class="lbl">Name : </label>
+<input type="text" id="name" class="ip"><br>
+<label for="age" class="lbl">Age : </label>
+<input type="integer" id="age" class="ip"><br>
+<label for="gender" id="lbl">Gender : </label>
+<select id="gender" class="gender">Gender
+  
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+
+</select>
+
+
+
+
+</div>
+<table  id="table" class="t1" style=" margin-left: auto;margin-right:auto">
+    <tr >
+     <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-1" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-1">Itching</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-2">Skin Rash</label></Button>
+      </th>
+  <th> 
+    <input type="checkbox" class="btn-check" id="btn-check-3" checked autocomplete="off">
+    <label class="btn btn-primary btnCheck" for="btn-check-3">Nodal Skin</label></Button>
+  </th>
+
+  <th> 
+    <input type="checkbox" class="btn-check" id="btn-check-4" checked autocomplete="off">
+    <label class="btn btn-primary btnCheck" for="btn-check-4">Continuous Sneezing</label></Button>
+  </th>
+    </tr>
+
+<br>
+    <tr>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-5" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-5">Shivering</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-6" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-6">Chills</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-7" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-7">Joint Pain</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-8" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-8">Stomach Pain</label></Button>
+      </th>
+    </tr>
+
+    <br>
+
+    <tr>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-9" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-9">Acidity</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-10" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-10">Ulcers</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-11" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-11">Muscle Wasting</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-12" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-12">Vomiting</label></Button>
+      </th>
+    </tr>
+
+
+
+
+    <tr>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-13" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-13">Burning Micturition</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-14" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-14">Spotting</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-15" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-15">Fatigue</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-16" checked autocomplete="off" >
+        <label class="btn btn-primary btnCheck" for="btn-check-16">Weight Gain</label></Button>
+      </th>
+    </tr>
+
+
+
+
+
+
+
+    <tr>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-17" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-17">Anxiety</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-18" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-18">Cold feets</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-19" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-19">Mood Swings</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-20" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-20">Weight Loss</label></Button>
+      </th>
+    </tr>
+
+
+
+
+
+    <tr>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-21" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-21">Restlessness</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-22" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-22">Lethargy</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-23" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-23">Throat Patches</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-24" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-24">Irregular Sugar</label></Button>
+      </th>
+    </tr>
+
+
+
+
+    <tr>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-25" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-25">Cough</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-26" autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-26">High Fever</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-27" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-27">Sunken Eyes</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-28" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-28">Breathlessness</label></Button>
+      </th>
+    </tr>
+
+
+    
+
+    <tr>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-29" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-29">Sweating</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-30" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-30">Dehydration</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-31" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-31">Indigestion</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-32" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-32">Headache</label></Button>
+      </th>
+    </tr>
+
+
+
+    <tr>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-33" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-33">Yellowish Skin</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-34" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-34">Dark Urine</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-35" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-35">Nausea</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-36" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-36">Apetite Loss</label></Button>
+      </th>
+    </tr>
+
+
+
+    <tr>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-37" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-37">Pain Behind Eyes</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-38" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-38">Backpain</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-39" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-39">Constipation</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-40" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-40">Abdominal Pain</label></Button>
+      </th>
+    </tr>
+
+
+
+    <tr >
+      <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-41" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-41">Diarrhoea</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-42" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-42">Mild Fever</label></Button>
+       </th>
+   <th> 
+     <input type="checkbox" class="btn-check" id="btn-check-43" checked autocomplete="off">
+     <label class="btn btn-primary btnCheck" for="btn-check-43">Yellow Urine</label></Button>
+   </th>
+ 
+   <th> 
+     <input type="checkbox" class="btn-check" id="btn-check-44" checked autocomplete="off">
+     <label class="btn btn-primary btnCheck" for="btn-check-44">Yellowing of Eyes</label></Button>
+   </th>
+     </tr>
+ 
+ <br>
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-45" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-45">Acute Liver Failure</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-46" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-46">Fluid Overload</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-47" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-47">Swelling of Stomach</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-48" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-48">Swlled Lymph Nodes</label></Button>
+       </th>
+     </tr>
+ 
+     <br>
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-49" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-49">Malaise</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-50" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-50">Blurred Vision</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-51" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-51">Phlegm</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-52" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-52">Throat Irritation</label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-53" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-53">Redness of Eyes</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-54" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-54">Sinus Pressure</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-55" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-55">Runny Nose</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-56" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-56">Congestion</label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-57" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-57">Chest Pain</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-58" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-58">Weakness in Limbs</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-59" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-59">Fast Heart Rate </label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-60" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-60">Painful Bowel Movements </label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-61" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-61">Pain in Anal Region</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-62" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-62">Bloody Stool</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-63" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-63">Irritation in Anus</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-64" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-64">Neck Pain</label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-65" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-65">Dizziness</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-66" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-66">Cramps</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-67" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-67">Bruising </label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-68" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-68">Obesity</label></Button>
+       </th>
+     </tr>
+ 
+ 
+     
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-69" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-69">Swollen Legs</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-70" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-70">Swollen Blood Vessels</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-71" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-71">Puffy Face and Eyes</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-72" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-72">Enlarged Thyroid</label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-73" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-73">Brittle Nails</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-74" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-74">Swollen Extremeties</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-75" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-75">Excessive Hunger</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-76" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-76">Extra Marital Contacts</label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-77" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-77">Drying and Tingling Tips</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-78" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-78">Slurred Speech</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-79" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-79">Knee Pain</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-80" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-80">Hip Joint Pain</label></Button>
+       </th>
+     </tr>
+
+
+     <tr >
+      <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-81" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-81">Muscle Weakness</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-82" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-82">Stiff Neck</label></Button>
+       </th>
+   <th> 
+     <input type="checkbox" class="btn-check" id="btn-check-83" checked autocomplete="off">
+     <label class="btn btn-primary btnCheck" for="btn-check-83">Swelling Joints</label></Button>
+   </th>
+ 
+   <th> 
+     <input type="checkbox" class="btn-check" id="btn-check-84" checked autocomplete="off">
+     <label class="btn btn-primary btnCheck" for="btn-check-84">Movement Stiffness</label></Button>
+   </th>
+     </tr>
+ 
+ <br>
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-85" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-85">Spinning Movemnents</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-86" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-86">Loss of Balance</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-87" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-87">Unsteadiness</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-88" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-88">Weakness of One Side </label></Button>
+       </th>
+     </tr>
+ 
+     <br>
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-89" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-89">Loss of Smell</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-90" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-90">Bladder Discomfort</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-91" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-91">Urine foul smell</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-92" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-92">Continuous feel of Urine</label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-93" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-93">Passage of gases</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-94" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-94">Internal Itching</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-95" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-95">Toxic Look</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-96" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-96">Depression</label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-97" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-97">Irritability</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-98" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-98">Muscle pain</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-99" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-99">Altered Sensorium</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-100" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-100">Red Spots</label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-101" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-101">Belly Pain</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-102" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-102">Abnormal Menstruation</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-103" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-103">Dischromic Patches</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-104" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-104">Watering from eyes</label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-105" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-105">Increased Apetite</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-106" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-106">Polyuria</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-107" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-107">Family History</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-108" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-108">Mucoid Sputum</label></Button>
+       </th>
+     </tr>
+ 
+ 
+     
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-109" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-109">Rusty Sputum</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-110" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-110">Lack of Concentration</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-111" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-111">Visual Disturbances </label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-112" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-112">Receiving Blood Transfusion</label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-113" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-113">Receiving Unsterile Injections</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-114" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-114">Coma</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-115" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-115">Stomach Bleeding </label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-116" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-116">Distension Of Abdomen</label></Button>
+       </th>
+     </tr>
+ 
+ 
+ 
+     <tr>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-117" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-117">History of Alcohol consumption</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-118" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-118">Fluid Overload</label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-119" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-119">Blood in Sputum </label></Button>
+       </th>
+       <th> 
+         <input type="checkbox" class="btn-check" id="btn-check-120" checked autocomplete="off">
+         <label class="btn btn-primary btnCheck" for="btn-check-120">Prominent veins on calf</label></Button>
+       </th>
+     </tr>
+
+
+     <tr>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-121" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-121">Palpitations</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-122" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-122">Painful Walking</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-123" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-123">Pus Filled Pimples</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-124" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-124">Blackheads</label></Button>
+      </th>
+    </tr>
+
+  
+
+
+    <tr>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-125" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-125">Scurring</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-126" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-126">Skin peeling</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-127" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-127">Silver Like Dusting </label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-128" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-128">Small Dents in Nails</label></Button>
+      </th>
+    </tr>
+
+  
+    <tr>
+      <th> 
+        <input type="checkbox" class="" id="btn-check-129" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-129">Inflammatory Nails</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-130" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-130">Blisters</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-131" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-131">Red Sore Around Nose</label></Button>
+      </th>
+      <th> 
+        <input type="checkbox" class="btn-check" id="btn-check-132" checked autocomplete="off">
+        <label class="btn btn-primary btnCheck" for="btn-check-132">Yellow Crust Ooze </label></Button>
+      </th>
+    </tr>
+
+  
+
+  </table>
+
+  <div class="text-center">
+<input id="submit" type="button" value="Submit" class="btn btn-outline-success btn-lg" style="margin-top:40px;">
+</div>
+
+<h3 class="report" id="report" align="center"></h3>
+
+<table class="rep table table table-bordered" id ="reportTable">
+  <tr>
+    <th id="nmLabel"></th>
+    <th id="nm"></th>
+  </tr>
+  <tr>
+    <th id="ageLabel"></th>
+    <th id="ag"></th>
+  </tr>
+  <tr>
+    <th id="gdLabel"></th>
+    <th id="gd"></th>
+  </tr>
+  <tr>
+    <th id="SympLabel"></th>
+    <th id="syp"></th>
+  </tr>
+
+  <tr>
+    <th id="DiseaseLabel"></th>
+    <th id="result"></th>
+  </tr>
+
+
+</table>
+
+
+
+
+
+<h5 align='center' margin-top="10px" id="better"></h5>
+<br>
+  
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+
+</script>
+<script>
+
+
+$(document).ready(function() {
+
+    var inputElems = document.getElementsByTagName("input");
+    for (var i=0; i<inputElems.length; i++) {
+      if(inputElems[i].type=="checkbox"){
+        inputElems[i].checked=false
+      }
+
+    }
+    const list=[];
+
+    var symp = ['Itching',
+ 'Skin rash',
+ 'Nodal skin eruptions',
+ 'Continuous sneezing',
+ 'Shivering',
+ 'Chills',
+ 'Joint pain',
+ 'Stomach pain',
+ 'Acidity',
+ 'Ulcers on tongue',
+ 'Muscle wasting',
+ 'Vomiting',
+ 'Burning micturition',
+ 'Spotting  urination',
+ 'Fatigue',
+ 'Weight gain',
+ 'Anxiety',
+ 'Cold hands and feets',
+ 'Mood swings',
+ 'Weight loss',
+ 'Restlessness',
+ 'Lethargy',
+ 'Patches in throat',
+ 'Irregular sugar level',
+ 'Cough',
+ 'High fever',
+ 'Sunken eyes',
+ 'Breathlessness',
+ 'Sweating',
+ 'Dehydration',
+ 'Indigestion',
+ 'Headache',
+ 'Yellowish skin',
+ 'Dark urine',
+ 'Nausea',
+ 'Loss of appetite',
+ 'Pain behind the eyes',
+ 'Back pain',
+ 'Constipation',
+ 'Abdominal pain',
+ 'Diarrhoea',
+ 'Mild fever',
+ 'Yellow urine',
+ 'Yellowing of eyes',
+ 'Acute liver failure',
+ 'Fluid overload',
+ 'Swelling of stomach',
+ 'Swelled lymph nodes',
+ 'Malaise',
+ 'Blurred and distorted vision',
+ 'Phlegm',
+ 'Throat irritation',
+ 'Redness of eyes',
+ 'Sinus pressure',
+ 'Runny nose',
+ 'Congestion',
+ 'Chest pain',
+ 'Weakness in limbs',
+ 'Fast heart rate',
+ 'Pain during bowel movements',
+ 'Pain in anal region',
+ 'Bloody stool',
+ 'Irritation in anus',
+ 'Neck pain',
+ 'Dizziness',
+ 'Cramps',
+ 'Bruising',
+ 'Obesity',
+ 'Swollen legs',
+ 'Swollen blood vessels',
+ 'Puffy face and eyes',
+ 'Enlarged thyroid',
+ 'Brittle nails',
+ 'Swollen extremeties',
+ 'Excessive hunger',
+ 'Extra marital contacts',
+ 'Drying and tingling lips',
+ 'Slurred speech',
+ 'Knee pain',
+ 'Hip joint pain',
+ 'Muscle weakness',
+ 'Stiff neck',
+ 'Swelling joints',
+ 'Movement stiffness',
+ 'Spinning movements',
+ 'Loss of balance',
+ 'Unsteadiness',
+ 'Weakness of one body side',
+ 'Loss of smell',
+ 'Bladder discomfort',
+ 'Foul smell of urine',
+ 'Continuous feel of urine',
+ 'Passage of gases',
+ 'Internal itching',
+ 'Toxic look (typhos)',
+ 'Depression',
+ 'Irritability',
+ 'Muscle pain',
+ 'Altered sensorium',
+ 'Red spots over body',
+ 'Belly pain',
+ 'Abnormal menstruation',
+ 'Dischromic  patches',
+ 'Watering from eyes',
+ 'Increased appetite',
+ 'Polyuria',
+ 'Family history',
+ 'Mucoid sputum',
+ 'Rusty sputum',
+ 'Lack of concentration',
+ 'Visual disturbances',
+ 'Receiving blood transfusion',
+ 'Receiving unsterile injections',
+ 'Coma',
+ 'Stomach bleeding',
+ 'Distention of abdomen',
+ 'History of alcohol consumption',
+ 'Fluid overload.1',
+ 'Blood in sputum',
+ 'Prominent veins on calf',
+ 'Palpitations',
+ 'Painful walking',
+ 'Pus filled pimples',
+ 'Blackheads',
+ 'Scurring',
+ 'Skin peeling',
+ 'Silver like dusting',
+ 'Small dents in nails',
+ 'Inflammatory nails',
+ 'Blister',
+ 'Red sore around nose',
+ 'Yellow crust ooze',
+ 'Prognosis'];
+
+
+    $('#submit').click(function() {
+      
+      var name = document.getElementById('name').value;
+      var age = document.getElementById('age').value;
+     var gender = document.getElementById('gender').value;
+
+
+      $("#result").html('Please Wait ...');
+        var inputElems = document.getElementsByTagName("input");
+        var selected_symp =[];
+
+        for (var i=0; i<inputElems.length; i++) {
+        if (inputElems[i].type === "checkbox" && inputElems[i].checked === true){
+           list[i-2] = 1;
+           selected_symp.push(symp[i-2]);
+           
+        }
+        else{
+            if(inputElems[i].type === "checkbox")
+             list[i-2] = 0;
+        }
+    }
+
+    //
+    insert = list.toString();         
+                var insert_string = 'checkboxvalue='+insert;            
+                $.ajax({
+                    method: "POST",
+                    url: "/diagnose",
+                    data: insert_string,
+                    cache: false,
+                    success: function(data){  
+                        if(data!="Invalid Data")  {
+                        $('#report').html('Reports Generated : ')
+                       // $('#nm').html()
+                       var tbl = document.getElementById('reportTable').style;
+                       tbl.display = 'table';
+                       tbl.className ='table';
+                       
+                        $('#nmLabel').html("Name")
+                        $('#nm').html(name);
+                        $('#ageLabel').html("Age ")
+                        $('#ag').html(age);
+                        $('#gdLabel').html("Gender ")
+                        $('#gd').html(gender);
+                        $('#SympLabel').html("Symptoms ")
+
+                        $('#syp').html(selected_symp.join(', '));
+                        $('#DiseaseLabel').html("Disease Diagnosed ")
+                        $("#result").html(data);
+                        $("#better").html("We hope you get well soon!")
+                        }
+                        else{
+
+                        $("#better").html(data);
+                        }
+                    }
+                });
+
+   console.log(list);
+   console.log(list.size);
+   console.log(selected_symp)
+    })
+});
+
+  
+
+
+
+    </script>
+
+</body>
+</html>

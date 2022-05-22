@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+
+    <div class="topnav">
+        <a class="active" style="margin:left=20px;" href="/">Home</a>
+        
+      </div>
+      <br>
+  <h3 align="center" class="txt1">Recently Diagnosed with a disease?</h3>
+  
+  <h5 align="center" class="txt2">Help us improve by filling this survey</h5>
+  <br> 
+  <br>
+  <br>
+  <text class="txt3">Please select the symptoms you faced </text>
+  <br>
+  <div class="survey-content">
+
+<table class ="stable" style="  margin-top:50px; margin-left: auto;margin-right:auto">
+    <tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Itching</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Skin rash</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Nodal skin eruptions</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Continuous sneezing</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Shivering</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Chills</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Joint pain</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Stomach pain</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Acidity</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Ulcers on tongue</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Muscle wasting</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Vomiting</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Burning micturition</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Spotting  urination</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Fatigue</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Weight gain</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Anxiety</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Cold hands and feets</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Mood swings</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Weight loss</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Restlessness</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Lethargy</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Patches in throat</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Irregular sugar level</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Cough</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">High fever</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Sunken eyes</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Breathlessness</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Sweating</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Dehydration</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Indigestion</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Headache</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Yellowish skin</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Dark urine</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Nausea</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Loss of appetite</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Pain behind the eyes</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Back pain</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Constipation</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Abdominal pain</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Diarrhoea</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Mild fever</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Yellow urine</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Yellowing of eyes</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Acute liver failure</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Fluid overload</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Swelling of stomach</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Swelled lymph nodes</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Malaise</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Blurred and distorted vision</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Phlegm</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Throat irritation</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Redness of eyes</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Sinus pressure</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Runny nose</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Congestion</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Chest pain</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Weakness in limbs</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Fast heart rate</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Pain during bowel movements</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Pain in anal region</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Bloody stool</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Irritation in anus</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Neck pain</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Dizziness</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Cramps</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Bruising</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Obesity</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Swollen legs</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Swollen blood vessels</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Puffy face and eyes</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Enlarged thyroid</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Brittle nails</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Swollen extremeties</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Excessive hunger</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Extra marital contacts</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Drying and tingling lips</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Slurred speech</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Knee pain</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Hip joint pain</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Muscle weakness</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Stiff neck</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Swelling joints</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Movement stiffness</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Spinning movements</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Loss of balance</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Unsteadiness</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Weakness of one body side</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Loss of smell</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Bladder discomfort</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Foul smell of urine</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Continuous feel of urine</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Passage of gases</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Internal itching</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Toxic look (typhos)</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Depression</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Irritability</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Muscle pain</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Altered sensorium</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Red spots over body</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Belly pain</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Abnormal menstruation</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Dischromic  patches</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Watering from eyes</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Increased appetite</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Polyuria</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Family history</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Mucoid sputum</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Rusty sputum</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Lack of concentration</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Visual disturbances</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Receiving blood transfusion</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Receiving unsterile injections</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Coma</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Stomach bleeding</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Distention of abdomen</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">History of alcohol consumption</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Fluid overload.1</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Blood in sputum</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Prominent veins on calf</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Palpitations</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Painful walking</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Pus filled pimples</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Blackheads</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Scurring</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Skin peeling</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Silver like dusting</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Small dents in nails</label> </th> 
+        </tr><tr>
+        <th> <input type ="checkbox" class="cb"/><label class="label">Inflammatory nails</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Blister</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Red sore around nose</label> </th> 
+        <th> <input type ="checkbox" class="cb"/><label class="label">Yellow crust ooze</label> </th> 
+        
+    </table>
+  </div>
+<div class="selectDiv">
+ <select class="prognosis" id ="prognosis" name="prognosis">
+    <option value="Fungal infection">Fungal infection</option>
+    <option value="Allergy">Allergy</option>
+    <option value="GERD">GERD</option>
+    <option value="Chronic cholestasis">Chronic cholestasis</option>
+    <option value="Drug Reaction">Drug Reaction</option>
+    <option value="Peptic ulcer diseae">Peptic ulcer diseae</option>
+    <option value="AIDS">AIDS</option>
+    <option value="Diabetes ">Diabetes </option>
+    <option value="Gastroenteritis">Gastroenteritis</option>
+    <option value="Bronchial Asthma">Bronchial Asthma</option>
+    <option value="Hypertension ">Hypertension </option>
+    <option value="Migraine">Migraine</option>
+    <option value="Cervical spondylosis">Cervical spondylosis</option>
+    <option value="Paralysis (brain hemorrhage)">Paralysis (brain hemorrhage)</option>
+    <option value="Jaundice">Jaundice</option>
+    <option value="Malaria">Malaria</option>
+    <option value="Chicken pox">Chicken pox</option>
+    <option value="Dengue">Dengue</option>
+    <option value="Typhoid">Typhoid</option>
+    <option value="hepatitis A">hepatitis A</option>
+    <option value="Hepatitis B">Hepatitis B</option>
+    <option value="Hepatitis C">Hepatitis C</option>
+    <option value="Hepatitis D">Hepatitis D</option>
+    <option value="Hepatitis E">Hepatitis E</option>
+    <option value="Alcoholic hepatitis">Alcoholic hepatitis</option>
+    <option value="Tuberculosis">Tuberculosis</option>
+    <option value="Common Cold">Common Cold</option>
+    <option value="Pneumonia">Pneumonia</option>
+    <option value="Dimorphic hemmorhoids(piles)">Dimorphic hemmorhoids(piles)</option>
+    <option value="Heart attack">Heart attack</option>
+    <option value="Varicose veins">Varicose veins</option>
+    <option value="Hypothyroidism">Hypothyroidism</option>
+    <option value="Hyperthyroidism">Hyperthyroidism</option>
+    <option value="Hypoglycemia">Hypoglycemia</option>
+    <option value="Osteoarthristis">Osteoarthristis</option>
+    <option value="Arthritis">Arthritis</option>
+    <option value="(vertigo) Paroymsal  Positional Vertigo">Paroymsal  Positional Vertigo</option>
+    <option value="Acne">Acne</option>
+    <option value="Urinary tract infection">Urinary tract infection</option>
+    <option value="Psoriasis">Psoriasis</option>
+    <option value="Impetigo">Impetigo</option>
+
+ </select>
+</div>
+   
+  <div class="text-center">
+    <input id="submit" type="button" value="Submit" class="btn btn-outline-success btn-lg" style="margin-top:40px;">
+    </div>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+
+    </script>
+    
+    <script>
+    
+    
+    $(document).ready(function() {
+    
+       
+        
+    $('#submit').click(function() {
+        location.href ="thanks";
+        const list=[];
+        var inputElems = document.getElementsByTagName("input");
+       
+
+        for (var i=0; i<inputElems.length; i++) {
+        if (inputElems[i].type === "checkbox" && inputElems[i].checked === true){
+           list[i] = 1;
+           
+        }
+        else{
+            if (inputElems[i].type === "checkbox")
+             list[i] = 0;
+        }
+    }
+
+    var e = document.getElementById("prognosis")
+    var str = e.options[e.selectedIndex].value
+    list.push(str);
+    
+
+
+                insert = list.toString();         
+                var insert_string = 'checkboxvalue='+insert;            
+                $.ajax({
+                    method: "POST",
+                    url: "/surveydata",
+                    data: insert_string,
+                    cache: false,
+                    success: function(data){  
+                        console.log("success");
+                    }
+                      
+                });
+
+
+    console.log(list);
+   console.log(list.size);
+    });
+
+});
+
+    </script>
+
+
+</body>
+</html>
+
+
+
