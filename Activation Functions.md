@@ -23,39 +23,62 @@ In deep learning,the role of the Activation Function is to transform the summed 
 
 ### Different Activation Functions
 
-- Linear
+- **Linear Activation Function**
 
-![image](https://user-images.githubusercontent.com/72400676/169813324-e562eb26-5db5-4c84-acd6-1dfb4bd975dc.png)
+  Linear activation function is a simple straight line activation function where our function is directly proportional to the weighted sum of neurons or input.
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/72400676/169813324-e562eb26-5db5-4c84-acd6-1dfb4bd975dc.png" />
+  </p>
 
-- ReLU
+- **ReLU Activation Function**
 
-![image](https://user-images.githubusercontent.com/72400676/169812862-4c58be24-9ef5-4bb6-8f39-6fb44ff5f6a2.png)
+  Rectified Linear Unit although gives an impression of a linear function,has a derivative function and allows for backpropagation while simultaneously making it computationally efficient. The ReLU function does not activate all the neurons at the same time. 
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/72400676/169812862-4c58be24-9ef5-4bb6-8f39-6fb44ff5f6a2.png" />
+  </p>
+
 
 - **Sigmoid Activation Function**
+
   The Sigmoid or Logistic Activation Function takes any real value as input and outputs values in the range of 0 to 1. The larger the input, the closer the output value will be to 1, whereas the smaller the input, the closer the output will be to 0.
-  ![image](https://user-images.githubusercontent.com/72400676/169812982-cff4a7da-5231-4161-943b-90d8cadd97d2.png)
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/72400676/169812982-cff4a7da-5231-4161-943b-90d8cadd97d2.png" />
+  </p>
 
-- eLU
+- **ELU Activation Function**
 
-![image](https://user-images.githubusercontent.com/72400676/169813244-6b692873-ebe1-4ea6-817e-5edba572e9b4.png)
+  Exponential Linear Unit, or ELU for short, is a variant of ReLU that modifies the slope of the negative part of the function by using a log curve.
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/72400676/169813244-6b692873-ebe1-4ea6-817e-5edba572e9b4.png" />
+  </p>
 
-- Swish ReLU
+- **Swish ReLU Activation Function**
 
-![image](https://user-images.githubusercontent.com/72400676/169813413-5503076c-bf04-4d1a-968a-c7960ccfe025.png)
+  Swish ReLU is a self-gated activation function that consistently matches or outperforms ReLU activation function on deep networks applied to various challenging domains such as image classification, machine translation etc.This function is bounded below but unbounded above.
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/72400676/169813413-5503076c-bf04-4d1a-968a-c7960ccfe025.png" />
+  </p>
 
+- **Tan-H Activation Function**
 
-- Tan H
+  Tanh function is very similar to the sigmoid function.It has the same S-shape with the difference in output range of -1 to 1. In Tanh, the larger the input, the closer the output value will be to 1, whereas the smaller the input, the closer the output will be to -1.
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/72400676/169813999-fb3c2117-d610-4809-829b-9337df37be0a.png" />
+  </p>
 
-![image](https://user-images.githubusercontent.com/72400676/169813999-fb3c2117-d610-4809-829b-9337df37be0a.png)
+- **PReLU Activation Function**
 
-- PReLU
+  Parametric ReLU provides the slope of the negative part of the function as an argument a. By performing backpropagation, the most appropriate value of a is learnt.It is a variant of ReLU that aims to solve the problem of gradient’s becoming zero for the left half of the axis. 
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/72400676/169814069-3218aae9-cd70-45ea-8f43-1f4e722412ba.png" />
+  </p>
 
-![image](https://user-images.githubusercontent.com/72400676/169814069-3218aae9-cd70-45ea-8f43-1f4e722412ba.png)
+- **Leaky ReLU Activation Function**
 
-- Leaky ReLU
-
-![image](https://user-images.githubusercontent.com/72400676/169814188-0ddbd89a-d123-4a6d-83bc-8e152f5fa117.png)
-
+  Leaky ReLU is an improved version of ReLU function to solve the Dying ReLU problem as it has a small positive slope in the negative area.the gradient of the left side of the graph comes out to be a non-zero value.
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/72400676/169814188-0ddbd89a-d123-4a6d-83bc-8e152f5fa117.png" />
+  </p>
 
 ### Applications
 
