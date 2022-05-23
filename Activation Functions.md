@@ -1,5 +1,5 @@
 ## Activation Functions
-In deep learning,the role of the Activation Function is to transform the summed weighted input from the node into an output value to be fed to the next hidden layer or as output. 
+In deep learning,the role of the Activation Function is to transform the summed weighted input from the node into an output value to be fed to the next hidden layer or as output.It is a function that is used to get the output of neural network like yes or no. It is also known as Transfer Function.
 ### Types of Activation Functions
 
 - **Binary Step Function** :
@@ -29,6 +29,10 @@ In deep learning,the role of the Activation Function is to transform the summed 
   <p align="center">
   <img src="https://user-images.githubusercontent.com/72400676/169813324-e562eb26-5db5-4c84-acd6-1dfb4bd975dc.png" />
   </p>
+  
+  ```
+    f(x)=x
+  ```
 
 - **ReLU Activation Function**
 
@@ -37,6 +41,9 @@ In deep learning,the role of the Activation Function is to transform the summed 
   <img src="https://user-images.githubusercontent.com/72400676/169812862-4c58be24-9ef5-4bb6-8f39-6fb44ff5f6a2.png" />
   </p>
 
+  ```
+  Y^(l)=max(0, Y^(l−1))
+  ```
 
 - **Sigmoid Activation Function**
 
@@ -44,6 +51,10 @@ In deep learning,the role of the Activation Function is to transform the summed 
   <p align="center">
   <img src="https://user-images.githubusercontent.com/72400676/169812982-cff4a7da-5231-4161-943b-90d8cadd97d2.png" />
   </p>
+  
+  ```
+  sigmoid(x)=1/(1+e^−x)
+  ```
 
 - **ELU Activation Function**
 
@@ -51,6 +62,11 @@ In deep learning,the role of the Activation Function is to transform the summed 
   <p align="center">
   <img src="https://user-images.githubusercontent.com/72400676/169813244-6b692873-ebe1-4ea6-817e-5edba572e9b4.png" />
   </p>
+  
+  ```
+  Elu(x)={x if x>0
+          α(e^x−1)if x≤0}
+  ```
 
 - **Swish ReLU Activation Function**
 
@@ -58,6 +74,10 @@ In deep learning,the role of the Activation Function is to transform the summed 
   <p align="center">
   <img src="https://user-images.githubusercontent.com/72400676/169813413-5503076c-bf04-4d1a-968a-c7960ccfe025.png" />
   </p>
+  
+  ```
+  Swish(x)=x⋅σ(βx)=x(1+e−(βx))−1
+  ```
 
 - **Tan-H Activation Function**
 
@@ -65,6 +85,10 @@ In deep learning,the role of the Activation Function is to transform the summed 
   <p align="center">
   <img src="https://user-images.githubusercontent.com/72400676/169813999-fb3c2117-d610-4809-829b-9337df37be0a.png" />
   </p>
+  
+  ```
+  tanh(x)=2/(1+e^-2x)−1=2sigmoid(2x)−1
+  ```
 
 - **PReLU Activation Function**
 
@@ -72,6 +96,10 @@ In deep learning,the role of the Activation Function is to transform the summed 
   <p align="center">
   <img src="https://user-images.githubusercontent.com/72400676/169814069-3218aae9-cd70-45ea-8f43-1f4e722412ba.png" />
   </p>
+  
+  ```
+  PReLU(x)=max(0,x)+α⋅min(0,x)
+  ```
 
 - **Leaky ReLU Activation Function**
 
@@ -79,6 +107,11 @@ In deep learning,the role of the Activation Function is to transform the summed 
   <p align="center">
   <img src="https://user-images.githubusercontent.com/72400676/169814188-0ddbd89a-d123-4a6d-83bc-8e152f5fa117.png" />
   </p>
+  
+  ```
+  f(x)={1 if x<0
+        (αx)+1if x>=0}
+  ```
 
 ### Applications
 
