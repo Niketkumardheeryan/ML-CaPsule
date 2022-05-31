@@ -1,0 +1,33 @@
+import type { InlineErrorV2 } from '../errors.types';
+export declare type MetaV2<M> = {
+    meta: M;
+    errors?: InlineErrorV2[];
+};
+export declare type DataV2<D> = {
+    data: D;
+    errors?: InlineErrorV2[];
+};
+export declare type IncludeV2<I> = {
+    includes?: I;
+    errors?: InlineErrorV2[];
+};
+export declare type DataAndMetaV2<D, M> = {
+    data: D;
+    meta: M;
+    errors?: InlineErrorV2[];
+};
+export declare type DataAndIncludeV2<D, I> = {
+    data: D;
+    includes?: I;
+    errors?: InlineErrorV2[];
+};
+export declare type DataMetaAndIncludeV2<D, M, I> = {
+    data: D;
+    meta: M;
+    includes?: I;
+    errors?: InlineErrorV2[];
+};
+export interface SentMeta {
+    /** The time when the request body was returned. */
+    sent: string;
+}
