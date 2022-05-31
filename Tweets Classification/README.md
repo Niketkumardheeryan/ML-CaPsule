@@ -1,5 +1,6 @@
 # Tweets Classifier
 This directory contains an ipynb file of a Tweets Classification model in ML using Python. <br>
+
 This is related to the issue #376 "Classify Tweets" of ML_CaPsule repository, as a part of GSSoC'22. <br>
 
 ### Dataset
