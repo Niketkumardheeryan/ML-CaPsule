@@ -32,7 +32,6 @@ if submit:
         config.gpu_options.allow_growth = True
         session = tf.compat.v1.Session(config=config)
 
-        # Set the session in Keras
         tf.compat.v1.keras.backend.set_session(session)
         train_datagen = ImageDataGenerator(rescale = 1./255,
                                         shear_range = 0.2,
