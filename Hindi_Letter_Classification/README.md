@@ -20,8 +20,8 @@ The web app is created using streamlit framework. It contains a heading, small i
 
 # How to run locally
 
-install the necessary libraries using pip
-open the project folder
+install the necessary libraries using pip then
+open the project folder and
 Run following command : 
 
 ```python
