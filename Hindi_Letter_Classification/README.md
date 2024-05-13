@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a hindi letter classification web application created usinfg python and utilizes Convolutional Neural Networks, it utilizes
+This is a hindi letter classification web application created using python and utilizes Convolutional Neural Networks, it utilizes
 LENET-5 architecture. This architecture was created in 1998. We can also use other architectures like ALEXNET, GoogleNET, RESNET, VGGNET etc.
 
 ![Alt text](https://indiatyping.com/images/Hindi_Alphabets.webp "Hindi letters")
