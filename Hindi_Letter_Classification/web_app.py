@@ -20,19 +20,7 @@ if submit:
 
         import tensorflow as tf
         from keras.preprocessing.image import ImageDataGenerator
-        if tf.test.gpu_device_name():
-            print('GPU found')
-            device_name = tf.test.gpu_device_name()
-        else:
-            print("No GPU found. Please make sure you have GPU drivers installed.")
-            device_name = None
 
-        # Create a TensorFlow session to use GPU memory growth
-        config = tf.compat.v1.ConfigProto()
-        config.gpu_options.allow_growth = True
-        session = tf.compat.v1.Session(config=config)
-
-        tf.compat.v1.keras.backend.set_session(session)
         train_datagen = ImageDataGenerator(rescale = 1./255,
                                         shear_range = 0.2,
                                         zoom_range = 0.2,
