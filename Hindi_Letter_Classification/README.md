@@ -32,5 +32,5 @@ streamlit run file_name.py
 
 # Snapshots
 
-![Alt text](https://ibb.co/0C1HFVn "Snapshot 1")
-![Alt text](https://ibb.co/p1jw0RD "Snapshot 2")
+![Alt text](https://i.postimg.cc/nVyGVndx/Screenshot-2024-05-13-111142.png "Snapshot 1")
+![Alt text](https://i.postimg.cc/sgkrwQm8/Screenshot-2024-05-13-111154.png "Snapshot 2")
