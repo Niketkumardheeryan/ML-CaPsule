@@ -1,6 +1,6 @@
 # Image Classification using Deep Learning
 
-This project, specifically tailored for the Google Summer of Code in 2024 (GSSoC'24), aims to implement image classification using deep learning techniques. This project aims to implement image classification using deep learning techniques. The goal is to develop a model that can accurately classify images into predefined categories or classes.
+This project, specifically tailored for the Girl Script Summer of Code in 2024 (GSSoC'24), aims to implement image classification using deep learning techniques. This project aims to implement image classification using deep learning techniques. The goal is to develop a model that can accurately classify images into predefined categories or classes.
 
 ## Overview
 
