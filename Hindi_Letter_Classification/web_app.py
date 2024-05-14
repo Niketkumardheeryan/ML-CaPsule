@@ -72,7 +72,7 @@ if submit:
         from keras.preprocessing import image
         if uploaded_file is not None:
             try:
-                test_image = image.load_img('uploaded_file', target_size = (64, 64))
+                test_image = image.load_img(uploaded_file, target_size = (64, 64))
                 test_image = image.img_to_array(test_image)
                 test_image = np.expand_dims(test_image, axis = 0)
                 result = lenet.predict(test_image)
