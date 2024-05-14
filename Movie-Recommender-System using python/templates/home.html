@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Movie Cinema</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Auto Complete -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
+
+  <!-- External CSS -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+
+  <script type="text/javascript">
+    var films = {{suggestions|tojson}};
+    $(document).ready(function(){
+      $("#myModal").modal('show');
+    });
+  </script>
+
+</head>
+
+<body id="content" style="font-family: 'Noto Sans JP', sans-serif;">
+<div class="body-content">
+	<div class="ml-container" style="display: block;">
+		<a href="https://github.com/kishan0725/The-Movie-Cinema" target="_blank" class="github-corner" title="View source on GitHub">
+		      <svg data-toggle="tooltip"
+		      data-placement="left" width="80" height="80" viewBox="0 0 250 250"
+			style="fill:#e50914; color:#fff; position: fixed;z-index:100; top: 0; border: 0; right: 0;" aria-hidden="true">
+			<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+			<path
+			  d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+			  fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+			<path
+			  d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+			  fill="currentColor" class="octo-body"></path>
+		      </svg>
+		    </a>
+    <center><h1 class="app-title">The Movie Cinema</h1></center>
+    <div class="form-group shadow-textarea" style="margin-top: 30px;text-align: center;color: white;">
+        <input type="text" name="movie" class="movie form-control" id="autoComplete" autocomplete="off" placeholder="Enter the Movie Name" style="background-color: #ffffff;border-color:#ffffff;width: 60%;color: #181818" required="required" />
+        <br>
+    </div>
+
+    <div class="form-group" style="text-align: center;">
+      <button class="btn btn-primary btn-block movie-button" style="background-color: #e50914;text-align: center;border-color: #e50914;width:120px;" disabled="true" >Enter</button><br><br>
+    </div>
+	</div>
+
+  <div id="loader" class="text-center">
+  </div>
+  
+  <div class="fail">
+    <center><h3>Sorry! The movie you requested is not in our database. 
+    Please check the spelling or try with other movies!</h3></center>
+  </div>
+
+	<div class="results">
+    <center>
+      <h2 id="name" class="text-uppercase"></h2>
+    </center>
+	</div>
+	
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #e50914;color: white;">
+          <h5 class="modal-title" id="exampleModalLabel3">Hey there!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="color: white">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>If you can't find the movie you're searching for through auto-suggestions while typing, there's no need to worry. Simply type the name of the movie and press "enter". Even if you make some typos, it should still work fine.</p>
+        </div>
+        <div class="modal-footer" style="text-align: center;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Let's go!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<footer class="footer">
+    <br/> 
+    <div class="social" style="margin-bottom: 8px">
+    <a class="social-icons" href="https://github.com/kishan0725" target="_blank"><i class="fa fa-github-alt" style="font-size:24px;color: #e4e0e0"></i></a>
+    <a class="social-icons" href="https://linkedin.com/in/kishan0725" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px;color: #e4e0e0"></i></a>
+    <a class="social-icons" href="https://quora.com/profile/Kishan-175" target="_blank"><i class="fa fa-quora" style="font-size:24px;color: #e4e0e0"></i></a>
+    <a class="social-icons" href="https://www.instagram.com/kishan_07_25" target="_blank"><i class="fa fa-instagram" style="font-size:24px;color: #e4e0e0"></i></a>
+    <a class="social-icons" href="https://twitter.com/kishan0725" target="_blank"><i class="fa fa-twitter" style="font-size:24px;color: #e4e0e0"></i></a>
+  </div>
+  </footer>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='autocomplete.js')}}"></script>
+
+  <script type="text/javascript" src="{{url_for('static', filename='recommend.js')}}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
