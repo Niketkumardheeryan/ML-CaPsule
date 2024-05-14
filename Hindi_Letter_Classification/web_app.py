@@ -86,7 +86,7 @@ if submit:
             except:
                 st.write("There is error in file provided")
                 st.subheader("Result : " + prediction)
-                st.write("Accuracy for 15 epochs is 74.03%")
+                
         elif uploaded_file is None:
             st.markdown(":red[Please enter a image]")
 
