@@ -1,4 +1,4 @@
-# EDA-and-Perform-Modelling-on-Ionosphere-Dataset
+# Perform-Modelling-on-Ionosphere-Dataset
 
 ## Project Description:  
 The following project aims to predict class using various technical specifications (features) as input to the logistic regression algorithms.  
