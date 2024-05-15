@@ -262,7 +262,7 @@ The six major areas of data science include the following:
 | [Visualization  with Seaborn & Matplotlib.ipynb](Visualization%20%20with%20Seaborn%20%26%20Matplotlib.ipynb) |
 | [buyer_s_time234.ipynb](buyer_s_time234.ipynb) |
 | [random_forest.py](random_forest.py) |
-| [Evaluation-Perform-Modelling-on-Ionosphere-Dataset]([random_forest.py](https://github.com/sujanrupu/ML-CaPsule/tree/master/Perform-Modelling-on-Ionosphere-Dataset)) |
+| [Evaluation-Perform-Modelling-on-Ionosphere-Dataset](https://github.com/sujanrupu/ML-CaPsule/tree/master/Perform-Modelling-on-Ionosphere-Dataset) |
 <!-- Projects end -->
 
 ### Note:
