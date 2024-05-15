@@ -1,6 +1,7 @@
 #The dataset  (both train and test) was generated from a deep learning model trained on the Bank Customer Churn Prediction dataset.
 # There are three data sets one is training dataset,other one is test dataset and last one is submission for checking
 # We intend to calculate the probability of each customer Exited from the bank 
+
 The main features for the Training set are:
 1.id
 2.Surname
