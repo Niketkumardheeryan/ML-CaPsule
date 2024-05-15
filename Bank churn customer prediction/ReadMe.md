@@ -18,5 +18,4 @@ The main features for the Training set are:
 13.EstimatedSalary	
 14.Exited
 
-
 The objective for creating this is to provide enough resources for newbies in this field to have access to almost all the state of the art techniques to build great models for real word datasets, also ensuring fair play as the dataset for training and evaluation is synthetically generated and not publicly available, and very near to the feature distributions what we see in real world datasets.
