@@ -39,7 +39,7 @@ Developers can instantiate these classes, configure connection parameters, and u
 ### 1. MongoDB
 #### 1.1 CRUD Operations
 ```bash
-from dbgenie.mongodb.mongocrud import MongoDBCrud
+from dbgenie2.mongodb.mongocrud import MongoDBCrud
 
 # Connect to MongoDB
 mongodb_crud = MongoDBCrud(uri="mongodb://localhost:27017", database="my_database", collection="my_collection")
@@ -60,7 +60,7 @@ mongodb_crud.delete_document({"name": "John"})
 ### 2. PostgreSQl
 #### 2.1 CRUD Operations
 ```bash
-from dbgenie.postgresql.postgrescrud import PostgreSQLCrud
+from dbgenie2.postgresql.postgrescrud import PostgreSQLCrud
 
 # Connect to PostgreSQL
 postgresql_crud = PostgreSQLCrud(host="localhost", user="postgres", password="password", database="my_database")
@@ -84,7 +84,7 @@ postgresql_crud.delete_record("my_table", "name='John'")
 ### 3. MySQL
 #### 3.1 CRUD Operations
 ```bash
-from dbgenie.mysql.mysqlcrud import MySQLCrud
+from dbgenie2.mysql.mysqlcrud import MySQLCrud
 
 # Connect to MySQL
 mysql_crud = MySQLCrud(host="localhost", user="root", password="password", database="my_database")
@@ -105,6 +105,30 @@ mysql_crud.update_record("my_table", {"age": 35}, "name='John'")
 # Delete record
 mysql_crud.delete_record("my_table", "name='John'")
 ```
+## Deployment
+
+### GitHub Actions PyPI Package Deployment
+This project uses GitHub Actions for continuous integration and deployment to PyPI. The workflow defined in the .github/workflows/python-package.yaml file automates the deployment process whenever a new release tag is pushed to the repository.
+
+#### Workflow Overview:
+- Trigger: The workflow is triggered whenever a new release tag is pushed to the repository.
+- Build and Test: The workflow first builds the package and runs tests to ensure everything is working as expected.
+- Deployment to PyPI:
+The workflow uses the pypa/gh-action-pypi-publish action to automatically deploy the package to PyPI.
+It retrieves the package version from the release tag and publishes it to PyPI using the credentials configured in the repository secrets.
+- Release Notes:
+The workflow generates release notes based on the commits since the last release tag using the release-drafter action.
+It includes the release notes in the GitHub release created for the new version.
+
+#### How to Deploy:
+To trigger a deployment to PyPI:
+
+- Create a new release by pushing a new release tag to the repository.
+- GitHub Actions will automatically run the deployment workflow.
+- Once the workflow completes successfully, the package will be published to PyPI, and release notes will be generated and added to the GitHub release.
+
+For more details on configuring and customizing the deployment workflow, refer to the .github/workflows/python-package.yaml file.
+
 ## Contributing
 
 Contributions to DBGenie are welcome! If you have ideas for new features, improvements, or bug fixes, please feel free to open an issue or submit a pull request. See the Contributing Guidelines for more information.
