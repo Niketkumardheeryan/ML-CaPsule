@@ -17,5 +17,6 @@ Used: <br>
 ## Snapshot of the dashboard
 
 General overview of the dashboard
+![Screenshot 2024-04-22 145418](https://github.com/jeet-Abhi123/Sales-Dashboard-using-Power-BI/assets/143840497/53753603-2a8d-4eb7-b24d-31a0b35e100b)
 
 
