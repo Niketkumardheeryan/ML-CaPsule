@@ -31,6 +31,71 @@ Steps involved:
 3. *Training*: Splitting data into training and test sets, then applying linear regression.
 4. *Prediction*: Evaluating model performance with test data.
 
+---
+
+## Installation
+
+To get started, you need to install the required package modelbit.
+
+bash
+pip install modelbit
+
+
+## Prediction Function
+
+A function to predict student marks:
+
+python
+def StudentMarksPrediction(time_study, number_courses):
+    features = np.array([[number_courses, time_study]])
+    predicted_marks = model.predict(features)
+    return predicted_marks
+
+# Example usage
+predicted_marks = StudentMarksPrediction(6.78, 2)
+print(f"Predicted Marks: {predicted_marks}")
+
+
+## Deploying the Model
+
+To deploy the model using Modelbit, follow these steps:
+
+1. *Login to Modelbit*:
+    python
+    import modelbit
+    mb = modelbit.login()
+    
+
+2. *Deploy the function*:
+    python
+    mb.deploy(StudentMarksPrediction)
+    
+
+## Usage
+
+After deploying the model, you can get predictions as follows:
+
+1. *Define input data*:
+    python
+    time_study = 6.78
+    number_courses = 2
+    
+
+2. *Get prediction from deployed model*:
+    python
+    prediction = modelbit.get_inference(
+      region="ap-south-1",
+      workspace="pondupondu",
+      deployment="StudentMarksPrediction",
+      data=[time_study, number_courses]
+    )
+    
+
+3. *Display the prediction*:
+    python
+    print(f"The predicted score is: {prediction['data'][0]}")
+    
+
 ## Results
 
 The model achieves a high accuracy with an R² score of approximately 0.946, indicating a strong correlation between the study time and marks obtained.
