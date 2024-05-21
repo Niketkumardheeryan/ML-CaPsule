@@ -1,0 +1,11 @@
+psycopg2-binary
+mysql-connector-python
+pymongo
+pymongo[srv]
+dnspython
+ensure
+pytest==7.1.3
+tox
+black==22.8.0
+flake8==5.0.4
+mypy==0.971
