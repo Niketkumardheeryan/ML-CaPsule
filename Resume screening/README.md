@@ -32,5 +32,5 @@ The dataset which is used in this project, is collected from Kaggle. Here is the
 ********************************************************************
 
 ## Author
-Code Contributed by, Arunita Sahu
+Code Contributed by Arunita Sahu
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
