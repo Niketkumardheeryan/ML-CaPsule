@@ -1,0 +1,7 @@
+psycopg2-binary  
+mysql-connector-python 
+pymongo
+pymongo[srv]
+dnspython
+ensure
+pytest
