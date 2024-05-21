@@ -1,0 +1,4 @@
+env/
+.DS_Store
+.mypy_cache/
+.tox/

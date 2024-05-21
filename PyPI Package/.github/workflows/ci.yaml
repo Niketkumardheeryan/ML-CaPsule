@@ -1,0 +1,38 @@
+# name: Python application
+
+# on:
+#   push:
+#     branches: [ "main" ]
+#     paths-ignore:
+#         - 'README.md'  
+#   pull_request:
+#     branches: [ "main" ]
+#     paths-ignore:
+#         - 'README.md'  
+
+
+# permissions:
+#   contents: read
+
+# jobs:
+#   build:
+
+#     runs-on: ${{ matrix.os }}
+#     strategy:
+#       matrix:
+#         os: [ubuntu-latest, windows-latest] 
+#         python-version: ["3.8", "3.9"]
+
+#     steps:
+#     - uses: actions/checkout@v3
+#     - name: Set up Python ${{ matrix.python-version }}
+#       uses: actions/setup-python@v3
+#       with:
+#         python-version: ${{ matrix.python-version }}
+#     - name: Install dependencies
+#       run: |
+#         python -m pip install --upgrade pip
+#         pip install flake8 pytest tox tox-gh-actions
+#         pip install -r requirements.txt
+#     - name: Test with tox
+#       run: tox
