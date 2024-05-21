@@ -258,7 +258,7 @@ The six major areas of data science include the following:
 | [XgBoost_Algorithm](XgBoost_Algorithm) |
 
 
-| High |
+| Hard |
 | ---- |
 | [Alzheimer's Disease Predictor](Alzheimer's%20Disease%20Predictor) |
 | [Analysis_of_Temperature_Rise_in_PMSM.ipynb](Analysis_of_Temperature_Rise_in_PMSM.ipynb) |
