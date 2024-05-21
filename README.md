@@ -195,6 +195,7 @@ The six major areas of data science include the following:
 | [Email Classifier](Email%20Classifier) |
 | [Emotion Recognition Based on NLP](Emotion%20Recognition%20Based%20on%20NLP) |
 | [Ensemble Methds in ML](Ensemble%20Methds%20in%20ML) |
+| [ensemble-methods-notebooks-master](ensemble-methods-notebooks-master) |
 | [Ensemble learning.docx](Ensemble%20learning.docx) |
 | [Ensemble-Learning (Stacking)](Ensemble-Learning%20(Stacking)) |
 | [Explaination and Example for P value with code](Explaination%20and%20Example%20for%20P%20value%20with%20code) |
@@ -255,7 +256,7 @@ The six major areas of data science include the following:
 | [Weather Prediction](Weather%20Prediction) |
 | [Web-Scraping-with-Beautiful-Soup-master](Web-Scraping-with-Beautiful-Soup-master) |
 | [XgBoost_Algorithm](XgBoost_Algorithm) |
-| [ensemble-methods-notebooks-master](ensemble-methods-notebooks-master) |
+
 
 
 | High |
