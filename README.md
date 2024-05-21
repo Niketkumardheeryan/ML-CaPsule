@@ -158,16 +158,15 @@ The six major areas of data science include the following:
  | --------------- | 
 ## Content List
 
-### Easy
-
+| Easy|
 | ---- |
 | [Basics of ML and DL](Basics%20of%20ML%20and%20DL) |
 | [Basics of Power Bi](Basics%20of%20Power%20Bi) |
 | [Basics of the Python](Basics%20of%20the%20Python) |
 | [NumPy - Basics](NumPy%20-%20Basics) |
 
-### Medium
 
+| Medium |
 | ---- |
 | [Advanced Visualizations](Advanced%20Visualizations) |
 | [Analysis And predict_Black_friday_sale](Analysis_&_predict_Black_friday_sale) |
@@ -265,8 +264,8 @@ The six major areas of data science include the following:
 | [buyer_s_time234.ipynb](buyer_s_time234.ipynb) |
 | [random_forest.py](random_forest.py) |
 
-### High
 
+| High |
 | ---- |
 | [Alzheimer's Disease Predictor](Alzheimer's%20Disease%20Predictor) |
 | [GDP Prediction](GDP%20Prediction) |
