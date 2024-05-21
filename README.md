@@ -302,7 +302,7 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
 
 ## Some awesome Contributors ✨
 
-<table>
+<table> 
   <tr>
     <td align="center"><a href="https://github.com/Niketkumardheeryan"><img src="https://avatars.githubusercontent.com/u/52290648?v=4" width="100px;" alt=""/><br /><sub><b>Niket kumar Dheeryan (Author)</b></sub></a><br />💻</a></td>
   </tr>
