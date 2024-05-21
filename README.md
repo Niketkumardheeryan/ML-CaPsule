@@ -273,7 +273,7 @@ You can find our Code of Conduct [here](https://github.com/Niketkumardheeryan/Ha
 
 ## 📝 License  
 
-This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
+This project follows the [MIT License](https://choosealicense.com/licenses/mit/). 
 
 
 
