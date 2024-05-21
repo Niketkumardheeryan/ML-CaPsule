@@ -154,8 +154,6 @@ The six major areas of data science include the following:
 ## Take a look at existing projects 
 
 <!-- Projects start -->
-| Content List | 
- | --------------- | 
 ## Content List
 
 | Easy|
