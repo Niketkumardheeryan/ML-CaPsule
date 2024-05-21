@@ -1,7 +1,7 @@
 name: New Issue
 description: Description
 title: "[Create New Issue]: "
-labels: ["GSSOC22"]
+labels: ["gssoc"]
 body:
   - type: markdown
     attributes:
