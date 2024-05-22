@@ -21,8 +21,8 @@ Used: <br>
 General overview of the dashboard
 ![Screenshot 2024-04-22 145418](https://github.com/jeet-Abhi123/Sales-Dashboard-using-Power-BI/assets/143840497/53753603-2a8d-4eb7-b24d-31a0b35e100b)
 
-Showing all the visuals for the rural area for third quarter of the year
 
+Showing all the visuals for the rural area for third quarter of the year
 ![Screenshot 2024-04-22 145445](https://github.com/jeet-Abhi123/Sales-Dashboard-using-Power-BI/assets/143840497/375f4e76-4a27-4f44-a34f-dd83eeea7370)
 
 
