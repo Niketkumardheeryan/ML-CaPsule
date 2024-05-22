@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <p id="upload">Upload an Image to Classify it</p>
+    <input type="file" id="input" name="image" accept="image/png, image/jpeg"  />
+    <br>
+    <img id="img" width="400px" height="400px"></img>
+
+    <p id="prediction"></p>
+
+    <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"></script>
+    <!-- Load the MobileNet model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script>
+
+    <script src="demo.js"></script>
+  </body>
+</html>
