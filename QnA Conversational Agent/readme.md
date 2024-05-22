@@ -22,8 +22,7 @@ Welcome to the **Chat with Your Data Bot** project! This powerful Streamlit appl
 
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/your-username/chat-with-your-data-bot.git
-    cd chat-with-your-data-bot
+    git clone https://github.com/Niketkumardheeryan/ML-CaPsule.git
     ```
 
 2. **Install Dependencies**:
@@ -32,7 +31,7 @@ Welcome to the **Chat with Your Data Bot** project! This powerful Streamlit appl
     ```
 
 3. **Configure Azure OpenAI**:
-    - Open the `main.py` file.
+    - Open the `main.ipynb` file.
     - Replace the placeholders with your Azure OpenAI credentials:
       ```python
       openai_api_key = "your_api_key_here"
