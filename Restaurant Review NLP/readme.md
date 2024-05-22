@@ -46,4 +46,4 @@ Copy code
 3. Run the provided code to preprocess the data, train the model, and evaluate its performance.
 
 ## Author
-- [Nikita]([url](https://github.com/NikitaKandwal))
+- [Nikita](https://github.com/NikitaKandwal)
