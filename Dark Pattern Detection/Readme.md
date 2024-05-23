@@ -66,7 +66,7 @@ Example keywords and phrases detected by the algorithm:
 ## installation
 Clone the repository
 ->  git clone 
--> cd dark-pattern-detection
+-> cd Dark Pattern Detection
 
 ## Usage   
 1. Update the url_to_analyze variable in the script with the URL of the e-commerce website you want    to  analyze.
