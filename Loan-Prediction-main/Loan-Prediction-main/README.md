@@ -28,3 +28,7 @@ MinMaxScaler: Linearly scales them down into a fixed range. </br>
 5. Random Forest: Best accuracy- 92.59%
 6. Gradient Boosting: Best Accuracy- 85.19%
 #### Finally I used MaxVoting to ensemble all the models and got final accuracy of 92.59%.
+
+## After running app.py file
+![image](https://github.com/sanskritiagr/ML-CaPsule/assets/96240350/71ff508e-7277-40b2-82e0-e7854b7c7b34)
+
