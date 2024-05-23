@@ -65,7 +65,7 @@ Example keywords and phrases detected by the algorithm:
 
 ## installation
 Clone the repository
-->  git clone https://github.com/Niketkumardheeryan/ML-CaPsule/dark-pattern-detection.git
+->  git clone 
 -> cd dark-pattern-detection
 
 ## Usage   
