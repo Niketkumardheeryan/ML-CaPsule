@@ -71,7 +71,8 @@ Clone the repository
 ## Usage   
 1. Update the url_to_analyze variable in the script with the URL of the e-commerce website you want    to  analyze.
 2. run this command in terminal
-   ->python scrapp_ocr_csv.py
+   ```bash
+   python scrapp_ocr_csv.py
 
 ## Example output   
    ```python 
