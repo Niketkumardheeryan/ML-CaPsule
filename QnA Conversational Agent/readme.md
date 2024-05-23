@@ -43,10 +43,6 @@ Welcome to the **Chat with Your Data Bot** project! This powerful Streamlit appl
 ### Running the Application
 
 1. **Start the Streamlit App**:
-    ```sh
-    streamlit run main.py
-    ```
-
 2. **Upload Your File**:
     - Click on the sidebar and upload your PDF or TXT file.
 
