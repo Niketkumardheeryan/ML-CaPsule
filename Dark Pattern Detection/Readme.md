@@ -13,8 +13,7 @@ Dark patterns are deceptive design techniques used in user interfaces that trick
 5. [Detected Dark Patterns](#detected-dark-patterns)
 6. [Installation](#installation)
 7. [Usage](#usage)
-8. [Contributing](#contributing)
-9. [License](#license)
+
 
 ## What Are Dark Patterns?
 
@@ -64,23 +63,33 @@ The algorithm currently detects the following types of dark patterns based on sp
 Example keywords and phrases detected by the algorithm:
 - "40% off", "50% off", "sale", "80% off", "70% off", "discount code", "clearance sale", "limited time offer".
 
-## Installation
+## installation
+Clone the repository
+->  git clone https://github.com/Niketkumardheeryan/ML-CaPsule/dark-pattern-detection.git
+-> cd dark-pattern-detection
 
-Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/dark-pattern-detection.git
-   cd dark-pattern-detection
-
-##Usage   
+## Usage   
 1. Update the url_to_analyze variable in the script with the URL of the e-commerce website you want    to  analyze.
 2. run this command in terminal
-   ```bash
-   python detect_dark_patterns.py
+   ->python detect_dark_patterns.py
 
 ## Example output   
    ```python 
    Extracted Text from screenshot 1:
     ... (extracted text) ...
+
+    Dark Patterns Detected in screenshot 1:
+    40% off: 2 occurrences
+    sale: 1 occurrence
+    ...
+
+    Extracted Text from screenshot 2:
+    ... (extracted text) ...
+
+    Dark Patterns Detected in screenshot 2:
+    limited time offer: 1 occurrence
+    ...
+
 
     Dark Patterns Detected in screenshot 1:
     40% off: 2 occurrences
