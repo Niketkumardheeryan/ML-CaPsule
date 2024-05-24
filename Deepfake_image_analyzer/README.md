@@ -25,19 +25,27 @@ Image classification is a fundamental task in computer vision, where the goal is
 - **Training:** The provided script (`knn_image_classifier.py`) demonstrates how to train a KNN model using scikit-learn. It includes data preprocessing steps, model training, and saving the trained model.
 - **Usage:** Similar to the CNN script, the KNN script provides a `classify_image()` function for image classification. It utilizes the trained KNN model to predict the class label of new images.
 
+https://github.com/vidurAgg22/ML-CaPsule/assets/165144144/288c6fc7-5030-477d-ad36-f9a0438232b6
+
+Accuracy: 0.6089563425145212
 ### 3. Random Forest
 
 - **Description:** Random Forest is an ensemble learning method that constructs multiple decision trees during training and outputs the mode of the classes (classification) or the average prediction (regression) of the individual trees.
 - **Training:** The provided script (`random_forest_image_classifier.py`) demonstrates how to train a Random Forest model using scikit-learn. It includes data preprocessing steps, model training, and saving the trained model.
 - **Usage:** Similar to the other scripts, the Random Forest script provides a `classify_image()` function for image classification. It utilizes the trained Random Forest model to predict the class label of new images.
 
+https://github.com/vidurAgg22/ML-CaPsule/assets/165144144/18c447e2-b7d4-42b2-aa88-ab98f8f429ef
+
+Accuracy: 0.6241334082818063
 ### 4. Support Vector Machine (SVM)
 
 - **Description:** SVM is a supervised learning algorithm that can be used for classification or regression tasks. It finds the hyperplane that best separates the classes in the feature space.
 - **Training:** The provided script (`svm_image_classifier.py`) demonstrates how to train an SVM model using scikit-learn. It includes data preprocessing steps, model training, and saving the trained model.
 - **Usage:** Similar to the other scripts, the SVM script provides a `classify_image()` function for image classification. It utilizes the trained SVM model to predict the class label of new images.
 
+https://github.com/vidurAgg22/ML-CaPsule/assets/165144144/c474dc63-5889-45f9-8b7e-23dad457ce7e
 
+Accuracy: 0.62619449128724
 ## Requirements
 
 - Python 3.x
@@ -46,6 +54,10 @@ Image classification is a fundamental task in computer vision, where the goal is
 - NumPy
 - PIL (Python Imaging Library)
 - tkinter (for file dialog)
+- Google Colab (for running the code)
+
+## Dataset
+The dataset used for training these models can be found at [this Kaggle link](https://www.kaggle.com/datasets/mgdammy/trimdataset/data).
 
 ## Usage
 

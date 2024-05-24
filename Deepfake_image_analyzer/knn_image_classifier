@@ -16,8 +16,8 @@ def preprocess_image(image_path, target_size):
     img = np.array(img) / 255.0
     return img.flatten()
 
-# Directory containing the dataset (update this to the local directory path)
-dataset_directory = 'path/to/your/local/Dataset1/'
+# Directory containing the dataset
+dataset_directory = '/content/drive/MyDrive/TrimDataset/Dataset1/'
 
 # Lists to hold training and testing data
 X_train = []
@@ -60,8 +60,8 @@ y_pred = knn.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
 
-# Save the trained model (update this to your local save path)
-model_save_path = 'path/to/your/local/knn_image_classifier_model.joblib'
+# Save the trained model
+model_save_path = '/content/drive/MyDrive/knn_image_classifier_model.joblib'
 dump(knn, model_save_path)
 
 #Step-2:Using our model to classify images
@@ -69,39 +69,28 @@ import numpy as np
 from PIL import Image
 from sklearn.neighbors import KNeighborsClassifier
 from joblib import load
-import ipywidgets as widgets
-from IPython.display import display
-import io
+from google.colab import files
 
-# Image size for resizing
 IMAGE_SIZE = (128, 128)
 
-# Function to preprocess images
 def preprocess_image(image, target_size):
-    img = image.resize(target_size)
+    img = Image.open(image)
+    img = img.resize(target_size)
     img = np.array(img) / 255.0
     return img.flatten()
 
-# Path to the saved model
-model_path = r'C:\Users\vidhu\Downloads\knn_image_classifier_model.joblib'
+model_path = '/content/drive/MyDrive/knn_image_classifier_model.joblib'
 knn = load(model_path)
 
-def classify_image(image_path):
-    image = Image.open(image_path)
-    preprocessed_image = preprocess_image(image, IMAGE_SIZE)
+while True:
+    uploaded = files.upload()
+    image_path = list(uploaded.keys())[0]
+    preprocessed_image = preprocess_image(image_path, IMAGE_SIZE)
     prediction = knn.predict([preprocessed_image])
     if prediction[0] == 1:
         print("The image is classified as FAKE.")
     else:
         print("The image is classified as REAL.")
-
-def on_file_upload(change):
-    image = Image.open(io.BytesIO(change['new'][0]['content']))
-    temp_image_path = 'temp_image.jpg'
-    image.save(temp_image_path)
-    classify_image(temp_image_path)
-
-file_upload = widgets.FileUpload(accept='image/*', multiple=False)
-file_upload.observe(on_file_upload, names='value')
-
-display(file_upload)
+    choice = input("Do you want to upload and classify another image? (yes/no): ")
+    if choice.lower() != 'yes':
+        break

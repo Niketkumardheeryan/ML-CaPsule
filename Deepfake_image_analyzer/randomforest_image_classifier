@@ -78,6 +78,7 @@ model_save_path = '/content/drive/MyDrive/random_forest_image_classifier_model.p
 with open(model_save_path, 'wb') as file:
     pickle.dump(rf_classifier, file)
 
+
 #Step-2:Using our model to classify images
 
 import numpy as np
@@ -124,3 +125,4 @@ while True:
     choice = input("Do you want to upload and classify another image? (yes/no): ")
     if choice.lower() != 'yes':
         break
+

@@ -1,4 +1,7 @@
 #Step-1:Model building
+from google.colab import drive
+drive.mount('/content/drive')
+
 import os
 import numpy as np
 from PIL import Image
@@ -16,8 +19,8 @@ def preprocess_image(image_path, target_size):
     img = np.array(img) / 255.0
     return img.flatten()
 
-# Directory containing the dataset (update this to the local directory path)
-dataset_directory = 'path/to/your/local/Dataset1/'
+# Directory containing the dataset
+dataset_directory = '/content/drive/MyDrive/TrimDataset/Dataset1/'
 
 # Lists to hold training and testing data
 X_train = []
@@ -60,8 +63,8 @@ y_pred = svm.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
 
-# Save the trained model (update this to your local save path)
-model_save_path = 'path/to/your/local/svm_image_classifier_model.joblib'
+# Save the trained model
+model_save_path = '/content/drive/MyDrive/svm_image_classifier_model.joblib'
 dump(svm, model_save_path)
 
 #Step-2:Using our model to classify images
@@ -69,37 +72,28 @@ import numpy as np
 from PIL import Image
 from sklearn.svm import SVC
 from joblib import load
-import ipywidgets as widgets
-from IPython.display import display
-import io
+from google.colab import files
 
-# Image size for resizing
 IMAGE_SIZE = (128, 128)
 
-# Function to preprocess images
 def preprocess_image(image, target_size):
-    img = image.resize(target_size)
+    img = Image.open(image)
+    img = img.resize(target_size)
     img = np.array(img) / 255.0
     return img.flatten()
 
-# Path to the saved model (update this to your local save path)
-model_path = r'C:\Users\vidhu\Downloads\svm_image_classifier_model.joblib'
+model_path = '/content/drive/MyDrive/svm_image_classifier_model.joblib'
 svm = load(model_path)
 
-def classify_image(image_data):
-    image = Image.open(io.BytesIO(image_data))
-    preprocessed_image = preprocess_image(image, IMAGE_SIZE)
+while True:
+    uploaded = files.upload()
+    image_path = list(uploaded.keys())[0]
+    preprocessed_image = preprocess_image(image_path, IMAGE_SIZE)
     prediction = svm.predict([preprocessed_image])
     if prediction[0] == 1:
         print("The image is classified as FAKE.")
     else:
         print("The image is classified as REAL.")
-
-def on_file_upload(change):
-    image_data = change['new'][0]['content']
-    classify_image(image_data)
-
-file_upload = widgets.FileUpload(accept='image/*', multiple=False)
-file_upload.observe(on_file_upload, names='value')
-
-display(file_upload)
+    choice = input("Do you want to upload and classify another image? (yes/no): ")
+    if choice.lower() != 'yes':
+        break
