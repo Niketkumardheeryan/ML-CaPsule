@@ -1,0 +1,105 @@
+#Step-1:Model building
+import os
+import numpy as np
+from PIL import Image
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+from joblib import dump
+
+# Image size for resizing
+IMAGE_SIZE = (128, 128)
+
+# Function to preprocess images
+def preprocess_image(image_path, target_size):
+    img = Image.open(image_path)
+    img = img.resize(target_size)
+    img = np.array(img) / 255.0
+    return img.flatten()
+
+# Directory containing the dataset (update this to the local directory path)
+dataset_directory = 'path/to/your/local/Dataset1/'
+
+# Lists to hold training and testing data
+X_train = []
+y_train = []
+X_test = []
+y_test = []
+
+# Preprocess training data
+for class_name in ['Real', 'Fake']:
+    train_class_directory = os.path.join(dataset_directory, 'Train', class_name)
+    for image_file in os.listdir(train_class_directory):
+        image_path = os.path.join(train_class_directory, image_file)
+        image_features = preprocess_image(image_path, IMAGE_SIZE)
+        X_train.append(image_features)
+        y_train.append(1 if class_name == 'Fake' else 0)
+
+# Preprocess testing data
+for class_name in ['Real', 'Fake']:
+    test_class_directory = os.path.join(dataset_directory, 'Test', class_name)
+    for image_file in os.listdir(test_class_directory):
+        image_path = os.path.join(test_class_directory, image_file)
+        image_features = preprocess_image(image_path, IMAGE_SIZE)
+        X_test.append(image_features)
+        y_test.append(1 if class_name == 'Fake' else 0)
+
+# Convert lists to numpy arrays
+X_train = np.array(X_train)
+y_train = np.array(y_train)
+X_test = np.array(X_test)
+y_test = np.array(y_test)
+
+# Train Support Vector Machine classifier
+svm = SVC(kernel='linear')  # You can also experiment with other kernels like 'rbf'
+svm.fit(X_train, y_train)
+
+# Predict on test data
+y_pred = svm.predict(X_test)
+
+# Calculate accuracy
+accuracy = accuracy_score(y_test, y_pred)
+print("Accuracy:", accuracy)
+
+# Save the trained model (update this to your local save path)
+model_save_path = 'path/to/your/local/svm_image_classifier_model.joblib'
+dump(svm, model_save_path)
+
+#Step-2:Using our model to classify images
+import numpy as np
+from PIL import Image
+from sklearn.svm import SVC
+from joblib import load
+import ipywidgets as widgets
+from IPython.display import display
+import io
+
+# Image size for resizing
+IMAGE_SIZE = (128, 128)
+
+# Function to preprocess images
+def preprocess_image(image, target_size):
+    img = image.resize(target_size)
+    img = np.array(img) / 255.0
+    return img.flatten()
+
+# Path to the saved model (update this to your local save path)
+model_path = r'C:\Users\vidhu\Downloads\svm_image_classifier_model.joblib'
+svm = load(model_path)
+
+def classify_image(image_data):
+    image = Image.open(io.BytesIO(image_data))
+    preprocessed_image = preprocess_image(image, IMAGE_SIZE)
+    prediction = svm.predict([preprocessed_image])
+    if prediction[0] == 1:
+        print("The image is classified as FAKE.")
+    else:
+        print("The image is classified as REAL.")
+
+def on_file_upload(change):
+    image_data = change['new'][0]['content']
+    classify_image(image_data)
+
+file_upload = widgets.FileUpload(accept='image/*', multiple=False)
+file_upload.observe(on_file_upload, names='value')
+
+display(file_upload)

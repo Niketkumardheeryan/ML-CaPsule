@@ -1,0 +1,126 @@
+#Step-1:Model building
+import os
+import numpy as np
+from PIL import Image
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+from joblib import dump
+import pickle
+from concurrent.futures import ThreadPoolExecutor
+
+# Image size for resizing
+IMAGE_SIZE = (128, 128)
+
+# Function to preprocess images
+def preprocess_image(image_path, target_size):
+    img = Image.open(image_path)
+    img = img.resize(target_size)
+    img = np.array(img) / 255.0
+    return img.flatten()
+
+# Function to load and preprocess images in parallel
+def load_images(class_name, dir_path, target_size):
+    features = []
+    labels = []
+    with ThreadPoolExecutor() as executor:
+        futures = []
+        for image_file in os.listdir(dir_path):
+            image_path = os.path.join(dir_path, image_file)
+            futures.append(executor.submit(preprocess_image, image_path, target_size))
+        for future in futures:
+            image_features = future.result()
+            features.append(image_features)
+            labels.append(1 if class_name == 'Fake' else 0)
+    return features, labels
+
+# Directory containing the dataset
+dataset_directory = '/content/drive/MyDrive/TrimDataset/Dataset1/'
+
+# Lists to hold training and testing data
+X_train = []
+y_train = []
+X_test = []
+y_test = []
+
+# Load and preprocess training data
+for class_name in ['Real', 'Fake']:
+    train_class_directory = os.path.join(dataset_directory, 'Train', class_name)
+    features, labels = load_images(class_name, train_class_directory, IMAGE_SIZE)
+    X_train.extend(features)
+    y_train.extend(labels)
+
+# Load and preprocess testing data
+for class_name in ['Real', 'Fake']:
+    test_class_directory = os.path.join(dataset_directory, 'Test', class_name)
+    features, labels = load_images(class_name, test_class_directory, IMAGE_SIZE)
+    X_test.extend(features)
+    y_test.extend(labels)
+
+# Convert lists to numpy arrays
+X_train = np.array(X_train)
+y_train = np.array(y_train)
+X_test = np.array(X_test)
+y_test = np.array(y_test)
+
+# Train Random Forest classifier
+rf_classifier = RandomForestClassifier(n_estimators=50, random_state=42)  # Reduce n_estimators for faster training
+rf_classifier.fit(X_train, y_train)
+
+# Predict on test data
+y_pred = rf_classifier.predict(X_test)
+
+# Calculate accuracy
+accuracy = accuracy_score(y_test, y_pred)
+print("Accuracy:", accuracy)
+
+# Save the trained model
+model_save_path = '/content/drive/MyDrive/random_forest_image_classifier_model.pkl'
+with open(model_save_path, 'wb') as file:
+    pickle.dump(rf_classifier, file)
+
+#Step-2:Using our model to classify images
+
+import numpy as np
+from PIL import Image
+from joblib import load
+from google.colab import files
+import io
+
+# Image size for resizing
+IMAGE_SIZE = (128, 128)
+
+# Function to preprocess images
+def preprocess_image(image, target_size):
+    img = Image.open(io.BytesIO(image))
+    img = img.resize(target_size)
+    img = np.array(img) / 255.0
+    return img.flatten()
+
+# Path to the trained model
+model_path = '/content/drive/MyDrive/random_forest_image_classifier_model.pkl'
+rf_classifier = load(model_path)
+
+while True:
+    # Upload an image file
+    uploaded = files.upload()
+    if not uploaded:
+        print("No file uploaded. Exiting.")
+        break
+    
+    image_name = list(uploaded.keys())[0]
+    image_data = uploaded[image_name]
+    
+    # Preprocess the uploaded image
+    preprocessed_image = preprocess_image(image_data, IMAGE_SIZE)
+    
+    # Predict the class of the image
+    prediction = rf_classifier.predict([preprocessed_image])
+    if prediction[0] == 1:
+        print("The image is classified as FAKE.")
+    else:
+        print("The image is classified as REAL.")
+    
+    # Ask the user if they want to upload and classify another image
+    choice = input("Do you want to upload and classify another image? (yes/no): ")
+    if choice.lower() != 'yes':
+        break

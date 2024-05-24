@@ -1,0 +1,58 @@
+# Image Classification with Machine Learning Models
+
+This project contains code snippets and explanations for training and using machine learning models for image classification tasks. Four different models are included:
+
+1. Convolutional Neural Network (CNN)
+2. K-Nearest Neighbors (KNN)
+3. Random Forest
+4. Support Vector Machine (SVM)
+
+## Introduction
+
+Image classification is a fundamental task in computer vision, where the goal is to assign a label or a class to an image based on its content. Machine learning models can be trained to automatically classify images into predefined categories.
+
+## Models
+
+### 1. Convolutional Neural Network (CNN)
+
+- **Description:** CNNs are deep learning models particularly well-suited for image classification tasks. They consist of multiple layers of convolutional and pooling operations, followed by fully connected layers.
+- **Training:** The provided script (`cnn_image_classifier.py`) demonstrates how to train a CNN model using TensorFlow/Keras. It includes data preprocessing steps, model architecture definition, compilation, training, and saving the trained model.
+- **Usage:** After training, the model can classify new images using the `classify_image()` function. The script prompts the user to upload an image for classification using a file dialog.
+
+### 2. K-Nearest Neighbors (KNN)
+
+- **Description:** KNN is a simple and intuitive machine learning algorithm used for classification tasks. It classifies new instances based on the majority class among their k nearest neighbors in the feature space.
+- **Training:** The provided script (`knn_image_classifier.py`) demonstrates how to train a KNN model using scikit-learn. It includes data preprocessing steps, model training, and saving the trained model.
+- **Usage:** Similar to the CNN script, the KNN script provides a `classify_image()` function for image classification. It utilizes the trained KNN model to predict the class label of new images.
+
+### 3. Random Forest
+
+- **Description:** Random Forest is an ensemble learning method that constructs multiple decision trees during training and outputs the mode of the classes (classification) or the average prediction (regression) of the individual trees.
+- **Training:** The provided script (`random_forest_image_classifier.py`) demonstrates how to train a Random Forest model using scikit-learn. It includes data preprocessing steps, model training, and saving the trained model.
+- **Usage:** Similar to the other scripts, the Random Forest script provides a `classify_image()` function for image classification. It utilizes the trained Random Forest model to predict the class label of new images.
+
+### 4. Support Vector Machine (SVM)
+
+- **Description:** SVM is a supervised learning algorithm that can be used for classification or regression tasks. It finds the hyperplane that best separates the classes in the feature space.
+- **Training:** The provided script (`svm_image_classifier.py`) demonstrates how to train an SVM model using scikit-learn. It includes data preprocessing steps, model training, and saving the trained model.
+- **Usage:** Similar to the other scripts, the SVM script provides a `classify_image()` function for image classification. It utilizes the trained SVM model to predict the class label of new images.
+
+
+## Requirements
+
+- Python 3.x
+- TensorFlow (for CNN)
+- scikit-learn
+- NumPy
+- PIL (Python Imaging Library)
+- tkinter (for file dialog)
+
+## Usage
+
+1. **Training Models:**
+   - Update the paths to your local dataset directory in the respective scripts.
+   - Run each script to train the corresponding model. The trained models will be saved locally.
+   
+2. **Classifying Images:**
+   - For each model, there is a classification script (`classify_image()` function) that takes an image file as input and classifies it as either "REAL" or "FAKE".
+   - Run the classification script and follow the instructions to upload an image for classification.
