@@ -43,3 +43,7 @@ If you have any questions, suggestions, ideas or issues regarding the project, p
 GitHub: [Raghucharan16](https://github.com/Raghucharan16)
 
 **Your feedback and contributions are most welcome!!**
+
+**Example**:
+
+![handwritten-recognition-5](https://github.com/Raghucharan16/ML-CaPsule/assets/104614903/bfa76da8-c7ba-41ae-bd45-d805fc0a70e4)
