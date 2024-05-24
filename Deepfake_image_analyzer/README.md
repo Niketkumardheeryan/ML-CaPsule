@@ -75,3 +75,14 @@ The dataset used for training these models can be found at [this Kaggle link](ht
 2. **Classifying Images:**
    - For each model, there is a classification script  that takes an image file as input and classifies it as either "REAL" or "FAKE".
    - Run the classification script and follow the instructions to upload an image for classification.
+
+If you have any Queries or Suggestions, feel free to reach out to me.
+
+[<img height="30" src="https://img.shields.io/badge/linkedin-blue.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />][LinkedIn]
+[<img height="30" src="https://img.shields.io/badge/github-black.svg?&style=for-the-badge&logo=github&logoColor=white" />][Github]
+<br />
+
+[linkedin]: https://www.linkedin.com/in/viduragarwal1/
+[github]: https://github.com/vidurAgg22
+
+<h3 align="center">Show some &nbsp;❤️&nbsp; by starring this repo! </h3>
