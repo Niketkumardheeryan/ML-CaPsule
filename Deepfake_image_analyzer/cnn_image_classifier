@@ -1,4 +1,5 @@
-#Step-1:Model building
+# Step-1: Model building
+
 import tensorflow as tf
 from tensorflow.keras import layers, models, optimizers
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -11,14 +12,14 @@ EPOCHS = 10
 # Define data generators
 train_datagen = ImageDataGenerator(rescale=1./255)
 train_generator = train_datagen.flow_from_directory(
-    'path/to/your/local/Dataset1/Train',
+    '/content/drive/MyDrive/TrimDataset/Dataset1/Train',
     target_size=IMAGE_SIZE,
     batch_size=BATCH_SIZE,
     class_mode='binary')
 
 validation_datagen = ImageDataGenerator(rescale=1./255)
 validation_generator = validation_datagen.flow_from_directory(
-    'path/to/your/local/Dataset1/Test',
+    '/content/drive/MyDrive/TrimDataset/Dataset1/Test',
     target_size=IMAGE_SIZE,
     batch_size=BATCH_SIZE,
     class_mode='binary')
@@ -50,28 +51,29 @@ history = model.fit(
     validation_steps=validation_generator.samples // BATCH_SIZE)
 
 # Save the model
-model.save('path/to/your/local/cnn_image_classifier_model.h5')
+model.save('/content/drive/MyDrive/cnn_image_classifier_model.h5')
 
-#Step-2:Using our model to classify images
+# Step-2: Using our model to classify images
 import numpy as np
 from PIL import Image
 from tensorflow.keras.models import load_model
-import tkinter as tk
-from tkinter import filedialog
+from google.colab import files
 
 # Image size for resizing
 IMAGE_SIZE = (128, 128, 3)
 
-def preprocess_image(image_path, target_size):
-    img = Image.open(image_path)
+def preprocess_image(image, target_size):
+    img = Image.open(image)
     img = img.resize(target_size[:2])
     img = np.array(img) / 255.0
     return img
 
-model_path = 'path/to/your/local/cnn_image_classifier_model.h5'
+model_path = '/content/drive/MyDrive/cnn_image_classifier_model.h5'
 cnn_model = load_model(model_path)
 
-def classify_image(image_path):
+while True:
+    uploaded = files.upload()
+    image_path = list(uploaded.keys())[0]
     preprocessed_image = preprocess_image(image_path, IMAGE_SIZE)
     preprocessed_image = np.expand_dims(preprocessed_image, axis=0)  # Add batch dimension
     prediction = cnn_model.predict(preprocessed_image)
@@ -80,18 +82,8 @@ def classify_image(image_path):
         print("The image is classified as FAKE.")
     else:
         print("The image is classified as REAL.")
+    choice = input("Do you want to upload and classify another image? (yes/no): ")
+    if choice.lower() != 'yes':
+        break
 
-def upload_and_classify():
-    root = tk.Tk()
-    root.withdraw()
-    while True:
-        image_path = filedialog.askopenfilename(title="Select an image for classification")
-        if not image_path:
-            break
-        classify_image(image_path)
-        choice = input("Do you want to upload and classify another image? (yes/no): ")
-        if choice.lower() != 'yes':
-            break
 
-if __name__ == "__main__":
-    upload_and_classify()

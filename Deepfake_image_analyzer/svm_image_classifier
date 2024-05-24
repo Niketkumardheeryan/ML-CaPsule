@@ -1,4 +1,4 @@
-#Step-1:Model building
+# Step-1: Model building
 from google.colab import drive
 drive.mount('/content/drive')
 
@@ -67,7 +67,7 @@ print("Accuracy:", accuracy)
 model_save_path = '/content/drive/MyDrive/svm_image_classifier_model.joblib'
 dump(svm, model_save_path)
 
-#Step-2:Using our model to classify images
+# Step-2: Using our model to classify images
 import numpy as np
 from PIL import Image
 from sklearn.svm import SVC

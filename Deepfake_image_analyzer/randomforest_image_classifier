@@ -1,4 +1,4 @@
-#Step-1:Model building
+# Step-1: Model building
 import os
 import numpy as np
 from PIL import Image
@@ -79,7 +79,7 @@ with open(model_save_path, 'wb') as file:
     pickle.dump(rf_classifier, file)
 
 
-#Step-2:Using our model to classify images
+# Step-2: Using our model to classify images
 
 import numpy as np
 from PIL import Image

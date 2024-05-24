@@ -1,4 +1,4 @@
-#Step-1:Model building
+# Step-1: Model building
 import os
 import numpy as np
 from PIL import Image
@@ -64,7 +64,7 @@ print("Accuracy:", accuracy)
 model_save_path = '/content/drive/MyDrive/knn_image_classifier_model.joblib'
 dump(knn, model_save_path)
 
-#Step-2:Using our model to classify images
+# Step:2: Using our model to classify images
 import numpy as np
 from PIL import Image
 from sklearn.neighbors import KNeighborsClassifier
