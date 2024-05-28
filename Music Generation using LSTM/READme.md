@@ -1,29 +1,21 @@
 # Music Generation Using LSTM
 Welcome to the Music Generation Using LSTM project! This project uses Long Short-Term Memory (LSTM) neural networks to generate music. LSTMs are a type of recurrent neural network (RNN) that are well-suited to sequence prediction problems, making them ideal for generating music.
 
+- [Music Generation Using LSTM](#music-generation-using-lstm)
+  - [Introduction](#introduction)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Preprocessing Data](#preprocessing-data)
+    - [Training the Model](#training-the-model)
+    - [Generating Music](#generating-music)
+  - [Training the Model](#training-the-model-1)
+  - [Generating Music](#generating-music-1)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-Table of Contents
-Introduction: Overview of the project and its goals.
-Project Structure: Layout of the project directory and explanation of its components.
-Installation: Step-by-step guide to setting up the project.
-Usage: Instructions on how to use the scripts for preprocessing data, training the model, and generating music.
-Training the Model: Details on how the model is trained.
-Generating Music: Explanation of how to generate new music using the trained model.
-Contributing: Guidelines for contributing to the project.
-License: Information about the project's license.
 
 ## Introduction
 This project aims to create a music generation model using LSTM networks. By training the model on a dataset of MIDI files, the LSTM can learn to generate new music sequences that mimic the style of the training data.
-
-## Project Structure
-The project is organized as follows:
-
-* data/: Contains MIDI files for training and processed data.
-models/: Stores the trained LSTM model.
-* notebooks/: Jupyter notebooks for exploratory data analysis.
-* scripts/: Python scripts for data preprocessing, model training, and music generation.
-* README.md: The project's README file.
-* requirements.txt: Lists the Python dependencies needed for the project.
 
 ## Installation
 To set up the project:
