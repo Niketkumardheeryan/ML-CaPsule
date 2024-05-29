@@ -1,5 +1,7 @@
 
- # Master Machine learning
+<div align="center">
+<h1><img width="30" src="https://madewithml.com/static/images/rounded_logo.png">&nbsp;<a href="https://madewithml.com/">Made With ML</a></h1>
+Design · Develop · Deploy · Iterate
 
 <a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a> 
 ![Issues](https://img.shields.io/github/issues/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
