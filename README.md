@@ -1,33 +1,34 @@
 
 <div align="center">
   <img src="https://cdn-icons-png.flaticon.com/512/8365/8365406.png" alt="ML-CaPsule Icon" width="50" height="50">
-  <h1>ML-CaPsule</h1>
+  <h1 style="margin-bottom: 0;">ML-CaPsule</h1>
   <h2>Master machine learning</h2>
   <p>Design · Develop · Deploy · Iterate</p>
 </div>
 
 
+<div align="center">
+  <a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a> 
+  <img src="https://img.shields.io/github/issues/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-">
+  <img src="https://img.shields.io/github/issues-pr/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-">
+  <img src="https://img.shields.io/github/forks/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-">
+  <img src="https://img.shields.io/github/stars/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-">
+  <br>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"></a>
+  <a href="https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-"></a>
+  <a href="https://github.com/Niketkumardheeryan"><img src="https://img.shields.io/maintenance/yes/2021"></a>
+</div>
 
-<a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a> 
-![Issues](https://img.shields.io/github/issues/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
-![Pull Requests](https://img.shields.io/github/issues-pr/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
-![Forks](https://img.shields.io/github/forks/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
-![Stars](https://img.shields.io/github/stars/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
-
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"></a>
- <a href="https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-"></a>
-<a href="https://github.com/Niketkumardheeryan"><img src="https://img.shields.io/maintenance/yes/2021"></a>
 
 
 __________________________________________________________________________
 
-<img src="https://user-images.githubusercontent.com/74819092/121880620-da9de200-cd2b-11eb-8117-d58e9a103557.png" align="right">
+<p><i>The Machine Learning Capsule is a comprehensive resource designed to cater to both beginners and experienced practitioners in the field of Machine Learning. Whether you're just starting your journey into ML or seeking to deepen your understanding and refine your skills, this repository has something for everyone.</i></p>
 
+<img src="https://freight.cargo.site/w/600/i/2fcf8fc6613f3eb693a5d49bebc7f05c71a2fb41dc50c5f76e3dd0fc739c3e4f/machine-learning.gif" align="right" width="300">
 
-## Description
-<p><i> Machine learning technique to  analysis data that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.</i>
-### Importance of Machine Learning
-Machine learning is important because it gives enterprises a view of trends in customer behavior and business operational patterns, as well as supports the development of new products. Many of today's leading companies, such as Facebook, Google and Uber, make machine learning a central part of their operations. Machine learning has become a significant competitive differentiator for many companies.</p>
+<p><strong>Importance of Machine Learning:</strong> Machine learning is important because it gives enterprises a view of trends in customer behavior and business operational patterns, as well as supports the development of new products. Many of today's leading companies, such as Facebook, Google, and Uber, make machine learning a central part of their operations. Machine learning has become a significant competitive differentiator for many companies.</p>
+
 
 ## 🌱Pre-requisites
 
