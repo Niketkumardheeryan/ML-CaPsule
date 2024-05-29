@@ -29,97 +29,129 @@ __________________________________________________________________________
 
 <p><strong>Importance of Machine Learning:</strong> Machine learning is important because it gives enterprises a view of trends in customer behavior and business operational patterns, as well as supports the development of new products. Many of today's leading companies, such as Facebook, Google, and Uber, make machine learning a central part of their operations. Machine learning has become a significant competitive differentiator for many companies.</p>
 
+## ✨ Features
 
-## 🌱Pre-requisites
+- **Self-Learning Capability**: Machines can autonomously learn from past data and continuously improve their performance over time.
+  
+- **Pattern Detection**: Machine learning algorithms can detect various patterns within datasets, providing valuable insights for analysis and decision-making.
+
+- **Enhanced Branding and Targeting**: Machine learning facilitates improved branding strategies for big organizations by enabling them to target a more relevant customer base effectively.
+
+- **Similarity to Data Mining**: Machine learning shares similarities with data mining as both deal with processing and analyzing large datasets to extract meaningful information and patterns.
+
+
+
+## 🛠️ Pre-requisites
 
 - Python IDE : Install it by using this link [python.org](https://www.python.org/downloads/)
 - If you are new to python programming and want to have a fair knowledge before you start working on it, you can learn it in a simplified way through this [website](https://www.w3schools.com/python/)
 
-## Topics
+## 🎯 Audience
+
+Machine learning is not a separate industry, instead, it's a powerful way of thinking about data that's not reserved for any one type of person.
+
+- **👩‍💻 All developers**: whether software/infra engineer or data scientist, ML is increasingly becoming a key part of the products that you'll be developing.
+- **👩‍🎓 College graduates**: learn the practical skills required for industry and bridge gap between the university curriculum and what industry expects.
+- **👩‍💼 Product/Leadership**: who want to develop a technical foundation so that they can build amazing (and reliable) products powered by machine learning.
+
+
+<h2>🔭 Topics</h2>
 
  ### Extracting  Data
  Extraction is a general term for methods of constructing combinations of the variables to get around these problems while still describing the data with sufficient accuracy
-  * Web scrapping -  Library used :->> Beautiful Soup , Which extract the data from web pages.
+  * Web scrapping -  Library used :->> Beautiful Soup , which extract the data from web pages.
   
- ### Visualization 
- Data visualization is the discipline of trying to understand data by placing it in a visual context so that patterns, trends and correlations that might not otherwise be    detected can be exposed. Python offers multiple great graphing libraries that come packed with lots of different features.
- * Different types of libraries used to manipulate data in form of type of graphs and graphical representation :->> Seaborn , pandas , matplotlib etc. 
+### Visualization
+<img src="https://images.prismic.io/meltwater/5456e736-ea88-4f21-82bf-5132326cbd99_eng-0303-BONUS+Data+Visualization+Designed+for+PR+and+Comms+Professionals.png?auto=compress,format&rect=0,20,596,397&w=960&h=640" align="right" width="200">
+
+Data visualization is the discipline of trying to understand data by placing it in a visual context so that patterns, trends, and correlations that might not otherwise be detected can be exposed. Python offers multiple great graphing libraries that come packed with lots of different features.
+
+* **Different types of libraries used to manipulate data in the form of graphs and graphical representation**: Seaborn, pandas, matplotlib, etc.
+
+
  
  ### Feature selection (Variable Selection)
- the process of selecting a subset of relevant features for use in model.Having irrelevant features in your data can decrease the accuracy of the models and make your model learn based on irrelevant features.
- * Library used for feature selection commonly :->> scikit-learn
- * Link - https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/
- 
- ### Basic concepts of statistic
-A).Understand the Type of Analytics
- 
 
-* Descriptive Analytics tells us what happened in the past and helps a business understand how it is performing by providing context to help stakeholders interpret information.
+The process of selecting a subset of relevant features for use in a model. Having irrelevant features in your data can decrease the accuracy of the models and make your model learn based on irrelevant features.
 
-* Diagnostic Analytics takes descriptive data a step further and helps you understand why something happened in the past.
+* **Library used for feature selection commonly**: scikit-learn
+* **Link**: [Feature Selection with Real and Categorical Data](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/)
 
-* Predictive Analytics predicts what is most likely to happen in the future and provides companies with actionable insights based on the information.
+### Basic concepts of statistics
 
-* Prescriptive Analytics provides recommendations regarding actions that will take advantage of the predictions and guide the possible actions toward a solution
- 
-B). Probability
+**A). Understand the Type of Analytics**
+
+* **Descriptive Analytics**: Tells us what happened in the past and helps a business understand how it is performing by providing context to help stakeholders interpret information.
+* **Diagnostic Analytics**: Takes descriptive data a step further and helps you understand why something happened in the past.
+* **Predictive Analytics**: Predicts what is most likely to happen in the future and provides companies with actionable insights based on the information.
+* **Prescriptive Analytics**: Provides recommendations regarding actions that will take advantage of the predictions and guide the possible actions toward a solution.
+
+**B). Probability**
+
 <img src="https://user-images.githubusercontent.com/74819092/121885333-a9281500-cd31-11eb-9888-8ceb83277f21.png" align="right">
-* Conditional Probability
-* Independent Events
-* Mutually Exclusive Events
-* Bayes’ Theorem
 
-C). Central Tendency
- * Mean 
- * Mode
- * varience
- * Skewness
- * Kurtosis:
- * Standard Deviation
- 
-D). Variability
-* Range: The difference between the highest and lowest value in the dataset.
-* Percentiles — A measure that indicates the value below which a given percentage of observations in a group of observations falls.
-* Quantiles— Values that divide the number of data points into four more or less equal parts, or quarters.
-* Interquartile Range (IQR)— A measure of statistical dispersion and variability based on dividing a data set into quartiles. IQR = Q3 − Q1
-* Variance: The average squared difference of the values from the mean to measure how spread out a set of data is relative to mean.
+* **Conditional Probability**
+* **Independent Events**
+* **Mutually Exclusive Events**
+* **Bayes’ Theorem**
 
-E). Relationship Between Variables
-* Causality: Relationship between two events where one event is affected by the other.
-* Covariance: A quantitative measure of the joint variability between two or more variables.
-* Correlation: Measure the relationship between two variables and ranges from -1 to 1, the normalized version of covariance.
+**C). Central Tendency**
 
-F). Probability Distribution
-* Probability Mass Function (PMF): A function that gives the probability that a discrete random variable is exactly equal to some value.
-* Probability Density Function (PDF): A function for continuous data where the value at any given sample can be interpreted as providing a relative likelihood that the value of the random variable would equal that sample.
-* Cumulative Density Function (CDF): A function that gives the probability that a random variable is less than or equal to a certain value.
-<p align ="center">
-<img src="https://user-images.githubusercontent.com/74819092/121884166-366a6a00-cd30-11eb-8f68-67511cc4b3f4.png" width=400, height=400>
- </p>
+* **Mean**
+* **Mode**
+* **Variance**
+* **Skewness**
+* **Kurtosis**
+* **Standard Deviation**
 
-G). Hypothesis Testing and Statistical Significance
-* Null and Alternative Hypothesis
-* Interpretation
-* Z-Test
-* T-Test
-* ANOVA (Analysis of Variance)
-* Chi-Square Test
+**D). Variability**
 
-H). Regression
-* Linear Regression
-   ** Assumptions of Linear Regression
+* **Range**: The difference between the highest and lowest value in the dataset.
+* **Percentiles**: A measure that indicates the value below which a given percentage of observations in a group of observations falls.
+* **Quantiles**: Values that divide the number of data points into four more or less equal parts, or quarters.
+* **Interquartile Range (IQR)**: A measure of statistical dispersion and variability based on dividing a data set into quartiles. IQR = Q3 − Q1
+* **Variance**: The average squared difference of the values from the mean to measure how spread out a set of data is relative to the mean.
 
-          - Linear Relationship
-          - Multivariate Normality
-          - No or Little Multicollinearity
-          - No or Little Autocorrelation
-          - Homoscedasticity
- * Multiple Linear Regression
+**E). Relationship Between Variables**
+
+* **Causality**: Relationship between two events where one event is affected by the other.
+* **Covariance**: A quantitative measure of the joint variability between two or more variables.
+* **Correlation**: Measures the relationship between two variables and ranges from -1 to 1, the normalized version of covariance.
+
+**F). Probability Distribution**
+
+* **Probability Mass Function (PMF)**: A function that gives the probability that a discrete random variable is exactly equal to some value.
+* **Probability Density Function (PDF)**: A function for continuous data where the value at any given sample can be interpreted as providing a relative likelihood that the value of the random variable would equal that sample.
+* **Cumulative Density Function (CDF)**: A function that gives the probability that a random variable is less than or equal to a certain value.
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74819092/121884166-366a6a00-cd30-11eb-8f68-67511cc4b3f4.png" width="400" height="400">
+</div>
+
+**G). Hypothesis Testing and Statistical Significance**
+
+* **Null and Alternative Hypothesis**
+* **Interpretation**
+* **Z-Test**
+* **T-Test**
+* **ANOVA (Analysis of Variance)**
+* **Chi-Square Test**
+
+**H). Regression**
+
+* **Linear Regression**
+   - **Assumptions of Linear Regression**
+      - Linear Relationship
+      - Multivariate Normality
+      - No or Little Multicollinearity
+      - No or Little Autocorrelation
+      - Homoscedasticity
+
 
 # Data Science
 Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains.<br>
 <p align="center">
-<img src="https://user-images.githubusercontent.com/74819092/122023534-498b4180-cde5-11eb-9aa7-fc1c20aec5fe.png" height=150, width=700>
+<img src="https://as1.ftcdn.net/v2/jpg/03/04/68/52/1000_F_304685223_ttVGVAkC5JlfgEOTO8KYbN4tjnRqM715.jpg" height=150, width=700>
  </P>
  
 ## Why is data science important?
@@ -307,51 +339,47 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
 ## ⚙️ Contribution Guidelines 
 - Have a look at [Contibuting Guidelines](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/CONTRIBUTING_GUIDELINES.md)
 
-
 ## Some awesome Contributors ✨
 
-<table> 
-  <tr>
-    <td align="center"><a href="https://github.com/Niketkumardheeryan"><img src="https://avatars.githubusercontent.com/u/52290648?v=4" width="100px;" alt=""/><br /><sub><b>Niket kumar Dheeryan (Author)</b></sub></a><br />💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/abhinav-bhardwaj"><img src="https://avatars.githubusercontent.com/u/35636061?v=4" width="100px;" alt=""/><br /><sub><b>Abhinav Dubey</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/abhishek2chikun"><img src="https://avatars.githubusercontent.com/u/70378339?v=4" width="100px;" alt=""/><br /><sub><b>Abhishek Panigrahi</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/abhisheks008"><img src="https://avatars.githubusercontent.com/u/68724349?v=4" width="100px;" alt=""/><br /><sub><b>Abhishek Sharma</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/ayushgoyal9991"><img src="https://avatars.githubusercontent.com/u/48384864?v=4" width="100px;" alt=""/><br /><sub><b>Ayush Goyal</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/ayushi424"><img src="https://avatars.githubusercontent.com/u/68391974?v=4" width="100px;" alt=""/><br /><sub><b>Ayushi Shrivastava</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/harshita9621"><img src="https://avatars.githubusercontent.com/u/57454733?v=4" width="100px;" alt=""/><br /><sub><b>Harshita Nayak</b></sub></a><br />💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/hr1shu"><img src="https://avatars.githubusercontent.com/u/57145318?v=4" width="100px;" alt=""/><br /><sub><b>Rishav Kumar</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/Jagannath8"><img src="https://avatars.githubusercontent.com/u/64650848?v=4" width="100px;" alt=""/><br /><sub><b>Jagannath8</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/kaustavr19"><img src="https://avatars.githubusercontent.com/u/54073521?v=4" width="100px;" alt=""/><br /><sub><b>Kaustav Roy</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/Komal-99"><img src="https://avatars.githubusercontent.com/u/74819092?v=4" width="100px;" alt=""/><br /><sub><b>Komal Gupta</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/manuvarghese0603"><img src="https://avatars.githubusercontent.com/u/58263137?v=4" width="100px;" alt=""/><br /><sub><b>Manu Varghese</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/Megha0606"><img src="https://avatars.githubusercontent.com/u/69664057?v=4" width="100px;" alt=""/><br /><sub><b>Megha0606</b></sub></a><br />💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/NEERAJAP2001"><img src="https://avatars.githubusercontent.com/u/65017645?v=4" width="100px;" alt=""/><br /><sub><b>Neeraj Ap</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/nisha331"><img src="https://avatars.githubusercontent.com/u/76838660?v=4" width="100px;" alt=""/><br /><sub><b>Nisha Yadav</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/psyduck1203"><img src="https://avatars.githubusercontent.com/u/58680590?v=4" width="100px;" alt=""/><br /><sub><b>psyduck1203</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/PadminiRai"><img src="https://avatars.githubusercontent.com/u/59466080?v=4" width="100px;" alt=""/><br /><sub><b>Padmini Rai</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/queenish001"><img src="https://avatars.githubusercontent.com/u/77614377?v=4" width="100px;" alt=""/><br /><sub><b>Nishi</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/Rutikab12"><img src="https://avatars.githubusercontent.com/u/71027989?v=4" width="100px;" alt=""/><br /><sub><b>Rutik Bhoyar</b></sub></a><br />💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/Sakalya100"><img src="https://avatars.githubusercontent.com/u/70064084?v=4" width="100px;" alt=""/><br /><sub><b>Sakalya100</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/shivani6320"><img src="https://avatars.githubusercontent.com/u/63535949?v=4" width="100px;" alt=""/><br /><sub><b>Shivani Rana</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/Soumayan-pal01"><img src="https://avatars.githubusercontent.com/u/66107748?v=4" width="100px;" alt=""/><br /><sub><b>Soumayan Pal</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/SurajPawarstar"><img src="https://avatars.githubusercontent.com/u/72244495?v=4" width="100px;" alt=""/><br /><sub><b>SurajPawarstar</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/Sumit11081996"><img src="https://avatars.githubusercontent.com/u/68699320?v=4" width="100px;" alt=""/><br /><sub><b>Sumit11081996</b></sub></a><br />💻</a></td>
-    <td align="center"><a href="https://github.com/suy1968"><img src="https://avatars.githubusercontent.com/u/72243026?v=4" width="100px;" alt=""/><br /><sub><b>Suyash Singh</b></sub></a><br />💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/tanvi355"><img src="https://avatars.githubusercontent.com/u/56465105?v=4" width="100px;" alt=""/><br /><sub><b>Tanvi Bugdani</b></sub></a><br />💻</a></td>
-  </tr>
-</table>
-
-
-
-
-
+<div align="center">
+  <table> 
+    <tr>
+      <td align="center"><a href="https://github.com/Niketkumardheeryan"><img src="https://avatars.githubusercontent.com/u/52290648?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Niket kumar Dheeryan (Author)</b></sub></a><br />💻</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/abhinav-bhardwaj"><img src="https://avatars.githubusercontent.com/u/35636061?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Abhinav Dubey</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/abhishek2chikun"><img src="https://avatars.githubusercontent.com/u/70378339?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Abhishek Panigrahi</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/abhisheks008"><img src="https://avatars.githubusercontent.com/u/68724349?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Abhishek Sharma</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/ayushgoyal9991"><img src="https://avatars.githubusercontent.com/u/48384864?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Ayush Goyal</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/ayushi424"><img src="https://avatars.githubusercontent.com/u/68391974?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Ayushi Shrivastava</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/harshita9621"><img src="https://avatars.githubusercontent.com/u/57454733?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Harshita Nayak</b></sub></a><br />💻</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/hr1shu"><img src="https://avatars.githubusercontent.com/u/57145318?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Rishav Kumar</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/Jagannath8"><img src="https://avatars.githubusercontent.com/u/64650848?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Jagannath8</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/kaustavr19"><img src="https://avatars.githubusercontent.com/u/54073521?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Kaustav Roy</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/Komal-99"><img src="https://avatars.githubusercontent.com/u/74819092?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Komal Gupta</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/manuvarghese0603"><img src="https://avatars.githubusercontent.com/u/58263137?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Manu Varghese</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/Megha0606"><img src="https://avatars.githubusercontent.com/u/69664057?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Megha0606</b></sub></a><br />💻</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/NEERAJAP2001"><img src="https://avatars.githubusercontent.com/u/65017645?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Neeraj Ap</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/nisha331"><img src="https://avatars.githubusercontent.com/u/76838660?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Nisha Yadav</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/psyduck1203"><img src="https://avatars.githubusercontent.com/u/58680590?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>psyduck1203</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/PadminiRai"><img src="https://avatars.githubusercontent.com/u/59466080?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Padmini Rai</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/queenish001"><img src="https://avatars.githubusercontent.com/u/77614377?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Nishi</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/Rutikab12"><img src="https://avatars.githubusercontent.com/u/71027989?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Rutik Bhoyar</b></sub></a><br />💻</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/Sakalya100"><img src="https://avatars.githubusercontent.com/u/70064084?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Sakalya100</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/shivani6320"><img src="https://avatars.githubusercontent.com/u/63535949?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Shivani Rana</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/Soumayan-pal01"><img src="https://avatars.githubusercontent.com/u/66107748?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Soumayan Pal</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/SurajPawarstar"><img src="https://avatars.githubusercontent.com/u/72244495?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>SurajPawarstar</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/Sumit11081996"><img src="https://avatars.githubusercontent.com/u/68699320?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Sumit11081996</b></sub></a><br />💻</a></td>
+      <td align="center"><a href="https://github.com/suy1968"><img src="https://avatars.githubusercontent.com/u/72243026?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Suyash Singh</b></sub></a><br />💻</a></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/tanvi355"><img src="https://avatars.githubusercontent.com/u/56465105?v=4" width="100px" style="border-radius:50%;" alt=""/><br /><sub><b>Tanvi Bugdani</b></sub></a><br />💻</a></td>
+    </tr>
+  </table>
+</div>
