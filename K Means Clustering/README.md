@@ -32,4 +32,5 @@ To run the project:
 
 The main output of the project is the visualization of the clusters obtained from the KMeans clustering algorithm. A scatter plot is used to visualize the clusters based on the scaled annual income and spending score.
 
-![Clusters](Desktop/ML-CaPsule/K_Means_Clustering/output.png)
+![output](https://github.com/Hannan2004/ML-CaPsule/assets/142076469/c67ddeaf-e5bf-466a-9f08-437ca540d0aa)
+
