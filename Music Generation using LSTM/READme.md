@@ -1,7 +1,7 @@
-# Music Generation Using LSTM
-Welcome to the Music Generation Using LSTM project! This project uses Long Short-Term Memory (LSTM) neural networks to generate music. LSTMs are a type of recurrent neural network (RNN) that are well-suited to sequence prediction problems, making them ideal for generating music.
+# Music Generation
+Welcome to the Music Generation! This project uses Long Short-Term Memory (LSTM) neural networks to generate music. LSTMs are a type of recurrent neural network (RNN) that are well-suited to sequence prediction problems, making them ideal for generating music.
 
-- [Music Generation Using LSTM](#music-generation-using-lstm)
+- [Music Generation](#music-generation)
   - [Introduction](#introduction)
   - [Installation](#installation)
   - [Usage](#usage)
@@ -15,7 +15,7 @@ Welcome to the Music Generation Using LSTM project! This project uses Long Short
 
 
 ## Introduction
-This project aims to create a music generation model using LSTM networks. By training the model on a dataset of MIDI files, the LSTM can learn to generate new music sequences that mimic the style of the training data.
+This project aims to create a music generation model. By training the model on a dataset of MIDI files, the LSTM can learn to generate new music sequences that mimic the style of the training data.
 
 ## Installation
 To set up the project:
