@@ -267,15 +267,24 @@ The six major areas of data science include the following:
 ### Note:
 * Above project list will be scheduled automatically,whenever new projects add to the repo it will add in above table.
 
-## 📖 Code Of Conduct:
+<hr>
 
-You can find our Code of Conduct [here](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/CODE_OF_CONDUCT.md).
+<!-- Code of conduct -->
+<div>
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" height="35"> Code of Conduct</h2>
+</div>
 
-## 📝 License  
+Please note that this project is released with a [Contributor Code of Conduct](./CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
+<!-- License -->
+<div>
+<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Page%20with%20Curl.png" width="35" height="35"> License</h2>
+</div>
+
+This project is licensed under the [MIT License](./LICENSE).
 
 
+<hr>
 
 ## Have a look 
  
@@ -293,11 +302,40 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
 
 ``` git clone https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance- ```
 
-## ⚙️ Contribution Guidelines 
+<!-- Open Source Programs -->
+  <div>
+    <h2><img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Flexed%20Biceps.png?raw=true" width="35" height="35" > Open Source Programs</h2>
+  </div>
+
+  <table border="1" cellpadding="10">
+        <tr>
+            <td rowspan="2">
+                <img src="https://github.com/Niketkumardheeryan/ML-CaPsule/assets/133582566/3e1ff1e1-310d-4e96-800e-78a3066a6047" alt="GSSOC Logo" width="100" height="55">
+            </td>
+            <td>
+                <strong>GSSOC 2024</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                This project is a part of GirlScript Summer of Code. We wholeheartedly welcome contributions from the community to assist in the development of ML-CaPsule.
+            </td>
+        </tr>
+    </table>
+
+<hr>
+
+<div>
+  <h2><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.webp" width="35" height="35"> Contribution Guidelines </h2>
+</div>
+
 - Have a look at [Contibuting Guidelines](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/CONTRIBUTING_GUIDELINES.md)
 
+<hr>
 
-## Some awesome Contributors ✨
+<div>
+  <h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="35" height="35"> Our Awesome Contributors</h2>
+</div>
 
 <table>
  
@@ -357,3 +395,4 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
   </tr>
 </table>
 
+😊 Thank you for contributing to our project!
