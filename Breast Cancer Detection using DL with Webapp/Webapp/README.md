@@ -25,6 +25,8 @@ This code structure enables seamless integration of deep learning models into a 
 
 ### Video Demonstration 🎥
 
+https://github.com/TheNaiveSamosa/ML-CaPsule/assets/112872086/e38a9bd4-fa0f-4e59-b5f6-d346350fd427
+
 
 ### Signature ✒️
 Aditya Khamitkar (TheNaiveSamosa)
