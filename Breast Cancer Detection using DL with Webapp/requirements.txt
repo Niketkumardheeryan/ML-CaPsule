@@ -1,0 +1,4 @@
+Flask==2.0.3
+tensorflow==2.8.0
+opencv-python-headless==4.5.5.64
+numpy==1.21.5
