@@ -20,10 +20,9 @@ This project is a Fake News Detection system using NLP and Logistic regression t
 - Logistic Regression model
 - Evaluate
 
-
 # Included Gradio as User Interface
 # How to use it:
--firstly run all the cells.
+-firstly run all the cells
 -after running these cells at the last cell you will get a user interface
 -In that interface submit your news in input section.
 -The model will give you the output quickly with its confidence level
