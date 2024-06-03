@@ -22,11 +22,15 @@ This project is a Fake News Detection system using NLP and Logistic regression t
 
 # Included Gradio as User Interface
 # How to use it:
--firstly run all the cells
--after running these cells at the last cell you will get a user interface
--In that interface submit your news in input section.
--The model will give you the output quickly with its confidence level
--if score is greater than 0.70 then that. news. is fake or else it is real. 
+- Run all the cells
+- Download all the necessary libraries
+- Get the model in your desired format(pkl,h5,keras etc) or in the given format  
+- At  final cell get the output as gradio interface
+- Insert your news in the input section
+- Get the prediction from model as real or fake with score
+- If score greater than 0.7 then it is more likely to be fake news
+- Also  get the confidence score
+
 
 Here is the output of Gradio User Interface
 
