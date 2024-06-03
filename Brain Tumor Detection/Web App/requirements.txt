@@ -1,0 +1,6 @@
+Flask==2.3.2
+Markdown==3.4.3
+numpy==1.23.5
+Pillow==9.5.0
+tensorflow==2.12.0
+tensorflow_intel==2.12.0
