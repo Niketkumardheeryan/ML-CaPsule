@@ -73,13 +73,13 @@ Incorporating the EfficientNetB1 model into our codebase brings a wealth of adva
 
 Visualization of Predicted Labels on test set :- </br>
 
-![alt text](../Images/EfficientNetB1_predictions/110c0489-de74-4a4a-b156-2e3d0e5d1dcd.png)</br>
+![alt text](Images/EfficientNetB1_predictions/110c0489-de74-4a4a-b156-2e3d0e5d1dcd.png)</br>
 
-![alt text](../Images/EfficientNetB1_predictions/351e8e1c-65d4-4459-bbdd-d25640feecd6.png)</br>
+![alt text](Images/EfficientNetB1_predictions/351e8e1c-65d4-4459-bbdd-d25640feecd6.png)</br>
 
-![alt text](../Images/EfficientNetB1_predictions/57fabd9e-4a15-4f9b-84aa-f6fcdad06f2f.png)</br>
+![alt text](Images/EfficientNetB1_predictions/57fabd9e-4a15-4f9b-84aa-f6fcdad06f2f.png)</br>
 
-![alt text](../Images/EfficientNetB1_predictions/db3e72d8-9787-49c5-ac29-0f883714fbe8-1.png)
+![alt text](Images/EfficientNetB1_predictions/db3e72d8-9787-49c5-ac29-0f883714fbe8-1.png)
 
 
 ### ResNet50V2
@@ -90,13 +90,13 @@ Implementing transfer learning with the ResNet50V2 model allows us to benefit fr
 
 Visualization of Predicted Labels on test set :- </br>
 
-![alt text](../Images/Resnet50V2_predictions/66ff8a40-eae3-4e85-8754-56c7d315e283.png)</br>
+![alt text](Images/Resnet50V2_predictions/66ff8a40-eae3-4e85-8754-56c7d315e283.png)</br>
 
-![alt text](../Images/Resnet50V2_predictions/73526bcd-3bdb-479a-8d5a-eadf95e39bab.png)</br>
+![alt text](Images/Resnet50V2_predictions/73526bcd-3bdb-479a-8d5a-eadf95e39bab.png)</br>
 
-![alt text](../Images/Resnet50V2_predictions/8e4ae9ac-48e0-47d6-82ae-1b6cf2513264.png)</br>
+![alt text](Images/Resnet50V2_predictions/8e4ae9ac-48e0-47d6-82ae-1b6cf2513264.png)</br>
 
-![alt text](../Images/Resnet50V2_predictions/9dc0755b-8e5c-48fd-9f94-9aaebefa4fa6.png)
+![alt text](Images/Resnet50V2_predictions/9dc0755b-8e5c-48fd-9f94-9aaebefa4fa6.png)
 
 
 ### InceptionV3
@@ -106,13 +106,13 @@ When implementing the InceptionV3 model in code, we leverage its powerful archit
 lightweighted (92 MB) , better accuracy , less parameters (23.9M) , less inference speed (CPU - 42.2 , GPU - 6.9)
 
 Visualization of Predicted Labels on test set :- </br>
-![alt text](../Images/InceptionV3_predictions/0676b4cc-8572-4478-92e6-c18cf4287d9a.png)</br>
+![alt text](Images/InceptionV3_predictions/0676b4cc-8572-4478-92e6-c18cf4287d9a.png)</br>
 
-![alt text](../Images/InceptionV3_predictions/4b389b70-a176-47d0-bdfd-0930742e88a0.png)</br>
+![alt text](Images/InceptionV3_predictions/4b389b70-a176-47d0-bdfd-0930742e88a0.png)</br>
 
-![alt text](../Images/InceptionV3_predictions/6ea5b05d-d870-48f7-a546-f4f6db373054.png)</br>
+![alt text](Images/InceptionV3_predictions/6ea5b05d-d870-48f7-a546-f4f6db373054.png)</br>
 
-![alt text](../Images/InceptionV3_predictions/d00c5e4d-f801-4e56-a7d4-741846506133.png)
+![alt text](Images/InceptionV3_predictions/d00c5e4d-f801-4e56-a7d4-741846506133.png)
 
 
 ### DenseNet121
@@ -123,13 +123,13 @@ When implementing the DenseNet121 model in code, we leverage its densely connect
 , High accuracy , Moderate number of parameters (8M) , Efficient inference speed (CPU - ~45 ms, GPU - ~10 ms).
 
 Visualization of Predicted Labels on test set :- </br>
-![alt text](../Images/DenseNet121/26b65009-f08a-4f95-988c-9cb4472d6262.png)</br>
+![alt text](Images/DenseNet121/26b65009-f08a-4f95-988c-9cb4472d6262.png)</br>
 
-![alt text](../Images/DenseNet121/6a74efbb-237f-4ed1-9b1c-53a85ef79c29.png)</br>
+![alt text](Images/DenseNet121/6a74efbb-237f-4ed1-9b1c-53a85ef79c29.png)</br>
 
-![alt text](../Images/DenseNet121/ead96295-c9ce-4363-978c-39a87363dca4.png)</br>
+![alt text](Images/DenseNet121/ead96295-c9ce-4363-978c-39a87363dca4.png)</br>
 
-![alt text](../Images/DenseNet121/fd5fbe70-f1f5-4d32-9f83-7af7b2b96dad.png)
+![alt text](Images/DenseNet121/fd5fbe70-f1f5-4d32-9f83-7af7b2b96dad.png)
 
 
 
@@ -149,17 +149,17 @@ Visualization of Predicted Labels on test set :- </br>
  A bar chart showing the distribution of labels in the training dataset. It visually represents the frequency of each label category, providing an overview of how the labels are distributed across the dataset.
 
 
-![alt text](../Images/bar.png)
+![alt text](Images/bar.png)
 
 ### Pie Chart :-
 A pie chart illustrating the distribution of labels in the training dataset. The percentage value displayed on each segment indicates the relative frequency of each label category.
 
-![alt text](../Images/pie.png)
+![alt text](Images/pie.png)
 
 ### Image paths distribution :-
  Visualizes the distribution of top 20 image paths by label, displays unique values in categorical columns.
 
-![alt text](../Images/image_path_distribution.png)
+![alt text](Images/image_path_distribution.png)
 
 
 
