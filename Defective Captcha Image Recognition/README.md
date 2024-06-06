@@ -53,13 +53,13 @@ Reduced Parameters (22.9M) ,
 Faster Inference Speed (CPU - 39.4, GPU - 5.2)
 
 Visualization of Predicted Labels on test set :- </br>
-![alt text](../Images/Xception_predictions/10169ba4-59c7-4a8d-bc3b-6c874085b3f5.png)</br>
+![alt text](Images/Xception_predictions/10169ba4-59c7-4a8d-bc3b-6c874085b3f5.png)</br>
 
-![alt text](../Images/Xception_predictions/9897dbb4-b870-4efa-b927-8c966741cb1e.png)</br>
+![alt text](Images/Xception_predictions/9897dbb4-b870-4efa-b927-8c966741cb1e.png)</br>
 
-![alt text](../Images/Xception_predictions/b849f400-11db-456e-bfae-d6eea992561d.png)</br>
+![alt text](Images/Xception_predictions/b849f400-11db-456e-bfae-d6eea992561d.png)</br>
 
-![alt text](../Images/Xception_predictions/f1bda14c-5c5d-40fa-a382-81ab3114a830.png)
+![alt text](Images/Xception_predictions/f1bda14c-5c5d-40fa-a382-81ab3114a830.png)
 
 
 ### EfficientNetB1
