@@ -18,6 +18,8 @@ The dataset (`data.csv`) should contain at least two columns:
 - numpy
 - scikit-learn
 - gradio
+- seaborn
+- matplotlib
 
 You can install the necessary packages using:
 ```bash
@@ -31,6 +33,9 @@ The dataset is loaded into a pandas DataFrame and cleaned by dropping any rows w
 
 ### Mapping Strength Values
 The numeric values in the `strength` column are mapped to their corresponding string representations ("Weak", "Medium", "Strong").
+
+### Data visualization
+Visualizations of password strength distribution using a count plot and a pie chart, aiding in understanding the security levels of passwords in the dataset.
 
 ### Tokenization Function
 A custom tokenization function is defined to split each password into individual characters.
