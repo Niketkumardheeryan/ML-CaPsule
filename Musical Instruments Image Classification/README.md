@@ -53,13 +53,13 @@ Reduced Parameters (22.9M) ,
 Faster Inference Speed (CPU - 39.4, GPU - 5.2)
 
 Visualization of Predicted Labels on test set :- </br>
-![alt text](../Images/Xception_predictions/46c54f60-7b66-4832-91bb-f61b5a7d9d35.png)</br>
+![alt text](Images/Xception_predictions/46c54f60-7b66-4832-91bb-f61b5a7d9d35.png)</br>
 
-![alt text](../Images/Xception_predictions/548cbfd4-cfc5-4624-a1fd-56940fe4de42.png)</br>
+![alt text](Images/Xception_predictions/548cbfd4-cfc5-4624-a1fd-56940fe4de42.png)</br>
 
-![alt text](../Images/Xception_predictions/710085b6-de7a-4d6d-a0a8-6aa8bfec79ee.png)</br>
+![alt text](Images/Xception_predictions/710085b6-de7a-4d6d-a0a8-6aa8bfec79ee.png)</br>
 
-![alt text](../Images/Xception_predictions/908b04ed-6901-4914-9a05-eb1e89b9bd3f.png)
+![alt text](Images/Xception_predictions/908b04ed-6901-4914-9a05-eb1e89b9bd3f.png)
 
 
 ### MobileNetV2
