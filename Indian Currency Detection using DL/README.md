@@ -56,9 +56,9 @@ Visualization of Predicted Labels on test set :- </br>
 
 ![alt text](Images/Xception_predictions/1ee80672-8bf2-4946-a8c4-0c742949ae70.png)</br>
 
-![alt text](/Images/Xception_predictions/5ddb2db6-6493-472e-9fb2-3510b6e214a2.png)</br>
+![alt text](Images/Xception_predictions/5ddb2db6-6493-472e-9fb2-3510b6e214a2.png)</br>
 
-![alt text](/Images/Xception_predictions/85aaddd6-dd79-42ad-b209-33f89cc5ff18.png)
+![alt text](Images/Xception_predictions/85aaddd6-dd79-42ad-b209-33f89cc5ff18.png)
 
 
 
@@ -72,11 +72,11 @@ Reduced Parameters (5.3M) ,
 Enhanced Inference Speed (CPU - 55.1, GPU - 10.3)
 
 Visualization of Predicted Labels on test set :- </br>
-![alt text](/Images/NASNetMobile_predictions/28cea739-a49a-452d-8796-6d3069780991.png)</br>
+![alt text](Images/NASNetMobile_predictions/28cea739-a49a-452d-8796-6d3069780991.png)</br>
 
-![alt text](/Images/NASNetMobile_predictions/2e4cba78-0b17-4c85-9ee0-7bdd3522b9d1.png)</br>
+![alt text](Images/NASNetMobile_predictions/2e4cba78-0b17-4c85-9ee0-7bdd3522b9d1.png)</br>
 
-![alt text](/Images/NASNetMobile_predictions/df1812d9-3e50-4de0-9024-af9d2f54d16e.png)
+![alt text](Images/NASNetMobile_predictions/df1812d9-3e50-4de0-9024-af9d2f54d16e.png)
 
 
 
@@ -88,11 +88,11 @@ Implementing transfer learning with the ResNet50V2 model allows us to benefit fr
 **Reasons for opting for ResNet50V2:** Relatively lightweight (98 MB) , High Accuracy (92.1 % Top 5 accuracy), Moderate Parameters (25.6M) , Reasonable Inference Speed on GPU (CPU - 32.1, GPU - 4.7)
 
 Visualization of Predicted Labels on test set :- </br>
-![alt text](/Images/Resnet50V2_predictions/7cf8ba06-bb9e-4f23-9e39-c59923f3f300.png)</br>
+![alt text](Images/Resnet50V2_predictions/7cf8ba06-bb9e-4f23-9e39-c59923f3f300.png)</br>
 
-![alt text](/Images/Resnet50V2_predictions/994bb09c-443a-4f94-a2b2-8457e0875228.png)</br>
+![alt text](Images/Resnet50V2_predictions/994bb09c-443a-4f94-a2b2-8457e0875228.png)</br>
 
-![alt text](/Images/Resnet50V2_predictions/ce0ab66b-583d-4966-8848-bbe2032d5060.png)
+![alt text](Images/Resnet50V2_predictions/ce0ab66b-583d-4966-8848-bbe2032d5060.png)
 
 
 
@@ -104,11 +104,11 @@ When implementing the InceptionV3 model in code, we leverage its powerful archit
 lightweighted (92 MB) , better accuracy , less parameters (23.9M) , less inference speed (CPU - 42.2 , GPU - 6.9)
 
 Visualization of Predicted Labels on test set :- </br>
-![alt text](/Images/InceptionV3_predictions/32abcdf1-3a32-4a63-97ae-2500dee9bbb3.png)</br>
+![alt text](Images/InceptionV3_predictions/32abcdf1-3a32-4a63-97ae-2500dee9bbb3.png)</br>
 
-![alt text](/Images/InceptionV3_predictions/72d2062d-41f0-4455-9607-f437b4362a51.png)</br>
+![alt text](Images/InceptionV3_predictions/72d2062d-41f0-4455-9607-f437b4362a51.png)</br>
 
-![alt text](/Images/InceptionV3_predictions/988c3a1f-cd99-4d61-b395-0b2617891bea.png)
+![alt text](Images/InceptionV3_predictions/988c3a1f-cd99-4d61-b395-0b2617891bea.png)
 
 
 ### DenseNet121
@@ -120,11 +120,11 @@ When implementing the DenseNet121 model in code, we leverage its densely connect
 
 Visualization of Predicted Labels on test set :- </br>
 
-![alt text](/Images/DenseNet121/09ec2435-528f-467a-886c-5a6c563778c0.png)</br>
+![alt text](Images/DenseNet121/09ec2435-528f-467a-886c-5a6c563778c0.png)</br>
 
-![alt text](/Images/DenseNet121/1aeba4fe-e49c-4f98-a78c-863e9105a6a8.png)</br>
+![alt text](Images/DenseNet121/1aeba4fe-e49c-4f98-a78c-863e9105a6a8.png)</br>
 
-![alt text](/Images/DenseNet121/43981767-5776-4649-bc6e-bee34ffac39c.png)
+![alt text](Images/DenseNet121/43981767-5776-4649-bc6e-bee34ffac39c.png)
 
 ## 📚 Libraries Needed
 
@@ -141,18 +141,18 @@ Visualization of Predicted Labels on test set :- </br>
 ### Bar Chart :-
  A bar chart showing the distribution of labels in the training dataset. It visually represents the frequency of each label category, providing an overview of how the labels are distributed across the dataset.
 
-![alt text](/Images/bar.png)
+![alt text](Images/bar.png)
 
 
 ### Pie Chart :-
 A pie chart illustrating the distribution of labels in the training dataset. The percentage value displayed on each segment indicates the relative frequency of each label category.
 
-![alt text](/Images/pie.png)
+![alt text](Images/pie.png)
 
 ### Image paths distribution :-
  Visualizes the distribution of top 20 image paths by label, displays unique values in categorical columns.
 
-![alt text](/Images/image_path.png)
+![alt text](Images/image_path.png)
 
 
 
