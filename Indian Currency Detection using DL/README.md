@@ -54,7 +54,7 @@ Faster Inference Speed (CPU - 39.4, GPU - 5.2)
 
 Visualization of Predicted Labels on test set :- </br>
 
-![alt text](/Images/Xception_predictions/1ee80672-8bf2-4946-a8c4-0c742949ae70.png)</br>
+![alt text](Images/Xception_predictions/1ee80672-8bf2-4946-a8c4-0c742949ae70.png)</br>
 
 ![alt text](/Images/Xception_predictions/5ddb2db6-6493-472e-9fb2-3510b6e214a2.png)</br>
 
