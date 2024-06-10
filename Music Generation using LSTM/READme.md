@@ -10,6 +10,11 @@ Welcome to the Music Generation! This project uses Long Short-Term Memory (LSTM)
     - [Generating Music](#generating-music)
   - [Training the Model](#training-the-model-1)
   - [Generating Music](#generating-music-1)
+  - [Some Examples](#some-examples)
+    - [Real Sample 1](#real-sample-1)
+    - [Generated Sample 1](#generated-sample-1)
+    - [Real Sample 2](#real-sample-2)
+    - [Generated Sample 2](#generated-sample-2)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -35,6 +40,18 @@ The script loads the preprocessed data, defines the LSTM model architecture, and
 
 ## Generating Music
 The generate_music.py script uses the trained LSTM model to generate new music sequences. The output can be saved as MIDI files for further use.
+
+## Some Examples
+### Real Sample 1
+
+
+### Generated Sample 1
+
+
+### Real Sample 2
+
+
+### Generated Sample 2
 
 ## Contributing
 Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request. Here's how you can contribute:
