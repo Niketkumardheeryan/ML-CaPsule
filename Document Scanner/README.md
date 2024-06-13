@@ -22,6 +22,15 @@ The goal of this project is to develop a document scanner that can detect docume
 - NumPy
 - Matplotlib
 
+5.Orignal and transformed sample output image 
+
+
+![original](https://github.com/arunitasahu/ML-CaPsule/assets/100149243/a79fbd35-f111-4229-af7f-d1bac7660a35)
+![GrayImg](https://github.com/arunitasahu/ML-CaPsule/assets/100149243/5155e05c-fa8f-4c23-a8d3-1c03a1382582)
+![CornerFrame](https://github.com/arunitasahu/ML-CaPsule/assets/100149243/516e3913-7508-4273-9e50-863767206c5f)
+![CannyFrame](https://github.com/arunitasahu/ML-CaPsule/assets/100149243/472cf170-603b-449a-92b8-e280ee237178)
+![outputImage](https://github.com/arunitasahu/ML-CaPsule/assets/100149243/8afaa3db-3f92-45d3-b4da-58eb7831b1f0)
+
 
 ## Conclusion
 **With the completion of this project, we have successfully implemented a document scanner using OpenCV. This can be further integrated into various applications for digitizing documents efficiently.**
