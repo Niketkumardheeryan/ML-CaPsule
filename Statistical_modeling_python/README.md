@@ -49,3 +49,11 @@ Pandas
 Matplotlib
 Seaborn
 scikit-learn
+
+
+Hypothesis testing
+T-test
+Chi-square test
+ANOVA Test
+
+Regressional analysis using pycaret and AutoML
