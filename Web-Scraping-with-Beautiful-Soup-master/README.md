@@ -18,10 +18,10 @@ You can install the required packages using `pip`. Open your terminal or command
 
 ```sh
 pip install requests
-pip install beautifulsoup4 
+pip install beautifulsoup4
+```
 
 ### The Rules of Scraping
 1. Check a website's Term and Conditions before scraping it and read the statements about legal use of the data. 
 2. Do not request data from the website too aggressiely and ensure that your program behaves in a reasonable manner.
 3. Revisit the website and rewrite code as needed as the layout of the site may change.
-
