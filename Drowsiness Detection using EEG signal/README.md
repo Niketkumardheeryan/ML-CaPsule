@@ -1,4 +1,4 @@
-<img width="574" alt="Screenshot 2024-06-17 at 11 38 24 PM" src="https://github.com/KamakshiOjha/ML-CaPsule/assets/114620432/a8e5e449-32e1-4767-b36f-95d5cdf11b61"># DROWSINESS DETECTION USING DEEP LEARNING
+# DROWSINESS DETECTION USING DEEP LEARNING
 
 ## Goal
 This project aims to implement a drowsiness detection system using deep learning techniques, comparing the performance of a convolutional neural network (CNN) with a Random Forest classifier for binary classification tasks.
