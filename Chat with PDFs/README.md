@@ -1,4 +1,4 @@
-# CogniChat
+# CogniChat: Chat with your PDFs
 ## Streamlit PDF Chatbot
 A Langchain app developed to chat with Multiple PDFs
 
@@ -49,24 +49,6 @@ This will start the Streamlit server locally, and you can access the application
 - langchain: For text processing and embedding generation.
 - Hugging Face Transformers: For accessing pre-trained language models.
 - dotenv: For loading environment variables from a .env file.
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them to your branch.
-4. Push your changes to your fork.
-5. Submit a pull request with a description of your changes.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Rajendran2201/CogniChat/blob/main/License.md) file for details.
-
-## Authors
-
-- [Rajendran S](https://github.com/Rajendran2201)
 
 
 ## Demonstration 
