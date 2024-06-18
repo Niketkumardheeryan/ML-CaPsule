@@ -1,4 +1,4 @@
-# CogniChat: Chat with your PDFs
+# CogniChat: Chat with multiple PDFs
 ## Streamlit PDF Chatbot
 A Langchain app developed to chat with Multiple PDFs
 
