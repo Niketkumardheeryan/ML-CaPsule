@@ -20,7 +20,7 @@ The goal of this project is to develop a document scanner that can detect docume
 ## Libraries used
 - OpenCV
 - NumPy
-- Matplotlib
+- Matplotlib 
 
 5.Orignal and transformed sample output image 
 
