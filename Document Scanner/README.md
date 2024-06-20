@@ -19,10 +19,21 @@ The goal of this project is to develop a document scanner that can detect docume
 
 ## Libraries used
 - OpenCV
-- NumPyy
+- NumPy
 - Matplotlib 
 
-5.Orignal and transformed sample output image 
+## Instructions to run the code
+
+- Clone the Repository
+- Open Jupyter Notebook
+- Import Libraries 
+- Insert the code into the cell, update the image_path with your image file path, and run the cell.
+- Run all the cells in the Jupyter Notebook. 
+- The original image and the scanned document will be displayed on your local machine.
+
+
+
+## Orignal and transformed sample output image 
 
 
 ![original](https://github.com/arunitasahu/ML-CaPsule/assets/100149243/a79fbd35-f111-4229-af7f-d1bac7660a35)
