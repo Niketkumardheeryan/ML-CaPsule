@@ -47,13 +47,8 @@ if st.button('Get Recommendations'):
         else:
             query = map_emotion_to_query(emotion)
             st.write(f'Search Query: {query}')
-        order = {
-            'Relevance': 'relevance',
-            'View count': 'viewCount',
-            'Rating': 'rating',
-            'Date': 'date'
-        }[sort_order]
-        recommendations = get_youtube_recommendations(query, language, order)
+    
+        recommendations = get_youtube_recommendations(query, language)
         st.session_state['recommendations'] = recommendations
         st.session_state['video_urls'] = [item.split('(')[-1].split(')')[0] for item in recommendations if '(' in item]
 
