@@ -1,0 +1,7 @@
+Here are the requirement which i used in my project-
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
