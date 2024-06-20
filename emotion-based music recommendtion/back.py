@@ -4,6 +4,8 @@ import re
 # YouTube API credentials
 api_key = 'Your- API- Key'
 
+
+# Initialize emotion classifier
 model_name = 'bhadresh-savani/bert-base-go-emotion'
 model = AutoModelForSequenceClassification.from_pretrained(model_name, from_tf=False)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -29,7 +31,7 @@ def map_emotion_to_query(emotion):
     else:
         return 'relaxing music'
 
-def get_youtube_recommendations(query, language=None, order='relevance'):
+def get_youtube_recommendations(query, language=None):
     youtube = googleapiclient.discovery.build('youtube', 'v3', developerKey=api_key)
     if language and language.lower() != 'i am feeling lucky':
         query = f"{query} {language} songs"
@@ -39,8 +41,7 @@ def get_youtube_recommendations(query, language=None, order='relevance'):
         q=query,
         type='video',
         videoDuration='medium',
-        videoCategoryId='10',
-        order=order
+        videoCategoryId='10'
     )
     search_response = search_request.execute()
     video_ids = [item['id']['videoId'] for item in search_response['items']]
