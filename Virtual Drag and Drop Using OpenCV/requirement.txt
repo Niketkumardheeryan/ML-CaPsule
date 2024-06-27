@@ -1,0 +1,4 @@
+#required packages/libraries that need to installed
+
+opencv-python
+cvzone
