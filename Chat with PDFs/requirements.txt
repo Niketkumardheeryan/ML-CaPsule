@@ -1,0 +1,10 @@
+langchain
+PyPDF2
+python-dotenv
+streamlit==1.4.0
+faiss-cpu==1.7.4
+altair==4
+tiktoken
+huggingface-hub
+InstructorEmbedding
+sentence-transformers
