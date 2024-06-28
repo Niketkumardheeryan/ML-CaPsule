@@ -17,24 +17,6 @@ If you have images in the Dataset/Glacier folder, set dataset_name = 'Glacier' i
 
 The project directory is organized as follows:
 
-Image Stitching/
-├── Dataset/
-│ ├── Glacier/
-│ │ ├── CIMG4017.JPG
-│ │ └── CIMG4018.JPG
-│ ├── Mountain/
-│ │ ├── hill1.jpg
-│ │ └── hill2.jpg
-├── Result/
-│ ├── Glacier/
-│ │ ├── output1.jpg
-│ │ └── output2.jpg
-│ ├── Mountain/
-│ │ ├── output1.jpg
-│ │ └── output2.jpg
-├── stitching.py
-└── README.md
-
 - `Dataset/`: Contains the input images for different datasets (e.g., Glacier, Mountain).
 - `Result/`: Stores the stitched images and the post-processed images for different datasets.
 - `stitching.py`: The main script that performs the image stitching and border removal.
@@ -70,5 +52,5 @@ Run the stitching.py script
 The stitched image and the post-processed image will be saved in the corresponding folder under the Result/ directory.
 The script will also display the images using OpenCV's imshow function.
 
-![My Image](Result\Mountain\output1.jpg)
-![My Image](Result\Mountain\output2.jpg)
+![My Image](Result/Mountain/output1.jpg)
+![My Image](Result/Mountain/output2.jpg)
