@@ -1,0 +1,12 @@
+
+### install these libraries/module
+
+pandas
+numpy
+scipy
+scikit-learn
+seaborn
+matplotlib
+wordcloud
+nltk
+xgboost
