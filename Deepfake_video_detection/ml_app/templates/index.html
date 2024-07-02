@@ -1,0 +1,321 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="bg" style="background-image: url('{% static "images/background.jpg" %}'); background-size: cover; ">
+<div class="container">    
+    <div class="row align-items-center justify-content-center flexwrap-wrap" style="overflow: hidden;">
+        <div class="col-12 my-auto" style="padding: 70px">
+            <div class="logo text-center mb-7"><img src="{% static 'images/logo1.png'%}" alt="Logo" ></div>
+            <div class="width-400">
+                <video width="100%" controls id="videos">
+                    <source src="" id="video_source">
+                    Your browser does not support HTML5 video.
+                </video>
+                <form class="form" method="POST" enctype="multipart/form-data" name="video-upload" id="video-upload"
+                    class="text-center mt-3">
+                    {% csrf_token %}
+                    <div class="form-group" style="position: relative;"> <!-- Add relative positioning for animation -->
+                        <!-- <label for="upload_video_file" style="font-weight: bold;">Upload Video File:</label> Bold label for better visibility -->
+                        <h5 style="position: relative; top: -10px;" class="c1">Please Only Upload Video File</h5>
+                        <label for="upload_video_file" class="custom-file-upload"><div class="chose">Choose File </div></label> <!-- Custom file upload button -->
+                        <input type="file" id="upload_video_file" name="upload_video_file" style="display: none;" /> <!-- Hidden file input -->
+                        <div class="spinner-3"></div>
+                        <span id="fileInfo" style="display: none; position: absolute; top: 30px; left: 0; width: 100%; text-align: center;"> <!-- File info container -->
+                            <strong>Uploaded File:</strong> <span id="fileName"></span> <!-- Uploaded file name -->
+                        </span>
+                        {% if form.upload_video_file.errors %}
+                        {% for each_error in form.upload_video_file.errors %}
+                        <div class="alert alert-danger mt-2" style="margin-top: 5px;"> <!-- Adjust margin for spacing -->
+                            {{ each_error }}
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    
+                    <script>
+                        $(document).ready(function() {
+                            $('#upload_video_file').on('change', function() {
+                                var fileName = $(this).val().split('\\').pop(); // Get the uploaded file name
+                                $('#fileName').text(fileName); // Display file name in the info container
+                                $('#fileInfo').fadeIn(); // Fade in the file info container
+                            });
+                        });
+                    </script>
+                    <style>
+                        /* Custom file upload button styling */
+                        .custom-file-upload {
+                            border: 1px solid #ccc;
+                            background-color: #f9f9f9;
+                            padding: 10px 20px;
+                            cursor: pointer;
+                            display: inline-block;
+                            border-radius: 4px;
+                            transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add smooth transition effect */
+                        }
+
+                        /* Add hover effect for custom file upload button */
+                        .custom-file-upload:hover {
+                            background-color: #ffffff;
+                            border-color: #ffa200; /* Darker border color on hover */
+                            color: #8f2727; /* Darker text color on hover */
+                        }
+
+                        /* Add focus effect for custom file upload button */
+                        .custom-file-upload:focus {
+                            outline: none; /* Remove default focus outline */
+                            border-color: #66afe9; /* Add custom focus border color */
+                        }
+
+                        /* Add animation */
+                        .custom-file-upload {
+                            transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s; /* Add transition for smoother hover effect */
+                        }
+
+                        .custom-file-upload:hover {
+                            transform: scale(1.05); /* Scale up the button on hover */
+                        }
+
+                    </style>
+                    <div class="form-group">
+                        <label for="{{ form.sequence_length.id_for_label }}">{{ form.sequence_length.label }}</label><span 
+                            id="slider-value"></span>
+                        <input type="number" hidden="hidden" id="{{ form.sequence_length.id_for_label }}"
+                            name="{{ form.sequence_length.name }}"></input>
+                        <div id='slider'></div>
+                        {% if form.sequence_length.errors %}
+                        {% for each_error in form.sequence_length.errors %}
+                        <div class="alert alert-danger mt-1 {{ form.sequence_length.id_for_label }}">
+                            {{ each_error }}
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <style>
+                    #videoUpload {
+                        background-color: transparent;
+                        color: black;
+                        font-family: cursive;
+                        border: 2px solid transparent;
+                        transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; 
+                    }
+
+                    #videoUpload:hover {
+                        background-color: #ffffff;
+                        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Adjust box-shadow for a softer effect */
+                        color: #000000; /* Change text color on hover */
+                    }
+
+                    /* Add animation */
+                    @keyframes pulseAnimation {
+                        0% { transform: scale(1); }
+                        50% { transform: scale(1.05); }
+                        100% { transform: scale(1); }
+                    }
+
+                    #videoUpload:hover {
+                        animation: pulseAnimation 0.5s infinite; /* Apply pulse animation on hover */
+                    }
+
+
+                        /* Cool infinite background scrolling animation. */
+                        /* Twitter: @kootoopas */
+                        /* Exo thin font from Google. */
+                        @import url(https://fonts.googleapis.com/css?family=Exo:100);
+                        /* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+                        /* Animations */
+                        @-webkit-keyframes bg-scrolling-reverse {
+                            100% {
+                                background-position: 50px 50px;
+                            }
+                        }
+                        @-moz-keyframes bg-scrolling-reverse {
+                            100% {
+                                background-position: 50px 50px;
+                            }
+                        }
+                        @-o-keyframes bg-scrolling-reverse {
+                            100% {
+                                background-position: 50px 50px;
+                            }
+                        }
+                        @keyframes bg-scrolling-reverse {
+                            100% {
+                                background-position: 50px 50px;
+                            }
+                        }
+                        @-webkit-keyframes bg-scrolling {
+                            0% {
+                                background-position: 50px 50px;
+                            }
+                        }
+                        @-moz-keyframes bg-scrolling {
+                            0% {
+                                background-position: 50px 50px;
+                            }
+                        }
+                        @-o-keyframes bg-scrolling {
+                            0% {
+                                background-position: 50px 50px;
+                            }
+                        }
+                        @keyframes bg-scrolling {
+                            0% {
+                                background-position: 50px 50px;
+                            }
+                        }
+                        /* Main styles */
+                        body {
+                            color: #000000;
+                            font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+                            text-align: center;
+                            /* img size is 50x50 */
+                            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+                            -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+                            /* Safari 4+ */
+                            -moz-animation: bg-scrolling-reverse 0.92s infinite;
+                            /* Fx 5+ */
+                            -o-animation: bg-scrolling-reverse 0.92s infinite;
+                            /* Opera 12+ */
+                            animation: bg-scrolling-reverse 0.92s infinite;
+                            /* IE 10+ */
+                            -webkit-animation-timing-function: linear;
+                            -moz-animation-timing-function: linear;
+                            -o-animation-timing-function: linear;
+                            animation-timing-function: linear;
+                        }
+                    </style>
+                        <button id="videoUpload" type="submit" name="submit" class="btn btn-success mt-3 btn-block upload-button" style="background-color: transparent; color: black; font-family: cursive; border: 0.1px solid black;">
+                            <span class="btn-text">Start Analyze</span>
+                        </button>
+                        <div class="loader">Analyzing...</div>
+                        <style>
+                            .loader {
+                            width: 250px;
+                            height: 50px;
+                            
+                            line-height: 50px;
+                            text-align: center;
+                            font-family: helvetica, arial, sans-serif;
+                            text-transform: uppercase;
+                            font-weight: 900;
+                            color: #000000;
+                            letter-spacing: 0.2em;
+                            display: none;
+                            position: absolute;
+                            top: 58%;
+                            left: 51%;
+                            transform: translate(-50%, -50%);  
+                            }
+                            .loader::before,
+                            .loader::after {
+                            content: "";
+                            display: block;
+                            width: 15px;
+                            height: 15px;
+                            background: #2b2a29;
+                            position: absolute;
+                            animation: load 0.9s infinite alternate ease-in-out;
+                            }
+                            .loader::before {
+                            top: 0;
+                            }
+                            .loader::after {
+                            bottom: 0;
+                            }
+
+                            @keyframes load {
+                            0% {
+                                left: 0;
+                                height: 30px;
+                                width: 15px;
+                            }
+                            50% {
+                                height: 8px;
+                                width: 40px;
+                            }
+                            100% {
+                                left: 235px;
+                                height: 30px;
+                                width: 15px;
+                            }
+                            }
+                        </style>
+
+                            <style>
+                                
+                                .spinner-3 {
+                                    width: 50px;
+                                    aspect-ratio: 1;
+                                    display: grid;
+                                    border-radius: 50%;
+                                    background:
+                                        linear-gradient(0deg ,rgb(0 0 0/50%) 30%,#0000 0 70%,rgb(0 0 0/100%) 0) 50%/8% 100%,
+                                        linear-gradient(90deg,rgb(0 0 0/25%) 30%,#0000 0 70%,rgb(0 0 0/75% ) 0) 50%/100% 8%;
+                                    background-repeat: no-repeat;
+                                    animation: s3 1s infinite steps(12);
+                                    position: relative;
+                                    left: 160px;
+                                    display: none;
+                                    }
+                                    .spinner-3::before,
+                                    .spinner-3::after {
+                                    content: "";
+                                    grid-area: 1/1;
+                                    border-radius: 50%;
+                                    background: inherit;
+                                    opacity: 0.915;
+                                    transform: rotate(30deg);
+                                    }
+                                    .spinner-3::after {
+                                    opacity: 0.83;
+                                    transform: rotate(60deg);
+                                    }
+
+                                    @keyframes s3 {
+                                    100% {transform: rotate(1turn)}
+                                    }
+                            </style>
+
+
+
+
+
+                            <script>
+                                document.addEventListener("DOMContentLoaded", () => {
+                                    let loader = document.querySelector('.loader');
+                                    let btnn = document.querySelector('#videoUpload');
+                                    let css = document.querySelector('.chose');
+                                    let css1 = document.querySelector('.custom-file-upload');
+
+                                    btnn.addEventListener('click', () => {
+                                        btnn.style.display = 'none';
+                                        loader.style.display = 'block';
+                                    });
+
+                                    css1.addEventListener('click', () => {
+                                        setTimeout(()=>{
+                                            document.querySelector('.spinner-3').style.display = 'block';
+                                        } , 4000);
+                                    })
+
+                                    css1.addEventListener('click', () => {
+                                        setTimeout(()=>{
+                                            css.innerHTML = 'File Uploaded Successfully';
+                                            document.querySelector('.spinner-3').style.display = 'none';
+                                            document.querySelector('.c1').innerHTML = 'File is Read for analysis';
+                                        } , 7000)
+                                    });
+
+                                });
+                            </script>
+                 
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
+{% block js_scripts %}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock %}
