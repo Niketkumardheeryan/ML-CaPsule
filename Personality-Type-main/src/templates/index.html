@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale-1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Predecir Texto </title>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename = 'css/bootstrap.css')}}">
+	<link rel="stylesheet"  href="{{ url_for('static', filename = 'css/estilo.css')}}">
+	<link rel="stylesheet"  href="{{url_for('static', filename = 'css/font-awesome.css')}}">
+
+	</head>
+<body>
+	<div id="particles-js"></div>	
+
+	<script src="{{ url_for('static', filename = 'js/jquery-3.3.1.js')}}"></script>
+	<script src="{{ url_for('static', filename = 'js/script.js')}}"></script>
+
+	<script src="{{ url_for('static', filename = 'js/particles.js')}}"></script>
+	<script src="{{ url_for('static', filename = 'js/app.js')}}"></script>
+	<script src="{{ url_for('static', filename = 'js/lib/stats.js')}}"></script>
+
+
+	<section class="form_wrap">
+
+			<section class="contact_info">
+				<section class="info_title">
+					<span class="user-img">
+						<img src="{{url_for('static', filename= 'img/face.gif')}}">
+					</span> 
+					<h2> PROYECTO <br> DE SISTEMAS DE INFORMACIÓN </h2>
+					<h4> Reconocimiento de Tipos de Personalidad</h4>
+				</section>
+				
+				<section class="info_items">
+
+					<p>**Yamilé Reynoso Díaz </p>
+					<p>y.reinoso@estudiantes.matcom.uh.cu</p>
+					</br>
+
+					<p>**Masiel Villalba Carmenate </p>
+					<p>m.villalba@estudiantes.matcom.uh.cu</p>
+					</br>
+
+					<p>**Dayrene Fundora González </p>
+					<p>d.fundora@estudiantes.matcom.uh.cu</p>
+				    </br>
+				</section>	
+			</section>	
+			
+			
+			<form action=" " class="form_contact" method="post" url="search">
+				<h2> Entre un Texto para </br>Predecir su Personalidad</h2>
+				<div class="container user_info">	
+				
+					<div class="form-file cotainer form-group">
+							<label for="folder"> Texto </label>
+							<div class="col-sm-10 form-group">
+								<input type="text" class="form-control form-control-lg" id="text" name="text"  placeholder="Se requiere un textoe en ingles" required>
+							</div>						
+						</div>						
+
+					<input type="submit" value="Enviar Mensaje" id="btnSend" onclick="location.href = ''">
+					
+				</div>
+			</form>
+			
+			
+			<div class="col-md-3 mysearch" id="Register">
+					<input type="submit" value="Acceder a Facebook" id="btnSend" onclick="location.href = '/facebook'"> 
+				</div>
+		
+		
+			
+
+	</section>	 
+</body>
+</html>

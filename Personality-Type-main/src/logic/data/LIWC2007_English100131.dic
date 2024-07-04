@@ -1,0 +1,4560 @@
+%
+1	funct
+2	pronoun
+3	ppron
+4	i
+5	we
+6	you
+7	shehe
+8	they
+9	ipron
+10	article
+11	verb
+12	auxverb
+13	past
+14	present
+15	future
+16	adverb
+17	preps
+18	conj
+19	negate
+20	quant
+21	number
+22	swear
+121	social
+122	family
+123	friend
+124	humans
+125	affect
+126	posemo
+127	negemo
+128	anx
+129	anger
+130	sad
+131	cogmech
+132	insight
+133	cause
+134	discrep
+135	tentat
+136	certain
+137	inhib
+138	incl
+139	excl
+140	percept
+141	see
+142	hear
+143	feel
+146	bio
+147	body
+148	health
+149	sexual
+150	ingest
+250	relativ
+251	motion
+252	space
+253	time
+354	work
+355	achieve
+356	leisure
+357	home
+358	money
+359	relig
+360	death
+462	assent
+463	nonfl
+464	filler
+%
+a	1	10
+abandon*	125	127	130	131	137
+abdomen*	146	147
+abilit*	355
+able*	355
+abortion*	146	148	149
+about	1	16	17
+above	1	17	252	250
+abrupt*	253	250
+abs	146	147
+absent*	354
+absolute	131	136
+absolutely	1	16	131	136	462
+abstain*	131	137
+abuse*	125	127	129
+abusi*	125	127	129
+academ*	354
+accept	125	126	131	132
+accepta*	125	126	131	132
+accepted	11	13	125	126	131	132
+accepting	125	126	131	132
+accepts	125	126	131	132
+accomplish*	354	355
+account*	358
+accura*	131	136
+ace	355
+ache*	125	127	130	146	148
+achiev*	354	355
+aching	125	127	130	146	148
+acid*	140
+acknowledg*	131	132
+acne	146	148
+acquainta*	121	123
+acquir*	355
+acquisition*	355
+acrid*	140
+across	1	17	252	250
+act	250	251
+action*	251	250
+activat*	131	133
+active*	125	126
+actor*	356
+actress*	356
+actually	1	16
+add	131	138
+addict*	146	148
+addit*	131	138
+address	357
+adequa*	355
+adjust*	131	132
+administrat*	354
+admir*	125	126
+admit	11	14	121	131	132
+admits	11	14	121	131	132
+admitted	11	13	121	131	132
+admitting	121	131	132
+ador*	125	126
+adult	121	124
+adults	121	124
+advanc*	251	250	355
+advantag*	125	126	355
+adventur*	125	126
+advers*	125	127
+advertising	354
+advice	121
+advil	146	148
+advis*	121	354
+aerobic*	356
+affair*	121
+affect	131	133
+affected	11	13	131	133
+affecting	131	133
+affection*	125	126
+affects	131	133
+afraid	125	127	128
+after	1	17	253	250
+afterlife*	253	250	359
+aftermath*	253	250
+afternoon*	253	250
+afterthought*	131	132	253	250
+afterward*	253	250
+again	1	16	253	250
+against	1	17
+age	253	250
+aged	253	250
+agent	354
+agents	354
+ages	253	250
+aggravat*	125	127	129	131	133
+aggress*	125	127	129
+aging	253	250
+agitat*	125	127	129
+agnost*	359
+ago	253	250
+agoniz*	125	127	130
+agony	125	127	130
+agree	125	126	462
+agreeab*	125	126
+agreed	125	126
+agreeing	125	126
+agreement*	125	126
+agrees	125	126
+ah	462
+ahead	1	17	253	250	355
+aids	146	148	149
+ain't	11	1	12	14	19
+aint	11	1	12	14	19
+air	250	252
+alarm*	125	127	128
+alcohol*	146	148	150
+alive	146	148	360
+all	1	20	131	136
+alla	359
+allah*	359
+allerg*	146	148
+allot	1	20	131	135
+allow*	131	133
+almost	131	135
+alone	125	127	130
+along	1	17	131	138
+alot	1	10	20	131	135
+already	253	250
+alright*	125	126	462
+also	1	16	18
+altar*	359
+although	1	18
+altogether	131	136
+always	131	136	253	250
+am	11	1	12	14
+amaz*	125	126
+ambigu*	131	135
+ambiti*	354	355
+amen	359
+amigo*	121	123
+amish	359
+among*	1	17	252	250
+amor*	125	126
+amount*	20
+amput*	146	148
+amus*	125	126	356
+an	1	10
+anal	131	137	146	147
+analy*	131	132
+ancient*	253	250
+and	1	18	131	138
+angel	359
+angelic*	359
+angels	359
+anger*	125	127	129
+angr*	125	127	129
+anguish*	125	127	128
+ankle*	146	147
+annoy*	125	127	129
+annual*	253	250
+anorexi*	146	148	150
+another	1	20
+answer*	131	132
+antacid*	146	148
+antagoni*	125	127	129
+antidepressant*	146	148
+anus*	146	147
+anxi*	125	127	128
+any	1	20	131	135
+anybod*	1	2	9	121	131	135
+anyhow	131	135
+anymore	1	20	250	253
+anyone*	1	2	9	121	131	135
+anything	1	2	9	131	135
+anytime	131	135	253	250
+anyway*	1	16
+anywhere	1	16	131	135	252	250
+aok	125	126	462
+apart	252	250
+apartment*	356	357
+apath*	125	127
+apolog*	121
+appall*	125	127
+apparent	131	136
+apparently	1	16	131	135
+appear	11	14	131	135	251	250
+appeared	11	13	131	135	251	250
+appearing	131	135	251	250
+appears	11	14	131	135	251	250
+appendic*	146	148
+appendix	146	147
+appeti*	146	150
+applicant*	354
+applicat*	354
+appreciat*	125	126	131	132
+apprehens*	125	127	128
+apprentic*	354
+approach*	251	250
+approv*	355
+approximat*	131	135
+april	253	250
+arbitrar*	131	135
+arch	146	147
+are	11	1	12	14
+area*	252	250
+aren't	11	1	12	14	19
+arent	11	1	12	14	19
+argh*	125	127	129
+argu*	121	125	127	129
+arm	146	147
+armies	121
+armpit*	146	147
+arms*	146	147
+army	121
+aroma*	140
+around	1	16	17	131	138	252	250
+arous*	146	147	149
+arrival*	251	250
+arrive	11	14	251	250
+arrived	11	13	251	250
+arrives	11	14	251	250
+arriving	251	250
+arrogan*	125	127	129
+arse	146	147	22
+arsehole*	22
+arses	146	147	22
+art	356
+arter*	146	147
+arthr*	146	148
+artist*	356
+arts	356
+as	1	17	18
+asham*	125	127	128
+ask	11	14	121
+asked	11	13	121
+asking	121
+asks	11	14	121
+asleep	146	147
+aspirin*	146	148
+ass	146	147	149	22
+assault*	125	127	129
+assembl*	121
+asses	146	147	149	22
+asshole*	125	127	129	22
+assign*	354
+assistan*	354
+associat*	354
+assum*	131	132	135
+assur*	125	126	131	136
+asthma*	146	148
+at	1	17	252	250
+ate	11	13	146	150
+athletic*	356
+atho	1	18
+atm	358
+atms	358
+atop	1	17	252	250
+attachment*	125	126
+attack*	125	127	129
+attain*	355
+attempt*	355
+attend	251	250
+attended	251	250
+attending	251	250
+attends	251	250
+attent*	131	132
+attract*	125	126
+attribut*	131	133
+auction*	358
+audibl*	140	142
+audio*	140	142
+audit	358
+audited	358
+auditing	358
+auditor	358
+auditorium*	354
+auditors	358
+audits	358
+august	253	250
+aunt*	121	122
+authorit*	355
+autops*	360
+autumn	253	250
+aversi*	125	127	128
+avert*	131	137
+avoid*	125	127	128	131	137
+aw	462
+award*	125	126	354	355
+aware*	131	132
+away	1	17	252	250
+awesome	125	126	462
+awful	125	127
+awhile	253	250
+awkward*	125	127	128
+babe*	121	124
+babies	121	124
+baby*	121	124
+back	1	16	253	250
+backward*	252	250
+backyard	357
+bad	125	127
+bake*	146	150	357
+baking	146	150	357
+balcon*	357
+bald	146	147
+ball	356
+ballet*	356
+bambino*	121	124
+ban	131	137
+band	121	356
+bandage*	146	148
+bandaid	146	148
+bands	121	356
+bank*	358
+banned	131	137
+banning	131	137
+bans	131	137
+baptis*	359
+baptiz*	359
+bar	146	150	356
+barely	131	135
+bargain*	358
+barrier*	131	137
+bars	146	150	356
+baseball*	356
+based	131	133
+bases	131	133
+bashful*	125	127
+basically	1	16
+basis	131	133
+basketball*	356
+bastard*	125	127	129	22
+bath*	356	357
+battl*	125	127	129
+be	11	1	12
+beach*	356
+beat	355
+beaten	125	127	129	354	355
+beaut*	125	126	140	141
+became	11	1	12	13	131	132
+because	1	18	131	133
+become	11	1	12	14	131	132
+becomes	11	1	12	14	131	132
+becoming	11	1	12	131	132
+bed	357
+bedding	357
+bedroom*	357
+beds	357
+been	11	1	12	13
+beer*	146	150	356
+before	1	17	253	250
+began	11	13	253	250
+beggar*	358
+begging	358
+begin	11	14	253	250
+beginn*	253	250
+begins	11	14	253	250
+begun	253	250
+behavio*	250	251
+behind	1	17
+being	11	1	12
+belief*	131	132	359
+believe	11	14	131	132
+believed	11	13	131	132
+believes	11	14	131	132
+believing	131	132
+bellies	146	147
+belly	146	147
+beloved	125	126
+below	1	17	252	250
+bend	252	250
+bending	252	250
+bends	252	250
+beneath	1	17	252	250
+benefic*	125	126
+benefit	125	126
+benefits	125	126	354
+benefitt*	125	126
+benevolen*	125	126
+benign*	125	126
+bent	252	250
+bereave*	360
+beside	1	17	252	250
+besides	1	17	20	131	134
+best	125	126	355	1	20
+bet	131	135	358
+bets	131	135	358
+better	125	126	355
+betting	131	135	358
+between	1	17
+beyond	1	16	17	252	250
+bf*	121	123
+bi	146	149
+biannu*	253	250
+bible*	359
+biblic*	359
+bicep*	146	147
+bicyc*	356
+big	252	250
+bigger	252	250
+biggest	252	250
+bike*	356
+bill	358
+billed	358
+billing*	358
+billion*	1	21
+bills	358
+bimonth*	253	250
+binding	131	137
+binge*	146	148	150
+binging	146	148	150
+biolog*	354
+bipolar	146	148
+birdie*	356
+birth*	253	250
+bishop*	359
+bit	20
+bitch*	125	127	129	22
+bits	20
+bitter*	125	127	129	140
+biweek*	253	250
+biz	354
+black	140	141
+blackboard*	354
+blacke*	140	141
+blackish*	140	141
+blackjack	356
+blacks	140	141
+bladder*	146	147
+blah	464
+blam*	121	125	127	129
+blatant*	131	136
+bldg*	354
+bleed*	146	148
+blender*	357
+bless*	125	126	359
+blind*	146	148	140	141
+block	131	137
+blockbuster*	356
+blocked	131	137
+blocker*	131	137
+blocking	131	137
+blocks	131	137
+blog*	356
+blond*	140	141
+blood	146	147
+bloody	146	147	22
+blue*	140	141
+blur*	131	135
+bodi*	146	147
+body*	146	147
+boil*	146	150
+bold*	125	126
+bone	146	147
+boner*	146	149
+bones	146	147
+bonus*	125	126	355	358
+bony	146	147
+boob*	146	147	149	22
+book*	354	356
+boom*	140	142
+booz*	146	150
+borderline*	131	135
+bore*	125	127
+boring	125	127
+born	253	250
+borrow*	358
+boss*	131	133	354
+both	1	20	131	138	252	250
+bother*	125	127	129
+bottom*	252	250
+bought	11	13	358
+bound*	131	137
+bowel*	146	147
+boy	121	124
+boy's	121	124
+boyf*	121	123
+boys*	121	124
+brain*	146	147
+brake*	131	137
+brave*	125	126
+bread	146	150
+breadth	252	250
+break	250
+breakfast*	146	150
+breast*	146	147	149
+breath*	146	147
+bridle*	131	137
+brief*	251	250
+bright*	125	126	140	141
+brillian*	125	126
+bring	11	14	251	250
+bringing	251	250
+brings	11	14	251	250
+brink	252	250
+bro	121	122
+broad*	252	250
+broke	125	127	130
+broker*	354	358
+bronchi*	146	148
+broom*	357
+bros	121	122
+brother*	121	122
+brought	11	13	251	250
+brown*	140	141
+brunch*	146	150
+brush*	140	143
+brutal*	125	127	129
+buck	358
+bucks	358
+bud	121	123
+buddh*	359
+buddies*	121	123
+buddy*	121	123
+budget*	358
+building	250
+bulimi*	146	148	150
+bunch	1	20
+burden*	125	127
+bureau*	354
+burial*	360
+buried	360
+burnout*	354	355
+burp*	146	148
+bury	360
+business*	354	358
+busy	250	253	354
+but	1	18	131	139
+butt	146	147	149	22
+butt's	146	147	149	22
+butter*	140
+butts	146	147	149	22
+buy*	358
+by	1	17
+bye	121	250	253
+caf*	146	150
+calculus	354
+call	121
+called	11	13	121
+caller*	121
+calling	121
+calls	121
+calm*	125	126
+came	11	13	131	138	251	250
+camping	356
+campus*	354
+can	11	1	12	14
+can't	11	1	12	14	19
+cancer*	146	148
+candie*	146	150
+candle*	140	141
+candy	146	150
+cannot	11	1	12	14	19
+cant	11	1	12	14	19
+capab*	355
+capacit*	252	250
+captain	121
+car	250	251
+caramel*	140
+cardia*	146	148
+cardio*	146	148
+cards	356
+care	11	14	125	126
+cared	11	13	125	126
+career*	354
+carefree	125	126
+careful*	125	126	131	137
+careless*	125	127
+cares	11	14	125	126
+caress*	140	143
+caring	125	126
+carpet*	357
+carried	11	13	251	250
+carrier*	251	250
+carries	11	14	251	250
+carry	11	14	251	250
+carrying	251	250
+cash*	358
+casino*	356	358
+casket*	360
+casual	125	126	356
+casually	125	126
+casualt*	360
+catch	250	251
+categor*	131	132
+catholic*	359
+caught	11	13	250	251
+caus*	131	133
+caut*	131	137
+cd*	356
+cease*	131	137	253	250
+ceasing	131	137	253	250
+ceiling*	252	250
+celebrat*	121	355	356
+celebrit*	356
+cell	121
+cellphon*	121
+cells	121
+cellular*	121
+cemet*	360
+cent	358
+center*	252	250
+centre*	252	250
+cents	358
+centur*	253	250
+ceo*	354
+certain*	125	126	131	136
+certif*	354
+cetera	1	20
+chairm*	354
+chalk	354
+challeng*	125	126	354	355
+champ*	125	126	354	355
+chance	131	135
+change	250	251	131	133
+changed	11	13	250	251	131	133
+changes	250	251	131	133
+changing	250	251	131	133
+channel*	356
+chapel*	359
+chaplain*	359
+charit*	125	126	358
+charm*	125	126
+chat*	121	356
+cheap*	358
+cheat*	125	127	129
+check	358
+checkers	356
+checking	358
+checks	358
+checkup*	146	148
+cheek*	146	147
+cheer*	125	126
+chequ*	358
+cherish*	125	126
+chess	356
+chest*	146	147
+chew*	146	150
+chick	121	124
+chick'*	121	124
+child	121	124
+child's	121	124
+childhood	250	253
+children*	121	124
+chillin*	356
+chills	146	148
+chiropract*	146	148
+chlamydia	146	148	149
+chocolate*	140
+choice*	131	132
+choir*	356	140	142
+chok*	146	148
+cholester*	146	148
+choos*	131	132
+chore*	357
+chorus	356
+chow*	146	150
+christ	359
+christian*	359
+christmas*	250	253	359
+chronic*	146	148
+chuckl*	125	126
+church*	359
+cigar*	146	150
+cinema*	356
+circle	140	141
+citizen	121	124
+citizen'*	121	124
+citizens	121	124
+citrus*	140
+city	250	252
+clarif*	131	132
+class	354
+classes	354
+classmate*	354
+classroom*	354
+clean*	357
+clear	131	136
+clearly	1	16	131	136
+clergy	359
+clever*	125	126
+click*	140	141
+climb*	251	250	355
+clinic*	146	148
+clock*	253	250
+close	131	138	252	250
+closed	252	250
+closely	251	250
+closer	252	250
+closes	251	250
+closest	252	250
+closet	357
+closets	357
+closing	251	250
+closure	131	132	355
+clothes	146	147
+club*	356
+coach*	356
+cock	146	147	149	22
+cocks*	146	147	149	22
+cocktail*	146	150	356
+codeine	146	148
+coffee*	146	150	356
+coffin*	360
+cohere*	131	132
+coin	358
+coins	358
+coke*	146	150
+cold*	140	143
+collab*	354
+colleague*	121	123	354
+colleg*	354
+cologne*	140
+colon	146	147
+colono*	146	148
+colons	146	147
+color*	140	141
+colour*	140	141
+column*	140	141
+com	354
+coma*	146	148
+come	11	14	131	138	251	250
+comed*	125	126	356
+comes	11	14	251	250
+comfort*	125	126
+comic*	356
+coming	251	250
+comment*	121
+commerc*	354
+commit	131	136
+commitment*	125	126	131	136
+commits	131	136
+committ*	131	136
+common	250	253
+commun*	121
+commute*	354
+commuting	354
+companies	354
+companion	121	123
+companions	121	123
+companionship*	121
+company	354
+compassion*	121	125	126
+compel*	131	133
+compensat*	358
+compet*	355
+complain*	121	125	127
+complete	131	136
+completed	131	136
+completely	1	16	131	136
+completes	131	136
+complex*	131	132
+compliance	131	133
+complica*	131	132
+complie*	131	133
+compliment*	125	126
+comply*	131	133
+compreh*	131	132
+compulsiv*	131	137
+comput*	354
+comrad*	121	123
+concentrat*	131	132
+concerned	125
+concert*	356	140	142
+conclud*	131	132	133	355
+conclus*	131	132	355
+condo	357
+condom	146	149
+condominium*	357
+condoms	146	149
+condos	357
+conferenc*	354
+confess*	121	131	132	359
+confide	121
+confided	121
+confidence	125	126	131	136	355
+confident	125	126	131	136	355
+confidently	125	126	131	136	355
+confides	121
+confiding	121
+confin*	131	137
+conflict*	131	137
+confront*	125	127	129
+confus*	125	127	128	131	135
+congest*	146	148
+conglom*	354
+congregat*	121
+connection*	250	252
+conquer*	355
+conscientious*	355
+conscious*	131	132
+consequen*	131	133
+conserv*	131	137
+consider	131	132
+considerate	125	126
+considered	131	132
+considering	131	132
+considers	131	132
+constant	250	253
+constantly	1	16	250	253
+constipat*	146	148
+constrain*	131	137
+constrict*	131	137
+consult*	121	354
+consumer*	354	358
+contact*	121
+contag*	146	148
+contain*	131	137
+contemplat*	131	132
+contempt*	125	127	129
+contented*	125	126
+contentment	125	126
+contingen*	131	135
+continu*	253	250
+contracts	354
+contradic*	121	125	127	129	131	137
+control*	131	133	137	355
+convent	359
+convents	359
+convers*	121
+convinc*	125	126
+cook*	146	150	356
+cool	125	126	462	140	143
+cornea*	146	147
+corner	252	250
+corners	252	250
+coronar*	146	148
+coroner*	360	360
+corp	354
+corporat*	354	358
+corps	354
+corpse*	360
+correct*	131	136
+correlat*	131	132
+cos	131	133
+cost*	358
+couch*	357
+cough*	146	148
+could	11	1	12	131	134
+could've	11	1	12	13	15	131	134
+couldn't	11	1	12	19	131	134
+couldnt	11	1	12	19	131	134
+couldve	11	1	12	13	15	131	134
+counc*	121	354
+couns*	121	354
+countr*	250	252
+couple	1	20
+coupon*	358
+courag*	125	126
+course*	354
+cousin*	121	122
+coverage	250	252
+coworker*	121	354
+coz	131	133
+cramp*	146	148
+crap	125	127	129	146	147	22
+crappy	125	127	129	22
+craz*	125	127	128
+cream	140	141
+create*	125	126	131	133	355
+creati*	125	126	131	133	355
+credential*	354
+credit*	125	126	354	358
+cremat*	360
+cried	11	13	125	127	130
+cries	125	127	130
+critical	125	127	129
+critici*	125	127	129
+cross*	251	250
+crotch	146	147
+crowd*	121
+crown*	355
+crucifi*	359
+crude*	125	127	129
+cruel*	125	127	129
+cruis*	251	250	356
+crusade*	359
+crushed	125	127	130
+cry	125	127	130
+crying	125	127	130
+crypt*	360
+cubicle*	354
+cuddl*	146	149
+cultur*	121
+cunt*	125	127	129	22
+curb*	131	137
+curio*	131	132
+currenc*	358
+current*	253	250
+curricul*	354
+curtail*	131	137
+curtain*	357
+customer*	354	358
+cut	125	127	129
+cute*	125	126
+cutie*	125	126
+cuz	1	18	131	133
+cv*	354
+cycle*	253	250
+cynic	125	127	129
+cyst*	146	148
+dad*	121	122
+dail*	253	250
+damag*	125	127	130
+damn*	125	127	129	22
+danc*	251	250	356
+dang	22
+danger*	125	127	129
+daring	125	126
+darlin*	125	126
+darn	22
+date*	253	250
+dating	121
+daughter*	121	122
+day*	253	250
+daze*	125	127
+dead	360
+deadline*	354
+deaf*	146	148	140	142
+deal	121
+dean*	354
+dear*	125	126
+death*	360
+debit*	358
+debt*	358
+decade*	253	250
+decay*	125	127	253	250
+decease*	360
+december	253	250
+decid*	131	132
+decis*	131	132
+decongest*	146	148
+decorat*	356
+deduc*	131	132	133
+deep*	252	250
+defeat*	125	127	130	355
+defect*	125	127
+defenc*	125	127	129	131	137
+defens*	125	127	129	131	137
+define	131	132
+defined	131	136
+defines	131	132
+defining	131	132
+definite	125	126	131	136
+definitely	1	16	125	126	131	136
+definitive*	131	136
+degrad*	125	127
+delay*	131	137	253	250
+delectabl*	140	125	126
+delegat*	354
+delicate*	125	126
+delicious*	125	126	140
+deligh*	125	126
+deliver*	251	250
+demise	360
+demon*	359
+demote*	354
+den	357
+denia*	131	137
+denie*	131	137
+dense	252	250
+densit*	252	250
+dentist*	146	148
+deny*	131	137
+deoder*	140
+depart	251	250
+departed	251	250
+departing	251	250
+department*	354
+departs	251	250
+departure*	251	250
+depend	131	133	135
+depended	11	13	131	133	135
+depending	131	133	135
+depends	11	14	131	133	135
+deposit*	358
+depress*	125	127	130
+depriv*	125	127	130
+dept	354
+depth*	252	250
+derma*	146	148
+describe	11	14	121
+described	11	13	121
+describes	11	14	121
+describing	121
+desir*	131	134
+desk*	354
+despair*	125	127	130
+desperat*	125	127	128
+despis*	125	127	129
+despite	1	17
+dessert*	146	150
+destroy*	125	127	129
+destruct*	125	127	129
+determina*	125	126	131	132	355
+determine	131	132
+determined	125	126	131	132	355
+determines	131	132
+determining	131	132
+detox*	146	148
+devastat*	125	127	130
+devil*	125	127	359
+devot*	125	126
+diabet*	146	148
+diagnos*	146	148
+diagonal*	252	250
+diaries	356
+diarr*	146	148
+diary	356
+dick	146	147	149	22
+dicks	146	147	149	22
+did	11	1	12	13
+didn't	11	1	12	13	19
+didnt	11	1	12	13	19
+die	360
+died	11	13	360
+dies	11	14	360
+diet*	146	150
+difference*	131	1	20
+differentiat*	131	132
+difficult*	125	127
+digest*	146	148	150
+digni*	125	126
+diligen*	355
+dime*	358
+dinar*	358
+dine	150	146
+dined	146	150
+diner	146	150
+dinero	358
+diners	146	150
+dines	146	150
+dining	146	150
+dinner*	146	150
+diplom*	354
+directly	131	136
+director*	354
+disadvantage*	125	127	130
+disagree*	125	127
+disappear*	251	250
+disappoint*	125	127	130
+disaster*	125	127
+discern*	131	132
+disciplin*	131	137
+disclo*	121	131	132
+discomfort*	125	127	128
+discount*	358
+discourag*	125	127	130	131	137
+discover*	131	132
+discuss*	121
+disease*	146	148
+disgust*	125	127	129
+dish	146	150
+dishearten*	125	127	130
+dishes	146	150
+dishwasher*	357
+disillusion*	125	127	130
+dislike	11	14	125	127
+disliked	11	13	125	127
+dislikes	11	14	125	127
+disliking	125	127
+dismay*	125	127
+disorient*	131	135
+disregard*	131	137
+dissatisf*	125	127	130
+dissertat*	354
+distan*	252	250
+distinct*	131	136
+distinguish*	131	132
+distract*	125	127	128
+distraught	125	127	128
+distress*	125	127	128
+distrust*	125	127	129
+disturb*	125	127	128
+dividend*	354	358
+divin*	125	126	359
+divorc*	121
+dizz*	146	148
+dj*	356
+do	11	1	12	14
+doa	360
+doctor*	146	148	354
+does	11	1	12	14
+doesn't	11	1	12	14	19
+doesnt	11	1	12	14	19
+doghouse*	357
+doing	11	1	12
+dollar*	358
+domestic*	357
+domina*	125	127	129	355
+domote*	355
+don't	11	1	12	14	19
+donat*	358
+done	11	1	12	13
+dont	11	1	12	14	19
+doom*	125	127	130	359
+door*	357
+dork*	125	127
+dorm*	354	357
+dosage	146	148
+dose*	146	148
+dosing	146	148
+dotcom	354
+doubl*	1	20
+doubt*	125	127	128	131	135
+down	1	17	252	250
+downsiz*	354
+downward*	252	250
+dozen*	1	21
+dr	146	148
+drama	356
+drank	11	13	146	150
+drape*	357
+dread*	125	127	128
+dream*	356
+dresser*	357
+drie*	140	143
+drift*	251	250
+drily	140	143
+drink*	146	150	356
+drive	251	250
+driven	11	13	251	250	355
+drives	251	250
+driveway*	357
+driving	251	250
+drool*	140	146	147
+drop	250
+dropout*	354	355
+drove	11	13	251	250
+drown*	360
+drows*	146	148
+drs	146	148
+drug*	146	148
+drum	356
+drumm*	356
+drums	356
+drunk*	146	150	356
+dry*	140	143
+dubious*	131	135
+due	250	253
+duh	462
+dull*	125	127	130
+dumb*	125	127	129	22
+dump*	125	127	129
+dunno	131	135
+duplex*	357
+during	1	17	253	250
+duti*	131	137	354
+duty	131	137	354
+dvd*	356
+dwell*	125	127	128
+dx	146	148
+dying	360
+dyke*	146	149	22
+dynam*	125	126
+each	1	20	131	138
+eager*	125	126
+ear	140	142	146	147
+earli*	253	250
+early	253	250
+earn*	354	355
+ears	140	142	146	147
+ease*	125	126
+easie*	125	126
+easily	125	126
+easiness	125	126
+easing	125	126
+east*	252	250
+easy*	125	126	356
+eat	146	150
+eaten	11	13	146	150
+eating	146	150
+eats	146	150
+econ*	354	358
+ecsta*	125	126
+edge	252	250	140	143
+edges	252	250	140	143
+edging	252	250	140	143
+edit*	354
+educat*	354
+effect*	131	132	133	355
+efficien*	125	126	355
+effort*	355
+egg*	146	150
+egotis*	125	127
+eight*	1	21
+either	1	20	131	139
+elbow*	146	147
+elegan*	125	126
+elementary	354
+eleven	1	21
+elicit*	131	133
+elit*	355
+else	1	20
+email	121
+email'*	121
+emailed	11	13	121
+emailer*	121
+emailing	121
+emails	121
+embalm*	360
+embarrass*	125	127	128
+embezzl*	358
+emotion	125
+emotional	125	127	128
+emotions	125
+emphysem*	146	148
+employ*	354
+empt*	125	127	130	252	250
+enabl*	355
+enclos*	131	137	252	250
+encompass*	252	250
+encourag*	121	125	126
+end	253	250
+endeav*	355
+ended	11	13	253	250
+ending	253	250
+ends	253	250
+enema*	146	148
+enemie*	121	125	127	129
+enemy*	121	125	127	129
+energ*	125	126
+engag*	125	126
+enjoy*	125	126
+enlighten*	131	132
+enorm*	252	250
+enough	1	20
+enrag*	125	127	129
+enter	251	250
+entered	11	13	251	250
+entering	251	250
+enters	251	250
+entertain*	125	126	356
+enthus*	125	126
+entire*	1	20	131	136
+entrance*	252	250
+envie*	125	127	129
+envious	125	127	129
+environment*	252	250
+envy*	125	127	129
+epidemic*	360
+episcopal*	359
+equal*	1	20
+er	463
+era	253	250
+erectile	146	147	149
+erection*	146	147	149
+erotic*	146	149
+esl	354
+especially	1	16
+espresso*	146	150
+essential	131	136
+estrogen*	146	148
+etc	1	20
+etern*	253	250
+euro	358
+euros	358
+evaluat*	131	132
+evangel*	359
+eve	253	250
+even	1	16
+evening*	253	250
+event	250	253
+eventually	1	16	250	253
+ever	1	16	131	136	253	250
+every	1	20	131	136
+everybod*	1	2	9	121	131	136
+everyday	250	253
+everyone*	1	2	9	121
+everything*	1	2	9	121	131	136
+everywhere	252	250
+evident*	131	136
+evil*	125	127	129
+ex	121	122
+exact*	131	136
+exam	354
+examin*	131	132
+example*	1	20
+exams	354
+exbf*	121	123
+exboyfriend*	121	123
+excel*	125	126	354	355
+except	1	17	131	139
+exchang*	358
+excit*	125	126
+exclu*	131	139
+excruciat*	125	127
+excus*	121
+execution*	360
+executive*	354
+exercis*	146	148	356
+exes	121	122
+exgf*	121	123
+exgirl*	121	123
+exhaust*	125	127	146	148
+exhubby*	121	122
+exhusband*	121	122
+exit*	252	250
+expect*	131	134
+expel*	354
+expens*	358
+experienc*	140
+experiment	131	133
+explain	11	14	121	131	132
+explained	11	13	121	131	132
+explaining	121	131	132
+explains	11	14	121	131	132
+explanat*	131	132
+explicit*	131	136
+explor*	131	132	251	250
+express*	121
+expulsion*	354
+extent	1	20
+exterior*	252	250
+exterminat*	360
+extra	1	20
+extremely	1	20	131	136
+exwife*	121	122
+exwive*	121	122
+eye*	146	147	140	141
+eying	140	141
+fab	125	126
+fabulous*	125	126
+face	146	147
+faces	146	147
+facial*	146	147
+fact	131	136
+factories	354
+factory	354
+facts	131	136
+factual*	131	136
+facult*	354
+fade*	253	250
+fading*	253	250
+fail*	125	127	130	354	355
+faint*	146	148
+fairly	1	20	131	135
+faith*	125	126	359
+fake	125	127
+fall	251	250
+fallen	251	250
+falling	251	250
+falls	251	250
+families*	121	122	356	357
+family	121	122	356	357
+fantasi*	356
+fantastic*	125	126
+fantasy	356
+far	252	250
+farsighted	146	148
+farther	252	250
+farthest	252	250
+fast	253	250
+faster	253	250
+fastest	253	250
+fat	146	147	148	150
+fatal*	125	127	360
+father*	121	122
+fatigu*	125	127	130	146	148
+fats	146	148	150
+fatt*	146	147	148	150
+fault*	125	127
+favor*	125	126
+favour*	125	126
+fax*	354
+fear	125	127	128
+feared	125	127	128
+fearful*	125	127	128
+fearing	125	127	128
+fearless*	125	126
+fears	125	127	128
+february	253	250
+fed	11	13	146	150
+fee	358
+feed	146	150
+feedback	354
+feeder*	146	150
+feeding*	146	150
+feeds	146	150
+feel	11	14	131	132	140	143
+feeling*	131	132	140	143
+feels	11	14	131	132	140	143
+fees	358
+feet	146	147
+fell	251	250
+fellow*	121	123
+felt	11	13	131	132	140	143
+female*	121	124
+fenc*	131	137
+feroc*	125	127	129
+festiv*	125	126
+fetid*	140
+feud*	121	125	127	129
+fever*	146	148
+few*	1	20
+fiance*	121	123
+fiery	125	127	129
+fiesta*	125	126
+fift*	1	21
+fight*	121	125	127	129
+figur*	131	132
+fill*	250	251
+film*	356
+final	250	253
+finaliz*	354	355
+finally	250	253
+finals	354
+financ*	354	358
+find*	131	132
+fine	125	126
+finger*	146	147	140	143
+finish*	253	250
+fire	140	143
+fired	125	127	354
+fireplace*	357
+firing	354
+first	1	21	253	250	355
+firstly	1	21	253	250
+firsts	1	21	253	250	355
+fishing	356
+fit	250	252
+fitness	356
+five	1	21
+fizz*	140	142
+flatscreen*	356
+flatter*	121	125	126
+flavor*	140
+flavour*	140
+flawless*	125	126
+fled	11	13	251	250
+flee*	251	250
+flesh*	146	147
+flew	11	13	251	250
+flexib*	125	126	140	143
+flies	251	250
+flirt*	125	126
+floor*	252	250
+flow*	251	250
+flu	146	148
+flunk*	125	127	130
+fly	251	250
+flying	251	250
+foe*	125	127	129
+folks	121	122
+follow	11	14	251	250
+followed	11	13	251	250
+following	251	250
+follows	11	14	251	250
+followup*	253	250
+fond	125	126
+fondly	125	126
+fondness	125	126
+food*	146	150
+fool*	125	127
+foot	146	147
+football*	356
+for	1	17
+forbid*	125	127	131	137
+force*	131	133
+forearm*	146	147
+forehead*	146	147
+foreplay	146	149
+forever	131	136	253	250
+forgave	121	125	126	131	132
+forget*	131	137
+forgiv*	121	125	126	131	132
+forgot*	131	137	11	13
+form	1	20
+former*	253	250
+fortune*	358
+forward*	251	250	252	253
+fought	11	13	121	125	127	129
+found	11	13	131	132
+foundation*	131	133
+founded	131	133	355
+founder*	131	133	355
+founding	355
+four*	1	21
+fragil*	140	143
+fragran*	140
+franc	358
+franchis*	354	358
+francs	358
+frankly	131	136
+frantic*	125	127	128
+frat	354
+fratern*	354
+freak*	125	127
+free	125	126	358
+freeb*	125	126	358
+freed*	125	126
+freeing	125	126
+freely	125	126
+freeness	125	126
+freer	125	126
+frees*	125	126
+freez*	140	143
+frequent	253	250
+frequented	253	250
+frequenting	253	250
+frequently	1	16	253	250
+frequents	253	250
+freshm*	354
+friday*	253	250
+fridge*	357
+friend*	121	123	125	126
+fries	146	150
+fright*	125	127	128
+frisbee*	356
+from	1	17
+front	250	251
+froze*	140	143
+fruit*	146	150	140
+frustrat*	125	127	129
+fry*	146	150
+fuck	11	14	125	127	129	146	149	22
+fucked*	11	13	125	127	129	146	149	22
+fucker*	125	127	129	146	149	22
+fuckin*	125	127	129	146	149	22
+fucks	11	14	125	127	129	146	149	22
+fulfill*	355
+full*	1	20	252	250
+fume*	125	127	129
+fuming	125	127	129
+fun	125	126
+fund	358
+fundamental	131	136
+fundamentalis*	131	136	359
+fundamentally	131	136
+fundamentals	131	136
+funded	358
+funding	358
+funds	358
+funer*	360
+funn*	125	126
+furious*	125	127	129
+furniture	357
+further*	252	250
+fury	125	127	129
+futon*	357
+futur*	253	250
+fuzz*	131	135	140	143
+gain*	355
+gambl*	358
+game*	121	356
+gaming	356
+garage*	356	357
+garden*	356	357
+gate*	357
+gather*	121
+gave	11	13	121
+gay	146	149
+gays	146	149
+gaz*	140	141
+geek*	125	127
+general	131
+generally	1	16	131	135
+generate*	131	133
+generating	131	133
+generation*	253	250
+generator*	131	133
+genero*	125	126
+genital*	146	147	149
+genocid*	360
+gentile*	359
+gentle	125	126
+gentlem*	121	124
+gentler	125	126
+gentlest	125	126
+gently	125	126
+get	11	14
+gets	11	14
+gf*	121	123
+ghost*	360
+giant*	252	250
+gigantic	252	250
+giggl*	125	126
+ginormous	252	250
+girl	121	124
+girl's	121	124
+girlfriend*	121	123
+girls*	121	124
+give	11	14	121
+given	11	13
+giver*	121	125	126
+gives	11	14	121
+giving	121	125	126
+glad	125	126
+gladly	125	126
+glamor*	125	126
+glamour*	125	126
+glanc*	140	141
+gland*	146	148
+glaucoma	146	148
+global*	252	250
+gloom*	125	127	130
+glori*	125	126
+glory	125	126
+glow*	140	141
+glutton*	146	150
+gmat	354
+go	11	14	251	250
+goal*	354	355
+gobble*	146	150
+gobbling	146	150
+god	359
+god'*	359
+goddam*	125	127	129	22
+goes	11	14	251	250
+going	251	250
+golf*	356
+gone	11	13	251	250
+gonna	11	12	15
+gonorrhea	146	149
+gonorrhoea	146	149
+good	125	126
+goodness	125	126
+goosebump*	146	147
+gorgeous*	125	126
+gospel*	359
+gossip*	121	125	127
+got	11	13
+gotta	11	12	15
+gotten	11	13
+gov	354
+govern*	354
+gpa	354
+grab*	140	143
+grace	125	126
+graced	125	126
+graceful*	125	126
+graces	125	126
+graci*	125	126
+grad	354
+grade*	354
+grading	354
+graduat*	354
+grand	125	126
+grandchil*	121	122
+granddad*	121	122
+granddau*	121	122
+grande*	125	126
+grandf*	121	122
+grandkid*	121	122
+grandm*	121	122
+grandpa*	121	122
+grandson*	121	122
+granny	121	122
+grasp*	131	132
+gratef*	125	126
+grati*	125	126
+grave*	125	127	130	360
+gray*	140	141
+gre	354
+greas*	140
+great	125	126
+greater	1	20
+greatest	1	20
+greed*	125	127	129	358
+green*	140	141
+grew	250	251
+grey*	140	141
+grief	125	127	130	360
+griev*	125	127	130	360
+grim*	125	127	130
+grin	125	126
+grinn*	125	126
+grins	125	126
+grip	140	143
+gripp*	140	143
+grips	140	143
+grocer*	146	150
+gross*	125	127
+grouch*	125	127	129
+ground*	252	250
+group*	121
+grow	250	251
+growing	250	251
+grown	250	251
+grownup*	121	124
+growth	250	251
+grr*	125	127	129
+grudge*	121
+guarant*	131	136
+guard*	131	137
+guess	11	14	131	135
+guessed	11	13	131	135
+guesses	11	14	131	135
+guessing	131	135
+guest*	121	123
+guilt*	125	127	128
+guitar*	356
+gulp*	146	150
+gums	146	147
+gut	146	147
+guts	146	147
+guy*	121	124
+gym*	356
+gynaecolog*	146	148
+gynecolog*	146	148
+gyno*	146	148
+ha	125	126	462
+had	11	1	12	13
+hadn't	11	1	12	13	19
+hadnt	11	1	12	13	19
+hah	462
+haha*	125	126	462
+hair*	146	147	140	143
+half	1	21
+halfass*	131	135
+hall	250	252
+hallucinat*	146	148
+halt*	131	137
+hamstring*	146	147
+hand	146	147	140	143
+handful*	140	143
+hands	146	147	140	143
+handsom*	125	126
+hang	250	251
+hangin*	356
+hangout*	356
+hangover*	146	148
+hangup*	131	137
+happen	11	14
+happened	11	13
+happening	250	253
+happens	11	14
+happi*	125	126
+happy	125	126
+harass*	125	127	129
+hard	140	143
+harde*	140	143
+hardly	131	135
+hardwork*	354
+harm	125	127
+harmed	125	127
+harmful*	125	127
+harming	125	127
+harmless*	125	126
+harmon*	125	126	140	142
+harms	125	127
+harness*	131	137
+has	11	1	12	14
+hasn't	11	1	12	14	19
+hasnt	11	1	12	14	19
+hate	11	14	125	127	129
+hated	11	13	125	127	129
+hateful*	125	127	129
+hater*	125	127	129
+hates	11	14	125	127	129
+hating	125	127	129
+hatred	125	127	129
+have	11	1	12	14
+haven't	11	1	12	14	19
+havent	11	1	12	14	19
+having	11	1	12
+hazie*	131	135
+hazy	125	131	135
+he	1	2	3	7	121
+he'd	1	2	3	7	11	12	121
+he'll	11	12	15	121
+he's	1	2	3	7	11	12	14	121
+head	146	147
+headache*	146	148
+headed	251	250
+headhunter*	354
+heading	251	250
+heads	146	147
+heal	146	148
+healed	146	148
+healer*	146	148
+healing	146	148
+heals	146	148
+health*	146	148
+hear	11	14	121	140	142
+heard	11	13	121	140	142
+hearing	121	140	142
+hears	11	14	121	140	142
+hearse*	360
+heart	146	147
+heartbreak*	125	127	130
+heartbroke*	125	127	130
+heartburn*	146	148
+heartfelt	125	126
+heartless*	125	127	129
+hearts	146	147
+heartwarm*	125	126
+heaven*	125	126	359
+heavie*	140	143
+heavy*	140	143
+heck	22
+hed	1	2	3	7	11	12	121
+heel*	146	147
+heh*	125	126	462
+height*	252	250
+held	11	13	131	137
+hell	125	127	129	359	22
+hellish	125	127	129	359
+hello*	121
+hells	359
+help	121
+helped	11	13
+helper*	121	125	126
+helpful*	121	125	126
+helping	121	125	126
+helpings	146	150
+helpless*	125	127	130
+helps	11	14	121	125	126
+hemor*	146	148
+hence	131	133
+her	1	2	3	7	121
+here	1	16
+here's	11	1	12	14	16
+heres	11	1	12	14	16
+hero*	125	126	355
+herpes	146	148
+hers	1	2	3	7	121
+herself	1	2	3	7	121
+hes	1	2	3	7	11	12	14	121
+hesita*	125	127	128	131	135	137
+hey	121
+hi	121
+hiccup*	146	148
+high	252	250
+highe*	252	250
+highly	1	20
+highschool*	354
+hik*	251	250	356
+hilarious	125	126
+him	1	2	3	7	121
+himself	1	2	3	7	121
+hindu*	359
+hip	146	147
+hiphop	356
+hips	146	147
+hire*	354
+hiring	354
+his	1	2	3	7	121
+histor*	253	250
+hit	125	127	129
+hiv	146	148	149
+hm*	462	463
+ho	146	149
+hobb*	356
+hockey*	356
+hoho*	125	126
+hold*	131	137
+holiday*	356
+holie*	359
+holocaust*	360
+holy	359
+home	357
+homes	357
+homesick*	125	127	130	357
+homework*	354	357
+homo	146	149	22
+homocid*	360
+homos	146	149
+homosexual*	146	149
+honest*	125	126
+honey	121	123	140
+honor*	125	126	355
+honour*	125	126	355
+hope	11	14	125	126	131	134	135
+hoped	11	13	125	126	131	134	135
+hopeful	125	126	131	134	135
+hopefully	1	16	125	126	131	134	135
+hopefulness	125	126	131	134	135
+hopeless*	125	127	130
+hopes	11	14	125	126	131	134	135
+hoping	125	126	131	134	135
+horizontal*	252	250
+hormone*	146	148
+hornie*	146	147	149
+horny	146	147	149
+horr*	125	127	128
+horseback	356
+hospital*	146	148
+hostil*	125	127	129
+hot	140	143
+hotel*	356
+hott*	140	143
+hour*	253	250
+house*	357
+housing	357
+how	1	16	18	131	133
+how's	11	14	131	133
+however	1	16	18
+hows	11	14	131	133
+hubby	121	122
+hug	125	146	149	126
+huge*	252	250
+hugg*	125	126	146	149
+hugs	125	126	146	149
+huh	462
+human*	121	124
+humiliat*	125	127	128	129
+humor*	125	126
+humour*	125	126
+hump*	146	149
+hundred*	1	21
+hunger*	146	150
+hungover	146	148
+hungr*	146	150
+hunting	356
+hurra*	125	126
+hurrie*	253	250
+hurry*	253	250
+hurt*	125	127	130
+husband*	121	122
+hush*	140	142
+hymn*	359
+hyperten*	146	148
+hypotherm*	146	148
+hypothes*	131	135
+hypothetic*	131	135
+i	1	2	3	4
+i'd	1	2	3	4	11	12
+i'll	1	2	3	4	11	12	15
+i'm	1	2	3	4	11	12	14
+i'm	1	2	3	4	11	12	14
+i've	1	2	3	4	11	12	14
+i've	1	2	3	4	11	12	14
+ibuprofen	146	148
+I	1	2	3	4
+I'd	1	2	3	4	11	12
+I'll	1	2	3	4	11	12	15
+I'm	1	2	3	4	11	12	14
+I'm	1	2	3	4	11	12	14
+I've	1	2	3	4	11	12	14
+I've	1	2	3	4	11	12	14
+icu	146	148
+id	1	2	3	4	11	12
+idea	131	132
+ideal*	125	126	131	134	355
+ideas	131	132
+identif*	131	132
+idiot*	125	127	129
+idon'tknow	464
+idontknow	464
+if	1	18	131	134	135	139
+ignit*	131	133
+ignor*	125	127	131	137
+ill	146	148
+illness*	146	148
+im	1	2	3	4	11	12	14
+image*	140	141
+imagin*	131	132
+imean	464
+immediate	253	250
+immediately	1	16	253	250
+immediateness	253	250
+immoral*	125	127	359
+immortal*	253	250	359	360
+immun*	146	148
+impatien*	125	127	128
+impersonal	125	127
+implica*	131	133
+implicit*	131	136
+implie*	131	133
+imply*	131	133
+impolite*	125	127
+importan*	355	125	126
+impossib*	131	134
+impress*	125	126
+improve*	125	126	355
+improving	125	126	355
+in	1	17	252	250
+inact*	131	133
+inadequa*	125	127	128	130	131	134	355
+inaudibl*	140	142
+inc	354
+incapab*	355
+incentive*	355	125	126
+incest*	146	149
+inch*	252	250
+inciden*	250	253
+inclu*	131	138
+income*	354	358
+incompeten*	355
+incomplet*	131	135
+incorp*	354
+increas*	250	251	20
+indecis*	125	127	128	131	135
+indeed	131	136
+indefinit*	131	135
+independ*	131	133
+indetermin*	131	135
+indigestion	146	148
+indirect*	131	135
+individual*	121	124
+induc*	131	132	133
+industr*	354
+ineffect*	125	127	355
+inevitab*	131	136
+inexpens*	358
+infallib*	131	136
+infant	121	124
+infant's	121	124
+infants*	121	124
+infect*	146	148
+infer	131	132	133
+inferior*	125	127	130
+inferr*	131	132	133
+infers	131	132	133
+infinit*	1	21	253	250
+inflam*	146	148
+influenc*	131	133
+info	131	132
+inform	121	131	132
+information	131	132
+informative*	131	132
+informed	131	132
+informing	131	132
+informs	121	131	132
+ingest*	146	148	150
+inhal*	140
+inherit*	358
+inhib*	125	127	128	131	137
+initial*	253	250
+initiat*	253	250	355
+injur*	146	148
+inn	356
+inner*	252	250
+innocen*	125	126
+inns	356
+inquir*	131	132
+insecur*	125	127	128
+inside	1	17	131	138	252	250
+insides	1	17	252	250
+insight*	131	132
+insincer*	125	127
+insomnia*	146	148
+inspir*	125	126	131	132
+instan*	253	250
+instead	1	16
+instruct*	354
+insulin	146	148
+insult*	121	125	127	129
+insurance	358
+intell*	125	126
+intend*	131	133
+intent*	131	133
+interact*	121
+interest*	125	126
+interfer*	131	137
+interior*	252	250
+internal*	250	252
+internation*	250	252
+interpret*	131	132
+interrup*	121	125	127	129
+intersect*	252	250
+interval*	253	250
+interview*	121	354
+intestin*	146	147
+intimidat*	125	127	129
+into	1	17	131	138	252	250
+intox*	146	148
+intramural*	356
+invariab*	131	136
+inventory	354
+invest*	358
+invigor*	125	126
+involv*	121
+ipod*	356
+irrational*	125	127	128	131
+irrefu*	131	136
+irresponsible*	355
+irrita*	125	127	128
+irs	358
+is	11	1	12	14
+islam*	359
+isn't	11	1	12	14	19
+isnt	11	1	12	14	19
+isolat*	125	127	130
+issue	131
+it	1	2	9
+it'd	1	2	9	11	12
+it'll	1	2	9	11	12	15
+it's	1	2	9	11	12	14
+itch*	146	147	148
+itd	1	2	9	11	12
+item*	1	20
+itll	1	2	9	11	12	15
+its	1	2	9
+itself	1	2	9
+iv	146	148
+ive	1	2	3	4	11	12	14
+jackpot*	358
+jaded	125	127
+january	253	250
+jaw*	146	147
+jazz*	356
+jd	354
+jealous*	125	127	129
+jeez	22
+jerk	125	127	129
+jerked	125	127	129
+jerks	125	127	129
+jesuit*	359
+jesus	359
+jew	359
+jewish*	359
+jews	359
+jihad*	359
+jissom	146	149
+jizz	146	149
+job*	354
+jog*	251	250	356
+joints	146	147
+joke*	125	126	356
+joking	125	126	356
+joll*	125	126
+journey*	250	251
+joy*	125	126
+juda*	359
+july	253	250
+jump*	251	250
+june	253	250
+junior*	354
+just	1	16	131	139
+justif*	131	132	133
+karaoke	356
+karma	359
+keen*	125	126
+keep	11	14	131	137
+keeping*	131	137
+keeps	11	14	131	137
+keg	356
+kegger	356
+keggers	356
+kegs	356
+kept	11	13	131	137
+keyboard*	354
+kid	121	124
+kid'*	121	124
+kidding	121	125	126
+kidney*	146	147
+kids*	121	124
+kill*	125	127	129	360
+kilometer*	252	250
+kin	121	122
+kind	131	125	135	126
+kinda	131	135
+kinderg*	354
+kindly	125	126
+kindn*	125	126
+kindof	131	135
+king*	355
+kippur	359
+kiss*	125	126	146	149
+kitchen*	146	150	357
+km*	252	250
+knee*	146	147
+knew	11	13	131	132
+know	11	14	131	132
+knowab*	131	132
+knower*	131	132
+knowing	131	132
+knowledg*	131	132
+known	131	132
+knows	11	14	131	132
+knuckle*	146	147
+kopek*	358
+koran	359
+kosher	359
+krishna*	359
+krisna*	359
+kron*	358
+labor*	354
+labour*	354
+lack*	1	20	131	134
+ladies	121	124
+lady	121	124
+lady's	121	124
+laidback	125	126	356
+laidoff	354
+lame*	125	127	130
+land	252	250
+landlord*	357
+language*	121
+laptop*	354
+large*	252	250
+last*	253	250
+late	253	250
+lately	1	16	253	250
+later	253	250
+latest	253	250
+laugh*	125	126
+launch*	131	133
+law	131	136
+lawn*	357
+lawyer*	354
+layoff*	354
+lazie*	355	125	127
+lazy	355	125	127
+lead*	131	133	251	250	354	355
+learn*	131	132	354
+lease*	357	358
+leasing*	357	358
+least	1	20
+leather*	140	143
+leave	251	250
+leaves	251	250
+leaving	251	250
+lectur*	354
+led	131	133	251	250
+ledge*	252	250
+ledging	252	250
+left	250	252
+leg	146	147
+legal*	354
+legs*	146	147
+lesbian*	146	149
+less	1	20
+lesson*	355	131	132
+let	1	11	12
+let's	1	2	3	5	11	14	121
+lethal*	360
+lets	1	2	3	5	11	14	121
+letter	121
+leuke*	146	148
+level	252	250
+levels	252	250
+liabilit*	125	127	131	134
+liar*	125	127	129
+libert*	125	126
+libid*	146	149
+librar*	354
+lick*	140
+lied	11	13	125	127	129
+lies	125	127	129
+life	146	148
+light	140
+like	125	464	126	253
+likeab*	125	126
+liked	11	13	125	126
+likel*	131	135
+likes	125	126
+liking	125	126
+limit*	131	137	355
+limp*	140	143
+link*	131	132
+lip	146	147
+lips*	146	147
+liquor*	146	150	356
+lira	358
+listen	11	14	121	140	142
+listened	11	13	121	140	142
+listener*	121	140	142
+listening	121	140	142
+listens	11	14	121	140	142
+lit	140	141
+littl*	252	250
+lived	11	13
+livel*	125	126
+liver*	146	147
+living	146	148
+lmao	125	126
+loads	1	20
+loan*	358
+local*	252	250
+loft	357
+lofts	357
+logic*	131	132
+lol	125	126	462
+lone*	125	127	130
+long	253	250
+longe*	253	250
+longing*	125	127	130
+longitud*	252	250
+look	11	14	140	141
+looked	11	13	140	141
+looker*	140	141
+looking	140	141
+looks	11	14	140	141
+loose*	140	143
+lord*	359
+lose	125	127	130	355
+loser*	125	127	130	355
+loses	125	127	130	355
+losing	125	127	130	355
+loss*	125	127	130	355
+lost	11	13	125	127	130	355
+lot	1	20	131	135
+lotof	1	20	131	135
+lots	1	20	131	135
+lotsa	1	20	131	135
+lotta	1	20	131	135
+lotter*	358
+loud*	140	142
+lous*	125	127	129
+love	11	14	125	126	146	149	121
+loved	11	13	121	125	126	146	149
+lovely	125	126
+lover*	121	123	125	126	146	149
+loves	11	14	121	125	126	146	149
+loveseat*	357
+loving*	121	125	126
+low*	125	127	130	252	250
+loyal*	125	126
+lozenge*	146	148
+lsat	354
+ltd	354
+luck	125	126	131	135
+lucked	125	126	131	135
+lucki*	125	126	131	135
+luckless*	125	127	131	135
+lucks	125	126	131	135
+lucky	125	126	131	135
+ludicrous*	125	127	129
+lump	146	148
+lunch*	146	150
+lung*	146	147
+lust*	146	149
+lutheran*	359
+lying	125	127	129
+lymph*	146	148
+lynch*	360
+ma	121	122
+ma'am	121	124
+ma's	121	122
+mad	125	127	129
+maddening	125	127	129
+madder	125	127	129
+maddest	125	127	129
+made	11	13	131	133
+madly	125	126
+magazine*	356
+magnific*	125	126
+maid*	357
+mail	121
+mailbox	357
+mailed	121
+mailer*	121
+mailing	121
+mailroom*	354
+mails	121
+main	1	20
+mainly	131	135
+major	20
+majoring	354
+majority	1	20
+majors	354
+make	11	14	133	131
+makeout*	146	149
+maker*	131	133
+makes	11	14	131	133
+making	131	133
+male	121	124
+male's	121	124
+males	121	124
+mall	356
+malls	356
+mam	121	124
+mammogram	146	148
+man	121	124
+man's	121	124
+manag*	354
+maniac*	125	127	129
+manicdep*	146	148
+manipul*	131	133
+manslaughter*	360
+manufact*	354
+many	1	20
+map	252	250
+mapped	252	250
+mapping	252	250
+maps	252	250
+marathon*	356
+march*	253	250
+margarita*	356
+marginal*	131	135
+market*	354
+marriag*	121
+marrie*	121	122
+martini*	356
+masochis*	125	127
+mass	252	250
+massacre*	360
+master	355
+mastercard*	358
+mastered	355
+masterful*	355
+mastering	355
+mastermind*	355
+masters	355	354
+mastery	355
+mate	121	123
+mate's	121	123
+mates	121	123
+math*	354
+mating	121
+matter*	131
+mattress*	357
+mausoleum*	360
+may	11	1	12	15	131	135
+maybe	1	16	131	135
+mcat	354
+mda	354
+me	1	2	3	4
+meal*	146	150
+mean	11	14	131	132
+meaning*	131	132
+means	11	14	131	132
+meant	11	13	131	132
+meantime	253	250
+meanwhile	253	250
+mecca	359
+medal*	355
+medic*	146	148
+mediocr*	355
+meditat*	356	359
+meet	121
+meeting*	121	354
+meets	121
+melanchol*	125	127	130
+members	121	124
+memo	354
+memor*	131	132
+memos	354
+men	121	124
+men'*	121	124
+menial	354
+mention*	121
+mentor*	354
+merchant*	358
+mercif*	359
+mercy	359
+merger*	354
+merit*	125	126
+merr*	125	126
+mess	125	127
+messag*	121
+messy	125	127
+met	11	13	121
+meter*	252	250
+methodis*	359
+metre*	252	250
+mfg	354
+mfr	354
+mgmt	354
+mgr	354
+microwave*	357
+mid	252	250
+middl*	252	250
+midterm*	354
+might	11	1	12	15	131	135
+might've	11	1	12	131	135
+mightve	11	1	12	131	135
+migrain*	146	148
+mile*	252	250
+milk*	146	150
+million*	1	21
+min	253	250
+mind	131
+mine	1	2	3	4
+minesweeper	356
+minister*	359
+ministr*	359
+mint*	140
+minute*	253	250
+miscar*	146	148
+miser*	125	127	128	130
+misle*	131	133
+miss	11	14	125	127	130
+missed	11	13	125	127	130
+misses	11	14	125	127	130
+missing	125	127	130
+missionar*	359
+mistak*	125	127	131	134
+misunder*	131	132
+mitzvah*	359
+mm*	462
+mob	121
+mobb*	121
+mobs	121
+mock	125	127	129
+mocked	125	127	129
+mocker*	125	127	129
+mocking	125	127	129
+mocks	125	127	129
+modern*	253	250
+mofo	22
+mohamm*	359
+molest*	125	127	129
+mom	121	122
+mom's	121	122
+moment*	253	250
+momma*	121	122
+mommy*	121	122
+moms	121	122
+monast*	359
+monday*	253	250
+money*	358
+monk*	359
+mono	146	148
+monopol*	358
+month*	253	250
+mooch*	125	127
+mood	125
+moodi*	125	127
+moods	125
+moody	125	127
+mop	357
+moral	359
+morality	359
+morals	359
+more	1	20
+morgue*	360
+mormon*	359
+morning*	253	250
+moron*	125	127	129
+mortal*	360
+mortg*	357	358
+mortician*	360
+mosque*	359
+most	1	20	131	135
+mostly	1	16	131	135
+motel*	356
+mother	121	122
+motherf*	22
+motherly	121
+mothers	121	122
+motion*	251	250
+motiv*	131	132	133	354	355
+mourn*	125	127	130	360
+mouth*	146	147
+move	251	250
+moved	11	13	251	250
+movement*	251	250
+mover*	251	250
+moves	251	250
+movie*	356
+moving	251	250
+mr	121	124
+mri	146	148
+mrs	121	124
+mtv*	356
+much	1	20
+mucho	1	20
+mucous*	146	147
+muhamm*	359
+mujahid*	359
+mum	121	122
+mum's	121	122
+mummy*	121	122
+mums	121	122
+murder*	125	127	129	360
+muscle*	146	147
+muscular	146	147
+museum*	356
+musi*	356	359	140	142
+must	11	1	12	15	131	134	136
+must'nt	11	1	12	15	19	131	134	136
+must've	11	1	12	13	15	131	134	136
+mustn't	11	1	12	15	19	131	134	136
+mustnt	11	1	12	15	19	131	134	136
+mustve	11	1	12	13	15	131	134	136
+my	1	2	3	4
+myopi*	146	148
+myself	1	2	3	4
+myster*	131	135
+nag*	125	127	129
+naked	146	147	149
+name	121	131
+nap	356
+naps	356
+narrow*	252	250
+nasal	146	147	140
+nast*	125	127	129
+nation*	250	252
+nause*	146	148
+near	1	17	252	250
+neared	252	250
+nearer	252	250
+nearest	252	250
+nearing	252	250
+nearly	1	16	131	135
+nears	252	250
+nearsighted	146	148
+neat*	125	126
+necessar*	131	136
+neck	146	147
+need	11	14	131	134
+need'nt	1	19	131	134
+needed	11	13	131	134
+needing	131	134
+needn't	1	19	131	134
+neednt	1	19	131	134
+needs	11	14	131	134
+needy	125	127
+negat*	1	19
+neglect*	125	127	130	131	137
+negotiat*	121	354
+neighbor*	121	123	357
+neighbour*	121	123
+neither	1	19	20
+nephew*	121	122
+nerd*	125	127
+nerve*	146	147
+nervous*	125	127	128
+netflix	356
+neural*	146	147
+neurolog*	146	148
+neuron*	146	147
+neurotic*	125	127	128
+never	1	19	131	136	253	250
+new	253	250
+newborn*	121	124
+newer	253	250
+newest	253	250
+newly	253	250
+news	131
+next	253	250
+ngo	354
+nice*	125	126
+nickel*	358
+niece*	121	122
+nigger*	22
+night	253	250
+nightly	253	250
+nights	253	250
+nine*	1	21
+nintendo*	356
+nipple*	146	147	149
+no	1	19
+nobod*	1	2	9	19
+noise	140	142
+noises	140	142
+noisy	140	142
+none	1	19	20
+nonprofit*	354
+noon*	253	250
+nope	1	19
+nor	1	18	19
+normal	131	131	134
+north*	252	250
+nose*	146	147	140
+nostril*	140	146	147
+not	1	19	131	139
+nothing	1	19
+notice*	131	132
+noticing	131	132
+novel	356
+novels	356
+november	253	250
+now	1	16	253	250
+nowhere	1	19	252	250
+nude*	146	147	149
+nudi*	146	147
+numb*	125	127	146	148
+nun	359
+nuns	359
+nurse*	146	148
+nurtur*	125	126
+nutrition*	146	148
+o'clock*	253	250
+obedien*	131	133
+obes*	146	148	150
+obey*	131	133
+obit*	360
+obnoxious*	125	127	129
+obscur*	131	135
+obsess*	125	127	128
+obstac*	131	137
+obtain*	355
+obvious*	131	136
+occasional*	131	135	253	250
+occupa*	354
+ocd	146	148
+oclock*	253	250
+october	253	250
+od	360
+oded	360
+odor*	140
+odour*	140
+of	1	17
+off	1	17	252	250
+offence*	125	127	129
+offend*	125	127	129
+offens*	125	127	129
+offer*	121
+office*	354
+often	1	16	131	135
+oh	462
+ohwell	464
+oil*	140
+ok	125	126	462
+okay	125	126	462
+okays	125	126
+okey*	462
+oks	125	126
+old	253	250
+olden	253	250
+older	253	250
+oldest	253	250
+on	1	17	252	250
+once	1	21	253	250
+one	1	21
+ones	1	20
+oneself	1	2	3
+only	1	16
+onto	1	17	252	250
+open	131	138	252	250
+opened	250	252
+opening*	252	250
+openminded*	125	126
+openness	125	126
+opera*	356
+opinion	131	135
+opport*	125	126	355
+oppos*	131	137
+optimal*	125	126
+optimi*	125	126
+option	131	135
+optometr*	146	148
+or	1	18	131	135	139
+orange*	140	141
+oranything*	464
+orchestra	356
+order	250
+org	354
+organiz*	121	131	354	355
+orgasm*	146	147	149
+orgies	146	149
+orgy	146	149
+origin	131	133	253	250
+original	125	126
+originat*	131	133	355
+origins	131	133
+orsomething*	464
+orthodon*	146	148
+orthodox*	359
+orthoped*	146	148
+orwhatever*	464
+other	1	2	9
+others	1	2	9
+otherwise	1	18
+ought	11	1	12	15	131	134
+ought'nt	11	1	12	15	19	131	134
+ought've	11	1	12	15	131	134
+oughta	11	1	12	15	131	134
+oughtn't	11	1	12	15	19	131	134
+oughtnt	11	1	12	15	19	131	134
+oughtve	11	1	12	15	131	134
+our	1	2	3	5	121
+ours	1	2	3	5	121
+ourselves	1	2	3	5	121
+out	1	17	131	138	252	250
+outcome*	131	133	355
+outer*	252	250
+outgoing	125	126
+outlin*	354
+outrag*	125	127	129
+outside	1	17	252	250
+outsider*	121
+outsides	252	250
+outsourc*	354
+outstanding	131	134
+outward*	252	250
+ovar*	146	147	149
+oven*	357
+over	1	17	252	250
+overall	131	135
+overate	146	150
+overcome	355
+overconfiden*	355
+overdosed	360
+overeat*	146	150
+overflow*	252	250
+overhear*	121
+overlap*	252	250
+overpaid	354	358
+overtak*	355
+overtime	354	358
+overweight	146	148	150
+overwhelm*	125	127	128	130
+overworked	354
+owe	11	14	358
+owed	11	13	358
+owes	11	14	358
+owing	358
+own	1	20
+owner*	121
+pa	121	122
+pa's	121	122
+pagan*	359
+page	20
+paid	11	13	358
+pain	125	127	146	148
+pained	125	127	146	148
+painf*	125	127	146	148
+paining	125	127	146	148
+painl*	125	126	146	148
+pains	125	127	146	148
+pal	121	123
+palatabl*	140	125	126
+pallbearer*	360
+palm	146	147
+palms	146	147
+pals	121	123
+panic*	125	127	128
+pap	146	148
+paper*	354
+pappy	121	122
+paradise	125	126	359
+paraly*	146	148
+paranoi*	125	127	129
+parent*	121	122
+parks	356
+part	1	20
+participant*	121	124
+participat*	121
+partie*	121	125	126	356
+partly	1	20	131	135
+partner*	121	123	124
+party*	121	125	126	356
+pass	251	250
+passed	251	250
+passes	251	250
+passing	251	250
+passion*	125	126	146	149
+passover	359
+past	253	250
+pasta*	146	150
+pastor*	359
+pathetic*	125	127	130
+patholog*	146	148
+patio*	357
+pay*	354	358
+pc*	354
+peace*	125	126
+peculiar*	125	127
+pediatr*	146	148
+pee	146	147
+pelvi*	146	147
+pen	354
+penance	359
+pence	358
+pencil*	354
+penis*	146	147	149
+pennies	358
+penny	358
+pens	354
+pension*	354
+pentecost*	359
+people*	121	124
+perceiv*	131	132
+percent	20
+percept*	131	132
+perfect*	125	126	131	136	355
+perform*	355
+perfum*	140
+perhaps	1	16	131	135
+period*	253	250
+permit*	131	133
+perpetual*	253	250
+persever*	355
+persist*	355
+person	121	124
+person's	121	124
+personal	125	121
+persons	121	124
+perspir*	146	147
+persua*	121
+perver*	125	127	146	149
+peso	358
+pesos	358
+pessimis*	125	127	130
+pet	357
+petrif*	125	127	128
+pets	357
+pettie*	125	127	129
+petty*	125	127	129
+pew	359
+pews	359
+pharmac*	146	148
+phd*	354
+phobi*	125	127	128	146	148
+phone*	121
+phoning	121
+photocop*	354
+physical*	146	148
+physician*	146	148
+pick	131	133
+picture	140	141
+piec*	1	20
+piety	359
+pilgrim*	359
+pill	146	148
+pillow*	357
+pills	146	148
+pimple*	146	148
+pink*	140	141
+pious	359
+piss*	125	127	129	146	147	22
+pitcher*	356
+piti*	125	127	130
+pity*	125	127	130
+pizza*	146	150
+place*	252	250
+placing*	252	250
+plague*	360
+plan	355
+planned	355
+planner*	355
+planning	355
+plans	355
+platform*	252	250
+play	125	126	356
+played	11	13	125	126	356
+playful*	125	126	356
+playing	125	126	356
+plays	125	126	356
+playstation*	356
+pleasant*	125	126
+please*	125	126
+pleasing	125	126
+pleasur*	125	126
+pledg*	354
+plenty	1	20
+plus	1	17	18	131	138
+pms	146	148
+podiatr*	146	148
+poetry	356
+point	250	252
+poison*	125	127	129	146	148
+poker	356
+police	354
+policy	354
+political	354
+politics	354
+ponder*	131	132
+pool*	356
+poop*	146	147
+poor*	358
+pope*	359
+popular*	125	126
+porch	357
+porn*	146	149
+portfolio*	358
+portion	20
+position*	252	250
+positiv*	125	126	131	136
+possib*	131	135
+post	250
+potential*	355
+poverty*	358
+power*	355
+practically	131	135
+practice	354	355
+prais*	121	125	126	355	359
+pray*	359
+preach*	359
+preced*	253	250
+precious*	125	126
+precis*	131	136
+prefer*	131	132	134
+pregnan*	146	148	149
+prejudic*	125	127	129
+prereq*	354
+presbyterian*	359
+prescri*	146	148
+present	253	250
+presentation*	354
+presently	253	250
+presiden*	354	355
+press	140	143
+pressed	140	143
+presser*	140	143
+presses	140	143
+pressur*	125	127	128
+presum*	131	132
+pretend*	356
+prettie*	125	126
+pretty	125	126	131	135
+prevent*	131	137
+price*	358
+prici*	358
+prick*	125	127	129	146	147	22
+pride	125	126	355
+priest*	359
+primarily	1	16
+prior	250	253
+private	121
+privileg*	125	126
+prize*	125	126	355
+probable	131	135
+probablistic*	131	135
+probably	1	16	131	135
+problem*	125	127	131	134
+proceed*	253	250
+procrastin*	354
+produc*	131	133	354	355
+prof	354
+profession*	354
+professor*	354
+proficien*	355
+profit*	125	126	354	358
+profs	354
+prognos*	146	148
+program*	354
+progress	355
+prohib*	131	137
+project	354
+projector*	354
+projects	354
+prom	354
+promis*	125	126
+promot*	354	355
+proof	131	136
+prophe*	359
+prostat*	146	147	149
+prostitu*	146	149
+protect*	131	137
+protest	125	127	129
+protestant*	359
+protested	125	127	129
+protesting	125	127	129
+proud*	125	126	355
+prove*	131	132	136
+provide	121
+proving	131	132
+provoc*	131	133
+provok*	131	133
+prozac	146	148
+prude	131	137	146	149
+prudes	131	137	146	149
+prudish*	131	137	146	149
+psalm*	359
+psych	354
+psychol*	354
+pub	356
+pubic	146	149
+public	121
+publish	354
+pubs	356
+puk*	125	127	146	148
+pull*	251	250
+pulse	146	147
+pungen*	140
+punish*	125	127	129
+purchas*	358
+pure*	131	136
+purgator*	359
+puritan*	359
+purpl*	140	141
+purpose*	131	133	355
+push*	251	250
+puss	146	148
+pussies	146	147
+pussy*	146	147	149	22
+put	250	251
+puts	250	251
+putting	250	251
+puzzl*	131	135
+qualifi*	354
+quarter*	1	21
+queas*	146	148
+queen	355
+queenly	355
+queer*	146	149	22
+quer*	131	132
+question*	121	131	132	135
+quick*	1	16	253	250
+quiet*	140	142
+quit	355
+quite	131	135
+quitt*	355
+quiz*	354
+qur'an*	359
+quran*	359
+rabbi	359
+rabbinical	359
+rabbis	359
+radian*	125	126
+radio*	356
+rage*	125	127	129
+raging	125	127	129
+ramadan	359
+ran	11	13	251	250
+rancid*	140	125	127
+random*	131	135
+rang	140	142
+rank	355
+ranked	355
+ranking	355
+ranks	355
+rap	356
+rape*	125	127	129	146	149
+raping	125	127	129	146	149
+rapist*	125	127	129	146	149
+rarely	1	16
+rash*	146	147
+rather	1	16	131	134	139
+rational*	131	132	133
+react*	131	133
+read	354	356
+readiness	125	126
+reading	356
+ready	125	126
+real	131	136
+realis*	131	132
+reality	131	136
+realiz*	131	132
+really	1	16	131	139
+reaper*	360
+rearrang*	131	132
+reason*	131	132	133
+reassur*	121	125	126
+rebate*	358
+rebel*	125	127	129
+recall*	131	132
+receiv*	121	250	251
+recency	253	250
+recent*	253	250
+recession*	358
+reckon*	131	132
+recogni*	131	132
+recollect*	131	132
+reconcil*	131	132
+reconsider*	131	132
+reconstruct*	131	132
+recording*	356
+recover*	355
+recreation*	356
+recruit*	354
+rectang*	140	141
+recur*	253	250
+red	140	141
+redde*	140	141
+reddish*	140	141
+redness	140	141
+reds	140	141
+reek*	140	125	127
+reevaluat*	131	132
+refer*	131	132
+reflect*	131	132
+refrain*	131	137
+refund*	358
+refus*	121	131	137
+regardless	131	134
+reggae	356
+register*	354
+registra*	354
+regret*	125	127	130	131	134
+rehab*	146	148
+reimburs*	358
+rein*	131	137
+reject*	125	127	130
+relate*	131	132
+relating	131	132
+relation	131	132
+relationship*	121
+relatives	121	122
+relax*	125	126	356
+relief	125	126
+reliev*	125	126
+religio*	359
+reluctan*	125	127	128	131	137
+remaining	1	20
+rememb*	131	132
+remodel*	357
+remorse*	125	127	130
+remote*	252	250
+remov*	251	250
+renovat*	357
+rent*	357	358
+reorgani*	131	132
+repeat*	253	250
+repetit*	253	250
+replace*	251	250
+replacing	251	250
+replie*	121
+reply*	121
+report*	354
+repress*	125	127	128	131	137
+request*	121
+requir*	131	137	354	355
+research*	354
+resent*	125	127	129
+reserved	131	137
+residen*	357
+resign*	125	127	130
+resolu*	131	132
+resolv*	125	126	131	132	355
+resource	354
+resourceful*	355
+resources	354
+resourcing	354
+respect	125	126
+respectively	250	253
+respond*	121
+response*	131	133
+responsib*	131	137	354	355
+rest	1	20
+restau*	146	150	356
+resting	356
+restless*	125	127	128
+restrain*	131	137
+restrict*	131	137
+restructur*	131	132
+result*	131	133
+resume	354
+retail*	358
+retain*	131	137
+rethink*	131	132
+retina*	146	147
+retire*	354
+retiring	354
+return*	253	250
+reveal*	131	132
+revelat*	131	132
+revenge*	125	127	129
+revenue*	358
+review*	354
+revigor*	125	126
+reward*	125	126	355
+rhetor*	354
+rhythm*	253	250
+rib	146	147
+ribs	146	147
+rich*	125	126	358
+ridden	251	250
+ride	251	250
+rides	251	250
+ridicul*	125	127	129
+riding	251	250
+right	250	252
+rigid*	125	127	128	131	137
+ring	140	142
+ringing	140	142
+rings	140	142
+rise*	251	250
+rising	251	250
+risk*	125	127	128
+ritalin	146	148
+rite	359
+rites	359
+ritual*	359
+road*	252	250
+rock	356
+rocks	356
+rode	251	250
+rofl	125	126	462
+role*	121
+roller*	356
+romanc*	125	126
+romantic*	125	126
+room	252	250	357
+roomate*	121	123	252	250	357
+roomed	121	252	250	357
+roomie*	121	123	252	250	357
+rooming	121	252	250	357
+roommate*	121	123	252	250	357
+rooms	252	250	357
+root*	131	133
+rosaries	359
+rosary	359
+roshashan*	359
+rotten	140	125	127
+rough*	140	143
+round*	140	141	143
+rowing	356
+rr*	464
+rub	140	143
+rubbed	140	143
+rubbing	140	143
+ruble*	358
+rubs	140	143
+rude*	125	127	129
+rug	357
+rugby*	356
+rugs	357
+ruin*	125	127	130
+rum	356
+rumor*	121
+rumour*	121
+run	251	250
+runner*	251	250	356
+running	251	250	356
+runs	251	250
+rupee*	358
+rush*	251	250
+rx	146	148
+sabbath*	359
+saccharine	140
+sacred	359
+sacrific*	359
+sad	125	127	130
+sadde*	125	127	130
+sadly	125	127	130
+sadness	125	127	130
+safe*	125	126	131	137
+said	11	13	121	140	142
+saint*	359
+salad*	146	150
+salar*	354	358
+sale	358
+sales	358
+saliv*	146	147	140
+salsa	356
+salt*	140
+salvation	359
+same	131	1	20
+sampl*	140
+sand	140	143
+sands	140	143
+sandwich*	146	150
+sandy	140	143
+sang	356	140	142
+sarcas*	125	127	129
+sat	11	13
+satan*	359
+satisf*	125	126
+saturday*	253	250
+savage*	125	127	129
+save	125	126	131	137
+saving*	358
+savor*	140
+savour*	140
+saw	11	13	140	141
+say*	121	140	142
+scab*	146	148
+scalp	146	147
+scan	140	141
+scann*	140	141
+scans	140	141
+scare*	125	127	128
+scaring	125	127	128
+scary	125	127	128
+scent*	140
+sceptic*	125	127	129
+schedul*	253	250
+schizophren*	146	148
+scholar	354
+scholaring	354
+scholarly	354
+scholars	354
+scholarship*	354	358
+scholastic*	354
+school*	354
+scien*	354
+scrabble	356
+scrapbook*	356
+scrape*	146	148
+scratch*	140	143
+scream*	125	127	140	142
+screen	140	141
+screw*	125	127	129	146	149	22
+scriptur*	359
+scrumptious*	140	125	126
+sculpt*	356
+season*	253	250
+second	1	21
+seconds	253	250
+secret	121	131	132
+secretar*	354
+secretive*	121
+secrets	121	131	132
+sect	359
+sectarian	359
+section	250	252	1	20
+sector*	354
+sects	359
+secur*	125	126	131	137
+seduc*	146	149
+see	11	14	140	141
+seeing	140	141
+seem	11	14	131	132	135
+seemed	11	13	131	132	135
+seeming*	131	132	135
+seems	11	14	131	132	135
+seen	11	13	140	141
+seer	140	141
+sees	11	14	140	141
+segment	250	252	20
+seizure*	146	148
+selection	20
+self	121	124
+selfish*	125	127
+sell	358
+seller*	358
+selling	358
+sells	358
+semester*	354
+seminar*	359
+send*	121	250	251
+senior*	253	250	354
+sensation	146	147
+sensations	146	147
+sense	131	132
+sensed	11	13	131	132
+senses	131	132
+sensing	131	132
+sent	121	250	251	11	13
+sentimental*	125	126
+separat*	250	252
+september*	253	250
+sequen*	253	250
+series	20
+serious	125	127
+seriously	1	16	125	127
+seriousness	125	127
+servic*	354
+servings	146	150
+session*	354
+set	250
+seven*	1	21
+several	1	20
+severe*	125	127
+sex*	146	149
+shake*	125	127	128	251	250
+shaki*	125	127	128	131	135
+shaky	125	127	128	131	135
+shall	11	1	12	15
+shame*	125	127	128
+shan't	11	1	12	19
+shant	11	1	12	19
+shape*	252	250
+shaping*	252	250
+share	121	125	126
+shared	11	13	121	125	126
+shares	121	125	126
+sharing	121	125	126
+sharp*	140	143
+she	1	2	3	7	121
+she'd	1	2	3	7	11	12	121
+she'll	1	2	3	7	11	12	15	121
+she's	1	2	3	7	11	12	14	121
+shes	1	2	3	7	11	12	14	121
+shi'*	359
+shiite*	359
+shilling*	358
+shine	140	141
+shini*	140	141
+shiny	140	141
+shirt*	146	147
+shit*	125	127	129	146	147	22
+shock*	125	127
+shoe*	146	147
+shook	125	127	128	251	250
+shop	356	358
+shopaholic*	356	358
+shopp*	356	358
+shops	356	358
+short*	252	250
+should	11	1	12	15	131	134
+should'nt	11	1	12	15	19	131	134
+should've	11	1	12	13	15	131	134
+shoulder*	146	147
+shouldn't	11	1	12	15	19	131	134
+shouldnt	11	1	12	15	19	131	134
+shoulds	131	134
+shouldve	11	1	12	13	15	131	134
+shout*	140	142
+show	356
+showed	11	13
+shower*	357
+shows	356
+shrine*	359
+shut	250	252
+shy*	125	127	128
+sick	146	148
+sickday*	354	146	148
+sicken*	125	127	128
+sicker	146	148
+sickest	146	148
+sickleave*	354	146	148
+sickly	146	148
+sickness*	146	148
+side	252	250
+sides	252	250
+siding	252	250
+sigh	463	125
+sighed	125
+sighing	125
+sighs	125
+sight*	140	141
+sign	131
+significant	20
+sikh*	359
+silen*	140	142
+silk*	140	143
+silli*	125	126
+silly	125	126
+simple*	20
+simply	1	16
+simultaneous*	253	250
+sin	125	127	359
+since	1	17	131	133
+sincer*	125	126
+sing	356
+singing	356
+singl*	1	20
+sings	356
+sinister	125	127	129
+sinn*	359
+sins	125	127	359
+sinus*	146	148
+sir	121	124
+sis	121	122
+sister*	121	122
+sit	250
+site	250	252
+sitting	250
+six*	1	21
+skat*	356
+skelet*	146	147
+skeptic*	125	127	129
+ski	356
+skied	356
+skier*	356
+skiing	356
+skill	355
+skilled	355
+skills	355
+skin	140	143	146	147
+skin'*	140	143	146	147
+skinni*	146	147	150
+skinny*	146	150
+skis	356
+skull	146	147
+sky*	252	250
+slaughter*	360
+sleep*	146	147
+slender*	146	147
+slept	146	147	11	13
+slid	251	250
+slide	251	250
+slides	251	250
+sliding	251	250
+slow*	253	250
+slut*	125	127	146	149
+small*	252	250
+smart*	125	126
+smell*	140
+smil*	125	126
+smok*	146	150
+smooth*	140	143
+smother*	125	127	129
+smug*	125	127
+snack*	146	150
+sniff*	140
+snob*	125	127	129
+snort*	140
+so	1	16	18
+soaps	356
+sob	125	127	130	22
+sobbed	125	127	130
+sobbing	125	127	130
+sobs	125	127	130
+soccer*	356
+sociab*	125	126
+social*	121
+societ*	121	121	124
+soda*	146	150
+sofa*	357
+soft*	140	143
+sold	11	13	358
+solemn*	125	127	130
+solitaire	356
+solution*	131	132	133	355
+solve	131	132	133	355
+solved	131	133	355	132
+solves	131	132	133	355
+solving	131	132	133	355
+some	1	20	131	135
+somebod*	1	2	9	121	131	135
+somehow	1	16	131	135
+someone*	1	2	9	121	131	135
+something*	1	2	9	131	135	139
+sometime	131	135	139	253	250
+sometimes	131	135	253	250
+somewhat	131	135	1	20
+somewhere	250	252	1	2	9	131	135
+son	121	122
+son's	121	122
+song*	356	140	142
+sonofa*	22
+sons	121	122
+soon	1	16	253	250
+soone*	253	250
+sooo*	1	16
+sophom*	354
+sore*	146	148
+sororit*	354
+sorrow*	125	127	130
+sorry	125	127
+sort	131	135
+sorta	131	135
+sortof	131	135
+sorts	131	135
+sortsa	131	135
+soul	359
+soulmate*	121	123	125	126
+souls	359
+sound*	140	142
+sour	140
+source*	131	133
+soure*	140
+souri*	140
+sours	140
+soury	140
+south*	252	250
+spa	356
+space	252	250
+spaced	252	250
+spaces	252	250
+spaci*	252	250
+span	252	250
+spann*	252	250
+spas	356
+spat	146	147
+speak	121	140	142
+speaker*	140	142
+speaking	121	140	142
+speaks	121	140	142
+special	125	126
+sped	253	250
+speech*	140	142
+speed*	253	250
+spend	358
+spender	358
+spending	358
+spends	358
+spent	11	13	358
+spice	140
+spiced	140
+spices	140
+spicy	140
+spinal	146	147
+spine	146	147
+spirit*	359
+spit	146	147
+spite*	125	127	129
+spits	146	147
+spitting	146	147
+splend*	125	126
+spoke*	11	13	121	140	142
+sport*	356
+spose	131	135
+spous*	121	122
+spring	253	250
+squar*	140	141
+squeez*	140	143
+staff*	354
+stage	250
+stair*	250	252
+stammer*	125	127
+stand	250
+standard	131
+standup	356
+stank	140	125	127
+stapl*	354
+stare*	140	141
+staring	140	141
+start	11	14	253	250
+started	11	13	253	250
+starter*	253	250
+starting	253	250
+startl*	125	127	128
+starts	11	14	253	250
+startup*	253	250
+starve*	146	150
+starving	146	150
+state	250
+statement*	131	132
+stay*	250
+stayed	11	13
+std*	146	148	149
+steal*	125	127
+stench*	140	125	127
+step	251	250
+stepchild*	121	122
+stepfat*	121	122
+stepkid*	121	122
+stepmot*	121	122
+stepp*	251	250
+steps	251	250
+stereo	356
+stereos	356
+stiff*	131	137	146	148
+still	1	16	253	250
+stimul*	131	133
+stink*	140	125	127
+stipend*	354	358
+stock	354
+stocked	354
+stocker	354
+stocks	354	358
+stomach*	146	147
+stoned	356
+stood	11	13
+stop	131	137	253	250
+stopped	11	13	131	137	253	250
+stopper*	131	137	251	250	253	250
+stopping	131	137	253	250
+stops	131	137	253	250
+store	358
+stories	121	131
+story	121	131
+stove*	357
+straight	250	252
+strain*	125	127	128
+strange	125	127
+strateg*	355
+street*	252	250
+strength*	125	126	355
+strept*	146	148
+stress*	125	127	128
+stretch*	252	250
+striv*	355
+stroke*	146	148	140	143
+stroki*	140	143
+strong*	125	126	355
+struggl*	125	127	128
+stubborn*	125	127	129	131	137
+stuck	11	13
+stud	146	149
+student*	354
+studied	11	13	354
+studies	354
+studio	357
+studios	357
+studious	354
+study*	354
+stuff	1	2	9
+stuffed	146	150
+stunk	140	125	127
+stunned	125	127	128
+stuns	125	127	128
+stupid*	125	127	129
+stutter*	125	127
+subdue*	131	137
+submissive*	125	127
+subsequen*	253	250
+succeed*	125	126	354	355
+success*	125	126	354	355
+such	1	16
+suck	11	14	125	127	129	22
+sucked	11	13	125	127	129	22
+sucker*	125	127	129
+sucks	11	14	125	127	129	22
+sucky	125	127	129
+sudden*	253	250
+suffer	125	127	130
+suffered	11	13	125	127	130
+sufferer*	125	127	130
+suffering	125	127	130
+suffers	125	127	130
+sugar*	146	150	140
+suggest*	121
+suicid*	360
+summer*	253	250
+sumptuous*	140
+sunbath*	356
+sunburn*	146	148
+sunday*	253	250
+sunli*	140	141
+sunni	359
+sunnier	125	126
+sunniest	125	126
+sunnis	359
+sunny	125	126
+sunshin*	125	126	140	141
+super	125	126	355
+superb*	355
+superior*	125	126
+supervis*	354
+supper*	146	150
+support	11	14	125	126
+supported	11	13	125	126
+supporter*	125	126
+supporting	125	126
+supportive*	125	126
+supports	11	14	125	126
+suppose	11	14	131	135
+supposed	11	13	131	135
+supposes	11	14	131	135
+supposing	131	135
+supposition*	131	135
+suppress*	131	137
+suprem*	125	126
+sure*	125	126	131	136
+surfac*	252	250
+surgeon*	146	148
+surger*	146	148
+surpris*	125	126
+surround*	252	250
+surviv*	355
+suspect*	131	132
+suspicio*	125	127	128	131	132
+swallow*	146	150
+swam	251	250
+sweat*	146	147
+sweep*	357
+sweet	125	126	140
+sweetheart*	121	123	125	126
+sweetie*	121	123	125	126
+sweetly	125	126
+sweetness*	140	125	126
+sweets	140	125	126
+swelling	146	148
+swim*	251	250	356
+swollen	146	148
+syllabus*	354
+symphon*	356
+symptom*	146	148
+synch*	253	250
+syndrome*	146	148
+syphili*	146	148	149
+system*	250
+taboo*	131	137
+take	11	14
+taken	11	13
+takes	11	14
+taking	11	14
+talent*	125	126
+talk	121
+talkative*	121
+talked	11	13	121
+talker*	121
+talking	121
+talks	121
+tall	252	250
+taller	252	250
+tallest	252	250
+tang	140
+tangy	140
+tanning	356
+tantrum*	125	127	129
+tart	140
+tast*	146	150	140
+taught	11	13	354
+tax	354	358
+taxa*	354	358
+taxed	354	358
+taxes	354	358
+taxing	354	358
+tea	146	150
+teach*	354
+team*	121	354	355	356
+tears	125	127	130
+teas*	121	125	127	129
+techno	356
+teeth*	146	147
+tehe	125	126
+telephon*	121
+television*	356
+tell	121
+telling	121
+tells	121
+temper	125	127	129
+tempers	125	127	129
+temple*	359
+tempora*	131	135	253	250
+ten	1	21
+tenant*	357
+tend	11	14
+tended	11	13
+tender*	125	126	146	148
+tendon	146	147
+tendoni*	146	148
+tendons	146	147
+tends	11	14
+tennis*	356
+tense*	125	127	128
+tensing	125	127	128
+tension*	125	127	128
+tentativ*	131	135
+tenth	1	21
+tenure*	354
+tequila	356
+term	250	253	20
+terminat*	250	253
+terribl*	125	127
+terrific*	125	126
+terrified	125	127	128
+terrifies	125	127	128
+terrify	125	127	128	129
+terrifying	125	127	128
+territor*	252	250
+terror*	125	127	128
+test	354
+testament*	359
+tested	354
+testing	354
+testosterone*	146	148
+tests	354
+textbook*	354
+than	1	17
+thank	11	14	125	126
+thanked	11	13	125	126
+thankf*	125	126
+thanks	11	14	125	126
+that	1	2	9
+that'd	1	2	9	11	12
+that'll	1	2	9	11	12	15
+that's	1	2	9	11	12	14
+thatd	1	2	9	11	12
+thatll	1	2	9	11	12	15
+thats	1	2	9	11	12	14
+the	1	10
+theat*	356
+thee	1	2	3	6	121
+their*	1	2	3	8	121
+them	1	2	3	8	121
+themselves	1	2	3	8	121
+then	1	18	253	250
+theolog*	359
+theor*	131	135
+therap*	146	148
+there	1	16
+there's	11	1	12	14	16
+therefor*	131	133
+theres	11	1	12	14	16
+thermometer*	146	148
+these	1	2	9
+theses	354
+thesis	354
+they	1	2	3	8	121
+they'd	1	2	3	8	11	12	121
+they'll	1	2	3	8	11	12	15	121
+they're	11	1	12	14	121
+they've	1	2	3	8	11	12	14	121
+theyd	1	2	3	8	11	12	121
+theyll	1	2	3	8	11	12	15	121
+theyre	11	1	12	14	121
+theyve	1	2	3	8	11	12	14	121
+thick*	252	250	140	143
+thief	125	127
+thieve*	125	127
+thigh*	146	147
+thin	252	250	140	143
+thine	1	2	3	6	121
+thing*	1	2	9
+think	11	14	131	132
+thinker*	131	132
+thinking*	131	132
+thinks	11	14	131	132
+thinly	252	250
+thinn*	252	250	140	143
+third	1	21
+thirst*	146	147	150
+thirt*	1	21
+this	1	2	9
+tho	1	16	18
+those	1	2	9
+thou	1	2	3	6	121
+though	1	16	18
+thought	11	13	131	132
+thoughtful*	125	126
+thoughts	131	132
+thousand*	1	21
+thoust	1	2	3	6	121
+threat*	125	127	129
+three	1	21
+threw	11	13	251	250
+thrift*	358
+thrill*	125	126
+throat*	146	147
+throb*	146	148
+through*	1	17
+throw*	251	250
+thru	1	17
+thunder*	140	142
+thursday*	253	250
+thus	131	133
+thy	1	2	3	6	121
+thyroid*	146	148
+ticked	125	127	129
+ticket*	356
+tidi*	131	137
+tidy	131	137
+tight*	131	137	140	143
+til	1	17	18	253	250
+till	1	17	18	253	250
+time*	253	250
+timid*	125	127	128
+timing	253	250
+tingl*	146	148
+tinier	252	250
+tiniest	252	250
+tiny	252	250
+tire*	146	148
+tiring	146	148
+tit	146	147	149	22
+tits	146	147	149	22
+titties	146	147	149	22
+titty	146	147	149	22
+tivo*	356
+to	1	17
+toaster*	357
+today*	253	250
+toe	146	147
+toefl	354
+toenail*	146	147
+toes	146	147
+together	252	250
+told	11	13	121
+toleran*	125	126
+tomb*	360
+tomorrow*	253	250
+ton	1	20
+tongue*	146	147	140
+tonight*	253	250
+tons	1	20
+tonsils	146	147
+too	1	16
+took	11	13	251	250
+tooth*	146	147
+top	252	250	355
+torah	359
+tortur*	125	127	129
+total	131	136	1	20
+totally	1	16	131	136
+touch*	140	143
+tough*	125	127
+toward*	1	17	252	250
+town	250	252
+tox*	146	148
+toy*	356
+trade*	354	358
+trading	354	358
+traged*	125	127	130
+tragic*	125	127	130
+tranquil*	125	126
+transact*	250	251	121
+transcript*	354
+transfer*	354
+transport*	251	250
+trauma*	125	127
+travel*	251	250	356
+treasur*	125	126
+treat	125	126
+trembl*	125	127	128
+triang*	140	141
+triathl*	356
+tricep*	146	147
+trick*	125	127	129
+tried	11	13	355
+tries	11	14	355
+trigger*	131	133
+trillion*	1	21
+trip	251	250
+tripl*	1	20
+tripped	251	250
+tripping	251	250
+trips	251	250
+trite	125	127
+triumph*	125	126	355
+trivi*	125	127
+troubl*	125	127
+true	131	136	125	126
+trueness	125	126
+truer	125	126
+truest	125	126	131	136
+truly	1	16	125	126	131	136
+trust*	125	126
+truth*	125	126	131	136
+try	11	14	355
+trying	355
+tuesday*	253	250
+tuition	358
+tumo*	146	148
+turmoil	125	127	128
+turn	11	14
+turned	11	13
+turns	11	14
+tutor*	354
+tv*	356
+twel*	1	21
+twent*	1	21
+twice	1	21
+twitch*	146	148
+two	1	21
+tylenol	146	148
+type*	354
+typically	131	135
+typing	354
+ugh	125	127
+ugl*	125	127	129
+uh	463
+uhhu*	462
+uhuh	1	19	462
+ulcer*	146	148
+um	463
+umm*	463
+unable	355
+unaccept*	131	132
+unambigu*	131	136
+unattractive	125	127
+unaware*	131	132
+unbeat*	355
+uncertain*	125	127	128	131	135
+uncle	121	122
+uncle's	121	122
+unclear*	131	135
+uncles	121	122
+uncomfortabl*	125	127	128
+uncontrol*	125	127	128
+undecided*	131	135
+undeniab*	131	136
+under	1	17	252	250
+undergrad*	354
+underneath	1	17	252	250
+underpaid	354	358
+undersid*	252	250
+understand	11	14	131	132
+understandab*	131	132
+understanding*	131	132
+understands	11	14	131	132
+understood	11	13	131	132
+undesire*	131	134
+undetermin*	131	135
+undo	131	134
+undoubt*	131	136
+uneas*	125	127	128
+unemploy*	354
+unfortunate*	125	127
+unfriendly	125	127
+ungrateful*	125	127
+unhapp*	125	127	130
+unhealth*	146	148
+unimportant	125	127	130
+unimpress*	125	127
+unique	1	20
+universe*	252	250
+universit*	354
+unkind	125	127
+unknow*	131	135
+unless	1	17	18	131	139
+unlikel*	131	135
+unlov*	125	127
+unluck*	131	135
+unneccess*	131	134
+unneed*	131	134
+unpleasant	125	127
+unproduc*	354	355
+unprotected	125	127
+unquestion*	131	136
+unrelat*	131	132
+unresolv*	131	135
+unsavo*	140	125	127
+unsettl*	131	135
+unsuccessful*	125	127	130	355
+unsure*	125	127	128	131	135
+until	1	17	18	253	250
+unto	1	17
+unwant*	131	134
+unwelcom*	125	127
+unwind*	356
+up	1	17	252	250
+updat*	250	253
+upon	1	17	252	250
+upper	252	250
+upperclass*	354
+uppermost	252	250
+upset*	125	127	128
+upstairs	252	250
+uptight*	125	127	128	131	137
+ur	121
+urin*	146	147
+urn*	360
+us	1	2	3	5	121
+use	11	14	131	133
+used	11	13	131	133
+useful*	125	126
+useless*	125	127	130
+uses	11	14	131	133
+using	11	14	131	133
+usual	253	250
+usually	1	16	131	135	253	250
+uter*	146	147
+vacation*	356
+vacuum*	357
+vagina*	146	147	149
+vague*	131	135
+vain	125	127
+valuabl*	125	126
+value	125	126	358
+valued	125	126
+values	125	126
+valuing	125	126
+vanity	125	127
+variab*	131	135
+varies	131	135
+various	1	20
+varsit*	354
+vary	131	135
+vast*	252	250
+vatican*	359
+vcr*	356
+vd	146	149
+veget*	146	150
+veggie*	146	150
+veil*	359
+vein*	146	147
+verg*	252	250
+version*	20
+versus	131	139
+vertical*	252	250
+vertigo	146	148
+very	1	16
+veto	131	137
+viagra	146	148
+vicious*	125	127	129
+vicodin	146	148
+victim*	125	127	129
+victor*	355
+video*	356
+view	140	141
+viewed	11	13
+viewer*	140	141
+viewing*	140	141
+views	140	141
+vigor*	125	126
+vigour*	125	126
+vile	125	127	129
+villain*	125	127	129
+violat*	125	127	129
+violent*	125	127	129
+virgin*	146	149
+virtue*	125	126
+virtuo*	125	126
+visa*	358
+visit*	121	251	250
+vita	354
+vital*	125	126
+vitamin*	146	148
+vitas	354
+vivid*	140	141
+vocation*	354
+vodka*	356
+voic*	140	142
+volleyb*	356
+vomit*	146	148
+vp*	354
+vs	131	139
+vulnerab*	125	127	128
+vulture*	125	127
+waft*	140
+wage	354	358
+wager*	358
+wages	354	358
+waist*	146	147	150
+wait	11	14	131	137
+waited	11	13	131	137
+waiting	131	137
+waits	11	14	131	137
+wake	146	147
+walk	251	250
+walked	11	13	251	250
+walking	251	250
+walks	251	250
+wall	252	250
+walling	252	250
+walls	252	250
+wanker*	22
+wanna	1	17	131	134
+want	11	14	131	134
+wanted	11	13	131	134
+wanting	131	134
+wants	11	14	131	134
+war	125	127	129	360
+warehous*	354
+warfare*	125	127	129
+wariness	131	137
+warm*	125	126	140	143
+warred	125	127	129
+warring	125	127	129
+wars	125	127	129
+wart	146	148
+warts	146	148
+wary	131	137
+was	11	1	12	13
+wash	146	148
+wasn't	11	1	12	13	19
+wasnt	11	1	12	13	19
+watch*	140	141
+water	146	150
+way	250
+we	1	2	3	5	121	131	138
+we'd	1	2	3	5	11	12	121
+we'll	1	2	3	5	11	12	15	121
+we're	1	2	3	5	11	14	121
+we've	1	2	3	5	11	12	13	121
+weak*	125	127	146	148
+wealth*	125	126	358
+weapon*	125	127	129
+wear	146	147
+weary	146	148
+wed	121
+wedding*	121
+wednesday*	253	250
+weds	121
+week	253	250
+week'*	253	250
+weekend*	253	250	356
+weekl*	253	250
+weeks	253	250
+weep*	125	127	130
+weigh	146	150
+weighed	146	150
+weighing*	146	150
+weighs	146	150
+weight	146	150	140	143
+weighted	140	143
+weighting	140	143
+weightless*	140	143
+weightlift*	356	140	143
+weights	356	140	143
+weird*	125	127
+welcom*	121	125	126
+welfare	354
+well	1	16	463	125	126
+went	11	13	251	250
+wept	125	127	130
+were	11	1	12	13
+weren't	11	1	12	13	19
+west*	252	250
+wet	140	143
+wetly	140	143
+weve	1	2	3	5	11	12	13	121
+what	1	2	9
+what's	1	2	9	11	12	14
+whatever	1	2	9
+whats	1	2	9	11	12	14
+wheez*	146	148
+when	1	18	253	250	16
+whenever	1	16	18	253	250
+where	1	16	252	250
+where's	11	1	12	14	252	250
+whereas	1	18
+wheres	11	1	12	14	252	250
+wherever	252	250
+whether	1	18	131	139
+which	1	2	9
+whichever	1	2	9
+whiff*	140
+while	1	18	253	250
+whilst	253	250
+whine*	125	127	130
+whining	125	127	130
+whiskey*	146	150	356
+whisky*	146	150	356
+whisper*	140	142
+white*	140	141
+whitish*	140	141
+who	1	2	9	121
+who'd	1	2	9	11	12	121
+who'll	1	2	9	11	12	15	121
+who's	11	14	121
+whod	1	2	9	11	12	121
+whole	1	20
+wholl	1	2	9	11	12	15	121
+wholly	131	136
+whom	1	2	9	121
+whore*	125	127	146	149
+whos	11	14	121
+whose	1	2	9	121
+why	131	133
+wicked*	125	127	129
+wide*	252	250
+width*	252	250
+wife*	121	122
+will	11	1	12	15
+willing	125	121
+wimp*	125	127
+win	125	126	355
+window*	357
+wine	146	150	356
+wines	146	150	356
+winn*	125	126	355
+wins	125	126	355
+winter*	253	250
+wisdom	125	126
+wise*	125	126
+wish	11	14	131	134
+wished	11	13	131	134
+wishes	11	14	131	134
+wishing	131	134
+witch	125	127
+with	1	17	131	138
+withdrawal	146	148
+withheld	131	137
+withhold*	131	137
+within	1	17	252	250
+without	1	17	19	131	139
+wive*	121	122
+woe*	125	127	130
+woke	11	13
+woken	11	13
+woman	121	124
+woman's	121	124
+womanhood	121
+womanly	121
+womb*	146	147	149
+women*	121	124
+won	11	13	125	126	355
+won't	11	1	12	15	19
+wonder	11	14	131	132	135
+wondered	11	13	131	132	135
+wonderf*	125	126
+wondering	131	132	135
+wonders	131	132	135
+wont	11	1	12	15	19
+word*	131	121
+wore	11	13
+work	354	355
+workabl*	354	355
+worked	11	13	354	355
+worker*	354	355
+working*	354	355
+workout*	356
+works	354	355
+world	250	252
+worn	11	13
+worr*	125	127	128
+worse*	125	127
+worship*	125	126	359
+worst	125	127	1	20
+worth	358
+worthless*	125	127	130
+worthwhile	125	126
+would	11	1	12	15	131	134
+would've	11	1	12	13	15	131	134
+wouldn't	11	1	12	15	19	131	134
+wouldnt	11	1	12	15	19	131	134
+wouldve	11	1	12	13	15	131	134
+wound*	146	148
+wow*	125	126
+wrist*	146	147
+write	121	131
+writing	121	131
+written	11	13
+wrong*	125	127
+wrote	11	13
+wrote	121	131	11	13
+xanax	146	148
+xbox*	356
+xerox*	354
+xray*	146	148
+y'all	1	2	3	6	121
+ya	1	2	3	6	121
+yah	462
+yakn*	464
+yall	1	2	3	6	121
+yard	356	357
+yawn*	146	148
+yay	125	126	462
+yays	125	126
+ye	1	2	3	6	121
+yea	462
+yeah	462
+year	253	250
+yearly	253	250
+yearn*	125	127	130	131	134
+years	253	250
+yell	140	142
+yelled	140	142
+yelling	140	142
+yellow*	140	141
+yells	140	142
+yen	358
+yep*	462
+yes	462
+yesterday*	253	250
+yet	1	16	253	250
+yiddish	359
+yield*	131	137
+ykn*	464
+yoga	356
+you	1	2	3	6	121
+you'd	1	2	3	6	11	12	121
+you'll	1	2	3	6	11	12	15	121
+you're	1	2	3	6	11	12	14	121
+you've	1	2	3	6	11	12	14	121
+youd	1	2	3	6	11	12	121
+youknow*	464
+youll	1	2	3	6	11	12	15	121
+young*	253	250
+your	1	2	3	6	121
+youre	1	2	3	6	11	12	14	121
+yours	1	2	3	6	121
+youth*	253	250
+youve	1	2	3	6	11	12	14	121
+yuan	358
+yum*	140
+yup	462
+zen	359
+zero	1	21
+zillion*	1	21
+zion*	359
+zit	146	148
+zits	146	148
+zoloft	146	148
+zz*	463

@@ -1,0 +1,12 @@
+streamlit
+nltk
+Flask
+bson
+scikit-learn
+numpy
+os-sys
+scipy
+pandas
+matplotlib
+liwc
+selenium
