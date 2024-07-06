@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Detection</h1>
+        <form method="post" action="/predict" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit">Predict</button>
+        </form>
+        {% if prediction %}
+        <div class="result">
+            <h2>Prediction: {{ prediction }}</h2>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
