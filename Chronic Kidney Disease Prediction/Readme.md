@@ -1,4 +1,5 @@
 **Chronic Kidney Disease Prediction**
+
 This work aims to accurately predict Chronic Kidney Disease (CKD) using a robust Artificial Neural Network model and compares its performance to various machine learning algorithms, ultimately achieving an impressive accuracy of 98%, making it a promising tool for CKD diagnosis.
 
 **Motivation**
