@@ -1,0 +1,5 @@
+### before running the project require these module/libraries
+pandas
+scikit-learn
+matplotlib
+seaborn
