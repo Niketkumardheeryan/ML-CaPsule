@@ -24,13 +24,13 @@
 ```
 
 ### Contents
-## [**Basic**](https://github.com/shivam-s16/ML-CaPsule/blob/shivam_saxena/R%20Language/Basic)
+## [**Basic**](https://github.com/KomalMaurya/ML-CaPsule/tree/Visualization/R%20language/Basic%20Visualization)
 
 
 #### Basic Visualization R code
-   - [Bar Chart](https://github.com/shivam-s16/ML-CaPsule/blob/shivam_saxena/R%20Language/Basic/first_program.R)
-   - [Box Plot](https://github.com/shivam-s16/ML-CaPsule/blob/shivam_saxena/R%20Language/Basic/R-objects.R)
-   - [Histogram](https://github.com/shivam-s16/ML-CaPsule/blob/shivam_saxena/R%20Language/Basic/Operators.R)
-   - [Line Chart](https://github.com/shivam-s16/ML-CaPsule/blob/shivam_saxena/R%20Language/Basic/Assignment_operator.R)
-   - [Pie Chart](https://github.com/shivam-s16/ML-CaPsule/blob/shivam_saxena/R%20Language/Basic/Conditional.R)
-   - [Scatter Plot](https://github.com/shivam-s16/ML-CaPsule/blob/shivam_saxena/R%20Language/Basic/function.R)
+   - [Bar Chart](https://github.com/KomalMaurya/ML-CaPsule/blob/Visualization/R%20language/Basic%20Visualization/Bar%20Chart.R)
+   - [Box Plot](https://github.com/KomalMaurya/ML-CaPsule/blob/Visualization/R%20language/Basic%20Visualization/Box%20Plot.R)
+   - [Histogram](https://github.com/KomalMaurya/ML-CaPsule/blob/Visualization/R%20language/Basic%20Visualization/Histogram.R)
+   - [Line Chart](https://github.com/KomalMaurya/ML-CaPsule/blob/Visualization/R%20language/Basic%20Visualization/Line%20Chart.R)
+   - [Pie Chart](https://github.com/KomalMaurya/ML-CaPsule/blob/Visualization/R%20language/Basic%20Visualization/Pie%20Chart.R)
+   - [Scatter Plot](https://github.com/KomalMaurya/ML-CaPsule/blob/Visualization/R%20language/Basic%20Visualization/Scatter%20Plot.R)
