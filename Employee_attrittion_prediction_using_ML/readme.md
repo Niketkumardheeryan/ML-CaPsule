@@ -77,3 +77,7 @@ The project follows the below structured methodology ranging from data preproces
 4. **View Results**:  The script will allow you to predict whether the employee is going to stay in the company or leave the company  based on various parametrs like work of experience, age , promoted in the past , position held, sector in which employee works , satisfaction level and average monthly hours the employee works in the company using machine learning models and result is outputted on the streamlit based application using python as shown in the demo.
 
 ## Demo 
+
+
+https://github.com/user-attachments/assets/d7f232d6-ac43-4075-8691-eba04b99a5d4
+
