@@ -21,4 +21,5 @@
 # 6    7   19.8
 
 > barplot(height = BOD$demand, names.arg = BOD$Time)
-<img width="950" alt="Bar Chart" src="https://github.com/KomalMaurya/ML-CaPsule/blob/Visualization/R%20language/Basic%20Visualization/Plots/Bar_Chart.png">
+[Bar Chart](https://github.com/KomalMaurya/ML-CaPsule/blob/Visualization/R%20language/Basic%20Visualization/Bar%20Chart.R)
+
