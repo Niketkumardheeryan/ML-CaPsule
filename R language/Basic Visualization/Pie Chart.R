@@ -17,3 +17,5 @@
 # 3  Child    50
 
 > pie(df$value,labels= df$group, radius=1)
+
+# Refer the output of this plot in the plots folder.
