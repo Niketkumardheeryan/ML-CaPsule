@@ -11,3 +11,5 @@
 
 > boxplot(mpg~cyl,mtcars,xlab='Number of Cylinders',ylab='miles per gallon',
 + main='miles per gallon for varied cylinders in automobiles', cex.main=1.2)
+
+# Refer the output of this plot in the plots folder.
