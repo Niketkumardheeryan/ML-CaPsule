@@ -21,5 +21,5 @@
 # 6    7   19.8
 
 > barplot(height = BOD$demand, names.arg = BOD$Time)
-[Bar Chart](https://github.com/KomalMaurya/ML-CaPsule/blob/Visualization/R%20language/Basic%20Visualization/Bar%20Chart.R)
 
+# Refer the output of this plot in the plots folder.
