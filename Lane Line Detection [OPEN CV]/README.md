@@ -6,7 +6,7 @@
 Lane-Line-Detection is a project aimed at detecting lane lines in video streams or images using computer vision techniques. This project leverages OpenCV and Python to identify and highlight lane markings, which is a crucial component for autonomous driving systems.
 
 ## Table of Contents
-
+- [Working](#working)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -44,6 +44,17 @@ Ensure you have the following installed:
    ```bash
    python lane_detection.py --image_path path/to/your/image.jpg
    ```
+# Working 
+Test Image
+<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/testimg.jpg"/>
+Binary Image
+<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/binaryimage.png"/>
+Instance Segment Image
+<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/instancesegmentimage.png"/>
+Test Image Result
+<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/testimageresult.png"/>
+Final Result
+<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/finalresult.gif"/>
 
 
 ## Contributing
