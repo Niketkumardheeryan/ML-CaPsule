@@ -7,14 +7,13 @@ Lane-Line-Detection is a project aimed at detecting lane lines in video streams 
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
 
-## Installation
+
 
 ### Prerequisites
 
