@@ -46,15 +46,15 @@ Ensure you have the following installed:
    ```
 # Working 
 Test Image
-<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/testimg.jpg"/>
-Binary Image
-<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/binaryimage.png"/>
-Instance Segment Image
-<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/instancesegmentimage.png"/>
-Test Image Result
-<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/testimageresult.png"/>
-Final Result
-<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/finalresult.gif"/>
+<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/testimg.jpg"/><br>
+Binary Image <br>
+<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/binaryimage.png"/><br>
+Instance Segment Image <br>
+<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/instancesegmentimage.png"/><br>
+Test Image Result <br>
+<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/testimageresult.png"/><br>
+Final Result <br>
+<img src = "https://github.com/aviralgarg05/ML-CaPsule/blob/Lane-Line-Detection/Lane%20Line%20Detection%20%5BOPEN%20CV%5D/finalresult.gif"/><br>
 
 
 ## Contributing
