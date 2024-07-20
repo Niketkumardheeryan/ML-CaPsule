@@ -1,0 +1,17 @@
+autogluon==1.1.0
+autogluon.common==1.1.0
+autogluon.core==1.1.0
+autogluon.features==1.1.0
+autogluon.multimodal==1.1.0
+autogluon.tabular==1.1.0
+autogluon.timeseries==1.1.0
+gluonts==0.14.3
+keras==3.3.3
+matplotlib==3.8.4
+numpy==1.26.4
+pandas==2.2.2
+pytorch_tabnet==4.1.0
+scikit_learn==1.4.0
+torch==2.3.0
+torch==2.1.2
+wasabi==1.1.3
