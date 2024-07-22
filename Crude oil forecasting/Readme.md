@@ -14,7 +14,7 @@ This project aims to predict crude oil prices using historical data and machine 
 
 ## Methodology
 1. Data Collection:
-   - Utilize APIs or datasets (e.g., Quandl, EIA) to fetch historical crude oil prices.
+   - Utilize datasets to fetch historical crude oil prices.
    - Handle missing data and outliers appropriately.
 
 2. Data Preprocessing:
