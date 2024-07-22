@@ -54,7 +54,6 @@ This project aims to predict crude oil prices using historical data and machine 
 
 - **Programming Languages**: Python
 - **Libraries**: pandas, numpy, scikit-learn, TensorFlow/Keras (for deep learning models), matplotlib, seaborn
-- **Data Sources**: Historical crude oil price datasets
 
 ## Visualization and Plots
 
