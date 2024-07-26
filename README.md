@@ -1,195 +1,173 @@
+# 🌟 ML-Capsule: Hands-on ML from Basic to Advance 🌟
 
- # Master Machine learning
+Welcome to **ML-Capsule**! This repository is a comprehensive collection of machine learning projects and resources, ranging from beginner to advanced levels. It covers a variety of topics, from basic machine learning concepts to deep learning, natural language processing, and much more.
 
-<a href="https://github.com/prathimacode-hub"><img src="https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green"></a> 
-![Issues](https://img.shields.io/github/issues/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
-![Pull Requests](https://img.shields.io/github/issues-pr/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
-![Forks](https://img.shields.io/github/forks/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
-![Stars](https://img.shields.io/github/stars/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-)
+![Machine Learning](https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif)
 
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"></a>
- <a href="https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/graphs/contributors"><img src="https://img.shields.io/github/contributors-anon/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-"></a>
-<a href="https://github.com/Niketkumardheeryan"><img src="https://img.shields.io/maintenance/yes/2021"></a>
+## 📈 Why Machine Learning?
 
+Machine learning is a technique to analyze data that automates the process of building analytical models. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns, and make decisions with minimal human intervention.
 
-__________________________________________________________________________
-
-<img src="https://user-images.githubusercontent.com/74819092/121880620-da9de200-cd2b-11eb-8117-d58e9a103557.png" align="right">
+![image](https://github.com/user-attachments/assets/e11d2857-24cc-4528-b41f-b51eddd9ba14)
 
 
-## Description
-<p><i> Machine learning technique to  analysis data that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.</i>
+
+
+
 ### Importance of Machine Learning
-Machine learning is important because it gives enterprises a view of trends in customer behavior and business operational patterns, as well as supports the development of new products. Many of today's leading companies, such as Facebook, Google and Uber, make machine learning a central part of their operations. Machine learning has become a significant competitive differentiator for many companies.</p>
+Machine learning is crucial because it provides enterprises with insights into customer behavior and business operational patterns, and supports the development of new products. Leading companies like Facebook, Google, and Uber integrate machine learning into their operations, making it a significant competitive differentiator.
 
-## 🌱Pre-requisites
-
-- Python IDE : Install it by using this link [python.org](https://www.python.org/downloads/)
-- If you are new to python programming and want to have a fair knowledge before you start working on it, you can learn it in a simplified way through this [website](https://www.w3schools.com/python/)
-
-## Topics
-
- ### Extracting  Data
- Extraction is a general term for methods of constructing combinations of the variables to get around these problems while still describing the data with sufficient accuracy
-  * Web scrapping -  Library used :->> Beautiful Soup , Which extract the data from web pages.
-  
- ### Visualization 
- Data visualization is the discipline of trying to understand data by placing it in a visual context so that patterns, trends and correlations that might not otherwise be    detected can be exposed. Python offers multiple great graphing libraries that come packed with lots of different features.
- * Different types of libraries used to manipulate data in form of type of graphs and graphical representation :->> Seaborn , pandas , matplotlib etc. 
- 
- ### Feature selection (Variable Selection)
- the process of selecting a subset of relevant features for use in model.Having irrelevant features in your data can decrease the accuracy of the models and make your model learn based on irrelevant features.
- * Library used for feature selection commonly :->> scikit-learn
- * Link - https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/
- 
- ### Basic concepts of statistic
-A).Understand the Type of Analytics
- 
-
-* Descriptive Analytics tells us what happened in the past and helps a business understand how it is performing by providing context to help stakeholders interpret information.
-
-* Diagnostic Analytics takes descriptive data a step further and helps you understand why something happened in the past.
-
-* Predictive Analytics predicts what is most likely to happen in the future and provides companies with actionable insights based on the information.
-
-* Prescriptive Analytics provides recommendations regarding actions that will take advantage of the predictions and guide the possible actions toward a solution
- 
-B). Probability
-<img src="https://user-images.githubusercontent.com/74819092/121885333-a9281500-cd31-11eb-9888-8ceb83277f21.png" align="right">
-* Conditional Probability
-* Independent Events
-* Mutually Exclusive Events
-* Bayes’ Theorem
-
-C). Central Tendency
- * Mean 
- * Mode
- * varience
- * Skewness
- * Kurtosis:
- * Standard Deviation
- 
-D). Variability
-* Range: The difference between the highest and lowest value in the dataset.
-* Percentiles — A measure that indicates the value below which a given percentage of observations in a group of observations falls.
-* Quantiles— Values that divide the number of data points into four more or less equal parts, or quarters.
-* Interquartile Range (IQR)— A measure of statistical dispersion and variability based on dividing a data set into quartiles. IQR = Q3 − Q1
-* Variance: The average squared difference of the values from the mean to measure how spread out a set of data is relative to mean.
-
-E). Relationship Between Variables
-* Causality: Relationship between two events where one event is affected by the other.
-* Covariance: A quantitative measure of the joint variability between two or more variables.
-* Correlation: Measure the relationship between two variables and ranges from -1 to 1, the normalized version of covariance.
-
-F). Probability Distribution
-* Probability Mass Function (PMF): A function that gives the probability that a discrete random variable is exactly equal to some value.
-* Probability Density Function (PDF): A function for continuous data where the value at any given sample can be interpreted as providing a relative likelihood that the value of the random variable would equal that sample.
-* Cumulative Density Function (CDF): A function that gives the probability that a random variable is less than or equal to a certain value.
-<p align ="center">
-<img src="https://user-images.githubusercontent.com/74819092/121884166-366a6a00-cd30-11eb-8f68-67511cc4b3f4.png" width=400, height=400>
- </p>
-
-G). Hypothesis Testing and Statistical Significance
-* Null and Alternative Hypothesis
-* Interpretation
-* Z-Test
-* T-Test
-* ANOVA (Analysis of Variance)
-* Chi-Square Test
-
-H). Regression
-* Linear Regression
-   ** Assumptions of Linear Regression
-
-          - Linear Relationship
-          - Multivariate Normality
-          - No or Little Multicollinearity
-          - No or Little Autocorrelation
-          - Homoscedasticity
- * Multiple Linear Regression
-
-# Data Science
-Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data, and apply knowledge and actionable insights from data across a broad range of application domains.<br>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/74819092/122023534-498b4180-cde5-11eb-9aa7-fc1c20aec5fe.png" height=150, width=700>
- </P>
- 
-## Why is data science important?
-In business, the goal of data science is to provide intelligence about consumers and campaigns and help companies create strong plans to engage their audience and sell their products.
-<br>
-
-Data scientists must rely on creative insights using big data, the large amounts of information collected through various collection processes, like data mining.
-On an even more fundamental level, big data analytics can help brands understand the customers who ultimately help determine the long-term success of a business or initiative. In addition to targeting the right audience, data science can be used to help companies control the stories of their brands.
-Because big data is a rapidly growing field, there are constantly new tools available, and those tools need experts who can quickly learn their applications. Data scientists can help companies create a business plan to achieve goals based on research and not just intuition.
-<br>
-Data science plays a very important role in security and fraud detection, because the massive amounts of information allow for drilling down to find slight irregularities in data that can expose weaknesses in security systems.It is a driving force between highly specialized user experiences created through personalization and customization. The analysis can be used to make customers feel seen and understood by a company.
-<br>
-
-## What are the six major areas of data science?
-The six major areas of data science include the following:
-
-* Multidisciplinary investigations. Considering large, complex systems with interconnected pieces, data scientists use varying methods to collect large amounts of data.
-* Models and methods for data. Data scientists need to rely on experience and intuition to decide which methods will work best for modeling their data, and they need to adjust those methods continuously to hone in on the insights they seek.
-* Pedagogy. It is up to data scientists to work with companies and clients to determine the best ideologies to apply while collecting and analyzing information about their customers and products.
-* Computing with data. The biggest thing that all data science projects have in common is the necessity to use tools and software to analyze the involved algorithms and statistics, because the size of the pool of information they are working with is so massive.
-* Theory. Data science theory is an evolving and sophisticated professional arena with countless applications.
-* Tool evaluation. There are many tools available for data scientists to use to manipulate and study huge quantities of data, and it's important to always evaluate their effectiveness and keep trying new ones as they become available.
-
-## summary 
-
-## useful urls
-* https://www.kdnuggets.com/2020/06/8-basic-statistics-concepts.html
-* https://www.coursera.org/learn/machine-learning-with-python
-* https://www.w3schools.com/python/python_ml_getting_started.asp
-* https://www.freecodecamp.org/learn/machine-learning-with-python/
-
-* https://www.greatlearning.in/great-lakes-pgpdsba?&utm_source=Google&utm_medium=Search&utm_campaign=6Cities_Exact_Data_Science_Search_New_DS&adgroup_id=101317851589&campaign_id=10174480218&Keyword=data%20scientist&placement=&utm_content=c&gclid=CjwKCAjwn6GGBhADEiwAruUcKqPCvPIk1X_5mVRXj5prdpSIULnd40QgTB4kChfiFgAL1kDErGeLHRoCapUQAvD_BwE
+![image](https://github.com/user-attachments/assets/5269314a-83c1-4519-abd8-bac00aae194e)
 
 
-## Get Started
+## 📚 Pre-requisites
 
-* This repo shows a good collection of Machine learning with python and data science with algorithms,projects,explanations from basic to advance level.
-* It has topics based on machine learning, deep learning, sql, natural language proccessing, object detection, classification, recommendation system,chatbots and much more.
+- **Python IDE**: Install from [python.org](https://python.org)
+- **Learn Python**: If you're new to Python, start learning from [W3Schools](https://www.w3schools.com/python/python_ml_getting_started.asp)
 
-## Take a look at existing projects 
+## 🗂️ Topics Covered
 
-<!-- Projects start -->
-| Content List | 
- | --------------- | 
+### 1. Extracting Data
+Extraction refers to methods of constructing combinations of variables to accurately describe the data.
 
-<!-- Projects end -->
+- **Web Scraping**: Library used - Beautiful Soup, to extract data from web pages.
 
-### Note:
-* Above project list will be scheduled automatically,whenever new projects add to the repo it will add in above table.
+### 2. Visualization
+Data visualization places data in a visual context to expose patterns, trends, and correlations.
 
-## 📖 Code Of Conduct:
+- **Libraries Used**: Seaborn, pandas, matplotlib
 
-You can find our Code of Conduct [here](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/CODE_OF_CONDUCT.md).
+### 3. Feature Selection
+The process of selecting relevant features for use in a model to increase accuracy and performance.
 
-## 📝 License  
+- **Library Used**: scikit-learn
+- **Learn More**: [Feature Selection](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/)
 
-This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
+### 4. Basic Concepts of Statistics
+- **Analytics Types**: Descriptive, Diagnostic, Predictive, Prescriptive
+- **Probability**: Conditional, Independent Events, Bayes’ Theorem
+- **Central Tendency**: Mean, Mode, Variance, Skewness, Kurtosis, Standard Deviation
+- **Variability**: Range, Percentiles, Quantiles, IQR, Variance
+- **Relationships**: Causality, Covariance, Correlation
+- **Probability Distribution**: PMF, PDF, CDF
+- **Hypothesis Testing**: Null and Alternative Hypothesis, Z-Test, T-Test, ANOVA, Chi-Square Test
+- **Regression**: Linear Regression, Multiple Linear Regression
+![Statistics](https://miro.medium.com/v2/resize:fit:1400/1*9kRvwsN26fKAumtHt-WVgw.gif)
+
+### 5. Data Science
+Data science uses scientific methods, processes, algorithms, and systems to extract knowledge from data.
+
+- **Importance**: Provides intelligence about consumers and campaigns, helps in security and fraud detection, and creates personalized user experiences.
+
+
+![image_processing20191213-6403-1j99nlm](https://github.com/user-attachments/assets/a4168150-b5dc-4a68-a72d-7b7071d9c57d)
+
+
+### Six Major Areas of Data Science
+
+Data science is a multifaceted field that involves several key areas. Each of these areas plays a crucial role in advancing the field and solving complex problems. Here’s a brief overview of the six major areas of data science:
+
+#### 1. Multidisciplinary Investigations
+
+Multidisciplinary investigations involve integrating knowledge and techniques from various disciplines to address complex problems. Data scientists often collaborate with experts from different fields such as economics, biology, social sciences, and engineering to gain a holistic understanding of the problem at hand. This approach helps in designing comprehensive solutions that are informed by diverse perspectives and methodologies.
+
+#### 2. Models and Methods for Data
+
+This area focuses on the development and application of statistical models and machine learning algorithms to analyze and interpret data. It includes techniques for predictive modeling, classification, clustering, and regression. Data scientists use these models to uncover patterns, make predictions, and inform decision-making processes. Methods can range from traditional statistical techniques to advanced machine learning algorithms and deep learning models.
+
+#### 3. Pedagogy
+
+Pedagogy in data science refers to the methods and practices of teaching and learning within the field. This includes curriculum development, instructional strategies, and educational tools designed to enhance the learning experience for students and professionals. Effective pedagogy ensures that knowledge is effectively transferred and that learners are equipped with the skills needed to succeed in data science.
+
+#### 4. Computing with Data
+
+Computing with data involves the use of computational tools and technologies to handle, process, and analyze large datasets. This area covers topics such as data management, database systems, data warehousing, and distributed computing. It also includes programming skills in languages like Python, R, and SQL, and the use of software frameworks and platforms for data processing and analysis.
+
+#### 5. Theory
+
+Theoretical aspects of data science involve the foundational principles and mathematical underpinnings of the field. This includes the study of probability, statistics, optimization, and information theory. Understanding these theoretical concepts is crucial for developing and applying data science methods effectively and for advancing the field through new theoretical insights.
+
+#### 6. Tool Evaluation
+
+Tool evaluation focuses on assessing and comparing various tools and technologies used in data science. This includes evaluating software packages, programming languages, and platforms based on criteria such as performance, usability, and scalability. Effective tool evaluation helps data scientists choose the best tools for their specific needs and ensures that the tools they use are reliable and effective.
 
 
 
-## Have a look 
- 
-* Give it a 🌟 if you ❤ this project.
- <img src="https://user-images.githubusercontent.com/74819092/117547585-fe477b80-b04d-11eb-9e03-0747dea1b88a.png" width=100>
- 
-* Take a look at the Existing Issues.<br>
-* Create your own Issues, If you have new idea not listed in project.<br>
-* Wait for the Issue to be assigned to you.<br>
-* Fork the repository<br>
+## 📂 Project Descriptions
 
-<img src="https://user-images.githubusercontent.com/74819092/117547550-c8a29280-b04d-11eb-9e6b-d0f84d49e34e.png" width=100>
+Here are some of the exciting projects featured in this repository:
 
-* Clone the repository using-<br>
+1. **[Alzheimer's Disease Predictor](#)**  
+   A machine learning model to predict the likelihood of Alzheimer's disease based on patient data, using classification algorithms and feature selection techniques.
 
-``` git clone https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance- ```
+2. **[Chatbot Using RASA](#)**  
+   A conversational AI chatbot built with RASA, capable of handling various user queries and providing intelligent responses.
 
-## ⚙️ Contribution Guidelines 
-- Have a look at [Contibuting Guidelines](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/master/CONTRIBUTING_GUIDELINES.md)
+3. **[COVID-19 Forecasting with Prophet](#)**  
+   Utilize the Prophet library to forecast COVID-19 case trends and predict future outbreaks based on historical data.
+
+4. **[Fake News Detection](#)**  
+   A project that uses NLP techniques to detect and classify fake news articles, employing various text processing and classification methods.
+
+5. **[Handwritten Digit Recognition](#)**  
+   A deep learning model that recognizes handwritten digits using a Convolutional Neural Network (CNN) trained on the MNIST dataset.
+
+6. **[Movie Genre Classification](#)**  
+   A machine learning model that predicts movie genres based on descriptions using text classification techniques and feature extraction.
+
+7. **[Employee Attrition Prediction](#)**  
+   A predictive model that identifies employees at risk of leaving a company, using historical HR data and various classification algorithms.
+
+8. **[Heart Disease Prediction](#)**  
+   A predictive model for diagnosing heart disease based on patient attributes, utilizing statistical and machine learning techniques to improve diagnosis accuracy.
+
+## 📜 Summary
+
+This repository offers a rich collection of machine learning and data science projects. It includes well-documented examples, practical projects, and extensive resources to help you understand and implement various machine learning techniques.
+
+## 🔗 Useful URLs
+- [8 Basic Statistics Concepts](https://www.kdnuggets.com/2020/06/8-basic-statistics-concepts.html)
+- [Coursera: Machine Learning with Python](https://www.coursera.org/learn/machine-learning-with-python)
+- [W3Schools: Python ML Getting Started](https://www.w3schools.com/python/python_ml_getting_started.asp)
+- [freeCodeCamp: Machine Learning with Python](https://www.freecodecamp.org/learn/machine-learning-with-python/)
+- [Great Learning: Data Science](https://www.greatlearning.in/great-lakes-pgpdsba?&utm_source=Google&utm_medium=Search&utm_campaign=6Cities_Exact_Data_Science_Search_New_DS&adgroup_id=101317851589&campaign_id=10174480218&Keyword=data%20scientist&placement=&utm_content=c&gclid=CjwKCAjwn6GGBhADEiwAruUcKqPCvPIk1X_5mVRXj5prdpSIULnd40QgTB4kChfiFgAL1kDErGeLHRoCapUQAvD_BwE)
+
+## 🚀 Get Started
+This repository showcases a diverse collection of machine learning projects and data science algorithms, ranging from basic to advanced levels. It includes topics on machine learning, deep learning, SQL, NLP, object detection, classification, recommendation systems, chatbots, and much more.
+
+### 📖 Code of Conduct
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+### 📝 License
+This project is licensed under the MIT License.
+
+### 🌟 Have a Look!
+- Give this project a ⭐ if you love it!
+
+
+![image](https://github.com/user-attachments/assets/5c0f81aa-e921-41ec-9b22-11f09e46bbca)
+
+
+- Take a look at the Existing Issues.
+
+- Create your own Issues, If you have new idea not listed in project.
+
+- Wait for the Issue to be assigned to you.
+
+- Fork the repository
+- Clone the repository using
+```
+git clone https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-
+```
+
+### ⚙️ Contribution Guidelines
+- Check the [Contribution Guidelines](CONTRIBUTING.md)
+- Take a look at the [Existing Issues](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/issues)
+- Create your [Pull Request](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/pulls)
+
+Feel free to create new issues, fix bugs, and contribute to our projects. Join our community and help us build amazing machine learning solutions!
+
+Happy Coding! 👩‍💻👨‍💻
 
 
 ## Some awesome Contributors ✨
@@ -251,4 +229,5 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
         <td align="center"><a href="https://github.com/shivani6320"><img src="https://avatars.githubusercontent.com/u/63535949?v=4" width="100px;" alt=""/><br /><sub><b> shivani rana </b></sub></a><br />💻</a></td>
   </tr>
 </table>
+
 
