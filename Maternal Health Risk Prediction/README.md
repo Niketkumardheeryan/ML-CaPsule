@@ -42,13 +42,11 @@ Maternal_health_risk_prediction.ipynb
 ## Libraries Used
 
 1. **Joblib**: For downloading the trained model
-2. **Scikit-learn**: For machine learning processing and operations
-3. **Matplotlib**: For plotting and visualizing the results
-4. **Pandas**: For data manipulation
-5. **NumPy**: For efficient numerical operations
-6. **Seaborn**: For advanced data visualizations
-7. **Plotly**: For 3D data visualizations
-8. **Streamlit**: For creating the GUI of the web application
+2. **Scikit-learn**: For machine learning processing and operations\
+3. **Pandas**: For data manipulation
+4. **NumPy**: For efficient numerical operations
+5. **Seaborn**: For advanced data visualizations\
+6. **Streamlit**: For creating the GUI of the web application
 
 ## How to Use
 
