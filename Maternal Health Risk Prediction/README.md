@@ -1,27 +1,74 @@
-# Maternal-Healath
+# Maternal Health Risk Prediction using Machine Learning
 
-## Maternal Health Risk Prediction
+This project involves developing a Streamlit web application to predict maternal health risk levels based on user inputs, using various pre-trained machine learning models. The application allows users to enter various health parameters, such as age, blood pressure, blood glucose levels, body temperature, and heart rate. These inputs are preprocessed, and the model predicts a risk level, which is then displayed to the user. 
 
-The dataset contains:
+## Data Set
 
-- Age: Age of pregnant women.
-- SystolicBP: Upper value of Blood Pressure in mmHg
-- DiastolicBP: Lower value of Blood Pressure in mmHg
-- BS: Blood glucose levels in mmol/L.
-- HeartRate: Heart rate in beats per minute.
-- Risk Level: Predicted Risk Intensity Level during pregnancy.
+The below CSV dataset from Kaggle is used as reference for the model:
+https://www.kaggle.com/datasets/pyuxbhatt/maternal-health-risk
 
-Built the prediction model using various machine learning model
+## Notebook
 
-- KNN
-- Random Forest
-- Support Vector Machine
-- Decision Tree Classifier
-- XG Boost
-Used GridSearchCV for hyperparameter tuning
+Maternal_health_risk_prediction.ipynb
 
-## Screenshots
+## Methodology
 
-![Screenshot 2024-07-20 205318](https://github.com/user-attachments/assets/b4d1d636-f0c9-4059-8dd6-399dc329bfc9)
-![Screenshot 2024-07-20 205330](https://github.com/user-attachments/assets/0383d270-4a4a-4c5f-b596-bb2774826f7a)
-![Screenshot 2024-07-20 205642](https://github.com/user-attachments/assets/9ec4592a-71a4-4514-9c11-8da875967cc0)
+1. **Data Preprocessing and Feature Engineering**:
+
+2. **Exploratory Data Analysis (EDA)**:
+    After data preprocessing, the next step is exploratory data analysis using different plotting libraries like Matplotlib, Pandas, Seaborn, and Plotly. The following plots were created in this step:
+    1. Pie chart
+    2. Box plot of numerical features
+    3. Count plot
+    4. Heatmap or confusion matrix for different models of machine learning
+    5. Model comparison graphs
+    6. Bar graph
+    7. Histogram
+    8. Correlation matrix
+
+3. **Model Training and Evaluation**:
+    The following machine learning models were selected for training over the processed data:
+    - Random Forest
+    - Decision Tree
+    - KNN
+    - Gradient Boosting Machine
+    - SVC
+    Hyperparameter Tuning: GridSearchCV
+    The best-performing model is then loaded into the Streamlit application using the joblib library.
+
+4. **Inference**:
+    Deployed the model with the help of a Streamlit web application to predict the maternal health risk level.
+
+## Libraries Used
+
+1. **Joblib**: For downloading the trained model
+2. **Scikit-learn**: For machine learning processing and operations
+3. **Matplotlib**: For plotting and visualizing the results
+4. **Pandas**: For data manipulation
+5. **NumPy**: For efficient numerical operations
+6. **Seaborn**: For advanced data visualizations
+7. **Plotly**: For 3D data visualizations
+8. **Streamlit**: For creating the GUI of the web application
+
+## How to Use
+
+1. **Clone the Repository**:
+    ```sh
+    git clone url_to_this_repository
+    ```
+
+2. **Install Dependencies**:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. **Run the Model**:
+    ```sh
+    streamlit run app.py
+    ```
+
+4. **View Results**: The script will allow you to predict the maternal health risk level based on the input parameters.
+
+## Demo :
+
+https://github.com/user-attachments/assets/3ded396f-4a3d-4e51-bb8c-784cd4d665d3
