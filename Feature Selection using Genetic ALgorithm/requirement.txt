@@ -1,0 +1,9 @@
+## Requirements
+Python 3.x
+NumPy
+pandas
+OpenAI Gym
+Stable Baselines3
+TensorFlow/Keras
+Matplotlib
+Jupyter Notebook (optional, for interactive exploration)
