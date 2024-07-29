@@ -1,0 +1,129 @@
+/* App.css */
+
+/* General Styles */
+/* body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+} */
+
+.App {
+  margin: 5% auto;
+  width: calc(100vw - 50%);
+  height: calc(100vh - 20%);
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* background-image: url("./wallp.jpeg"); */
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  background-size: cover;
+  background: #f4ff91;
+  padding: 20px;
+  /* width: 300px; */
+}
+
+label {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  background-color: rgb(172, 247, 140);
+  display: block;
+  margin-bottom: 20px;
+  /* margin-top: 5%;  */
+}
+
+/* input[type="file"] {
+  margin: 0 auto 20px auto;
+  background-color: #04aa6d;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+} */
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+input {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 2%;
+  width: 300px;
+}
+
+/* Style the custom button */
+
+/* Add some hover effects */
+button:hover {
+  background-color: #45a049;
+}
+
+.onupload img {
+  max-width: 50vw;
+  height: 40vh;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.onupload h1 {
+  font-size: 30px;
+  /* background-color: rgb(133, 245, 245); */
+  color: #000000;
+  margin-top: 10px;
+  margin: auto;
+  max-width: 50%;
+}
+
+.breed {
+  background-color: #98ef9c;
+  width: auto;
+}
+
+input {
+  /* font-size: x-large; */
+  background-color: #45a049;
+}
+
+/* .sent .onupload {
+  display: block;
+} */
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .App {
+    width: 90%;
+    padding: 5px;
+  }
+
+  label {
+    font-size: 1.2em;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .onupload h1 {
+    font-size: 1em;
+  }
+}

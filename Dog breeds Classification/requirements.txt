@@ -1,0 +1,8 @@
+1. tensorflow
+2. keras
+3. pillow
+4. flask
+5. node js
+6. React
+7. some libraries that are included in package.json,
+    will get installed automatically on running git push myrepo master npm install.
