@@ -35,7 +35,20 @@ This project implements different ways of pneumonia prediction from Chest X-Ray 
 
 -  **Model Evaluation:** Used classification metrics and graphs for visualization
 
+## Live Demo
 
+- **For running on localhost** : Prepare the environment by installing all the requirements from `requirements.txt` 
+Then type the following command in the terminal : `streamlit run app.py`
+
+## Screenshots of app
+### Homepage
+![Homepage](./Images/Homepage.png)
+
+### Locally browse images 
+![Browse](./Images/Browse.png)
+
+### Prediction along with class probabilities
+![Prediction](./Images/Prediction.png)
 
 ## 📚 **Libraries Needed**
 
