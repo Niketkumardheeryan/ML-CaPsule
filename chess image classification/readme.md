@@ -11,7 +11,7 @@ CNN model is trained over batch size = 128 ,with 100 epochs input image size =(1
 
 ## Dataset :
 
-https://www.kaggle.com/datasets/akshayramakrishnan28/cataract-classification-dataset/data
+https://www.kaggle.com/datasets/s4lman/chess-pieces-dataset-85x85
 
 
 ## Inference : 
@@ -54,4 +54,9 @@ Deployed the model with the help streamlit web application to classify the chess
 4. **View Results**: The script will allow you to classify the chess image and give information regrading tis moves with the help of text and visuals .
 
 **DEMO** :
+
+
+https://github.com/user-attachments/assets/c06554e5-81ff-4151-97a9-74fdfb4ff760
+
+
 
