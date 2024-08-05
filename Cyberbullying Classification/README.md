@@ -1,4 +1,4 @@
-# Fetal Health Classification
+# Cyberbullying Classification
 
 ## Overview
 The goal is to analyze tweets to classify them into categories of cyberbullying and non-cyberbullying using NLP techniques and machine learning models.
@@ -6,7 +6,7 @@ The goal is to analyze tweets to classify them into categories of cyberbullying 
 ## Dataset
 The dataset contains over 47,000 tweets labeled into six categories: Age, Ethnicity, Gender, Religion, Other type of cyberbullying, and Not cyberbullying.
 
-Link to the dataset: [Fetal Health Classification Dataset](https://www.kaggle.com/datasets/andrewmvd/cyberbullying-classification/data)
+Link to the dataset: [Cyberbullying Classification Dataset](https://www.kaggle.com/datasets/andrewmvd/cyberbullying-classification/data)
 
 
 ## Models Used
