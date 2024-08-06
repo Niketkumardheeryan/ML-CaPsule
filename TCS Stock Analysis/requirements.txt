@@ -1,0 +1,8 @@
+**Requirements For Project :-**
+
+1. NumPy: Fundamental package for numerical computing.
+2. pandas: Data analysis and manipulation library.
+3. scikit-learn: Machine learning library for classification, regression, and clustering.
+4. Matplotlib: Plotting library for creating visualizations.
+5. Keras: High-level neural networks API, typically used with TensorFlow backend.
+6. seaborn: Statistical data visualization library based on Matplotlib.
