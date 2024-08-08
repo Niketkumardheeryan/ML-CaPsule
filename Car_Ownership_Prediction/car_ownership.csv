@@ -1,0 +1,487 @@
+Occupation,Monthly Income,Credit Score,Years of Employment,Finance Status,Finance History,Car,Number of Children
+Teacher,40000,750,10,Good,No issues,Yes,2
+Engineer,60000,800,8,Good,No issues,Yes,1
+Nurse,25000,650,5,Fair,Late payment 2 months ago,No,0
+Doctor,80000,900,12,Excellent,No issues,Yes,3
+Businessman,100000,700,15,Good,Late payment 6 months ago,Yes,2
+Engineer,50000,750,6,Fair,No issues,No,1
+Teacher,35000,700,8,Fair,Late payment 3 months ago,Yes,1
+Nurse,20000,600,3,Poor,Late payment 1 month ago,No,2
+Businessman,120000,850,20,Excellent,No issues,Yes,2
+Doctor,90000,800,10,Good,No issues,Yes,2
+Engineer,6000,700,3,Good,Excellent,Yes,1
+Salesperson,3000,600,1,Fair,Poor,No,1
+Teacher,4000,750,5,Excellent,Excellent,Yes,0
+Entrepreneur,8000,800,7,Good,Excellent,Yes,1
+Lawyer,9000,820,10,Excellent,Good,Yes,1
+Doctor,12000,900,12,Excellent,Excellent,Yes,2
+Accountant,5000,720,4,Good,Fair,No,2
+Software Dev,7000,780,6,Excellent,Good,Yes,1
+Nurse,3500,650,2,Fair,Poor,No,3
+Electrician,2500,550,1,Poor,Poor,No,2
+Architect,5500,740,8,Good,Excellent,Yes,2
+Marketing Exec,4500,690,4,Fair,Fair,No,1
+Chef,3000,620,2,Fair,Poor,No,2
+Police Officer,4000,680,3,Fair,Fair,No,2
+Real Estate Ag,6000,760,5,Good,Good,Yes,2
+Pilot,10000,820,10,Excellent,Good,Yes,2
+Graphic Design,3500,670,3,Fair,Poor,No,2
+Writer,2000,500,1,Poor,Poor,No,1
+Musician,2500,550,0,Poor,no significant  issues,No,3
+Nurse,"$4,500 ",720,3 years,Stable,No significant issues,Yes,1
+Software Developer,"$7,800 ",800,5 years,Stable,No significant issues,Yes,2
+Chef,"$3,200 ",650,2 years,Unstable,Missed payments in the past,No,2
+Accountant,"$6,500 ",750,7 years,Stable,No significant issues,Yes,2
+Salesperson,"$3,000 ",600,1 year,Unstable,Missed payments in the past,No,1
+Teacher,"$3,800 ",680,4 years,Stable,No significant issues,Yes,3
+Lawyer,"$10,000 ",820,8 years,Stable,No significant issues,Yes,2
+Mechanic,"$2,500 ",600,2 years,Unstable,Late payments,No,1
+Marketing,"$5,200 ",720,5 years,Stable,No significant issues,Yes,2
+Graphic Designer,"$3,700 ",680,3 years,Stable,No significant issues,No,0
+Financial Advisor,"$8,500 ",780,6 years,Stable,No significant issues,Yes,
+Real Estate Agent,"$6,200 ",700,4 years,Stable,No significant issues,Yes,
+Chef,"$2,800 ",620,1 year,Unstable,Missed payments in the past,No,
+Engineer,"$9,000 ",790,7 years,Stable,No significant issues,Yes,
+Construction Worker,"$3,000 ",610,3 years,Unstable,Late payments,No,
+Designer,"$4,500 ",700,4 years,Stable,No significant issues,No,
+Writer,"$2,500 ",590,1 year,Unstable,Missed payments in the past,No,
+Web Developer,"$6,000 ",730,5 years,Stable,No significant issues,Yes,
+Chef,"$3,500 ",650,2 years,Unstable,Missed payments in the past,No,
+Account Manager,"$5,800 ",720,4 years,Stable,No significant issues,Yes,
+Financial Analyst,"$6,800 ",760,5 years,Stable,No significant issues,Yes,
+Electrician,"$3,200 ",640,2 years,Unstable,Missed payments in the past,No,
+Human Resources,"$4,500 ",690,3 years,Stable,No significant issues,Yes,
+Plumber,"$2,700 ",620,1 year,Unstable,Late payments,No,
+Social Worker,"$3,600 ",670,2 years,Unstable,Missed payments in the past,No,
+Data Scientist,"$9,200 ",820,6 years,Good,No significant issues,Yes,
+Chef,"$3,100 ",650,2 years,Fair,Missed payments in the past,No,
+Customer Service,"$2,500 ",600,1 year,Excellent,Missed payments in the past,No,
+Veterinarian,"$7,000 ",750,8 years,Good,No significant issues,Yes,
+Graphic Designer,"$3,500 ",680,3 years,Excellent,No significant issues,No,
+Architect,"$8,500 ",790,7 years,Excellent,No significant issues,Yes,
+Chef,"$3,200 ",630,2 years,Good,Missed payments in the past,No,
+Web Designer,"$4,800 ",710,4 years,Excellent,No significant issues,No,
+Insurance Agent,"$4,200 ",680,3 years,Fair,No significant issues,Yes,
+Sales Representative,"$4,500 ",660,2 years,Poor,Missed payments in the past,No,
+Musician,"$3,000 ",620,1 year,Good,Late payments,No,
+Marketing Manager,"$7,500 ",780,6 years,Fair,No significant issues,Yes,
+Software Engineer,"$9,000 ",820,7 years,Fair,No significant issues,Yes,
+Chef,"$3,500 ",650,2 years,Fair,Missed payments in the past,No,
+Dental Hygienist,"$5,000 ",720,4 years,Stable,No significant issues,Yes,
+Retail Manager,"$3,800 ",670,3 years,Stable,No significant issues,Yes,
+Chef,"$2,800 ",630,1 year,Unstable,Missed payments in the past,No,
+Financial Analyst,"$6,800 ",760,5 years,Stable,No significant issues,Yes,0
+Electrician,3.2k USD,640,2 years,Unstable,Missed payments in the past,No,2
+Human Resources,"$4,500 ",690,3 years,Stable,No significant issues,Yes,1
+Plumber,"$2,700 ",620,1 year,Unstable,Late payments,No,0
+Social Worker,"$3,600 ",670,2 years,Unstable,Missed payments in the past,No,3
+Data Scientist,"$9,200 ",820,6 years,Stable,No significant issues,Yes,2
+Chef,"$3,100 ",650,2 y,Unstable,Missed payments in the past,No,1
+Customer Service,"$2,500 ",600,1 year,Unstable,Missed payments in the past,No,0
+Veterinarian,"$7,000 ",750,8 years,Stable,No significant issues,Yes,2
+Graphic Designer,"$3,500 ",680,3 years,Stable,No significant issues,No,0
+Architect,8.5k USD,790,7 years,Stable,No significant issues,Yes,3
+Chef,"$3,200 ",630,2 years,Unstable,Missed payments in the past,No,2
+Web Designer,"$4,800 ",710,4 years,Stable,No significant issues,No,1
+Insurance Agent,"$4,200 ",680,3 year,Stable,No significant issues,Yes,0
+Sales Representative,"$4,500 ",660,2 year,Unstable,Missed payments in the past,No,2
+Musician,"$3,000 ",620,1 year,Unstable,Late payments,No,0
+Marketing Manager,"$7,500 ",780,6 year,Stable,No significant issues,Yes,1
+Software Engineer,9k,820,7 year,Stable,No significant issues,Yes,0
+Chef,"$3,500 ",650,2 years,Unstable,Missed payments in the past,No,2
+Dental Hygienist,"$5,000 ",750,3 years,Stable,No significant issues,Yes,0
+Personal Trainer,"$3,000 ",630,1 year,Unstable,Late payments,No,0
+Pharmacist,"$10,000 ",840,10 years,Stable,No significant issues,Yes,2
+Teacher,"$4,000 ",670,3 years,Stable,No significant issues,No,1
+Computer Programmer,"$8,000 ",780,5 years,Stable,No significant issues,Yes,0
+Chef,"$3,200 ",640,2 years,Unstable,Missed payments in the past,No,1
+Physical Therapist,"$6,000 ",720,5 years,Stable,No significant issues,Yes,2
+Accountant,"$6,500 ",740,6 years,Stable,No significant issues,Yes,0
+Writer,"$3,500 ",670,2 years,Stable,No significant issues,No,0
+Mechanic,"$3,000 ",610,1 year,Unstable,Late payments,No,3
+Physician,"$15,000 ",890,12 years,Stable,No significant issues,Yes,3
+Nurse,5k,720,5 years,Stable,No significant issues,No,2
+Real Estate Agent,"$4,500 ",680,4 years,Stable,No significant issues,Yes,1
+Electrician,"$3,500 ",650,2 years,Unknow,Missed payments in the past,No,0
+Graphic Designer,"$3,200 ",670,3 y,Stable,No significant issues,No,0
+Financial Advisor,"$7,000 ",770,6 years,Stable,No significant issues,Yes,2
+Project Manager,"$9,500 ",820,8 years,Stable,No significant issues,Yes,1
+Construction Worker,"$2,500 ",600,1 year,Unkonw,Missed payments in the past,No,4
+Hairdresser,"$2,800 ",630,1 year,Unstable,Missed payments in the past,No,0
+Mechanical Engineer,"$7,500 ",760,6 years,Stable,No significant issues,Yes,2
+IT Manager,"$10,000 ",820,9 years,Stable,No significant issues,Yes,2
+Dental Hygienist,"$4,500 ",710,4 years,Stable,No significant issues,Yes,2
+Marketing Specialist,"$5,500 ",720,3 years,Stable,No significant issues,Yes,0
+Carpenter,"$3,000 ",620,2 years,Unstable,Late payment,No,1
+Optometrist,"$9,000 ",820,8 years,Stable,No significant issue,Yes,3
+Graphic Artist,"$3,500 ",680,3 years,Stable,No significant issues,No,0
+Lawyer,"$12,000 ",850,11 years,Stable,No significant issues,Yes,1
+Salesperson,"$4,200 ",670,3 years,Stable,No significant issues,No,2
+Dental Assistant,"$2,500 ",630,1 year,Unstable,Missed payments in the past,No,1
+Architect,"$7,500 ",780,7 years,Stable,No significant issues,Yes,0
+Fashion Designer,"$3,800 ",680,4 years,Stable,No significant issues,No,0
+Engineer,"$6,500 ",740,5 years,Stable,No significant issues,Yes,2
+Business Owner,15k,800,10 years,Stable,No significant issues,Yes,2
+Barista,"$2,000 ",610,1 year,Unstable,Late payments,No,0
+Physical Education Teacher,"$4,500 ",690,3 years,Stable,No significant issues,No,1
+Human Resources Manager,"$8,000 ",780,7 year,Stable,No significant issues,Yes,2
+Plumber,"$3,200 ",650,2 years,Unstable,Missed payments in the past,No,3
+Photographer,"$3,000 ",640,2 year,Unstable,Missed payments in the past,No,na
+Entrepreneur,"$12,000 ",830,8 year,Stable,No significant issues,Yes,1
+Web Developer,"$5,800 ",730,4 year,Stable,No significant issues,Yes,0
+Waiter/Waitress,"$1,500 ",560,1 year,Unstable,Late payments,No,0
+Software Engineer,"$8,500 ",790,6 years,Stable,No significant issues,Yes,2
+Electrician,"$3,500 ",640,2 years,Unstable,Late payments,No,2
+Chef,"$3,200 ",660,3 years,Stable,No significant issues,No,na
+Financial Analyst,"$7,200 ",760,5 years,Stable,No significant issues,Yes,0
+Hair Stylist,"$2,000 ",600,1 year,Unstable,Late payments,No,2
+Psychologist,"$6,000 ",740,4 years,Stable,No significant issues,Yes,1
+Medical Assistant,2.8k,620,1 year,Unstable,Missed payments in the past,No,2
+Physical Therapist,7.5k,800,6 years,Stable,No significant issues,Yes,0
+Social Worker,"$4,000 ",680,3 years,Stable,No significant issues,No,3
+Chef,"$3,200 ",670,2 years,Unstable,Late payments,No,1
+Writer,"$3,800 ",680,3 years,Stable,No significant issues,No,0
+Insurance Agent,"$4,500 ",700,4 years,Stable,No significant issues,Yes,2
+Real Estate Agent,5000 usd,720,5 year,Stable,No significant issues,Yes,1
+Bartender,2500 usd,610,1 year,Unstable,Late payments,No,0
+Physician Assistant,8000 usd,820,7 years,Stable,No significant issues,Yes,1
+Veterinarian,9000 USD,800,7 years,Stable,No significant issues,Yes,2
+Customer Service Rep,"$2,500 ",630,1 year,Unstable,Late payments,No,1
+Graphic Designer,"$3,500 ",670,3 years,Stable,No significant issues,No,0
+Financial Advisor,"$6,500 ",780,6 years,Stable,No significant issues,Yes,2
+Elementary School Teacher,"$4,200 ",690,4 years,Stable,No significant issues,No,2
+Nurse,"$5,500 ",720,5 years,Stable,No significant issues,Yes,3
+Retail Salesperson,"$2,000 ",590,1 year,Unstable,Missed payments in the past,No,1
+Police Officer,"$4,800 ",680,4 years,Stable,No significant issues,Yes,2
+Marketing Manager,"$7,000 ",750,6 years,Stable,No significant issues,Yes,1
+Dental Hygienist,"$6,000 ",790,5 years,Stable,No significant issues,Yes,2
+Physical Education Teacher,"$4,500 ",670,3 years,Stable,No significant issues,No,0
+Executive Assistant,"$4,500 ",710,4 years,Stable,No significant issues,Yes,1
+Pharmacist,10000 USD,810,8 years,Stable,No significant issues,Yes,0
+Automotive Mechanic,"$3,000 ",640,2 years,Unstable,Late payments,No,3
+Flight Attendant,"$4,500 ",700,4 years,Stable,No significant issues,Yes,0
+Architect,"$8,500 ",780,7 years,Stable,No significant issues,Yes,2
+Physical Therapist Assistant,"$4,000 ",670,3 years,Stable,No significant issues,No,1
+Financial Manager,"$9,000 ",800,8 years,Stable,No significant issues,Yes,0
+Veterinarian Technician,"$3,000 ",620,2 years,Unstable,Late payments,No,2
+Graphic Designer,"$4,000 ",710,4 years,Stable,No significant issues,Yes,0
+Project Manager,"$8,000 ",790,7,Stable,No significant issues,Yes,1
+Electrician,"$3,800 ",660,3,Stable,No significant issues,No,2
+IT Manager,"$10,000 ",810,8,Stable,No significant issues,Yes,3
+Marketing Coordinator,3500 USD,650,2,Stable,No significant issues,No,0
+Dental Assistant,2.5k,590,1,Unstable,Missed payments in the past,No,1
+Chef,"$3,500 ",650,3 years,Stable,No significant issues,No,2
+Web Developer,6000 usd,740,5 years,Stable,No significant issues,Yes,0
+Insurance Agent,"$4,500 ",690,4 years,Stable,No significant issues,Yes,1
+Bank Teller,"$2,800 ",620,2 years,Unstable,Late payments,No,0
+Event Planner,"$3,800 ",680,3 years,Stable,No significant issues,No,0
+Human Resources Manager,"$7,000 ",780,6 years,Stable,No significant issues,Yes,2
+Personal Trainer,"$3,500 ",670,2 years,Stable,No significant issues,No,0
+Real Estate Agent,"$5,500 ",720,5 years,Stable,No significant issues,Yes,1
+Photographer,"$2,500 ",610,1 year,Unstable,Late payments,No,1
+Mechanical Engineer,"$8,000 ",760,7 years,Stable,No significant issues,Yes,0
+Office Manager,4500 usd,710,4 years,Stable,No significant issues,Yes,1
+Hair Stylist,"$2,200 ",590,1 year,Unstable,Missed payments in the past,No,0
+Business Analyst,"$6,500 ",750,5 years,Stable,No significant issues,Yes,1
+Construction Worker,"$3,000 ",630,2 years,Unstable,Late payments,No,3
+Physician Assistant,"$7,500 ",800,6 years,Stable,No significant issues,Yes,2
+Insurance Underwriter,"$4,800 ",690,4 years,Stable,No significant issues,Yes,0
+Marketing Analyst,"$5,000 ",730,4 years,Stable,No significant issues,Yes,0
+Plumber,"$4,000 ",650,3 years,Stable,No significant issues,No,1
+IT Support Specialist,"$3,500 ",660,2 years,Stable,No significant issues,Yes,2
+Financial Advisor,"$7,500 ",790,6 years,Stable,No significant issues,Yes,1
+Electrician,"$4,500 ",680,4 years,Stable,No significant issues,Yes,2
+Sales Representative,"$3,800 ",670,,Stable,No significant issues,Yes,0
+Graphic Designer,"$2,800 ",620,2 years,Unstable,Late payments,No,1
+Nurse,"$4,200 ",720,4 years,Stable,No significant issues,Yes,3
+Data Analyst,"$6,000 ",740,5 years,Stable,No significant issues,Yes,0
+Retail Manager,"$4,500 ",690,4 years,Stable,No significant issues,Yes,2
+Mechanical Technician,"$3,000 ",630,2 years,Unstable,Late payments,No,0
+Physical Therapist,"$6,500 ",780,5 years,Stable,No significant issues,Yes,1
+Writer,"$2,200 ",590,1 year,Unstable,Missed payments in the past,No,2
+Veterinarian,"$8,000 ",760,6 years,Stable,No significant issues,Yes,0
+Accountant,"$5,500 ",720,5 years,Stable,No significant issues,Yes,2
+Chef,"$3,500 ",650,3 years,Stable,No significant issues,No,1
+Web Developer,"$6,000 ",740,,Stable,No significant issues,Yes,0
+Insurance Agent,"$4,500 ",690,4 years,Stable,No significant issues,Yes,1
+Bank Teller,"$2,800 ",620,2 years,Unstable,Late payments,No,0
+Event Planner,"$3,800 ",680,3 years,Stable,No significant issues,No,0
+Human Resources Manager,"$7,000 ",780,6 years,Stable,No significant issues,Yes,2
+Personal Trainer,"$3,500 ",670,2 years,Stable,No significant issues,No,0
+Real Estate Agent,"$5,500 ",720,5 years,Stable,No significant issues,Yes,1
+Photographer,"$2,500 ",610,1 year,Unstable,Late payments,No,1
+Marketing Manager,"$5,800 ",710,5 years,Stable,No significant issues,Yes,1
+Software Developer,"$7,200 ",750,6 years,Stable,No significant issues,Yes,0
+Electrician,"$4,200 ",680,4 years,Stable,No significant issues,Yes,2
+Sales Representative,"$3,600 ",660,3 years,Stable,No significant issues,Yes,0
+Graphic Designer,"$2,700 ",610,,Unstable,"Late payments, collections",No,1
+Nurse,"$4,500 ",720,,Stable,No significant issues,Yes,3
+Data Analyst,"$5,800 ",730,,Stable,No significant issues,Yes,0
+Retail Manager,"$4,200 ",670,,Stable,No significant issues,Yes,2
+Mechanical Technician,"$2,900 ",620,,Unstable,"Late payments, collections",No,0
+Physical Therapist,"$6,200 ",780,,Stable,No significant issues,Yes,1
+Writer,"$2,000 ",570,,Unstable,"Missed payments, collections, charge-offs",No,2
+Veterinarian,"$7,500 ",760,,Stable,No significant issues,Yes,0
+Accountant,"$5,000 ",710,,Stable,No significant issues,Yes,2
+Chef,"$3,200 ",640,,Stable,No significant issues,No,1
+Web Developer,"$6,200 ",730,,Stable,No significant issues,Yes,0
+Insurance Agent,"$4,200 ",670,,Stable,No significant issues,Yes,1
+Bank Teller,"$2,700 ",610,,Unstable,"Late payments, collections",No,0
+Event Planner,"$3,600 ",690,,Stable,No significant issues,No,0
+Human Resources Manager,"$6,800 ",780,,Stable,No significant issues,Yes,2
+Personal Trainer,"$3,200 ",650,,Stable,No significant issues,No,2
+Sales Manager,"$8,500 ",790,,Stable,No significant issues,Yes,1
+Architect,"$6,500 ",730,,Stable,No significant issues,Yes,0
+Graphic Designer,"$3,800 ",660,,Stable,No significant issues,Yes,1
+Physician,"$15,000 ",820,10 years,Stable,No significant issues,Yes,2
+Electrician,"$4,500 ",690,4 years,Stable,No significant issues,Yes,0
+Customer Service Rep,"$2,800 ",630,2 years,Unstable,"Late payments, collections",No,1
+IT Manager,"$9,000 ",780,7 years,Stable,No significant issues,Yes,2
+Account Executive,"$6,000 ",720,5 years,Stable,No significant issues,Yes,0
+Chef,"$3,500 ",650,3 years,Stable,No significant issues,No,2
+HR Generalist,"$4,800 ",700,4 years,Stable,No significant issues,Yes,0
+Attorney,"$12,000 ",800,9 years,Stable,No significant issues,Yes,1
+Marketing Coordinator,"$4,000 ",670,4 years,Stable,No significant issues,Yes,1
+Sales Representative,"$3,200 ",630,2 years,Unstable,"Late payments, collections",Yes,0
+Data Scientist,"$7,500 ",760,6 years,Stable,No significant issues,Yes,1
+Web Designer,"$4,200 ",680,4 years,Stable,No significant issues,Yes,0
+Physical Therapist,"$6,800 ",760,6 years,Stable,No significant issues,Yes,2
+Electrician,"$3,800 ",660,3 years,Stable,No significant issues,Yes,1
+Nurse,"$5,000 ",720,5 years,Stable,No significant issues,Yes,0
+Sales Manager,"$7,200 ",740,6 years,Stable,No significant issues,Yes,2
+Accountant,"$4,500 ",690,4 years,Stable,No significant issues,Yes,1
+Teacher,40000,750,10,Good,No issues,Yes,2
+Engineer,60000,800,8,Good,No issues,Yes,1
+Nurse,25000,650,5,Fair,Late payment 2 months ago,No,0
+Doctor,80000,900,12,Excellent,No issues,Yes,3
+Businessman,100000,700,15,Good,Late payment 6 months ago,Yes,2
+Engineer,50000,750,6,Fair,No issues,No,1
+Teacher,35000,700,8,Fair,Late payment 3 months ago,Yes,
+Nurse,20000,600,3,Poor,Late payment 1 month ago,No,
+Businessman,120000,850,20,Excellent,No issues,Yes,
+Doctor,90000,800,10,Good,No issues,Yes,
+Engineer,6000,700,3,Good,Excellent,Yes,
+Salesperson,3000,600,1,Fair,Poor,No,
+Teacher,4000,750,5,Excellent,Excellent,Yes,
+Entrepreneur,8000,800,7,Good,Excellent,Yes,
+Lawyer,9000,820,10,Excellent,Good,Yes,
+Doctor,12000,900,12,Excellent,Excellent,Yes,
+Accountant,5000,720,4,Good,Fair,No,
+Software Dev,7000,780,6,Excellent,Good,Yes,
+Nurse,3500,650,2,Fair,Poor,No,
+Electrician,2500,550,1,Poor,Poor,No,
+Architect,5500,740,8,Good,Excellent,Yes,
+Marketing Exec,4500,690,4,Fair,Fair,No,
+Chef,3000,620,2,Fair,Poor,No,
+Police Officer,4000,680,3,Fair,Fair,No,
+Real Estate Ag,6000,760,5,Good,Good,Yes,
+Pilot,10000,820,10,Excellent,Good,Yes,
+Graphic Design,3500,670,3,Fair,Poor,No,
+Writer,2000,500,1,Poor,Poor,No,
+Musician,2500,550,,,,No,
+Nurse,"$4,500 ",720,3 years,Stable,No significant issues,Yes,
+Software Developer,"$7,800 ",800,5 years,Stable,No significant issues,Yes,
+Chef,"$3,200 ",650,2 years,Unstable,Missed payments in the past,No,
+Accountant,"$6,500 ",750,7 years,Stable,No significant issues,Yes,
+Salesperson,"$3,000 ",600,1 year,Unstable,Missed payments in the past,No,
+Teacher,"$3,800 ",680,4 years,Stable,No significant issues,Yes,
+Lawyer,"$10,000 ",820,8 years,Stable,No significant issues,Yes,
+Mechanic,"$2,500 ",600,2 years,Unstable,Late payments,No,na
+Marketing,"$5,200 ",720,5 years,Stable,No significant issues,Yes,na
+Graphic Designer,"$3,700 ",680,3 years,Stable,No significant issues,No,na
+Financial Advisor,"$8,500 ",780,6 years,Stable,No significant issues,Yes,na
+Real Estate Agent,"$6,200 ",700,4 years,Stable,No significant issues,Yes,na
+Chef,"$2,800 ",620,1 year,Unstable,Missed payments in the past,No,na
+Engineer,"$9,000 ",790,7 years,Stable,No significant issues,Yes,na
+Construction Worker,"$3,000 ",610,3 years,Unstable,Late payments,No,na
+Designer,"$4,500 ",700,4 years,Stable,No significant issues,No,na
+Writer,"$2,500 ",590,1 year,Unstable,Missed payments in the past,No,na
+Web Developer,"$6,000 ",730,5 years,Stable,No significant issues,Yes,na
+Chef,"$3,500 ",650,2 years,Unstable,Missed payments in the past,No,na
+Account Manager,"$5,800 ",720,4 years,Stable,No significant issues,Yes,na
+Financial Analyst,"$6,800 ",760,5 years,Stable,No significant issues,Yes,na
+Electrician,"$3,200 ",640,2 years,Unstable,Missed payments in the past,No,na
+Human Resources,"$4,500 ",690,3 years,Stable,No significant issues,Yes,na
+Plumber,"$2,700 ",620,1 year,Unstable,Late payments,No,na
+Social Worker,"$3,600 ",670,2 years,Unstable,Missed payments in the past,No,na
+Data Scientist,"$9,200 ",820,6 years,Good,No significant issues,Yes,na
+Chef,"$3,100 ",650,2 years,Fair,Missed payments in the past,No,na
+Customer Service,"$2,500 ",600,1 year,Excellent,Missed payments in the past,No,na
+Veterinarian,"$7,000 ",750,8 years,Good,No significant issues,Yes,na
+Graphic Designer,"$3,500 ",680,3 years,Excellent,No significant issues,No,na
+Architect,"$8,500 ",790,7 years,Excellent,No significant issues,Yes,na
+Chef,"$3,200 ",630,2 years,Good,Missed payments in the past,No,na
+Web Designer,"$4,800 ",710,4 years,Excellent,No significant issues,No,na
+Insurance Agent,"$4,200 ",680,3 years,Fair,No significant issues,Yes,
+Sales Representative,"$4,500 ",660,2 years,Poor,Missed payments in the past,No,
+Musician,"$3,000 ",620,1 year,Good,Late payments,No,
+Marketing Manager,"$7,500 ",780,6 years,Fair,No significant issues,Yes,
+Software Engineer,"$9,000 ",820,7 years,Fair,No significant issues,Yes,
+Chef,"$3,500 ",650,2 years,Fair,Missed payments in the past,No,
+Dental Hygienist,"$5,000 ",720,4 years,Stable,No significant issues,Yes,
+Retail Manager,"$3,800 ",670,3 years,Stable,No significant issues,Yes,
+Chef,"$2,800 ",,1 year,Unstable,Missed payments in the past,No,
+Financial Analyst,"$6,800 ",,5 years,Stable,No significant issues,Yes,0
+Electrician,3.2k USD,,2 years,Unstable,Missed payments in the past,No,2
+Human Resources,"$4,500 ",,3 years,Stable,No significant issues,Yes,1
+Plumber,"$2,700 ",,1 year,Unstable,Late payments,No,0
+Social Worker,"$3,600 ",,2 years,Unstable,Missed payments in the past,No,3
+Data Scientist,"$9,200 ",,6 years,Stable,No significant issues,Yes,2
+Chef,"$3,100 ",,2 y,Unstable,Missed payments in the past,No,1
+Customer Service,"$2,500 ",,1 year,Unstable,Missed payments in the past,No,0
+Veterinarian,"$7,000 ",,8 years,Stable,No significant issues,Yes,2
+Graphic Designer,"$3,500 ",,3 years,Stable,No significant issues,No,0
+Architect,8.5k USD,,7 years,Stable,No significant issues,Yes,3
+Chef,"$3,200 ",,2 years,Unstable,Missed payments in the past,No,2
+Web Designer,"$4,800 ",,,Stable,No significant issues,No,1
+Insurance Agent,"$4,200 ",,3 years,Stable,,Yes,0
+Sales Representative,"$4,500 ",,2 years,Unstable,Missed payments in the past,No,2
+Musician,"$3,000 ",,1 year,Unstable,Late payments,No,0
+Marketing Manager,"$7,500 ",,6 years,Stable,No significant issues,Yes,1
+Software Engineer,9k,,7 y,Stable,No significant issues,Yes,0
+Chef,"$3,500 ",,2 years,Unstable,Missed payments in the past,No,2
+Dental Hygienist,"$5,000 ",,,,,No,
+Personal Trainer,"$3,000 ",,1 year,Unstable,Late payments,No,0
+Sales Manager,"$7,800 ",810,6 years,Stable,No significant issues,Yes,2
+Graphic Designer,"$4,100 ",689,3 years,Stable,No significant issues,Yes,0
+Data Scientist,"$8,200 ",755,7 years,Stable,No significant issues,Yes,1
+Physical Therapist,"$7,000 ",765,6 years,Stable,No significant issues,Yes,2
+Chef,"$3,900 ",631,3 years,Stable,No significant issues,No,2
+Marketing Coordinator,"$3,500 ",643,2 years,Unstable,"Late payments, collections",No,1
+Customer Service Rep,"$2,900 ",590,1 year,Unstable,"Late payments, collections",No,1
+HR Generalist,"$4,400 ",,4 years,Stable,No significant issues,Yes,0
+Architect,"$6,100 ",718,5 years,Stable,No significant issues,,0
+Carpenter,"$3,400 ",610,,Stable,No significant issues,Yes,1
+IT Manager,"$8,400 ",,7 years,Stable,No significant issues,,2
+Electrician,"$4,000 ",670,4 years,Stable,No significant issues,Yes,0
+Account Executive,"$5,800 ",710,5 years,Stable,No significant issues,Yes,1
+Sales Representative,"$3,100 ",598,2 years,Unstable,"Late payments, collections",,0
+Attorney,"$11,000 ",806,9 years,Stable,No significant issues,Yes,1
+Electrician,"$3,700 ",642,3 years,Stable,No significant issues,Yes,1
+Web Designer,"$4,600 ",693,4 years,Stable,No significant issues,Yes,
+Nurse,"$5,400 ",728,5 years,Stable,No significant issues,Yes,0
+Sales Manager,"$6,800 ",724,6 years,Stable,No significant issues,Yes,2
+Accountant,"$4,200 ",672,4 years,Stable,No significant issues,Yes,na
+Sales Manager,"$7,800 ",810,6 years,Stable,No significant issues,Yes,2
+Graphic Designer,,689,3 years,Stable,No significant issues,Yes,0
+Data Scientist,"$8,200 ",755,7 years,Stable,No significant issues,Yes,1
+Physical Therapist,"$7,000 ",765,6 years,,No significant issues,Yes,2
+Chef,"$3,900 ",631,3 years,Stable,No significant issues,No,2
+Marketing Coordinator,"$3,500 ",643,2 years,Unstable,"Late payments, collections",No,1
+Customer Service Rep,"$2,900 ",590,1 year,Unstable,"Late payments, collections",No,1
+HR Generalist,"$4,400 ",703,4 years,Stable,No significant issues,Yes,0
+Architect,"$6,100 ",718,5 years,Stable,No significant issues,Yes,0
+Carpenter,"$3,400 ",610,3 years,Stable,No significant issues,Yes,1
+IT Manager,"$8,400 ",792,7 years,Stable,No significant issues,Yes,2
+Electrician,"$4,000 ",670,4 years,Stable,No significant issues,Yes,0
+Account Executive,"$5,800 ",710,5 years,Stable,No significant issues,Yes,1
+Sales Representative,"$3,100 ",598,2 years,Unstable,"Late payments, collections",Yes,0
+Attorney,11k,806,9 years,Stable,No significant issues,Yes,1
+Electrician,"$3,700 ",642,3 years,Stable,No significant issues,Yes,1
+Web Designer,"$4,600 ",693,4 years,Stable,No significant issues,Yes,0
+Nurse,"$5,400 ",728,5 years,Stable,No significant issues,Yes,0
+Sales Manager,"$6,800 ",724,6 years,Stable,No significant issues,Yes,2
+Accountant,"$4,200 ",672,4 years,Stable,No significant issues,Yes,1
+Human Resources,"$4,500 ",678,4 years,Stable,No significant issues,Yes,1
+Dental Hygienist,"$5,200 ",723,5 years,Stable,No significant issues,Yes,2
+Software Developer,"$7,500 ",775,6 years,Stable,No significant issues,Yes,0
+Account Manager,"$6,200 ",720,5 years,Stable,No significant issues,Yes,0
+Mechanical Engineer,"$7,200 ",758,6 years,Stable,No significant issues,Yes,1
+Medical Assistant,"$2,900 ",610,2 years,,"Late payments, collections",No,0
+Real Estate Agent,"$5,400 ",702,5 years,Stable,No significant issues,Yes,1
+Software Engineer,"$8,600 ",795,7 years,Stable,No significant issues,Yes,1
+Account Executive,"$6,800 ",715,5 years,,No significant issues,Yes,0
+Chef,"$4,000 ",654,4 years,Stable,No significant issues,No,1
+Sales Representative,3400 usd,590,2 years,Unstable,"Late payments, collections",Yes,2
+Marketing Manager,"$7,000 ",750,6 years,Stable,No significant issues,Yes,0
+Physical Therapist,"$6,900 ",742,6 years,Stable,No significant issues,Yes,2
+Financial Analyst,"$6,800 ",732,5 years,Stable,No significant issues,Yes,1
+HR Specialist,"$4,300 ",695,4 years,Stable,No significant issues,Yes,0
+Sales Manager,"$7,200 ",726,6 years,Stable,No significant issues,Yes,2
+Pharmacist,"$9,200 ",780,8 years,Stable,No significant issues,Yes,1
+Construction Worker,3200 USD,630,3 years,Stable,No significant issues,Yes,2
+Nurse Practitioner,"$8,000 ",742,7 years,Stable,No significant issues,Yes,1
+Customer Service Rep,"$3,000 ",600,2 years,Unstable,"Late payments, collections",No,1
+Physical Trainer,"$4,800 ",670,4 years,Stable,No significant issues,Yes,0
+Graphic Designer,"$4,000 ",695,4 years,Stable,No significant issues,No,0
+Insurance Agent,"$5,200 ",732,5 years,Stable,No significant issues,Yes,2
+Web Developer,"$6,800 ",760,6 years,Stable,No significant issues,Yes,0
+Physical Education Teacher,"$4,400 ",670,4 years,Stable,No significant issues,Yes,1
+Psychologist,"$7,800 ",790,7 years,Stable,No significant issues,Yes,0
+Interior Designer,"$5,500 ",700,5 years,Stable,No significant issues,Yes,2
+Computer Technician,"$4,200 ",680,3 years,Unstable,"Late payments, collections",Yes,1
+Dentist,"$10,000 ",820,9 years,Stable,No significant issues,Yes,2
+Veterinarian,"$7,500 ",750,6 years,Stable,No significant issues,Yes,0
+Financial Advisor,"$6,900 ",725,5 years,Stable,No significant issues,Yes,1
+Fitness Instructor,"$3,200 ",630,3 years,Unstable,"Late payments, collections",No,0
+Office Manager,"$5,200 ",708,5 years,Stable,No significant issues,Yes,2
+Electrician,"$4,500 ",680,4 years,Stable,No significant issues,Yes,1
+Software Architect,"$9,000 ",790,8 years,Stable,No significant issues,Yes,0
+Graphic Artist,"$3,800 ",650,3 years,Stable,No significant issues,Yes,0
+IT Consultant,"$7,200 ",750,6 years,Stable,No significant issues,Yes,2
+Mechanical Technician,"$3,500 ",650,3 years,Unstable,"Late payments, collections",Yes,1
+Physician Assistant,"$8,200 ",765,7 years,Stable,No significant issues,Yes,1
+Architect,"$7,000 ",740,6 years,Stable,No significant issues,Yes,0
+Sales Manager,"$7,500 ",720,6 years,Stable,No significant issues,Yes,2
+Graphic Designer,"$5,200 ",690,5 years,Stable,No significant issues,Yes,1
+Real Estate Agent,"$6,000 ",725,5 years,Stable,No significant issues,Yes,0
+Business Analyst,"$8,000 ",760,7 years,Stable,,Yes,2
+Dental Hygienist,"$4,800 ",700,4 years,Stable,,Yes,1
+Physical Therapist,"$7,500 ",780,6 years,Stable,,Yes,0
+Marketing Manager,"$8,500 ",745,7 years,Stable,No significant issues,Yes,2
+Electrical Engineer,"$6,500 ",710,5 years,Stable,No significant issues,Yes,1
+Investment Banker,"$12,000 ",820,10 years,Stable,No significant issues,Yes,0
+Registered Nurse,"$5,800 ",700,4 years,Stable,No significant issues,Yes,2
+Financial Analyst,"$7,200 ",750,6 years,Stable,No significant issues,Yes,1
+Art Director,"$6,000 ",690,5 years,Stable,,Yes,0
+Project Manager,"$8,000 ",740,7 years,Stable,No significant issues,Yes,1
+Mechanical Engineer,"$6,800 ",720,5 years,Stable,No significant issues,Yes,2
+Executive Assistant,"$4,500 ",680,4 years,Stable,No significant issues,Yes,0
+Physical Education Teacher,"$4,200 ",670,4 years,Stable,,Yes,1
+Web Designer,"$4,800 ",670,4 years,Stable,No significant issues,No,0
+Physician,"$10,500 ",790,9 years,Stable,No significant issues,Yes,2
+Human Resources Manager,"$8,200 ",740,7 years,Stable,No significant issues,Yes,1
+Mechanical Designer,"$5,500 ",700,5 years,Stable,No significant issues,Yes,0
+Software Developer,$7 ,,6 years,Stable,No significant issues,Yes,
+Civil Engineer,"$6,800 ",720,6 years,Stable,No significant issues,Yes,1
+Social Media Manager,"$5,500 ",680,4 years,Stable,No significant issues,Yes,0
+Architect,"$7,000 ",720,6 years,Stable,,Yes,2
+Accountant,"$6,500 ",730,5 years,Stable,No significant issues,Yes,1
+Teacher,"$4,200 ",660,3 years,Stable,No significant issues,No,3
+Insurance Agent,"$5,800 ",690,4 years,Stable,No significant issues,Yes,1
+Lawyer,"$11,000 ",800,8 years,Stable,No significant issues,Yes,0
+IT Manager,"$8,500 ",750,7 years,,No significant issues,Yes,2
+Dental Assistant,"$3,800 ",650,3 years,Stable,No significant issues,No,2
+Financial Planner,"$7,500 ",760,6 years,Stable,No significant issues,Yes,1
+Chef,"$4,500 ",680,4 years,Stable,No significant issues,Yes,0
+Software Engineer,"$8,200 ",740,7 years,Stable,No significant issues,Yes,2
+Interior Designer,"$5,500 ",690,4 years,Stable,No significant issues,Yes,1
+Medical Assistant,,640,3 years,Stable,No significant issues,No,1
+Customer Service Rep,"$3,200 ",620,2 years,Stable,No significant issues,No,0
+Bank Teller,"$3,800 ",650,3 years,Stable,No significant issues,No,2
+Physical Trainer,"$4,200 ",670,4 years,Stable,No significant issues,Yes,1
+Public Relations,"$5,800 ",690,4 years,Stable,No significant issues,Yes,0
+Data Analyst,"$6,500 ",730,5 years,Stable,No significant issues,Yes,2
+Pharmacist,"$9,000 ",780,,Stable,No significant issues,Yes,1
+Writer,"$3,500 ",650,,,,,
+Event Planner,"$4,800 ",680,4 years,Stable,No significant issues,Yes,0
+Graphic Designer,"$4,200 ",670,4 years,Stable,No significant issues,No,1
+Sales Manager,"$7,500 ",720,6 years,Stable,No significant issues,Yes,2
+HR Manager,"$6,800 ",710,5 years,Stable,No significant issues,Yes,1
+Real Estate Agent,"$5,500 ",690,4 years,Stable,,Yes,0
+Fashion Designer,"$5,200 ",680,4 years,Stable,No significant issues,No,2
+Executive Assistant,"$4,500 ",660,3 years,Stable,No significant issues,No,1
+Marketing Coordinator,"$4,800 ",670,4 years,Stable,No significant issues,Yes,0
+Physical Therapist,"$6,800 ",720,6 years,Stable,No significant issues,Yes,1
+Business Analyst,"$7,000 ",740,5 years,Stable,No significant issues,Yes,0
+Web Developer,"$5,800 ",690,4 years,Stable,,No,1
+Nurse,"$4,500 ",670,4 years,Stable,No significant issues,Yes,2
+Electrician,"$4,800 ",660,3 years,Stable,No significant issues,Yes,1
+Management Consultant,"$8,500 ",750,7 years,Stable,No significant issues,Yes,0
+Customer Support,"$3,500 ",640,3 years,Stable,No significant issues,No,1
+Dental Hygienist,"$4,800 ",670,4 years,Stable,No significant issues,Yes,2
+Project Manager,"$7,000 ",730,5 years,Stable,No significant issues,Yes,0
+Chef,"$4,500 ",680,4 years,Stable,No significant issues,Yes,0
+Interior Designer,"$5,500 ",690,4 years,Stable,No significant issues,Yes,1
+Medical Assistant,"$3,500 ",640,3 years,Stable,No significant issues,No,1
+Customer Service Rep,"$3,200 ",641,4 years,Stable,No significant issues,No,2

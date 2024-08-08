@@ -1,0 +1,605 @@
+,Occupation,Monthly Income,Credit Score,Years of Employment,Finance Status,Finance History,Car,Number of Children
+0,Teacher,40000.0,750.0,10,Good,No issue,Yes,2
+1,Engineer,60000.0,800.0,8,Good,No issue,Yes,1
+3,Doctor,80000.0,900.0,12,Excellent,No issue,Yes,3
+4,Businessman,100000.0,700.0,15,Good,Late payment,Yes,2
+6,Teacher,35000.0,700.0,8,Fair,Late payment,Yes,1
+8,Businessman,120000.0,850.0,20,Excellent,No issue,Yes,2
+9,Doctor,90000.0,800.0,10,Good,No issue,Yes,2
+10,Engineer,6000.0,700.0,3,Good,Excellent,Yes,1
+12,Teacher,4000.0,750.0,5,Excellent,Excellent,Yes,0
+13,Other,8000.0,800.0,7,Good,Excellent,Yes,1
+14,Lawyer,9000.0,820.0,10,Excellent,Good,Yes,1
+15,Doctor,12000.0,900.0,12,Excellent,Excellent,Yes,2
+17,Other,7000.0,780.0,6,Excellent,Good,Yes,1
+20,Architect,5500.0,740.0,8,Good,Excellent,Yes,2
+24,Other,6000.0,760.0,5,Good,Good,Yes,2
+25,Other,10000.0,820.0,10,Excellent,Good,Yes,2
+29,Nurse,373500.0,720.0,3,Stable,No issue,Yes,1
+30,Software Developer,647400.0,800.0,5,Stable,No issue,Yes,2
+32,Accountant,539500.0,750.0,7,Stable,No issue,Yes,2
+34,Teacher,315400.0,680.0,4,Stable,No issue,Yes,3
+35,Lawyer,830000.0,820.0,8,Stable,No issue,Yes,2
+37,Other,431600.0,720.0,5,Stable,No issue,Yes,2
+39,Financial Advisor,705500.0,780.0,6,Stable,No issue,Yes,2
+40,Real Estate Agent,514600.0,700.0,4,Stable,No issue,Yes,2
+42,Engineer,747000.0,790.0,7,Stable,No issue,Yes,2
+46,Web Developer,498000.0,730.0,5,Stable,No issue,Yes,2
+48,Other,481400.0,720.0,4,Stable,No issue,Yes,2
+49,Financial Analyst,564400.0,760.0,5,Stable,No issue,Yes,2
+51,Human Resources,373500.0,690.0,3,Stable,No issue,Yes,2
+54,Data Scientist,763600.0,820.0,6,Good,No issue,Yes,2
+57,Veterinarian,581000.0,750.0,8,Good,No issue,Yes,2
+59,Architect,705500.0,790.0,7,Excellent,No issue,Yes,2
+62,Insurance Agent,348600.0,680.0,3,Fair,No issue,Yes,2
+65,Marketing Manager,622500.0,780.0,6,Fair,No issue,Yes,2
+66,Software Engineer,747000.0,820.0,7,Fair,No issue,Yes,2
+68,Dental Hygienist,415000.0,720.0,4,Stable,No issue,Yes,2
+69,Retail Manager,315400.0,670.0,3,Stable,No issue,Yes,2
+71,Financial Analyst,564400.0,760.0,5,Stable,No issue,Yes,0
+73,Human Resources,373500.0,690.0,3,Stable,No issue,Yes,1
+76,Data Scientist,763600.0,820.0,6,Stable,No issue,Yes,2
+79,Veterinarian,581000.0,750.0,8,Stable,No issue,Yes,2
+81,Architect,705.5,790.0,7,Stable,No issue,Yes,3
+84,Insurance Agent,348600.0,680.0,3,Stable,No issue,Yes,0
+87,Marketing Manager,622500.0,780.0,6,Stable,No issue,Yes,1
+88,Software Engineer,9000.0,820.0,7,Stable,No issue,Yes,0
+90,Dental Hygienist,415000.0,750.0,3,Stable,No issue,Yes,0
+92,Pharmacist,830000.0,840.0,10,Stable,No issue,Yes,2
+94,Other,664000.0,780.0,5,Stable,No issue,Yes,0
+96,Physical Therapist,498000.0,720.0,5,Stable,No issue,Yes,2
+97,Accountant,539500.0,740.0,6,Stable,No issue,Yes,0
+100,Other,1245000.0,890.0,12,Stable,No issue,Yes,3
+102,Real Estate Agent,373500.0,680.0,4,Stable,No issue,Yes,1
+105,Financial Advisor,581000.0,770.0,6,Stable,No issue,Yes,2
+106,Project Manager,788500.0,820.0,8,Stable,No issue,Yes,1
+109,Mechanical Engineer,622500.0,760.0,6,Stable,No issue,Yes,2
+110,IT Manager,830000.0,820.0,9,Stable,No issue,Yes,2
+111,Dental Hygienist,373500.0,710.0,4,Stable,No issue,Yes,2
+112,Other,456500.0,720.0,3,Stable,No issue,Yes,0
+114,Other,747000.0,820.0,8,Stable,No issue,Yes,3
+116,Lawyer,996000.0,850.0,11,Stable,No issue,Yes,1
+119,Architect,622500.0,780.0,7,Stable,No issue,Yes,0
+121,Engineer,539500.0,740.0,5,Stable,No issue,Yes,2
+122,Other,15000.0,800.0,10,Stable,No issue,Yes,2
+125,Human Resources Manager,664000.0,780.0,7,Stable,No issue,Yes,2
+128,Other,996000.0,830.0,8,Stable,No issue,Yes,1
+129,Web Developer,481400.0,730.0,4,Stable,No issue,Yes,0
+131,Software Engineer,705500.0,790.0,6,Stable,No issue,Yes,2
+134,Financial Analyst,597600.0,760.0,5,Stable,No issue,Yes,0
+136,Other,498000.0,740.0,4,Stable,No issue,Yes,1
+138,Physical Therapist,7.5,800.0,6,Stable,No issue,Yes,0
+142,Insurance Agent,373500.0,700.0,4,Stable,No issue,Yes,2
+143,Real Estate Agent,415000.0,720.0,5,Stable,No issue,Yes,1
+145,Other,664000.0,820.0,7,Stable,No issue,Yes,1
+146,Veterinarian,747000.0,800.0,7,Stable,No issue,Yes,2
+149,Financial Advisor,539500.0,780.0,6,Stable,No issue,Yes,2
+151,Nurse,456500.0,720.0,5,Stable,No issue,Yes,3
+153,Police Officer,398400.0,680.0,4,Stable,No issue,Yes,2
+154,Marketing Manager,581000.0,750.0,6,Stable,No issue,Yes,1
+155,Dental Hygienist,498000.0,790.0,5,Stable,No issue,Yes,2
+157,Other,373500.0,710.0,4,Stable,No issue,Yes,1
+158,Pharmacist,830000.0,810.0,8,Stable,No issue,Yes,0
+160,Other,373500.0,700.0,4,Stable,No issue,Yes,0
+161,Architect,705500.0,780.0,7,Stable,No issue,Yes,2
+163,Other,747000.0,800.0,8,Stable,No issue,Yes,0
+165,Graphic Designer,332000.0,710.0,4,Stable,No issue,Yes,0
+166,Project Manager,664000.0,790.0,7,Stable,No issue,Yes,1
+168,IT Manager,830000.0,810.0,8,Stable,No issue,Yes,3
+172,Web Developer,498000.0,740.0,5,Stable,No issue,Yes,0
+173,Insurance Agent,373500.0,690.0,4,Stable,No issue,Yes,1
+176,Human Resources Manager,581000.0,780.0,6,Stable,No issue,Yes,2
+178,Real Estate Agent,456500.0,720.0,5,Stable,No issue,Yes,1
+180,Mechanical Engineer,664000.0,760.0,7,Stable,No issue,Yes,0
+181,Other,373500.0,710.0,4,Stable,No issue,Yes,1
+183,Other,539500.0,750.0,5,Stable,No issue,Yes,1
+185,Other,622500.0,800.0,6,Stable,No issue,Yes,2
+186,Other,398400.0,690.0,4,Stable,No issue,Yes,0
+187,Other,415000.0,730.0,4,Stable,No issue,Yes,0
+189,Other,290500.0,660.0,2,Stable,No issue,Yes,2
+190,Financial Advisor,622500.0,790.0,6,Stable,No issue,Yes,1
+191,Electrician,373500.0,680.0,4,Stable,No issue,Yes,2
+192,Sales Representative,315400.0,670.0,0,Stable,No issue,Yes,0
+194,Nurse,348600.0,720.0,4,Stable,No issue,Yes,3
+195,Other,498000.0,740.0,5,Stable,No issue,Yes,0
+196,Retail Manager,373500.0,690.0,4,Stable,No issue,Yes,2
+198,Physical Therapist,539500.0,780.0,5,Stable,No issue,Yes,1
+200,Veterinarian,664000.0,760.0,6,Stable,No issue,Yes,0
+201,Accountant,456500.0,720.0,5,Stable,No issue,Yes,2
+203,Web Developer,498000.0,740.0,0,Stable,No issue,Yes,0
+204,Insurance Agent,373500.0,690.0,4,Stable,No issue,Yes,1
+207,Human Resources Manager,581000.0,780.0,6,Stable,No issue,Yes,2
+209,Real Estate Agent,456500.0,720.0,5,Stable,No issue,Yes,1
+211,Marketing Manager,481400.0,710.0,5,Stable,No issue,Yes,1
+212,Software Developer,597600.0,750.0,6,Stable,No issue,Yes,0
+213,Electrician,348600.0,680.0,4,Stable,No issue,Yes,2
+214,Sales Representative,298800.0,660.0,3,Stable,No issue,Yes,0
+216,Nurse,373500.0,720.0,0,Stable,No issue,Yes,3
+217,Other,481400.0,730.0,0,Stable,No issue,Yes,0
+218,Retail Manager,348600.0,670.0,0,Stable,No issue,Yes,2
+220,Physical Therapist,514600.0,780.0,0,Stable,No issue,Yes,1
+222,Veterinarian,622500.0,760.0,0,Stable,No issue,Yes,0
+223,Accountant,415000.0,710.0,0,Stable,No issue,Yes,2
+225,Web Developer,514600.0,730.0,0,Stable,No issue,Yes,0
+226,Insurance Agent,348600.0,670.0,0,Stable,No issue,Yes,1
+229,Human Resources Manager,564400.0,780.0,0,Stable,No issue,Yes,2
+231,Sales Manager,705500.0,790.0,0,Stable,No issue,Yes,1
+232,Architect,539500.0,730.0,0,Stable,No issue,Yes,0
+233,Graphic Designer,315400.0,660.0,0,Stable,No issue,Yes,1
+234,Other,1245000.0,820.0,10,Stable,No issue,Yes,2
+235,Electrician,373500.0,690.0,4,Stable,No issue,Yes,0
+237,IT Manager,747000.0,780.0,7,Stable,No issue,Yes,2
+238,Account Executive,498000.0,720.0,5,Stable,No issue,Yes,0
+240,Other,398400.0,700.0,4,Stable,No issue,Yes,0
+241,Other,996000.0,800.0,9,Stable,No issue,Yes,1
+242,Marketing Coordinator,332000.0,670.0,4,Stable,No issue,Yes,1
+243,Sales Representative,265600.0,630.0,2,Unstable,Late payment,Yes,0
+244,Data Scientist,622500.0,760.0,6,Stable,No issue,Yes,1
+245,Web Designer,348600.0,680.0,4,Stable,No issue,Yes,0
+246,Physical Therapist,564400.0,760.0,6,Stable,No issue,Yes,2
+247,Electrician,315400.0,660.0,3,Stable,No issue,Yes,1
+248,Nurse,415000.0,720.0,5,Stable,No issue,Yes,0
+249,Sales Manager,597600.0,740.0,6,Stable,No issue,Yes,2
+250,Accountant,373500.0,690.0,4,Stable,No issue,Yes,1
+251,Teacher,40000.0,750.0,10,Good,No issue,Yes,2
+252,Engineer,60000.0,800.0,8,Good,No issue,Yes,1
+254,Doctor,80000.0,900.0,12,Excellent,No issue,Yes,3
+255,Businessman,100000.0,700.0,15,Good,Late payment,Yes,2
+257,Teacher,35000.0,700.0,8,Fair,Late payment,Yes,2
+259,Businessman,120000.0,850.0,20,Excellent,No issue,Yes,2
+260,Doctor,90000.0,800.0,10,Good,No issue,Yes,2
+261,Engineer,6000.0,700.0,3,Good,Excellent,Yes,2
+263,Teacher,4000.0,750.0,5,Excellent,Excellent,Yes,2
+264,Other,8000.0,800.0,7,Good,Excellent,Yes,2
+265,Lawyer,9000.0,820.0,10,Excellent,Good,Yes,2
+266,Doctor,12000.0,900.0,12,Excellent,Excellent,Yes,2
+268,Other,7000.0,780.0,6,Excellent,Good,Yes,2
+271,Architect,5500.0,740.0,8,Good,Excellent,Yes,2
+275,Other,6000.0,760.0,5,Good,Good,Yes,2
+276,Other,10000.0,820.0,10,Excellent,Good,Yes,2
+280,Nurse,373500.0,720.0,3,Stable,No issue,Yes,2
+281,Software Developer,647400.0,800.0,5,Stable,No issue,Yes,2
+283,Accountant,539500.0,750.0,7,Stable,No issue,Yes,2
+285,Teacher,315400.0,680.0,4,Stable,No issue,Yes,2
+286,Lawyer,830000.0,820.0,8,Stable,No issue,Yes,2
+288,Other,431600.0,720.0,5,Stable,No issue,Yes,2
+290,Financial Advisor,705500.0,780.0,6,Stable,No issue,Yes,2
+291,Real Estate Agent,514600.0,700.0,4,Stable,No issue,Yes,2
+293,Engineer,747000.0,790.0,7,Stable,No issue,Yes,2
+297,Web Developer,498000.0,730.0,5,Stable,No issue,Yes,2
+299,Other,481400.0,720.0,4,Stable,No issue,Yes,2
+300,Financial Analyst,564400.0,760.0,5,Stable,No issue,Yes,2
+302,Human Resources,373500.0,690.0,3,Stable,No issue,Yes,2
+305,Data Scientist,763600.0,820.0,6,Good,No issue,Yes,2
+308,Veterinarian,581000.0,750.0,8,Good,No issue,Yes,2
+310,Architect,705500.0,790.0,7,Excellent,No issue,Yes,2
+313,Insurance Agent,348600.0,680.0,3,Fair,No issue,Yes,2
+316,Marketing Manager,622500.0,780.0,6,Fair,No issue,Yes,2
+317,Software Engineer,747000.0,820.0,7,Fair,No issue,Yes,2
+319,Dental Hygienist,415000.0,720.0,4,Stable,No issue,Yes,2
+320,Retail Manager,315400.0,670.0,3,Stable,No issue,Yes,2
+322,Financial Analyst,564400.0,700.0,5,Stable,No issue,Yes,0
+324,Human Resources,373500.0,700.0,3,Stable,No issue,Yes,1
+327,Data Scientist,763600.0,700.0,6,Stable,No issue,Yes,2
+330,Veterinarian,581000.0,700.0,8,Stable,No issue,Yes,2
+332,Architect,705.5,700.0,7,Stable,No issue,Yes,3
+335,Insurance Agent,348600.0,700.0,3,Stable,No issue,Yes,0
+338,Marketing Manager,622500.0,700.0,6,Stable,No issue,Yes,1
+339,Software Engineer,9000.0,700.0,7,Stable,No issue,Yes,0
+343,Sales Manager,647400.0,810.0,6,Stable,No issue,Yes,2
+344,Graphic Designer,340300.0,689.0,3,Stable,No issue,Yes,0
+345,Data Scientist,680600.0,755.0,7,Stable,No issue,Yes,1
+346,Physical Therapist,581000.0,765.0,6,Stable,No issue,Yes,2
+350,Other,365200.0,700.0,4,Stable,No issue,Yes,0
+352,Other,282200.0,610.0,0,Stable,No issue,Yes,1
+354,Electrician,332000.0,670.0,4,Stable,No issue,Yes,0
+355,Account Executive,481400.0,710.0,5,Stable,No issue,Yes,1
+357,Other,913000.0,806.0,9,Stable,No issue,Yes,1
+358,Electrician,307100.0,642.0,3,Stable,No issue,Yes,1
+359,Web Designer,381800.0,693.0,4,Stable,No issue,Yes,2
+360,Nurse,448200.0,728.0,5,Stable,No issue,Yes,0
+361,Sales Manager,564400.0,724.0,6,Stable,No issue,Yes,2
+362,Accountant,348600.0,672.0,4,Stable,No issue,Yes,2
+363,Sales Manager,647400.0,810.0,6,Stable,No issue,Yes,2
+364,Graphic Designer,352750.0,689.0,3,Stable,No issue,Yes,0
+365,Data Scientist,680600.0,755.0,7,Stable,No issue,Yes,1
+366,Physical Therapist,581000.0,765.0,6,Unknown,No issue,Yes,2
+370,Other,365200.0,703.0,4,Stable,No issue,Yes,0
+371,Architect,506300.0,718.0,5,Stable,No issue,Yes,0
+372,Other,282200.0,610.0,3,Stable,No issue,Yes,1
+373,IT Manager,697200.0,792.0,7,Stable,No issue,Yes,2
+374,Electrician,332000.0,670.0,4,Stable,No issue,Yes,0
+375,Account Executive,481400.0,710.0,5,Stable,No issue,Yes,1
+376,Sales Representative,257300.0,598.0,2,Unstable,Late payment,Yes,0
+377,Other,11000.0,806.0,9,Stable,No issue,Yes,1
+378,Electrician,307100.0,642.0,3,Stable,No issue,Yes,1
+379,Web Designer,381800.0,693.0,4,Stable,No issue,Yes,0
+380,Nurse,448200.0,728.0,5,Stable,No issue,Yes,0
+381,Sales Manager,564400.0,724.0,6,Stable,No issue,Yes,2
+382,Accountant,348600.0,672.0,4,Stable,No issue,Yes,1
+383,Human Resources,373500.0,678.0,4,Stable,No issue,Yes,1
+384,Dental Hygienist,431600.0,723.0,5,Stable,No issue,Yes,2
+385,Software Developer,622500.0,775.0,6,Stable,No issue,Yes,0
+386,Other,514600.0,720.0,5,Stable,No issue,Yes,0
+387,Mechanical Engineer,597600.0,758.0,6,Stable,No issue,Yes,1
+389,Real Estate Agent,448200.0,702.0,5,Stable,No issue,Yes,1
+390,Software Engineer,713800.0,795.0,7,Stable,No issue,Yes,1
+391,Account Executive,564400.0,715.0,5,Unknown,No issue,Yes,0
+393,Sales Representative,282200.0,590.0,2,Unstable,Late payment,Yes,2
+394,Marketing Manager,581000.0,750.0,6,Stable,No issue,Yes,0
+395,Physical Therapist,572700.0,742.0,6,Stable,No issue,Yes,2
+396,Financial Analyst,564400.0,732.0,5,Stable,No issue,Yes,1
+397,Other,356900.0,695.0,4,Stable,No issue,Yes,0
+398,Sales Manager,597600.0,726.0,6,Stable,No issue,Yes,2
+399,Pharmacist,763600.0,780.0,8,Stable,No issue,Yes,1
+400,Construction Worker,265600.0,630.0,3,Stable,No issue,Yes,2
+401,Other,664000.0,742.0,7,Stable,No issue,Yes,1
+403,Other,398400.0,670.0,4,Stable,No issue,Yes,0
+405,Insurance Agent,431600.0,732.0,5,Stable,No issue,Yes,2
+406,Web Developer,564400.0,760.0,6,Stable,No issue,Yes,0
+407,Physical Education Teacher,365200.0,670.0,4,Stable,No issue,Yes,1
+408,Other,647400.0,790.0,7,Stable,No issue,Yes,0
+409,Other,456500.0,700.0,5,Stable,No issue,Yes,2
+410,Other,348600.0,680.0,3,Unstable,Late payment,Yes,1
+411,Other,830000.0,820.0,9,Stable,No issue,Yes,2
+412,Veterinarian,622500.0,750.0,6,Stable,No issue,Yes,0
+413,Financial Advisor,572700.0,725.0,5,Stable,No issue,Yes,1
+415,Other,431600.0,708.0,5,Stable,No issue,Yes,2
+416,Electrician,373500.0,680.0,4,Stable,No issue,Yes,1
+417,Other,747000.0,790.0,8,Stable,No issue,Yes,0
+418,Graphic Artist,315400.0,650.0,3,Stable,No issue,Yes,0
+419,Other,597600.0,750.0,6,Stable,No issue,Yes,2
+420,Mechanical Technician,290500.0,650.0,3,Unstable,Late payment,Yes,1
+421,Other,680600.0,765.0,7,Stable,No issue,Yes,1
+422,Architect,581000.0,740.0,6,Stable,No issue,Yes,0
+423,Sales Manager,622500.0,720.0,6,Stable,No issue,Yes,2
+424,Graphic Designer,431600.0,690.0,5,Stable,No issue,Yes,1
+425,Real Estate Agent,498000.0,725.0,5,Stable,No issue,Yes,0
+426,Other,664000.0,760.0,7,Stable,No issue,Yes,2
+427,Dental Hygienist,398400.0,700.0,4,Stable,No issue,Yes,1
+428,Physical Therapist,622500.0,780.0,6,Stable,No issue,Yes,0
+429,Marketing Manager,705500.0,745.0,7,Stable,No issue,Yes,2
+430,Other,539500.0,710.0,5,Stable,No issue,Yes,1
+431,Other,996000.0,820.0,10,Stable,No issue,Yes,0
+432,Other,481400.0,700.0,4,Stable,No issue,Yes,2
+433,Financial Analyst,597600.0,750.0,6,Stable,No issue,Yes,1
+434,Other,498000.0,690.0,5,Stable,No issue,Yes,0
+435,Project Manager,664000.0,740.0,7,Stable,No issue,Yes,1
+436,Mechanical Engineer,564400.0,720.0,5,Stable,No issue,Yes,2
+437,Other,373500.0,680.0,4,Stable,No issue,Yes,0
+438,Physical Education Teacher,348600.0,670.0,4,Stable,No issue,Yes,1
+440,Other,871500.0,790.0,9,Stable,No issue,Yes,2
+441,Human Resources Manager,680600.0,740.0,7,Stable,No issue,Yes,1
+442,Other,456500.0,700.0,5,Stable,No issue,Yes,0
+443,Software Developer,581.0,700.0,6,Stable,No issue,Yes,2
+444,Other,564400.0,720.0,6,Stable,No issue,Yes,1
+445,Other,456500.0,680.0,4,Stable,No issue,Yes,0
+446,Architect,581000.0,720.0,6,Stable,No issue,Yes,2
+447,Accountant,539500.0,730.0,5,Stable,No issue,Yes,1
+449,Insurance Agent,481400.0,690.0,4,Stable,No issue,Yes,1
+450,Lawyer,913000.0,800.0,8,Stable,No issue,Yes,0
+451,IT Manager,705500.0,750.0,7,Unknown,No issue,Yes,2
+453,Other,622500.0,760.0,6,Stable,No issue,Yes,1
+454,Chef,373500.0,680.0,4,Stable,No issue,Yes,0
+455,Software Engineer,680600.0,740.0,7,Stable,No issue,Yes,2
+456,Other,456500.0,690.0,4,Stable,No issue,Yes,1
+460,Other,348600.0,670.0,4,Stable,No issue,Yes,1
+461,Other,481400.0,690.0,4,Stable,No issue,Yes,0
+462,Other,539500.0,730.0,5,Stable,No issue,Yes,2
+463,Pharmacist,747000.0,780.0,0,Stable,No issue,Yes,1
+465,Event Planner,398400.0,680.0,4,Stable,No issue,Yes,0
+467,Sales Manager,622500.0,720.0,6,Stable,No issue,Yes,2
+468,Other,564400.0,710.0,5,Stable,No issue,Yes,1
+469,Real Estate Agent,456500.0,690.0,4,Stable,No issue,Yes,0
+472,Marketing Coordinator,398400.0,670.0,4,Stable,No issue,Yes,0
+473,Physical Therapist,564400.0,720.0,6,Stable,No issue,Yes,1
+474,Other,581000.0,740.0,5,Stable,No issue,Yes,0
+476,Nurse,373500.0,670.0,4,Stable,No issue,Yes,2
+477,Electrician,398400.0,660.0,3,Stable,No issue,Yes,1
+478,Other,705500.0,750.0,7,Stable,No issue,Yes,0
+480,Dental Hygienist,398400.0,670.0,4,Stable,No issue,Yes,2
+481,Project Manager,581000.0,730.0,5,Stable,No issue,Yes,0
+482,Chef,373500.0,680.0,4,Stable,No issue,Yes,0
+483,Other,456500.0,690.0,4,Stable,No issue,Yes,1
+253,Nurse,25000.0,650.0,5,Fair,Late payment,No,0
+292,Chef,232400.0,620.0,1,Unstable,Missed payments,No,2
+133,Chef,265600.0,660.0,3,Stable,No issue,No,2
+208,Personal Trainer,290500.0,670.0,2,Stable,No issue,No,0
+41,Chef,232400.0,620.0,1,Unstable,Missed payments,No,2
+170,Dental Assistant,2.5,590.0,1,Unstable,Missed payments,No,1
+230,Personal Trainer,265600.0,650.0,0,Stable,No issue,No,2
+284,Salesperson,249000.0,600.0,1,Unstable,Missed payments,No,2
+117,Salesperson,348600.0,670.0,3,Stable,No issue,No,2
+205,Bank Teller,232400.0,620.0,2,Unstable,Late payment,No,0
+267,Accountant,5000.0,720.0,4,Good,Fair,No,2
+292,Chef,232400.0,620.0,1,Unstable,Missed payments,No,2
+95,Chef,265600.0,640.0,2,Unstable,Missed payments,No,1
+147,Customer Service Rep,207500.0,630.0,1,Unstable,Late payment,No,1
+67,Chef,290500.0,650.0,2,Fair,Missed payments,No,2
+470,Other,431600.0,680.0,4,Stable,No issue,No,2
+258,Nurse,20000.0,600.0,3,Poor,Late payment,No,2
+340,Chef,290500.0,700.0,2,Unstable,Missed payments,No,2
+170,Dental Assistant,2.5,590.0,1,Unstable,Missed payments,No,1
+159,Other,249000.0,640.0,2,Unstable,Late payment,No,3
+402,Customer Service Rep,249000.0,600.0,2,Unstable,Late payment,No,1
+205,Bank Teller,232400.0,620.0,2,Unstable,Late payment,No,0
+137,Medical Assistant,2.8,620.0,1,Unstable,Missed payments,No,2
+99,Mechanic,249000.0,610.0,1,Unstable,Late payment,No,3
+113,Other,249000.0,620.0,2,Unstable,Late payment,No,1
+7,Nurse,20000.0,600.0,3,Poor,Late payment,No,2
+171,Chef,290500.0,650.0,3,Stable,No issue,No,2
+80,Graphic Designer,290500.0,680.0,3,Stable,No issue,No,0
+133,Chef,265600.0,660.0,3,Stable,No issue,No,2
+171,Chef,290500.0,650.0,3,Stable,No issue,No,2
+95,Chef,265600.0,640.0,2,Unstable,Missed payments,No,1
+475,Web Developer,481400.0,690.0,4,Stable,No issue,No,1
+307,Customer Service,207500.0,600.0,1,Excellent,Missed payments,No,2
+228,Event Planner,298800.0,690.0,0,Stable,No issue,No,0
+210,Photographer,207500.0,610.0,1,Unstable,Late payment,No,1
+287,Mechanic,207500.0,600.0,2,Unstable,Late payment,No,2
+193,Graphic Designer,232400.0,620.0,2,Unstable,Late payment,No,1
+221,Writer,166000.0,570.0,0,Unstable,Missed payments,No,2
+206,Event Planner,315400.0,680.0,3,Stable,No issue,No,0
+274,Police Officer,4000.0,680.0,3,Fair,Fair,No,2
+199,Writer,182600.0,590.0,1,Unstable,Missed payments,No,2
+342,Personal Trainer,249000.0,700.0,1,Unstable,Late payment,No,0
+72,Electrician,265.6,640.0,2,Unstable,Missed payments,No,2
+152,Other,166000.0,590.0,1,Unstable,Missed payments,No,1
+448,Teacher,348600.0,660.0,3,Stable,No issue,No,3
+301,Electrician,265600.0,640.0,2,Unstable,Missed payments,No,2
+230,Personal Trainer,265600.0,650.0,0,Stable,No issue,No,2
+139,Social Worker,332000.0,680.0,3,Stable,No issue,No,3
+130,Other,124500.0,560.0,1,Unstable,Late payment,No,0
+150,Other,348600.0,690.0,4,Stable,No issue,No,2
+388,Medical Assistant,240700.0,610.0,2,Unknown,Late payment,No,0
+118,Dental Assistant,207500.0,630.0,1,Unstable,Missed payments,No,1
+312,Web Designer,398400.0,710.0,4,Excellent,No issue,No,2
+50,Electrician,265600.0,640.0,2,Unstable,Missed payments,No,2
+328,Chef,257300.0,700.0,2,Unstable,Missed payments,No,1
+36,Mechanic,207500.0,600.0,2,Unstable,Late payment,No,1
+342,Personal Trainer,249000.0,700.0,1,Unstable,Late payment,No,0
+349,Customer Service Rep,240700.0,590.0,1,Unstable,Late payment,No,1
+140,Chef,265600.0,670.0,2,Unstable,Late payment,No,1
+253,Nurse,25000.0,650.0,5,Fair,Late payment,No,0
+270,Electrician,2500.0,550.0,1,Poor,Poor,No,2
+341,Dental Hygienist,415000.0,700.0,0,Unknown,No issue,No,2
+306,Chef,257300.0,650.0,2,Fair,Missed payments,No,2
+33,Salesperson,249000.0,600.0,1,Unstable,Missed payments,No,1
+224,Chef,265600.0,640.0,0,Stable,No issue,No,1
+296,Writer,207500.0,590.0,1,Unstable,Missed payments,No,2
+86,Musician,249000.0,620.0,1,Unstable,Late payment,No,0
+219,Mechanical Technician,240700.0,620.0,0,Unstable,Late payment,No,0
+55,Chef,257300.0,650.0,2,Fair,Missed payments,No,2
+484,Medical Assistant,290500.0,640.0,3,Stable,No issue,No,1
+115,Graphic Artist,290500.0,680.0,3,Stable,No issue,No,0
+99,Mechanic,249000.0,610.0,1,Unstable,Late payment,No,3
+28,Musician,2500.0,550.0,0,Poor,No issue,No,3
+43,Construction Worker,249000.0,610.0,3,Unstable,Late payment,No,2
+5,Engineer,50000.0,750.0,6,Fair,No issue,No,1
+103,Electrician,290500.0,650.0,2,Unknown,Missed payments,No,0
+459,Bank Teller,315400.0,650.0,3,Stable,No issue,No,2
+273,Chef,3000.0,620.0,2,Fair,Poor,No,2
+98,Writer,290500.0,670.0,2,Stable,No issue,No,0
+115,Graphic Artist,290500.0,680.0,3,Stable,No issue,No,0
+479,Other,290500.0,640.0,3,Stable,No issue,No,1
+175,Event Planner,315400.0,680.0,3,Stable,No issue,No,0
+11,Salesperson,3000.0,600.0,1,Fair,Poor,No,1
+135,Hair Stylist,166000.0,600.0,1,Unstable,Late payment,No,2
+314,Sales Representative,373500.0,660.0,2,Poor,Missed payments,No,2
+333,Chef,265600.0,700.0,2,Unstable,Missed payments,No,2
+224,Chef,265600.0,640.0,0,Stable,No issue,No,1
+208,Personal Trainer,290500.0,670.0,2,Stable,No issue,No,0
+11,Salesperson,3000.0,600.0,1,Fair,Poor,No,1
+314,Sales Representative,373500.0,660.0,2,Poor,Missed payments,No,2
+11,Salesperson,3000.0,600.0,1,Fair,Poor,No,1
+19,Electrician,2500.0,550.0,1,Poor,Poor,No,2
+23,Police Officer,4000.0,680.0,3,Fair,Fair,No,2
+177,Personal Trainer,290500.0,670.0,2,Stable,No issue,No,0
+33,Salesperson,249000.0,600.0,1,Unstable,Missed payments,No,1
+279,Musician,2500.0,550.0,0,Unknown,No issue,No,2
+315,Musician,249000.0,620.0,1,Good,Late payment,No,2
+58,Graphic Designer,290500.0,680.0,3,Excellent,No issue,No,2
+78,Customer Service,207500.0,600.0,1,Unstable,Missed payments,No,0
+326,Social Worker,298800.0,700.0,2,Unstable,Missed payments,No,3
+256,Engineer,50000.0,750.0,6,Fair,No issue,No,1
+148,Graphic Designer,290500.0,670.0,3,Stable,No issue,No,0
+210,Photographer,207500.0,610.0,1,Unstable,Late payment,No,1
+272,Marketing Exec,4500.0,690.0,4,Fair,Fair,No,2
+210,Photographer,207500.0,610.0,1,Unstable,Late payment,No,1
+95,Chef,265600.0,640.0,2,Unstable,Missed payments,No,1
+38,Graphic Designer,307100.0,680.0,3,Stable,No issue,No,0
+304,Social Worker,298800.0,670.0,2,Unstable,Missed payments,No,2
+227,Bank Teller,224100.0,610.0,0,Unstable,Late payment,No,0
+253,Nurse,25000.0,650.0,5,Fair,Late payment,No,0
+175,Event Planner,315400.0,680.0,3,Stable,No issue,No,0
+93,Teacher,332000.0,670.0,3,Stable,No issue,No,1
+36,Mechanic,207500.0,600.0,2,Unstable,Late payment,No,1
+120,Other,315400.0,680.0,4,Stable,No issue,No,0
+82,Chef,265600.0,630.0,2,Unstable,Missed payments,No,2
+340,Chef,290500.0,700.0,2,Unstable,Missed payments,No,2
+91,Personal Trainer,249000.0,630.0,1,Unstable,Late payment,No,0
+479,Other,290500.0,640.0,3,Stable,No issue,No,1
+2,Nurse,25000.0,650.0,5,Fair,Late payment,No,0
+392,Chef,332000.0,654.0,4,Stable,No issue,No,1
+348,Marketing Coordinator,290500.0,643.0,2,Unstable,Late payment,No,1
+296,Writer,207500.0,590.0,1,Unstable,Missed payments,No,2
+137,Medical Assistant,2.8,620.0,1,Unstable,Missed payments,No,2
+349,Customer Service Rep,240700.0,590.0,1,Unstable,Late payment,No,1
+307,Customer Service,207500.0,600.0,1,Excellent,Missed payments,No,2
+197,Mechanical Technician,249000.0,630.0,2,Unstable,Late payment,No,0
+123,Other,166000.0,610.0,1,Unstable,Late payment,No,0
+132,Electrician,290500.0,640.0,2,Unstable,Late payment,No,2
+272,Marketing Exec,4500.0,690.0,4,Fair,Fair,No,2
+135,Hair Stylist,166000.0,600.0,1,Unstable,Late payment,No,2
+89,Chef,290500.0,650.0,2,Unstable,Missed payments,No,2
+103,Electrician,290500.0,650.0,2,Unknown,Missed payments,No,0
+307,Customer Service,207500.0,600.0,1,Excellent,Missed payments,No,2
+179,Photographer,207500.0,610.0,1,Unstable,Late payment,No,1
+318,Chef,290500.0,650.0,2,Fair,Missed payments,No,2
+347,Chef,323700.0,631.0,3,Stable,No issue,No,2
+239,Chef,290500.0,650.0,3,Stable,No issue,No,2
+127,Photographer,249000.0,640.0,2,Unstable,Missed payments,No,2
+171,Chef,290500.0,650.0,3,Stable,No issue,No,2
+402,Customer Service Rep,249000.0,600.0,2,Unstable,Late payment,No,1
+277,Graphic Design,3500.0,670.0,3,Fair,Poor,No,2
+279,Musician,2500.0,550.0,0,Unknown,No issue,No,2
+448,Teacher,348600.0,660.0,3,Stable,No issue,No,3
+272,Marketing Exec,4500.0,690.0,4,Fair,Fair,No,2
+118,Dental Assistant,207500.0,630.0,1,Unstable,Missed payments,No,1
+156,Physical Education Teacher,373500.0,670.0,3,Stable,No issue,No,0
+22,Chef,3000.0,620.0,2,Fair,Poor,No,2
+306,Chef,257300.0,650.0,2,Fair,Missed payments,No,2
+132,Electrician,290500.0,640.0,2,Unstable,Late payment,No,2
+82,Chef,265600.0,630.0,2,Unstable,Missed payments,No,2
+277,Graphic Design,3500.0,670.0,3,Fair,Poor,No,2
+152,Other,166000.0,590.0,1,Unstable,Missed payments,No,1
+340,Chef,290500.0,700.0,2,Unstable,Missed payments,No,2
+284,Salesperson,249000.0,600.0,1,Unstable,Missed payments,No,2
+307,Customer Service,207500.0,600.0,1,Excellent,Missed payments,No,2
+31,Chef,265600.0,650.0,2,Unstable,Missed payments,No,2
+459,Bank Teller,315400.0,650.0,3,Stable,No issue,No,2
+5,Engineer,50000.0,750.0,6,Fair,No issue,No,1
+452,Dental Assistant,315400.0,650.0,3,Stable,No issue,No,2
+127,Photographer,249000.0,640.0,2,Unstable,Missed payments,No,2
+11,Salesperson,3000.0,600.0,1,Fair,Poor,No,1
+41,Chef,232400.0,620.0,1,Unstable,Missed payments,No,2
+179,Photographer,207500.0,610.0,1,Unstable,Late payment,No,1
+206,Event Planner,315400.0,680.0,3,Stable,No issue,No,0
+101,Nurse,5000.0,720.0,5,Stable,No issue,No,2
+219,Mechanical Technician,240700.0,620.0,0,Unstable,Late payment,No,0
+298,Chef,290500.0,650.0,2,Unstable,Missed payments,No,2
+328,Chef,257300.0,700.0,2,Unstable,Missed payments,No,1
+93,Teacher,332000.0,670.0,3,Stable,No issue,No,1
+91,Personal Trainer,249000.0,630.0,1,Unstable,Late payment,No,0
+392,Chef,332000.0,654.0,4,Stable,No issue,No,1
+43,Construction Worker,249000.0,610.0,3,Unstable,Late payment,No,2
+470,Other,431600.0,680.0,4,Stable,No issue,No,2
+147,Customer Service Rep,207500.0,630.0,1,Unstable,Late payment,No,1
+126,Plumber,265600.0,650.0,2,Unstable,Missed payments,No,3
+314,Sales Representative,373500.0,660.0,2,Poor,Missed payments,No,2
+341,Dental Hygienist,415000.0,700.0,0,Unknown,No issue,No,2
+193,Graphic Designer,232400.0,620.0,2,Unstable,Late payment,No,1
+312,Web Designer,398400.0,710.0,4,Excellent,No issue,No,2
+301,Electrician,265600.0,640.0,2,Unstable,Missed payments,No,2
+91,Personal Trainer,249000.0,630.0,1,Unstable,Late payment,No,0
+282,Chef,265600.0,650.0,2,Unstable,Missed payments,No,2
+336,Sales Representative,373500.0,700.0,2,Unstable,Missed payments,No,2
+55,Chef,257300.0,650.0,2,Fair,Missed payments,No,2
+58,Graphic Designer,290500.0,680.0,3,Excellent,No issue,No,2
+256,Engineer,50000.0,750.0,6,Fair,No issue,No,1
+11,Salesperson,3000.0,600.0,1,Fair,Poor,No,1
+210,Photographer,207500.0,610.0,1,Unstable,Late payment,No,1
+174,Bank Teller,232400.0,620.0,2,Unstable,Late payment,No,0
+475,Web Developer,481400.0,690.0,4,Stable,No issue,No,1
+115,Graphic Artist,290500.0,680.0,3,Stable,No issue,No,0
+177,Personal Trainer,290500.0,670.0,2,Stable,No issue,No,0
+215,Graphic Designer,224100.0,610.0,0,Unstable,Late payment,No,1
+303,Plumber,224100.0,620.0,1,Unstable,Late payment,No,2
+139,Social Worker,332000.0,680.0,3,Stable,No issue,No,3
+262,Salesperson,3000.0,600.0,1,Fair,Poor,No,2
+115,Graphic Artist,290500.0,680.0,3,Stable,No issue,No,0
+123,Other,166000.0,610.0,1,Unstable,Late payment,No,0
+311,Chef,265600.0,630.0,2,Good,Missed payments,No,2
+369,Customer Service Rep,240700.0,590.0,1,Unstable,Late payment,No,1
+139,Social Worker,332000.0,680.0,3,Stable,No issue,No,3
+287,Mechanic,207500.0,600.0,2,Unstable,Late payment,No,2
+311,Chef,265600.0,630.0,2,Good,Missed payments,No,2
+60,Chef,265600.0,630.0,2,Good,Missed payments,No,2
+133,Chef,265600.0,660.0,3,Stable,No issue,No,2
+26,Graphic Design,3500.0,670.0,3,Fair,Poor,No,2
+11,Salesperson,3000.0,600.0,1,Fair,Poor,No,1
+475,Web Developer,481400.0,690.0,4,Stable,No issue,No,1
+11,Salesperson,3000.0,600.0,1,Fair,Poor,No,1
+52,Plumber,224100.0,620.0,1,Unstable,Late payment,No,2
+72,Electrician,265.6,640.0,2,Unstable,Missed payments,No,2
+77,Chef,257300.0,650.0,2,Unstable,Missed payments,No,1
+99,Mechanic,249000.0,610.0,1,Unstable,Late payment,No,3
+177,Personal Trainer,290500.0,670.0,2,Stable,No issue,No,0
+174,Bank Teller,232400.0,620.0,2,Unstable,Late payment,No,0
+340,Chef,290500.0,700.0,2,Unstable,Missed payments,No,2
+326,Social Worker,298800.0,700.0,2,Unstable,Missed payments,No,3
+91,Personal Trainer,249000.0,630.0,1,Unstable,Late payment,No,0
+26,Graphic Design,3500.0,670.0,3,Fair,Poor,No,2
+309,Graphic Designer,290500.0,680.0,3,Excellent,No issue,No,2
+55,Chef,257300.0,650.0,2,Fair,Missed payments,No,2
+210,Photographer,207500.0,610.0,1,Unstable,Late payment,No,1
+135,Hair Stylist,166000.0,600.0,1,Unstable,Late payment,No,2
+270,Electrician,2500.0,550.0,1,Poor,Poor,No,2
+132,Electrician,290500.0,640.0,2,Unstable,Late payment,No,2
+21,Marketing Exec,4500.0,690.0,4,Fair,Fair,No,1
+210,Photographer,207500.0,610.0,1,Unstable,Late payment,No,1
+439,Web Designer,398400.0,670.0,4,Stable,No issue,No,0
+414,Other,265600.0,630.0,3,Unstable,Late payment,No,0
+304,Social Worker,298800.0,670.0,2,Unstable,Missed payments,No,2
+311,Chef,265600.0,630.0,2,Good,Missed payments,No,2
+448,Teacher,348600.0,660.0,3,Stable,No issue,No,3
+137,Medical Assistant,2.8,620.0,1,Unstable,Missed payments,No,2
+333,Chef,265600.0,700.0,2,Unstable,Missed payments,No,2
+182,Hair Stylist,182600.0,590.0,1,Unstable,Missed payments,No,0
+101,Nurse,5000.0,720.0,5,Stable,No issue,No,2
+402,Customer Service Rep,249000.0,600.0,2,Unstable,Late payment,No,1
+89,Chef,290500.0,650.0,2,Unstable,Missed payments,No,2
+193,Graphic Designer,232400.0,620.0,2,Unstable,Late payment,No,1
+170,Dental Assistant,2.5,590.0,1,Unstable,Missed payments,No,1
+167,Electrician,315400.0,660.0,3,Stable,No issue,No,2
+294,Construction Worker,249000.0,610.0,3,Unstable,Late payment,No,2
+239,Chef,290500.0,650.0,3,Stable,No issue,No,2
+124,Physical Education Teacher,373500.0,690.0,3,Stable,No issue,No,1
+227,Bank Teller,224100.0,610.0,0,Unstable,Late payment,No,0
+33,Salesperson,249000.0,600.0,1,Unstable,Missed payments,No,1
+52,Plumber,224100.0,620.0,1,Unstable,Late payment,No,2
+126,Plumber,265600.0,650.0,2,Unstable,Missed payments,No,3
+347,Chef,323700.0,631.0,3,Stable,No issue,No,2
+273,Chef,3000.0,620.0,2,Fair,Poor,No,2
+164,Other,249000.0,620.0,2,Unstable,Late payment,No,2
+337,Musician,249000.0,700.0,1,Unstable,Late payment,No,0
+292,Chef,232400.0,620.0,1,Unstable,Missed payments,No,2
+323,Electrician,265.6,700.0,2,Unstable,Missed payments,No,2
+479,Other,290500.0,640.0,3,Stable,No issue,No,1
+294,Construction Worker,249000.0,610.0,3,Unstable,Late payment,No,2
+171,Chef,290500.0,650.0,3,Stable,No issue,No,2
+273,Chef,3000.0,620.0,2,Fair,Poor,No,2
+16,Accountant,5000.0,720.0,4,Good,Fair,No,2
+333,Chef,265600.0,700.0,2,Unstable,Missed payments,No,2
+67,Chef,290500.0,650.0,2,Fair,Missed payments,No,2
+439,Web Designer,398400.0,670.0,4,Stable,No issue,No,0
+296,Writer,207500.0,590.0,1,Unstable,Missed payments,No,2
+208,Personal Trainer,290500.0,670.0,2,Stable,No issue,No,0
+230,Personal Trainer,265600.0,650.0,0,Stable,No issue,No,2
+224,Chef,265600.0,640.0,0,Stable,No issue,No,1
+184,Construction Worker,249000.0,630.0,2,Unstable,Late payment,No,3
+224,Chef,265600.0,640.0,0,Stable,No issue,No,1
+392,Chef,332000.0,654.0,4,Stable,No issue,No,1
+118,Dental Assistant,207500.0,630.0,1,Unstable,Missed payments,No,1
+414,Other,265600.0,630.0,3,Unstable,Late payment,No,0
+5,Engineer,50000.0,750.0,6,Fair,No issue,No,1
+326,Social Worker,298800.0,700.0,2,Unstable,Missed payments,No,3
+466,Graphic Designer,348600.0,670.0,4,Stable,No issue,No,1
+50,Electrician,265600.0,640.0,2,Unstable,Missed payments,No,2
+107,Construction Worker,207500.0,600.0,1,Unknown,Missed payments,No,4
+148,Graphic Designer,290500.0,670.0,3,Stable,No issue,No,0
+295,Other,373500.0,700.0,4,Stable,No issue,No,2
+74,Plumber,224100.0,620.0,1,Unstable,Late payment,No,0
+267,Accountant,5000.0,720.0,4,Good,Fair,No,2
+170,Dental Assistant,2.5,590.0,1,Unstable,Missed payments,No,1
+199,Writer,182600.0,590.0,1,Unstable,Missed payments,No,2
+141,Writer,315400.0,680.0,3,Stable,No issue,No,0
+80,Graphic Designer,290500.0,680.0,3,Stable,No issue,No,0
+177,Personal Trainer,290500.0,670.0,2,Stable,No issue,No,0
+170,Dental Assistant,2.5,590.0,1,Unstable,Missed payments,No,1
+274,Police Officer,4000.0,680.0,3,Fair,Fair,No,2
+159,Other,249000.0,640.0,2,Unstable,Late payment,No,3
+61,Web Designer,398400.0,710.0,4,Excellent,No issue,No,2
+44,Other,373500.0,700.0,4,Stable,No issue,No,2
+77,Chef,257300.0,650.0,2,Unstable,Missed payments,No,1
+5,Engineer,50000.0,750.0,6,Fair,No issue,No,1
+304,Social Worker,298800.0,670.0,2,Unstable,Missed payments,No,2
+228,Event Planner,298800.0,690.0,0,Stable,No issue,No,0
+167,Electrician,315400.0,660.0,3,Stable,No issue,No,2
+392,Chef,332000.0,654.0,4,Stable,No issue,No,1
+156,Physical Education Teacher,373500.0,670.0,3,Stable,No issue,No,0
+55,Chef,257300.0,650.0,2,Fair,Missed payments,No,2
+206,Event Planner,315400.0,680.0,3,Stable,No issue,No,0
+273,Chef,3000.0,620.0,2,Fair,Poor,No,2
+348,Marketing Coordinator,290500.0,643.0,2,Unstable,Late payment,No,1
+167,Electrician,315400.0,660.0,3,Stable,No issue,No,2
