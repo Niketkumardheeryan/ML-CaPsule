@@ -22,5 +22,8 @@ Ensure you have Python 3.6+ installed. You will also need `pip` to install the r
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/611noorsaeed/Plagiarism-detector-using-machine-learning.git
-cd Plagiarism-detector-using-machine-learning
+git clone https://github.com/Pranshu-jais/Human-Activity-Recognition.git
+```
+
+https://github.com/user-attachments/assets/f7037229-7558-4608-9238-fb8d0fb83531
+
