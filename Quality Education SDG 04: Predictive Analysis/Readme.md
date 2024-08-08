@@ -71,4 +71,6 @@ Despite progress in Indian education, challenges such as inequality, resource sc
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/quality-education-india.git
+   git clone https://github.com/Shouryabhardwajj/ML-CaPsule/tree/master/Quality%20Education%20SDG%2004:%20Predictive%20Analysis
+2. Install Requirements.txt
+   
