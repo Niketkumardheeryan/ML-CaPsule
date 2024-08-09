@@ -2,7 +2,7 @@
 
 ## Overview
 
-This application aims to predict multiple types of diseases simultaneously, including diabetes, heart disease, and kidney disease. By leveraging advanced machine learning algorithms and comprehensive medical data, this app provides users with early warnings and actionable insights to manage their health proactively.
+These models aim to predict multiple types of diseases simultaneously, including diabetes, heart disease, and kidney disease. By leveraging advanced machine learning algorithms and comprehensive medical data, these models provide users with early warnings and actionable insights to manage their health proactively.
 
 ## Use Case: Multi-Disease Prediction
 
@@ -30,14 +30,7 @@ Evaluates the possibility of kidney disease by analyzing factors such as:
 - Hypertension
 
 ## Features
-### User-Friendly Interface
-#### Intuitive Design
-- Easy-to-navigate interface for users of all ages and technical backgrounds.
-#### Personalized Dashboard
-- Customizable dashboard to track and monitor health metrics over time.
-### Comprehensive Data Analysis
-#### Input Data
-- Allows users to input their medical history, lifestyle habits, and test results.
+
 #### Real-Time Analytics
 - Provides real-time analysis and prediction based on the latest data input.
 ### Advanced Machine Learning Models
