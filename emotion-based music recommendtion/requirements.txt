@@ -1,7 +1,0 @@
-streamlit 
-google-api-python-client 
-transformers
-torch 
-torchvision 
-torchaudio
-

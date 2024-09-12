@@ -1,2 +1,0 @@
-streamlit >= 1.28.1
-deep-translator >= 1.9.4

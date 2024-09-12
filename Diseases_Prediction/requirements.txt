@@ -1,6 +1,0 @@
-numpy
-pandas
-scikit-learn
-catboost
-langchain-openai
-langchain

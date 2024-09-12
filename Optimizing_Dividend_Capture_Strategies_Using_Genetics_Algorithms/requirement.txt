@@ -1,7 +1,0 @@
-## Requirements
-
-- Python 3.8+
-- pandas
-- numpy
-- matplotlib
-- deap (Distributed Evolutionary Algorithms in Python)

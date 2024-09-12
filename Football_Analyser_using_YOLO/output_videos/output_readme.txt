@@ -1,1 +1,0 @@
-#upon running the model , the output video will appear here.
