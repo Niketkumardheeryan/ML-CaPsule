@@ -1,0 +1,2 @@
+ultralytics
+opencv-python

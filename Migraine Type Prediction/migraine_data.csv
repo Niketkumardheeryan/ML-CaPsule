@@ -1,0 +1,401 @@
+Age,Duration,Frequency,Location,Character,Intensity,Nausea,Vomit,Phonophobia,Photophobia,Visual,Sensory,Dysphasia,Dysarthria,Vertigo,Tinnitus,Hypoacusis,Diplopia,Defect,Ataxia,Conscience,Paresthesia,DPF,Type
+30,1,5,1,1,2,1,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+50,3,5,1,1,3,1,1,1,1,2,1,0,0,1,0,0,0,0,0,0,0,0,Typical aura with migraine
+53,2,1,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+45,3,5,1,1,3,1,0,1,1,2,2,0,0,1,0,0,0,0,0,0,0,0,Typical aura with migraine
+53,1,1,1,1,2,1,0,1,1,4,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+49,1,1,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+27,1,5,1,1,3,1,0,1,1,2,0,0,0,1,1,0,0,0,0,0,0,0,Basilar-type aura
+24,1,1,1,1,2,1,0,1,1,2,2,0,0,1,0,0,0,0,0,0,0,1,Typical aura with migraine
+50,1,5,1,1,2,1,1,1,1,2,2,0,0,1,0,0,0,0,0,0,0,1,Typical aura with migraine
+23,1,1,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+48,1,2,1,1,3,1,1,1,1,3,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+51,3,1,1,1,3,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+49,2,5,1,1,3,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+34,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+20,3,5,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+53,3,5,1,1,3,1,0,1,1,2,0,0,0,1,0,0,0,0,0,0,0,1,Typical aura with migraine
+40,3,1,1,1,3,1,0,1,1,4,0,0,0,1,0,0,0,0,0,0,0,1,Typical aura with migraine
+56,1,1,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+44,3,5,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+20,3,8,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+46,1,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+25,3,7,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+38,1,5,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+35,2,5,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+17,1,6,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+36,2,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+31,1,7,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+67,3,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+17,1,5,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+46,1,5,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+51,3,7,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+17,3,6,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+22,3,6,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+48,2,4,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+22,2,3,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+68,2,3,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+43,3,5,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+17,2,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+34,2,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+41,3,7,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+37,1,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+26,2,3,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+24,1,4,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+50,2,4,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+31,2,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+36,3,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+54,1,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+27,2,6,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+38,1,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+35,1,6,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+22,3,5,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+16,3,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+38,3,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+33,1,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+40,2,4,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+22,2,7,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+35,2,5,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+17,3,4,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+35,1,4,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+41,1,5,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+70,3,5,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,Migraine without aura
+17,1,5,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+28,3,5,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+29,1,3,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+54,1,1,1,1,3,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+40,2,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+46,1,1,1,1,3,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+69,1,5,1,1,3,1,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+33,2,5,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+50,3,1,1,1,2,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+30,3,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+17,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+22,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+16,1,2,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+31,1,1,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+30,1,3,1,1,3,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+16,2,4,1,1,2,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+16,3,2,1,1,2,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+49,1,4,1,1,2,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+41,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+21,2,1,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+33,1,1,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+30,1,1,1,1,2,1,1,1,1,0,2,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+64,1,4,1,1,3,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+27,1,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+17,1,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+27,2,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+48,1,3,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+32,1,1,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+24,2,2,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+25,1,5,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+50,1,5,1,1,2,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+28,1,5,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+52,1,2,1,1,2,1,0,1,1,3,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+28,1,5,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+35,1,5,1,1,3,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+43,2,5,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+51,2,1,1,1,2,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+28,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+22,3,1,1,1,2,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+47,1,2,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+44,1,2,1,1,2,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+49,2,2,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+43,1,4,1,1,2,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+43,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+16,2,4,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+21,1,1,1,1,2,1,1,1,1,2,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+35,1,1,1,1,2,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+25,2,1,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+39,2,1,1,1,2,1,1,1,1,2,2,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+38,1,4,1,1,2,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+35,1,5,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+43,3,5,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+35,3,5,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+28,1,1,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+57,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+58,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+26,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+28,1,5,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+27,1,5,1,1,2,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+42,1,5,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+39,1,1,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+23,1,1,1,1,2,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+77,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+28,2,3,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+47,1,3,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+48,3,3,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+52,1,1,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+42,1,1,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+18,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+35,1,1,1,1,2,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+25,1,1,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+45,1,1,1,1,2,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+17,1,3,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+29,1,2,1,1,3,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+26,1,5,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+26,1,5,1,1,1,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+29,2,1,1,1,2,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+28,2,1,1,1,2,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+30,1,5,1,1,3,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+30,1,5,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+32,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+50,1,1,1,1,3,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+35,3,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+57,1,1,1,1,3,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+30,1,1,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+45,1,3,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+18,1,3,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+45,1,2,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+48,1,2,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+21,1,2,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+29,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+43,2,1,1,1,2,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+25,2,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+46,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+42,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+30,3,4,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+16,1,4,1,1,3,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+34,1,1,1,1,1,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+17,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+20,1,3,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+37,1,1,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+51,1,2,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+21,1,2,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+31,1,2,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+59,1,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+54,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+34,1,2,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+46,3,2,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+31,1,1,1,1,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+30,1,3,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+28,2,4,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+26,1,4,1,1,3,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+27,1,1,1,1,3,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+44,1,1,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+26,3,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+44,3,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+29,1,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+54,2,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+44,2,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+18,2,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+58,1,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+24,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+50,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+36,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+47,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+29,1,2,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+51,1,3,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+22,1,3,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+27,1,5,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+21,1,5,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+40,1,5,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+46,1,5,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+29,1,1,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+25,2,1,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+51,1,5,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+56,1,5,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+18,2,5,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+37,2,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+29,1,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+50,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+49,1,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+55,1,1,1,1,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+29,2,1,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+18,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+26,3,2,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+41,3,2,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+25,1,3,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+54,1,3,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+31,1,1,1,1,3,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+49,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+18,2,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+22,2,2,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+38,1,5,1,1,3,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+26,1,2,1,1,3,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+48,2,2,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+26,3,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+19,1,2,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura with migraine
+19,2,3,1,1,3,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+25,2,2,1,1,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+27,2,3,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+16,2,2,1,1,3,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+19,2,3,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+21,1,4,1,1,2,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+17,2,2,1,1,3,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+19,1,2,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+22,2,3,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+20,1,2,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+27,2,3,1,1,3,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+31,1,1,1,1,2,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+29,1,3,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+25,2,2,1,1,2,1,1,1,1,0,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+28,2,2,1,1,3,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+25,1,2,1,1,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+21,1,3,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+19,2,1,1,1,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+20,2,4,1,1,2,1,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+35,1,3,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+15,2,2,1,1,2,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+27,1,3,1,1,3,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+21,2,1,1,1,3,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,Typical aura with migraine
+19,2,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+15,2,2,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+19,3,1,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+47,1,5,1,2,3,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,Other
+21,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+17,1,2,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+20,1,2,1,1,2,1,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+35,1,3,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+28,1,1,2,2,3,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,Other
+15,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+30,1,1,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Other
+32,2,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+26,2,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+20,1,4,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+28,2,2,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+20,2,1,1,1,2,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+25,3,2,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+38,3,1,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+35,1,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+25,1,1,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+15,1,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+16,1,1,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+22,1,1,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+22,3,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+43,3,1,1,1,2,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+20,2,1,1,1,2,1,0,1,1,2,2,1,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+34,2,1,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+41,2,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+37,2,1,1,1,2,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+26,1,1,1,1,3,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+24,3,3,1,1,2,1,0,1,1,4,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+21,2,1,1,1,2,1,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+38,2,1,1,1,3,1,0,1,1,0,0,0,0,0,1,1,0,0,0,0,0,0,Basilar-type aura
+35,1,1,0,0,0,1,1,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura without migraine
+22,1,2,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+16,1,2,1,1,2,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+38,1,2,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+33,1,2,1,1,3,1,0,1,1,0,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+40,2,1,1,1,2,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+22,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+35,1,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+17,2,2,1,1,3,1,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+35,2,1,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+41,2,3,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+28,2,2,1,1,2,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+31,2,2,1,1,3,1,0,1,1,0,1,0,0,1,0,1,0,0,0,0,0,0,Basilar-type aura
+36,1,2,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+27,1,1,1,1,3,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+19,1,1,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+40,1,1,1,1,3,1,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+33,1,1,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+30,1,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+17,1,3,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+22,1,3,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+31,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+30,1,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+16,1,1,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+21,2,1,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+33,2,3,1,1,2,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+27,2,1,1,1,3,1,0,1,1,2,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+17,3,2,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+24,1,1,1,1,3,1,0,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+25,1,2,1,1,3,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+35,2,1,1,1,2,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+28,2,2,1,1,3,1,0,1,1,0,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+22,2,1,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+20,2,2,1,1,3,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+28,1,1,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+22,3,2,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+44,1,1,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+35,2,2,1,1,3,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+25,3,1,1,1,2,1,1,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+39,3,2,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+35,3,2,1,1,3,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+18,2,2,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+28,3,3,1,1,2,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+26,2,1,1,1,3,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,Migraine without aura
+23,2,1,1,1,2,1,1,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura with migraine
+24,1,1,1,1,3,1,0,1,1,0,0,1,0,1,1,0,0,0,0,0,0,1,Familial hemiplegic migraine
+19,1,1,1,1,3,1,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+23,1,1,1,1,3,1,0,1,1,2,0,1,0,0,1,0,0,0,0,1,0,1,Familial hemiplegic migraine
+25,1,2,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+21,2,1,1,1,2,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+17,2,1,1,1,3,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+23,1,1,1,1,3,1,0,1,1,1,0,0,0,1,1,0,0,0,0,0,0,1,Familial hemiplegic migraine
+18,2,5,1,1,2,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+20,3,5,1,1,3,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+17,3,1,1,1,3,1,0,1,1,3,0,0,0,1,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+15,1,1,1,1,2,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,Familial hemiplegic migraine
+24,1,1,1,1,2,1,0,1,1,0,1,1,0,1,1,0,0,0,0,0,0,1,Familial hemiplegic migraine
+21,1,2,1,1,2,1,0,1,1,1,2,0,0,1,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+23,1,1,1,1,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+25,1,2,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+17,3,1,1,1,2,1,0,1,1,2,1,1,0,0,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+25,2,2,1,1,2,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+27,1,1,1,1,3,1,0,1,1,2,0,0,0,1,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+20,2,2,1,1,1,1,0,1,1,2,0,1,0,0,1,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+28,1,2,1,1,3,1,0,1,1,2,0,0,0,1,0,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+22,2,1,1,1,1,1,0,1,1,3,0,0,0,1,1,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+21,1,1,1,1,3,1,1,1,1,2,0,1,0,0,0,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+24,1,1,1,1,2,1,0,1,1,2,2,1,0,1,1,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+19,1,2,1,1,2,1,1,1,1,2,2,0,0,1,0,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+23,1,1,1,1,3,1,1,1,1,2,0,1,0,0,0,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+19,1,2,1,1,1,1,1,1,1,3,2,0,0,0,1,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+20,2,1,1,1,1,1,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+21,2,2,1,1,3,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Sporadic hemiplegic migraine
+19,1,1,1,1,3,1,0,1,1,1,0,1,0,0,1,0,0,0,0,1,0,1,Familial hemiplegic migraine
+20,2,2,1,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+23,2,2,1,1,3,1,0,1,1,1,0,0,0,1,1,0,0,0,0,0,0,1,Familial hemiplegic migraine
+25,2,1,1,1,2,1,0,1,1,2,0,1,0,1,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+17,1,1,1,1,3,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1,Familial hemiplegic migraine
+24,1,1,0,0,0,1,1,1,1,4,2,0,0,1,0,0,0,0,0,0,0,1,Typical aura without migraine
+21,1,5,0,0,0,1,0,1,1,3,2,0,0,1,0,0,0,0,0,0,0,1,Typical aura without migraine
+23,1,1,0,0,0,1,1,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura without migraine
+30,1,2,0,0,0,1,0,1,1,3,2,0,0,0,0,0,0,0,0,0,0,0,Typical aura without migraine
+27,3,1,0,0,0,1,1,1,1,3,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura without migraine
+25,2,5,0,0,0,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura without migraine
+17,1,1,0,0,0,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura without migraine
+20,3,5,0,0,0,1,1,1,1,3,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura without migraine
+19,3,5,0,0,0,1,0,1,1,4,0,0,0,1,1,0,0,0,0,0,0,1,Typical aura without migraine
+22,3,1,0,0,0,1,0,1,1,3,0,0,0,1,0,0,0,0,0,0,0,1,Typical aura without migraine
+26,1,1,0,0,0,1,1,1,1,4,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura without migraine
+24,1,1,0,0,0,1,0,1,1,3,2,0,0,1,0,0,0,0,0,0,0,1,Typical aura without migraine
+50,1,5,0,0,0,1,1,1,1,3,2,0,0,1,1,0,0,0,0,0,0,1,Typical aura without migraine
+23,1,1,0,0,0,1,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura without migraine
+35,1,2,0,0,0,1,0,1,1,4,2,0,0,0,1,0,0,0,0,0,0,0,Typical aura without migraine
+24,3,1,0,0,0,1,0,1,1,3,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura without migraine
+33,2,5,0,0,0,1,0,1,1,3,0,0,0,0,0,0,0,0,0,0,0,1,Typical aura without migraine
+34,1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,Typical aura without migraine
+20,3,5,0,0,0,0,0,1,1,4,1,0,0,0,0,0,0,0,0,0,0,1,Typical aura without migraine
+53,3,5,2,2,3,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,Other
+40,3,1,1,1,3,0,0,1,0,3,0,0,0,1,0,0,0,0,0,0,0,1,Other
+30,1,1,2,2,3,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,1,Other
+24,1,1,1,1,3,0,0,0,0,1,2,0,0,1,0,0,0,0,0,0,0,1,Other
+20,1,4,2,2,3,1,1,1,1,1,2,0,0,1,1,0,0,0,0,0,0,1,Other
+23,1,1,1,2,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,Other
+48,1,2,2,1,3,1,1,1,1,3,2,0,0,0,0,0,0,0,0,0,0,0,Other
+51,3,1,1,1,3,0,0,1,1,0,1,0,0,1,1,0,0,0,0,0,0,1,Other
+49,2,2,2,2,3,1,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Other
+34,1,1,1,1,3,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,Other
+20,3,1,2,2,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,Other
+53,3,1,2,2,3,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,1,Other
+40,3,1,1,2,3,1,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,1,Other
+56,1,1,2,2,3,1,1,0,1,2,0,0,0,0,0,0,0,0,0,0,0,1,Other
+24,1,1,1,1,2,1,0,1,1,2,1,0,0,1,1,1,0,0,0,0,0,1,Basilar-type aura
+38,1,2,1,1,2,1,1,1,1,2,1,0,0,1,1,1,0,0,0,0,0,1,Basilar-type aura
+23,1,1,1,1,3,1,1,1,1,2,0,0,0,1,0,0,0,1,0,1,0,0,Basilar-type aura
+48,1,2,1,1,3,1,1,1,1,3,1,0,0,1,0,0,0,1,0,0,1,0,Basilar-type aura
+27,3,1,1,1,3,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0,1,1,Basilar-type aura
+40,2,2,1,1,3,1,0,1,1,3,0,0,0,0,1,0,0,0,0,1,0,1,Basilar-type aura
+34,1,1,1,1,3,1,0,1,1,1,0,0,0,1,0,1,0,1,0,1,0,0,Basilar-type aura
+20,3,2,1,1,3,1,0,1,1,2,0,0,0,1,1,0,0,0,0,0,0,1,Basilar-type aura
+36,3,1,1,1,3,1,0,1,1,2,0,0,0,1,0,0,1,1,0,0,0,1,Basilar-type aura
+38,3,1,1,1,3,1,0,1,1,4,0,0,0,1,0,0,0,1,0,0,0,1,Basilar-type aura
+39,1,1,1,1,3,1,1,1,1,1,1,0,0,1,0,0,1,0,0,0,0,1,Basilar-type aura
+20,3,2,1,1,3,1,0,1,1,2,0,0,0,0,1,1,0,0,0,0,0,1,Basilar-type aura
+28,3,2,1,1,3,1,0,1,1,1,0,0,0,1,0,0,0,1,0,0,0,1,Basilar-type aura
+20,3,1,1,1,3,1,0,1,1,3,1,0,0,1,0,0,0,0,0,0,1,1,Basilar-type aura
+37,1,1,1,1,3,1,1,1,1,1,0,0,0,1,0,0,0,0,0,1,0,1,Basilar-type aura

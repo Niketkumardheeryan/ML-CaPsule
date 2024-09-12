@@ -1,0 +1,13 @@
+
+### install these libraries/module before run the script
+
+
+pandas
+numpy
+scipy
+scikit-learn
+seaborn
+matplotlib
+wordcloud
+nltk
+xgboost
