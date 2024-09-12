@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brain Tumor Detection - Result</title>
+    <meta name="author" content="Aditya Khamitkar">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles1.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Back</a></li>
+            <li><a href="https://www.github.com/TheNaiveSamosa">Github</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="image-container">
+            <h2>Predicted Image</h2>
+            <img src="data:image/jpeg;base64,{{ image_data }}" alt="Predicted Image">
+        </div>
+
+        <div>
+            <h2>Prediction Description</h2>
+            <h3 class="description">{{ description }}</h3>
+        <div>
+            <h2>Additional Information</h2>
+            {% if description == 'Glioma' %}
+                <p>Glioma is a type of tumor that originates in the glial cells of the brain or spinal cord. Glial cells provide support and insulation to neurons, and gliomas typically develop from these cells. They are the most common form of primary brain tumors and can occur at any age, although they are more commonly diagnosed in adults.
+
+                    Gliomas are classified into different grades based on their aggressiveness and the rate of growth. The World Health Organization (WHO) grading system categorizes gliomas into four grades, with Grade I being the least aggressive and Grade IV being the most malignant and fast-growing. Glioblastoma multiforme (GBM), a Grade IV glioma, is the most aggressive and common form of glioma.
+                    
+                    The symptoms of glioma vary depending on its location within the brain, but common signs include headaches, seizures, cognitive difficulties, changes in personality, and motor skill impairments. The exact causes of gliomas are not well understood, although certain genetic factors and exposure to radiation may increase the risk.
+                    
+                    Treatment options for glioma depend on the tumor's grade, size, location, and the patient's overall health. They may include surgical removal of the tumor, radiation therapy, and chemotherapy. Gliomas can be challenging to treat due to their infiltrative nature, which means they can spread and invade surrounding healthy brain tissue.
+                    
+                    The prognosis for glioma patients varies significantly depending on several factors, including the tumor grade, location, and the patient's age and overall health. Grade IV gliomas, such as GBM, have a poor prognosis, with a median survival of around 12 to 15 months even with aggressive treatment. However, advancements in research and treatment options continue to offer hope for improved outcomes and better quality of life for glioma patients.</p>
+                
+            {% elif description == 'Meningioma' %}
+                <p>A meningioma tumor is a type of tumor that arises from the meninges, the protective membranes that surround the brain and spinal cord. Meningiomas are typically slow-growing and benign (non-cancerous), although in rare cases, they can be malignant (cancerous). They are the most common primary brain tumors, accounting for approximately one-third of all brain tumors.
+
+                    Meningiomas can occur at any age, but they are most frequently diagnosed in adults, particularly in women. The exact cause of meningioma development is not fully understood, but certain risk factors, such as exposure to radiation, certain genetic conditions (e.g., neurofibromatosis type 2), and hormonal factors, may play a role.
+                    
+                    The symptoms of a meningioma tumor can vary depending on its location and size. Some common symptoms include headaches, seizures, visual disturbances, weakness or numbness in the limbs, difficulty with balance, changes in behavior or personality, and problems with memory or thinking. However, in some cases, meningiomas may not cause any noticeable symptoms and are incidentally discovered during imaging scans for unrelated reasons.
+                    
+                    The diagnosis of a meningioma typically involves a combination of imaging tests, such as magnetic resonance imaging (MRI) or computed tomography (CT) scans, and sometimes a biopsy to examine a sample of the tumor tissue. The World Health Organization (WHO) classifies meningiomas into different grades based on their characteristics, including the rate of growth and the presence of certain cellular features.
+                    
+                    Treatment options for meningiomas depend on several factors, including the tumor's size, location, grade, and the patient's overall health. In many cases, observation and regular monitoring with imaging may be sufficient if the tumor is small and not causing significant symptoms. However, if treatment is necessary, options may include surgical removal of the tumor, radiation therapy, or in some cases, targeted drug therapies.
+                    
+                    The prognosis for meningioma patients is generally favorable, especially for benign tumors that can be completely removed through surgery. The long-term outcome depends on various factors, including the tumor grade, location, and extent of surgical resection. Recurrence of meningiomas can occur, even after successful treatment, and regular follow-up with healthcare professionals is typically recommended.
+                    
+                    It's important to consult with a medical professional for accurate diagnosis, personalized treatment plans, and up-to-date information regarding meningioma tumors.</p>
+                
+            {% elif description == 'No tumor' %}
+                <p>No tumor is detected in the provided image. However, it's always recommended to consult a medical professional for accurate diagnosis and evaluation.</p>
+                
+            {% elif description == 'Pituitary' %}
+                <p>A pituitary tumor is a growth that develops in the pituitary gland, a small gland located at the base of the brain. These tumors can be classified as non-functioning, meaning they do not produce hormones, or functioning, which can cause hormonal imbalances.
+
+                    Symptoms of a pituitary tumor vary depending on its size and hormone production. Common signs include headaches, vision problems, hormonal changes such as excessive thirst or menstrual irregularities, fatigue, and weight changes. Diagnosis involves imaging tests and hormone level assessment.
+                    
+                    Treatment options for pituitary tumors depend on factors like tumor size, hormone production, and overall health. Observation may be recommended for small, asymptomatic tumors, while treatment options include medication to control hormone levels, surgery to remove the tumor, or radiation therapy.
+                    
+                    The prognosis for pituitary tumors varies based on tumor type and response to treatment. Most pituitary tumors are benign, and with proper management, the prognosis is generally good. Regular monitoring and follow-up with healthcare professionals are crucial to address potential recurrence or hormonal imbalances.
+                    
+                    In conclusion, pituitary tumors are growths in the pituitary gland that can disrupt hormone production and cause various symptoms. Timely diagnosis, appropriate treatment, and ongoing monitoring are essential for managing pituitary tumors effectively and ensuring the best possible outcomes for patients.</p>
+                
+            {% else %}
+                <p>No additional information available.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
