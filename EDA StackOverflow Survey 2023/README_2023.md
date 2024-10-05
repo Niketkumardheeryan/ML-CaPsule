@@ -4,8 +4,8 @@ Description:
 
 The enclosed data set is the complete, cleaned results of the 2023 Stack Overflow Developer Survey. Free response submissions have been removed. There are three files besides this README:
 
-1. survey_results_public.csv - CSV file with main survey results, one respondent per row and one column per answer
-2. survey_results_schema.csv - CSV file with survey schema, i.e., the questions that correspond to each column name
+1. survey_results_public.csv - CSV file with main survey results, one respondent per row and one column per answer [Data.zip/]
+2. survey_results_schema.csv - CSV file with survey schema, i.e., the questions that correspond to each column name [Data.zip/]
 3. so_survey_2022.pdf - PDF file of the survey instrument
 
 The survey was fielded from May 8, 2023 to May 19, 2023. The median time spent on the survey for qualified responses was 17 minutes.
