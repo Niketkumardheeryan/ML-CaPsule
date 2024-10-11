@@ -1,0 +1,116 @@
+Edge Detection: Extracting Image Features 
+Edge detection is a fundamental technique in image processing that aims to identify points in 
+an image where there is a sharp change in brightness. These points often correspond to object 
+boundaries, corners, or other significant features. By extracting edges, we can simplify image 
+data, preserve essential structural information, and facilitate further image analysis tasks. 
+Common Edge Detection Techniques: 
+• Gradient-Based Operators: 
+  o Sobel Operator: Detects edges by computing the gradient approximation of the 
+     image intensity function. 
+  o Prewitt Operator: Similar to Sobel but uses simpler calculations. 
+  o Canny Edge Detector: More complex but provides better results, involving 
+    noise reduction, gradient calculation, non-maximum suppression, double 
+    thresholding, and edge linking. 
+• Laplacian-Based Operators: 
+  o Laplacian of Gaussian (LoG): Detects edges by finding zero-crossings in the 
+   second derivative of the image.
+
+
+
+
+@@@@@@@@@@@@@@    CODE         @@@@@@@@@@@@@@@@@@ HERE @@@@@@@@@@@@@
+
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from skimage import io, color, transform
+from skimage.feature import canny
+from joblib import Parallel, delayed
+
+# Function to load and resize images
+def load_and_resize(image_path):
+    image = io.imread(image_path)
+    image_resized = transform.resize(image, (image.shape[0] // 2, image.shape[1] // 2), anti_aliasing=True)
+    return image_resized.astype(np.float32)  # Convert to float32 to reduce memory usage
+
+# Paths to images
+image_paths = [r"C:\Users\sailenka\OneDrive\Desktop\Desktop\ml_lab\image.jpg",
+               r"C:\Users\sailenka\OneDrive\Desktop\Desktop\ml_lab\tiger.jpg"]
+
+# Load and resize images in parallel
+resized_images = Parallel(n_jobs=2)(delayed(load_and_resize)(path) for path in image_paths)
+phone_resized, tiger_resized = resized_images
+
+print(phone_resized.shape, tiger_resized.shape)  # Check resized image shapes
+
+df = pd.DataFrame(['phone', 'tiger'], columns=['Image'])
+
+# Display original images side by side
+fig = plt.figure(figsize=(9, 3))
+ax1 = fig.add_subplot(1, 2, 1)
+ax1.imshow(phone_resized)
+ax1.set_title('Phone Image')
+ax2 = fig.add_subplot(1, 2, 2)
+ax2.imshow(tiger_resized)
+ax2.set_title('Tiger Image')
+plt.show()
+
+# Create red, green, blue channel images for the tiger
+def create_rgb_channels(image):
+    channels = []
+    for i in range(3):
+        channel = np.zeros_like(image)
+        channel[:, :, i] = image[:, :, i]
+        channels.append(channel)
+    return channels
+
+tiger_r, tiger_g, tiger_b = create_rgb_channels(tiger_resized)
+
+# Concatenate RGB channel images horizontally
+plot_image = np.concatenate((tiger_r, tiger_g, tiger_b), axis=1)
+
+# Display the RGB channel images
+plt.figure(figsize=(9, 3))
+plt.imshow(plot_image)
+plt.title('Red, Green, Blue Channels')
+plt.show()
+
+# Convert images to grayscale
+pgs = color.rgb2gray(phone_resized)
+lgs = color.rgb2gray(tiger_resized)
+
+print('Phone grayscale image shape:', pgs.shape)
+print('Tiger grayscale image shape:', lgs.shape)
+
+# Display the grayscale images and their histograms
+fig = plt.figure(figsize=(9, 6))
+ax1 = fig.add_subplot(2, 2, 1)
+ax1.imshow(pgs, cmap="gray")
+ax1.set_title('Phone Grayscale Image')
+ax2 = fig.add_subplot(2, 2, 2)
+ax2.imshow(lgs, cmap="gray")
+ax2.set_title('Tiger Grayscale Image')
+ax3 = fig.add_subplot(2, 2, 3)
+ax3.hist(pgs.flatten(), bins=30)
+ax3.set_title('Phone Image Intensity Histogram')
+ax4 = fig.add_subplot(2, 2, 4)
+ax4.hist(lgs.flatten(), bins=30)
+ax4.set_title('Tiger Image Intensity Histogram')
+plt.tight_layout()
+plt.show()
+
+# Edge detection
+phone_edge = canny(pgs, sigma=1)
+tiger_edge = canny(lgs, sigma=1)
+
+fig = plt.figure(figsize=(8, 4))
+ax1 = fig.add_subplot(1, 2, 1)
+ax1.imshow(phone_edge, cmap='binary')
+ax1.set_title('Phone Edge Detection')
+ax2 = fig.add_subplot(1, 2, 2)
+ax2.imshow(tiger_edge, cmap='binary')
+ax2.set_title('Tiger Edge Detection')
+plt.show()
+
+               
