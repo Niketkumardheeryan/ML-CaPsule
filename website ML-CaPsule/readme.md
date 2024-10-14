@@ -1,1 +1,2 @@
-Welcome to the website code of ML-CaPsule
+# ML-CaPsule-website
+building full stack website for ML-CaPsule
