@@ -49,6 +49,15 @@ See the `requirements.txt` file for more details.
 - **Speech Input**: Click the button to start listening for speech input, and the application will convert it to text and generate an image based on the recognized text.
 - **Text Input**: Alternatively, you can type in a description to generate an image.
 
+## Demo Video/Image 
+
+<img src="https://github.com/jaidh01/ML-CaPsule/blob/Speech-to-Image-Generator/Speech-to-Image%20Generator/screenshot1.png" alt="Speech to Image Converter Screenshot" width="500" />
+
+<img src="https://github.com/jaidh01/ML-CaPsule/blob/Speech-to-Image-Generator/Speech-to-Image%20Generator/screenshot2.png" alt="Speech to Image Converter Screenshot" width="500" />
+
+[Watch the demo video here](https://raw.githubusercontent.com/Niketkumardheeryan/speech-to-image-converter/main/speech-to-image.mp4)
+
+
 ## Acknowledgments
 
 This application uses the following:
