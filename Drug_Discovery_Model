@@ -1,0 +1,51 @@
+import pandas as pd
+import numpy as np
+from rdkit import Chem
+from rdkit.Chem import Descriptors
+from rdkit.Chem import rdMolDescriptors
+from rdkit.Chem.AllChem import GetMorganFingerprintAsBitVect
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+
+# Load the dataset (replace 'dataset.csv' with your actual dataset)
+# Assumed columns: 'smiles' (molecular structure in SMILES notation), 'activity' (0 or 1)
+df = pd.read_csv('drug_discovery_dataset.csv')
+
+# Function to convert SMILES to molecular descriptors (Morgan Fingerprints)
+def mol_to_fingerprint(smiles, radius=2, nBits=2048):
+    mol = Chem.MolFromSmiles(smiles)
+    if mol:
+        return np.array(GetMorganFingerprintAsBitVect(mol, radius, nBits), dtype=int)
+    else:
+        return np.zeros(nBits)
+
+# Create feature matrix (X) by applying the function to the 'smiles' column
+X = np.array([mol_to_fingerprint(smiles) for smiles in df['smiles']])
+
+# The target variable (Y) is the 'activity' column
+y = df['activity']
+
+# Split the data into training and test sets (80/20 split)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Build and train a RandomForestClassifier
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(X_train, y_train)
+
+# Make predictions on the test set
+y_pred = model.predict(X_test)
+
+# Evaluate the model
+accuracy = accuracy_score(y_test, y_pred)
+print(f'Accuracy: {accuracy:.2f}')
+
+# Predict activity of a new molecule (replace with an actual SMILES string)
+new_molecule = 'CCO'  # Example: ethanol SMILES
+new_fingerprint = mol_to_fingerprint(new_molecule).reshape(1, -1)
+prediction = model.predict(new_fingerprint)
+
+if prediction[0] == 1:
+    print(f"The molecule {new_molecule} is predicted to be biologically active.")
+else:
+    print(f"The molecule {new_molecule} is predicted to be inactive.")
