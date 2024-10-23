@@ -1380,8 +1380,485 @@ print("Bill Amount is:",c)
 print("Discount Amt is:",damt)
 print("FinalBill is:",billamt)
 
+# 83. Variable length positional arguments (*args)
+def func(*args):
+    for name in args:
+        print(f"Hello, {name}!")
+
+func("Alpha", "Beta", "Gamma", "Theta")
 
 
+# 84. Variable length keyword arguments (*args)
+def func(**args):
+    for key, value in args.items():
+        print(f"{key}: {value}")
+
+func(name = "Alice", age = "18" , country = "India")
 
 
+# 85. Program to reverse a number
+def reverse(num):
+    result = 0
+    while(num > 0):
+        result = (result*10) + (num%10)
+        num //= 10
+    return result
+    
+num = int(input("Enter an integer: "))
+print(reverse(num))
 
+# 86. Given the participant's score sheet for your college Sports Day, you are required to find the runner-up score. You are given scores. Store them in a list and find the score of the runner-up (2nd maximum).
+scores = map(int, input("Enter scores: ").split())
+scores = sorted(scores, reverse=True)
+
+print(scores)
+
+first = scores[0]
+i = 1
+while(scores[i] == first):
+    i += 1
+second = scores[i]
+
+print(f"Runner-up Score: {second}")
+
+
+# 87. Packing an Unpacking of Tuples
+t = ("One", "Two", "Three")
+
+x,y,z = t
+print(x)
+print(y)
+print(z)
+
+
+# 89. Write a program to sort words in a sentence in decreasing order of their length. Display the sorted words along with their length. (Sorting in dictionary)
+words = input("Write a sentence: ").split()
+
+d = {}
+
+for w in words:
+    d[w] = len(w)
+
+d = dict(sorted(d.items(), key= lambda item:item[1], reverse=True))
+print(d)
+
+
+# 90. COnstruct pattern using nested for loop
+'''
+*
+**
+***
+****
+*****
+'''
+i = 1
+for i in range(1, 6):
+    for j in range(1, i):
+        print("*", end='')
+    print()
+
+
+# 91.
+'''WAP that:
+- Prompts the user for a string
+- Exttract all the digits from the string
+- If there are digits:
+    - Sum the collected digits together.
+    - Printout:
+        - The original string
+        - The digits
+        - The sum of the digits
+- If there are no digits:
+    - Print the original string
+    - A message 'Has no Digits
+'''
+s = input("Enter a string: ")
+l = [int(x) for x in s if x.isdigit()]
+
+print("Original:", s)
+
+if (l == []):
+    print("Has no Digits")
+else:
+    print("Digits:",l)
+    print("Sum:",sum(l))
+
+
+# 92.
+'''WAP to using loops print pattern:
+AAAAA
+BBBB
+CCC
+DD
+E'''
+
+for i in range(65, 71):
+    for j in range(1, 71-i):
+        print(chr(i), end='')
+    print()
+
+
+# 93. WAP to print the number of occurrernce of a substring into a line
+string = input("Enter a string: ")
+substr = input("Enter the substring to be found: ")
+print(string.count(substr))
+
+
+# 94. WAP to check whether given number is palindrome or not
+def pal(num):
+    original_num = num
+    reversed_num = 0
+    while(num>0):
+        reversed_num = reversed_num*10 + (num%10)
+        num //= 10
+    if(original_num == reversed_num):
+        return "Palindrome"
+    else:
+        return "not a Palindrome"
+
+num = int(input("Enter a positive integer: "))
+
+if(num != abs(num)):
+    print("Number must be positive")
+else:
+    print(num, "is",pal(num))
+
+
+# 95. 
+'''WAP to compute the electricity bill for the user on the basis of units and following conditions:
+For first 100 units it will cost Rs 2 per unit.
+For next 300 units it will cost Rs 3 per unit.
+For the remaining units it will cost Rs 5 per unit.
+'''
+def cost(units):
+    price = 0
+    if(units <= 100):
+        price += units*2
+    elif (units > 100):
+        if (units <= 400):
+            price += 100*2
+            units -= 100
+            price += units*3
+        else:
+            price += (100*2) + (300*3)
+            units -= 400
+            price += units*5
+    return price
+
+units = int(input("Enter the units: "))
+print(f"The total bill amount for {units} units is {cost(units)}")
+
+
+# 96.
+'''WAP which takes maarks of 5 subjects from the user, calculates percentage and assign grades to the user on the basis of following condition:
+= 90 to 100 % : A+
+= 80 to 90 % : A
+= 70 to 80 % : B+
+= 60 to 70 % : B
+= Below 60 % : C
+'''
+
+def gradeCalc(per):
+    if (per < 60):
+        return 'C'
+    elif (per < 70):
+        return 'B'
+    elif (per < 80):
+        return 'B+'
+    elif (per < 90):
+        return 'A'
+    elif (per <= 100):
+        return 'A+'
+    else:
+        return 'Invalid Perecntage'
+    
+m1 = int(input("Marks for subject 1: "))
+m2 = int(input("Marks for subject 2: "))
+m3 = int(input("Marks for subject 3: "))
+m4 = int(input("Marks for subject 4: "))
+m5 = int(input("Marks for subject 5: "))
+sum = m1+m2+m3+m4+m5
+per = sum/500*100
+print(f"Percentage: {per} and Grade: {gradeCalc(per)}")
+
+
+# 96.
+'''WAP to print the following pattern:
+A
+AB
+ABC
+ABCD
+ABCDE
+'''
+
+for i in range(65, 71):
+    for j in range(65, i):
+        print(chr(j), end='')
+    print()
+
+
+# 97. WAP to input a list from the user and create a dictionary which indicates the occurrence of each element of list.
+l = input("Enter list elements: ").split()
+d = {}
+for i in l:
+    if i in d:  # If item is already present in dictionary, increment it by 1
+        d[i] += 1
+    else:   # Add count with count 1 if it is new to dictionary
+        d[i] = 1
+print(d)
+
+
+# 98. Write a function to input a string from user and generate two new strings; one consists of vowels and other consists of consonants.
+s = input('Enter a string: ')
+v = c = ''
+
+for i in s:
+    if (i.isalpha()):
+        if i.lower() in ['a', 'e', 'i', 'o', 'u']:
+            v += i
+        else:
+            c += i
+        
+print(f"Vowels: {v} and Consonants: {c}")
+
+
+# 99. WAP to input a list of color names from the user and swap the cases of the strings enter by the user and store in a new list in ascending order of the length of the word.
+l = input("Enter colors name: ").split()
+ul = []
+for item in l:
+    word = ''
+    for char in item:
+        if(char.isupper()):
+            word += char.lower()
+        elif (char.islower()):
+            word += char.upper()
+    ul.append(word)
+   
+# Sort the new list by the length of the words 
+ul.sort(key=len)
+
+print(ul)
+
+
+# 100. WAP to input a tuple and then double the even elements and triple the odd elements of the tuple.
+t = input("Enter numbers in tuple: ")
+t = (int(x) for x in t.split())
+l = []
+for i in t:
+    if (i%2 == 0):
+        l.append(i * 2)
+    else:
+        l.append(i * 3)
+
+l = tuple(l)
+print(l)    
+
+
+# 101. 
+'''WAP to print pattern:
+A
+BB
+CCC
+DDDD
+'''
+n = int(input('Enter number of rows: '))
+for i in range(0, n):
+    for j in range(0, i+1):
+        print(chr(i+65), end='')
+    print()
+
+
+# 102. Write a Python code to accept Age and Name from the user, and display a message  as Eligible to VOTE and Can get License to Drive if the Age is greater or equal to 18, else it should display the number of years to wait for the same.
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+if(age >= 18):
+    print(f"{name} you are eligible to vote and can get license to Drive")
+else:
+    print(f"{name} wait for {18-age} years to vote and wait for driving license also")
+
+
+# 103. Write a program to check if a year is leap year or not.
+year = int(input('Enter a year: '))
+if ((year%4 == 0) and (year%100 != 0 or year%400 == 0)):
+    print(f"{year} is a leap year")
+else:
+    print(f"{year} is not a leap year")
+
+
+# 104. Program to find the sum of the series till n: 1+2+3+4+5....+n
+n = int(input("Enter the value of n: "))
+sum = int(n*(n+1)/2)
+print(f"Sum: {sum}")
+
+
+# 105. Program to find the sum of the series : s=1+x+(x^2)+(x^3)+.........+(x^n) 
+n = int(input("Enter the value of n: "))
+x = int(input("Enter the value of x: "))
+sum = 0
+for p in range(0, n+1):
+    sum += x**p
+print(sum)
+
+
+# 106. Write a program to input a number and then print if the number is an armstrong
+num = int(input("Enter a number: "))
+temp = num
+sum = 0
+while(temp > 0):
+    r =temp%10
+    sum += (r)**3
+    temp //= 10
+if(sum == num):
+    print("Armstrong Number")
+else:
+    print("Not an Armstrong Number")
+
+
+# 107.  Program to input a string and then print the number of uppercase letters,  lowercase letters, alphabets and digits.
+str= input("Enter string : ") 
+cntalpha=0 
+cntdigit=0 
+cntupper=0 
+cntlower=0 
+for ch in str: 
+    if ch.islower() : 
+        cntlower+=1 
+    elif ch.isupper() : 
+        cntupper+=1 
+    elif ch.isdigit() :
+        cntdigit+=1 
+    if ch.isalpha() : 
+        cntalpha+=1 
+print("No of alphabets : ",cntalpha) 
+print("No of digits : " ,cntdigit) 
+print("No of uppercase characters : ",cntupper) 
+print("No of lowercase characters : ",cntlower)
+
+
+# 108. Create a list and perform the following methods: 1) insert() 2) remove() 3) append()
+l = []
+while(True):
+    print("\nOperations: 1. Insert 2. Append 3. Remove 4. Exit")
+    i = int(input("Operation to be performed: "))
+    if(i not in [1, 2, 3, 4]):
+        print("Invalid\n")
+    else: 
+        if (i == 1):
+            el = input("Enter an element: ")
+            ind = int(input("Enter the index at which you want to insert an element: "))
+            l.insert(ind, el)
+        elif (i == 2):
+            el = input("Enter an element: ")
+            l.append(el)
+        elif (i == 3):
+            el = input("Enter the element to be removed: ")
+            l.remove(el)
+        else:
+            break
+    print("List:", l)
+
+
+# 109. Create a dictionary and apply the following methods: 1) Print the dictionary items 2) access items 3) use get() 4)change values
+d = {}
+while(True):
+    print("\n\nOperations: 1. Access Items 2. Change 3. Use get() 4. Insert Item 5.Exit")
+    i = int(input("Operation to be performed: "))
+    if(i not in [1, 2, 3, 4, 5]):
+        print("Invalid\n")
+    else:
+        if (i == 1):
+            key = input("Enter the key for which the value is to be retrieved: ")
+            print("Key:", key, "and Value:", d[key])
+        elif (i == 2):
+            key = input("Enter the key for which you want to change the value: ")
+            value = input("Enter Value: ")
+            d[key] = value
+        elif (i == 3):
+            key = input("Enter the key for which the value is to be get: ")
+            print("Key:", key, "Value:", d.get(key))
+            continue
+        elif (i == 4):
+            key = input("Enter the key: ")
+            value = input("Enter the value: ")
+            d[key] = value
+        else:
+            break
+    print("\nDictionary:", d)
+
+
+# 110. 
+'''Write a program to create a menu with the following options:
+1. TO PERFORM ADDITITON 
+2. TO PERFORM SUBTRACTION
+3. TO PERFORM MULTIPICATION 
+4. TO PERFORM DIVISION
+Accepts users input and perform the operation accordingly. Use functions with arguments.
+'''
+def Add(num1, num2):
+    return num1+num2
+def Sub(num1, num2):
+    return num1-num2
+def Mult(num1, num2):
+    return num1*num2
+def Div(num1, num2):
+    return num1/num2
+while True:
+    print("\n\nOperations: 1. Addition 2. Subtraction 3. Multiplication 4. Division 5. Exit")
+    op = int(input("Enter the operation number: "))
+    if (op not in [1, 2, 3, 4, 5]):
+        print("Invalid Value. Try again...")
+        continue
+    if (op == 5):
+        print("Exiting the program...")
+        break 
+    num1 = int(input("First Number: "))
+    num2 = int(input("Second Number: "))
+    match (op):
+        case (1):
+            print(num1,"+", num2, " = ", Add(num1, num2))
+        case (2):
+            print(num1,"-", num2, " = ", Sub(num1, num2))
+        case (3):
+            print(num1,"*", num2, " = ", Mult(num1, num2))
+        case(4):
+            print(num1,"/", num2, " = ", Div(num1, num2))            
+
+
+# 111. Check whether the given string is palindrome or not.
+s = input("Enter a string: ")
+if (s == s[::-1]):
+    print(s, "is a palindrome")
+else:
+    print(s, "is not a palindrome")
+
+
+# 112. Write a Python function that takes two lists and returns True if they are equal otherwise, it is false.
+def equalList(l1, l2):
+    return l1==l2
+while(True):
+    l1 = list(input("Enter list 1 separated by space: "))
+    l2 = list(input("Enter list 2 separated by space: "))
+    print("Equality Status:", equalList(l1, l2))     
+    i = input("Do you want to exit? (Y/N)\n")
+    i = i.upper()
+    if (i in ['Y', 'N']):
+        if (i == 'Y'):
+            break
+    else:
+        print("Invalid Input")
+
+
+# 113. Write a program to input two different tuples and then create a tuple with all the common elements from the two tuples. For example: If tuple1 = (11, 22, 44, 55, 99, 66) and tuple2 = (44, 22, 55, 12, 56) then tuple3 is to be created as tuple3 = (22, 44, 55).
+t1 = tuple(input("Enter values for tuple1: "))
+t2 = tuple(input("Enter values for tuple2: "))
+t1 = tuple(t1.split(" "))
+t2 = tuple(t2.split(" "))
+t3 = tuple(x for x in t1 if x in t2)
+print(t3)
+
+
+# 114. Write a program to input a tuple containing names of cities and then display the names of all those cities that start with the alphabet 'A'. For example, if the tuple contains ("AHMEDABAD", CHENNAI", "NEW DELHI", "AMRITSAR", "AGRA"), then the program should print AHMEDABAD, AMRITSAR, and AGRA.
+names = input("Enter the cities: ")
+names = names.split(", ")
+result = [x for x in names if x[0] in ('A', 'a')]
+print(result)
