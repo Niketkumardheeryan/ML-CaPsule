@@ -1,0 +1,39 @@
+{
+  "name": "my-ext",
+  "displayName": "llm_ext",
+  "description": "coding copilot",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "my-ext.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "lint": "eslint src --ext js",
+    "pretest": "npm run compile && npm run lint",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "20.x",
+    "@types/vscode": "^1.92.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "vscode-test": "^1.6.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.3"
+  }
+}
