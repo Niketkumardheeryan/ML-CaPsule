@@ -418,6 +418,28 @@ Happy Coding! 👩‍💻👨‍💻
   </tr>
 </table>
 
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## Stargazers ❤️
+
+<div align='left'>
+
+[![Stargazers repo roster for @Niketkumardheeryan/ML-CaPsule](https://reporoster.com/stars/dark/Niketkumardheeryan/ML-CaPsule)](https://github.com/Niketkumardheeryan/ML-CaPsule/stargazers)
+
+
+</div>
+
+## Forkers ❤️
+
+[![Forkers repo roster for @Niketkumardheeryan/ML-CaPsule](https://reporoster.com/forks/dark/Niketkumardheeryan/ML-CaPsule)](https://github.com/Niketkumardheeryan/ML-CaPsule/network/members)
+
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+
+
+
+
 
 ## License 
 <img src = "https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
