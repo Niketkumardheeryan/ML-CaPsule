@@ -8,6 +8,48 @@
 <div class="container">
 <div class="row">
     <h2 align="center">Select a photo</h2>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-top: 50px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .btn-info {
+            background-color: #3498db;
+            border: none;
+        }
+        .btn-info:hover {
+            background-color: #2980b9;
+        }
+        .image-container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: right;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+    </style>
+
     <p>
         {% with messages = get_flashed_messages() %}
           {% if messages %}
