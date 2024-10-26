@@ -1,0 +1,3 @@
+- The link for the dataset used in this project: https://www.kaggle.com/datasets/nirmalsankalana/sugarcane-leaf-disease-dataset
+
+- Manually collected image dataset of sugarcane leaf disease. It has mainly five main categories in it. Healthy, Mosaic, Redrot, Rust, and Yellow disease. The dataset has been captured with smartphones of various configurations to maintain the diversity. It contains a total of 2569 images including all categories. This database has been collected in Maharashtra, India. The database is balanced and contains good variety. The image sizes are not constant as they originate from various capturing devices. All images are in RGB format.
