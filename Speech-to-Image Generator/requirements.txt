@@ -1,0 +1,5 @@
+streamlit==1.38.0
+Pillow==10.4.0
+torch==2.4.0
+diffusers==0.30.0
+speechrecognition==3.10.4
