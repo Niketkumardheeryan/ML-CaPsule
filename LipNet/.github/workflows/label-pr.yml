@@ -1,0 +1,86 @@
+name: Sync PR Labels with Linked Issues
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'  # Run every 2 hours
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Process all open PRs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          process_pr() {
+            pr_number=$1
+            pr_body=$2
+            
+            # Extract issue number from PR body
+            issue_number=$(echo "$pr_body" | grep -oP '(?<=#)\d+' | head -n 1)
+            
+            if [ -n "$issue_number" ]; then
+              echo "PR #$pr_number is linked to issue #$issue_number"
+              
+              # Get labels from the linked issue
+              issue_labels=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+                             "https://api.github.com/repos/${{ github.repository }}/issues/$issue_number" \
+                             | jq -r '.labels[].name')
+              
+              if [ -n "$issue_labels" ]; then
+                echo "Labels found on issue #$issue_number: $issue_labels"
+                
+                # Apply labels to the PR
+                label_json=$(echo "$issue_labels" | jq -R . | jq -s .)
+                curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
+                     -H "Accept: application/vnd.github.v3+json" \
+                     "https://api.github.com/repos/${{ github.repository }}/issues/$pr_number/labels" \
+                     -d "{\"labels\": $label_json}"
+                
+                echo "Applied labels to PR #$pr_number"
+              else
+                echo "No labels found on issue #$issue_number"
+              fi
+            else
+              echo "PR #$pr_number has no linked issue number"
+              
+              # Comment on the PR if no issue is linked
+              comment_body="Please link an issue number in the PR description using the format #issue_number."
+              curl -X POST -H "Authorization: token $GITHUB_TOKEN" \
+                   -H "Accept: application/vnd.github.v3+json" \
+                   "https://api.github.com/repos/${{ github.repository }}/issues/$pr_number/comments" \
+                   -d "{\"body\": \"$comment_body\"}"
+              
+              echo "Commented on PR #$pr_number to request issue link"
+            fi
+          }
+
+          # Get all open PRs
+          page=1
+          while true; do
+            prs=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+                 "https://api.github.com/repos/${{ github.repository }}/pulls?state=open&per_page=100&page=$page")
+            
+            # Break if no more PRs
+            if [ "$(echo "$prs" | jq length)" -eq 0 ]; then
+              break
+            fi
+            
+            # Process each PR
+            echo "$prs" | jq -c '.[]' | while read -r pr; do
+              pr_number=$(echo "$pr" | jq -r '.number')
+              pr_body=$(echo "$pr" | jq -r '.body')
+              process_pr "$pr_number" "$pr_body"
+            done
+            
+            page=$((page + 1))
+          done
+
+      - name: Provide summary
+        run: |
+          echo "Processing of all open PRs is complete."
+          echo "Please check the job log for details on each PR."
