@@ -31,7 +31,8 @@ The dataset was organized by CFPB and cleaned by [halpert3](https://github.com/h
 We use a Random Forest Classifier to categorize each complaint into one of the five financial classes. The text data undergoes preprocessing, and we create a TF-IDF matrix for feature extraction. The model is then trained and evaluated on this matrix.
 
 ### Performance
-The Random Forest model achieves approximately 80% accuracy, with performance metrics varying slightly across the different complaint categories due to class imbalance.
+The Random Forest model achieves approximately 79.6% accuracy, with a weighted F1-score of 0.80. Performance metrics are slightly varied due to class imbalance, with the model performing best on the majority class (Credit Reporting).
+
 
 ## Installation
 1. Clone this repository:
