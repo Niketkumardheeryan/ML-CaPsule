@@ -1,0 +1,2 @@
+##OPEN API STUFF
+OPENAI_API_KEY = "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"
