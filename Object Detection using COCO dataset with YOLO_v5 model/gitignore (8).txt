@@ -1,0 +1,38 @@
+__pycache__/
+*.py[cod]
+*.so
+
+.ipynb_checkpoints/
+
+# Python virtual environments
+env/
+venv/
+
+# YOLOv5 Weights
+*.pt
+runs/
+weights/
+
+
+*.log
+
+
+*.o
+*.a
+*.out
+*.exe
+
+# Data files
+data/
+*.csv
+*.json
+
+# System files
+.DS_Store
+Thumbs.db
+
+# PyCharm/IDEA
+.idea/
+
+# Visual Studio Code
+.vscode/
