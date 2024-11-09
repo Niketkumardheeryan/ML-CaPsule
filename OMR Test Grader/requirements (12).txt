@@ -1,0 +1,5 @@
+streamlit
+numpy 
+pandas 
+opencv-python-headless
+imutils
