@@ -8,7 +8,7 @@ I'm happy to welcome all the contributions from anyone willing to add new script
 
 ## 💻Before Contributing
 
-Welcome to [Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-). Before sending your pull requests, make sure that you **read the whole guidelines**. If you have any doubt on the contributing guide, please feel free to reach out.
+Welcome to [Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-](https://github.com/Niketkumardheeryan/ML-CaPsule). Before sending your pull requests, make sure that you **read the whole guidelines**. If you have any doubt on the contributing guide, please feel free to reach out.
 
 
 ## 🙌Contribution
@@ -23,11 +23,11 @@ Following are the steps to guide you:
 * Step 1: Fork the repo and Go to your Git terminal and  clone it on your machine.
 * Step 2: Add a upstream link to main branch in your cloned repo
     ```
-    git remote add upstream https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-.git
+    git remote add upstream https://github.com/Niketkumardheeryan/ML-CaPsule.git
     ```
 * Step 3: Keep your cloned repo upto date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
     ```
-    git pull upstream main https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-.git
+    git pull upstream main https://github.com/Niketkumardheeryan/ML-CaPsule.git
     ```
 * Step 4: Create your feature branch (This is a necessary step, so don't skip it)
     ```
@@ -51,9 +51,9 @@ Following are the steps to guide you:
 > - Give a meaningful name to whatever file or folder you are adding, for e.g., if you have written a Python code on Hello World, then hello_world.py is one example of valid name.
 
 
-## 💡What should I keep in mind while contributing?
+### 💡What should I keep in mind while contributing?
 
-### 🎗Coding Style
+##🎗Coding Style
 
 We want your work to be readable by others; therefore, we encourage you to note the following:
 
@@ -61,7 +61,10 @@ We want your work to be readable by others; therefore, we encourage you to note 
 - Please write in Python 3.7+.  __print()__ is a function in Python 3 so __print "Hello"__ will _not_ work but __print("Hello")__ will.
 - Please focus hard on naming of functions, classes, and variables.  Help your reader by using __descriptive names__ that can help you to remove redundant comments.
   - Please follow the [Python Naming Conventions](https://pep8.org/#prescriptive-naming-conventions) so variable_names and function_names should be lower_case, CONSTANTS     in UPPERCASE, ClassNames should be CamelCase, etc.
-  - Expand acronyms because __gcf()__ is hard to understand but __greatest_common_factor()__ is not. 
+  - Try to add .ipynb files rather than  .py files.
+  - Add Proper Readme. md with proper headings and results(SS, recorded videos)
+  - We have many basic ML/DL Projects either improve them or add new Projects
+  - Code must be properly documented
 
 
 ## 🔑Guidelines
@@ -69,9 +72,9 @@ We want your work to be readable by others; therefore, we encourage you to note 
 1. Welcome to this repository, if you are here as open source program participant/contributor.
 2. Participants / contributors have to **comment** on issues they would like to work on, and mentors or the PA will assign you.
 3. Issues will be assigned on a **first-come, first-serve basis.**
-4. Participants / contributors can also **open their issues** using [issue_template](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/tree/main/.github/issue_template), but it needs to be verified and labelled by a mentor or PA. Please discuss with the team once before opening your issues. We respect all your contributions, whether it is an Issue or a Pull Request.
+4. Participants / contributors can also **open their issues** using [issue_template](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/.github/issue_template), but it needs to be verified and labeled by a mentor or PA. Please discuss with the team once before opening your issues. We respect all your contributions, whether it is an Issue or a Pull Request.
 5. When you raise a issue, make sure you get it assigned to you before you start working on that project.
-6. Each participant / contributor will be **assigned 1 issue (max)** at a time to work.
+6. Each participant/contributor will be **assigned 1 issue (max)** at a time to work.
 7. Participants are expected to follow **project guidelines** and [**coding style**](https://pep8.org/"). **Structured code** is one of our top priority.
 8. Try to **explain your approach** to solve any issue in the comments. This will increase the chances of you being assigned.
 9. Don't create issues that are **already listed**.
@@ -80,7 +83,7 @@ We want your work to be readable by others; therefore, we encourage you to note 
 12. Pull requests will be merged after being **reviewed** by a mentor or PA.
 13. It might take **a day or two** to review your pull request. Please have patience and be nice.
 14. Always create a pull request from a **branch** other than `main`.
-15. Participants / contributors have to complete issues before the decided Deadline. If you fail to make a PR within the deadline, then the issue will be assigned to another person in the queue.
+15. Participants/contributors have to complete issues before the decided Deadline. If you fail to make a PR within the deadline, then the issue will be assigned to another person in the queue.
 16. While making PRs, don't forget to **add a description** and **screenshots** of your work.
 17. Include issue number (Fixes:issuenumber) in your commit message while creating a pull request.
 18. Make sure your solution to any issue is better in terms of performance and other parameters in comparison to the previous work.
@@ -89,10 +92,10 @@ We want your work to be readable by others; therefore, we encourage you to note 
 
 ### 🧲Pull Requests Review Criteria
 
-1. Please fill the **[PR Template](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/main/.github/pullrequest_template.md)** properly while making a Pull Request.
-2. You must add your code .py file into the respective **folders**.
+1. Please fill the **[PR Template](https://github.com/Niketkumardheeryan/ML-CaPsule/blob/main/.github/pullrequest_template.md)** properly while making a Pull Request.
+2. You must add your code .ipynb file into the respective **folders**.
 3. Your work must be original, written by you not copied from other resources.
-4. You must comment on your code where necessary.
+4. You'll need to comment on your code where necessary.
 5. Follow the proper [style guides](https://google.github.io/styleguide/) for your work.
 6. For any queries or discussions, please feel free to drop a message.
 
@@ -101,11 +104,11 @@ We want your work to be readable by others; therefore, we encourage you to note 
 
 We want your work to be readable by others; therefore, we encourage you to note the following:
 
-- Create a folder with a meaningful repository name (If Digital Clock is submitted for example, the Folder Name should be "Digital Clock" and the File Name as "digital_clock.py")
-- File extension for code should be `.py`. 
+- Create a folder with a meaningful repository name (If Digital Clock is submitted for example, the Folder Name should be "Digital Clock" and the File Name as "digital_clock.ipynb")
+- File extension for code should be `.ipynb`. 
 - Strictly use snake_case (underscore_separated) in your file_name, as it will be easy to parse in future using scripts.
 - Please avoid creating new directories if at all possible. Try to fit your work into the existing directory structure you have created for your project. If you want to,  please contact before doing so.
-- The [README.md](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/blob/main/.github/readme_template.md) file should be concise and clear about what the project is about and what it does.
+- The [README.md](https://github.com/Niketkumardheeryan/ML-CaPsule/blob/main/.github/readme_template.md) file should be concise and clear about what the project is about and what it does.
 - It should be documented briefly enough to let readers understand. Screenshot inclusion is must
 - If you have modified/added code work, make sure the code compiles before submitting.
 - If you have modified/added documentation work, ensure your language is concise and contains no grammar errors.
