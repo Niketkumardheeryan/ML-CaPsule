@@ -24,3 +24,9 @@ torch
 pillow
 matplotlib
 albumentations
+
+Result Demo:
+-------------
+
+![result-demo-obj-det](https://github.com/user-attachments/assets/0c5020e1-d3e7-4789-a16a-16b44f1b85af)
+
