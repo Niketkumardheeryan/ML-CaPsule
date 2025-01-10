@@ -30,17 +30,14 @@ Welcome to **ML-Capsule**! This repository is a comprehensive collection of mach
   </p>
 </div>
 
-
-
 ## 📈 Why Machine Learning?
 
 Machine learning is a technique to analyze data that automates the process of building analytical models. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns, and make decisions with minimal human intervention.
 
-
 ![image](https://github.com/user-attachments/assets/74298769-1c33-41bb-a9a4-178d455211e5)
 
-
 ### Importance of Machine Learning
+
 Machine learning is crucial because it provides enterprises with insights into customer behavior and business operational patterns, and supports the development of new products. Leading companies like Facebook, Google, and Uber integrate machine learning into their operations, making it a significant competitive differentiator.
 
 ## 📚 Pre-requisites
@@ -51,22 +48,26 @@ Machine learning is crucial because it provides enterprises with insights into c
 ## 🗂️ Topics Covered
 
 ### 1. Extracting Data
+
 Extraction refers to methods of constructing combinations of variables to accurately describe the data.
 
 - **Web Scraping**: Library used - Beautiful Soup, to extract data from web pages.
 
 ### 2. Visualization
+
 Data visualization places data in a visual context to expose patterns, trends, and correlations.
 
 - **Libraries Used**: Seaborn, pandas, matplotlib
 
 ### 3. Feature Selection
+
 The process of selecting relevant features for use in a model to increase accuracy and performance.
 
 - **Library Used**: scikit-learn
 - **Learn More**: [Feature Selection](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/)
 
 ### 4. Basic Concepts of Statistics
+
 - **Analytics Types**: Descriptive, Diagnostic, Predictive, Prescriptive
 - **Probability**: Conditional, Independent Events, Bayes’ Theorem
 - **Central Tendency**: Mean, Mode, Variance, Skewness, Kurtosis, Standard Deviation
@@ -76,16 +77,13 @@ The process of selecting relevant features for use in a model to increase accura
 - **Hypothesis Testing**: Null and Alternative Hypothesis, Z-Test, T-Test, ANOVA, Chi-Square Test
 - **Regression**: Linear Regression, Multiple Linear Regression
 
-
   ![image](https://github.com/user-attachments/assets/0ee2ef0e-9c01-42d2-8843-0690054cbad6)
-
 
 ### 5. Data Science
 
+- Data science is a dynamic and multidisciplinary field dedicated to extracting insights and solving complex problems through data.
 
-- Data science is a dynamic and multidisciplinary field dedicated to extracting insights and solving complex problems through data. 
-
-- **Multidisciplinary investigations** leverage knowledge from various domains, such as economics, biology, and engineering, to create comprehensive solutions by integrating diverse perspectives. 
+- **Multidisciplinary investigations** leverage knowledge from various domains, such as economics, biology, and engineering, to create comprehensive solutions by integrating diverse perspectives.
 
 - **Models and methods for data** are at the heart of data science, employing statistical techniques and advanced machine learning algorithms to uncover patterns, make predictions, and inform decisions.
 - **Pedagogy** in data science is concerned with the development and implementation of effective teaching practices and educational tools to ensure that learners acquire the necessary skills and knowledge.
@@ -93,9 +91,7 @@ The process of selecting relevant features for use in a model to increase accura
 - The **theory** behind data science provides the mathematical and statistical foundations necessary for developing and applying various methods. Finally, **tool evaluation** focuses on assessing and selecting the best software, programming languages, and platforms based on performance and usability to ensure effective data analysis.
 - Together, these areas contribute to the robust and evolving nature of data science, driving innovation and informed decision-making across multiple sectors.
 
-
 ![image_processing20191213-6403-1j99nlm](https://github.com/user-attachments/assets/4041ea94-22d0-4e42-8247-1782c9d02301)
-
 
 ## Available Projects
 
@@ -237,14 +233,15 @@ The process of selecting relevant features for use in a model to increase accura
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Email%20Classifier">Email Classifier</a></td>
 <td align="center">51.</td>
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Emotion%20Recognition%20Based%20on%20NLP">Emotion Recognition Based on NLP</a></td>
-
-
+<td align="center">52.</td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Parkinson%20Disease%20Prediction%20Model">Parkinson Disease Prediction Model</a></td>
 
 </table>
 
 & many more.......
 
-You can find All the Projects 
+You can find All the Projects
+
 <h3>Live Project -- https://github.com/Niketkumardheeryan/ML-CaPsule</h2>
 
 ## 📂 Project Descriptions
@@ -280,6 +277,7 @@ Here are some of the exciting projects featured in this repository:
 This repository offers a rich collection of machine learning and data science projects. It includes well-documented examples, practical projects, and extensive resources to help you understand and implement various machine learning techniques.
 
 ## 🔗 Useful URLs
+
 - [8 Basic Statistics Concepts](https://www.kdnuggets.com/2020/06/8-basic-statistics-concepts.html)
 - [Coursera: Machine Learning with Python](https://www.coursera.org/learn/machine-learning-with-python)
 - [W3Schools: Python ML Getting Started](https://www.w3schools.com/python/python_ml_getting_started.asp)
@@ -287,17 +285,17 @@ This repository offers a rich collection of machine learning and data science pr
 - [Great Learning: Data Science](https://www.greatlearning.in/great-lakes-pgpdsba?&utm_source=Google&utm_medium=Search&utm_campaign=6Cities_Exact_Data_Science_Search_New_DS&adgroup_id=101317851589&campaign_id=10174480218&Keyword=data%20scientist&placement=&utm_content=c&gclid=CjwKCAjwn6GGBhADEiwAruUcKqPCvPIk1X_5mVRXj5prdpSIULnd40QgTB4kChfiFgAL1kDErGeLHRoCapUQAvD_BwE)
 
 ## 🚀 Get Started
+
 This repository showcases a diverse collection of machine learning projects and data science algorithms, ranging from basic to advanced levels. It includes topics on machine learning, deep learning, SQL, NLP, object detection, classification, recommendation systems, chatbots, and much more.
 
-
 ### 🌟 Have a Look!
-Give this project a ⭐ if you love it!
 
+Give this project a ⭐ if you love it!
 
 ![image](https://github.com/user-attachments/assets/c4127f06-981e-468a-8370-6b556391674c)
 
-
 ### ⚙️ Contribution Guidelines
+
 - Check the [Contribution Guidelines](CONTRIBUTING.md)
 - Take a look at the [Existing Issues](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/issues)
 - Create your [Pull Request](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/pulls)
@@ -309,26 +307,30 @@ To submit your contributions, follow these steps:
 1. **Fork the Repository**: Click the "Fork" button at the top right corner of the repository to create your own copy.
 
 2. **Clone Your Fork**: Clone your forked repository to your local machine using the following command:
-    ```bash
-    git clone https://github.com/Niketkumardheeryan/ML-CaPsule
-    ```
+
+   ```bash
+   git clone https://github.com/Niketkumardheeryan/ML-CaPsule
+   ```
 
 3. **Create a Branch**: Create a new branch for your changes:
-    ```bash
-    git checkout -b my-feature
-    ```
+
+   ```bash
+   git checkout -b my-feature
+   ```
 
 4. **Make Changes**: Make your desired changes to the codebase.
 
 5. **Commit Changes**: Commit your changes with a descriptive commit message:
-    ```bash
-    git commit -m "Add new feature"
-    ```
+
+   ```bash
+   git commit -m "Add new feature"
+   ```
 
 6. **Push Changes**: Push your changes to your forked repository:
-    ```bash
-    git push origin my-feature
-    ```
+
+   ```bash
+   git push origin my-feature
+   ```
 
 7. **Submit a Pull Request**: Go to your forked repository on GitHub and submit a pull request. Be sure to provide a detailed description of your changes and why they are necessary.
 
@@ -341,22 +343,18 @@ The project directory is organized as follows:
 - **Code_of_Conduct.md**: Outlines our community code of conduct and expectations for contributors.
 - **LICENSE**: Specifies the license under which the repository is distributed.
 
-
 ### 📖 Code of Conduct
+
 Please read our [Code of Conduct](CODE_OF_CONDUCT.md).
 ![image](https://github.com/user-attachments/assets/facf66f2-6e97-4f17-80c9-06b8e3f442f4)
 
-
 ### 📝 License
+
 This project is licensed under the MIT License.
-
-
-
 
 Feel free to create new issues, fix bugs, and contribute to our projects. Join our community and help us build amazing machine learning solutions!
 
 Happy Coding! 👩‍💻👨‍💻
-
 
 ## Some awesome Contributors ✨
 
@@ -426,22 +424,16 @@ Happy Coding! 👩‍💻👨‍💻
 
 [![Stargazers repo roster for @Niketkumardheeryan/ML-CaPsule](https://reporoster.com/stars/dark/Niketkumardheeryan/ML-CaPsule)](https://github.com/Niketkumardheeryan/ML-CaPsule/stargazers)
 
-
 </div>
 
 ## Forkers ❤️
 
 [![Forkers repo roster for @Niketkumardheeryan/ML-CaPsule](https://reporoster.com/forks/dark/Niketkumardheeryan/ML-CaPsule)](https://github.com/Niketkumardheeryan/ML-CaPsule/network/members)
 
-
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
+## License
 
-
-
-
-
-## License 
 <img src = "https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
 
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
