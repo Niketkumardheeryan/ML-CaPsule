@@ -77,10 +77,10 @@ The models are evaluated using the following metrics:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/akshat12-20/Sales_Prediction.git
+   git clone https://github.com/worldisconfusion/ML-CaPsule.git
 
 2. Navigate to the project directory:
-    cd sales-forecasting
+    cd Sales Prediction(Research Paper Implementation)
 
 3. Install the required packages:
     pip install -r requirements.txt
