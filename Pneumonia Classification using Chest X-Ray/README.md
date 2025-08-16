@@ -115,6 +115,6 @@ The `Pneumonia` class can be further classified into `Bacterial Pneumonia` or `V
 
 Connect with me :)
 
--  `LinkedIn` : [subhranil-nandy](www.linkedin.com/in/subhranil-nandy)
+-  `LinkedIn` : [subhranil-nandy](https://www.linkedin.com/in/subhranil-nandy/)
 
 -  `GitHub` : [Subhranil2004](https://github.com/Subhranil2004)
