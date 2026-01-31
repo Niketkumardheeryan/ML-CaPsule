@@ -5,6 +5,13 @@
 ## Dataset link:
 https://www.kaggle.com/datasets/ayush4807/aad-dataset
 
+## Data Preprocessing Steps: 
+1. Removed null and inconsistent values.
+2. Cleaned Categorical fields
+3. Converted duration and year formats
+4. Encoded genre and category features
+5. Normalized Numerical values where required.
+
 ## Techniques used: 
 1. Data Filtering
 2. Data Preprocessing
@@ -22,7 +29,7 @@ https://www.kaggle.com/datasets/ayush4807/aad-dataset
 6. Pickle
 
 ## Data visuals created:
-1. Hsitogram
+1. Histogram
 2. Box plot
 3. Scatter Plot
 4. Bar plot
@@ -60,6 +67,14 @@ https://www.kaggle.com/datasets/ayush4807/aad-dataset
 ## Results say that:
 ### 1. Linear Regression and Random Forest Algorithms show a very low training score and a high error values and due to which they are not the best fit models. The predictions of <u>Ratings</u> based on those models is also very low for the future years.
 ### 2. The Decision Tree on the other hand makes a very good predictions of ratings and we can say that the type of Animes we selected can catch more attention of audiences in the coming years. The evaluation metrics are stable and error results are very low this makes it fit to create a good predictive analysis example.
+
+## How to run this project: 
+1. Download dataset from Kaggle
+2. Install dependencies:
+   pip install pandas numpy matplotlib seaborn scikit-learn
+3. Run the Notebook/Script step by step
+4. Visuals and predictions will be generated.
+
 
 ## Authors
 
