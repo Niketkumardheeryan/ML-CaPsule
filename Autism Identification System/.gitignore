@@ -1,0 +1,62 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Model files
+saved_models/*.pkl
+saved_others/*.pkl
+
+# Generated charts
+charts/*.png
+charts/*.jpg
+
+# Temporary files
+*.tmp
+*.temp
+
+# Python testing cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Dataset files (optional)
+# Uncomment if dataset is large/private
+# data/*.csv
+
+# Jupyter runtime
+*.ipynb_checkpoints
+
+# Mac/Linux hidden files
+*.swp
