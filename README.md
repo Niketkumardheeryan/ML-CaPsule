@@ -31,6 +31,21 @@ Welcome to **ML-Capsule**! This repository is a comprehensive collection of mach
 </div>
 
 
+## 📑 Table of Contents
+
+- [Why Machine Learning?](#-why-machine-learning)
+- [Pre-requisites](#-pre-requisites)
+- [Topics Covered](#️-topics-covered)
+- [Available Projects](#available-projects)
+- [Project Descriptions](#-project-descriptions)
+- [Useful URLs](#-useful-urls)
+- [Get Started](#-get-started)
+- [Contribution Guidelines](#️-contribution-guidelines)
+- [Submitting a Pull Request](#submitting-a-pull-request)
+- [Project Directory Structure](#project-directory-structure)
+- [Code of Conduct](#-code-of-conduct)
+- [License](#-license)
+- [Contributors](#some-awesome-contributors-)
 
 ## 📈 Why Machine Learning?
 
