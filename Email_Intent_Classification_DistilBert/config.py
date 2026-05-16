@@ -1,0 +1,11 @@
+MODEL_NAME = "distilbert-base-uncased"
+
+MAX_LENGTH = 128
+
+TRAIN_BATCH_SIZE = 4
+
+EVAL_BATCH_SIZE = 4
+
+LEARNING_RATE = 2e-5
+
+EPOCHS = 2

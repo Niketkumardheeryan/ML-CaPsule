@@ -1,0 +1,30 @@
+email,intent
+"I need help resetting my password",support
+"My account is locked",support
+"I cannot login to dashboard",support
+"Support team is not responding",support
+
+"I want refund for my payment",billing
+"Payment failed but money deducted",billing
+"Billing amount is incorrect",billing
+"I was charged twice",billing
+
+"This service is terrible",complaint
+"I am unhappy with support response",complaint
+"The application crashes frequently",complaint
+"Very poor experience with the platform",complaint
+
+"Can you provide more details?",inquiry
+"I want to know pricing plans",inquiry
+"Do you have enterprise subscription?",inquiry
+"How does this platform work?",inquiry
+
+"Great service and support",feedback
+"I really liked the platform",feedback
+"The UI looks amazing",feedback
+"Excellent customer support experience",feedback
+
+"You won a free iPhone click now",spam
+"Claim lottery reward immediately",spam
+"Get rich fast by clicking here",spam
+"Limited offer click this suspicious link",spam
