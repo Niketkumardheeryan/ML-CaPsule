@@ -31,9 +31,6 @@ AI-JARVIS is an intelligent voice assistant or personal assistant that can perfo
   * [Bug / Feature Request](#bug---feature-request)
   * [Future scope of project](#future-scope)
 
-## Demo
-Link: [https://youtu.be/c5g8Q0sDR0g](https://youtu.be/c5g8Q0sDR0g)
-
 ## Overview
 AI JARVIS has 19 functionalities :-
 1) **Predicts the innings Score**
