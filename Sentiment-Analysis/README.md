@@ -1,4 +1,4 @@
-#  Sentiment-Analysis-Major-Project : Using ML model and then Hosting on Heroku and Streamlit:https://sentanalyser.herokuapp.com/
+##  Sentiment-Analysis-Major-Project : Using ML model and then Hosting on Heroku and Streamlit:https://sentanalyser.herokuapp.com/ *(Note: Heroku free tier was discontinued in Nov 2022 — this deployment may no longer be active. See the source code to deploy on an alternative platform like Streamlit Cloud, Railway, or Render.)*
 
 This is a real world project on Sentiment Analysis which takes in text input from the user and predicts if the sentiment of the text is positive or negative.
 
@@ -28,7 +28,7 @@ The Following steps Were Followed For Completing This Project:
 
 
 
- the link to the web app (Hosted On Heroku And Streamlit):
+the link to the web app (Hosted On Heroku And Streamlit):
 
 
-https://sentanalyser.herokuapp.com/
+https://sentanalyser.herokuapp.com/ *(Note: Heroku free tier was discontinued in Nov 2022 — this deployment may no longer be active. See the source code to deploy on an alternative platform.)*
