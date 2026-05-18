@@ -64,12 +64,3 @@ This analysis can help:
 - **Data teams** evaluate content performance relative to launch timing.
 
 ---
-
-## 🚀 How to Run
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/anagha1112/Netflix_Content_Strategy_Analysis.git
-   cd netflix-content-strategy
-   
-
