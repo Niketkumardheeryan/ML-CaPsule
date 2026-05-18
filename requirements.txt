@@ -1,2 +1,6 @@
-requests
-bs4
+pandas>=1.5
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.12
+scikit-learn>=1.3
+jupyter>=1.0
