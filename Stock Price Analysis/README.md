@@ -1,36 +1,69 @@
-# **Stock Price Analysis**
+# Stock Price Analysis
 
-**AIM**
+## AIM
 
-The aim of the project was to build a model to analyse the stock market prices using time series forecasting.
+The aim of the project is to analyze and forecast stock market prices using both traditional time-series forecasting techniques and machine learning models.
 
-**DATASET**
+---
 
-Dataset can be downloaded from [here](https://www.kaggle.com/rohanrao/nifty50-stock-market-data).  
+## DATASET
 
-**STEPS**
+Dataset can be downloaded from [Kaggle](https://www.kaggle.com/rohanrao/nifty50-stock-market-data).
+
+---
+
+## STEPS
+
 - Importing Libraries
-- Data Visualisation
+- Data Visualization
 - Data Handling
-- Training the model
+- Feature Engineering
+- Model Training
 - Model Evaluation
+- Forecast Comparison
 
+---
 
-**MODEL USED**
--  ARIMA
+## MODELS USED
 
+- ARIMA
+- Linear Regression
+- Random Forest Regressor
 
-**LIBRARIES USED**
+---
+
+## LIBRARIES USED
+
 - pandas
 - numpy
 - os
-- seaborn
 - matplotlib
-- statsmodel
-- sklearn
+- seaborn
+- statsmodels
+- scikit-learn
+- kagglehub
 
-**Conclusion**  
-```
-Testing Mean Squared Error: 1431.999  
-Symmetric mean absolute percentage error: 1.503
-```
+---
+
+## FEATURES ADDED
+
+- Lag-based feature engineering
+- Multi-model forecasting support
+- Comparative performance evaluation
+- Actual vs Predicted visualization
+- RMSE, MAE, and R² evaluation metrics
+
+---
+
+## EVALUATION METRICS
+
+- RMSE (Root Mean Squared Error)
+- MAE (Mean Absolute Error)
+- R² Score
+- SMAPE (Symmetric Mean Absolute Percentage Error)
+
+---
+
+## CONCLUSION
+
+The project now supports comparative forecasting using statistical and machine learning approaches. This improves experimentation capability and helps evaluate model performance across different forecasting techniques.
