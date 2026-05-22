@@ -42,11 +42,11 @@ The dataset contains **45,213 records** with **17 features**:
 
 ```
 Random-Forest/
-Bank_Marketing_Prediction_Random_Forest/
-├── bank_marketing_prediction.ipynb
-├── bank.csv
-|── bank_sec.csv
-└── README.md
+│
+├── README.md                 # Project documentation
+│── bank_marketing_prediction.ipynb           # Main Jupyter notebook with complete implementation
+├── data.csv             # Primary dataset (45K+ records)
+└── data-1758727337984.csv  # Secondary dataset
 ```
 
 ## 🔧 Technical Implementation
