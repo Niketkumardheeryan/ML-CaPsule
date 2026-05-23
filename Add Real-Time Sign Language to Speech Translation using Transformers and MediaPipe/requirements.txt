@@ -1,0 +1,45 @@
+# Core ML/DL
+torch>=2.1.0
+torchvision>=0.16.0
+tensorflow>=2.14.0
+
+# Transformers
+transformers>=4.35.0
+tokenizers>=0.14.0
+
+# Computer Vision
+opencv-python>=4.8.0
+mediapipe>=0.10.7
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.1.0
+scikit-learn>=1.3.0
+Pillow>=10.0.0
+
+# Text-to-Speech
+pyttsx3>=2.90
+gTTS>=2.4.0
+
+# Web Interface
+streamlit>=1.28.0
+gradio>=4.7.0
+
+# Visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.18.0
+
+# Utilities
+tqdm>=4.66.0
+pyyaml>=6.0.1
+python-dotenv>=1.0.0
+joblib>=1.3.0
+
+# Logging & Experiment Tracking
+tensorboard>=2.14.0
+wandb>=0.16.0
+
+# Notebook support
+jupyter>=1.0.0
+ipykernel>=6.27.0
