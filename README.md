@@ -126,131 +126,131 @@ The process of selecting relevant features for use in a model to increase accura
 </tr>
 <tr align="center">
 <td align="center">1.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Advanced%20Visualizations">Advanced Visualizations</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Advanced%20Visualizations">Advanced Visualizations</a></td>
 <td align="center">2.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Alzheimers%20Disease%20Predictor">Alzheimer's Disease Predictor</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Alzheimer's%20Disease%20Predictor">Alzheimer's Disease Predictor</a></td>
 <td align="center">3.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Analysis%20&%20Predict%20Black%20Friday%20Sale">Analysis & Predict Black Friday Sale</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Analysis_%26_predict_Black_friday_sale">Analysis & Predict Black Friday Sale</a></td>
 <td align="center">4.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Anime%20Data%20Analysis%20and%20Prediction">Anime Data Analysis and Prediction</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Anime%20Data%20Analysis%20and%20Prediction">Anime Data Analysis and Prediction</a></td>
 </tr>
 <tr align="center">
 <td align="center">5.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Artificial%20Neural%20Network%20from%20Scratch">Artificial Neural Network from Scratch</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Artifical%20neural%20network%20from%20scratch">Artificial Neural Network from Scratch</a></td>
 <td align="center">6.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Association%20Rule%20Implementation">Association Rule Implementation</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Association%20Rule%20Implementation">Association Rule Implementation</a></td>
 <td align="center">7.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Audio%20Classification">Audio Classification</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Audio%20Classification">Audio Classification</a></td>
 <td align="center">8.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Autism%20Identification%20System">Autism Identification System</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Autism%20Identification%20System">Autism Identification System</a></td>
 </tr>
 <tr align="center">
 <td align="center">9.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Automatic%20Summarization%20of%20Scientific%20Papers">Automatic Summarization of Scientific Papers</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Automatic%20Summarization%20of%20Scientific%20Papers">Automatic Summarization of Scientific Papers</a></td>
 <td align="center">10.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Basics%20of%20ML%20and%20DL">Basics of ML and DL</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Basics%20of%20ML%20and%20DL">Basics of ML and DL</a></td>
 <td align="center">11.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Basics%20of%20Power%20BI">Basics of Power BI</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Basics%20of%20Power%20Bi">Basics of Power BI</a></td>
 <td align="center">12.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Basics%20of%20Python">Basics of Python</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Basics%20of%20the%20Python">Basics of Python</a></td>
 </tr>
 <tr align="center">
 <td align="center">13.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Bidirectional%20LSTM">Bidirectional LSTM</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Bidirectional%20LSTM">Bidirectional LSTM</a></td>
 <td align="center">14.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Bird%20Species%20Classification%20Web%20App">Bird Species Classification Web App</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Bird%20Species%20Classification%20Web%20App">Bird Species Classification Web App</a></td>
 <td align="center">15.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Bitcoin%20Price%20Prediction%20Web%20App">Bitcoin Price Prediction Web App</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Bitcoin%20Price%20Prediction%20Web%20App">Bitcoin Price Prediction Web App</a></td>
 <td align="center">16.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Bitcoin%20Price%20Predictor">Bitcoin Price Predictor</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Bitcoin%20Price%20Predictor">Bitcoin Price Predictor</a></td>
 </tr>
 <tr align="center">
 <td align="center">17.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Brain%20Tumor%20Detection">Brain Tumor Detection</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Brain%20Tumor%20Detection">Brain Tumor Detection</a></td>
 <td align="center">18.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Breast%20Cancer%20Detection%20using%20DL%20with%20Webapp">Breast Cancer Detection using DL with Webapp</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Breast%20Cancer%20Detection%20using%20DL%20with%20Webapp">Breast Cancer Detection using DL with Webapp</a></td>
 <td align="center">19.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/CBT%20ChatBot">CBT ChatBot</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/CBT_ChatBot">CBT ChatBot</a></td>
 <td align="center">20.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/COVID-19%20Data%20Analysis">COVID-19 Data Analysis</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/COVID_19-DATA-ANALYSIS">COVID-19 Data Analysis</a></td>
 </tr>
 <tr align="center">
 <td align="center">21.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Chatbot%20Using%20RASA">Chatbot Using RASA</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Chatbot%20Using%20RASA">Chatbot Using RASA</a></td>
 <td align="center">22.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Cheat%20Sheets">Cheat Sheets</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Cheat%20Sheets">Cheat Sheets</a></td>
 <td align="center">23.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Chi-Square%20Test">Chi-Square Test</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Chi-Square%20Test">Chi-Square Test</a></td>
 <td align="center">24.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Chicken%20Disease%20Classification">Chicken Disease Classification</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Chicken_Disease_Classification">Chicken Disease Classification</a></td>
 </tr>
 <tr align="center">
 <td align="center">25.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Chronic%20Kidney%20Disease%20Prediction">Chronic Kidney Disease Prediction</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Chronic%20Kidney%20Disease%20Prediction">Chronic Kidney Disease Prediction</a></td>
 <td align="center">26.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Class%20Imbalance%20Problem">Class Imbalance Problem</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Class%20Imbalance%20problem">Class Imbalance Problem</a></td>
 <td align="center">27.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Classification%20Algorithms">Classification Algorithms</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Classification%20Algorithms">Classification Algorithms</a></td>
 <td align="center">28.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Cloud%20Details">Cloud Details</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Cloud%20Details">Cloud Details</a></td>
 </tr>
 <tr align="center">
 <td align="center">29.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Clustering%20Algorithms">Clustering Algorithms</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Clustering%20Algorithms">Clustering Algorithms</a></td>
 <td align="center">30.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Company%20Bankruptcy%20Using%20Unsupervised%20Learning">Company Bankruptcy Using Unsupervised Learning</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Company%20Bankruptcy%20Using%20unsupervised">Company Bankruptcy Using Unsupervised Learning</a></td>
 <td align="center">31.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Covid-19%20Forecasting%20with%20Prophet">Covid-19 Forecasting with Prophet</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Covid19%20forecasting%20with%20prophet">Covid-19 Forecasting with Prophet</a></td>
 <td align="center">32.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Covid%20Third%20Wave%20Forecasting">Covid Third Wave Forecasting</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Covid_Third_Wave_Forecasting">Covid Third Wave Forecasting</a></td>
 </tr>
 <tr align="center">
 <td align="center">33.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/CrowdAI%20Plant%20Disease">CrowdAI Plant Disease</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/CrowdAI%20Plant%20Disease">CrowdAI Plant Disease</a></td>
 <td align="center">34.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Crude%20Oil%20Forecasting">Crude Oil Forecasting</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Crude%20oil%20forecasting">Crude Oil Forecasting</a></td>
 <td align="center">35.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Customer%20Segmentation%20USvAlgorithm">Customer Segmentation USvAlgorithm</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Customer%20Segmentation%20USvAlgorithm">Customer Segmentation USvAlgorithm</a></td>
 <td align="center">36.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Customer%20Segmentation%20using%20Machine%20Learning">Customer Segmentation using Machine Learning</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Customer%20Segmentation%20using%20Machine%20Learning">Customer Segmentation using Machine Learning</a></td>
 </tr>
 <tr align="center">
 <td align="center">37.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Dark%20Pattern%20Detection">Dark Pattern Detection</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Dark%20Pattern%20Detection">Dark Pattern Detection</a></td>
 <td align="center">38.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Data%20Cleaning%20Techniques">Data Cleaning Techniques</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Data%20Cleaning%20Techniques">Data Cleaning Techniques</a></td>
 <td align="center">39.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Data%20Filling%20and%20Cleaning%20Techniques">Data Filling and Cleaning Techniques</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Data%20Filling%20and%20Cleaning%20Techniques">Data Filling and Cleaning Techniques</a></td>
 <td align="center">40.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Deepfake%20Image%20Analyzer">Deepfake Image Analyzer</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Deepfake_image_analyzer">Deepfake Image Analyzer</a></td>
 </tr>
 <tr align="center">
 <td align="center">41.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Defective%20Captcha%20Image%20Recognition">Defective Captcha Image Recognition</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Defective%20Captcha%20Image%20Recognition">Defective Captcha Image Recognition</a></td>
 <td align="center">42.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Diabetes%20Prediction">Diabetes Prediction</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/blob/master/Diabetes%20Prediction">Diabetes Prediction</a></td>
 <td align="center">43.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Different%20Types%20of%20Clustering">Different Types of Clustering</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different%20types%20of%20Clustering">Different Types of Clustering</a></td>
 <td align="center">44.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Different%20Types%20of%20Feature%20Selection%20Techniques">Different Types of Feature Selection Techniques</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different%20types%20of%20feature%20selection%20techniques">Different Types of Feature Selection Techniques</a></td>
 </tr>
 <tr align="center">
 <td align="center">45.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Different%20Types%20of%20Scaling%20Methods">Different Types of Scaling Methods</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different_types_of_scaling_Method">Different Types of Scaling Methods</a></td>
 <td align="center">46.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Diseases%20Prediction">Diseases Prediction</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Diseases_Prediction">Diseases Prediction</a></td>
 <td align="center">47.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Driver%20Drowsiness%20Detection">Driver Drowsiness Detection</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Driver_Drowsiness_Detection">Driver Drowsiness Detection</a></td>
 <td align="center">48.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Duplicate%20Question%20Pair">Duplicate Question Pair</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Duplicate_Question_pair">Duplicate Question Pair</a></td>
 </tr>
 <tr align="center">
 <td align="center">49.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/EDA%20and%20Perform%20Modelling%20on%20Ionosphere%20Dataset">EDA and Perform Modelling on Ionosphere Dataset</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main">EDA and Perform Modelling on Ionosphere Dataset</a></td>
 <td align="center">50.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Email%20Classifier">Email Classifier</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Email%20Classifier">Email Classifier</a></td>
 <td align="center">51.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Emotion%20Recognition%20Based%20on%20NLP">Emotion Recognition Based on NLP</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Emotion%20Recognition%20Based%20on%20NLP">Emotion Recognition Based on NLP</a></td>
 
 
 
