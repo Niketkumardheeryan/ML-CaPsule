@@ -2,8 +2,8 @@
   "rules": {
     "Frontend": ["*.js", "*.css", "*.html"],
     "Backend": ["app/", "*.rb"],
-    "CI": ".circleci"
+    "CI": [".circleci"],
     "C/CPP": ["*.cpp", "*.c"],
-    "Python": ["*.py", "*.ipynb"],
+    "Python": ["*.py", "*.ipynb"]
   }
 }
