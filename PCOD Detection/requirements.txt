@@ -1,0 +1,11 @@
+
+numpy<2.4  # Compatibility pin for numba/shap
+pandas>=3.0.0
+matplotlib
+scikit-learn
+xgboost
+lightgbm
+shap
+lime
+dice-ml
+ipython
