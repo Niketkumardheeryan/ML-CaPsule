@@ -1,4 +1,6 @@
 # 🌟 ML-Capsule: Hands-on ML from Basic to Advance 🌟
+![Python Code Quality Check](https://github.com/Niketkumardheeryan/ML-CaPsule/actions/workflows/lint.yml/badge.svg)
+![Notebook Quality Check](https://github.com/Niketkumardheeryan/ML-CaPsule/actions/workflows/notebook_check.yml/badge.svg)
 
 Welcome to **ML-Capsule**!!! This repository is a comprehensive collection of machine learning projects and resources, ranging from beginner to advanced levels. It covers a variety of topics, from basic machine learning concepts to deep learning, natural language processing, and much more.
 
