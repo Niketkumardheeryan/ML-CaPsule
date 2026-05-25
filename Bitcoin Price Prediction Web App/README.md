@@ -1,61 +1,101 @@
+# Bitcoin Price Prediction Web App
 
-PROJECT TITLE
+A Streamlit web application that predicts Bitcoin market capitalisation using **Lasso Regression**, trained on historical price data.
 
-Bitcoin Price Prediction
+![App Screenshot](https://user-images.githubusercontent.com/78292851/156793113-3f6d9e91-665e-47b1-a1f6-316aaeeb2aa7.png)
 
-GOAL
+## Goal
 
-Aim- To predict the price of the Bitcoin using  Lasso Regression. Perform EDA
+Predict the market capitalisation of Bitcoin using Lasso Regression and perform exploratory data analysis (EDA) on historical price data.
 
-DESCRIPTION
+## Description
 
-This is a regression problem where we need to predict the price of Bitcoin. We use Lasso Regression 
+This is a regression problem where we predict Bitcoin's market cap based on features such as High, Low, Open, Close, and Volume. The model is trained using **Lasso Regression** and achieves approximately **99% accuracy**.
 
-WHAT I HAD DONE
+## How to Run
 
-1. perfromed exploratory data analysis (EDA) on the given dataset
-2. it starts with loading the dataset and viewing the top 5 rows
-3. we calculate statistical data in the dataset
-4. then comes finding correlation between the features and also finding statistical values related to the dataset
-5. data visualization is done with libraries such as matplotlib and seaborn
-6. finally 3 different algorithms are used to find the best algorithm 
-7. also accuracy score of each algorithm is calculated for comparison purpose with other algorithms
+### Prerequisites
 
-LINK TO WEBAPP:
+- **Python 3.8+**
+- **pip** (Python package manager)
 
-https://share.streamlit.io/tandrimasingha/bitcoin-price-prediction-web-app/main/app.py
+### 1. Clone the Repository
 
+```bash
+git clone https://github.com/premdeshmane-01/ML-caPsule.git
+cd "ML-caPsule/Bitcoin Price Prediction Web App"
+```
 
-GLANCE AT THE WEBAPP
+### 2. Create and Activate a Virtual Environment
 
-![image](https://user-images.githubusercontent.com/78292851/156793113-3f6d9e91-665e-47b1-a1f6-316aaeeb2aa7.png)
+**Windows:**
+```bash
+python -m venv env
+env\Scripts\activate
+```
 
-![image](https://user-images.githubusercontent.com/78292851/156793297-039024d7-d263-4444-9bbb-c05e8a945d47.png)
+**macOS / Linux:**
+```bash
+python3 -m venv env
+source env/bin/activate
+```
 
+### 3. Install Dependencies
 
-MODELS USED
+```bash
+pip install -r requirements.txt
+```
 
-Lasso Regression - 99 % accuracy
+### 4. Run the App
 
-DEPLOYMENT
+```bash
+streamlit run app.py
+```
 
-StreamLit-Share = Streamlit turns data scripts into shareable web apps in minutes. All in Python. No front‑end experience required. Streamlit’s open-source app framework is a breeze to get started with. It is very easy to use. One just have to connect with the github repo and start deploying it on streamlit share and you are good to go.
+The app will open in your browser at `http://localhost:8501`.
 
+## What Was Done
 
-LIBRARIES NEEDED
+1. Performed exploratory data analysis (EDA) on the dataset
+2. Loaded the dataset and viewed the top 5 rows
+3. Calculated statistical data in the dataset
+4. Found correlation between the features and statistical values
+5. Data visualization using Matplotlib and Seaborn
+6. Tested different algorithms to find the best fit
+7. Calculated accuracy score of each algorithm for comparison
 
-1. Numpy
-2. Pandas
-3. Matplotlib
-4. Seaborn
-5. Scikit-Learn
-6. StreamLit
+## Models Used
 
+| Model | Accuracy |
+|---|---|
+| Lasso Regression | ~99% |
 
-CONCLUSION
+## Libraries Needed
 
-We can conclude that our Web App predicts the best with  Lasso Regression and gives the most accurate results.
+| Library | Purpose |
+|---|---|
+| `streamlit` | Web app framework for the UI |
+| `scikit-learn` | Lasso Regression model and utilities |
+| `numpy` | Numerical computations |
+| `pandas` | Data loading and manipulation |
+| `scipy` | Scientific computing |
+| `joblib` | Model serialisation |
 
-CONTRIBUTED BY
+## Deployment
+
+The app is deployed using **Streamlit Share** — Streamlit turns data scripts into shareable web apps in minutes, all in Python. Simply connect your GitHub repo and deploy on Streamlit Share.
+
+**Live App:** [Bitcoin Price Prediction Web App](https://share.streamlit.io/tandrimasingha/bitcoin-price-prediction-web-app/main/app.py)
+
+## App Preview
+
+![App Preview](https://user-images.githubusercontent.com/78292851/156793297-039024d7-d263-4444-9bbb-c05e8a945d47.png)
+
+## References
+
+- [Kaggle: Boston Housing Linear Regression](https://www.kaggle.com/patrickparsa/boston-housing-linear-regression)
+- [GitHub: ML Housing Price Prediction](https://github.com/yawavi92/ML-Housing_price_predection/blob/main/melbourne_housing_data.ipynb)
+
+## Contributed By
 
 Tandrima Singha
