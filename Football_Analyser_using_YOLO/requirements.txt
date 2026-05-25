@@ -1,0 +1,6 @@
+ultralytics
+supervision
+numpy
+pandas
+opencv-python
+scikit-learn
