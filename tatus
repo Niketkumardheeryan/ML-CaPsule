@@ -1,0 +1,128 @@
+[1mdiff --git a/.github/ISSUE_TEMPLATE/bug_report.md b/.github/ISSUE_TEMPLATE/bug_report.md[m
+[1mindex dd84ea782..88fd011b9 100644[m
+[1m--- a/.github/ISSUE_TEMPLATE/bug_report.md[m
+[1m+++ b/.github/ISSUE_TEMPLATE/bug_report.md[m
+[36m@@ -1,38 +1,45 @@[m
+ ---[m
+[31m-name: Bug report[m
+[31m-about: Create a report to help us improve[m
+[31m-title: ''[m
+[31m-labels: ''[m
+[31m-assignees: ''[m
+[32m+[m[32mTitle: Project Title[m
+[32m+[m[32mAbout: Create a report to help us improve.[m
+[32m+[m[32mName: YourName[m
+[32m+[m[32mLabel: Bug Report[m
+[32m+[m[32mAssignee: ''[m
+ [m
+ ---[m
+ [m
+[31m-**Describe the bug**[m
+[31m-A clear and concise description of what the bug is.[m
+[32m+[m[32mDefine You:[m
+[32m+[m
+[32m+[m[32m- [ ] LGM-SOC'21 Participant[m[41m [m
+[32m+[m[32m- [ ] Contributor[m
+[32m+[m
+[32m+[m
+[32m+[m[32m<!-- Have you talked to any of the Moderators or Project Admin (Prathima Kadari) before creating this issue? If not, just have a quick discussion and then once approved, create this issue. -->[m
+[32m+[m
+[32m+[m[32m**Describe the Bug**[m
+[32m+[m
+[32m+[m[32m<!-- A clear and concise description of what the bug is. -->[m
+[32m+[m
+[32m+[m[32m**Steps to Reproduce**[m
+ [m
+[31m-**To Reproduce**[m
+ Steps to reproduce the behavior:[m
+[31m-1. Go to '...'[m
+[31m-2. Click on '....'[m
+[31m-3. Scroll down to '....'[m
+[31m-4. See error[m
+ [m
+[31m-**Expected behavior**[m
+[31m-A clear and concise description of what you expected to happen.[m
+[32m+[m[32m1.[m[41m [m
+[32m+[m[32m2.[m[41m [m
+[32m+[m[32m3.[m[41m [m
+[32m+[m[32m4.[m[41m [m
+[32m+[m
+[32m+[m[32m**Expected Behavior**[m
+[32m+[m
+[32m+[m[32m<!-- A clear and concise description of what you expected to happen. -->[m
+[32m+[m
+[32m+[m[32m**Actual Behavior**[m
+[32m+[m
+[32m+[m[32m<!-- A clear and concise description of how the code performed w.r.t expectations. -->[m
+ [m
+ **Screenshots**[m
+[31m-If applicable, add screenshots to help explain your problem.[m
+ [m
+[31m-**Desktop (please complete the following information):**[m
+[31m- - OS: [e.g. iOS][m
+[31m- - Browser [e.g. chrome, safari][m
+[31m- - Version [e.g. 22][m
+[32m+[m[32m<!-- If applicable, add screenshots to help explain your problem. -->[m
+ [m
+[31m-**Smartphone (please complete the following information):**[m
+[31m- - Device: [e.g. iPhone6][m
+[31m- - OS: [e.g. iOS8.1][m
+[31m- - Browser [e.g. stock browser, safari][m
+[31m- - Version [e.g. 22][m
+[32m+[m[32m**Additional Details**[m
+ [m
+[31m-**Additional context**[m
+[31m-Add any other context about the problem here.[m
+[32m+[m[32m<!-- Write some additional details if you can, which might help to debug the issue quicker. -->[m
+[1mdiff --git a/.github/ISSUE_TEMPLATE/feature_request.md b/.github/ISSUE_TEMPLATE/feature_request.md[m
+[1mindex bbcbbe7d6..990debb7d 100644[m
+[1m--- a/.github/ISSUE_TEMPLATE/feature_request.md[m
+[1m+++ b/.github/ISSUE_TEMPLATE/feature_request.md[m
+[36m@@ -1,20 +1,36 @@[m
+ ---[m
+[31m-name: Feature request[m
+[31m-about: Suggest an idea for this project[m
+[31m-title: ''[m
+[31m-labels: ''[m
+[31m-assignees: ''[m
+[32m+[m[32mTitle: Project Title[m
+[32m+[m[32mAbout: Suggest an idea for this project[m
+[32m+[m[32mName: YourName[m
+[32m+[m[32mLabel: Feature Request[m
+[32m+[m[32mAssignee: ''[m
+ [m
+ ---[m
+ [m
+[32m+[m[32mDefine You:[m
+[32m+[m
+[32m+[m[32m- [ ] LGM-SOC'21 Participant[m[41m [m
+[32m+[m[32m- [ ] Contributor[m
+[32m+[m
+[32m+[m
+[32m+[m[32m<!-- Have you talked to any of the Moderators or Project Admin (Prathima Kadari) before creating this issue? If not, just have a quick discussion and then once approved, create this feature request. -->[m
+[32m+[m
+ **Is your feature request related to a problem? Please describe.**[m
+[31m-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...][m
+ [m
+[31m-**Describe the solution you'd like**[m
+[31m-A clear and concise description of what you want to happen.[m
+[32m+[m[32m<!-- A clear and concise description of what the problem is. -->[m
+[32m+[m
+[32m+[m[32m**Describe the solution you'd like...**[m
+ [m
+[31m-**Describe alternatives you've considered**[m
+[31m-A clear and concise description of any alternative solutions or features you've considered.[m
+[32m+[m[32m<!-- A clear and concise description of what you want to happen. -->[m
+[32m+[m
+[32m+[m[32m**Describe alternatives you've considered?**[m
+[32m+[m
+[32m+[m[32m<!-- A clear and concise description of any alternative solutions or features you've considered. -->[m
+[32m+[m
+[32m+[m[32m**Approach to be followed (optional):**[m
+[32m+[m
+[32m+[m[32m<!-- A clear and concise description of approach to be followed. -->[m
+ [m
+ **Additional context**[m
+[31m-Add any other context or screenshots about the feature request here.[m
+[32m+[m
+[32m+[m[32m<!-- Add any other context or screenshots about the feature request here. -->[m

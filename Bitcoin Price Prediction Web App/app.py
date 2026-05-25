@@ -7,12 +7,9 @@ import pandas as pd
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 
-
-
 r = st.sidebar.radio("Navigation Menu",["Home","Bitcoin Price"])
 
-if r=="Home":
-    
+if r=="Home":    
     st.write("""
     # Bitcoin Price Predictive 
     #    
@@ -22,8 +19,6 @@ if r=="Home":
     st.write(" Bitcoin is widely used cryptocurrency for digital market. It is decentralised that means it is not own by government or any other company.Transactions are simple and easy as it doesn’t belong to any country.Records data are stored in Blockchain.Bitcoin price is variable and it is widely used so it is important to predict the price of it for making any investment")
     
     
-
-        
 
 # Biocoin Price Prediction
 bitcoin=pd.read_csv('coin_Bitcoin.csv')
@@ -53,14 +48,15 @@ Ls.fit(xtrain,ytrain)
 if r=='Bitcoin Price':
     st.header("Know the Price of Bitcoin")
     High=st.number_input("Highest Price of bitcoin")
-    Low=st.number_input("Lowest Price of")
+    Low=st.number_input("Lowest Price of bitcoin")
     Open=st.number_input("Opening Price of bitcoin")
     Close=st.number_input("Closing Price of Bitcoin")
     volume=st.number_input("Volume of the bitcoin")
-    
-    ypred=Ls.predict([[High,Low,Open,Close,volume]])
+
+    input_data=pd.DataFrame([[High,Low,Open,Close,volume]],columns=[X.columns])
+    ypred=float(Ls.predict(input_data)[0])
     if(st.button("Predict")):
-        st.success(f"Your Predicted Salary Is {abs(ypred)}")
+        st.success(f"Your Predicted Bitcoin MarketCap Is {abs(ypred)}")
         
 
     
