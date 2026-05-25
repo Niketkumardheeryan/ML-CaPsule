@@ -53,4 +53,3 @@ Here is the output of Gradio User Interface
 
 <img width="1142" alt="Screenshot 2024-06-03 at 8 04 33 AM" src="https://github.com/AKing-283/ML-CaPsule/assets/154039781/989a1c10-bd53-4eb0-97a4-ac80da601cf6">
 
-

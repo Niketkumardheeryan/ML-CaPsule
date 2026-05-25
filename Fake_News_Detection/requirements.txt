@@ -5,3 +5,4 @@ seaborn
 nltk
 scikit-learn
 gradio
+notebook
