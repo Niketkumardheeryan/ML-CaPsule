@@ -1,0 +1,17 @@
+# Housing Prediction - Compatible dependency versions
+#
+# The pre-saved .pkl models in Model/ were generated with scikit-learn 1.3.0.
+# Loading them with a newer scikit-learn version raises InconsistentVersionWarning
+# and may produce invalid results.
+#
+# Option A (recommended): install these pinned versions to use the existing pkl files.
+# Option B: install any compatible versions, then run `python retrain_models.py`
+#           to regenerate fresh pkl files for your environment.
+
+numpy==1.26.4
+scipy==1.11.4
+scikit-learn==1.3.0
+pandas>=1.5.0,<3.0.0
+matplotlib>=3.6.0
+joblib>=1.2.0
+six>=1.16.0

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"c:\\\\Users\\\\Tigma\\\\Desktop\\\\GSSoC\\\\ML-CaPsule\" status Housing_Prediction/)",
+      "Bash(Remove-Item \"c:\\\\Users\\\\Tigma\\\\Desktop\\\\GSSoC\\\\ML-CaPsule\\\\Housing_Prediction\\\\requirements.txt\")",
+      "Bash(Remove-Item \"c:\\\\Users\\\\Tigma\\\\Desktop\\\\GSSoC\\\\ML-CaPsule\\\\Housing_Prediction\\\\retrain_models.py\")"
+    ]
+  }
+}

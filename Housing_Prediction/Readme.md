@@ -16,6 +16,32 @@ This project aims to predict housing prices with utmost precision. We've meticul
 - Matplotlib
 - Scikit-learn
 
+#### Environment Setup & Compatibility
+
+The pre-saved models in `Model/` were serialized with **scikit-learn 1.3.0**. Loading them with a newer scikit-learn version will raise an `InconsistentVersionWarning` and may produce invalid results.
+
+**Option A — Use pinned versions (matches existing `.pkl` files)**
+
+Requires Python 3.9–3.12.
+
+```bash
+python -m venv venv
+# Windows:  venv\Scripts\activate
+# macOS/Linux: source venv/bin/activate
+pip install -r requirements.txt
+```
+
+**Option B — Retrain models for your current environment**
+
+If you prefer to use a newer scikit-learn version, regenerate the `.pkl` files:
+
+```bash
+pip install -r requirements.txt   # or install your preferred versions
+python retrain_models.py
+```
+
+This re-runs the full training pipeline (stratified split → preprocessing → Linear Regression, Decision Tree, Random Forest with GridSearchCV) and overwrites the models in `Model/` with files compatible with your installed scikit-learn version. `random_state=42` is set on all stochastic models for reproducibility.
+
 #### Encoding
 We employed one-hot encoding to handle categorical variables effectively.
 

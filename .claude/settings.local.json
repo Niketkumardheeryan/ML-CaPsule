@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm \"c:\\\\Users\\\\Tigma\\\\Desktop\\\\GSSoC\\\\ML-CaPsule\\\\Housing_Prediction\\\\requirements.txt\" \"c:\\\\Users\\\\Tigma\\\\Desktop\\\\GSSoC\\\\ML-CaPsule\\\\Housing_Prediction\\\\retrain_models.py\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Tigma\\Desktop\\GSSoC\\ML-CaPsule\\Housing_Prediction"
+    ]
+  }
+}
