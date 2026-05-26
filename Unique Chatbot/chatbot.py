@@ -14,11 +14,12 @@ warnings.filterwarnings('ignore')
 
 import nltk
 from nltk.stem import WordNetLemmatizer
-nltk.download('popular', quiet=True) # for downloading packages
 
-# uncomment the following only the first time
-#nltk.download('punkt') # first-time use only
-#nltk.download('wordnet') # first-time use only
+try:
+    nltk.data.find('tokenizers/punkt')
+    nltk.data.find('corpora/wordnet')
+except LookupError:
+    nltk.download('popular', quiet=True)
 
 
 #Reading in the corpus
