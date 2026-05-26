@@ -1,4 +1,4 @@
-# 🎇Contributing Guidelines
+# Contributing Guidelines
 
 This documentation contains a set of guidelines to help you during the contribution process. 
 
@@ -6,17 +6,17 @@ I'm happy to welcome all the contributions from anyone willing to add new script
 **no contribution is too small.**
 
 
-## 💻Before Contributing
+## Before Contributing
 
 Welcome to [Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-](https://github.com/Niketkumardheeryan/ML-CaPsule). Before sending your pull requests, make sure that you **read the whole guidelines**. If you have any doubt on the contributing guide, please feel free to reach out.
 
 
-## 🙌Contribution
+## Contribution
 
 Any contribution is accepted, from fixing grammatical mistakes to implementing complex python scripts. Please read this section if you are contributing your work.
 
 
-## 🔖Steps to Contribute
+## Steps to Contribute
 
 Following are the steps to guide you:
 
@@ -44,16 +44,16 @@ Following are the steps to guide you:
 * Step 7: Create a PR on Github. (Don't just hit the create a pull request button, you must write a PR message to clarify why and what are you contributing)
 
 
-## 🔨Note:
+## Note:
 
 > - Do not edit/delete someone else's code in this repository. You can only insert new files/folder in this repository.
 
 > - Give a meaningful name to whatever file or folder you are adding, for e.g., if you have written a Python code on Hello World, then hello_world.py is one example of valid name.
 
 
-### 💡What should I keep in mind while contributing?
+### What should I keep in mind while contributing?
 
-##🎗Coding Style
+## Coding Style
 
 We want your work to be readable by others; therefore, we encourage you to note the following:
 
@@ -67,7 +67,7 @@ We want your work to be readable by others; therefore, we encourage you to note 
   - Code must be properly documented
 
 
-## 🔑Guidelines
+## Guidelines
 
 1. Welcome to this repository, if you are here as open source program participant/contributor.
 2. Participants / contributors have to **comment** on issues they would like to work on, and mentors or the PA will assign you.
@@ -90,7 +90,7 @@ We want your work to be readable by others; therefore, we encourage you to note 
 19. We all are here to learn. You are allowed to make mistakes. That's how you learn, right!.
 
 
-### 🧲Pull Requests Review Criteria
+### Pull Requests Review Criteria
 
 1. Please fill the **[PR Template](https://github.com/Niketkumardheeryan/ML-CaPsule/blob/main/.github/pullrequest_template.md)** properly while making a Pull Request.
 2. You must add your code .ipynb file into the respective **folders**.
@@ -100,7 +100,7 @@ We want your work to be readable by others; therefore, we encourage you to note 
 6. For any queries or discussions, please feel free to drop a message.
 
 
-### 📍Other points to remember while submitting your work:
+### Other points to remember while submitting your work:
 
 We want your work to be readable by others; therefore, we encourage you to note the following:
 
@@ -115,7 +115,7 @@ We want your work to be readable by others; therefore, we encourage you to note 
 
 
 
-## 📖Resources
+## Resources
 1. Markdown : Markdown is a lightweight markup language like HTML, with plain text formatting syntax. 
   * [Markdown Cheat-Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
@@ -124,7 +124,7 @@ We want your work to be readable by others; therefore, we encourage you to note 
   * [Cheat Sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 
 
-## 🤔Need more help?
+## Need more help?
 You can refer to the following articles on basics of Git and Github and also contact me, in case you are stuck:
 - [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 - [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)
@@ -133,11 +133,10 @@ You can refer to the following articles on basics of Git and Github and also con
 - [Learn GitHub from Scratch](https://lab.github.com/githubtraining/introduction-to-github)
 
 
-## 😇Tip from me
-It always takes time to understand and learn. So, do not worry at all. You can do this**!💪
+## Tip from me
+It always takes time to understand and learn. So, do not worry at all. You can do this!
 
-
-🎉 🎊 😃 Happy Contributing 😃 🎊 🎉
+Happy Contributing!
 ## Issue Labels Guide
 
 To improve issue organization and contributor onboarding, the repository follows a standardized labeling system.
