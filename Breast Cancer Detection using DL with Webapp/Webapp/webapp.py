@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO)
 app = Flask(__name__)
 
 # Load the VGG16 model
-model_path = r'C:\Users\Chimni\Projects and Coding\Version Control Systems\Breast Cancer Detection using DL\Model\model.keras'
+model_path = os.path.join(os.path.dirname(__file__), "..", "Model", "model.keras")
 if not os.path.exists(model_path):
     raise FileNotFoundError(f"The model file {model_path} does not exist.")
 logging.info(f"Loading VGG16 model from {model_path}")
