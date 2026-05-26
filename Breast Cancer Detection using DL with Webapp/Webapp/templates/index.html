@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breast Cancer Detection</title>
+    <!-- Add FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>Breast Cancer Detection</h1>
+        <h1><i class="fa-solid fa-ribbon" style="color: #ff69b4;"></i> Breast Cancer Detection</h1>
+        <p class="subtitle">Upload an image for automated detection</p>
         <form method="post" action="/predict" enctype="multipart/form-data">
-            <input type="file" name="image" accept="image/*" required>
-            <button type="submit">Predict</button>
+            <div class="file-upload">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <input type="file" name="image" accept="image/*" required>
+            </div>
+            <button type="submit"><i class="fa-solid fa-microscope"></i> Predict</button>
         </form>
         {% if prediction %}
         <div class="result">
-            <h2>Prediction: {{ prediction }}</h2>
+            <h2><i class="fa-solid fa-clipboard-check"></i> Prediction: {{ prediction }}</h2>
         </div>
         {% endif %}
     </div>
