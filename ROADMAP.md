@@ -1,4 +1,4 @@
-# 🗺️ ML-CaPsule Learning Roadmap
+# ML-CaPsule Learning Roadmap
 
 > A structured 3-tier learning path across 150+ projects.  
 > Built for beginners who don't know where to start.
@@ -13,7 +13,7 @@
 
 ---
 
-## 🟢 Beginner
+## Beginner
 > **Prerequisites:** Basic Python, High School Math  
 > **Key Libraries:** numpy, pandas, matplotlib, seaborn, scikit-learn
 
@@ -85,7 +85,7 @@
 
 ---
 
-## 🟡 Intermediate
+## Intermediate
 > **Prerequisites:** Beginner topics, Python proficiency  
 > **Key Libraries:** scikit-learn, TensorFlow/Keras, OpenCV, NLTK, Flask
 
@@ -201,7 +201,7 @@
 
 ---
 
-## 🔴 Advanced
+## Advanced
 > **Prerequisites:** Intermediate topics, strong Python, math (Linear Algebra, Calculus)  
 > **Key Libraries:** TensorFlow, PyTorch, Keras, OpenCV, Reinforcement Learning libraries
 
@@ -255,7 +255,7 @@
 
 ---
 
-## 📌 Notes
+## Notes
 
 - This roadmap is updated as new projects are added to ML-CaPsule
 - Each project folder contains its own README with setup instructions
@@ -264,4 +264,4 @@
 
 ---
 
-*Made with ❤️ for the ML-CaPsule community | GSSoC 2026 Contribution*
+*Made for the ML-CaPsule community | GSSoC 2026 Contribution*
