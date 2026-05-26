@@ -8,11 +8,13 @@ def load_model():
 with st.spinner('Model is being loaded..'):
   model=load_model()
 
-st.write("""
-         # Birds Species Classification
-         """
-         )
-
+st.markdown("""
+    <div style='text-align: center; padding: 20px;'>
+        <h1 style='color: #2e7d32; font-family: sans-serif;'>Bird Species Classification</h1>
+        <p style='font-size: 1.2em; color: #555;'>Upload a bird image to automatically detect its species using deep learning.</p>
+        <hr style='border: 1px solid #c8e6c9;'>
+    </div>
+""", unsafe_allow_html=True)
 file = st.file_uploader("Please upload an image of a bird", type=["jpg", "png"])
 import cv2
 from PIL import Image, ImageOps
