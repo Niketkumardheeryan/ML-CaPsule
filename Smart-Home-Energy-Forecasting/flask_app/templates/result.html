@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Energy Prediction Results">
+    <title>Prediction Result — Smart Home Energy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-icon">⚡</div>
+            <h1>Prediction Result</h1>
+            <p class="subtitle">AI-powered energy consumption forecast</p>
+        </header>
+
+        <!-- Prediction Card -->
+        <div class="result-card">
+            <div class="prediction-value">
+                <span class="value-number">{{ prediction }}</span>
+                <span class="value-unit">kWh</span>
+            </div>
+            <p class="prediction-label">Predicted Energy Consumption</p>
+        </div>
+
+        <!-- Input Summary -->
+        <div class="summary-card">
+            <h3>Input Summary</h3>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <span class="summary-icon">🌡️</span>
+                    <span class="summary-key">Temperature</span>
+                    <span class="summary-val">{{ temperature }}°C</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-icon">🔌</span>
+                    <span class="summary-key">Appliance</span>
+                    <span class="summary-val">{{ appliance }}</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-icon">👪</span>
+                    <span class="summary-key">Household Size</span>
+                    <span class="summary-val">{{ household_size }}</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-icon">🕐</span>
+                    <span class="summary-key">Hour</span>
+                    <span class="summary-val">{{ hour }}:00</span>
+                </div>
+                <div class="summary-item">
+                    <span class="summary-icon">🍂</span>
+                    <span class="summary-key">Season</span>
+                    <span class="summary-val">{{ season }}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forecast Chart -->
+        {% if forecast_chart %}
+        <div class="chart-card">
+            <h3>📈 30-Day Energy Forecast</h3>
+            <img src="data:image/png;base64,{{ forecast_chart }}" 
+                 alt="30-Day Energy Consumption Forecast" 
+                 class="forecast-img">
+        </div>
+        {% endif %}
+
+        <!-- Back Button -->
+        <a href="/" class="btn-back" id="back-btn">← Make Another Prediction</a>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>AI-Based Smart Home Energy Forecasting &amp; Waste Pattern Analysis</p>
+        </footer>
+    </div>
+</body>
+</html>

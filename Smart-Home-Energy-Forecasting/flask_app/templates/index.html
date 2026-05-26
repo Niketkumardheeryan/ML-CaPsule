@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-Based Smart Home Energy Consumption Predictor">
+    <title>Smart Home Energy Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-icon">⚡</div>
+            <h1>Smart Home Energy Predictor</h1>
+            <p class="subtitle">AI-powered energy consumption forecasting</p>
+        </header>
+
+        <!-- Error Message -->
+        {% if error %}
+        <div class="alert alert-error">
+            <strong>Error:</strong> {{ error }}
+        </div>
+        {% endif %}
+
+        <!-- Input Form -->
+        <form action="/predict" method="POST" class="form-card" id="prediction-form">
+            <h2 class="form-title">Enter Details</h2>
+
+            <div class="form-grid">
+                <!-- Temperature -->
+                <div class="form-group">
+                    <label for="temperature">🌡️ Outdoor Temperature (°C)</label>
+                    <input type="number" id="temperature" name="temperature" 
+                           step="0.1" min="-30" max="50" value="25" required>
+                </div>
+
+                <!-- Appliance Type -->
+                <div class="form-group">
+                    <label for="appliance_type">🔌 Appliance Type</label>
+                    <select id="appliance_type" name="appliance_type" required>
+                        <option value="AC">AC</option>
+                        <option value="Heater">Heater</option>
+                        <option value="Fridge">Fridge</option>
+                        <option value="Washing Machine">Washing Machine</option>
+                        <option value="Dishwasher">Dishwasher</option>
+                        <option value="Oven">Oven</option>
+                        <option value="Lighting">Lighting</option>
+                        <option value="TV">TV</option>
+                        <option value="Computer">Computer</option>
+                        <option value="EV Charger">EV Charger</option>
+                    </select>
+                </div>
+
+                <!-- Household Size -->
+                <div class="form-group">
+                    <label for="household_size">👪 Household Size</label>
+                    <input type="number" id="household_size" name="household_size"
+                           min="1" max="10" value="3" required>
+                </div>
+
+                <!-- Hour -->
+                <div class="form-group">
+                    <label for="hour">🕐 Hour of Day (0–23)</label>
+                    <input type="number" id="hour" name="hour"
+                           min="0" max="23" value="14" required>
+                </div>
+
+                <!-- Season -->
+                <div class="form-group full-width">
+                    <label for="season">🍂 Season</label>
+                    <select id="season" name="season" required>
+                        <option value="Summer">Summer</option>
+                        <option value="Winter">Winter</option>
+                        <option value="Spring">Spring</option>
+                        <option value="Fall">Fall</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-predict" id="submit-btn">
+                <span class="btn-text">🔮 Predict Energy Consumption</span>
+            </button>
+        </form>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>AI-Based Smart Home Energy Forecasting &amp; Waste Pattern Analysis</p>
+        </footer>
+    </div>
+</body>
+</html>
