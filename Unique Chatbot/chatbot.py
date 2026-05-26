@@ -22,8 +22,11 @@ except LookupError:
     nltk.download('popular', quiet=True)
 
 
+import os
+
 #Reading in the corpus
-with open('chatbot.txt','r', encoding='utf8', errors ='ignore') as fin:
+corpus_path = os.path.join(os.path.dirname(__file__), 'chatbot.txt')
+with open(corpus_path,'r', encoding='utf8', errors ='ignore') as fin:
     raw = fin.read().lower()
 
 #TOkenisation
