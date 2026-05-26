@@ -20,25 +20,27 @@ def replace_chunk(content, marker, chunk, inline=False):
 
 
 def Exract_files_names():
-	req = requests.get(FEED_URL)
-	soup = BeautifulSoup(req.text, 'html.parser')
-	temp=[]
-	li = soup.findAll('div', class_="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item")
-	for i in li:
-		for x in i.findAll('a',class_="js-navigation-open Link--primary"):
-			if(x.text!=".github" and x.text!="CODE_OF_CONDUCT.md" and x.text!="CONTRIBUTING_GUIDELINES.md" and x.text!=".github/workflows" and x.text!="build_readme.py" and x.text!="requirements.txt" and x.text!="README.md" and x.text!="download statistics.jpg" and x.text!="img" and x.text!="ml img.jpg"):
-				temp2={
-                	'fname' : x.text,
-                	'furl': x["href"].split('/')[-1]
-				   		}
-				temp.append(temp2)
-			else:pass
-	return temp
+    temp = []
+    ignored = {
+        ".git", ".github", ".ipynb_checkpoints", "__pycache__", "venv", ".venv",
+        "CODE_OF_CONDUCT.md", "CONTRIBUTING_GUIDELINES.md", "CONTRIBUTING.md", "ROADMAP.md",
+        "build_readme.py", "requirements.txt", "README.md", "download statistics.jpg",
+        "img", "ml img.jpg", "website", ".DS_Store", "LICENSE", "Sql"
+    }
+    for path in sorted(ROOT_PATH.iterdir(), key=lambda p: p.name.lower()):
+        name = path.name
+        if name in ignored or name.startswith('.'):
+            continue
+        temp.append({
+            'fname': name,
+            'furl': name.replace(' ', '%20')
+        })
+    return temp
 
 
 if __name__ == "__main__":
     readme = ROOT_PATH / "README.md"
-    readme_contents = readme.open().read()
+    readme_contents = readme.open(encoding="utf-8").read()
 
     file_names = Exract_files_names()
     file_md="\n\n".join(["- {}".format(i) for i in file_names])
@@ -48,6 +50,6 @@ if __name__ == "__main__":
 
     
     readme_contents = replace_chunk(readme_contents, "Projects", "| Content List | \n | --------------- | \n" + file_md)
-    readme.open("w").write(readme_contents)
+    readme.open("w", encoding="utf-8").write(readme_contents)
 
 
