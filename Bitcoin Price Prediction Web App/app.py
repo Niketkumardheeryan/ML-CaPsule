@@ -51,16 +51,23 @@ xtrain,xtest,ytrain,ytest=train_test_split(X,Y,test_size=0.2)
 Ls.fit(xtrain,ytrain)
 
 if r=='Bitcoin Price':
-    st.header("Know the Price of Bitcoin")
-    High=st.number_input("Highest Price of bitcoin")
-    Low=st.number_input("Lowest Price of")
-    Open=st.number_input("Opening Price of bitcoin")
-    Close=st.number_input("Closing Price of Bitcoin")
-    volume=st.number_input("Volume of the bitcoin")
+    st.markdown("<h2 style='text-align: center; color: #ff9900;'>Predict Bitcoin Marketcap</h2>", unsafe_allow_html=True)
+    st.write("Enter the historical data below to predict the Marketcap of Bitcoin.")
     
-    ypred=Ls.predict([[High,Low,Open,Close,volume]])
-    if(st.button("Predict")):
-        st.success(f"Your Predicted Salary Is {abs(ypred)}")
+    col1, col2 = st.columns(2)
+    with col1:
+        High = st.number_input("Highest Price")
+        Low = st.number_input("Lowest Price")
+    with col2:
+        Open = st.number_input("Opening Price")
+        Close = st.number_input("Closing Price")
+        
+    volume = st.number_input("Volume")
+    
+    ypred = Ls.predict([[High, Low, Open, Close, volume]])
+    
+    if st.button("Predict"):
+        st.success(f"Predicted Marketcap: ${abs(ypred[0]):,.2f}")
         
 
     
