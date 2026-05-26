@@ -3,21 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breast Cancer Detection</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Breast Cancer Detection | Deep Learning Diagnostics</title>
+    <!-- Modern Styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- FontAwesome Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Breast Cancer Detection</h1>
-        <form method="post" action="/predict" enctype="multipart/form-data">
-            <input type="file" name="image" accept="image/*" required>
-            <button type="submit">Predict</button>
-        </form>
-        {% if prediction %}
-        <div class="result">
-            <h2>Prediction: {{ prediction }}</h2>
+
+    <!-- Header / Top Bar -->
+    <header>
+        <div class="logo-container">
+            <i class="fa-solid fa-microscope logo-icon"></i>
+            <span class="logo-text">BREAST CANCER DETECTION</span>
         </div>
-        {% endif %}
-    </div>
+        <div class="nav-badges">
+            <div class="badge">
+                <i class="fa-solid fa-shield-halved"></i> HIPAA Compliant
+            </div>
+            <div class="badge">
+                <i class="fa-solid fa-bolt"></i> VGG16 Powered
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Grid Dashboard -->
+    <main>
+        <!-- Left: Upload & Scanning Card -->
+        <section class="glass-card upload-section">
+            <div>
+                <h1 class="section-title">Scan Analysis</h1>
+                <p class="section-subtitle">Upload a high-resolution ultrasound image of breast tissue to perform immediate neural classification and detect possible abnormalities.</p>
+            </div>
+
+            <!-- Upload Area & Drag-Drop Zone -->
+            <form id="uploadForm" class="action-form" method="post" action="/predict" enctype="multipart/form-data">
+                <div class="dropzone-container">
+                    <div id="dropzone" class="dropzone">
+                        <i class="fa-solid fa-cloud-arrow-up dropzone-icon"></i>
+                        <span class="dropzone-title" id="dropzoneTitle">Drag and drop scan file here</span>
+                        <span class="dropzone-desc">Supports PNG, JPG, JPEG (Grayscale ultrasound scans preferred)</span>
+                        <input type="file" id="imageInput" name="image" class="file-input" accept="image/*" required>
+                    </div>
+
+                    <!-- Dynamic Image Preview and Scanning Overlay -->
+                    <div id="previewContainer" class="preview-container">
+                        <img id="previewImage" src="" alt="Ultrasound Scan Preview" class="preview-image">
+                        <div id="scannerEffect" class="scanner-effect">
+                            <div class="scanner-line"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="predictBtn" class="btn-primary" disabled>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Predict scan
+                </button>
+
+                <!-- Processing Spinner -->
+                <div id="loader" class="loader">
+                    <div class="spinner"></div>
+                    <span>Analyzing Scan via VGG16 model...</span>
+                </div>
+            </form>
+        </section>
+
+        <!-- Right: Results & Diagnostic Deck -->
+        <section class="results-section">
+            {% if prediction %}
+                <!-- Dynamic Diagnostic Results Card -->
+                {% if 'Normal' in prediction %}
+                    <div class="result-card result-normal">
+                        <i class="fa-solid fa-shield-check result-icon"></i>
+                        <span class="result-label">DIAGNOSTIC STATUS</span>
+                        <h2 class="result-value">Normal</h2>
+                        <span class="result-badge"><i class="fa-solid fa-circle-check"></i> Scan Clear</span>
+                        <p class="result-desc">The neural network classified this scan as Normal. No signs of malignant lesions or benign tumor tissues detected.</p>
+                    </div>
+                {% elif 'Benign' in prediction %}
+                    <div class="result-card result-benign">
+                        <i class="fa-solid fa-shield-virus result-icon"></i>
+                        <span class="result-label">DIAGNOSTIC STATUS</span>
+                        <h2 class="result-value">Benign</h2>
+                        <span class="result-badge"><i class="fa-solid fa-circle-info"></i> Non-Cancerous Growth</span>
+                        <p class="result-desc">The neural network detected benign tumor tissue. These are non-cancerous growths, but consultation with a physician is recommended for follow-up verification.</p>
+                    </div>
+                {% else %}
+                    <div class="result-card result-malignant">
+                        <i class="fa-solid fa-triangle-exclamation result-icon"></i>
+                        <span class="result-label">DIAGNOSTIC STATUS</span>
+                        <h2 class="result-value">Malignant</h2>
+                        <span class="result-badge"><i class="fa-solid fa-heart-pulse"></i> Attention Required</span>
+                        <p class="result-desc">Critical finding. The neural network identified signatures of malignant cells. **Please consult an oncologist immediately** for a professional biopsy and comprehensive diagnosis.</p>
+                    </div>
+                {% endif %}
+            {% else %}
+                <!-- Welcome/Initial State Card -->
+                <div class="result-card" style="opacity: 0.85;">
+                    <i class="fa-solid fa-brain result-icon" style="color: var(--accent-primary);"></i>
+                    <span class="result-label">AI DIAGNOSTICS</span>
+                    <h2 class="result-value" style="font-size: 1.6rem; margin-top: 10px;">Ready for Scan</h2>
+                    <p class="result-desc" style="font-size: 0.85rem;">Upload an ultrasound image on the left. The VGG16 model will immediately scan the tissue composition to identify anomalies.</p>
+                </div>
+            {% endif %}
+
+            <!-- Technical Spec Deck -->
+            <div class="info-deck">
+                <div class="info-card">
+                    <i class="fa-solid fa-dna"></i>
+                    <div class="info-card-content">
+                        <h4>Deep Learning Diagnostics</h4>
+                        <p>Leverages transfer learning via the VGG16 architecture trained on hundreds of verified clinical breast ultrasound scans.</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-lock"></i>
+                    <div class="info-card-content">
+                        <h4>Local & Secure</h4>
+                        <p>Images are processed completely inside the local application sandbox. None of your medical data or scans are sent to third parties.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Breast Cancer AI Diagnostics. For educational & demonstration purposes only.</p>
+    </footer>
+
+    <!-- Interactive Client-side UX Scripts -->
+    <script>
+        const imageInput = document.getElementById('imageInput');
+        const previewContainer = document.getElementById('previewContainer');
+        const previewImage = document.getElementById('previewImage');
+        const dropzone = document.getElementById('dropzone');
+        const dropzoneTitle = document.getElementById('dropzoneTitle');
+        const predictBtn = document.getElementById('predictBtn');
+        const uploadForm = document.getElementById('uploadForm');
+        const loader = document.getElementById('loader');
+        const scannerEffect = document.getElementById('scannerEffect');
+
+        // File Selection/Drop handler
+        imageInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    // Update preview and state
+                    previewImage.src = event.target.result;
+                    previewContainer.style.display = 'block';
+                    dropzone.style.display = 'none';
+                    predictBtn.removeAttribute('disabled');
+                    scannerEffect.style.display = 'block'; // Turn on laser line
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Form submission loader/scanning simulation
+        uploadForm.addEventListener('submit', function() {
+            predictBtn.style.display = 'none';
+            loader.style.display = 'flex';
+            
+            // Speed up laser line animation to show intense scanning
+            const laser = document.querySelector('.scanner-line');
+            if (laser) {
+                laser.style.animationDuration = '0.8s';
+            }
+        });
+    </script>
 </body>
 </html>

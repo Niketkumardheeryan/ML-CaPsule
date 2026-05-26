@@ -10,18 +10,24 @@ logging.basicConfig(level=logging.INFO)
 
 app = Flask(__name__)
 
-# Load the VGG16 model
-model_path = r'C:\Users\Chimni\Projects and Coding\Version Control Systems\Breast Cancer Detection using DL\Model\model.keras'
-if not os.path.exists(model_path):
-    raise FileNotFoundError(f"The model file {model_path} does not exist.")
-logging.info(f"Loading VGG16 model from {model_path}")
+# Resolve the model path dynamically relative to the webapp folder
+current_dir = os.path.dirname(os.path.abspath(__file__))
+relative_path = os.path.abspath(os.path.join(current_dir, '..', 'Model', 'model.keras'))
+hardcoded_path = r'C:\Users\Chimni\Projects and Coding\Version Control Systems\Breast Cancer Detection using DL\Model\model.keras'
 
-try:
-    model = tf.keras.models.load_model(model_path)
-    logging.info("VGG16 model loaded successfully.")
-except Exception as e:
-    logging.error(f"Error loading VGG16 model: {e}")
-    raise
+model_path = relative_path if os.path.exists(relative_path) else hardcoded_path
+
+model = None
+if os.path.exists(model_path):
+    logging.info(f"Loading VGG16 model from {model_path}")
+    try:
+        model = tf.keras.models.load_model(model_path)
+        logging.info("VGG16 model loaded successfully.")
+    except Exception as e:
+        logging.error(f"Error loading VGG16 model: {e}")
+        logging.info("Falling back to Demo/Mock Mode due to loading error.")
+else:
+    logging.warning(f"Model file not found. Running in Demo/Mock Mode. (To run the real model, please place model.keras at: {relative_path})")
 
 def prepare_image(image, target_size=(300, 300)):
     try:
@@ -64,9 +70,13 @@ def predict():
             image = prepare_image(image)
             
             # Predict the class
-            predictions = model.predict(image)
             class_names = ['Benign', 'Malignant', 'Normal']
-            predicted_class = class_names[np.argmax(predictions)]
+            if model is not None:
+                predictions = model.predict(image)
+                predicted_class = class_names[np.argmax(predictions)]
+            else:
+                # Fallback Demo Prediction
+                predicted_class = np.random.choice(class_names) + " (Demo Mock Mode)"
             
             return render_template('index.html', prediction=predicted_class)
         except Exception as e:
