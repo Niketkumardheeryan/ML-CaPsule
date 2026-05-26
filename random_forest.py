@@ -34,7 +34,7 @@ class decisionTree:
         self.root = self._grow_tree(X, a)
 
     def predict(self, X):
-        return np.array([self._traverse_tree(x, self.root) for x in X])
+        return np.array([self.traverse(x, self.root) for x in X])
 
     def _grow_tree(self, X, a, depth=0):
         n_samples, n_features = X.shape
@@ -90,7 +90,7 @@ class decisionTree:
         # compute the weighted avg. of the loss for the children
         n = len(a)
         n_l, n_r = len(left_idxs), len(right_idxs)
-        e_l, e_r = entropy(y[left_idxs]), entropy(a[right_idxs])
+        e_l, e_r = entropy(a[left_idxs]), entropy(a[right_idxs])
         child_entropy = (n_l / n) * e_l + (n_r / n) * e_r
 
         # information gain is difference in loss before vs. after split
@@ -152,4 +152,4 @@ class forest:
         tree_preds = np.array([tree.predict(X) for tree in self.trees])
         tree_preds = np.swapaxes(tree_preds, 0, 1)
         y_pred = [most_common_label(tree_pred) for tree_pred in tree_preds]
-        return np.array(a_pred)
+        return np.array(y_pred)
