@@ -1,0 +1,6 @@
+streamlit
+pandas
+scikit-learn
+nltk
+torch
+transformers
