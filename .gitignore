@@ -1,0 +1,14 @@
+# Dataset artifacts
+*.csv
+*.zip
+*.h5
+*.pkl
+*.npy
+*.npz
+
+# Mac
+.DS_Store
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
