@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner's Guide to ML Algorithms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in { animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 flex items-center justify-center min-h-screen font-sans antialiased text-slate-800 p-4">
+
+    <div class="max-w-3xl w-full bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
+        
+        <div class="bg-indigo-600 p-8 text-center text-white">
+            <h1 class="text-3xl font-extrabold tracking-tight mb-2">Algorithm Selector</h1>
+            <p class="text-indigo-100 font-medium">Answer a few questions to find the right ML approach for your problem.</p>
+        </div>
+
+        <div id="quiz-container" class="p-8 min-h-[300px] flex flex-col justify-center fade-in">
+            </div>
+
+    </div>
+
+    <script>
+        // --- Decision Tree Logic ---
+        const decisionTree = {
+            start: {
+                question: "What is the primary format of your data?",
+                options: [
+                    { text: "Tabular Data (Numbers, Categories in spreadsheets)", next: "tabular_data" },
+                    { text: "Text Data (Articles, Tweets, Reviews)", next: "result_nlp" },
+                    { text: "Images, Audio, or highly complex data", next: "result_deep_learning" }
+                ]
+            },
+            tabular_data: {
+                question: "Do you have existing labels (answers) for what you want to predict?",
+                options: [
+                    { text: "Yes (Supervised Learning)", next: "supervised_goal" },
+                    { text: "No (Unsupervised Learning)", next: "unsupervised_goal" }
+                ]
+            },
+            supervised_goal: {
+                question: "What are you trying to predict?",
+                options: [
+                    { text: "A specific number (e.g., house price, temperature)", next: "result_regression" },
+                    { text: "A category or class (e.g., spam vs. not spam, cat vs. dog)", next: "result_classification" }
+                ]
+            },
+            unsupervised_goal: {
+                question: "What is your main objective?",
+                options: [
+                    { text: "Discover hidden groups or natural segments in the data", next: "result_clustering" },
+                    { text: "Simplify the data and reduce the number of variables", next: "result_dimensionality" }
+                ]
+            }
+        };
+
+        // --- Results Content (Addressing Issue Requirements) ---
+        const results = {
+            result_regression: {
+                title: "Regression",
+                algorithms: "Linear Regression, Random Forest Regressor, XGBoost",
+                useCase: "Predicting continuous numerical values like stock prices, age, or sales revenue.",
+                pros: "Models like Linear Regression are highly interpretable. Trees handle non-linear data well.",
+                cons: "Can be sensitive to outliers. Complex models might overfit.",
+                example: "Predicting the price of a house based on its square footage and location."
+            },
+            result_classification: {
+                title: "Classification",
+                algorithms: "Logistic Regression, Decision Trees, SVM, KNN",
+                useCase: "Sorting data into predefined categories or classes.",
+                pros: "Clear boundaries for decision making. Many robust algorithms available.",
+                cons: "Imbalanced datasets (e.g., 99% Class A, 1% Class B) can severely skew results.",
+                example: "Filtering emails into 'Inbox' or 'Spam' folders."
+            },
+            result_clustering: {
+                title: "Clustering",
+                algorithms: "K-Means, DBSCAN, Hierarchical Clustering",
+                useCase: "Finding natural groupings in data without predefined labels.",
+                pros: "Great for exploratory data analysis and discovering hidden patterns.",
+                cons: "Hard to evaluate success since there are no 'correct' answers to compare against.",
+                example: "Segmenting retail customers into distinct buying groups for targeted marketing."
+            },
+            result_nlp: {
+                title: "Natural Language Processing (NLP)",
+                algorithms: "TF-IDF + Naive Bayes, Word2Vec, Transformer Models (BERT, GPT)",
+                useCase: "Understanding, interpreting, and generating human language.",
+                pros: "Unlocks massive amounts of unstructured data (text). Modern models are incredibly accurate.",
+                cons: "Requires heavy preprocessing. Advanced models require significant computational power.",
+                example: "Analyzing movie reviews to determine if the sentiment is positive or negative."
+            },
+            result_deep_learning: {
+                title: "Deep Learning",
+                algorithms: "CNNs (Images), RNNs/LSTMs (Sequences), Transformers",
+                useCase: "Handling highly complex, unstructured data like images, audio, or video.",
+                pros: "Achieves state-of-the-art performance on complex tasks. Learns features automatically.",
+                cons: "Requires massive datasets and expensive GPUs. Often acts as a 'black box' (hard to interpret).",
+                example: "Building a system that can identify specific objects (like cars or pedestrians) in a video feed."
+            },
+            result_dimensionality: {
+                title: "Dimensionality Reduction",
+                algorithms: "PCA (Principal Component Analysis), t-SNE",
+                useCase: "Compressing data by combining variables while retaining the most important patterns.",
+                pros: "Speeds up training for other algorithms. Helps visualize high-dimensional data.",
+                cons: "You lose some information. The new compressed features are often hard to interpret.",
+                example: "Reducing a dataset with 500 features down to 50 before feeding it into a classification model."
+            }
+        };
+
+        const container = document.getElementById('quiz-container');
+
+        // --- Render Functions ---
+        function renderQuestion(nodeKey) {
+            const node = decisionTree[nodeKey];
+            let html = `
+                <div class="text-center max-w-xl mx-auto mb-8">
+                    <h2 class="text-2xl font-bold text-slate-800">${node.question}</h2>
+                </div>
+                <div class="space-y-4 max-w-md mx-auto">
+            `;
+            
+            node.options.forEach(opt => {
+                html += `
+                    <button onclick="handleChoice('${opt.next}')" 
+                            class="w-full text-left px-6 py-4 rounded-xl border-2 border-slate-100 hover:border-indigo-500 hover:bg-indigo-50 hover:shadow-md transition-all duration-200 font-semibold text-slate-700 hover:text-indigo-700 flex items-center justify-between group">
+                        <span>${opt.text}</span>
+                        <svg class="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                `;
+            });
+            html += `</div>`;
+            updateContainer(html);
+        }
+
+        function renderResult(resultKey) {
+            const res = results[resultKey];
+            const html = `
+                <div>
+                    <div class="mb-6 flex items-center justify-between border-b pb-4">
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-full uppercase tracking-widest">Recommendation</span>
+                        <button onclick="renderQuestion('start')" class="text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition-colors">Start Over ↺</button>
+                    </div>
+                    
+                    <h2 class="text-3xl font-extrabold text-slate-900 mb-2">${res.title}</h2>
+                    <p class="text-lg text-slate-600 mb-6 font-medium">${res.useCase}</p>
+
+                    <div class="bg-slate-50 p-4 rounded-lg mb-6 border border-slate-100">
+                        <h3 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Common Algorithms</h3>
+                        <p class="text-slate-800 font-semibold">${res.algorithms}</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <h3 class="flex items-center text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">
+                                <svg class="w-4 h-4 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Advantages
+                            </h3>
+                            <p class="text-slate-700 text-sm">${res.pros}</p>
+                        </div>
+                        <div>
+                            <h3 class="flex items-center text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">
+                                <svg class="w-4 h-4 text-red-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                Limitations
+                            </h3>
+                            <p class="text-slate-700 text-sm">${res.cons}</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
+                        <h3 class="text-sm font-bold text-indigo-800 mb-1">Practical Example</h3>
+                        <p class="text-indigo-900 text-sm">${res.example}</p>
+                    </div>
+                </div>
+            `;
+            updateContainer(html);
+        }
+
+        // --- Logic & DOM Updates ---
+        function handleChoice(nextKey) {
+            if (decisionTree[nextKey]) {
+                renderQuestion(nextKey);
+            } else if (results[nextKey]) {
+                renderResult(nextKey);
+            }
+        }
+
+        function updateContainer(html) {
+            container.classList.remove('fade-in');
+            void container.offsetWidth; // Trigger DOM reflow
+            container.innerHTML = html;
+            container.classList.add('fade-in');
+        }
+
+        // Initialize
+        renderQuestion('start');
+    </script>
+</body>
+</html>

@@ -44,6 +44,7 @@ Welcome to **ML-Capsule**!!! This repository is a comprehensive collection of ma
 - [✨ Contributors](#-some-awesome-contributors-)
 - [❤️ Stargazers](#-stargazers-️)
 - [❤️ Forkers](#-forkers-️)
+- [Interactive ML Algorithm Guide](./Interactive_ML_Guide/index.html) - A decision-tree tool to help beginners choose the right algorithm.
 
 
 ## 📈 Why Machine Learning?
