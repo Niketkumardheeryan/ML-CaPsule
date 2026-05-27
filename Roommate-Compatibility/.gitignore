@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Streamlit cache
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+temp/
+
+# Python environments
+.python-version
+
+# Build files
+build/
+dist/
+
+# PyTorch checkpoints (optional)
+# *.pth
+
+# Dataset cache
+.cache/
+
+# Testing
+.pytest_cache/
