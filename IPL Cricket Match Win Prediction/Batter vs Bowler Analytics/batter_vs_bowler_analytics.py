@@ -38,6 +38,12 @@ def load_data(filepath: str) -> pd.DataFrame:
     """
     df = pd.read_csv(filepath)
     df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
+    # derive is_wicket from player_dismissed column
+    if "is_wicket" not in df.columns:
+        df["is_wicket"] = df["player_dismissed"].apply(
+            lambda x: 0 if (pd.isna(x) or str(x).strip() in ["nan", "", "None"]) else 1
+        )
+    df["is_wicket"] = df["is_wicket"].astype(int)
     return df
 
 
@@ -78,7 +84,7 @@ def get_matchup_stats(df: pd.DataFrame, batter: str, bowler: str) -> dict:
                     strike_rate, dismissal_rate, avg_runs_per_dismissal,
                     dot_ball_pct, boundary_count
     """
-    matchup = df[(df["batter"] == batter) & (df["bowler"] == bowler)].copy()
+    matchup = df[(df["batsman"] == batter) & (df["bowler"] == bowler)].copy()
 
     if matchup.empty:
         return {"error": f"No historical data found for {batter} vs {bowler}"}
@@ -95,7 +101,7 @@ def get_matchup_stats(df: pd.DataFrame, batter: str, bowler: str) -> dict:
     boundaries     = int(matchup[matchup["batsman_runs"].isin([4, 6])].shape[0])
 
     return {
-        "batter":              batter,
+        "batsman":              batter,
         "bowler":              bowler,
         "balls_faced":         balls_faced,
         "runs_scored":         runs_scored,
@@ -114,7 +120,7 @@ def top_matchups(df: pd.DataFrame, min_balls: int = 12) -> pd.DataFrame:
     sorted by dismissal rate descending.
     """
     grouped = (
-        df.groupby(["batter", "bowler"])
+        df.groupby(["batsman", "bowler"])
         .agg(
             balls_faced=("batsman_runs", "count"),
             runs_scored=("batsman_runs", "sum"),
@@ -151,7 +157,7 @@ def build_features(df: pd.DataFrame, min_balls: int = 6) -> pd.DataFrame:
     """
     # -- Batter career stats (on full df, before filtering)
     batter_stats = (
-        df.groupby("batter")
+        df.groupby("batsman")
         .agg(
             batter_career_balls=("batsman_runs", "count"),
             batter_career_runs=("batsman_runs", "sum"),
@@ -185,7 +191,7 @@ def build_features(df: pd.DataFrame, min_balls: int = 6) -> pd.DataFrame:
 
     # -- Head-to-head stats
     h2h = (
-        df.groupby(["batter", "bowler"])
+        df.groupby(["batsman", "bowler"])
         .agg(
             h2h_balls=("batsman_runs", "count"),
             h2h_runs=("batsman_runs", "sum"),
@@ -198,14 +204,14 @@ def build_features(df: pd.DataFrame, min_balls: int = 6) -> pd.DataFrame:
     h2h["h2h_dismissal_rate"] = (h2h["h2h_wickets"] / h2h["h2h_balls"]).round(4)
 
     # -- Merge into ball-level data
-    feat = df.merge(batter_stats[["batter", "batter_career_sr", "batter_career_avg"]],
-                    on="batter", how="left")
+    feat = df.merge(batter_stats[["batsman", "batter_career_sr", "batter_career_avg"]],
+                    on="batsman", how="left")
     feat = feat.merge(
         bowler_stats[["bowler", "bowler_career_econ", "bowler_career_wkt_rate"]],
         on="bowler", how="left"
     )
-    feat = feat.merge(h2h[["batter", "bowler", "h2h_sr", "h2h_dismissal_rate", "h2h_balls"]],
-                      on=["batter", "bowler"], how="inner")   # keep only pairs with enough data
+    feat = feat.merge(h2h[["batsman", "bowler", "h2h_sr", "h2h_dismissal_rate", "h2h_balls"]],
+                      on=["batsman", "bowler"], how="inner")   # keep only pairs with enough data
 
     # Phase encoding
     phase_map = {"powerplay": 0, "middle": 1, "death": 2}
@@ -248,7 +254,7 @@ def train_dismissal_model(features_df: pd.DataFrame):
     )
 
     model = lgb.LGBMClassifier(
-        n_estimators=300,
+        n_estimators=200,
         learning_rate=0.05,
         max_depth=6,
         num_leaves=31,
@@ -257,11 +263,7 @@ def train_dismissal_model(features_df: pd.DataFrame):
         random_state=42,
         verbose=-1,
     )
-    model.fit(
-        X_train, y_train,
-        eval_set=[(X_test, y_test)],
-        callbacks=[lgb.early_stopping(30, verbose=False)],
-    )
+    model.fit(X_train, y_train)
 
     y_pred  = model.predict(X_test)
     y_proba = model.predict_proba(X_test)[:, 1]
@@ -305,7 +307,7 @@ def predict_dismissal_probability(
     if "error" in stats:
         raise ValueError(stats["error"])
 
-    batter_rows = df[df["batter"] == batter]
+    batter_rows = df[df["batsman"] == batter]
     bowler_rows = df[df["bowler"] == bowler]
 
     batter_sr  = (batter_rows["batsman_runs"].sum() / len(batter_rows) * 100) if len(batter_rows) else 120
@@ -345,7 +347,7 @@ def plot_matchup_summary(stats: dict, save_path: str = "matchup_summary.png") ->
 
     fig, axes = plt.subplots(1, 3, figsize=(14, 5))
     fig.suptitle(
-        f"{stats['batter']}  vs  {stats['bowler']}",
+        f"{stats['batsman']}  vs  {stats['bowler']}",
         fontsize=16, fontweight="bold", y=1.02
     )
 
@@ -429,7 +431,7 @@ def plot_feature_importance(model, feature_names: list, save_path: str = "featur
 def plot_top_bowler_threats(df: pd.DataFrame, batter: str, top_n: int = 8,
                              save_path: str = "top_threats.png") -> None:
     """Show which bowlers have the highest dismissal rate vs a given batter."""
-    batter_df = df[df["batter"] == batter]
+    batter_df = df[df["batsman"] == batter]
     threat = (
         batter_df.groupby("bowler")
         .agg(balls=("batsman_runs", "count"), wickets=("is_wicket", "sum"))

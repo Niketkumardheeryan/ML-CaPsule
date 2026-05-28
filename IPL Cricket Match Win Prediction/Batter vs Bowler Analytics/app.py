@@ -117,7 +117,7 @@ if not os.path.exists(data_path):
 df = cached_load(data_path)
 model, feature_names = cached_model(data_path)
 
-batters = sorted(df["batter"].dropna().unique())
+batters = sorted(df["batsman"].dropna().unique())
 bowlers = sorted(df["bowler"].dropna().unique())
 
 
@@ -209,7 +209,7 @@ with tab1:
             fig2, ax2 = plt.subplots(figsize=(10, 4), facecolor="#1c2128")
             ax2.set_facecolor("#1c2128")
             threat_df = (
-                df[df["batter"] == sel_batter]
+                df[df["batsman"] == sel_batter]
                 .groupby("bowler")
                 .agg(balls=("batsman_runs", "count"), wickets=("is_wicket", "sum"))
                 .query("balls >= 6")
