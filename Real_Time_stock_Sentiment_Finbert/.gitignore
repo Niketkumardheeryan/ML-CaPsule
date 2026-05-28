@@ -1,0 +1,45 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter and notebook checkpoints
+.ipynb_checkpoints/
+
+# Streamlit local state
+.streamlit/secrets.toml
+
+# Generated analysis data
+news_sentiment_results.csv
+sentiment_summary.csv
+sentiment_results.csv
+
+# Generated charts and reports
+*_price_vs_sentiment.html
+sentiment_distribution.html
+model_comparison.html
+wordcloud_sentiment.png
+finbert_confidence_heatmap.png
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

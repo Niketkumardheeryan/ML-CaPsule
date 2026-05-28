@@ -1,0 +1,16 @@
+transformers==4.40.0
+torch==2.2.2
+yfinance==0.2.38
+requests==2.31.0
+feedparser==6.0.11
+pandas==2.2.2
+numpy==1.26.4
+plotly==5.22.0
+streamlit==1.35.0
+scikit-learn==1.4.2
+textblob==0.18.0
+vaderSentiment==3.3.2
+matplotlib==3.8.4
+seaborn==0.13.2
+wordcloud==1.9.3
+python-dotenv==1.0.1
