@@ -1,0 +1,6 @@
+transformers
+torch
+datasets
+pandas
+accelerate
+gradio
