@@ -1,0 +1,11 @@
+artifacts:
+  raw_data_path: "Dataset/All_Anime.csv"
+  ingested_data_dir: "artifacts/data"
+  processed_data_dir: "artifacts/processed"
+  viz_dir: "artifacts/visualizations" # New visualization storage folder
+
+data_cleaning:
+  columns_to_drop:
+    - "Story"
+    - "Certificate"
+    - "Unnamed: 0"
