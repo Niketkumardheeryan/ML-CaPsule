@@ -1,0 +1,15 @@
+# Ignore downloaded Kaggle dataset files.
+data/*.csv
+data/*.zip
+
+# Ignore trained model artifacts generated after running the notebook.
+models/*.joblib
+models/*.pkl
+
+# Ignore Jupyter temporary files.
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Ignore Python cache files.
+__pycache__/
+*.pyc
