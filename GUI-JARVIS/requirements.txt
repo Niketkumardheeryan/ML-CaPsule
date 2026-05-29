@@ -1,0 +1,8 @@
+pyttsx3
+wikipedia
+SpeechRecognition
+PyQt5
+geopy
+requests
+beautifulsoup4
+yahoo-fin
