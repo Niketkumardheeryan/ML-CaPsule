@@ -35,6 +35,7 @@ Welcome to **ML-Capsule**!!! This repository is a comprehensive collection of ma
 - [📚 Pre-requisites](#-pre-requisites)
 - [🗂️ Topics Covered](#️-topics-covered)
 - [📂 Project Descriptions](#-project-descriptions)
+- [🗺️ Learning Roadmap](#️-learning-roadmap)
 - [📜 Summary](#-summary)
 - [🔗 Useful URLs](#-useful-urls)
 - [🚀 Get Started](#-get-started)
@@ -288,6 +289,73 @@ Here are some of the exciting projects featured in this repository:
 
 8. **[Heart Disease Prediction](#)**  
    A predictive model for diagnosing heart disease based on patient attributes, utilizing statistical and machine learning techniques to improve diagnosis accuracy.
+
+## 🗺️ Learning Roadmap
+
+New to Machine Learning and unsure where to start? Follow our structured learning roadmap designed to help you progress from foundational concepts to advanced domains.
+
+### 🟢 Beginner Level
+
+Build a strong foundation in Python, data analysis, and machine learning fundamentals.
+
+Recommended Topics:
+
+* Basics of Python
+* NumPy Basics
+* Pandas Basics
+* Data Cleaning Techniques
+* Exploratory Data Analysis (EDA)
+* Feature Scaling
+* Classification Algorithms
+* Clustering Algorithms
+
+### 🟡 Intermediate Level
+
+Learn core machine learning techniques and improve model performance.
+
+Recommended Topics:
+
+* Feature Engineering
+* Feature Selection Techniques
+* Ensemble Methods
+* Random Forest
+* Hyperparameter Tuning
+* Customer Segmentation
+* Time Series Forecasting
+
+### 🔴 Advanced Level
+
+Explore specialized and production-oriented machine learning applications.
+
+Recommended Domains:
+
+* Deep Learning
+* Natural Language Processing (NLP)
+* Computer Vision
+* Reinforcement Learning
+* MLOps
+* Generative AI
+* Large Language Models (LLMs)
+
+### 🚀 Suggested Learning Path
+
+Python Basics
+⬇️
+NumPy & Pandas
+⬇️
+Data Cleaning & EDA
+⬇️
+Machine Learning Fundamentals
+⬇️
+Feature Engineering & Model Optimization
+⬇️
+Deep Learning
+⬇️
+NLP / Computer Vision / Reinforcement Learning
+⬇️
+MLOps & Deployment
+
+📖 For the complete categorized roadmap and project-wise learning guide, see **[ROADMAP.md](./ROADMAP.md)**.
 
 ## 📜 Summary
 
