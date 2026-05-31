@@ -459,3 +459,14 @@ Happy Coding! 👩‍💻👨‍💻
 <img src = "https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
 
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
+ Install pre-commit:
+
+ '''bash 
+ pip install pre-commit
+ '''
+
+ Enable hooks:
+
+ '''bash
+ pre-commit install
+ '''
