@@ -1,0 +1,414 @@
+country,Code,Year,Gender wage gap %
+Brazil,BRA,1981,34.21
+Brazil,BRA,1982,33.66
+Brazil,BRA,1983,35.75
+Brazil,BRA,1984,34.04
+Brazil,BRA,1985,28.58
+Argentina,ARG,1986,15.79
+Brazil,BRA,1986,34.69
+Argentina,ARG,1987,12.5
+Brazil,BRA,1987,32.01
+Argentina,ARG,1988,11.31
+Brazil,BRA,1988,30.88
+Brazil,BRA,1989,33.33
+Costa Rica,CRI,1989,4.55
+Mexico,MEX,1989,20.58
+Panama,PAN,1989,18.18
+Uruguay,URY,1989,22.22
+Venezuela,VEN,1989,11.78
+Brazil,BRA,1990,26.11
+Chile,CHL,1990,26.45
+Costa Rica,CRI,1990,3.13
+Jamaica,JAM,1990,28.42
+Argentina,ARG,1991,6.71
+Costa Rica,CRI,1991,1.23
+Honduras,HND,1991,19.35
+Panama,PAN,1991,4.55
+Argentina,ARG,1992,8.33
+Bolivia,BOL,1992,21.05
+Brazil,BRA,1992,15.44
+Chile,CHL,1992,24.47
+Costa Rica,CRI,1992,01.03
+Honduras,HND,1992,19.44
+Mexico,MEX,1992,25.35
+Uruguay,URY,1992,21.82
+Venezuela,VEN,1992,12.23
+Argentina,ARG,1993,7.69
+Belize,BLZ,1993,-28.27
+Bolivia,BOL,1993,30.95
+Brazil,BRA,1993,25.62
+Costa Rica,CRI,1993,-6.53
+Honduras,HND,1993,20.45
+Nicaragua,NIC,1993,6.78
+Argentina,ARG,1994,-2.27
+Belize,BLZ,1994,9.24
+Costa Rica,CRI,1994,-0.68
+Honduras,HND,1994,14.04
+Mexico,MEX,1994,16.87
+Argentina,ARG,1995,4.44
+Brazil,BRA,1995,24.14
+Costa Rica,CRI,1995,2.28
+Honduras,HND,1995,21.13
+Panama,PAN,1995,8.33
+Uruguay,URY,1995,16.32
+Venezuela,VEN,1995,13.21
+Argentina,ARG,1996,-2.33
+Brazil,BRA,1996,20.59
+Chile,CHL,1996,17.37
+Costa Rica,CRI,1996,-5.56
+Dominican Republic,DOM,1996,22.12
+Honduras,HND,1996,13.25
+Jamaica,JAM,1996,21.81
+Mexico,MEX,1996,17.7
+Uruguay,URY,1996,14.94
+Argentina,ARG,1997,0
+Belize,BLZ,1997,0.5
+Brazil,BRA,1997,20
+Costa Rica,CRI,1997,-2.15
+Dominican Republic,DOM,1997,7.75
+Honduras,HND,1997,17.76
+Panama,PAN,1997,16
+Paraguay,PRY,1997,0.95
+Peru,PER,1997,20
+Uruguay,URY,1997,13.29
+Venezuela,VEN,1997,10.72
+Argentina,ARG,1998,6.82
+Belize,BLZ,1998,-3.26
+Brazil,BRA,1998,17.14
+Chile,CHL,1998,18.75
+Costa Rica,CRI,1998,-2.38
+Honduras,HND,1998,26.39
+Mexico,MEX,1998,16.37
+Nicaragua,NIC,1998,19.59
+Panama,PAN,1998,10.34
+Peru,PER,1998,21.43
+Uruguay,URY,1998,14.68
+Venezuela,VEN,1998,15.87
+Argentina,ARG,1999,2.44
+Belize,BLZ,1999,-9.35
+Bolivia,BOL,1999,12.7
+Brazil,BRA,1999,17.14
+Costa Rica,CRI,1999,-1.32
+Honduras,HND,1999,17.65
+Jamaica,JAM,1999,6.67
+Panama,PAN,1999,7.69
+Paraguay,PRY,1999,8.56
+Peru,PER,1999,12.2
+Suriname,SUR,1999,6.18
+Venezuela,VEN,1999,6.11
+Argentina,ARG,2000,0
+Bolivia,BOL,2000,11.11
+Chile,CHL,2000,25.9
+Costa Rica,CRI,2000,-1.31
+Dominican Republic,DOM,2000,10.06
+El Salvador,SLV,2000,8.15
+Guatemala,GTM,2000,18.82
+Mexico,MEX,2000,23.87
+Panama,PAN,2000,3.45
+Peru,PER,2000,25.64
+Uruguay,URY,2000,9.66
+Venezuela,VEN,2000,-3.75
+Argentina,ARG,2001,2.5
+Bolivia,BOL,2001,19.7
+Brazil,BRA,2001,17.5
+Costa Rica,CRI,2001,0.62
+Dominican Republic,DOM,2001,7.85
+El Salvador,SLV,2001,09.09
+Haiti,HTI,2001,16.04
+Honduras,HND,2001,4.83
+Jamaica,JAM,2001,6.9
+Nicaragua,NIC,2001,2.96
+Panama,PAN,2001,0
+Paraguay,PRY,2001,8.99
+Peru,PER,2001,15
+Uruguay,URY,2001,10.1
+Venezuela,VEN,2001,2.39
+Argentina,ARG,2002,12.2
+Austria,AUT,2002,26.4
+Belgium,BEL,2002,17.13
+Bolivia,BOL,2002,7.94
+Brazil,BRA,2002,14.29
+Costa Rica,CRI,2002,-7.69
+Dominican Republic,DOM,2002,3.27
+El Salvador,SLV,2002,19.33
+Finland,FIN,2002,18.04
+France,FRA,2002,16.59
+Germany,DEU,2002,25.61
+Greece,GRC,2002,25.47
+Honduras,HND,2002,-3.13
+Ireland,IRL,2002,14.92
+Italy,ITA,2002,18.9
+Jamaica,JAM,2002,15.33
+Luxembourg,LUX,2002,18.95
+Mexico,MEX,2002,12.5
+Netherlands,NLD,2002,18.78
+Panama,PAN,2002,0
+Paraguay,PRY,2002,28.24
+Peru,PER,2002,11.9
+Spain,ESP,2002,20.22
+Uruguay,URY,2002,7.4
+Venezuela,VEN,2002,1.9
+Argentina,ARG,2003,-4.55
+Brazil,BRA,2003,16.67
+Chile,CHL,2003,20.5
+Costa Rica,CRI,2003,-4.06
+Dominican Republic,DOM,2003,9.18
+Ecuador,ECU,2003,6.25
+Honduras,HND,2003,-0.45
+Panama,PAN,2003,0
+Paraguay,PRY,2003,-0.81
+Peru,PER,2003,18.6
+Uruguay,URY,2003,13.19
+Venezuela,VEN,2003,0.3
+Argentina,ARG,2004,02.08
+Brazil,BRA,2004,17.65
+Costa Rica,CRI,2004,-2.41
+Dominican Republic,DOM,2004,11.09
+Ecuador,ECU,2004,11.11
+El Salvador,SLV,2004,0
+Honduras,HND,2004,0.91
+Panama,PAN,2004,0
+Paraguay,PRY,2004,5.47
+Peru,PER,2004,22.5
+Uruguay,URY,2004,9.31
+Venezuela,VEN,2004,0.77
+Argentina,ARG,2005,-1.72
+Bolivia,BOL,2005,12.66
+Brazil,BRA,2005,14.55
+Costa Rica,CRI,2005,5.49
+Dominican Republic,DOM,2005,05.04
+Ecuador,ECU,2005,11.76
+El Salvador,SLV,2005,5.88
+Honduras,HND,2005,-23.18
+Nicaragua,NIC,2005,9.93
+Panama,PAN,2005,0
+Paraguay,PRY,2005,12.74
+Peru,PER,2005,15.38
+Uruguay,URY,2005,11.13
+Venezuela,VEN,2005,5.1
+Argentina,ARG,2006,8
+Austria,AUT,2006,25.44
+Belgium,BEL,2006,07.01
+Bolivia,BOL,2006,26.53
+Brazil,BRA,2006,14.75
+Chile,CHL,2006,14.41
+Costa Rica,CRI,2006,4.4
+Dominican Republic,DOM,2006,8.77
+Ecuador,ECU,2006,5.56
+El Salvador,SLV,2006,-6.25
+Finland,FIN,2006,21.25
+France,FRA,2006,15.47
+Germany,DEU,2006,22.62
+Greece,GRC,2006,20.69
+Guatemala,GTM,2006,5.34
+Honduras,HND,2006,-10.08
+Ireland,IRL,2006,17.22
+Italy,ITA,2006,4.29
+Luxembourg,LUX,2006,10.68
+Netherlands,NLD,2006,23.65
+Panama,PAN,2006,0
+Paraguay,PRY,2006,15.99
+Peru,PER,2006,20.45
+Spain,ESP,2006,17.9
+Uruguay,URY,2006,11.71
+Venezuela,VEN,2006,6.43
+Argentina,ARG,2007,6.67
+Bolivia,BOL,2007,17.05
+Brazil,BRA,2007,14.71
+Costa Rica,CRI,2007,10
+Dominican Republic,DOM,2007,12.06
+Ecuador,ECU,2007,15
+El Salvador,SLV,2007,5.56
+Honduras,HND,2007,0
+Panama,PAN,2007,0
+Paraguay,PRY,2007,9.58
+Peru,PER,2007,16.33
+Portugal,PRT,2007,10.65
+Uruguay,URY,2007,11.02
+Argentina,ARG,2008,2.68
+Bolivia,BOL,2008,19.27
+Brazil,BRA,2008,15.49
+Colombia,COL,2008,0.76
+Costa Rica,CRI,2008,5.86
+Dominican Republic,DOM,2008,5.42
+Ecuador,ECU,2008,15
+El Salvador,SLV,2008,5.56
+Honduras,HND,2008,9.79
+Mexico,MEX,2008,13.39
+Panama,PAN,2008,0
+Paraguay,PRY,2008,5.99
+Peru,PER,2008,20.37
+Portugal,PRT,2008,11.74
+Uruguay,URY,2008,15.54
+Argentina,ARG,2009,1.52
+Bolivia,BOL,2009,09.01
+Brazil,BRA,2009,14.29
+Chile,CHL,2009,23.97
+Colombia,COL,2009,0.71
+Costa Rica,CRI,2009,-0.15
+Dominican Republic,DOM,2009,6.33
+Ecuador,ECU,2009,10
+El Salvador,SLV,2009,0
+Honduras,HND,2009,-10.78
+Nicaragua,NIC,2009,02.04
+Panama,PAN,2009,0
+Paraguay,PRY,2009,9.49
+Peru,PER,2009,18.97
+Portugal,PRT,2009,9.67
+South Korea,KOR,2009,35.09
+Uruguay,URY,2009,15.46
+Argentina,ARG,2010,-0.61
+Austria,AUT,2010,23.95
+Belgium,BEL,2010,10.2
+Colombia,COL,2010,3.92
+Cyprus,CYP,2010,16.84
+Dominican Republic,DOM,2010,1.7
+Ecuador,ECU,2010,4.55
+El Salvador,SLV,2010,0
+Finland,FIN,2010,20.29
+France,FRA,2010,15.62
+Germany,DEU,2010,22.28
+Greece,GRC,2010,15.07
+Honduras,HND,2010,-8.55
+Ireland,IRL,2010,13.87
+Italy,ITA,2010,5.26
+Luxembourg,LUX,2010,8.7
+Malta,MLT,2010,7.23
+Mexico,MEX,2010,3.13
+Netherlands,NLD,2010,17.45
+Panama,PAN,2010,0
+Paraguay,PRY,2010,-1.56
+Peru,PER,2010,23.81
+Portugal,PRT,2010,7.64
+Slovakia,SVK,2010,19.66
+Slovenia,SVN,2010,0.66
+South Korea,KOR,2010,34.27
+Spain,ESP,2010,16.25
+Uruguay,URY,2010,12.94
+Argentina,ARG,2011,0
+Bolivia,BOL,2011,10.22
+Brazil,BRA,2011,18.02
+Chile,CHL,2011,16.15
+Colombia,COL,2011,-2.08
+Dominican Republic,DOM,2011,11.78
+Ecuador,ECU,2011,12.5
+El Salvador,SLV,2011,0
+Guatemala,GTM,2011,5.71
+Malaysia,MYS,2011,-0.86
+Panama,PAN,2011,-2.86
+Paraguay,PRY,2011,6.91
+Peru,PER,2011,22.06
+Portugal,PRT,2011,9.58
+South Korea,KOR,2011,33.58
+Uruguay,URY,2011,9.19
+Argentina,ARG,2012,-1.9
+Bolivia,BOL,2012,10.81
+Brazil,BRA,2012,16.39
+Colombia,COL,2012,4.87
+Czechia,CZE,2012,21.25
+Dominican Republic,DOM,2012,7.55
+Ecuador,ECU,2012,7.69
+El Salvador,SLV,2012,0
+Honduras,HND,2012,-15.76
+Malaysia,MYS,2012,-2.57
+Mexico,MEX,2012,13.98
+Panama,PAN,2012,2.44
+Paraguay,PRY,2012,7.32
+Peru,PER,2012,25.33
+Portugal,PRT,2012,8.8
+South Korea,KOR,2012,32.69
+Spain,ESP,2012,18.75
+Uruguay,URY,2012,8.59
+Argentina,ARG,2013,1.45
+Bolivia,BOL,2013,12.14
+Brazil,BRA,2013,16.89
+Chile,CHL,2013,20.55
+Colombia,COL,2013,0.63
+Czechia,CZE,2013,20.91
+Dominican Republic,DOM,2013,3.17
+Ecuador,ECU,2013,10.34
+El Salvador,SLV,2013,-5.26
+Finland,FIN,2013,17.63
+Honduras,HND,2013,-4.37
+Malaysia,MYS,2013,-3.19
+Panama,PAN,2013,-2.44
+Paraguay,PRY,2013,10.62
+Peru,PER,2013,21.33
+Portugal,PRT,2013,10.34
+South Korea,KOR,2013,32.94
+Spain,ESP,2013,18.75
+Uruguay,URY,2013,10.01
+Argentina,ARG,2014,-3.62
+Austria,AUT,2014,22.22
+Belgium,BEL,2014,6.54
+Bolivia,BOL,2014,6.18
+Brazil,BRA,2014,15.97
+Brunei,BRN,2014,2.74
+Bulgaria,BGR,2014,12.66
+Colombia,COL,2014,2.99
+Cyprus,CYP,2014,14.15
+Czechia,CZE,2014,21.16
+Denmark,DNK,2014,15.96
+Dominican Republic,DOM,2014,8.25
+Ecuador,ECU,2014,12.9
+El Salvador,SLV,2014,-5.26
+Estonia,EST,2014,28.16
+Finland,FIN,2014,16.93
+France,FRA,2014,15.5
+Germany,DEU,2014,22.29
+Guatemala,GTM,2014,0.68
+Honduras,HND,2014,-15.05
+Hungary,HUN,2014,15.12
+Iceland,ISL,2014,16.55
+Ireland,IRL,2014,13.93
+Israel,ISR,2014,15.52
+Italy,ITA,2014,6.12
+Latvia,LVA,2014,17.38
+Lithuania,LTU,2014,13.29
+Luxembourg,LUX,2014,5.38
+Malaysia,MYS,2014,-1.43
+Malta,MLT,2014,10.19
+Mexico,MEX,2014,6.65
+Montenegro,MNE,2014,7.78
+Netherlands,NLD,2014,16.07
+Nicaragua,NIC,2014,2.62
+North Macedonia,MKD,2014,9.15
+Norway,NOR,2014,14.45
+Panama,PAN,2014,4.44
+Paraguay,PRY,2014,5.41
+Peru,PER,2014,20.51
+Poland,POL,2014,7.73
+Romania,ROU,2014,4.5
+Serbia,SRB,2014,8.72
+Slovakia,SVK,2014,19.66
+Slovenia,SVN,2014,7
+South Korea,KOR,2014,33.8
+Spain,ESP,2014,12.5
+Sweden,SWE,2014,13.85
+Switzerland,CHE,2014,17.38
+Turkey,TUR,2014,-1.26
+United Kingdom,GBR,2014,20.91
+Uruguay,URY,2014,8.62
+Colombia,COL,2015,0.34
+Czechia,CZE,2015,21.12
+Dominican Republic,DOM,2015,7.38
+Israel,ISR,2015,15.1
+Malaysia,MYS,2015,-2.25
+Paraguay,PRY,2015,-1.77
+Portugal,PRT,2015,9.59
+Russia,RUS,2015,24.42
+Slovakia,SVK,2015,19.1
+South Korea,KOR,2015,34.67
+Spain,ESP,2015,12.5
+United Kingdom,GBR,2015,20.59
+Vietnam,VNM,2015,7.69
+Belize,BLZ,2016,-20.03
+Czechia,CZE,2016,20.61
+Ecuador,ECU,2016,-2.8
+Finland,FIN,2016,16.34
+Pakistan,PAK,2016,10.81
+Portugal,PRT,2016,8.54
+Romania,ROU,2016,6.61
+South Korea,KOR,2016,33.59
+Thailand,THA,2016,-21.57
+Vietnam,VNM,2016,10.71
