@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% block pagetitle %}AgriVision | Home{% endblock pagetitle %}
+
+{% block body %}
+<section class="hero-panel">
+    <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+            <span class="eyebrow"><i class="fa-solid fa-seedling"></i> Plant Health Assistant</span>
+            <h1 class="display-4 mt-3 mb-3">Detect leaf diseases with a cleaner, faster, and more trustworthy workflow.</h1>
+            <p class="lead mb-4">Upload a plant leaf image, review the AI result, and get practical prevention guidance in a product experience that works across mobile and desktop.</p>
+            <div class="hero-actions">
+                <a class="btn btn-brand" href="{{ url_for('ai_engine_page') }}">Open AI Engine</a>
+                <a class="btn btn-outline-light rounded-pill px-4 py-3 fw-bold" href="{{ url_for('about') }}">Learn More</a>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="hero-metric">
+                <h2 class="h3 text-white">Supported crop groups</h2>
+                <p class="mb-3 text-white-50">Designed around common fruit and vegetable classes included in your trained model.</p>
+                <div class="row g-3">
+                    <div class="col-6"><div class="hero-metric"><strong>Apple</strong><div class="small text-white-50">Scab, rust, rot</div></div></div>
+                    <div class="col-6"><div class="hero-metric"><strong>Corn</strong><div class="small text-white-50">Rust, blight</div></div></div>
+                    <div class="col-6"><div class="hero-metric"><strong>Grape</strong><div class="small text-white-50">Black rot, esca</div></div></div>
+                    <div class="col-6"><div class="hero-metric"><strong>Tomato</strong><div class="small text-white-50">Mold, blight, mites</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mt-4">
+    <div class="content-panel">
+        <h2 class="section-title">Crop Library</h2>
+        <p class="section-copy mb-4">The landing page now highlights supported crops in a responsive grid instead of hiding the experience on smaller screens.</p>
+        <div class="plant-grid">
+            <article class="plant-card">
+                <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=900&q=80" alt="Fresh apples on a branch">
+                <div class="card-body-clean"><h3 class="h5 mb-1">Apple</h3><p class="text-soft mb-0">Scab, black rot, cedar rust</p></div>
+            </article>
+            <article class="plant-card">
+                <img src="https://images.unsplash.com/photo-1498557850523-fd3d118b962e?auto=format&fit=crop&w=900&q=80" alt="Blueberries in a bowl">
+                <div class="card-body-clean"><h3 class="h5 mb-1">Blueberry</h3><p class="text-soft mb-0">Healthy leaf screening</p></div>
+            </article>
+            <article class="plant-card">
+                <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=900&q=80" alt="Cherries on a tree">
+                <div class="card-body-clean"><h3 class="h5 mb-1">Cherry</h3><p class="text-soft mb-0">Healthy and mildew detection</p></div>
+            </article>
+            <article class="plant-card">
+                <img src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=900&q=80" alt="Corn field">
+                <div class="card-body-clean"><h3 class="h5 mb-1">Corn</h3><p class="text-soft mb-0">Common rust and blight</p></div>
+            </article>
+            <article class="plant-card">
+                <img src="https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&w=900&q=80" alt="Grapes on a vine">
+                <div class="card-body-clean"><h3 class="h5 mb-1">Grape</h3><p class="text-soft mb-0">Black rot, esca, leaf blight</p></div>
+            </article>
+            <article class="plant-card">
+                <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=900&q=80" alt="Potatoes in soil">
+                <div class="card-body-clean"><h3 class="h5 mb-1">Potato</h3><p class="text-soft mb-0">Early and late blight</p></div>
+            </article>
+            <article class="plant-card">
+                <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=900&q=80" alt="Strawberries growing in a garden">
+                <div class="card-body-clean"><h3 class="h5 mb-1">Strawberry</h3><p class="text-soft mb-0">Leaf scorch support</p></div>
+            </article>
+            <article class="plant-card">
+                <img src="https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=900&q=80" alt="Tomatoes on a vine">
+                <div class="card-body-clean"><h3 class="h5 mb-1">Tomato</h3><p class="text-soft mb-0">Blight, mold, mites, mosaic</p></div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="mt-4">
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="info-card content-panel h-100">
+                <span class="status-chip"><i class="fa-solid fa-camera"></i> Step 1</span>
+                <h2 class="h4 mt-3">Capture a clear leaf image</h2>
+                <p class="text-soft mb-0">Use good lighting and make one leaf the main subject so the diagnosis flow starts with stronger visual input.</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="info-card content-panel h-100">
+                <span class="status-chip"><i class="fa-solid fa-brain"></i> Step 2</span>
+                <h2 class="h4 mt-3">Review the AI diagnosis</h2>
+                <p class="text-soft mb-0">The app maps the prediction to readable crop guidance instead of only exposing the raw class output.</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="info-card content-panel h-100">
+                <span class="status-chip"><i class="fa-solid fa-shield-heart"></i> Step 3</span>
+                <h2 class="h4 mt-3">Take the next action carefully</h2>
+                <p class="text-soft mb-0">Use the result as decision support and validate treatments with local crop knowledge before applying products.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}

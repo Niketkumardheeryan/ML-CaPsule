@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% block pagetitle %}AgriVision | {{ title }}{% endblock pagetitle %}
+
+{% block body %}
+<section class="content-panel">
+    <span class="status-chip mb-3">
+        {% if pred==3 or pred==5 or pred==7 or pred==11 or pred==15 or pred==18 or pred==20 or pred==23 or pred==24 or pred==25 or pred==28 or pred==38 %}
+        <i class="fa-solid fa-circle-check"></i> Healthy plant guidance
+        {% else %}
+        <i class="fa-solid fa-triangle-exclamation"></i> Disease prediction
+        {% endif %}
+    </span>
+    <h1 class="section-title">{{ title }}</h1>
+    <p class="section-copy mb-0">Review the diagnosis carefully and use the treatment section as guidance to verify before purchasing or applying any product.</p>
+</section>
+
+<section class="mt-4 result-grid">
+    <article class="result-card">
+        <div class="result-image-wrap">
+            <div class="media-frame media-square">
+                <div class="media-placeholder">
+                    <div>
+                        <i class="fa-solid fa-leaf mb-2"></i>
+                        <div>{{ title }}</div>
+                    </div>
+                </div>
+                <img class="result-image is-cover" src="{{ image_url }}" alt="{{ title }} representative image" onerror="this.style.display='none'">
+            </div>
+        </div>
+        <div class="card-body-clean">
+            <h2 class="h4">Result summary</h2>
+            <p class="text-soft mb-0">
+                {% if pred==3 or pred==5 or pred==7 or pred==11 or pred==15 or pred==18 or pred==20 or pred==23 or pred==24 or pred==25 or pred==28 or pred==38 %}
+                The model considers this plant healthy. Use the notes below to maintain growth quality and reduce future disease risk.
+                {% else %}
+                The model detected a likely disease class. Use the description and prevention guidance below to help guide the next inspection step.
+                {% endif %}
+            </p>
+        </div>
+    </article>
+
+    <div class="d-grid gap-4">
+        <article class="result-card">
+            <div class="card-body-clean">
+                <h2 class="h4">
+                    {% if pred==3 or pred==5 or pred==7 or pred==11 or pred==15 or pred==18 or pred==20 or pred==23 or pred==24 or pred==25 or pred==28 or pred==38 %}
+                    Healthy plant tips
+                    {% else %}
+                    Disease description
+                    {% endif %}
+                </h2>
+                <p class="mb-0">{{ desc }}</p>
+            </div>
+        </article>
+
+        <article class="result-card">
+            <div class="card-body-clean">
+                <h2 class="h4">
+                    {% if pred==3 or pred==5 or pred==7 or pred==11 or pred==15 or pred==18 or pred==20 or pred==23 or pred==24 or pred==25 or pred==28 or pred==38 %}
+                    Benefits and care guidance
+                    {% else %}
+                    Prevention steps
+                    {% endif %}
+                </h2>
+                <p class="mb-0">{{ prevent }}</p>
+            </div>
+        </article>
+
+        {% if pred != 4 %}
+        <article class="result-card">
+            <div class="card-body-clean">
+                <h2 class="h4 mb-3">
+                    {% if pred==3 or pred==5 or pred==7 or pred==11 or pred==15 or pred==18 or pred==20 or pred==23 or pred==24 or pred==25 or pred==28 or pred==38 %}
+                    Suggested treatment paths
+                    {% else %}
+                    Suggested treatment paths
+                    {% endif %}
+                </h2>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="info-card content-panel h-100">
+                            <span class="status-chip mb-3"><i class="fa-solid fa-leaf"></i> {{ organic_option.label }}</span>
+                            <div class="media-frame mb-3">
+                                <div class="media-placeholder">
+                                    <div>
+                                        <i class="fa-solid fa-leaf mb-2"></i>
+                                        <div>{{ organic_option.name }}</div>
+                                    </div>
+                                </div>
+                                <img src="{{ organic_option.image }}" alt="{{ organic_option.name }}" class="is-cover" onerror="this.style.display='none'">
+                            </div>
+                            <h3 class="h5">{{ organic_option.name }}</h3>
+                            <p class="text-soft">{{ organic_option.note }}</p>
+                            {% if organic_option.link %}
+                            <a target="_blank" rel="noopener noreferrer" href="{{ organic_option.link }}" class="btn btn-outline-brand">Open Organic Listing</a>
+                            {% else %}
+                            <button type="button" class="btn btn-outline-brand" disabled>Link Unavailable</button>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="info-card content-panel h-100">
+                            <span class="status-chip mb-3"><i class="fa-solid fa-flask"></i> {{ chemical_option.label }}</span>
+                            <div class="media-frame mb-3">
+                                <div class="media-placeholder">
+                                    <div>
+                                        <i class="fa-solid fa-flask mb-2"></i>
+                                        <div>{{ chemical_option.name }}</div>
+                                    </div>
+                                </div>
+                                <img src="{{ chemical_option.image }}" alt="{{ chemical_option.name }}" class="is-cover" onerror="this.style.display='none'">
+                            </div>
+                            <h3 class="h5">{{ chemical_option.name }}</h3>
+                            <p class="text-soft">{{ chemical_option.note }}</p>
+                            {% if chemical_option.link %}
+                            <a target="_blank" rel="noopener noreferrer" href="{{ chemical_option.link }}" class="btn btn-brand">Open Chemical Listing</a>
+                            {% else %}
+                            <button type="button" class="btn btn-brand" disabled>Link Unavailable</button>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        {% endif %}
+    </div>
+</section>
+{% endblock body %}

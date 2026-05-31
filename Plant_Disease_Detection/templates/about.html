@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block pagetitle %}AgriVision | About{% endblock pagetitle %}
+
+{% block body %}
+<section class="content-panel">
+    <span class="eyebrow" style="color: var(--primary-strong); background: var(--accent-soft);"><i class="fa-solid fa-circle-info"></i> About</span>
+    <h1 class="section-title mt-3">Plant disease detection built to support faster crop decisions</h1>
+    <p class="section-copy">AgriVision is a Flask-based plant disease detection application that uses an image classification model to identify likely diseases from plant leaf photos. Its purpose is to help users recognize symptoms earlier, understand what the disease may be, and review possible next steps in a simple interface.</p>
+</section>
+
+<section class="mt-4">
+    <div class="row g-4">
+        <div class="col-lg-4">
+            <div class="info-card content-panel h-100">
+                <h2 class="h4">AgriVision Purpose</h2>
+                <p class="text-soft mb-0">The purpose of AgriVision is to make early disease awareness easier for farmers, students, and plant enthusiasts by turning a leaf image into understandable guidance.</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="info-card content-panel h-100">
+                <h2 class="h4">AgriVision Objective</h2>
+                <p class="text-soft mb-0">The main objective of AgriVision is to reduce the gap between seeing symptoms and taking action by providing disease prediction, prevention tips, and product suggestions in one place.</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="info-card content-panel h-100">
+                <h2 class="h4">What It Does</h2>
+                <p class="text-soft mb-0">Users can upload or capture a leaf image, let the model predict the disease class, view a short explanation, review prevention advice, and compare suggested organic and chemical product options.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mt-4">
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="info-card content-panel h-100">
+                <h2 class="h4">Multilingual Access</h2>
+                <p class="text-soft mb-0">The interface includes a translation option so the project can be viewed in English, Hindi, and Telugu, making it more accessible to a wider user base.</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="info-card content-panel h-100">
+                <h2 class="h4">Important Note</h2>
+                <p class="text-soft mb-0">The prediction should support decision-making, not replace field inspection, product-label review, or expert agronomy advice.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}

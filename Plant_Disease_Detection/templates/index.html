@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% block pagetitle %}AgriVision | AI Engine{% endblock pagetitle %}
+
+{% block body %}
+<section class="content-panel">
+    <span class="eyebrow" style="color: var(--primary-strong); background: var(--accent-soft);"><i class="fa-solid fa-microscope"></i> AI Engine</span>
+    <h1 class="section-title mt-3">Upload a leaf image for analysis</h1>
+    <p class="section-copy mb-4">The diagnosis page is streamlined around one clear action: upload or capture a leaf image, preview it, and run analysis with less visual clutter.</p>
+
+    <div class="row g-4 align-items-start">
+        <div class="col-lg-7">
+            <form action="/submit" method="POST" enctype="multipart/form-data" class="upload-zone">
+                <div class="mb-3">
+                    <label for="actual-btn" class="form-label fw-semibold">Leaf image</label>
+                    <input type="file" id="actual-btn" class="form-control" name="image" accept="image/*" required>
+                    <div class="form-text">Use a clear, close image. Natural light and sharp focus usually improve the experience.</div>
+                </div>
+
+                <div class="inline-actions mb-3">
+                    <button type="button" id="camera-btn" class="btn btn-outline-brand">Open Camera</button>
+                    <button type="submit" class="btn btn-brand">Analyze Image</button>
+                </div>
+
+                <p id="file-chosen" class="text-soft mb-3" aria-live="polite">No image selected yet.</p>
+
+                <div id="camera-container" class="d-none">
+                    <video id="camera-feed" class="w-100 rounded-4 mb-3" autoplay playsinline aria-label="Camera preview"></video>
+                    <button type="button" id="capture-btn" class="btn btn-outline-brand">Capture Photo</button>
+                </div>
+
+                <img id="preview" src="#" alt="Selected leaf preview" class="img-fluid rounded-4 mt-3 d-none">
+            </form>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="info-card content-panel h-100">
+                <h2 class="h4">Tips for better results</h2>
+                <ul class="meta-list mt-3">
+                    <li><i class="fa-solid fa-check text-success me-2"></i>Keep a single leaf centered.</li>
+                    <li><i class="fa-solid fa-check text-success me-2"></i>Avoid blur and heavy shadows.</li>
+                    <li><i class="fa-solid fa-check text-success me-2"></i>Review the output before buying treatments.</li>
+                    <li><i class="fa-solid fa-check text-success me-2"></i>Use the AI result as support, not absolute diagnosis.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mt-4">
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="info-card content-panel h-100">
+                <h2 class="h4">Why this version is stronger</h2>
+                <p class="text-soft mb-0">The page removes duplicated theme scripts, reduces dependency-heavy widgets, and uses simpler accessible form controls.</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="info-card content-panel h-100">
+                <h2 class="h4">Before you act</h2>
+                <p class="text-soft mb-0">If the visual result conflicts with what you observe in the field, inspect again before treatment. Crop context still matters.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}
+
+{% block extra_scripts %}
+<script>
+    const actualBtn = document.getElementById('actual-btn');
+    const cameraBtn = document.getElementById('camera-btn');
+    const captureBtn = document.getElementById('capture-btn');
+    const fileChosen = document.getElementById('file-chosen');
+    const cameraContainer = document.getElementById('camera-container');
+    const cameraFeed = document.getElementById('camera-feed');
+    const preview = document.getElementById('preview');
+
+    function stopCamera() {
+        if (cameraFeed.srcObject) {
+            cameraFeed.srcObject.getTracks().forEach(track => track.stop());
+            cameraFeed.srcObject = null;
+        }
+    }
+
+    actualBtn.addEventListener('change', function () {
+        const file = this.files && this.files[0];
+        if (!file) {
+            fileChosen.textContent = 'No image selected yet.';
+            preview.classList.add('d-none');
+            preview.removeAttribute('src');
+            return;
+        }
+
+        fileChosen.textContent = `Selected file: ${file.name}`;
+        preview.src = URL.createObjectURL(file);
+        preview.classList.remove('d-none');
+        cameraContainer.classList.add('d-none');
+        stopCamera();
+    });
+
+    cameraBtn.addEventListener('click', async function () {
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+            fileChosen.textContent = 'Camera access is not supported in this browser. Please upload a file instead.';
+            return;
+        }
+
+        try {
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            cameraFeed.srcObject = stream;
+            cameraContainer.classList.remove('d-none');
+            preview.classList.add('d-none');
+            fileChosen.textContent = 'Camera is active. Keep the leaf in focus, then capture the image.';
+        } catch (error) {
+            fileChosen.textContent = 'Could not access the camera. Please check browser permissions or use file upload.';
+        }
+    });
+
+    captureBtn.addEventListener('click', function () {
+        if (!cameraFeed.srcObject) {
+            return;
+        }
+
+        const canvas = document.createElement('canvas');
+        canvas.width = cameraFeed.videoWidth;
+        canvas.height = cameraFeed.videoHeight;
+        const context = canvas.getContext('2d');
+        context.drawImage(cameraFeed, 0, 0, canvas.width, canvas.height);
+
+        canvas.toBlob(function (blob) {
+            const capturedFile = new File([blob], 'captured_leaf.jpg', { type: 'image/jpeg' });
+            const dataTransfer = new DataTransfer();
+            dataTransfer.items.add(capturedFile);
+            actualBtn.files = dataTransfer.files;
+            fileChosen.textContent = `Captured file: ${capturedFile.name}`;
+            preview.src = URL.createObjectURL(capturedFile);
+            preview.classList.remove('d-none');
+            cameraContainer.classList.add('d-none');
+            stopCamera();
+        }, 'image/jpeg');
+    });
+
+    window.addEventListener('beforeunload', stopCamera);
+</script>
+{% endblock extra_scripts %}

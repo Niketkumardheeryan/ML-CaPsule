@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AgriVision helps growers identify plant diseases from leaf images and review next-step guidance.">
+    <title>{% block pagetitle %}AgriVision{% endblock pagetitle %}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    {% block extra_head %}{% endblock extra_head %}
+
+    <style>
+        :root {
+            --bg: #f2f0e7;
+            --surface: #fffdf7;
+            --surface-soft: #f8f4e8;
+            --text: #193126;
+            --muted: #607265;
+            --primary: #285843;
+            --primary-strong: #16382b;
+            --accent: #d7a24b;
+            --accent-soft: rgba(215, 162, 75, 0.18);
+            --border: rgba(25, 49, 38, 0.12);
+            --shadow: 0 20px 45px rgba(23, 47, 35, 0.10);
+        }
+
+        body.dark-theme {
+            --bg: #101c16;
+            --surface: #172821;
+            --surface-soft: #20342a;
+            --text: #edf6ef;
+            --muted: #b3c5b8;
+            --primary: #8dc5a2;
+            --primary-strong: #d8eedf;
+            --accent: #efc876;
+            --accent-soft: rgba(239, 200, 118, 0.14);
+            --border: rgba(237, 246, 239, 0.10);
+            --shadow: 0 22px 45px rgba(0, 0, 0, 0.28);
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: "Manrope", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(215, 162, 75, 0.20), transparent 28%),
+                linear-gradient(180deg, #f7f4ea 0%, var(--bg) 65%);
+            transition: background-color 0.25s ease, color 0.25s ease;
+        }
+
+        h1, h2, h3, h4, h5, h6,
+        .brand-wordmark {
+            font-family: "Fraunces", serif;
+            color: var(--primary-strong);
+            letter-spacing: -0.02em;
+        }
+
+        .site-shell {
+            width: min(1120px, calc(100% - 2rem));
+            margin: 0 auto;
+        }
+
+        .site-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+            backdrop-filter: blur(18px);
+            background: rgba(255, 253, 247, 0.82);
+            border-bottom: 1px solid var(--border);
+        }
+
+        body.dark-theme .site-nav {
+            background: rgba(16, 28, 22, 0.82);
+        }
+
+        .navbar {
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: var(--primary-strong) !important;
+            font-weight: 700;
+        }
+
+        .brand-mark {
+            width: 2.7rem;
+            height: 2.7rem;
+            display: inline-grid;
+            place-items: center;
+            border-radius: 0.9rem;
+            color: #fff;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            box-shadow: var(--shadow);
+        }
+
+        .nav-link {
+            color: var(--muted) !important;
+            font-weight: 600;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus,
+        .nav-link.active {
+            color: var(--primary-strong) !important;
+        }
+
+        .theme-toggle {
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            background: var(--surface);
+            color: var(--primary-strong);
+            padding: 0.65rem 0.9rem;
+        }
+
+        .page-section {
+            padding: 2rem 0 4rem;
+        }
+
+        .hero-panel,
+        .content-panel,
+        .info-card,
+        .result-card,
+        .profile-card,
+        .product-card,
+        .plant-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            border-radius: 1.4rem;
+        }
+
+        .hero-panel {
+            overflow: hidden;
+            padding: clamp(2rem, 5vw, 4rem);
+            background:
+                linear-gradient(135deg, rgba(40, 88, 67, 0.96), rgba(22, 56, 43, 0.92)),
+                linear-gradient(135deg, var(--surface), var(--surface));
+            color: #fff;
+        }
+
+        .hero-panel h1,
+        .hero-panel p,
+        .hero-panel .eyebrow {
+            color: #fff;
+        }
+
+        .hero-metric {
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.45rem 0.8rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.14);
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            margin-bottom: 0.4rem;
+        }
+
+        .section-copy,
+        .text-soft {
+            color: var(--muted) !important;
+        }
+
+        .content-panel {
+            padding: clamp(1.25rem, 3vw, 2rem);
+        }
+
+        .hero-actions,
+        .inline-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-brand {
+            background: var(--accent);
+            color: #1e281d;
+            border: none;
+            border-radius: 999px;
+            font-weight: 700;
+            padding: 0.9rem 1.4rem;
+        }
+
+        .btn-brand:hover,
+        .btn-brand:focus {
+            background: #e3b96a;
+            color: #1e281d;
+        }
+
+        .btn-outline-brand {
+            border: 1px solid var(--primary);
+            color: var(--primary-strong);
+            background: transparent;
+            border-radius: 999px;
+            font-weight: 700;
+            padding: 0.85rem 1.35rem;
+        }
+
+        .btn-outline-brand:hover,
+        .btn-outline-brand:focus {
+            border-color: var(--accent);
+            background: var(--accent-soft);
+            color: var(--primary-strong);
+        }
+
+        .plant-grid,
+        .market-grid,
+        .profile-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .plant-grid {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        }
+
+        .market-grid {
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+
+        .profile-grid {
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        }
+
+        .plant-card,
+        .product-card,
+        .profile-card,
+        .result-card {
+            overflow: hidden;
+        }
+
+        .plant-card img,
+        .product-card img,
+        .result-image,
+        .profile-avatar {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .media-frame {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, var(--accent-soft), rgba(40, 88, 67, 0.12));
+            border: 1px dashed var(--border);
+        }
+
+        .media-frame.media-square {
+            aspect-ratio: 1 / 1;
+        }
+
+        .media-frame img.is-cover {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .media-placeholder,
+        .product-fallback,
+        .inline-product-fallback {
+            width: 100%;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 1rem;
+            color: var(--primary-strong);
+            font-weight: 700;
+        }
+
+        .media-placeholder {
+            height: 100%;
+        }
+
+        .plant-card img,
+        .product-card img {
+            aspect-ratio: 4 / 3;
+        }
+
+        .profile-avatar {
+            aspect-ratio: 16 / 10;
+            background: linear-gradient(135deg, var(--accent-soft), rgba(40, 88, 67, 0.16));
+        }
+
+        .card-body-clean {
+            padding: 1rem 1rem 1.15rem;
+        }
+
+        .upload-zone {
+            border: 2px dashed rgba(40, 88, 67, 0.25);
+            border-radius: 1.25rem;
+            padding: 1.5rem;
+            background: var(--surface-soft);
+        }
+
+        .status-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.42rem 0.78rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            background: var(--accent-soft);
+            color: var(--primary-strong);
+        }
+
+        .result-grid {
+            display: grid;
+            grid-template-columns: 1.08fr 1fr;
+            gap: 1.25rem;
+        }
+
+        .result-image-wrap {
+            padding: 1rem;
+        }
+
+        .result-image {
+            aspect-ratio: 1 / 1;
+            border-radius: 1rem;
+        }
+
+        .meta-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .site-footer {
+            border-top: 1px solid var(--border);
+            padding: 2rem 0 3rem;
+        }
+
+        .translate-wrap {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            padding: 0.85rem 1rem;
+            margin-top: 1rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+        }
+
+        .translate-label {
+            color: var(--muted);
+            font-weight: 600;
+            margin: 0;
+        }
+
+        #google_translate_element {
+            min-height: 38px;
+        }
+
+        .goog-te-gadget {
+            font-family: "Manrope", sans-serif !important;
+            color: var(--muted) !important;
+        }
+
+        .goog-te-gadget .goog-te-combo {
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 0.45rem 0.8rem;
+            background: var(--surface);
+            color: var(--text);
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links,
+        .social-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links a,
+        .social-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-links a:hover,
+        .footer-links a:focus,
+        .social-links a:hover,
+        .social-links a:focus {
+            color: var(--primary-strong);
+        }
+
+        a:focus,
+        button:focus,
+        input:focus {
+            outline: 3px solid rgba(215, 162, 75, 0.45);
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 991.98px) {
+            .result-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar-collapse {
+                padding-top: 1rem;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .site-shell {
+                width: min(100% - 1.25rem, 1120px);
+            }
+
+            .hero-actions,
+            .inline-actions,
+            .footer-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn-brand,
+            .btn-outline-brand {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-nav">
+        <div class="site-shell">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="{{ url_for('home_page') }}">
+                    <span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-leaf"></i></span>
+                    <span class="brand-wordmark">AgriVision</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('home_page') }}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('ai_engine_page') }}">AI Engine</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('market') }}">Supplements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                        <li class="nav-item ms-lg-2">
+                            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+                                <i class="fa-solid fa-moon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="site-shell">
+            <div class="translate-wrap" aria-label="Language translation controls">
+                <p class="translate-label">Translate page:</p>
+                <div id="google_translate_element"></div>
+            </div>
+            {% block body %}{% endblock body %}
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-shell">
+            <div class="footer-row">
+                <div>
+                    <div class="brand-wordmark mb-2">AgriVision</div>
+                    <p class="text-soft mb-0">AI-assisted plant disease detection with guidance designed for growers, students, and demo audiences.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="{{ url_for('home_page') }}">Home</a></li>
+                    <li><a href="{{ url_for('ai_engine_page') }}">AI Engine</a></li>
+                    <li><a href="{{ url_for('market') }}">Supplements</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+                <ul class="social-links">
+                    <li><a href="mailto:kavyapushpala@gmail.com">kavyapushpala@gmail.com</a></li>
+                    <li><a href="mailto:hemamallipudi2005@gmail.com">hemamallipudi2005@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+        const savedTheme = localStorage.getItem('theme');
+
+        function applyTheme(theme) {
+            body.classList.toggle('dark-theme', theme === 'dark-theme');
+            themeToggleBtn.innerHTML = theme === 'dark-theme'
+                ? '<i class="fa-solid fa-sun"></i>'
+                : '<i class="fa-solid fa-moon"></i>';
+        }
+
+        applyTheme(savedTheme || 'light-theme');
+
+        themeToggleBtn.addEventListener('click', () => {
+            const nextTheme = body.classList.contains('dark-theme') ? 'light-theme' : 'dark-theme';
+            localStorage.setItem('theme', nextTheme);
+            applyTheme(nextTheme);
+        });
+
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,te',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+
+        function setProductFallbackImage(img, label) {
+            const fallback = document.createElement('div');
+            fallback.className = img.classList.contains('img-fluid') ? 'inline-product-fallback mb-3' : 'product-fallback';
+            fallback.innerHTML = `<div><i class="fa-solid fa-box-open mb-2"></i><div>${label || 'Product image unavailable'}</div></div>`;
+            img.replaceWith(fallback);
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    {% block extra_scripts %}{% endblock extra_scripts %}
+</body>
+</html>

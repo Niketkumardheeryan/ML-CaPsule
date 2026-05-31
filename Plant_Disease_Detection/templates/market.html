@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block pagetitle %}AgriVision | Supplements{% endblock pagetitle %}
+
+{% block body %}
+<section class="content-panel">
+    <span class="eyebrow" style="color: var(--primary-strong); background: var(--accent-soft);"><i class="fa-solid fa-bag-shopping"></i> Supplement Directory</span>
+    <h1 class="section-title mt-3">Browse supplements and fertilizer suggestions</h1>
+    <p class="section-copy mb-0">The market page now uses the shared layout correctly and presents the product list as a responsive card grid instead of a broken template block.</p>
+</section>
+
+<section class="mt-4 market-grid">
+    {% for index in range(0, supplement_name | length) %}
+    {% if index != 4 %}
+    <article class="product-card">
+        <div class="media-frame">
+            <div class="media-placeholder">
+                <div>
+                    <i class="fa-solid fa-box-open mb-2"></i>
+                    <div>{{ supplement_name[index] }}</div>
+                </div>
+            </div>
+            <img src="{{ supplement_image[index] }}" alt="{{ supplement_name[index] }}" class="is-cover" onerror="this.style.display='none'">
+        </div>
+        <div class="card-body-clean">
+            <span class="status-chip mb-3">
+                {% if index==3 or index==5 or index==7 or index==11 or index==15 or index==18 or index==20 or index==23 or index==24 or index==25 or index==28 or index==38 %}
+                <i class="fa-solid fa-circle-check"></i> Healthy plant fertilizer
+                {% else %}
+                <i class="fa-solid fa-shield-virus"></i> Disease support product
+                {% endif %}
+            </span>
+            <h2 class="h5">For {{ disease[index] }}</h2>
+            <p class="text-soft">{{ supplement_name[index] }}</p>
+            {% if buy[index] %}
+            <a target="_blank" rel="noopener noreferrer" href="{{ buy[index] }}" class="btn btn-outline-brand">Open Product Link</a>
+            {% else %}
+            <button type="button" class="btn btn-outline-brand" disabled>Link Unavailable</button>
+            {% endif %}
+        </div>
+    </article>
+    {% endif %}
+    {% endfor %}
+</section>
+{% endblock body %}
