@@ -1,0 +1,150 @@
+{
+  "features": [
+    "anxiety_level",
+    "self_esteem",
+    "mental_health_history",
+    "depression",
+    "headache",
+    "blood_pressure",
+    "sleep_quality",
+    "breathing_problem",
+    "noise_level",
+    "living_conditions",
+    "safety",
+    "basic_needs",
+    "academic_performance",
+    "study_load",
+    "teacher_student_relationship",
+    "future_career_concerns",
+    "social_support",
+    "peer_pressure",
+    "extracurricular_activities",
+    "bullying"
+  ],
+  "ranges": {
+    "anxiety_level": {
+      "min": 0,
+      "max": 21,
+      "default": 11
+    },
+    "self_esteem": {
+      "min": 0,
+      "max": 30,
+      "default": 19
+    },
+    "mental_health_history": {
+      "min": 0,
+      "max": 1,
+      "default": 0
+    },
+    "depression": {
+      "min": 0,
+      "max": 27,
+      "default": 12
+    },
+    "headache": {
+      "min": 0,
+      "max": 5,
+      "default": 3
+    },
+    "blood_pressure": {
+      "min": 1,
+      "max": 3,
+      "default": 2
+    },
+    "sleep_quality": {
+      "min": 0,
+      "max": 5,
+      "default": 2
+    },
+    "breathing_problem": {
+      "min": 0,
+      "max": 5,
+      "default": 3
+    },
+    "noise_level": {
+      "min": 0,
+      "max": 5,
+      "default": 3
+    },
+    "living_conditions": {
+      "min": 0,
+      "max": 5,
+      "default": 2
+    },
+    "safety": {
+      "min": 0,
+      "max": 5,
+      "default": 2
+    },
+    "basic_needs": {
+      "min": 0,
+      "max": 5,
+      "default": 3
+    },
+    "academic_performance": {
+      "min": 0,
+      "max": 5,
+      "default": 2
+    },
+    "study_load": {
+      "min": 0,
+      "max": 5,
+      "default": 2
+    },
+    "teacher_student_relationship": {
+      "min": 0,
+      "max": 5,
+      "default": 2
+    },
+    "future_career_concerns": {
+      "min": 0,
+      "max": 5,
+      "default": 2
+    },
+    "social_support": {
+      "min": 0,
+      "max": 3,
+      "default": 2
+    },
+    "peer_pressure": {
+      "min": 0,
+      "max": 5,
+      "default": 2
+    },
+    "extracurricular_activities": {
+      "min": 0,
+      "max": 5,
+      "default": 2
+    },
+    "bullying": {
+      "min": 0,
+      "max": 5,
+      "default": 3
+    }
+  },
+  "test_accuracy": 0.8864,
+  "test_macro_f1": 0.8864,
+  "feature_importance": {
+    "anxiety_level": 0.0103,
+    "self_esteem": 0.0211,
+    "mental_health_history": 0.0102,
+    "depression": 0.0069,
+    "headache": 0.0083,
+    "blood_pressure": 0.4117,
+    "sleep_quality": 0.1714,
+    "breathing_problem": 0.0082,
+    "noise_level": 0.0052,
+    "living_conditions": 0.0098,
+    "safety": 0.0067,
+    "basic_needs": 0.0304,
+    "academic_performance": 0.15,
+    "study_load": 0.0172,
+    "teacher_student_relationship": 0.0509,
+    "future_career_concerns": 0.0131,
+    "social_support": 0.0325,
+    "peer_pressure": 0.0068,
+    "extracurricular_activities": 0.0157,
+    "bullying": 0.0138
+  }
+}
