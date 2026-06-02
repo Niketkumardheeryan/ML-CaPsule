@@ -186,4 +186,4 @@ This project is open source under the MIT License.
 
 ---
 
-**Built with ☕ and 🧠 by [@kri1105](https://github.com/kri1105)** as a **GSSoC'26** contribution to [ML-CaPsule](https://github.com/Niketkumardheeryan/ML-CaPsule) — closes [issue #1867](https://github.com/Niketkumardheeryan/ML-CaPsule/issues/1867).
+**Built with ☕ by [@kri1105](https://github.com/kri1105)** as a **GSSoC'26** contribution to [ML-CaPsule](https://github.com/Niketkumardheeryan/ML-CaPsule) — closes [issue #1867](https://github.com/Niketkumardheeryan/ML-CaPsule/issues/1867).
