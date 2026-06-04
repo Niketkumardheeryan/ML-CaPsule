@@ -1,6 +1,6 @@
 # 🌟 ML-Capsule: Hands-on ML from Basic to Advance 🌟
 
-Welcome to **ML-Capsule**! This repository is a comprehensive collection of machine learning projects and resources, ranging from beginner to advanced levels. It covers a variety of topics, from basic machine learning concepts to deep learning, natural language processing, and much more.
+Welcome to **ML-Capsule**!!! This repository is a comprehensive collection of machine learning projects and resources, ranging from beginner to advanced levels. It covers a variety of topics, from basic machine learning concepts to deep learning, natural language processing, and much more.
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=45ffaa&size=40&width=900&height=80&lines=Welcome-to-ML-Capsule" alt="Welcome to ML Capsule"/>
@@ -29,7 +29,21 @@ Welcome to **ML-Capsule**! This repository is a comprehensive collection of mach
     <img src="https://img.shields.io/github/issues-pr-closed/Niketkumardheeryan/ML-CaPsule" alt="GitHub closed pull requests" />
   </p>
 </div>
+## 📑 Table of Contents
 
+- [📈 Why Machine Learning?](#-why-machine-learning)
+- [📚 Pre-requisites](#-pre-requisites)
+- [🗂️ Topics Covered](#️-topics-covered)
+- [📂 Project Descriptions](#-project-descriptions)
+- [📜 Summary](#-summary)
+- [🔗 Useful URLs](#-useful-urls)
+- [🚀 Get Started](#-get-started)
+- [⚙️ Contribution Guidelines](#️-contribution-guidelines)
+- [📖 Code of Conduct](#-code-of-conduct)
+- [📝 License](#-license)
+- [✨ Contributors](#-some-awesome-contributors-)
+- [❤️ Stargazers](#-stargazers-️)
+- [❤️ Forkers](#-forkers-️)
 
 
 ## 📈 Why Machine Learning?
