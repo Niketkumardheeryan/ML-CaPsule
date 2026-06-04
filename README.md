@@ -33,6 +33,7 @@ Welcome to **ML-Capsule**!!! This repository is a comprehensive collection of ma
 
 - [📈 Why Machine Learning?](#-why-machine-learning)
 - [📚 Pre-requisites](#-pre-requisites)
+- [🛠️ Installation](#️-installation)
 - [🗂️ Topics Covered](#️-topics-covered)
 - [📂 Project Descriptions](#-project-descriptions)
 - [📜 Summary](#-summary)
@@ -62,6 +63,51 @@ Machine learning is crucial because it provides enterprises with insights into c
 - **Python IDE**: Install from [python.org](https://python.org)
 - **Learn Python**: If you're new to Python, start learning from [W3Schools](https://www.w3schools.com/python/python_ml_getting_started.asp)
 
+## 🛠️ Installation
+Follow these steps to set up the project locally:
+
+### Prerequisites
+- Python 3.8 or higher
+- Git installed on your system
+
+### Steps
+
+1. **Fork the repository**
+   - Click Fork button at top right of this page
+
+2. **Clone the repository**
+```bash
+   git clone https://github.com/YOUR-USERNAME/ML-CaPsule.git
+```
+
+3. **Navigate to project folder**
+```bash
+   cd ML-CaPsule
+```
+
+4. **Create a virtual environment**
+```bash
+   python -m venv venv
+```
+
+5. **Activate virtual environment**
+
+   On Windows:
+```bash
+   venv\Scripts\activate
+```
+   On Mac/Linux:
+```bash
+   source venv/bin/activate
+```
+
+6. **Install required dependencies**
+```bash
+   pip install -r requirements.txt
+```
+
+7. **You are ready to go!** 🎉
+8. 
 ## 🗂️ Topics Covered
 
 ### 1. Extracting Data
@@ -128,7 +174,7 @@ The process of selecting relevant features for use in a model to increase accura
 <td align="center">1.</td>
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Advanced%20Visualizations">Advanced Visualizations</a></td>
 <td align="center">2.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Alzheimers%20Disease%20Predictor">Alzheimer's Disease Predictor</a></td>
+<td align="center"><a href=https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/projects/Alzheimer%20Diseases%20Prediction%20">Alzheimer's Disease Predictor</a></td>
 <td align="center">3.</td>
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Analysis%20&%20Predict%20Black%20Friday%20Sale">Analysis & Predict Black Friday Sale</a></td>
 <td align="center">4.</td>
@@ -259,34 +305,34 @@ The process of selecting relevant features for use in a model to increase accura
 & many more.......
 
 You can find All the Projects 
-<h3>Live Project -- https://github.com/Niketkumardheeryan/ML-CaPsule</h2>
+<h3>Live Project -- https://github.com/Niketkumardheeryan/ML-CaPsule</h3>
 
 ## 📂 Project Descriptions
 
 Here are some of the exciting projects featured in this repository:
 
-1. **[Alzheimer's Disease Predictor](#)**  
+1. **[Alzheimer's Disease Predictor](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/projects/Alzheimer%20Diseases%20Prediction")**  
    A machine learning model to predict the likelihood of Alzheimer's disease based on patient data, using classification algorithms and feature selection techniques.
 
-2. **[Chatbot Using RASA](#)**  
+2. **[Chatbot Using RASA]("https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Chatbot%20Using%20RASA")**  
    A conversational AI chatbot built with RASA, capable of handling various user queries and providing intelligent responses.
 
-3. **[COVID-19 Forecasting with Prophet](#)**  
+3. **[COVID-19 Forecasting with Prophet]("https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Covid-19%20Forecasting%20with%20Prophet")**  
    Utilize the Prophet library to forecast COVID-19 case trends and predict future outbreaks based on historical data.
 
-4. **[Fake News Detection](#)**  
+4. **[Fake News Detection]("https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Fake%20News%20Detection")**  
    A project that uses NLP techniques to detect and classify fake news articles, employing various text processing and classification methods.
 
-5. **[Handwritten Digit Recognition](#)**  
+5. **[Handwritten Digit Recognition]("https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Hand-written%20Digit%20Recognition")**  
    A deep learning model that recognizes handwritten digits using a Convolutional Neural Network (CNN) trained on the MNIST dataset.
 
-6. **[Movie Genre Classification](#)**  
+6. **[Movie Genre Classification]("https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Movie%20Genre%20Classification")**  
    A machine learning model that predicts movie genres based on descriptions using text classification techniques and feature extraction.
 
-7. **[Employee Attrition Prediction](#)**  
+7. **[Employee Attrition Prediction]("https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Employee%20Attrition%20Prediction")**  
    A predictive model that identifies employees at risk of leaving a company, using historical HR data and various classification algorithms.
 
-8. **[Heart Disease Prediction](#)**  
+8. **[Heart Disease Prediction]("https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Diseases%20Prediction")**  
    A predictive model for diagnosing heart disease based on patient attributes, utilizing statistical and machine learning techniques to improve diagnosis accuracy.
 
 ## 📜 Summary
@@ -313,8 +359,8 @@ Give this project a ⭐ if you love it!
 
 ### ⚙️ Contribution Guidelines
 - Check the [Contribution Guidelines](CONTRIBUTING.md)
-- Take a look at the [Existing Issues](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/issues)
-- Create your [Pull Request](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/pulls)
+- Take a look at the [Existing Issues](https://github.com/Niketkumardheeryan/ML-CaPsule/issues)
+- Create [Pull Request](https://github.com/Niketkumardheeryan/ML-CaPsule/pulls)
 
 ## Submitting a Pull Request
 
