@@ -1,73 +1,109 @@
-# Internship Scam Detection System
+# Internship Scam Detection
 
-An end-to-end Machine Learning pipeline built to identify fraudulent internship postings using metadata signals, text features, and recruiter behavior analytics. This system processes **1,000,000 rows of data** completely leak-free using automated Scikit-Learn pipelines and optimizes a classification tree to achieve an **overall baseline accuracy of 90%**.
+A full-stack machine learning application designed to detect fraudulent or spam internship postings. This project uses a trained supervised learning model (Decision Tree) served via a Flask backend, with a responsive web interface for users to analyze job descriptions and requirements.
 
----
+## Project Structure
 
-## 📊 Dataset Attribution
+```text
+Internship Scam Detection/
+├── data/
+│   └── internship_scam_data.csv       # Raw dataset used for training
+├── models/
+│   ├── model.pkl                      # Trained machine learning classifier
+│   └── pipeline.pkl                   # Data preprocessing pipeline (ColumnTransformer/Imputer)
+├── notebooks/
+│   ├── internship_scam_detection.ipynb # Jupyter notebook for EDA and model training
+│   └── README.md                      # Notes specific to the modeling process
+├── static/
+│   └── styles.css                     # Custom CSS for the web frontend
+├── templates/
+│   └── index.html                     # Main HTML interface
+├── .gitignore                         # Specifies files for Git to ignore (e.g., venv, __pycache__)
+├── app.py                             # Flask backend server and API routes
+├── README.md                          # Project documentation
+└── requirements.txt                   # Python dependencies (Flask, scikit-learn, pandas, etc.)
 
-This project utilizes a subset of the **Internship Scam Detection Dataset** hosted on Kaggle. 
-
-* **Dataset Author / Credits:** Special thanks to **aiexplorer77** for compiling and sharing this valuable open-source security benchmark.
-* **Original Link:** https://www.kaggle.com/datasets/aiexplorer77/internship-scam-detection-dataset
-* **Note on Scope:** The data handled in this repository represents a balanced, optimized subset extracted from the larger master dataset to facilitate fast pipeline prototyping and hyperparameter tuning.
-
----
-
-## 🛠️ System Architecture & Engineering Rigor
-
-This project strictly adheres to robust machine learning practices to ensure the model remains reliable, robust, and capable of generalizing to new, real-world data.
-
-* **Step 1: Raw Data Ingestion & Target Selection**
-* **Step 2: Explicit Train-Test Split (80% Train / 20% Test)**
-* **Step 3: Automated ColumnTransformer Pipelines**
-* **Step 4: GridSearchCV Hyperparameter Tuning**
-* **Step 5: Robust Final Assessment**
-
-### 1. Data Isolation (Strict Anti-Leakage Guardrail)
-Following strict machine learning discipline, the data is split into **80% training** and **20% testing** partitions *before* any statistical computations (like medians or category frequencies) occur. This keeps the test set completely pristine and ensures zero data leakage.
-
-### 2. Specialized Multi-Path Preprocessing
-Because missing data and text types require different mathematical treatments, an automated `ColumnTransformer` handles feature transformations dynamically on the fly:
-* **Stipend Path:** Imputes missing stipends with a constant `0` (indicating an unpaid position) and normalizes using `StandardScaler`.
-* **Company Age & Trust Score Paths:** Separately impute missing values using the split-isolated `median` strategy to preserve original distributions safely.
-* **Categorical Path:** Automatically detects structural text properties (`employment_type`, `work_mode`, `industry`) and converts them into machine-readable numeric formats via `OneHotEncoder`.
-* **High-Cardinality Drop-List:** Non-predictive string identifiers like `posting_date`, `internship_title`, `company_name`, and `location` are explicitly excluded from training to keep the model focused entirely on behavior patterns.
-
-### 3. Eliminating Target Leakage
-During exploratory data analysis (EDA), a pre-calculated feature (`fraud_score`) showed a massive `0.76` correlation with the target variable, artificially yielding a flawless `1.00` accuracy. To prevent the model from relying on a "cheat code" that wouldn't exist in a live user-facing application, **`fraud_score` was deliberately removed from the feature matrix**, forcing the model to learn entirely from raw behavioral attributes.
-
----
-
-## 📈 Model Performance & Optimization
-
-The baseline `DecisionTreeClassifier` was systematically optimized using **Grid Search (`GridSearchCV`)** with 3-fold cross-validation across 18 parameter candidates (54 total fits). The grid automatically optimized tree constraints to prevent overfitting.
-
-### Mathematically Optimal Hyperparameters:
-* **Criterion:** `entropy`
-* **Maximum Depth (`max_depth`):** `15`
-* **Minimum Samples to Split (`min_samples_split`):** `20`
-
-### Final Optimized Evaluation Report:
-```bash
-precision    recall  f1-score   support
-
-       0       0.92      0.95      0.93    155728 (Safe Postings)
-       1       0.79      0.71      0.75     44272 (Fake Postings)
-
-accuracy                           0.90    200000
-macro avg      0.86      0.83      0.84    200000
-weighted avg   0.89      0.90      0.89    200000
 ```
 
-### Key Metrics Decoded:
-* **Overall Accuracy (90%):** The model makes the correct call 9 out of 10 times across the entire 200,000-row testing pool.
-* **Scam Precision (79%):** When the system flags an internship as a scam, it is right **79% of the time**, minimizing false alarms for students.
-* **Scam Recall (71%):** The model successfully catches **71% of all fraudulent postings** circulating in the dataset based purely on structural patterns.
+## 🚀 Installation & Setup
+
+To run this project locally, follow these steps:
+
+**1. Clone the repository**
+
+```bash
+git clone <your-repository-url>
+cd "Internship Scam Detection"
+```
+
+**2. Create a virtual environment**
+A virtual environment keeps your project dependencies isolated.
+
+```bash
+python -m venv venv
+```
+
+**3. Activate the virtual environment**
+
+* On macOS/Linux:
+```bash
+source venv/bin/activate
+```
+
+
+* On Windows:
+```bash
+venv\Scripts\activate
+```
+
+
+
+**4. Install dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+## 💻 Usage
+
+Once your environment is activated and dependencies are installed, start the Flask server:
+
+```bash
+flask run
+```
+
+Open your web browser and navigate to `http://127.0.0.1:5000` to view the application. Enter the details of an internship posting, and the ML pipeline will analyze the inputs and return a confidence score indicating the likelihood of it being a scam.
+
+## 🧠 Model Methodology (`notebooks/internship_scam_detection.ipynb`)
+
+The machine learning core of this application was built and optimized using `scikit-learn` in a Jupyter Notebook. The notebook walks through the entire lifecycle from raw data to a deployed model.
+
+**1. Data Preprocessing (The Pipeline)**
+To handle incoming web data cleanly, a `ColumnTransformer` pipeline was built:
+* **Imputation:** Missing numerical values (like `stipend`) are automatically filled with 0s using a `SimpleImputer`.
+* **Scaling & Encoding:** Numerical data is normalized using `StandardScaler`, while categorical text (like `work_mode` or `company_size`) is transformed into a machine-readable format using `OneHotEncoder`.
+* **Feature Selection:** High-cardinality fields (like `company_name` and `location`) were dropped to prevent the model from overfitting on highly unique text strings.
+
+**2. Model Training & Optimization**
+* **Algorithm:** The core engine is a `DecisionTreeClassifier`. 
+* **Hyperparameter Tuning:** Instead of guessing the best settings, `GridSearchCV` was used to systematically test multiple combinations of parameters (`max_depth`, `min_samples_split`, `criterion`) to find the most mathematically optimal tree.
+
+**3. Performance Metrics**
+The final optimized model achieved the following results on the isolated test set:
+* **Overall Accuracy:** 70%
+* **Scam Precision:** 74% (When it flags a scam, it is correct 74% of the time)
+* **Scam Recall:** 63% (It successfully catches 63% of all actual scams)
+
+## 🛠️ Technologies Used
+
+* **Frontend:** HTML5, CSS3, Vanilla JavaScript (Fetch API)
+* **Backend:** Python, Flask, Flask-CORS
+* **Machine Learning:** scikit-learn, pandas, joblib
 
 ---
 
-## 🚀 Key Libraries Used
-* **Pandas & NumPy** — High-performance data manipulation and distribution analysis.
-* **Matplotlib** — Exploratory visualizations (Histograms and Scatter Matrices).
-* **Scikit-Learn** — Pipeline automation, `ColumnTransformer`, `GridSearchCV`, and tree classification architectures.
+> Created by Naina Bhatnagar
+
+> [Connect on linkedin](https://www.linkedin.com/in/nainabhatnagar/) <br>[Connect on github](https://github.com/naina-bhatnagar)
+
+---
