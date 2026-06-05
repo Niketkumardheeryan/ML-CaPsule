@@ -17,7 +17,7 @@ jobs:
     # Scan runs on ubuntu, mac and windows
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v2
     # Instructions
     # 1. Setup JDK, Node.js, Python etc depending on your project type
     # 2. Compile or build the project before invoking scan
@@ -36,22 +36,7 @@ jobs:
         # type: credscan,java
         # type: python
 
-    - name: Reduce SARIF size for upload
-      shell: bash
-      run: |
-        shopt -s nullglob
-        sarif_files=(reports/*.sarif)
-        if [ ${#sarif_files[@]} -eq 0 ]; then
-          echo "No SARIF files found in reports/"
-          exit 0
-        fi
-        for sarif in "${sarif_files[@]}"; do
-          tmp_file="$(mktemp)"
-          jq '.runs |= map(.results = ((.results // [])[:1000] | map(del(.codeFlows, .stacks, .graphs))) | .artifacts = ((.artifacts // [])[:1000]))' "$sarif" > "$tmp_file"
-          mv "$tmp_file" "$sarif"
-        done
-
     - name: Upload report
-      uses: github/codeql-action/upload-sarif@v3
+      uses: github/codeql-action/upload-sarif@v1
       with:
         sarif_file: reports
