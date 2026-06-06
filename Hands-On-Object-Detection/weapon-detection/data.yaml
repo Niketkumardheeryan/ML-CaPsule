@@ -1,0 +1,13 @@
+test: ../test/images
+train: ../train/images
+val: ../val/images
+
+names:
+  - pistol
+  - smartphone
+  - knife
+  - monedero
+  - billete
+  - tarjeta
+
+nc: 6

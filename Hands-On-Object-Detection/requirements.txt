@@ -1,5 +1,7 @@
-torch>=2.0.0
-torchvision>=0.15.0
-pillow>=9.0.0
-matplotlib>=3.5.0
-numpy>=1.22.0
+torch
+torchvision
+ultralytics
+matplotlib
+pillow
+ipython
+tqdm
