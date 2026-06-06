@@ -1,68 +1,80 @@
-# Weapon and Financial Items Object Detection
-
-This repository contains a complete single-stage object detection pipeline for tracking threat objects and financial items. The project spans from foundational bounding box regression concepts using custom Convolutional Neural Networks (CNNs) to production-ready deployment with Ultralytics YOLOv8.
-
+## Hands On Object Detection:
 ---
+This directory teaches you about Object - Detection with an Hands-on Example and helps you learn and solve the problems that we deal usually building such architectures this directory also includes,A complete single-stage object detection pipeline for identifying threat objects and financial items. The project progresses from foundational bounding box regression using custom CNNs to production-ready deployment with Ultralytics YOLOv8.
 
-## Project Directory Structure
-
-
+Directory Structure 
+---
+```
 .
-├── Basic-Single-Stage-ObjectDetection.ipynb   # Introduction to localization & single-object regression
-├── YOLOv8-and-problems-in-creating-such-architectures.ipynb  # Multi-object detection grid concepts & YOLOv8
-├── data.yaml                                  # Dataset configuration file (classes, paths)
-├── requirements.txt                           # Python dependencies installation file
-├── weapon-detection/                          # Dataset Directory
-│   ├── train/                                 # Training split
+├── Basic-Single-Stage-ObjectDetection.ipynb
+│   └── Localization & single-object regression
+├── YOLOv8-and-problems-in-creating-such-architectures.ipynb
+│   └── Multi-object detection & YOLOv8
+├── data.yaml                        # Dataset config (classes, paths)
+├── requirements.txt                 # Python dependencies
+│
+├── weapon-detection/                # Dataset root
+│   ├── train/
 │   │   ├── images/
 │   │   └── labels/
-│   ├── val/                                   # Validation split
+│   ├── val/
 │   │   ├── images/
 │   │   └── labels/
-│   └── test/                                  # Test split
+│   └── test/
 │       ├── images/
 │       └── labels/
-└── runs/                                      # Automatically generated training & prediction outputs
+│
+└── runs/                            # Auto-generated outputs
     └── detect/
-        ├── train/                             # Initial training run logs and weights
-        │   └── weights/                       # Contains best.pt and last.pt
-        ├── train-2/                           # Subsequent training run logs and weights
+        ├── train/
+        │   └── weights/             # best.pt · last.pt
+        ├── train-2/
         │   └── weights/
-        └── predict/                           # Inference outputs with bounding boxes drawn
-        
-        
-## Dataset Configuration (data.yaml)
-The dataset is structured to detect items typically found in pockets or bags. It contains 6 unique classes (nc: 6):
+        └── predict/                 # Inference outputs with bounding boxes
 
-pistol (Handguns / Firearms)
+```
 
-smartphone (Mobile Devices)
+Dataset Configuration — weapon-detection/data.yaml
+---
+Detects 6 classes of items typically found in pockets or bags (nc: 6):
 
-knife (Bladed Weapons)
+- 0 — pistol · Handguns / Firearms
+- 1 — smartphone · Mobile Devices
+- 2 — knife · Bladed Weapons
+- 3 — monedero · Purse / Wallet
+- 4 — billete · Banknotes / Paper Currency
+- 5 — tarjeta · Credit / Debit Cards
 
-monedero (Purse / Wallet)
 
-billete (Banknotes / Paper Currency)
+Setup & Installation
+---
+Requires Python 3.10+. Clone the repository, then run this command to install dependencies:
 
-tarjeta (Credit / Debit Cards)
-
-## Setup & Installation
-Ensure you have Python 3.10+ installed. Clone the repository, navigate to the project directory, and install the dependencies:
-
-# Install all required libraries
+```
 pip install -r requirements.txt
+```
 
-Dependency Stack (requirements.txt)
+Dependency stack:
+---
 
-torch & torchvision (Deep learning backend infrastructure)
-ultralytics (YOLOv8 framework engine)
-matplotlib & pillow (Visualization and image manipulation tools)
-tqdm & ipython (Progress tracking and interactive utility wrappers)
+- torch / torchvision — Deep learning backend
+- ultralytics — YOLOv8 framework
+- matplotlib / pillow — Visualization & image I/O
+- tqdm / ipython — Progress tracking & interactive utilities
 
-Architectural Concepts Covered
-1. Basic Single-Stage LocalizationLocated in Basic-Single-Stage-ObjectDetection.ipynb, this notebook guides you through the transition from traditional image classification to basic bounding box regression. It explores how a standard regression head can output coordinates $[x_c, y_c, w, h]$ to track a single primary object inside an image boundary.
 
-2. Multi-Object Grid DiscretizationLocated in YOLOv8-and-problems-in-creating-such-architectures.ipynb, this covers how advanced models scale up to handle multiple overlapping targets. By discretizing the input image into an $S \times S$ matrix of cells, the network transforms global regression into parallelized, local target predictions.For this specific 6-class dataset, the output tensor channel layout maps out as an 11-variable structure per cell: 
-Channel 0: Object Confidence (0.0 to 1.0) 
-Channels 1–4: Localized Box Coordinates ($x_c, y_c, w, h$) 
-Channels 5–10: Class probability mappings (pistol, smartphone, knife, monedero, billete, tarjeta)
+Architectural Concepts
+---
+1. Basic Single-Stage Localization
+Basic-Single-Stage-ObjectDetection.ipynb
+Covers the transition from image classification to bounding box regression. A standard regression head outputs four coordinates $[x_c,\ y_c,\ w,\ h]$
+to localize a single primary object within an image.
+2. Multi-Object Grid Discretization
+YOLOv8-and-problems-in-creating-such-architectures.ipynb
+Covers scaling up to handle multiple overlapping targets. The input image is discretized into an S×SS \times S
+S×S grid, transforming global regression into parallelized local predictions.
+For this 6-class dataset, each grid cell produces an 11-channel output tensor:
+
+- Ch. 0 · confidence — Objectness score (0.0 – 1.0)
+- Ch. 1–4 · box — Bounding box coordinates $[x_c , y_c , w , \textit{h} ]$
+- Ch. 5–10 · classes — pistol · smartphone · knife · monedero · billete · tarjeta
