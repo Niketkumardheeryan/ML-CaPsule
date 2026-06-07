@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, render_template, jsonify
 from flask_cors import CORS
 import joblib
@@ -6,8 +7,12 @@ import pandas as pd
 app = Flask(__name__)
 CORS(app)
 
-model = joblib.load('models/model.pkl')
-pipeline = joblib.load('models/pipeline.pkl')
+try:
+    model = joblib.load(os.path.join(os.path.dirname(__file__), 'models', 'model.pkl'))
+    pipeline = joblib.load(os.path.join(os.path.dirname(__file__), 'models', 'pipeline.pkl'))
+    print("Models loaded successfully")
+except Exception as e:
+    print(f"Model loading failed: {e}")
 
 
 @app.route('/')
