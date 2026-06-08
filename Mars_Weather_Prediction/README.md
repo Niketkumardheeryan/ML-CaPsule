@@ -142,11 +142,24 @@ for target, model in models.items():
 
 ---
 
-## 📊 Key Insights
+## 📊 Visualizations & Key Insights
 
-- **Seasonal cycles** in pressure (±100 Pa) align with CO₂ sublimation on Mars polar caps.
-- **Solar longitude (`ls`)** and **sol number** are the strongest predictors of temperature.
+### Temperature Trends
+![Temperature Trend](temperature_trend.png)
 - Average daily **temperature range is ~60 °C** — far more extreme than Earth.
+- **Solar longitude (`ls`)** and **sol number** are the strongest predictors of temperature.
+
+### Pressure Trends
+![Pressure Trend](pressure_trend.png)
+- **Seasonal cycles** in pressure (±100 Pa) align with CO₂ sublimation on Mars polar caps.
+
+### Model Comparison
+![Model Comparison](model_comparison.png)
+
+### XGBoost Deep Dive
+![XGBoost Analysis](xgboost_analysis.png)
+![Feature Importance](feature_importance.png)
+
 - Atmosphere is predominantly **"Sunny"** — dust storms are rare in this dataset window.
 
 ---
