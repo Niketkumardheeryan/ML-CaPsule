@@ -251,9 +251,9 @@ The process of selecting relevant features for use in a model to increase accura
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Email%20Classifier">Email Classifier</a></td>
 <td align="center">51.</td>
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Emotion%20Recognition%20Based%20on%20NLP">Emotion Recognition Based on NLP</a></td>
-<td align="center">52.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Mars_Weather_Prediction">Mars Weather Prediction</a></td>
-</tr>
+
+
+
 </table>
 
 & many more.......
@@ -288,9 +288,6 @@ Here are some of the exciting projects featured in this repository:
 
 8. **[Heart Disease Prediction](#)**  
    A predictive model for diagnosing heart disease based on patient attributes, utilizing statistical and machine learning techniques to improve diagnosis accuracy.
-
-9. **[Mars Weather Prediction](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Mars_Weather_Prediction)**  
-   An end-to-end Machine Learning pipeline utilizing XGBoost to predict Martian atmospheric conditions (Temperature & Pressure) based on NASA's Curiosity Rover dataset.
 
 ## 📜 Summary
 
