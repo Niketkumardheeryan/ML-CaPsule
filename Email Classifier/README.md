@@ -127,11 +127,11 @@ Email Classifier/
 
 ### Home Page
 
-![Home Page]("C:\Users\pardh\OneDrive\Pictures\Screenshots\Screenshot 2026-06-09 021625.png")
+![Home Page](screenshots/home.png)
 
 ### Prediction Result
 
-![Prediction Result]("C:\Users\pardh\OneDrive\Pictures\Screenshots\Screenshot 2026-06-09 021845.png")
+![Prediction Result](screenshots/result.png)
 
 ---
 
