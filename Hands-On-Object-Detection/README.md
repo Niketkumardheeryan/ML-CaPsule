@@ -79,6 +79,8 @@ For this 6-class dataset, each grid cell produces an 11-channel output tensor:
 - Ch. 1–4 · box — Bounding box coordinates $[x_c , y_c , w , \textit{h} ]$
 - Ch. 5–10 · classes — pistol · smartphone · knife · monedero · billete · tarjeta
 
-## Dataset 
+## [Dataset](https://www.kaggle.com/datasets/mehmetcubukcu/weapon-detection) 
 
 Please download the dataset from the following source to continue reading through texts 
+
+**Source:** [Dataset](https://www.kaggle.com/datasets/mehmetcubukcu/weapon-detection)
