@@ -34,6 +34,7 @@ Welcome to **ML-Capsule**!!! This repository is a comprehensive collection of ma
 - [📈 Why Machine Learning?](#-why-machine-learning)
 - [📚 Pre-requisites](#-pre-requisites)
 - [🗂️ Topics Covered](#️-topics-covered)
+- [🗂️ Project Directory](#️-project-directory)
 - [📂 Project Descriptions](#-project-descriptions)
 - [📜 Summary](#-summary)
 - [🔗 Useful URLs](#-useful-urls)
@@ -192,7 +193,7 @@ The process of selecting relevant features for use in a model to increase accura
 <td align="center">27.</td>
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Classification%20Algorithms">Classification Algorithms</a></td>
 <td align="center">28.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Cloud%20Details">Cloud Details</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Cloud%20Details">Cloud Details</a></td>
 </tr>
 <tr align="center">
 <td align="center">29.</td>
@@ -251,9 +252,9 @@ The process of selecting relevant features for use in a model to increase accura
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Email%20Classifier">Email Classifier</a></td>
 <td align="center">51.</td>
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Emotion%20Recognition%20Based%20on%20NLP">Emotion Recognition Based on NLP</a></td>
-
-
-
+<td align="center">52.</td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Eye_Gaze_Tracking_Attention_Estimation">Eye Gaze Tracking & Attention Estimation</a></td>
+</tr>
 </table>
 
 & many more.......
@@ -288,6 +289,9 @@ Here are some of the exciting projects featured in this repository:
 
 8. **[Heart Disease Prediction](#)**  
    A predictive model for diagnosing heart disease based on patient attributes, utilizing statistical and machine learning techniques to improve diagnosis accuracy.
+
+9. **[Eye Gaze Tracking & Attention Estimation](Eye_Gaze_Tracking_Attention_Estimation/README.md)**  
+   A real-time attention tracking system using the MediaPipe Face Mesh Tasks API, robust iris vector projections, and 3D Perspective-n-Point head pose estimation with a glowing telemetry HUD console.
 
 ## 📜 Summary
 
@@ -324,27 +328,17 @@ To submit your contributions, follow these steps:
 
 2. **Clone Your Fork**: Clone your forked repository to your local machine using the following command:
     ```bash
-    git clone https://github.com/Niketkumardheeryan/ML-CaPsule
-    ```
+    git clone [https://github.com/Niketkumardheeryan/ML-CaPsule](https://github.com/Niketkumardheeryan/ML-CaPsule)
 
-3. **Create a Branch**: Create a new branch for your changes:
-    ```bash
     git checkout -b my-feature
-    ```
-
-4. **Make Changes**: Make your desired changes to the codebase.
+    4. **Make Changes**: Make your desired changes to the codebase.
 
 5. **Commit Changes**: Commit your changes with a descriptive commit message:
     ```bash
     git commit -m "Add new feature"
-    ```
-
-6. **Push Changes**: Push your changes to your forked repository:
-    ```bash
     git push origin my-feature
-    ```
 
-7. **Submit a Pull Request**: Go to your forked repository on GitHub and submit a pull request. Be sure to provide a detailed description of your changes and why they are necessary.
+    7. **Submit a Pull Request**: Go to your forked repository on GitHub and submit a pull request. Be sure to provide a detailed description of your changes and why they are necessary.
 
 ## Project Directory Structure
 
@@ -449,6 +443,37 @@ Happy Coding! 👩‍💻👨‍💻
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+
+## 🗂️ Project Directory
+
+Explore the machine learning and data science projects available in this repository based on your domain interest and skill level.
+
+### 🟢 Beginner Projects & Data Analysis
+
+| Project Name | Category | Difficulty | Description | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Anime Data Analysis** | Data Analysis | Beginner | Analyze anime datasets and user trends through Exploratory Data Analysis (EDA). | [View Project](./Projects/Anime%20Data%20Analysis%20and%20Prediction/) |
+| **Medical Cost Prediction** | Machine Learning | Beginner | Predict medical insurance costs using regression models like Linear Regression and Random Forest. | [View Project](./Projects/Medical%20Cost%20Prediction/) |
+| **Heart Disease Detection** | Machine Learning | Beginner | Predict the presence of heart disease in patients using classification algorithms. | [View Project](./Projects/Heart%20Disease%20Prediction/) |
+| **Water Potability** | Machine Learning | Intermediate | Determine if water is safe for human consumption based on water quality metrics. | [View Project](./Projects/Water%20Potability/) |
+
+### 🔵 Deep Learning & Computer Vision
+
+| Project Name | Category | Difficulty | Description | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Alzheimer's Disease Predictor** | Deep Learning | Intermediate | Predict Alzheimer's disease using structural MRI and clinical data models. | [View Project](./Projects/Alzheimers%20Disease%20Predictor/) |
+| **Yoga Pose Detection** | Computer Vision | Intermediate | Real-time tracking and classification of different yoga poses using computer vision. | [View Project](./Projects/Yoga%20Pose%20Detection/) |
+| **Speech-to-Image Generator** | Deep Learning | Advanced | Generate visual images directly from speech audio inputs using deep neural networks. | [View Project](./Projects/Speech-to-Image-Generator/) |
+| **Weapon Detection System** | Computer Vision | Advanced | Detect weapons in images and video streams for security applications. | [View Project](./Projects/Weapon-Detection-System/) |
+
+### 🟡 Natural Language Processing & Advanced ML
+
+| Project Name | Category | Difficulty | Description | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Toxic Comment Classifier** | NLP | Intermediate | Classify and filter toxic, obscene, or threatening text data using NLP modules. | [View Project](./Projects/Toxic%20Comment%20Classifier/) |
+| **Currency Arbitrage with RL** | Reinforcement Learning | Advanced | Detect currency arbitrage opportunities in financial markets using Reinforcement Learning. | [View Project](./Projects/Currency%20Arbitrage%20with%20Reinforcement%20Learning/) |
+| **Sales Prediction (Research)** | Machine Learning | Advanced | Advanced sales prediction implementing complex models from research papers. | [View Project](./Projects/Sales%20Prediction/) |
 
 
 

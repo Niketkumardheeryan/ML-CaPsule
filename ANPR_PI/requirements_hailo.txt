@@ -1,0 +1,34 @@
+# Requirements for Raspberry Pi 5 with Hailo-8 accelerator
+# Install: pip install -r requirements_hailo.txt
+
+# Core dependencies
+numpy>=1.21.0
+opencv-python-headless>=4.8.0  # Headless for Pi (no GUI)
+pyyaml>=6.0
+requests>=2.31.0
+
+# Hailo SDK (must be installed separately from Hailo repository)
+# See: https://github.com/hailo-ai/hailo-rpi5-examples
+# Installation: sudo apt install hailo-all
+# Python bindings: pip install hailort
+
+# Firebase integration
+firebase-admin>=6.5.0
+
+# Cloudinary photo upload
+cloudinary>=1.40.0
+
+# Optional: Fallback OCR backends (if not using Hailo exclusively)
+# easyocr>=1.7.0  # Heavy, not recommended for Pi
+# paddlepaddle>=2.6.0
+# paddleocr>=2.7.0  # Lighter alternative to EasyOCR
+
+# Utilities
+python-dateutil>=2.8.2
+Pillow>=10.0.0
+
+# Testing
+pytest>=7.4.0
+
+# Note: YOLOv8 (ultralytics) NOT needed if using Hailo HEF models
+# For model export only: ultralytics>=8.0.0
