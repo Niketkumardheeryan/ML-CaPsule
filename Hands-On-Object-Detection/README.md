@@ -78,3 +78,7 @@ For this 6-class dataset, each grid cell produces an 11-channel output tensor:
 - Ch. 0 · confidence — Objectness score (0.0 – 1.0)
 - Ch. 1–4 · box — Bounding box coordinates $[x_c , y_c , w , \textit{h} ]$
 - Ch. 5–10 · classes — pistol · smartphone · knife · monedero · billete · tarjeta
+
+## Dataset 
+
+Please download the dataset from the following source to continue reading through texts 
