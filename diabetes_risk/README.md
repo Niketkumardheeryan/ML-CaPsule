@@ -1,35 +1,74 @@
-# Pima Indians Diabetes Prediction
+# Diabetes Risk Prediction
 
-This repository contains a machine learning pipeline to predict diabetes onset based on medical metrics.
+## Dataset
 
-## Project Overview
-The goal is to classify patients as diabetic or non-diabetic using features like Insulin levels, BMI, and Age. We achieve ~80% accuracy using ensemble methods.
+* Source: Pima Indians Diabetes Dataset
+* The notebook downloads the dataset as `diabetes.csv` using `gdown`
+* Link: https://drive.google.com/file/d/1cyB4B_s44Y9s6dfm9_tKbYdjkLTXfBlY/view?usp=sharing
 
-## Dataset Info
-- **Source:** Pima Indians Diabetes Database (Kaggle/UCI).
-- **Instances:** 768
-- **Attributes:** 8 numerical features, 1 target (Outcome).
+This project uses machine learning techniques to predict whether a patient is likely to have diabetes based on diagnostic health measurements. The workflow includes data preprocessing, exploratory data analysis (EDA), feature scaling, model training, evaluation, and feature importance analysis.
 
-## Folder Structure
-- `dataset/`: Contains `diabetes.csv`.
-- `diabetes_prediction.ipynb`: Main analysis and modeling.
-- `README.md`: Project documentation.
-- `requirements.txt`: Libraries to be installed.
+## Key Features
 
-## Setup Steps
-1. Clone the repo.
-2. Install requirements: `pip install -r requirements.txt`.
-3. Open `diabetes_prediction.ipynb` and run all cells.
+1. Data cleaning and preprocessing
+2. Missing value handling using median imputation
+3. Duplicate record detection and removal
+4. Exploratory Data Analysis (EDA)
+5. Class distribution visualization
+6. Feature distribution analysis
+7. Correlation heatmap generation
+8. Outlier detection using boxplots
+9. Pairwise feature relationship analysis
+10. Feature scaling using StandardScaler
+11. Model training using multiple machine learning algorithms
+12. Comparative model evaluation
+13. ROC curve analysis
+14. Feature importance visualization using Random Forest
 
-## Model Results
-| Model               | Accuracy | Precision | Recall | F1-Score |
-| ------------------- | -------: | --------: | -----: | -------: |
-| Random Forest       |   0.7792 |    0.7273 | 0.5926 |   0.6531 |
-| XGBoost             |   0.7597 |    0.6735 | 0.6111 |   0.6408 |
-| KNN                 |   0.7532 |    0.6600 | 0.6111 |   0.6346 |
-| SVM                 |   0.7338 |    0.6444 | 0.5370 |   0.5859 |
-| Logistic Regression |   0.7013 |    0.5870 | 0.5000 |   0.5400 |
+## Models Used
 
+* Logistic Regression
+* Random Forest Classifier
+* Support Vector Machine (SVM)
+* K-Nearest Neighbors (KNN)
+* XGBoost Classifier
 
-## Visuals
-The notebook includes Correlation Heatmaps, Feature Distributions, and ROC curves to compare model sensitivity.
+## Evaluation Metrics
+
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* Confusion Matrix
+* ROC-AUC Score
+
+## Tech Stack
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* XGBoost
+* gdown
+
+## Usage
+
+1. Open `diabetes_prediction.ipynb` in Jupyter Notebook or Google Colab.
+2. Install dependencies from `requirements.txt`.
+3. Run all cells (requires `gdown` to download `diabetes.csv` automatically).
+4. Review the generated visualizations, model comparison metrics, ROC curves, and feature importance analysis.
+
+## Results
+
+The models are evaluated using multiple classification metrics, and their performance is compared to identify the most effective approach for diabetes prediction.
+
+In the current implementation, the Random Forest Classifier achieved the best performance with:
+
+* Accuracy: 0.77
+* ROC-AUC: 0.82
+
+## Feature Importance Analysis
+
+The project includes feature importance visualization using Random Forest to identify the most influential medical indicators contributing to diabetes prediction.
