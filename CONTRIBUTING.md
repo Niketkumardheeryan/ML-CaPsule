@@ -138,3 +138,30 @@ It always takes time to understand and learn. So, do not worry at all. You can d
 
 
 🎉 🎊 😃 Happy Contributing 😃 🎊 🎉
+## Issue Labels Guide
+
+To improve issue organization and contributor onboarding, the repository follows a standardized labeling system.
+
+### Common Labels
+
+| Label | Purpose |
+|-------|---------|
+| good first issue | Suitable for beginners |
+| beginner friendly | Easy tasks for new contributors |
+| bug | Something is not working correctly |
+| documentation | Documentation improvements or fixes |
+| enhancement | Improvement to existing features |
+| feature request | Suggestion for a new feature |
+| help wanted | Maintainers are seeking contributions |
+| duplicate | Issue already exists |
+| invalid | Not a valid issue or request |
+| priority: low | Low priority task |
+| priority: medium | Medium priority task |
+| priority: high | High priority task |
+
+### Why Labels Matter
+
+- Helps contributors identify suitable tasks
+- Improves issue discoverability
+- Simplifies project management
+- Enhances contributor experience during open-source programs like GSSoC
