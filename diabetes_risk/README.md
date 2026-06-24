@@ -62,12 +62,12 @@ This project uses machine learning techniques to predict whether a patient is li
 
 ## Results
 
-The models are evaluated using multiple classification metrics, and their performance is compared to identify the most effective approach for diabetes prediction.
+The models are evaluated using multiple classification metrics, and their performance is compared to identify the most effective approach for diabetes prediction. Random Forest Classifier achieved the best overall performance with:
 
-In the current implementation, the Random Forest Classifier achieved the best performance with:
-
-* Accuracy: 0.77
-* ROC-AUC: 0.82
+- Accuracy: 77.9%
+- Precision: 72.7%
+- Recall: 59.3%
+- F1-Score: 65.3%
 
 ## Feature Importance Analysis
 

@@ -1,45 +1,38 @@
 ---
-Title: Project Title
-About: Create a report to help us improve.
-Name: YourName
-Label: Bug Report
-Assignee: ''
+name: Bug report
+about: Create a report to help us improve
+title: ''
+labels: ''
+assignees: ''
 
 ---
 
-Define You:
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-- [ ] LGM-SOC'21 Participant 
-- [ ] Contributor
-
-
-<!-- Have you talked to any of the Moderators or Project Admin (Prathima Kadari) before creating this issue? If not, just have a quick discussion and then once approved, create this issue. -->
-
-**Describe the Bug**
-
-<!-- A clear and concise description of what the bug is. -->
-
-**Steps to Reproduce**
-
+**To Reproduce**
 Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-1. 
-2. 
-3. 
-4. 
-
-**Expected Behavior**
-
-<!-- A clear and concise description of what you expected to happen. -->
-
-**Actual Behavior**
-
-<!-- A clear and concise description of how the code performed w.r.t expectations. -->
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
 **Screenshots**
+If applicable, add screenshots to help explain your problem.
 
-<!-- If applicable, add screenshots to help explain your problem. -->
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
 
-**Additional Details**
+**Smartphone (please complete the following information):**
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
+ - Version [e.g. 22]
 
-<!-- Write some additional details if you can, which might help to debug the issue quicker. -->
+**Additional context**
+Add any other context about the problem here.
