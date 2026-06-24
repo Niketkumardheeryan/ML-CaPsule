@@ -62,6 +62,40 @@ Machine learning is crucial because it provides enterprises with insights into c
 - **Python IDE**: Install from [python.org](https://python.org)
 - **Learn Python**: If you're new to Python, start learning from [W3Schools](https://www.w3schools.com/python/python_ml_getting_started.asp)
 
+### 🎨 Getting Started with R Language & RStudio
+
+#### What is R?
+R is an open-source programming language and free software environment designed specifically for statistical computing, data analytics, and scientific research. It is widely used by data scientists and statisticians for data manipulation, calculation, and graphical display.
+
+#### How to Install R and RStudio IDE
+To start setting up your environment for R-based data science models, follow these steps:
+
+1. **Install R Environment:**
+   - Go to the official CRAN repository: [Download R from CRAN](https://cran.r-project.org/)
+   - Choose your respective operating system (Windows, macOS, or Linux) and download the latest binary installer.
+   - Run the installer setup and follow the default configuration prompts.
+
+2. **Install RStudio Desktop IDE:**
+   - Go to the official Posit website: [Download RStudio Desktop](https://posit.co/download/rstudio-desktop/)
+   - Scroll down to the installer section and download the free version for your OS.
+   - Install the executable/package file. RStudio will automatically detect your local R installation.
+
+#### Quick R Script Example
+Once installed, open RStudio and run this simple verification script in the console:
+
+```r
+# Simple verification vector script
+message <- "Welcome to R Programming in ML-Capsule!"
+print(message)
+
+# Basic vector addition example
+vector1 <- c(1, 2, 3)
+vector2 <- c(4, 5, 6)
+result <- vector1 + vector2
+print(result)
+```
+
+
 ## 🗂️ Topics Covered
 
 ### 1. Extracting Data
