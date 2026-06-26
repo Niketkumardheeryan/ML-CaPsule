@@ -1,6 +1,6 @@
 # 📐 Math for ML
 
-> **The missing Maths for ML  — now inside the repo.**
+> Maths for ML  
 
 This section fills that gap with three focused Jupyter notebooks that explain the math, show it in code, and connect it **directly to algorithms present in this repo**.
 
@@ -10,9 +10,9 @@ This section fills that gap with three focused Jupyter notebooks that explain th
 
 | Notebook | Math Covered | ML Connection in this Repo |
 |---|---|---|
-| `01_Linear_Algebra_for_ML.ipynb` | Vectors, matrices, dot products, matrix multiplication, transposition | Neural network weight matrices · `sklearn` LinearRegression under the hood |
-| `02_Calculus_for_ML.ipynb` | Derivatives, partial derivatives, chain rule | Directly bridges to the **GradientDescent/** folder in this repo |
-| `03_Probability_for_ML.ipynb` | Bayes theorem, conditional probability, Normal distribution, PDF/CDF | Directly bridges to the **Naive_Bayes/** folder in this repo |
+| `Linear_Algebra/Linear_Algebra.ipynb` | Vectors, matrices, dot products, matrix multiplication, transposition | Neural network weight matrices · `sklearn` LinearRegression under the hood |
+| `Calculus/Calculus.ipynb` | Derivatives, partial derivatives, chain rule | Directly bridges to the **GradientDescent/** folder in this repo |
+| `Probability/Probability.ipynb` | Bayes theorem, conditional probability, Normal distribution, PDF/CDF | Directly bridges to the **Naive_Bayes/** folder in this repo |
 
 ---
 
@@ -59,8 +59,8 @@ Every notebook follows the same pattern, consistent with how `Statistical_modeli
 
 ## 🔗 Related folders in this repo
 
-- [`GradientDescent/`](../GradientDescent/) — Notebook 2 (Calculus) is the conceptual intro to this
-- [`Naive_Bayes/`](../Naive_Bayes/) — Notebook 3 (Probability) is the conceptual intro to this
+- [`GradientDescent/`](../GradientDescent/) — Notebook Calculus is the conceptual intro to this
+- [`Naive_Bayes/`](../Naive_Bayes/) — Notebook Probability  is the conceptual intro to this
 
 ---
 
