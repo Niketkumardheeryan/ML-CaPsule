@@ -5,3 +5,4 @@ matplotlib
 pillow
 ipython
 tqdm
+streamlit

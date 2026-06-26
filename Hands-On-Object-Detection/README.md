@@ -59,9 +59,21 @@ Dependency stack:
 
 - torch / torchvision — Deep learning backend
 - ultralytics — YOLOv8 framework
+- streamlit — Dashboard UI
 - matplotlib / pillow — Visualization & image I/O
 - tqdm / ipython — Progress tracking & interactive utilities
 
+Dashboard app
+---
+Use the new `app.py` Streamlit dashboard to upload a test image and see predictions with bounding boxes and class names.
+
+Start the dashboard:
+
+```
+streamlit run app.py
+```
+
+Then use the sidebar to select a model weight file, choose a confidence threshold, and upload an image.
 
 Architectural Concepts
 ---
