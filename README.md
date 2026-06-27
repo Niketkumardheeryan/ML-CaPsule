@@ -1,6 +1,6 @@
 # 🌟 ML-Capsule: Hands-on ML from Basic to Advance 🌟
 
-Welcome to **ML-Capsule**! This repository is a comprehensive collection of machine learning projects and resources, ranging from beginner to advanced levels. It covers a variety of topics, from basic machine learning concepts to deep learning, natural language processing, and much more.
+Welcome to **ML-Capsule**!!! This repository is a comprehensive collection of machine learning projects and resources, ranging from beginner to advanced levels. It covers a variety of topics, from basic machine learning concepts to deep learning, natural language processing, and much more.
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=45ffaa&size=40&width=900&height=80&lines=Welcome-to-ML-Capsule" alt="Welcome to ML Capsule"/>
@@ -29,7 +29,22 @@ Welcome to **ML-Capsule**! This repository is a comprehensive collection of mach
     <img src="https://img.shields.io/github/issues-pr-closed/Niketkumardheeryan/ML-CaPsule" alt="GitHub closed pull requests" />
   </p>
 </div>
+## 📑 Table of Contents
 
+- [📈 Why Machine Learning?](#-why-machine-learning)
+- [📚 Pre-requisites](#-pre-requisites)
+- [🗂️ Topics Covered](#️-topics-covered)
+- [🗂️ Project Directory](#️-project-directory)
+- [📂 Project Descriptions](#-project-descriptions)
+- [📜 Summary](#-summary)
+- [🔗 Useful URLs](#-useful-urls)
+- [🚀 Get Started](#-get-started)
+- [⚙️ Contribution Guidelines](#️-contribution-guidelines)
+- [📖 Code of Conduct](#-code-of-conduct)
+- [📝 License](#-license)
+- [✨ Contributors](#-some-awesome-contributors-)
+- [❤️ Stargazers](#-stargazers-️)
+- [❤️ Forkers](#-forkers-️)
 
 
 ## 📈 Why Machine Learning?
@@ -47,6 +62,34 @@ Machine learning is crucial because it provides enterprises with insights into c
 
 - **Python IDE**: Install from [python.org](https://python.org)
 - **Learn Python**: If you're new to Python, start learning from [W3Schools](https://www.w3schools.com/python/python_ml_getting_started.asp)
+
+### 🎨 Getting Started with R Language & RStudio
+
+#### What is R?
+R is an open-source programming language and free software environment designed specifically for statistical computing, data analytics, and scientific research. It is widely used by data scientists and statisticians for data manipulation, calculation, and graphical display.
+
+#### How to Install R and RStudio IDE
+To start setting up your environment for R-based data science models, follow these steps:
+
+1. **Install R Environment:**
+   - Go to the official CRAN repository: [Download R from CRAN](https://cran.r-project.org/)
+   - Choose your respective operating system (Windows, macOS, or Linux) and download the latest binary installer.
+   - Run the installer setup and follow the default configuration prompts.
+
+2. **Install RStudio Desktop IDE:**
+   - Go to the official Posit website: [Download RStudio Desktop](https://posit.co/download/rstudio-desktop/)
+   - Scroll down to the installer section and download the free version for your OS.
+   - Install the executable/package file. RStudio will automatically detect your local R installation.
+
+#### 📚 Recommended Video Tutorials for Beginners
+To master R programming from basic to advanced levels, check out these comprehensive video resources:
+
+- 🎥 **[R Programming Full Course for Beginners (freeCodeCamp)](https://www.youtube.com/watch?v=_V8eKsto3Ug)** - A complete, hands-on masterclass covering vectors, data frames, and statistical operations.
+- 🎥 **[R Programming Tutorial - Learn the Basics (Edureka)](https://www.youtube.com/watch?v=KlsYv-ZSSb0)** - Excellent fundamental guide focusing on syntax, variables, and IDE setup.
+- 🎥 **[Data Science with R Full Course (Simplilearn)](https://www.youtube.com/watch?v=9kYUUFMsh88)** - Comprehensive track covering basic programming up to advanced data analysis and visualization.
+- 🎥 **[Introduction to R for Data Science (DataCamp)](https://www.youtube.com/watch?v=33W_VInE-zU)** - Quick interactive overview perfect for complete beginners looking to dive into analytics.
+
+
 
 ## 🗂️ Topics Covered
 
@@ -178,7 +221,7 @@ The process of selecting relevant features for use in a model to increase accura
 <td align="center">27.</td>
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Classification%20Algorithms">Classification Algorithms</a></td>
 <td align="center">28.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Cloud%20Details">Cloud Details</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Cloud%20Details">Cloud Details</a></td>
 </tr>
 <tr align="center">
 <td align="center">29.</td>
@@ -237,9 +280,9 @@ The process of selecting relevant features for use in a model to increase accura
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Email%20Classifier">Email Classifier</a></td>
 <td align="center">51.</td>
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Emotion%20Recognition%20Based%20on%20NLP">Emotion Recognition Based on NLP</a></td>
-
-
-
+<td align="center">52.</td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Eye_Gaze_Tracking_Attention_Estimation">Eye Gaze Tracking & Attention Estimation</a></td>
+</tr>
 </table>
 
 & many more.......
@@ -275,6 +318,9 @@ Here are some of the exciting projects featured in this repository:
 8. **[Heart Disease Prediction](#)**  
    A predictive model for diagnosing heart disease based on patient attributes, utilizing statistical and machine learning techniques to improve diagnosis accuracy.
 
+9. **[Eye Gaze Tracking & Attention Estimation](Eye_Gaze_Tracking_Attention_Estimation/README.md)**  
+   A real-time attention tracking system using the MediaPipe Face Mesh Tasks API, robust iris vector projections, and 3D Perspective-n-Point head pose estimation with a glowing telemetry HUD console.
+
 ## 📜 Summary
 
 This repository offers a rich collection of machine learning and data science projects. It includes well-documented examples, practical projects, and extensive resources to help you understand and implement various machine learning techniques.
@@ -308,29 +354,20 @@ To submit your contributions, follow these steps:
 
 1. **Fork the Repository**: Click the "Fork" button at the top right corner of the repository to create your own copy.
 
-2. **Clone Your Fork**: Clone your forked repository to your local machine using the following command:
+2. **Clone Your Fork**: Clone your forked repository to your local machine and navigate into the directory:
     ```bash
     git clone https://github.com/Niketkumardheeryan/ML-CaPsule
-    ```
-
-3. **Create a Branch**: Create a new branch for your changes:
-    ```bash
+    cd ML-CaPsule
     git checkout -b my-feature
     ```
-
-4. **Make Changes**: Make your desired changes to the codebase.
+    4. **Make Changes**: Make your desired changes to the codebase.
 
 5. **Commit Changes**: Commit your changes with a descriptive commit message:
     ```bash
     git commit -m "Add new feature"
-    ```
-
-6. **Push Changes**: Push your changes to your forked repository:
-    ```bash
     git push origin my-feature
-    ```
 
-7. **Submit a Pull Request**: Go to your forked repository on GitHub and submit a pull request. Be sure to provide a detailed description of your changes and why they are necessary.
+    7. **Submit a Pull Request**: Go to your forked repository on GitHub and submit a pull request. Be sure to provide a detailed description of your changes and why they are necessary.
 
 ## Project Directory Structure
 
@@ -435,6 +472,37 @@ Happy Coding! 👩‍💻👨‍💻
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+
+## 🗂️ Project Directory
+
+Explore the machine learning and data science projects available in this repository based on your domain interest and skill level.
+
+### 🟢 Beginner Projects & Data Analysis
+
+| Project Name | Category | Difficulty | Description | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Anime Data Analysis** | Data Analysis | Beginner | Analyze anime datasets and user trends through Exploratory Data Analysis (EDA). | [View Project](./Projects/Anime%20Data%20Analysis%20and%20Prediction/) |
+| **Medical Cost Prediction** | Machine Learning | Beginner | Predict medical insurance costs using regression models like Linear Regression and Random Forest. | [View Project](./Projects/Medical%20Cost%20Prediction/) |
+| **Heart Disease Detection** | Machine Learning | Beginner | Predict the presence of heart disease in patients using classification algorithms. | [View Project](./Projects/Heart%20Disease%20Prediction/) |
+| **Water Potability** | Machine Learning | Intermediate | Determine if water is safe for human consumption based on water quality metrics. | [View Project](./Projects/Water%20Potability/) |
+
+### 🔵 Deep Learning & Computer Vision
+
+| Project Name | Category | Difficulty | Description | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Alzheimer's Disease Predictor** | Deep Learning | Intermediate | Predict Alzheimer's disease using structural MRI and clinical data models. | [View Project](./Projects/Alzheimers%20Disease%20Predictor/) |
+| **Yoga Pose Detection** | Computer Vision | Intermediate | Real-time tracking and classification of different yoga poses using computer vision. | [View Project](./Projects/Yoga%20Pose%20Detection/) |
+| **Speech-to-Image Generator** | Deep Learning | Advanced | Generate visual images directly from speech audio inputs using deep neural networks. | [View Project](./Projects/Speech-to-Image-Generator/) |
+| **Weapon Detection System** | Computer Vision | Advanced | Detect weapons in images and video streams for security applications. | [View Project](./Projects/Weapon-Detection-System/) |
+
+### 🟡 Natural Language Processing & Advanced ML
+
+| Project Name | Category | Difficulty | Description | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Toxic Comment Classifier** | NLP | Intermediate | Classify and filter toxic, obscene, or threatening text data using NLP modules. | [View Project](./Projects/Toxic%20Comment%20Classifier/) |
+| **Currency Arbitrage with RL** | Reinforcement Learning | Advanced | Detect currency arbitrage opportunities in financial markets using Reinforcement Learning. | [View Project](./Projects/Currency%20Arbitrage%20with%20Reinforcement%20Learning/) |
+| **Sales Prediction (Research)** | Machine Learning | Advanced | Advanced sales prediction implementing complex models from research papers. | [View Project](./Projects/Sales%20Prediction/) |
 
 
 
