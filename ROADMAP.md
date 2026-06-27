@@ -121,7 +121,7 @@
 | Driver_Drowsiness_Detection | OpenCV, CNN | [View](./Driver_Drowsiness_Detection) |
 | Duplicate_Question_pair | NLP, similarity, Siamese networks | [View](./Duplicate_Question_pair) |
 | Emotion Recognition Based on NLP | NLP, sentiment, classification | [View](./Emotion%20Recognition%20Based%20on%20NLP) |
-| emotion-based music recommendation | NLP, recommendation | [View](./emotion-based%20music%20recommendtion) |
+| emotion-based music recommendation | NLP, recommendation | [View](./emotion-based%20music%20recommendation) |
 | Employee_attrittion_prediction_using_ML | HR analytics, classification | [View](./Employee_attrittion_prediction_using_ML) |
 | Engineering Career Role Prediction | classification, scikit-learn | [View](./Engineering%20Career%20Role%20Prediction) |
 | Face-recognition | OpenCV, face detection | [View](./Face-recognition) |
