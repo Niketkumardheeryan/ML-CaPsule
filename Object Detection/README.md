@@ -152,7 +152,7 @@ jupyter notebook object_detection.ipynb
 
 # Model Architecture
 
-![alt text](Gemini_Generated_Image_g9r4hbg9r4hbg9r4.png)
+![Architecture](./assests/pipeline.png)
 
 The model is a Convolutional Neural Network (CNN) designed to extract hierarchical spatial features.
 
@@ -235,9 +235,9 @@ The model demonstrates:
 ---
 ### Training Curves
 
-![alt text](image.png)
+![Training plots](./assets/image.png)
 
-![alt text](image-1.png)
+![Accuracy plots](./assets/image-1.png)
 
 ---
 
