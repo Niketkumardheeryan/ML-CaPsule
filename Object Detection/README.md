@@ -90,6 +90,7 @@ Visualization (Graphs & Predictions)
 ├── assets/
 │ ├── training_graph.png
 │ └── sample_output.png
+├── Object Detection with YOLO v8 and Single Stage architectures/ #Contains streamlit app and YOLO v8 architecture related notebooks!
 ├── requirements.txt
 └── README.md
 ```
