@@ -152,7 +152,7 @@ jupyter notebook object_detection.ipynb
 
 # Model Architecture
 
-![Architecture](./assests/pipeline.png)
+![Architecture](./assets/pipeline.png)
 
 The model is a Convolutional Neural Network (CNN) designed to extract hierarchical spatial features.
 
