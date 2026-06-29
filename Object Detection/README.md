@@ -212,11 +212,13 @@ Metrics: Accuracy
 ```
 ### ⚡ Training Dynamics
 The model is trained using adam optimizer where gradients are computed and weights updated:
+
 $$m_t = \beta_1m_{t-1} + (1-\beta_1)\nabla L$$
 $$v_t = \beta_2v_{t-1} + (1 - \beta_2)(\nabla L)^2$$
-$$ \hat{v_t} = \frac{v_t}{\sqrt{1 - \beta_2^{t}}} $$
-$$ \hat{m_t} = \frac{m_t}{\sqrt{1 - \beta_1^{t}}}$$
+$$\hat{v_t} = \frac{v_t}{\sqrt{1 - \beta_2^{t}}} $$
+$$\hat{m_t} = \frac{m_t}{\sqrt{1 - \beta_1^{t}}}$$
 $$\theta = \theta - \frac{\eta \hat{m_t}}{\sqrt{\hat{v_t}  + \epsilon}}$$
+
 Where:
 - $\eta$ = learning rate
 - $\nabla L$ = gradient of loss
