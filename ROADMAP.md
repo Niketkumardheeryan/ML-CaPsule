@@ -14,6 +14,7 @@
 ---
 
 ## 🟢 Beginner
+>
 > **Prerequisites:** Basic Python, High School Math  
 > **Key Libraries:** numpy, pandas, matplotlib, seaborn, scikit-learn
 
@@ -86,6 +87,7 @@
 ---
 
 ## 🟡 Intermediate
+>
 > **Prerequisites:** Beginner topics, Python proficiency  
 > **Key Libraries:** scikit-learn, TensorFlow/Keras, OpenCV, NLTK, Flask
 
@@ -107,7 +109,7 @@
 | Company Bankruptcy Using unsupervised | clustering, unsupervised ML | [View](./Company%20Bankruptcy%20Using%20unsupervised) |
 | Consumer Complaint Dataset | NLP, text classification | [View](./Consumer%20Complaint%20Dataset) |
 | Covid19 forecasting with prophet | Facebook Prophet, time series | [View](./Covid19%20forecasting%20with%20prophet) |
-| COVID-19-DATA-ANALYSIS | EDA, pandas, visualization | [View](./COVID-19-DATA-ANALYSIS) |
+| COVID-19-DATA-ANALYSIS | EDA, pandas, visualization | [View](./COVID_19-DATA-ANALYSIS) |
 | Covid_Third_Wave_Forecasting | time series, forecasting | [View](./Covid_Third_Wave_Forecasting) |
 | CrowdAI Plant Disease | CNN, image classification | [View](./CrowdAI%20Plant%20Disease) |
 | Crude oil forecasting | time series, regression | [View](./Crude%20oil%20forecasting) |
@@ -152,7 +154,7 @@
 | Maternal Health Risk Prediction | classification, health ML | [View](./Maternal%20Health%20Risk%20Prediction) |
 | Medical_Help_Chatbot | NLP, chatbot | [View](./Medical_Help_Chatbot) |
 | Migraine Type Prediction | classification, health ML | [View](./Migraine%20Type%20Prediction) |
-| Mid English Classification | NLP, text classification | [View](./Mid%20English%20Classification) |
+| Mid English Classification | NLP, text classification | [View](./MNIST%20English%20Classification) |
 | Mobile Price Prediction | classification, scikit-learn | [View](./Mobile%20Price%20Prediction) |
 | Molecule_Property_Analysis | cheminformatics, ML | [View](./Molecule_Property_Analysis) |
 | Movie Genre Classification | NLP, multi-label classification | [View](./Movie%20Genre%20Classification) |
@@ -186,7 +188,7 @@
 | Sports Analytics Project | EDA, sports ML | [View](./Sports%20Analytics%20Project) |
 | Sports Image Classification | CNN, image classification | [View](./Sports%20Image%20Classification) |
 | SQL injection detection | NLP, cybersecurity ML | [View](./SQL%20injection%20detection) |
-| Stock Price Analysis | time series, pandas | [View](./Stock%20Analysis) |
+| Stock Price Analysis | time series, pandas | [View](./Stock%20Price%20Analysis) |
 | Text Summarization Model | NLP, summarization | [View](./Text%20Summarization%20Model) |
 | Time Series Forecasting with Python | time series, statsmodels | [View](./Time%20Series%20Forecasting%20with%20Python) |
 | Traffic Sign Recognition | CNN, OpenCV | [View](./Traffic%20Sign%20Recognition) |
@@ -202,6 +204,7 @@
 ---
 
 ## 🔴 Advanced
+>
 > **Prerequisites:** Intermediate topics, strong Python, math (Linear Algebra, Calculus)  
 > **Key Libraries:** TensorFlow, PyTorch, Keras, OpenCV, Reinforcement Learning libraries
 

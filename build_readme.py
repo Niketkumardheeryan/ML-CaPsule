@@ -36,6 +36,22 @@ def replace_chunk(content, marker, chunk, inline=False):
 
     return r.sub(chunk, content)
 
+def Exract_files_names():
+    try:
+        req = requests.get(FEED_URL, timeout=10)
+        req.raise_for_status()
+    except requests.exceptions.Timeout:
+        print("ERROR: Request timed out. GitHub may be rate-limiting or unreachable.")
+        sys.exit(1)
+    except requests.exceptions.HTTPError as e:
+        print("ERROR: HTTP error occurred: {}".format(e))
+        sys.exit(1)
+    except requests.exceptions.ConnectionError:
+        print("ERROR: Failed to connect. Check your internet connection.")
+        sys.exit(1)
+    except requests.exceptions.RequestException as e:
+        print("ERROR: An unexpected error occurred: {}".format(e))
+        sys.exit(1)
 
 def extract_file_names():
     temp = []
@@ -56,6 +72,15 @@ def extract_file_names():
 
     return temp
 
+    for i in li:
+        for x in i.findAll('a', class_="js-navigation-open Link--primary"):
+            if (x.text != ".github" and x.text != "CODE_OF_CONDUCT.md" and x.text != "CONTRIBUTING_GUIDELINES.md" and x.text != ".github/workflows" and x.text != "build_readme.py" and x.text != "requirements.txt" and x.text != "README.md" and x.text != "download statistics.jpg" and x.text != "img" and x.text != "ml img.jpg"):
+                temp2 = {
+                    'fname': x.text,
+                    'furl': x["href"].split('/')[-1]
+                }
+                temp.append(temp2)
+    return temp
 
 if __name__ == "__main__":
 
