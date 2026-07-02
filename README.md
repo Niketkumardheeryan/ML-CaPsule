@@ -458,8 +458,8 @@ Give this project a ⭐ if you love it!
 
 ### ⚙️ Contribution Guidelines
 - Check the [Contribution Guidelines](CONTRIBUTING.md)
-- Take a look at the [Existing Issues](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/issues)
-- Create your [Pull Request](https://github.com/Niketkumardheeryan/Hands-on-ML-Basic-to-Advance-/pulls)
+- Take a look at the [Existing Issues](https://github.com/Niketkumardheeryan/ML-CaPsule/issues)
+- Create your [Pull Request](https://github.com/Niketkumardheeryan/ML-CaPsule/pulls)
 
 ## Submitting a Pull Request
 
@@ -469,18 +469,20 @@ To submit your contributions, follow these steps:
 
 2. **Clone Your Fork**: Clone your forked repository to your local machine and navigate into the directory:
     ```bash
-    git clone https://github.com/Niketkumardheeryan/ML-CaPsule
+    git clone https://github.com/<your-username>/ML-CaPsule
     cd ML-CaPsule
     git checkout -b my-feature
     ```
-    4. **Make Changes**: Make your desired changes to the codebase.
 
-5. **Commit Changes**: Commit your changes with a descriptive commit message:
+3. **Make Changes**: Make your desired changes to the codebase.
+
+4. **Commit Changes**: Commit your changes with a descriptive commit message:
     ```bash
     git commit -m "Add new feature"
     git push origin my-feature
+    ```
 
-    7. **Submit a Pull Request**: Go to your forked repository on GitHub and submit a pull request. Be sure to provide a detailed description of your changes and why they are necessary.
+5. **Submit a Pull Request**: Go to your forked repository on GitHub and submit a pull request. Be sure to provide a detailed description of your changes and why they are necessary.
 
 ## Project Directory Structure
 
@@ -574,14 +576,14 @@ Happy Coding! 👩‍💻👨‍💻
 
 <div align='left'>
 
-[![Stargazers repo roster for @Niketkumardheeryan/ML-CaPsule](https://reporoster.com/stars/dark/Niketkumardheeryan/ML-CaPsule)](https://github.com/Niketkumardheeryan/ML-CaPsule/stargazers)
+[![Star History Chart](https://api.star-history.com/svg?repos=Niketkumardheeryan/ML-CaPsule&type=Date)](https://www.star-history.com/#Niketkumardheeryan/ML-CaPsule&Date)
 
 
 </div>
 
 ## Forkers ❤️
 
-[![Forkers repo roster for @Niketkumardheeryan/ML-CaPsule](https://reporoster.com/forks/dark/Niketkumardheeryan/ML-CaPsule)](https://github.com/Niketkumardheeryan/ML-CaPsule/network/members)
+[![GitHub forks](https://img.shields.io/github/forks/Niketkumardheeryan/ML-CaPsule?style=for-the-badge&label=Forks&color=blueviolet)](https://github.com/Niketkumardheeryan/ML-CaPsule/network/members)
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -647,7 +649,6 @@ This repository uses an automated Notebook Health Check Bot to maintain code qua
 - ✅ 15 notebooks passed the health check
 - ⏱️ 1 notebook flagged for timeout (AutoML_GSSoC.ipynb)
 - All issues were successfully detected and reported
-
 
 
 
