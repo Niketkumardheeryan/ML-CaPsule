@@ -1,18 +1,38 @@
 # Concept Drift Detection and Adaptive Retraining Pipeline
 
 ## Overview
-This project demonstrates how machine learning models can lose accuracy when data distribution changes over time. It shows how to detect concept drift and retrain the model automatically.
+This project demonstrates concept drift detection using a real machine learning dataset and an adaptive retraining pipeline.
+
+## Dataset Used
+The project uses the **Breast Cancer Wisconsin Dataset** from Scikit-learn.
+
+The dataset contains numerical medical features computed from digitized images of breast mass samples. The task is to classify whether a tumor is malignant or benign.
+
+## Model Used
+The project uses a **Random Forest Classifier** as the baseline machine learning model.
 
 ## How to Use This Project
 
-1. Open `concept_drift_detection_and_retraining.ipynb` in Google Colab or Jupyter Notebook.
+1. Open `concept_drift_detection_and_retraining.ipynb` in Google Colab.
 2. Run all cells from top to bottom.
-3. The notebook will generate a synthetic dataset, train a baseline model, simulate drift, detect drift using KS Test, and retrain the model.
-4. Check the accuracy comparison and graphs to understand how retraining improves performance after drift.
+3. The notebook will:
+   - Load the Breast Cancer Wisconsin dataset.
+   - Train a Random Forest classification model.
+   - Evaluate baseline model performance.
+   - Simulate feature drift in the dataset.
+   - Detect drift using the Kolmogorov-Smirnov test.
+   - Retrain the model after drift is detected.
+   - Compare model accuracy before and after retraining.
+
+## Features
+- Real dataset usage
+- Random Forest model training
+- Data drift simulation
+- KS-test based drift detection
+- Adaptive retraining
+- Accuracy comparison
+- Visualization of drift and performance changes
 
 ## Requirements
-
-Install the required libraries:
-
 ```bash
-pip install numpy pandas scikit-learn scipy matplotlib seaborn
+pip install pandas numpy scikit-learn matplotlib seaborn scipy joblib

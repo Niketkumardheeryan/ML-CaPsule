@@ -1,2 +1,7 @@
-requests
-bs4
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+scipy
+joblib
