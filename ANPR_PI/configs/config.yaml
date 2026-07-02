@@ -1,0 +1,60 @@
+models:
+  detector_pt: models/license_plate_detector.pt  # PROPER LICENSE PLATE DETECTOR
+  detector_onnx: models/yolov8n-license_plate_int8.onnx  # ONNX license plate detector
+  detector_hef: models/plate_yolov8.hef  # Hailo compiled YOLOv8 for Raspberry Pi 5
+  ocr_backend: easyocr  # easyocr (with GPU) works better for this camera
+  ocr_langs: [en]
+  ocr_pt: models/ocr_crnn.pth
+  ocr_onnx: models/ocr_crnn.onnx
+  ocr_hef: models/ocr_crnn.hef  # Hailo compiled CRNN for Raspberry Pi 5
+
+inference:
+  device: cuda  # RTX 2050 GPU enabled - CUDA 12.1
+  conf_threshold: 0.25  # Lowered threshold for better plate detection
+  iou_threshold: 0.5
+  max_det: 10  # Limit detections for speed
+  frame_skip: 2  # RTX 2050 handles every 2nd frame smoothly
+  input_size: 640  # License plate model works best at 640
+  use_onnx: true  # Use ONNX Runtime (required as only .onnx model is present)
+  use_hailo: false  # Hailo is for Raspberry Pi only
+  detector_only: false
+  apply_clahe: true
+
+io:
+  # Single camera mode (legacy)
+  source: 0  # Default to webcam
+  
+  # Camera OSD (On-Screen Display) masking - ignore timestamp/text overlays
+  mask_osd: true  # Enable OSD masking
+  mask_top_percent: 20  # Mask top 20% of frame (timestamp)
+  mask_bottom_percent: 15  # Mask bottom 15% of frame (CANTEEN text)
+  
+  # Multi-camera mode (for entry/exit gates)
+  multi_camera: false  # Disable for testing
+  cameras:
+    in:  # Entry camera
+      source: "rtsp://username:password@192.168.1.108:554/cam/realmonitor?channel=1&subtype=1"
+      camera_type: "in"  # "in" for entry, "out" for exit
+      enabled: true
+    out:  # Exit camera
+      source: ""  # No exit camera
+      camera_type: "out"
+      enabled: false
+  
+  output_mode: both  # overlay | json | both
+  save_jsonl: logs/plates.jsonl
+  save_csv: logs/plates.csv
+
+postprocess:
+  enable_confusion_correction: true
+  min_len: 6
+  max_len: 12
+  regex_set: default
+
+server:
+  host: 0.0.0.0
+  port: 8000
+
+database:
+  path: logs/parking_database.csv
+  session_path: logs/session_log.csv

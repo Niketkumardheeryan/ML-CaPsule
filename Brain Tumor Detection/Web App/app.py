@@ -4,6 +4,7 @@ import tensorflow as tf
 from PIL import Image
 import io
 import base64
+import os
 
 def load_model_and_labels():
     # Get the directory path of the current file
@@ -47,5 +48,6 @@ def predict():
     except Exception as e:
         return render_template('error.html', error_message=str(e))
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"
+    app.run(debug=debug_mode)
