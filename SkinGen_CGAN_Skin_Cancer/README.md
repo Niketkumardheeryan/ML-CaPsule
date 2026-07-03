@@ -1,72 +1,38 @@
-\# SkinGen — Synthetic Skin Cancer Image Generation with CGAN
+# SkinGen — Synthetic Skin Cancer Image Generation using CGAN
 
+## Problem Statement
+Rare skin cancer subtypes are hard to diagnose because AI models have too few
+images to learn from. SkinGen generates realistic synthetic images using a
+Conditional GAN (CGAN) trained on HAM10000 to address this data-scarcity problem.
 
+## Tech Stack
+- Python, PyTorch, Torchvision
+- NumPy, Pandas, Matplotlib
+- scikit-learn
+- Google Colab (for GPU training)
 
-\## Goal
+## Dataset
+[HAM10000](https://www.kaggle.com/datasets/kmader/skin-lesion-analysis-toward-melanoma-detection)
+— 10,000 dermoscopy images across 7 lesion categories. Not committed to this
+repo; download link is above and instructions are in the notebook.
 
-Skin cancers are hard to detect because AI models have very few rare case images to learn from.
+## How It Works
+1. Load HAM10000 images and metadata, label-encode the 7 lesion classes
+2. Train a class-conditional GAN (Generator + Discriminator, both conditioned
+   on lesion label via embeddings)
+3. Generate synthetic images per class to balance rare categories
+4. (Future work) Train a downstream classifier on real + synthetic images and
+   compare performance against a real-only baseline
 
-SkinGen generates realistic synthetic images using a Conditional GAN (CGAN) trained on the
-
-HAM10000 dataset to fix this problem.
-
-
-
-\## Dataset
-
-HAM10000 — 10,000 real dermoscopy images across 7 skin lesion categories.
-
-Download from: https://www.kaggle.com/datasets/kmader/skin-lesion-analysis-toward-melanoma-detection
-
-
-
-\## Tech Stack
-
-\- Python
-
-\- PyTorch
-
-\- Torchvision
-
-\- NumPy / Pandas
-
-\- Matplotlib
-
-\- scikit-learn
-
-\- Google Colab (for GPU training)
-
-
-
-\## Project Structure
-
-SkinGen\_CGAN\_Skin\_Cancer/
-
+## Project Structure
+```
+SkinGen_CGAN_Skin_Cancer/
 ├── README.md
-
 ├── requirements.txt
+└── SkinGen_CGAN.ipynb
+```
 
-├── models/
-
-├── notebooks/
-
-└── utils/
-
-
-
-\## How It Works
-
-1\. Train a CGAN on HAM10000 images conditioned on lesion class label
-
-2\. Generate synthetic images for rare classes
-
-3\. Train a classifier on real + synthetic images together
-
-4\. Improves rare skin cancer detection accuracy
-
-
-
-\## Author
-
-Your Name — GitHub: https://github.com/yourusername
-
+## Usage
+Open `SkinGen_CGAN.ipynb` in Google Colab, enable a GPU runtime, download the
+HAM10000 dataset from the link above, update `DATA_DIR` in the notebook to
+point at it, and run all cells.
