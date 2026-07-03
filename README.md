@@ -59,6 +59,26 @@ Machine learning is a technique to analyze data that automates the process of bu
 ### Importance of Machine Learning
 Machine learning is crucial because it provides enterprises with insights into customer behavior and business operational patterns, and supports the development of new products. Leading companies like Facebook, Google, and Uber integrate machine learning into their operations, making it a significant competitive differentiator.
 
+
+## 🔄 Machine Learning Workflow
+
+```mermaid
+graph TD
+    A[Raw Data] --> B[Data Preprocessing]
+    B --> C[Feature Engineering]
+    C --> D[Train/Test Split]
+    D --> E[Model Training]
+    D --> F[Model Evaluation]
+    E --> G{Performance OK?}
+    F --> G
+    G -->|Yes| H[Deployment]
+    G -->|No| I[Hyperparameter Tuning]
+    I --> E
+    H --> J[Monitoring]
+    J -->|Drift Detected| B
+```
+
+
 ## 📚 Pre-requisites
 
 - **Python IDE**: Install from [python.org](https://python.org)
