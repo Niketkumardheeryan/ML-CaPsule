@@ -11,8 +11,8 @@ This is a Python script for a language learning assistant that helps users pract
 
 ## Requirements
 - Python 3.x
-- random
-- speech_recognition
+- `speech_recognition`
+- `random` is included with Python
 
 ## Getting Started
 1. Clone this repository to your local machine.
@@ -23,6 +23,7 @@ This is a Python script for a language learning assistant that helps users pract
 ```bash
 python language_learning_assistant.py
 ```
+
 ## How to Use
 - Upon running the script, you will be prompted to choose from conversation practice, vocabulary quiz, grammar exercise, or pronunciation error detection.
 - For conversation practice, answer the questions displayed and receive responses.

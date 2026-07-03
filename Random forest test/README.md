@@ -1,43 +1,20 @@
-## 🥦 RANDOM FOREST TEST 🥦
--------------------------------------------------------------------------
-### Introduction 
---------------------------------------------------------------------------
-Random forest is a popular machine learning algorithm that belongs to the supervised learning technique.
+# Random Forest Test
 
-It can be used for both classification and regression and is based on the concept of ensemble learning i.e. a process of
+## Introduction
+Random Forest is a supervised ensemble learning algorithm used for both classification and regression.
+It combines multiple decision trees and improves performance by reducing overfitting through bagging.
 
-combining multiple classifiers to solve a complex problem and to improve the performance of the model.
+## How It Works
+1. Select random samples from the dataset using bootstrap sampling
+2. Build a decision tree for each sample
+3. Collect predictions from all trees
+4. Use majority vote for classification or the mean for regression
 
-Random forest makes use of the bagging technique.
+## Key Points
+- Random Forest Classifier returns the majority vote
+- Random Forest Regressor returns the average prediction
+- The model is built from multiple decision trees
 
-✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
-
-### How Random Forest test algorithm do that job 🌿🌿 ?
-In random forest, the models M1, M2...etc. are nothing but decision trees.
-There are two phases namely 🌴:
-  🍂. Creating the random forest by combining N decision trees
-  🍂. Making predictions for each tree
-
-✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
-
-#### what is the main steps that this forest test will follow :
-🍃. Starts by selecting random samples from given dataset using the bootstrap technique.
-
-🍃. This algorithm will construct a decision tree for every sample, then it will get prediction result from each decision tree.
-
-🍃. Next, voting will be performed for every predicted result.
-
-🍃. At last, select the most voted prediction as the final prediction result.
-
-✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
-### ponits to be noted 
--  🌸 For a Random Forest Classifier :
- 
- the final result will be the majority vote.
- 
--  🌸 For a Random Forest Regressor :
- 
- the final result will be mean of results of all the decision trees.
-
-✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
-
+## Notes
+- Random Forest is useful when you want a strong baseline model with good generalization.
+- It works well for both structured classification and regression tasks.

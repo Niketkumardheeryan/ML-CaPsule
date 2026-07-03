@@ -1,6 +1,6 @@
-﻿# ML-CaPsule Cross Platform App
+## ML-CaPsule Cross Platform App
 
-A basic cross-platform mobile application for the ML-CaPsule repository.
+A Flutter cross-platform mobile application for the ML-CaPsule repository.
 
 This app gives users a mobile-first overview of ML-CaPsule, its learning approach, major machine learning topics, and sample project areas.
 

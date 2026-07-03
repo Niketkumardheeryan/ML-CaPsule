@@ -1,14 +1,11 @@
-# 📄 AI Resume Analyzer
+# AI Resume Analyzer
 
-## 🚀 Overview
+## Overview
+AI Resume Analyzer is an AI-powered web application built with Python, Streamlit, NLP, and Gemini AI.
 
-AI Resume Analyzer is an advanced AI-powered web application built using **Python, Streamlit, NLP, and Gemini AI**.
+The app analyzes uploaded resumes, detects technical skills, calculates ATS scores, extracts important entities, and provides AI-generated suggestions for improvement.
 
-The application analyzes uploaded resumes, detects technical skills, calculates ATS scores, extracts important entities using NLP, and provides intelligent AI-generated resume improvement suggestions.
-
----
-
-# ✨ Features
+## Features
 
 - 📂 Resume PDF Upload
 - 🧠 AI-Powered Resume Analysis
@@ -21,9 +18,7 @@ The application analyzes uploaded resumes, detects technical skills, calculates 
 - 💡 Resume Improvement Suggestions
 - 🎯 Role-Based Skill Matching
 
----
-
-# 🛠️ Technologies Used
+## Technologies Used
 
 - Python
 - Streamlit
@@ -33,11 +28,9 @@ The application analyzes uploaded resumes, detects technical skills, calculates 
 - Matplotlib
 - python-dotenv
 
----
+## Project Structure
 
-# 📁 Project Structure
-
-```bash
+```text
 AI_Resume_Analyzer/
 │
 ├── app.py
@@ -50,43 +43,33 @@ AI_Resume_Analyzer/
 └── sample_resume.pdf
 ```
 
----
+## Installation Guide
 
-# ⚙️ Installation Guide
-
-## 1️⃣ Clone Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/Anant-06/ML-CaPsule.git
 ```
 
----
-
-## 2️⃣ Navigate to Project Folder
+### Navigate to Project Folder
 
 ```bash
 cd ML-CaPsule/AI_Resume_Analyzer
 ```
 
----
-
-## 3️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## 4️⃣ Install spaCy Language Model
+### Install spaCy Language Model
 
 ```bash
 python -m spacy download en_core_web_sm
 ```
 
----
-
-## 5️⃣ Create `.env` File
+### Create `.env` File
 
 Create a `.env` file inside the project folder and add:
 
@@ -94,25 +77,19 @@ Create a `.env` file inside the project folder and add:
 GEMINI_API_KEY=YOUR_API_KEY
 ```
 
----
-
-# 🔑 Generate Gemini API Key
+## Generate Gemini API Key
 
 Generate your API key from:
 
 https://aistudio.google.com/app/apikey
 
----
-
-# ▶️ Run Application
+## Run Application
 
 ```bash
 streamlit run app.py
 ```
 
----
-
-# 📊 Project Workflow
+## Project Workflow
 
 ```text
 Upload Resume
@@ -130,9 +107,7 @@ Gemini AI Suggestions
 Analytics & Feedback
 ```
 
----
-
-# 🤖 AI Features
+## AI Features
 
 The project uses **Google Gemini AI** to generate:
 
@@ -142,9 +117,7 @@ The project uses **Google Gemini AI** to generate:
 - Career guidance
 - Project recommendations
 
----
-
-# 🧩 NLP Features
+## NLP Features
 
 Using **spaCy Named Entity Recognition (NER)**:
 
@@ -153,9 +126,7 @@ Using **spaCy Named Entity Recognition (NER)**:
 - DATE extraction
 - LOCATION extraction
 
----
-
-# 📈 Future Improvements
+## Future Improvements
 
 - Resume Ranking System
 - OCR-Based Resume Parsing
@@ -166,24 +137,17 @@ Using **spaCy Named Entity Recognition (NER)**:
 - Semantic Skill Matching
 - Vector Embeddings
 
----
-
-# 🖼️ Screenshots
+## Screenshots
 
 _Add screenshots of the application here._
-
----
-
-# 👨‍💻 Author
+## Author
 
 **Anant Gangwar**
 
 GitHub:
 https://github.com/Anant-06
 
----
-
-# 🌟 Contribution
+## Contribution
 
 Contributions are welcome.
 
@@ -193,8 +157,6 @@ If you'd like to improve this project:
 - Commit changes
 - Open a Pull Request
 
----
-
-# 📜 License
+## License
 
 This project is open-source and available under the MIT License.

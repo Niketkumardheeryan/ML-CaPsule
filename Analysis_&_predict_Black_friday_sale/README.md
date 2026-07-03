@@ -1,45 +1,39 @@
-Data-Analysis-on-Black-Friday-sale
+# Data Analysis on Black Friday Sale
 
-![1574937718-6479](https://user-images.githubusercontent.com/58718316/160049627-c449d459-e1e4-4299-af08-e2d6f2a6c534.jpg)
+![Black Friday sale](https://user-images.githubusercontent.com/58718316/160049627-c449d459-e1e4-4299-af08-e2d6f2a6c534.jpg)
 
+## Overview
+This project explores Black Friday purchase data to understand how customer attributes relate to buying behavior and sales volume.
 
+## Key Points
+- Black Friday refers to the Friday after Thanksgiving in the United States and is the traditional start of the holiday shopping season.
+- The dataset used for this project is available on Kaggle.
+- The analysis focuses on purchase patterns across gender, marital status, and city tenure.
 
-•	What is black Friday sale
-Black Friday is a colloquial term for the Friday after Thanksgiving in the United States. It traditionally marks the start of the Christmas shopping season in the United States. Many stores offer highly promoted sales at discounted prices and often open early, sometimes as early as midnight or even on Thanksgiving. Some stores' sales continue to Monday ("Cyber Monday") or for a week ("Cyber Week").
-Occurring on the fourth Friday in November unless November 1 is a Friday, Black Friday has routinely been the busiest shopping day of the year in the United States since 2005.
+## Libraries Used
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
+## Workflow
+1. Import libraries
+2. Load the dataset
+3. Visualize the data
+4. Split the data into train and test sets
+5. Train a linear regression model
+6. Evaluate the model
 
-•	DataSet  : --------------    https://www.kaggle.com/sdolezel/black-friday?select=train.csv
+## Models
+- Linear Regression
+- Decision Tree
 
-•	Python library use in program:
+## Observations
+- About 75% of the purchases are made by male users in this dataset.
+- Single men spend the most during Black Friday in the analysis presented here.
+- Users who have stayed in the city for more years appear less likely to make frequent purchases.
 
-Numpy
-Pandas
-Matplotlib
-Seabone
-SkLearn
-
-•	Steps being followed 
-
-Import libraries
-Load the dataset
-Data Visualization
-Splitting data into test and train
-Linear Regression model
-Evaluate
-
-
-•	Models that use in code:
-
-Linear Regression, Decision Tree.
-
-
-
-Visualization of Data:
-•	Approximately, 75% of the number of purchase are made by Male users and rest of the 25% is done by female users. This tells us the Male consumers are the major contributors to the number of sales for the retail store. On average the male gender spends more money on purchase contrary to female, and it is possible to also observe this trend by adding the total value of purchase.
-•	When we combined Purchase and Marital_Status for analysis, we came to know that Single Men spend the most during the Black Friday. 
-•	There is an interesting column Stay_In_Current_City_Years, This is understandable as, people who have spent more than 4 years in the city are generally well settled and are less interested in buying new things as compared to the people new to the city, who tend to buy more.
-•	
-
-Root Mean Square Error (RMSE) is a standard way to measure the error of a model in predicting quantitative data. It’s the square root of the average of squared differences between prediction and actual observation.
+## Metric
+Root Mean Square Error (RMSE) is used to measure prediction error by taking the square root of the average squared differences between predicted and actual values.
 

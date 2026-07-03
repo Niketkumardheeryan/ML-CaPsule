@@ -36,42 +36,32 @@ You can install these dependencies using pip:
 
 ```bash
 pip install numpy pandas matplotlib seaborn scikit-learn jupyter
-Installation and Setup
 ```
 
-Clone the Repository:
+## Installation and Setup
+
+### Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/Medical-Insurance-Cost-Prediction.git
 cd Medical-Insurance-Cost-Prediction
 ```
 
-Install Dependencies:
+### Run the Jupyter Notebook
 
-```bash
-pip install -r requirements.txt
-```
-
-Run the Jupyter Notebook:
 Open the terminal and run the following command to start Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
-Open the Project_11_Medical_Insurance_Cost_Prediction.ipynb file in Jupyter Notebook.
+Then open `Project_11_Medical_Insurance_Cost_Prediction.ipynb` in Jupyter Notebook.
 
-Usage
-* Data Preprocessing:
-The dataset is preprocessed by handling missing values, encoding categorical variables, and normalizing numerical features.
+## Usage
 
-* Exploratory Data Analysis (EDA):
-Visualize the relationships between the features and the insurance cost using various plots.
-
-* Model Training and Evaluation:
-Train the model using algorithms like Linear Regression and evaluate its performance using MSE and R-squared metrics.
-
-* Prediction:
-Use the trained model to predict insurance costs for new data inputs.
+- Data preprocessing: handle missing values, encode categorical variables, and normalize numerical features.
+- Exploratory Data Analysis (EDA): visualize the relationships between the features and the insurance cost using plots.
+- Model training and evaluation: train the model using algorithms like Linear Regression and evaluate it with MSE and R-squared.
+- Prediction: use the trained model to predict insurance costs for new data inputs.
 
 ## Results
-The final model's performance is evaluated, and the results are compared with actual insurance costs. The model is then used to make predictions on new data, demonstrating its capability to generalize well to unseen data.
+The final model is evaluated against actual insurance costs and then used to make predictions on new data.

@@ -1,17 +1,16 @@
 # Weather Prediction
 
-## ARIMA : 
-The ARIMA model is used to forecast the weather. 
-Accuracy of the model was calculated using the root mean square error (RMSE). 
-It is observed that the RMSE estimated for forecasting using ARIMA was 2.24.
+## Overview
+This project uses an ARIMA model to forecast weather trends. Model accuracy is evaluated with root mean square error (RMSE), and the reported RMSE for the forecast is 2.24.
 
-## Libraries required :
-- Numpy 
-- Pandas
-- Matplotlib 
-- Sklearn    
-- Seaborn 
-- Statsmodels
-- Pmdarima
+## Libraries Required
+- `numpy`
+- `pandas`
+- `matplotlib`
+- `scikit-learn`
+- `seaborn`
+- `statsmodels`
+- `pmdarima`
 
-## Author : <a href="https://github.com/PadminiRai">Padmini Rai</a> 
+## Author
+[Padmini Rai](https://github.com/PadminiRai)

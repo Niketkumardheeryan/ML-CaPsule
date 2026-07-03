@@ -1,5 +1,5 @@
-# AI-JARVIS-VOICE-ASISTANT
-AI-JARVIS is an intelligent voice assistant or personal assistant that can perform tasks or services for an individual based on verbal commands i.e. by interpreting human speech and respond via synthesized voices. Users can ask their assistants’ questions, control home automation devices, and media playback via voice, and manage other basic tasks such as email, to-do lists, open or close any application etc with verbal commands.
+# AI-JARVIS-VOICE-ASSISTANT
+AI-JARVIS is an intelligent voice assistant or personal assistant that can perform tasks or services for an individual based on verbal commands, i.e. by interpreting human speech and responding via synthesized voices. Users can ask the assistant questions, control home automation devices and media playback via voice, and manage other basic tasks such as email, to-do lists, and opening or closing applications.
 
 ![Python 3.9](https://img.shields.io/badge/Python-3.9-brightgreen.svg) 
 ![pysstx3](https://img.shields.io/badge/Library-pysstx3-orange.svg)
@@ -64,27 +64,18 @@ AI JARVIS has 19 functionalities :-
 Who doesn't want to have the luxury to own an assistant who always listens for your call, anticipates your every need, and takes action when necessary? That luxury is now available thanks to artificial intelligence-based voice assistants. Finally it is important to work on application (real world application) to actually make a difference.
 
 ## Installation
-The Code is written in Python 3.9.2 If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To run this project in your system, after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository, install the required packages and libraries:
+The code is written in Python 3.9.2. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python, upgrade pip first and make sure your interpreter matches the project requirements. To run this project on your system, after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository, install the required third-party packages:
 ```bash
 pip install pyttsx3
-pip install random
-pip install re
-pip install smtplib
-pip install winsound
 pip install wikipedia
-```
-pip install sys
-pip install os
-pip install webbrowser
-pip install datetime
 pip install speech_recognition
-pip install urllib
 pip install PyQt5
 pip install geopy
-pip install bs4
+pip install beautifulsoup4
 pip install yahoo_fin
-pip install stock_info
 ```
+
+The remaining imports used by the project are part of the Python standard library.
 
 ## Directory Tree 
 ```
@@ -122,7 +113,7 @@ pip install stock_info
 [<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/stable/) 
 
 ## Bug / Feature Request
-• If you find a bug, kindly open an [issue](https://github.com/SuryanshNaugraiya/AI-JARVIS/issues) here by including your search query and the expected result.<br />
+- If you find a bug, kindly open an [issue](https://github.com/SuryanshNaugraiya/AI-JARVIS/issues) here and include the expected result.
 
 ## Future Scope
 * Implement machine learning and deep learning algorithms
@@ -130,4 +121,4 @@ pip install stock_info
 * Make front-end more attractive
 * Can mix augmented reality and gestures
 
-#### Please do ⭐ the repository, if it helped you in anyway.
+#### Please do ⭐ the repository if it helped you in any way.

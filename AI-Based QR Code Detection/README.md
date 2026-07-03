@@ -15,22 +15,22 @@ This feature adds an AI-enabled QR code detection and quishing prevention system
 - **Threat intelligence integration**: Optional VirusTotal and AbuseIPDB integration
 - Includes sample pipeline and smoke-test utilities
 
-## Folder structure
+## Key Files
 
-- `qr_detection.py` — QR code detection and decoding utilities
-- `url_features.py` — URL feature extraction for phishing classification
-- `model.py` — classifier training, prediction, and persistence
-- `train.py` — command-line training script
-- `utils.py` — dataset loading and metric evaluation
-- `risk_scorer.py` — compute risk scores and alert messages
-- `logger.py` — log malicious QR codes and alerts to JSON files
-- `alerts.py` — manage and display real-time alerts with recommended actions
-- `advanced_models.py` — train and predict using multiple ML models (RF, SVM, DT, XGBoost)
-- `threat_intelligence.py` — integrate with VirusTotal and AbuseIPDB APIs
-- `tests/test_qr_detection.py` — basic unit tests
-- `requirements.txt` — dependencies
+- `qr_detection.py` - QR code detection and decoding utilities
+- `url_features.py` - URL feature extraction for phishing classification
+- `model.py` - classifier training, prediction, and persistence
+- `train.py` - command-line training script
+- `utils.py` - dataset loading and metric evaluation
+- `risk_scorer.py` - compute risk scores and alert messages
+- `logger.py` - log malicious QR codes and alerts to JSON files
+- `alerts.py` - manage and display real-time alerts with recommended actions
+- `advanced_models.py` - train and predict using multiple ML models (RF, SVM, DT, XGBoost)
+- `threat_intelligence.py` - integrate with VirusTotal and AbuseIPDB APIs
+- `tests/test_qr_detection.py` - basic unit tests
+- `requirements.txt` - dependencies
 
-## Usage
+## Quick Start
 
 1. Install dependencies:
 
@@ -115,4 +115,4 @@ print(logger.get_alerts())
   ti.set_abuseipdb_key('YOUR_ABUSEIPDB_API_KEY')
   ```
 - For live camera support, use the `scan_live_camera` function in `qr_detection.py`.
-- If you want to add this feature to the repo, keep it as a self-contained folder and follow the contribution guidelines in the root `CONTRIBUTING.md`.
+- If you want to add this feature to the repo, keep it as a self-contained folder and follow the root `CONTRIBUTING.md`.

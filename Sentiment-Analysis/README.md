@@ -1,34 +1,33 @@
-#  Sentiment-Analysis-Major-Project : Using ML model and then Hosting on Heroku and Streamlit:https://sentanalyser.herokuapp.com/
+# Sentiment Analysis Major Project
 
-This is a real world project on Sentiment Analysis which takes in text input from the user and predicts if the sentiment of the text is positive or negative.
+This project classifies user text as positive or negative sentiment using an ML pipeline and a lightweight web app.
 
-The Following steps Were Followed For Completing This Project:
+## Overview
+The project uses a Kaggle Amazon reviews dataset, a text preprocessing pipeline, TF-IDF vectorization, and a support vector machine model for classification. The final application is hosted with Streamlit and Heroku.
 
-  1. Gathering of data: The amazonreviews dataset from Kaggle was used for this project.
-  
-  2. Preprocessing of data: 
-        - Lower casing the text
-        - Expanding contractions
-        - Removing punctuations and special characters
-        - Removing stopwords
-        - Tokenization
-        - Lemmatization
-  
-  3. Approach to Sentiment Analysis:
-        - TFIDF Vectorizer
-        - Support Vector Machine Model
-        - Evaluation of model using Accuracy Score, Confusion Matrix, and Classification Report
-  
-  
-  4. Deployment of Model:
-  
-        - Creating a web application using Streamlit
-        - Deploying it using Heroku Cloud Service 
+## Workflow
+1. Gather the dataset from Kaggle
+2. Preprocess the text
+3. Train the model
+4. Evaluate performance
+5. Deploy the app
 
+## Preprocessing
+- Lowercasing the text
+- Expanding contractions
+- Removing punctuation and special characters
+- Removing stopwords
+- Tokenization
+- Lemmatization
 
+## Model
+- TF-IDF Vectorizer
+- Support Vector Machine
+- Evaluation with accuracy, confusion matrix, and classification report
 
+## Deployment
+- Streamlit web application
+- Heroku hosting
 
- the link to the web app (Hosted On Heroku And Streamlit):
-
-
-https://sentanalyser.herokuapp.com/
+## Live Demo
+[https://sentanalyser.herokuapp.com/](https://sentanalyser.herokuapp.com/)

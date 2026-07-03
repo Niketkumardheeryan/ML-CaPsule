@@ -1,46 +1,38 @@
 # Personality Prediction System Using Machine Learning
 
-This project implements a personality prediction system using various machine learning algorithms. The system analyzes textual data to predict personality types based on the MBTI (Myers-Briggs Type Indicator) classification.
+This project predicts MBTI personality types from text using multiple machine learning models.
 
+## Overview
+The system processes textual input, vectorizes it with TF-IDF, and evaluates a range of classifiers to predict personality type.
 
-## Introduction
+## Workflow
+1. Load the dataset
+2. Preprocess the text
+3. Perform tokenization, stemming, and lemmatization
+4. Convert text to features using TF-IDF
+5. Train and evaluate models
 
-The Personality Prediction System uses text data to predict the MBTI personality type of an individual. The system leverages multiple machine learning algorithms to perform classification tasks and evaluates their performance.
-
-## Data Analysis
-
-Data analysis involves loading and preprocessing the dataset, performing text processing, and visualizing the results. The system includes the following steps:
-- Loading the dataset
-- Text preprocessing (tokenization, stemming, lemmatization)
-- Vectorization using TF-IDF
-- Exploratory Data Analysis (EDA)
-
-## Model Training and Evaluation
-
-The following machine learning algorithms are used for training and evaluation:
+## Models
 - Logistic Regression
-- Stochastic Gradient Descent (SGD)
-- K-Nearest Neighbors (KNN)
+- Stochastic Gradient Descent
+- K-Nearest Neighbors
 - Naive Bayes
-- Support Vector Machine (SVM)
+- Support Vector Machine
 - Random Forest
 - Gradient Boosting
 - XGBoost
 
-Performance metrics include:
+## Metrics
 - Accuracy
 - Precision
 - Recall
-- F1 Score
-- Confusion Matrix
+- F1 score
+- Confusion matrix
 
 ## Visualization
-The system provides visualizations for data distribution, model performance, and word clouds for the most common words.
+The project includes plots for data distribution, model performance, and word clouds for common terms.
 
-#result 
-![70-30 Split]("C:\21MIP\OpenSource\personalityPrediction\result.png")
-![60-40 Split]"C:\21MIP\OpenSource\personalityPrediction\result1.png"
-
-
-
+## Results
+![70-30 Split](result.png)
+![60-40 Split](result1.png)
 

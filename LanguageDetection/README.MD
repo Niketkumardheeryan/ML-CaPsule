@@ -1,15 +1,16 @@
 # Language Detection Model
 
-Data set : https://www.kaggle.com/datasets/basilb2s/language-detection
+Dataset: [language-detection](https://www.kaggle.com/datasets/basilb2s/language-detection)
 
 ## Steps Followed
-##### 1. Load the data set
-##### 2. Encode the labels into categoical form
-##### 3. Pre-process the Text content
-##### 4. Tokenizing
-##### 5. Create a Dictionary for Vocabulary
-##### 6. Count the Word Frequencies (Unigrams were considered)
-##### 7. Split the dataset into train and test sets
-##### 8. Perform Supervised Classification 
+1. Load the dataset
+2. Encode the labels into categorical form
+3. Preprocess the text content
+4. Tokenize the text
+5. Create a vocabulary dictionary
+6. Count the word frequencies using unigrams
+7. Split the dataset into train and test sets
+8. Perform supervised classification
 
-### Could achieve 97.3% accuracy using Naive Bayes Classifier 
+## Result
+The model achieved 97.3% accuracy using a Naive Bayes classifier.
