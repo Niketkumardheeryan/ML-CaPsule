@@ -35,17 +35,21 @@ Welcome to **ML-Capsule**!!! This repository is a comprehensive collection of ma
 - [📚 Pre-requisites](#pre-requisites)
 - [🗂️ Topics Covered](#topics-covered)
 - [📦 Dataset Resources](#dataset-resources)
-- [🗂️ Project Directory](#project-directory)
+- [📁 Available Projects](#available-projects)
 - [📂 Project Descriptions](#project-descriptions)
 - [📜 Summary](#summary)
 - [🔗 Useful URLs](#useful-urls)
 - [🚀 Get Started](#get-started)
 - [⚙️ Contribution Guidelines](#contribution-guidelines)
+- [📨 Submitting a Pull Request](#submitting-a-pull-request)
+- [🗂️ Project Directory Structure](#project-directory-structure)
 - [📖 Code of Conduct](#code-of-conduct)
 - [📝 License](#license)
 - [✨ Contributors](#some-awesome-contributors)
 - [❤️ Stargazers](#stargazers)
 - [❤️ Forkers](#forkers)
+- [🗂️ Project Directory](#project-directory)
+- [🔍 Notebook Health Check Bot](#notebook-health-check-bot)
 
 
 ## 📈 Why Machine Learning?
@@ -647,7 +651,6 @@ This repository uses an automated Notebook Health Check Bot to maintain code qua
 - ✅ 15 notebooks passed the health check
 - ⏱️ 1 notebook flagged for timeout (AutoML_GSSoC.ipynb)
 - All issues were successfully detected and reported
-
 
 
 
