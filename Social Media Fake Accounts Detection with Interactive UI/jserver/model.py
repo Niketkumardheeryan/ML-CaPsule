@@ -73,8 +73,7 @@ for index in range(len(user_object["fake"])):
     X[len(user_object["legit"]) + index] = user_object["fake"][index] / bound  # Normalizing Data [0 <--> 1]
     Y[len(user_object["legit"]) + index] = 1
 
-X_train_data, X_test_data, y_train_data, y_test_data = train_test_split(X, Y,
-                                                                        test_size=0.24, random_state=42)
+X_train_data, X_test_data, y_train_data, y_test_data = train_test_split(X, Y, test_size=0.24, random_state=42)
 
 early_stopping = EarlyStopping(monitor='val_loss', patience=2)
 

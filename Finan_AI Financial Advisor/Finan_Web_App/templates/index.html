@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F₹nan AI - Financial Advisor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+    <!-- Falling ₹ background -->
+    <div id="rupeeFall" aria-hidden="true"></div>
+
+    <!-- Fixed top-right Sign In button (shown only when logged out) -->
+    <button id="homeSignInBtn" class="home-signin-top" onclick="signInGoogle()">
+    <svg width="16" height="16" viewBox="0 0 48 48">
+    <path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20c11.045 0 20-8.955 20-20 0-1.341-.138-2.65-.389-3.917z" />
+    <path fill="#FF3D00" d="m6.306 14.694 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.694z" />
+    <path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.422-5.192l-6.239-5.277C29.091 34.718 26.646 36 24 36c-5.223 0-9.654-3.343-11.231-8.016l-6.53 5.03C9.626 39.539 16.226 44 24 44z" />
+    <path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002 6.239 5.277C41.132 35.158 44 30.134 44 24c0-1.341-.138-2.65-.389-3.917z" />
+    </svg>
+        Sign In
+    </button>
+
+    <!-- ===== LOGGED-OUT HOME ===== -->
+    <div id="homeScreen">
+        <header class="home-header">
+            <div class="logo-block">
+                <div class="logo-row">
+                    <div class="cash-bundle left-bundle">
+                        <span class="note">💵</span><span class="note">💵</span><span class="note">💵</span>
+                    </div>
+                    <h1 class="logo-text">F₹nan</h1>
+                    <div class="cash-bundle right-bundle">
+                        <span class="note">💵</span><span class="note">💵</span><span class="note">💵</span>
+                    </div>
+                </div>
+                <p class="logo-sub">AI FINANCIAL ADVISOR <span class="for-india">FOR INDIA</span></p>
+            </div>
+        </header>
+
+        <main class="home-main">
+            <!-- Guest chat section -->
+            <section class="chat-section" id="guestChat">
+                <div class="chat-messages" id="guestMessages">
+                    <div class="msg finan-msg">
+                        <span class="msg-avatar">F₹</span>
+                        <div class="msg-bubble">
+                            Hello! I'm <strong>Finan</strong>, your AI financial advisor built for India. Tell me about your income, expenses and debt — I'll give you personalised advice.<br><br>
+                            <em>Sign in with Google to save your budgets and chat history.</em>
+                            <br>
+                            <button class="example-prompt-btn" onclick="fillExample()">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                                Try an example prompt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-row">
+                    <textarea id="guestInput" placeholder="Describe your financial situation… e.g. I earn ₹80,000/month in Mumbai, rent is ₹22,000…" rows="2"></textarea>
+                    <button id="guestSendBtn" onclick="guestSend()">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- ===== LOGGED-IN DASHBOARD ===== -->
+    <div id="dashboard" class="hidden">
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-logo">F₹nan</div>
+            <button class="sidebar-btn active" id="newChatBtn" onclick="startNewChat()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                New Chat
+            </button>
+
+            <div class="sidebar-section-label">
+                Recent Chats
+                <button class="sidebar-section-action" onclick="clearAllChats()" title="Clear all chats">Clear all</button>
+            </div>
+            <div id="recentChatsList" class="sidebar-chats"></div>
+
+            <div class="sidebar-section-label">Saved Budgets</div>
+            <button class="sidebar-btn" onclick="showBudgets()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2" ry="2"/><line x1="16" y1="3" x2="16" y2="21"/><line x1="8" y1="12" x2="16" y2="12"/>
+                My Saved Budgets
+                </svg>
+            </button>
+
+            <div class="sidebar-spacer"></div>
+
+            <div class="sidebar-profile">
+                <img id="sidebarAvatar" src="" alt="Profile" class="avatar-img">
+                <div class="profile-info">
+                    <span id="sidebarName" class="profile-name"></span>
+                    <span id="sidebarEmail" class="profile-email"></span>
+                </div>
+            </div>
+            <button class="sidebar-btn signout-btn" onclick="signOutUser()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                Sign Out
+            </button>
+        </aside>
+
+        <!-- Main chat area -->
+        <div class="dash-main">
+            <div class="dash-topbar">
+                <button class="hamburger" onclick="toggleSidebar()">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+                <span class="dash-title">F₹nan AI</span>
+                <img id="topbarAvatar" src="" alt="" class="avatar-img small">
+            </div>
+
+            <!-- Chat messages -->
+            <div class="chat-messages dash-messages" id="dashMessages">
+                <div class="msg finan-msg">
+                    <span class="msg-avatar">F₹</span>
+                    <div class="msg-bubble">
+                        Welcome back! I'm <strong>Finan</strong>, your personal AI financial advisor. Tell me about your finances and I'll provide personalised advice, and save your suggested budgets to refer back anytime.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Budget panel (hidden by default) -->
+            <div id="budgetPanel" class="budget-panel hidden">
+                <div class="budget-panel-header">
+                    <h3>My Saved Budgets</h3>
+                    <div class="budget-panel-actions">
+                        <button class="budget-action-btn" onclick="exportBudgetsCSV()" title="Download as CSV">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                            Export CSV
+                        </svg>
+                        </button>
+                        <button class="budget-action-btn danger" onclick="clearAllBudgets()" title="Delete all budgets">Clear all</button>
+                        <button onclick="closeBudgets()" style="background:transparent;border:none;color:var(--text-dim);font-size:1.1rem;cursor:pointer;">✕</button>
+                    </div>
+                </div>
+                <div id="budgetTableWrap"></div>
+            </div>
+
+            <div class="chat-input-row dash-input">
+                <textarea id="dashInput" placeholder="Ask Finan about your finances…" rows="2"></textarea>
+                <button id="dashSendBtn" onclick="dashSend()">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js';
+        import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut }
+            from 'https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js';
+        import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc, query, orderBy, writeBatch }
+            from 'https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js';
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDZ4_sYvuZ4GMH6JKfYE2s-aHsGjEtXavg",
+            authDomain: "finan-ai-financial-advisor.firebaseapp.com",
+            projectId: "finan-ai-financial-advisor",
+            storageBucket: "finan-ai-financial-advisor.firebasestorage.app",
+            messagingSenderId: "350704814578",
+            appId: "1:350704814578:web:eb093f1d16f9d11303836b",
+            measurementId: "G-175RVE57NC"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
+        const db = getFirestore(app);
+
+        // Expose to global scope for button handlers
+        window._fbAuth = auth;
+        window._fbProvider = provider;
+        window._fbSignOut = signOut;
+        window._db = db;
+        window._fsCollection = collection;
+        window._fsAddDoc = addDoc;
+        window._fsGetDocs = getDocs;
+        window._fsDeleteDoc = deleteDoc;
+        window._fsDoc = doc;
+        window._fsQuery = query;
+        window._fsOrderBy = orderBy;
+        window._fsWriteBatch = writeBatch;
+
+        onAuthStateChanged(auth, (user) => {
+            const signInBtn = document.getElementById('homeSignInBtn');
+            if (user) {
+                window._currentUser = user;
+                document.getElementById('homeScreen').classList.add('hidden');
+                document.getElementById('dashboard').classList.remove('hidden');
+                document.getElementById('sidebarAvatar').src = user.photoURL || '';
+                document.getElementById('topbarAvatar').src = user.photoURL || '';
+                document.getElementById('sidebarName').textContent = user.displayName || '';
+                document.getElementById('sidebarEmail').textContent = user.email || '';
+                if (signInBtn) signInBtn.style.display = 'none';
+                loadRecentChats();
+            } else {
+                window._currentUser = null;
+                document.getElementById('homeScreen').classList.remove('hidden');
+                document.getElementById('dashboard').classList.add('hidden');
+                if (signInBtn) signInBtn.style.display = 'flex';
+            }
+        });
+
+        // Load app.js only after Firebase globals are exposed
+        const appScript = document.createElement('script');
+        appScript.src = '/app.js';
+        document.body.appendChild(appScript);
+    </script>
+</body>
+</html>
