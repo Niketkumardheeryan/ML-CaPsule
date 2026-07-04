@@ -3,7 +3,7 @@ from keras.models import load_model
 import cv2
 import numpy as np
 import os
-from werkzeug.utils import secure_filename
+from werkzeug.utils import secure_filename 
 
 app = Flask(__name__)
 
@@ -65,4 +65,5 @@ def display_image(filename):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"
+    app.run(debug=debug_mode)

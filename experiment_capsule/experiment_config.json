@@ -1,0 +1,8 @@
+{
+    "model_name": "RandomForestClassifier",
+    "dataset": "Sample Dataset",
+    "parameters": {
+        "n_estimators": 100,
+        "max_depth": 5
+    }
+}
