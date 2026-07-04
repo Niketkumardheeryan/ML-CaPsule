@@ -1,0 +1,8 @@
+model,train_time_s,predict_time_s,peak_memory_kb,accuracy,precision,recall,f1_score,roc_auc
+Logistic Regression,2.3463,0.000421,68.8,0.9649,0.9595,0.9861,0.9726,0.9954
+Decision Tree,0.0253,0.000674,91.8,0.9123,0.9559,0.9028,0.9286,0.9157
+Random Forest,2.8332,0.014852,188.3,0.9561,0.9589,0.9722,0.9655,0.9937
+Gradient Boosting,1.4289,0.001405,150.1,0.9561,0.9467,0.9861,0.966,0.9907
+K-Nearest Neighbours,0.0031,3.005321,71.9,0.9123,0.9429,0.9167,0.9296,0.9559
+Support Vector Machine,0.0462,0.003145,181.3,0.9298,0.9211,0.9722,0.9459,0.9696
+Gaussian Naive Bayes,0.0083,0.000942,206.9,0.9386,0.9452,0.9583,0.9517,0.9878
