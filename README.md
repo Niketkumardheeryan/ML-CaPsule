@@ -572,16 +572,19 @@ Happy Coding! 👩‍💻👨‍💻
 
 ## Stargazers ❤️
 
-<div align='left'>
-
-[![Stargazers repo roster for @Niketkumardheeryan/ML-CaPsule](https://reporoster.com/stars/dark/Niketkumardheeryan/ML-CaPsule)](https://github.com/Niketkumardheeryan/ML-CaPsule/stargazers)
-
-
+<div align="center">
+  <a href="https://github.com/Niketkumardheeryan/ML-CaPsule/stargazers">
+    <img src="https://img.shields.io/github/stars/Niketkumardheeryan/ML-CaPsule?style=for-the-badge&logo=github&label=Stargazers" alt="GitHub Stargazers">
+  </a>
 </div>
 
 ## Forkers ❤️
 
-[![Forkers repo roster for @Niketkumardheeryan/ML-CaPsule](https://reporoster.com/forks/dark/Niketkumardheeryan/ML-CaPsule)](https://github.com/Niketkumardheeryan/ML-CaPsule/network/members)
+<div align="center">
+  <a href="https://github.com/Niketkumardheeryan/ML-CaPsule/network/members">
+    <img src="https://img.shields.io/github/forks/Niketkumardheeryan/ML-CaPsule?style=for-the-badge&logo=github&label=Forkers" alt="GitHub Forkers">
+  </a>
+</div>
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -646,7 +649,6 @@ This repository uses an automated Notebook Health Check Bot to maintain code qua
 - Found 16 notebooks
 - ✅ 1 notebooks passed the health check
 - All issues were successfully detected and reported
-
 
 
 
