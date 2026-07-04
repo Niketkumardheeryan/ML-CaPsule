@@ -31,21 +31,21 @@ Welcome to **ML-Capsule**!!! This repository is a comprehensive collection of ma
 </div>
 ## 📑 Table of Contents
 
-- [📈 Why Machine Learning?](#-why-machine-learning)
-- [📚 Pre-requisites](#-pre-requisites)
-- [🗂️ Topics Covered](#️-topics-covered)
-- [📦 Dataset Resources](#-dataset-resources) 
-- [🗂️ Project Directory](#️-project-directory)
-- [📂 Project Descriptions](#-project-descriptions)
-- [📜 Summary](#-summary)
-- [🔗 Useful URLs](#-useful-urls)
-- [🚀 Get Started](#-get-started)
-- [⚙️ Contribution Guidelines](#️-contribution-guidelines)
-- [📖 Code of Conduct](#-code-of-conduct)
-- [📝 License](#-license)
-- [✨ Contributors](#-some-awesome-contributors-)
-- [❤️ Stargazers](#-stargazers-️)
-- [❤️ Forkers](#-forkers-️)
+- [📈 Why Machine Learning?](#why-machine-learning)
+- [📚 Pre-requisites](#pre-requisites)
+- [🗂️ Topics Covered](#topics-covered)
+- [📦 Dataset Resources](#dataset-resources)
+- [🗂️ Project Directory](#project-directory)
+- [📂 Project Descriptions](#project-descriptions)
+- [📜 Summary](#summary)
+- [🔗 Useful URLs](#useful-urls)
+- [🚀 Get Started](#get-started)
+- [⚙️ Contribution Guidelines](#contribution-guidelines)
+- [📖 Code of Conduct](#code-of-conduct)
+- [📝 License](#license)
+- [✨ Contributors](#some-awesome-contributors)
+- [❤️ Stargazers](#stargazers)
+- [❤️ Forkers](#forkers)
 
 
 ## 📈 Why Machine Learning?
@@ -647,8 +647,6 @@ This repository uses an automated Notebook Health Check Bot to maintain code qua
 - ✅ 15 notebooks passed the health check
 - ⏱️ 1 notebook flagged for timeout (AutoML_GSSoC.ipynb)
 - All issues were successfully detected and reported
-
-
 
 
 
