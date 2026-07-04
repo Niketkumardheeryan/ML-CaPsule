@@ -644,8 +644,7 @@ This repository uses an automated Notebook Health Check Bot to maintain code qua
 
 ### Recent Run:
 - Found 16 notebooks
-- ✅ 15 notebooks passed the health check
-- ⏱️ 1 notebook flagged for timeout (AutoML_GSSoC.ipynb)
+- ✅ 1 notebooks passed the health check
 - All issues were successfully detected and reported
 
 

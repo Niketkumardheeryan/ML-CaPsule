@@ -81,4 +81,5 @@ def predict():
             return "An error occurred during prediction"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"
+    app.run(debug=debug_mode)
