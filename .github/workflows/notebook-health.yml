@@ -1,0 +1,29 @@
+name: Notebook Health Check
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  test-notebooks:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install jupyter nbconvert pandas numpy
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      
+      - name: Run notebook health check
+        run: python .github/scripts/notebook_health_check.py
+        

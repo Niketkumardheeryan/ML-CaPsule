@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+*.pyo
+gaze_tracker/face_landmarker.task

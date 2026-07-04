@@ -34,6 +34,8 @@ Welcome to **ML-Capsule**!!! This repository is a comprehensive collection of ma
 - [📈 Why Machine Learning?](#-why-machine-learning)
 - [📚 Pre-requisites](#-pre-requisites)
 - [🗂️ Topics Covered](#️-topics-covered)
+- [📦 Dataset Resources](#-dataset-resources) 
+- [🗂️ Project Directory](#️-project-directory)
 - [📂 Project Descriptions](#-project-descriptions)
 - [📜 Summary](#-summary)
 - [🔗 Useful URLs](#-useful-urls)
@@ -61,6 +63,34 @@ Machine learning is crucial because it provides enterprises with insights into c
 
 - **Python IDE**: Install from [python.org](https://python.org)
 - **Learn Python**: If you're new to Python, start learning from [W3Schools](https://www.w3schools.com/python/python_ml_getting_started.asp)
+
+### 🎨 Getting Started with R Language & RStudio
+
+#### What is R?
+R is an open-source programming language and free software environment designed specifically for statistical computing, data analytics, and scientific research. It is widely used by data scientists and statisticians for data manipulation, calculation, and graphical display.
+
+#### How to Install R and RStudio IDE
+To start setting up your environment for R-based data science models, follow these steps:
+
+1. **Install R Environment:**
+   - Go to the official CRAN repository: [Download R from CRAN](https://cran.r-project.org/)
+   - Choose your respective operating system (Windows, macOS, or Linux) and download the latest binary installer.
+   - Run the installer setup and follow the default configuration prompts.
+
+2. **Install RStudio Desktop IDE:**
+   - Go to the official Posit website: [Download RStudio Desktop](https://posit.co/download/rstudio-desktop/)
+   - Scroll down to the installer section and download the free version for your OS.
+   - Install the executable/package file. RStudio will automatically detect your local R installation.
+
+#### 📚 Recommended Video Tutorials for Beginners
+To master R programming from basic to advanced levels, check out these comprehensive video resources:
+
+- 🎥 **[R Programming Full Course for Beginners (freeCodeCamp)](https://www.youtube.com/watch?v=_V8eKsto3Ug)** - A complete, hands-on masterclass covering vectors, data frames, and statistical operations.
+- 🎥 **[R Programming Tutorial - Learn the Basics (Edureka)](https://www.youtube.com/watch?v=KlsYv-ZSSb0)** - Excellent fundamental guide focusing on syntax, variables, and IDE setup.
+- 🎥 **[Data Science with R Full Course (Simplilearn)](https://www.youtube.com/watch?v=9kYUUFMsh88)** - Comprehensive track covering basic programming up to advanced data analysis and visualization.
+- 🎥 **[Introduction to R for Data Science (DataCamp)](https://www.youtube.com/watch?v=33W_VInE-zU)** - Quick interactive overview perfect for complete beginners looking to dive into analytics.
+
+
 
 ## 🗂️ Topics Covered
 
@@ -110,6 +140,111 @@ The process of selecting relevant features for use in a model to increase accura
 
 ![image_processing20191213-6403-1j99nlm](https://github.com/user-attachments/assets/4041ea94-22d0-4e42-8247-1782c9d02301)
 
+
+---
+
+## 📦 Dataset Resources
+
+<details>
+<summary>🗄️ Click to explore all datasets — Classification, Regression, NLP, Computer Vision & more</summary>
+
+<br>
+
+### 🟢 Classification
+
+| # | Dataset Name | Short Description | Difficulty | Download Link |
+|---|--------------|-------------------|------------|---------------|
+| 1 | **Titanic - Machine Learning from Disaster** | Predict passenger survival based on age, sex, class, and other features. | ⭐ Beginner | [Kaggle](https://www.kaggle.com/c/titanic/data) |
+| 2 | **Iris Flower Dataset** | Classify iris flowers into 3 species using 4 simple features. | ⭐ Beginner | [UCI ML Repo](https://archive.ics.uci.edu/ml/datasets/iris) |
+| 3 | **Breast Cancer Wisconsin** | Binary classification to detect malignant vs. benign tumors. | ⭐ Beginner | [UCI ML Repo](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)) |
+| 4 | **Heart Disease Dataset** | Predict heart disease from clinical features like cholesterol, blood pressure, etc. | ⭐⭐ Intermediate | [UCI ML Repo](https://archive.ics.uci.edu/ml/datasets/Heart+Disease) |
+| 5 | **Pima Indians Diabetes** | Predict diabetes onset in Pima Indian women using health metrics. | ⭐ Beginner | [Kaggle](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database) |
+| 6 | **Adult Income (Census Income)** | Predict whether a person earns >$50K/year based on census demographic data. | ⭐⭐ Intermediate | [UCI ML Repo](https://archive.ics.uci.edu/ml/datasets/adult) |
+| 7 | **Bank Marketing Dataset** | Predict if a client will subscribe to a term deposit. | ⭐⭐ Intermediate | [UCI ML Repo](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing) |
+| 8 | **Wine Quality Dataset** | Classify wines as good or bad based on physicochemical properties. | ⭐ Beginner | [UCI ML Repo](https://archive.ics.uci.edu/ml/datasets/wine+quality) |
+
+### 🔵 Regression
+
+| # | Dataset Name | Short Description | Difficulty | Download Link |
+|---|--------------|-------------------|------------|---------------|
+| 1 | **Boston Housing Dataset** | Predict housing prices based on crime rate, rooms, accessibility, etc. | ⭐ Beginner | [Kaggle](https://www.kaggle.com/datasets/altavish/boston-housing-dataset) |
+| 2 | **California Housing Prices** | Predict median house values for California districts using census data. | ⭐ Beginner | [Kaggle](https://www.kaggle.com/datasets/camnugent/california-housing-prices) |
+| 3 | **House Prices: Advanced Regression** | Predict final sale price of homes with 79 explanatory variables. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques) |
+| 4 | **Auto MPG Dataset** | Predict fuel efficiency of cars from engine and design attributes. | ⭐ Beginner | [UCI ML Repo](https://archive.ics.uci.edu/ml/datasets/auto+mpg) |
+| 5 | **Student Performance Dataset** | Predict student exam scores based on study time and social factors. | ⭐ Beginner | [UCI ML Repo](https://archive.ics.uci.edu/ml/datasets/student+performance) |
+| 6 | **Medical Cost Personal Dataset** | Predict medical insurance charges based on age, BMI, smoking status. | ⭐ Beginner | [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance) |
+| 7 | **Bike Sharing Demand** | Predict hourly bike rental counts based on weather and seasonal settings. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/c/bike-sharing-demand) |
+
+### 🟡 Natural Language Processing (NLP)
+
+| # | Dataset Name | Short Description | Difficulty | Download Link |
+|---|--------------|-------------------|------------|---------------|
+| 1 | **SMS Spam Collection** | Classify SMS messages as spam or ham. | ⭐ Beginner | [UCI ML Repo](https://archive.uci.edu/ml/datasets/sms+spam+collection) |
+| 2 | **IMDB Movie Reviews** | Sentiment analysis on 50,000 movie reviews. Classic NLP benchmark. | ⭐ Beginner | [Kaggle](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews) |
+| 3 | **Twitter US Airline Sentiment** | Classify tweets about US airlines into positive, negative, or neutral. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment) |
+| 4 | **Amazon Product Reviews** | Multi-class sentiment analysis on product reviews across different categories. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/datasets/bittlingmayer/amazonreviews) |
+| 5 | **Fake News Dataset** | Detect whether a news article is real or fake using NLP techniques. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset) |
+| 6 | **AG News Topic Classification** | Categorize news articles into 4 topics: World, Sports, Business, Sci/Tech. | ⭐⭐ Intermediate | [Hugging Face](https://huggingface.co/datasets/ag_news) |
+| 7 | **Quora Question Pairs** | Identify whether pairs of questions are semantically equivalent. | ⭐⭐⭐ Advanced | [Kaggle](https://www.kaggle.com/c/quora-question-pairs) |
+
+### 🔴 Computer Vision / Image
+
+| # | Dataset Name | Short Description | Difficulty | Download Link |
+|---|--------------|-------------------|------------|---------------|
+| 1 | **MNIST Handwritten Digits** | Classify handwritten digits (0–9). The "Hello World" of computer vision. | ⭐ Beginner | [Yann LeCun](http://yann.lecun.com/exdb/mnist/) |
+| 2 | **Fashion-MNIST** | Classify 10 categories of clothing items. A harder alternative to MNIST. | ⭐ Beginner | [GitHub](https://github.com/zalandoresearch/fashion-mnist) |
+| 3 | **CIFAR-10** | Classify 60,000 images into 10 categories. | ⭐⭐ Intermediate | [Official Site](https://www.cs.toronto.edu/~kriz/cifar.html) |
+| 4 | **Dogs vs. Cats** | Binary classification of images as dogs or cats. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/c/dogs-vs-cats) |
+| 5 | **Flowers Recognition** | Classify images of flowers into 5 categories. | ⭐ Beginner | [Kaggle](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition) |
+| 6 | **Intel Image Classification** | Classify natural scenes into 6 categories: buildings, forest, glacier, mountain, sea, street. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/datasets/puneet6060/intel-image-classification) |
+| 7 | **Chest X-Ray Images (Pneumonia)** | Detect pneumonia from chest X-ray images. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) |
+
+### 🟣 Clustering / Unsupervised Learning
+
+| # | Dataset Name | Short Description | Difficulty | Download Link |
+|---|--------------|-------------------|------------|---------------|
+| 1 | **Mall Customers Dataset** | Segment customers based on age, income, and spending score. | ⭐ Beginner | [Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python) |
+| 2 | **Credit Card Customer Segmentation** | Cluster credit card users based on spending behavior. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/datasets/arjunbhasin2013/ccdata) |
+| 3 | **Wholesale Customers Dataset** | Annual spending data of wholesale distributor clients. | ⭐ Beginner | [UCI ML Repo](https://archive.ics.uci.edu/ml/datasets/wholesale+customers) |
+| 4 | **World Happiness Report** | Happiness scores and rankings across countries. | ⭐ Beginner | [Kaggle](https://www.kaggle.com/datasets/unsdsn/world-happiness) |
+| 5 | **Online Retail Dataset** | Transactional data for market basket analysis. | ⭐⭐ Intermediate | [UCI ML Repo](https://archive.ics.uci.edu/ml/datasets/Online+Retail) |
+
+### 🟠 Time Series / Forecasting
+
+| # | Dataset Name | Short Description | Difficulty | Download Link |
+|---|--------------|-------------------|------------|---------------|
+| 1 | **Air Passengers Dataset** | Monthly airline passenger counts (1949–1960). Intro to seasonality. | ⭐ Beginner | [GitHub](https://raw.githubusercontent.com/jbrownlee/Datasets/master/airline-passengers.csv) |
+| 2 | **Stock Market Data** | Historical daily stock prices for major companies. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs) |
+| 3 | **COVID-19 Dataset (Johns Hopkins)** | Global COVID-19 confirmed cases, deaths, and recoveries. | ⭐ Beginner | [GitHub](https://github.com/CSSEGISandData/COVID-19) |
+| 4 | **Energy Consumption Dataset** | Hourly power consumption data. Great for LSTM/Prophet forecasting. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption) |
+| 5 | **Jena Climate Dataset** | ~420,000 hourly weather readings. Perfect for LSTM sequence modeling. | ⭐⭐⭐ Advanced | [TF Tutorials](https://www.tensorflow.org/tutorials/structured_data/time_series) |
+
+### 🔵 Recommendation Systems
+
+| # | Dataset Name | Short Description | Difficulty | Download Link |
+|---|--------------|-------------------|------------|---------------|
+| 1 | **MovieLens Dataset (ml-100k)** | 100,000 movie ratings. Standard collaborative filtering benchmark. | ⭐ Beginner | [GroupLens](https://grouplens.org/datasets/movielens/) |
+| 2 | **Book-Crossing Dataset** | User ratings for 270,000+ books. | ⭐⭐ Intermediate | [Kaggle](https://www.kaggle.com/datasets/ruchi798/bookcrossing-dataset) |
+| 3 | **Amazon Product Ratings** | Explicit ratings for products across various Amazon categories. | ⭐⭐ Intermediate | [UCSD](https://jmcauley.ucsd.edu/data/amazon/) |
+| 4 | **Jester Jokes Dataset** | Continuous ratings of 100 jokes by over 73,000 users. Good for collaborative filtering. | ⭐⭐ Intermediate | [UC Berkeley](https://goldberg.berkeley.edu/jester-data/) |
+
+### 🌐 Useful Dataset Platforms
+
+| Platform | Description | Link |
+|----------|-------------|------|
+| **Kaggle** | Largest community of datasets + competitions | [kaggle.com/datasets](https://www.kaggle.com/datasets) |
+| **UCI ML Repository** | Classic academic datasets used in research | [archive.ics.uci.edu](https://archive.ics.uci.edu/ml/index.php) |
+| **Google Dataset Search** | Search engine for public datasets | [datasetsearch.research.google.com](https://datasetsearch.research.google.com) |
+| **Hugging Face Datasets** | NLP-focused datasets hub | [huggingface.co/datasets](https://huggingface.co/datasets) |
+| **Papers With Code** | Datasets tied to research papers | [paperswithcode.com/datasets](https://paperswithcode.com/datasets) |
+| **data.gov** | U.S. government open datasets | [data.gov](https://data.gov) |
+| **OpenML** | Automated machine learning datasets | [openml.org](https://www.openml.org) |
+
+> 💡 **Tip for Beginners**: Start with Iris, Titanic, or MNIST — each teaches you a complete ML workflow in under 100 lines of code!
+
+</details>
+
+---
 
 ## Available Projects
 
@@ -192,7 +327,7 @@ The process of selecting relevant features for use in a model to increase accura
 <td align="center">27.</td>
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Classification%20Algorithms">Classification Algorithms</a></td>
 <td align="center">28.</td>
-<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Cloud%20Details">Cloud Details</a></td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Cloud%20Details">Cloud Details</a></td>
 </tr>
 <tr align="center">
 <td align="center">29.</td>
@@ -251,9 +386,13 @@ The process of selecting relevant features for use in a model to increase accura
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Email%20Classifier">Email Classifier</a></td>
 <td align="center">51.</td>
 <td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Projects/Emotion%20Recognition%20Based%20on%20NLP">Emotion Recognition Based on NLP</a></td>
-
-
-
+<td align="center">52.</td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Eye_Gaze_Tracking_Attention_Estimation">Eye Gaze Tracking & Attention Estimation</a></td>
+</tr>
+<tr>
+<td align="center">53.</td>
+<td align="center"><a href="https://github.com/Niketkumardheeryan/ML-CaPsule/tree/main/Portuguese_Bank_Marketing">Portuguese Bank Marketing</a></td>
+</tr>
 </table>
 
 & many more.......
@@ -289,6 +428,12 @@ Here are some of the exciting projects featured in this repository:
 8. **[Heart Disease Prediction](#)**  
    A predictive model for diagnosing heart disease based on patient attributes, utilizing statistical and machine learning techniques to improve diagnosis accuracy.
 
+9. **[Eye Gaze Tracking & Attention Estimation](Eye_Gaze_Tracking_Attention_Estimation/README.md)**  
+   A real-time attention tracking system using the MediaPipe Face Mesh Tasks API, robust iris vector projections, and 3D Perspective-n-Point head pose estimation with a glowing telemetry HUD console.
+
+10. **[Portuguese Bank Marketing](./Portuguese_Bank_Marketing)**  
+    A **Supervised Machine Learning – Binary Classification** project to predict if a client will subscribe to a term deposit based on demographic and campaign features.
+
 ## 📜 Summary
 
 This repository offers a rich collection of machine learning and data science projects. It includes well-documented examples, practical projects, and extensive resources to help you understand and implement various machine learning techniques.
@@ -322,29 +467,20 @@ To submit your contributions, follow these steps:
 
 1. **Fork the Repository**: Click the "Fork" button at the top right corner of the repository to create your own copy.
 
-2. **Clone Your Fork**: Clone your forked repository to your local machine using the following command:
+2. **Clone Your Fork**: Clone your forked repository to your local machine and navigate into the directory:
     ```bash
     git clone https://github.com/Niketkumardheeryan/ML-CaPsule
-    ```
-
-3. **Create a Branch**: Create a new branch for your changes:
-    ```bash
+    cd ML-CaPsule
     git checkout -b my-feature
     ```
-
-4. **Make Changes**: Make your desired changes to the codebase.
+    4. **Make Changes**: Make your desired changes to the codebase.
 
 5. **Commit Changes**: Commit your changes with a descriptive commit message:
     ```bash
     git commit -m "Add new feature"
-    ```
-
-6. **Push Changes**: Push your changes to your forked repository:
-    ```bash
     git push origin my-feature
-    ```
 
-7. **Submit a Pull Request**: Go to your forked repository on GitHub and submit a pull request. Be sure to provide a detailed description of your changes and why they are necessary.
+    7. **Submit a Pull Request**: Go to your forked repository on GitHub and submit a pull request. Be sure to provide a detailed description of your changes and why they are necessary.
 
 ## Project Directory Structure
 
@@ -451,6 +587,37 @@ Happy Coding! 👩‍💻👨‍💻
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 
+## 🗂️ Project Directory
+
+Explore the machine learning and data science projects available in this repository based on your domain interest and skill level.
+
+### 🟢 Beginner Projects & Data Analysis
+
+| Project Name | Category | Difficulty | Description | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Anime Data Analysis** | Data Analysis | Beginner | Analyze anime datasets and user trends through Exploratory Data Analysis (EDA). | [View Project](./Projects/Anime%20Data%20Analysis%20and%20Prediction/) |
+| **Medical Cost Prediction** | Machine Learning | Beginner | Predict medical insurance costs using regression models like Linear Regression and Random Forest. | [View Project](./Projects/Medical%20Cost%20Prediction/) |
+| **Heart Disease Detection** | Machine Learning | Beginner | Predict the presence of heart disease in patients using classification algorithms. | [View Project](./Projects/Heart%20Disease%20Prediction/) |
+| **Water Potability** | Machine Learning | Intermediate | Determine if water is safe for human consumption based on water quality metrics. | [View Project](./Projects/Water%20Potability/) |
+
+### 🔵 Deep Learning & Computer Vision
+
+| Project Name | Category | Difficulty | Description | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Alzheimer's Disease Predictor** | Deep Learning | Intermediate | Predict Alzheimer's disease using structural MRI and clinical data models. | [View Project](./Projects/Alzheimers%20Disease%20Predictor/) |
+| **Yoga Pose Detection** | Computer Vision | Intermediate | Real-time tracking and classification of different yoga poses using computer vision. | [View Project](./Projects/Yoga%20Pose%20Detection/) |
+| **Speech-to-Image Generator** | Deep Learning | Advanced | Generate visual images directly from speech audio inputs using deep neural networks. | [View Project](./Projects/Speech-to-Image-Generator/) |
+| **Weapon Detection System** | Computer Vision | Advanced | Detect weapons in images and video streams for security applications. | [View Project](./Projects/Weapon-Detection-System/) |
+
+### 🟡 Natural Language Processing & Advanced ML
+
+| Project Name | Category | Difficulty | Description | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Toxic Comment Classifier** | NLP | Intermediate | Classify and filter toxic, obscene, or threatening text data using NLP modules. | [View Project](./Projects/Toxic%20Comment%20Classifier/) |
+| **Currency Arbitrage with RL** | Reinforcement Learning | Advanced | Detect currency arbitrage opportunities in financial markets using Reinforcement Learning. | [View Project](./Projects/Currency%20Arbitrage%20with%20Reinforcement%20Learning/) |
+| **Sales Prediction (Research)** | Machine Learning | Advanced | Advanced sales prediction implementing complex models from research papers. | [View Project](./Projects/Sales%20Prediction/) |
+
+
 
 
 
@@ -459,3 +626,31 @@ Happy Coding! 👩‍💻👨‍💻
 <img src = "https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge">
 
 <p align="right"><a href="#top"><img src="https://img.shields.io/badge/Move%20to%20top-Blue?style=plastic" alt="Back To Top"></a></p>
+
+## 🔍 Notebook Health Check Bot
+
+This repository uses an automated Notebook Health Check Bot to maintain code quality.
+
+### What it does:
+- ✅ Automatically tests all Jupyter notebooks on every Pull Request
+- 🔍 Detects missing imports and dependencies
+- ⏱️ Identifies notebooks with timeout issues
+- 🚨 Flags deprecated code patterns
+
+### Results:
+- 📊 Scans all notebooks in the repository
+- 📈 Provides detailed logs of notebook health status
+- 🎯 Helps maintainers identify broken notebooks quickly
+
+### Recent Run:
+- Found 16 notebooks
+- ✅ 1 notebooks passed the health check
+- All issues were successfully detected and reported
+
+
+
+
+
+
+
+
