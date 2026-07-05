@@ -20,20 +20,18 @@ if nav == "Home":
     
     graph = st.selectbox("Would you like to see a graph",["No","Yes"])
     if graph == "Yes":
-        plt.figure(figsize=(10,5))
-        plt.scatter(data["BMI"],data["Diabetes_binary"])
-        plt.ylim(0)
-        plt.xlabel("BMI")
-        plt.ylabel("Diabetes")
-        plt.tight_layout()
-        st.set_option('deprecation.showPyplotGlobalUse', False)
-        st.pyplot()
+        fig1, ax1 = plt.subplots(figsize=(10,5))
+        ax1.scatter(data["BMI"],data["Diabetes_binary"])
+        ax1.set_ylim(0)
+        ax1.set_xlabel("BMI")
+        ax1.set_ylabel("Diabetes")
+        fig1.tight_layout()
+        st.pyplot(fig1)
 
-        plt.pcolormesh( data.sample(20) , cmap = 'winter' )
-  
-        plt.title( '2-D Heat Map' )
-        plt.show()  
-        st.pyplot()
+        fig2, ax2 = plt.subplots()
+        ax2.pcolormesh( data.sample(20) , cmap = 'winter' )
+        ax2.set_title( '2-D Heat Map' )
+        st.pyplot(fig2)
 
 
     if graph == "Interactive":
