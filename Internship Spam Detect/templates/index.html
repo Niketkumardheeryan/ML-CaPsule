@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ==========================================
+         1. DOCUMENT METADATA & EXTERNAL ASSETS
+         ========================================== -->
+    <meta charset="UTF-8">
+    <title>SpamInternship</title>
+    <!-- Core Application Interface Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+</head>
+<body>
+    <div class="root">
+        <!-- Screen reader title for structural context -->
+        <h2 class="sr-only">Spam internship detector <br>— submit a posting to check if it's legitimate</h2>
+        
+        <!-- Main Interface Header Banner -->
+        <div class="header">
+            <div class="badge"><i class="ti ti-shield-check" aria-hidden="true"></i> ML-powered</div>
+            <div class="title">Spam internship detector</div>
+            <div class="subtitle">Fill the form below — the pipeline will flag suspicious patterns</div>
+        </div>
+
+        <!-- ==========================================
+         2. INTERACTIVE USER INPUT FIELDS (FORM)
+         ========================================== -->
+        
+        <!-- Stipend -->
+        <div class="field-full">
+            <label for="stipend">Stipend (monthly, ₹)</label>
+            <input type="number" id="stipend" placeholder="stipend offered" min="0" />
+        </div>
+
+        <!-- work mode and company size -->
+        <div class="grid">
+            <div class="field">
+                <label for="work_mode">Work Mode</label>
+                <select id="work_mode">
+                    <option value="">Select mode…</option>
+                    <option>Remote</option>
+                    <option>Onsite</option>
+                    <option>Hybrid</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="company_size">Company Size</label>
+                <select id="company_size">
+                    <option value="">Select company size...</option>
+                    <option>Startup</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Enterprise</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- payment required and registration fee -->
+        <div class="grid">
+            <div class="field">
+                <label for="payment_required">Is payment required?</label>
+                <select id="payment_required">
+                    <option value="">Select an option…</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="registration_fee">Registration fee (in ₹)</label>
+                <input type="number" id="registration_fee" placeholder="Registraion fees" min="0" />
+            </div>
+        </div>
+
+        <!-- type of mail and website availability -->
+        <div class="grid">
+            <div class="field">
+                <label for="recruiter_email_type">What type is the mail ?</label>
+                <select id="recruiter_email_type">
+                    <option value="">Select mode…</option>
+                    <option>Corporate</option>
+                    <option>Free</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="website_available">Is an official website available?</label>
+                <select id="website_available">
+                    <option value="">Select an option...</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Interface Action Buttons -->
+        <div class="actions">
+            <button class="btn-secondary" onclick="clearForm()"><i class="ti ti-refresh" aria-hidden="true"></i></button>
+            <button class="btn-primary" id="analyze-btn" onclick="analyzePosting()">
+                <span id="btn-label"><i class="ti ti-scan" aria-hidden="true"></i> Analyze posting</span>
+                <div class="spinner hidden" id="btn-spinner"></div>
+            </button>
+        </div>
+
+        <!-- Form Explainer Subtext -->
+        <div class="api-note">
+            <i class="ti ti-info-circle" aria-hidden="true"></i>
+            <span>check if this is a spam</span>
+        </div>
+
+        <!-- ==========================================
+         3. DYNAMIC RESULT DISPLAY PANEL
+         ========================================== -->
+        <div class="result-panel hidden" id="result-panel">
+            <div class="result-header" id="result-header">
+                <div class="result-icon" id="result-icon"></div>
+                <div>
+                    <div class="result-verdict" id="result-verdict"></div>
+                    <div class="result-sub" id="result-sub"></div>
+                </div>
+            </div>
+            <div class="result-body">
+                <!-- Probability Bar Indicator -->
+                <div class="confidence-bar-wrap">
+                    <div class="confidence-label">
+                        <span>Spam Probability</span>
+                        <span id="conf-pct">—</span>
+                    </div>
+                    <div class="confidence-track">
+                        <div class="confidence-fill" id="conf-fill" style="width:0%; background:#e24b4a;"></div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- Container for Dynamic Anomaly Flags -->
+                <div class="flags" id="flags-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         4. JAVASCRIPT CORE LOGIC
+         ========================================== -->
+    <script>
+    /**
+     * Grabs form fields, formats data types, and makes 
+     * an asynchronous request to the predictive engine.
+     */
+    async function analyzePosting() {
+        const stipend = document.getElementById('stipend').value;
+        const workMode = document.getElementById('work_mode').value;
+        const companySize = document.getElementById('company_size').value;
+        const paymentRequired = document.getElementById('payment_required').value;
+        const registrationFee = document.getElementById('registration_fee').value;
+        const emailType = document.getElementById('recruiter_email_type').value;
+        const websiteAvailable = document.getElementById('website_available').value;
+
+        setLoading(true);
+
+        // Map categorical strings into binary
+        const paymentMapped = paymentRequired === 'Yes' ? 1 : 0;
+        const websiteMapped = websiteAvailable === 'Yes' ? 1 : 0;
+
+        const payload = {
+            stipend: stipend ? Number(stipend) : 0, 
+            work_mode: workMode,
+            company_size: companySize,
+            payment_required: paymentMapped,
+            registration_fee: registrationFee ? Number(registrationFee) : 0,
+            recruiter_email_type: emailType,
+            website_available: websiteMapped
+        };
+
+        try {
+            const res = await fetch('/predict', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            showResult(data);
+        } catch (err) {
+            // Revert to fallback metrics if backend is unreachable
+            showMockResult(payload); 
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    /**
+     * Heuristic-based mock fallback generator for stability.
+     */
+    function showMockResult(payload) {
+        let hits = [];
+        
+        if (payload.payment_required === 1) hits.push('payment required');
+        if (payload.recruiter_email_type === 'Free') hits.push('free email domain');
+        if (payload.website_available === 0) hits.push('no official website');
+        
+        const isSpam = hits.length >= 1;
+        const conf = isSpam ? 85 : 15;
+        
+        showResult({ 
+            is_spam: isSpam, 
+            spam_probability: conf / 100, 
+            flags: hits, 
+            note: 'Demo mode' 
+        });
+    }
+
+    /**
+     * Toggles layout states and handles submission prevention during operations.
+     */
+    function setLoading(isLoading) {
+        const btn = document.getElementById('analyze-btn');
+        const spinner = document.getElementById('btn-spinner');
+        
+        if (isLoading) {
+            btn.disabled = true; 
+            spinner.classList.remove('hidden');
+        } else {
+            btn.disabled = false;
+            spinner.classList.add('hidden');
+        }
+    }
+
+    /**
+     * Decodes operational model outputs and draws the UI component changes.
+     */
+    function showResult(data) {
+        const panel = document.getElementById('result-panel');
+        const verdict = document.getElementById('result-verdict');
+        const sub = document.getElementById('result-sub');
+        const confPct = document.getElementById('conf-pct');
+        const confFill = document.getElementById('conf-fill');
+        const flagsList = document.getElementById('flags-list');
+
+        panel.classList.remove('hidden');
+
+        const probPercent = Math.round((data.spam_probability || 0) * 100);
+        confPct.textContent = probPercent + '%';
+        confFill.style.width = probPercent + '%';
+
+        // Apply visual themes dynamically based on outcome
+        if (data.is_spam) {
+            verdict.textContent = 'Likely Spam';
+            verdict.style.color = '#e24b4a'; 
+            sub.textContent = data.note || 'Proceed with extreme caution';
+            confFill.style.background = '#e24b4a'; 
+        } else {
+            verdict.textContent = 'Looks Legitimate';
+            verdict.style.color = '#2ea043'; 
+            sub.textContent = data.note || 'No major red flags detected';
+            confFill.style.background = '#2ea043'; 
+        }
+
+        // Generate warning strings inside target grid
+        if (data.flags && data.flags.length > 0) {
+            flagsList.innerHTML = data.flags.map(flag => `<div>⚠️ ${flag}</div>`).join('');
+        } else {
+            flagsList.innerHTML = '<div style="color: gray;">No suspicious flags detected.</div>';
+        }
+    }
+
+    /**
+     * Resets input variables and forces output nodes out of focus.
+     */
+    function clearForm() {
+        document.getElementById('stipend').value = '';
+        document.getElementById('work_mode').value = '';
+        document.getElementById('company_size').value = '';
+        document.getElementById('payment_required').value = '';
+        document.getElementById('registration_fee').value = '';
+        document.getElementById('recruiter_email_type').value = '';
+        document.getElementById('website_available').value = '';
+
+        document.getElementById('result-panel').classList.add('hidden');
+    }
+    </script>
+</body>
+</html>

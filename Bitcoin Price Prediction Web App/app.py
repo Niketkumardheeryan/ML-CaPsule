@@ -95,7 +95,7 @@ if r == "Bitcoin Price Prediction":
         st.balloons()
 from sklearn.linear_model import Lasso
 Ls=Lasso()
-xtrain,xtest,ytrain,ytest=train_test_split(X,Y,test_size=0.2)
+xtrain,xtest,ytrain,ytest=train_test_split(X,Y,test_size=0.2, random_state=42)
 Ls.fit(xtrain,ytrain)
 
 if r=='Bitcoin Price':

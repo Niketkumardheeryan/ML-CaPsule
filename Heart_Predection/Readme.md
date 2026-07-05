@@ -7,7 +7,7 @@ In the model Data Analysis has also been performed
 
 ### Dataset
 
-Dataset used can be dowloaded from [here](https://www.kaggle.com/ronitf/heart-disease-uci) 
+Dataset used can be dowloaded from [here](https://www.kaggle.com/datasets/ronitf/heart-disease-uci) 
 <br>
 
 

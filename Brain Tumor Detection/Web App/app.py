@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request
 import numpy as np
 import tensorflow as tf
@@ -38,15 +39,36 @@ def index():
 def predict():
     try:
         image = request.files['image']
-        img = Image.open(image.stream)
-        img = preprocess_image(img)
+
+        # Read uploaded image only once
+        image_bytes = image.read()
+
+        # Create image object for display
+        img_pil = Image.open(io.BytesIO(image_bytes))
+
+        # Create separate image object for model preprocessing
+        img = preprocess_image(
+            Image.open(io.BytesIO(image_bytes))
+        )
+
         predictions = model.predict(img)
         predicted_class = np.argmax(predictions)
         predicted_label = class_labels[predicted_class]
-        img_base64 = image_to_base64(Image.open(image.stream))
-        return render_template('result.html', description=predicted_label, image_data=img_base64)
+
+        # Convert uploaded image to base64 for rendering
+        img_base64 = image_to_base64(img_pil)
+
+        return render_template(
+            'result.html',
+            description=predicted_label,
+            image_data=img_base64
+        )
+
     except Exception as e:
-        return render_template('error.html', error_message=str(e))
+        return render_template(
+            'error.html',
+            error_message=str(e)
+        )
 
 if __name__ == "__main__":
     debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"
