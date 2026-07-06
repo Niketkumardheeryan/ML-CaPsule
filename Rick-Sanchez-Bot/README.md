@@ -1,4 +1,6 @@
 # Rick Sanchez Chatbot using DialoGPT
+## Download the dataset
+url: https://drive.google.com/file/d/1L0D1kMsNGUUJLpCA7mMI7I87MBUwZ6eK/view?usp=sharing
 
 ## Project Overview
 
