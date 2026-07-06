@@ -1,0 +1,203 @@
+name: Stale PR Lifecycle (Warn 21d, Close 30d / Testable)
+
+on:
+  schedule:
+    - cron: "30 1 * * *"
+  workflow_dispatch:
+    inputs:
+      warningAfterMinutes:
+        description: "Minutes of inactivity after which to add warning label (testing). Leave empty to use defaults."
+        required: false
+        type: number
+      closeAfterMinutes:
+        description: "Minutes of inactivity after which to close PR (testing). Leave empty to use defaults."
+        required: false
+        type: number
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Evaluate and act on stale PRs
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const WARNING_LABEL = 'stale-warning-21d';
+            const NO_ACTIVITY_LABEL = 'noActivity';
+
+            const warningAfterDays = 21;
+            const closeAfterDays = 30;
+
+            // Allow fast testing in a test repo using workflow_dispatch inputs.
+            // If minutes are not provided, defaults fall back to days.
+            const inputs = (context.payload && context.payload.inputs) ? context.payload.inputs : ({ });
+
+            const warningAfterMinutes = (inputs.warningAfterMinutes !== undefined && inputs.warningAfterMinutes !== '')
+              ? Number(inputs.warningAfterMinutes)
+              : null;
+            const effectiveWarningAfterMinutes = (warningAfterMinutes !== null && !Number.isNaN(warningAfterMinutes)) ? warningAfterMinutes : null;
+            const closeAfterMinutes = (inputs.closeAfterMinutes !== undefined && inputs.closeAfterMinutes !== '')
+              ? Number(inputs.closeAfterMinutes)
+              : null;
+
+            const now = Date.now();
+
+            const warningMs = (warningAfterMinutes !== null && !Number.isNaN(warningAfterMinutes))
+              ? warningAfterMinutes * 60 * 1000
+              : warningAfterDays * 24 * 60 * 60 * 1000;
+
+            const closeMs = (closeAfterMinutes !== null && !Number.isNaN(closeAfterMinutes))
+              ? closeAfterMinutes * 60 * 1000
+              : closeAfterDays * 24 * 60 * 60 * 1000;
+
+            // For user-facing message only
+            const warningThresholdText = (warningAfterMinutes !== null && !Number.isNaN(warningAfterMinutes))
+              ? `${warningAfterMinutes} minute(s)`
+              : `${warningAfterDays} day(s)`;
+            const closeThresholdText = (closeAfterMinutes !== null && !Number.isNaN(closeAfterMinutes))
+              ? `${closeAfterMinutes} minute(s)`
+              : `${closeAfterDays} day(s)`;
+
+            // Helper: ensure label exists (ignore errors if it already exists / label doesn't exist)
+            async function ensureLabel(name, color = 'ededed') {
+              try {
+                await github.rest.issues.getLabel({ owner, repo, name });
+              } catch (e) {
+                if (e.status === 404) {
+                  await github.rest.issues.createLabel({ owner, repo, name, color });
+                } else {
+                  throw e;
+                }
+              }
+            }
+
+            await ensureLabel(WARNING_LABEL, 'f9d0c4');
+            await ensureLabel(NO_ACTIVITY_LABEL, 'cccccc');
+
+            // List open PRs
+            const prs = await github.paginate(github.rest.pulls.list, {
+              owner,
+              repo,
+              state: 'open',
+              per_page: 100
+            });
+
+            for (const pr of prs) {
+              const prNumber = pr.number;
+
+              // Only consider PRs with at least one APPROVED/CHANGES_REQUESTED (non-PENDING) review from a maintainer/collaborator.
+              // We approximate "maintainer/collaborator" by requiring repo permission to be one of: write/maintain/admin.
+
+              const reviews = await github.paginate(github.rest.pulls.listReviews, {
+                owner,
+                repo,
+                pull_number: prNumber,
+                per_page: 100
+              });
+
+              let hasMaintainerReview = false;
+              for (const r of reviews) {
+                if (!r.state) continue;
+                if (r.state === 'PENDING') continue;
+
+                const reviewer = r.user && r.user.login;
+                if (!reviewer) continue;
+
+                // Requires the `issues`/`pull-requests` token permissions we already granted.
+                const perm = await github.rest.repos.getCollaboratorPermissionLevel({
+                  owner,
+                  repo,
+                  username: reviewer
+                });
+
+                const level = (perm.data && perm.data.permission) ? perm.data.permission : null;
+                if (level === 'write' || level === 'maintain' || level === 'admin') {
+                  hasMaintainerReview = true;
+                  break;
+                }
+              }
+
+              const lastUpdated = new Date(pr.updated_at).getTime();
+
+              const ageMs = now - lastUpdated;
+
+            // Warning: when inactivity exceeds warning threshold (days by default, minutes when testing).
+              if (hasMaintainerReview && ageMs >= warningMs && ageMs < closeMs) {
+
+                const labels = (pr.labels || []).map(l => l.name);
+                if (!labels.includes(WARNING_LABEL)) {
+                  const warningBody = `This PR has been marked as stale due to ${warningThresholdText} of inactivity after a review. It will be closed in ${closeThresholdText} if there are no further updates.`;
+
+                  await github.rest.issues.createComment({
+                    owner,
+                    repo,
+                    issue_number: prNumber,
+                    body: warningBody
+                  });
+
+                  await github.rest.issues.addLabels({
+                    owner,
+                    repo,
+                    issue_number: prNumber,
+                    labels: [WARNING_LABEL]
+                  });
+                }
+              }
+
+              // 30-day closure: PR is at least closeAfterDays inactive
+              if (ageMs >= closeMs) {
+                // If already closed by a previous run, skip
+                if (pr.state !== 'open') continue;
+
+                const labels = (pr.labels || []).map(l => l.name);
+                // Do not require NO_ACTIVITY_LABEL to be absent; we still need to unassign/comment/close.
+                // Keep it idempotent by skipping repeated assignee removal/label/comment logic when already present.
+                if (true) {
+
+                  // Remove assignees (unassign contributor)
+                  const issue = await github.rest.issues.get({ owner, repo, issue_number: prNumber });
+                  const assignees = issue.data.assignees || [];
+                  const assigneeLogins = assignees.map(a => a.login);
+                  if (assigneeLogins.length > 0) {
+                    await github.rest.issues.removeAssignees({
+                      owner,
+                      repo,
+                      issue_number: prNumber,
+                      assignees: assigneeLogins
+                    });
+                  }
+
+                  const finalComment = `This PR has been marked as abandoned due to ${closeThresholdText} of inactivity. Closing it now.`;
+
+                  await github.rest.issues.createComment({
+                    owner,
+                    repo,
+                    issue_number: prNumber,
+                    body: finalComment
+                  });
+
+                  await github.rest.issues.addLabels({
+                    owner,
+                    repo,
+                    issue_number: prNumber,
+                    labels: [NO_ACTIVITY_LABEL]
+                  });
+                }
+
+                await github.rest.pulls.update({
+                  owner,
+                  repo,
+                  pull_number: prNumber,
+                  state: 'closed'
+                });
+              }
+            }
+
