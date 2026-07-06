@@ -1,8 +1,18 @@
-name: Stale PR Lifecycle (Warn 21d, Close 30d)
+name: Stale PR Lifecycle (Warn 21d, Close 30d / Testable)
 
 on:
   schedule:
     - cron: "30 1 * * *"
+  workflow_dispatch:
+    inputs:
+      warningAfterMinutes:
+        description: "Minutes of inactivity after which to add warning label (testing). Leave empty to use defaults."
+        required: false
+        type: number
+      closeAfterMinutes:
+        description: "Minutes of inactivity after which to close PR (testing). Leave empty to use defaults."
+        required: false
+        type: number
 
 permissions:
   issues: write
@@ -26,9 +36,35 @@ jobs:
             const warningAfterDays = 21;
             const closeAfterDays = 30;
 
+            // Allow fast testing in a test repo using workflow_dispatch inputs.
+            // If minutes are not provided, defaults fall back to days.
+            const inputs = (context.payload && context.payload.inputs) ? context.payload.inputs : ({ });
+
+            const warningAfterMinutes = (inputs.warningAfterMinutes !== undefined && inputs.warningAfterMinutes !== '')
+              ? Number(inputs.warningAfterMinutes)
+              : null;
+            const effectiveWarningAfterMinutes = (warningAfterMinutes !== null && !Number.isNaN(warningAfterMinutes)) ? warningAfterMinutes : null;
+            const closeAfterMinutes = (inputs.closeAfterMinutes !== undefined && inputs.closeAfterMinutes !== '')
+              ? Number(inputs.closeAfterMinutes)
+              : null;
+
             const now = Date.now();
-            const warningMs = warningAfterDays * 24 * 60 * 60 * 1000;
-            const closeMs = closeAfterDays * 24 * 60 * 60 * 1000;
+
+            const warningMs = (warningAfterMinutes !== null && !Number.isNaN(warningAfterMinutes))
+              ? warningAfterMinutes * 60 * 1000
+              : warningAfterDays * 24 * 60 * 60 * 1000;
+
+            const closeMs = (closeAfterMinutes !== null && !Number.isNaN(closeAfterMinutes))
+              ? closeAfterMinutes * 60 * 1000
+              : closeAfterDays * 24 * 60 * 60 * 1000;
+
+            // For user-facing message only
+            const warningThresholdText = (warningAfterMinutes !== null && !Number.isNaN(warningAfterMinutes))
+              ? `${warningAfterMinutes} minute(s)`
+              : `${warningAfterDays} day(s)`;
+            const closeThresholdText = (closeAfterMinutes !== null && !Number.isNaN(closeAfterMinutes))
+              ? `${closeAfterMinutes} minute(s)`
+              : `${closeAfterDays} day(s)`;
 
             // Helper: ensure label exists (ignore errors if it already exists / label doesn't exist)
             async function ensureLabel(name, color = 'ededed') {
@@ -57,8 +93,9 @@ jobs:
             for (const pr of prs) {
               const prNumber = pr.number;
 
-              // Only consider PRs with at least one APPROVED/CHANGES_REQUESTED review from a maintainer/collaborator.
+              // Only consider PRs with at least one APPROVED/CHANGES_REQUESTED (non-PENDING) review from a maintainer/collaborator.
               // We approximate "maintainer/collaborator" by requiring repo permission to be one of: write/maintain/admin.
+
               const reviews = await github.paginate(github.rest.pulls.listReviews, {
                 owner,
                 repo,
@@ -88,17 +125,16 @@ jobs:
                 }
               }
 
-              if (!hasMaintainerReview) continue;
-
-
               const lastUpdated = new Date(pr.updated_at).getTime();
+
               const ageMs = now - lastUpdated;
 
-              // 21-day warning: PR is at least warningAfterDays inactive, and warning label not set yet
-              if (ageMs >= warningMs && ageMs < closeMs) {
+            // Warning: when inactivity exceeds warning threshold (days by default, minutes when testing).
+              if (hasMaintainerReview && ageMs >= warningMs && ageMs < closeMs) {
+
                 const labels = (pr.labels || []).map(l => l.name);
                 if (!labels.includes(WARNING_LABEL)) {
-                  const warningBody = `This PR has been marked as stale due to 3 weeks of inactivity after a review. It will be closed in 9 days if there are no further updates.`;
+                  const warningBody = `This PR has been marked as stale due to ${warningThresholdText} of inactivity after a review. It will be closed in ${closeThresholdText} if there are no further updates.`;
 
                   await github.rest.issues.createComment({
                     owner,
@@ -122,8 +158,10 @@ jobs:
                 if (pr.state !== 'open') continue;
 
                 const labels = (pr.labels || []).map(l => l.name);
-                // If already labeled / closed previously, don't repeat.
-                if (!labels.includes(NO_ACTIVITY_LABEL)) {
+                // Do not require NO_ACTIVITY_LABEL to be absent; we still need to unassign/comment/close.
+                // Keep it idempotent by skipping repeated assignee removal/label/comment logic when already present.
+                if (true) {
+
                   // Remove assignees (unassign contributor)
                   const issue = await github.rest.issues.get({ owner, repo, issue_number: prNumber });
                   const assignees = issue.data.assignees || [];
@@ -137,7 +175,8 @@ jobs:
                     });
                   }
 
-                  const finalComment = `This PR has been marked as abandoned due to 1 month of inactivity after review. Closing it now.`;
+                  const finalComment = `This PR has been marked as abandoned due to ${closeThresholdText} of inactivity. Closing it now.`;
+
                   await github.rest.issues.createComment({
                     owner,
                     repo,

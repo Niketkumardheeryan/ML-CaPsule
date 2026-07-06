@@ -1,8 +1,9 @@
 name: PR Triage & Issue Link Validation
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened]
+
 
 permissions:
   issues: write
@@ -22,20 +23,27 @@ jobs:
             const repo = context.repo.repo;
             const prNumber = pr.number;
 
-            // 1) Auto-assign the PR to its author
-            await github.rest.issues.addAssignees({
-              owner,
-              repo,
-              issue_number: prNumber,
-              assignees: [pr.user.login]
-            });
+            // 1) Auto-assign the PR to its author (best-effort; may fail for fork/first-time contributors)
+            try {
+              await github.rest.issues.addAssignees({
+                owner,
+                repo,
+                issue_number: prNumber,
+                assignees: [pr.user.login]
+              });
+            } catch (e) {
+              // Ignore (e.g., 422 when user can't be assigned)
+              console.log(`Could not assign PR author: ${e.message}`);
+            }
+
 
             // 2) Validate issue reference in PR body
             const body = (pr.body || '').trim();
             const patterns = [
-              /\b(?:Fixes|Resolves|Fixed|Resolved|Closes|Closed|Related to|Refs|Reference)\s+#(\d+)\b/i,
+              /\b(?:Fixes|Resolves|Fixed|Resolved|Closes|Closed|Related to|Refs|Reference)\s*:?[\s#]*(?:#)?(\d+)\b/i,
               /\b#(\d+)\b\s*(?:\(?(?:fix|resolve|close|closes|fixes|resolves)\)?)/i
             ];
+
 
             const hasIssueLink = patterns.some((re) => re.test(body));
 
@@ -43,7 +51,7 @@ jobs:
               const comment = [
                 "👋 Thanks for your pull request!",
                 "",
-                "To help us track work and close issues efficiently, please link the related issue in your PR description using one of: `Fixes #123`, `Resolves #123`, or `Closes #123`.",
+                "To help us track work and close issues efficiently, please link the related issue in your PR description using one of: `Fixes #<issue-number>`, `Resolves #<issue-number>`, or `Closes #<issue-number>`. ",
                 "",
                 "Example: `Fixes #42`"
               ].join('\n');
