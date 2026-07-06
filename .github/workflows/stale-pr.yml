@@ -93,15 +93,44 @@ jobs:
             for (const pr of prs) {
               const prNumber = pr.number;
 
-              // NOTE (testing workflow): GitHub does not allow PR authors to approve their own PR.
-              // To remove that testing limitation, warning/close are based on inactivity only.
+              // Only consider PRs with at least one APPROVED/CHANGES_REQUESTED (non-PENDING) review from a maintainer/collaborator.
+              // We approximate "maintainer/collaborator" by requiring repo permission to be one of: write/maintain/admin.
+
+              const reviews = await github.paginate(github.rest.pulls.listReviews, {
+                owner,
+                repo,
+                pull_number: prNumber,
+                per_page: 100
+              });
+
+              let hasMaintainerReview = false;
+              for (const r of reviews) {
+                if (!r.state) continue;
+                if (r.state === 'PENDING') continue;
+
+                const reviewer = r.user && r.user.login;
+                if (!reviewer) continue;
+
+                // Requires the `issues`/`pull-requests` token permissions we already granted.
+                const perm = await github.rest.repos.getCollaboratorPermissionLevel({
+                  owner,
+                  repo,
+                  username: reviewer
+                });
+
+                const level = (perm.data && perm.data.permission) ? perm.data.permission : null;
+                if (level === 'write' || level === 'maintain' || level === 'admin') {
+                  hasMaintainerReview = true;
+                  break;
+                }
+              }
 
               const lastUpdated = new Date(pr.updated_at).getTime();
 
               const ageMs = now - lastUpdated;
 
             // Warning: when inactivity exceeds warning threshold (days by default, minutes when testing).
-              if (ageMs >= warningMs && ageMs < closeMs) {
+              if (hasMaintainerReview && ageMs >= warningMs && ageMs < closeMs) {
 
                 const labels = (pr.labels || []).map(l => l.name);
                 if (!labels.includes(WARNING_LABEL)) {
