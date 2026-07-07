@@ -3,16 +3,6 @@ name: Stale PR Lifecycle (Warn 21d, Close 30d / Testable)
 on:
   schedule:
     - cron: "30 1 * * *"
-  workflow_dispatch:
-    inputs:
-      warningAfterMinutes:
-        description: "Minutes of inactivity after which to add warning label (testing). Leave empty to use defaults."
-        required: false
-        type: number
-      closeAfterMinutes:
-        description: "Minutes of inactivity after which to close PR (testing). Leave empty to use defaults."
-        required: false
-        type: number
 
 permissions:
   issues: write
@@ -36,35 +26,18 @@ jobs:
             const warningAfterDays = 21;
             const closeAfterDays = 30;
 
-            // Allow fast testing in a test repo using workflow_dispatch inputs.
-            // If minutes are not provided, defaults fall back to days.
-            const inputs = (context.payload && context.payload.inputs) ? context.payload.inputs : ({ });
-
-            const warningAfterMinutes = (inputs.warningAfterMinutes !== undefined && inputs.warningAfterMinutes !== '')
-              ? Number(inputs.warningAfterMinutes)
-              : null;
-            const effectiveWarningAfterMinutes = (warningAfterMinutes !== null && !Number.isNaN(warningAfterMinutes)) ? warningAfterMinutes : null;
-            const closeAfterMinutes = (inputs.closeAfterMinutes !== undefined && inputs.closeAfterMinutes !== '')
-              ? Number(inputs.closeAfterMinutes)
-              : null;
-
             const now = Date.now();
 
-            const warningMs = (warningAfterMinutes !== null && !Number.isNaN(warningAfterMinutes))
-              ? warningAfterMinutes * 60 * 1000
-              : warningAfterDays * 24 * 60 * 60 * 1000;
+            const warningMs = warningAfterDays * 24 * 60 * 60 * 1000;
+            const closeMs = closeAfterDays * 24 * 60 * 60 * 1000;
 
-            const closeMs = (closeAfterMinutes !== null && !Number.isNaN(closeAfterMinutes))
-              ? closeAfterMinutes * 60 * 1000
-              : closeAfterDays * 24 * 60 * 60 * 1000;
+            // User-facing message only (defaults)
+            const warningThresholdText = `${warningAfterDays} day(s)`;
+            const closeThresholdText = `${closeAfterDays} day(s)`;
+            const closeInText = `${Math.max(0, closeAfterDays - warningAfterDays)} day(s)`; // 30 - 21 = 9 days
 
-            // For user-facing message only
-            const warningThresholdText = (warningAfterMinutes !== null && !Number.isNaN(warningAfterMinutes))
-              ? `${warningAfterMinutes} minute(s)`
-              : `${warningAfterDays} day(s)`;
-            const closeThresholdText = (closeAfterMinutes !== null && !Number.isNaN(closeAfterMinutes))
-              ? `${closeAfterMinutes} minute(s)`
-              : `${closeAfterDays} day(s)`;
+            // How many milliseconds from warning -> close. Used for closure gating.
+            const closeInMs = Math.max(0, closeAfterDays - warningAfterDays) * 24 * 60 * 60 * 1000;
 
             // Helper: ensure label exists (ignore errors if it already exists / label doesn't exist)
             async function ensureLabel(name, color = 'ededed') {
@@ -105,21 +78,11 @@ jobs:
 
               let hasMaintainerReview = false;
               for (const r of reviews) {
-                if (!r.state) continue;
-                if (r.state === 'PENDING') continue;
+                if (!r.state || r.state === 'PENDING') continue;
 
-                const reviewer = r.user && r.user.login;
-                if (!reviewer) continue;
-
-                // Requires the `issues`/`pull-requests` token permissions we already granted.
-                const perm = await github.rest.repos.getCollaboratorPermissionLevel({
-                  owner,
-                  repo,
-                  username: reviewer
-                });
-
-                const level = (perm.data && perm.data.permission) ? perm.data.permission : null;
-                if (level === 'write' || level === 'maintain' || level === 'admin') {
+                // Use GitHub-provided association to avoid extra API calls / rate limiting.
+                const assoc = r.author_association;
+                if (assoc === 'OWNER' || assoc === 'MEMBER' || assoc === 'COLLABORATOR') {
                   hasMaintainerReview = true;
                   break;
                 }
@@ -129,18 +92,22 @@ jobs:
 
               const ageMs = now - lastUpdated;
 
-            // Warning: when inactivity exceeds warning threshold (days by default, minutes when testing).
-              if (hasMaintainerReview && ageMs >= warningMs && ageMs < closeMs) {
+              const labels = (pr.labels || []).map(l => l.name);
 
-                const labels = (pr.labels || []).map(l => l.name);
+              // Warning: when inactivity exceeds warning threshold (21 days)
+              if (hasMaintainerReview && ageMs >= warningMs && ageMs < closeMs) {
                 if (!labels.includes(WARNING_LABEL)) {
-                  const warningBody = `This PR has been marked as stale due to ${warningThresholdText} of inactivity. It will be closed in ${closeThresholdText} if there are no further updates.`;
+                  const warningBody = `This PR has been marked as stale due to ${warningThresholdText} of inactivity after a review. It will be closed in ${closeInText} if there are no further updates.`;
+
+                  // Store the computed body text so closure logic can match it later.
+                  // (Used below when scanning comments.)
+                  const warningBodySignature = warningBody;
 
                   await github.rest.issues.createComment({
                     owner,
                     repo,
                     issue_number: prNumber,
-                    body: warningBody
+                    body: warningBodySignature
                   });
 
                   await github.rest.issues.addLabels({
@@ -152,52 +119,74 @@ jobs:
                 }
               }
 
-              // 30-day closure: PR is at least closeAfterDays inactive
-              if (ageMs >= closeMs) {
-                // If already closed by a previous run, skip
-                if (pr.state !== 'open') continue;
+              // Closure: do NOT use `pr.updated_at` because this workflow's own warning comment/label updates it.
+              // Instead, base closure timing on when the warning label was applied (first time we see the warning comment).
+              //
+              // We approximate "no further updates" by ensuring the PR has not been updated since the warning comment was posted.
+              // (If only the bot actions occurred after the warning, this will still hold in practice because we close once the window expires.)
+              if (pr.state === 'open' && labels.includes(WARNING_LABEL) && !labels.includes(NO_ACTIVITY_LABEL)) {
+                // Find the warning comment timestamp by scanning recent comments.
+                // IMPORTANT: closure gating must not depend on bot-updating `pr.updated_at`.
+                const comments = await github.paginate(github.rest.issues.listComments, {
+                  owner,
+                  repo,
+                  issue_number: prNumber,
+                  per_page: 100
+                });
 
-                const labels = (pr.labels || []).map(l => l.name);
-                // Do not require NO_ACTIVITY_LABEL to be absent; we still need to unassign/comment/close.
-                // Keep it idempotent by skipping repeated assignee removal/label/comment logic when already present.
-                if (true) {
+                const warningComment = comments
+                  .filter(c => c && c.user)
+                  .find(c => (c.body || '').includes('This PR has been marked as stale due to') && (c.body || '').includes('will be closed in'));
 
-                  // Remove assignees (unassign contributor)
-                  const issue = await github.rest.issues.get({ owner, repo, issue_number: prNumber });
-                  const assignees = issue.data.assignees || [];
-                  const assigneeLogins = assignees.map(a => a.login);
-                  if (assigneeLogins.length > 0) {
-                    await github.rest.issues.removeAssignees({
+                const warningTimestamp = warningComment ? new Date(warningComment.created_at).getTime() : null;
+
+                // If we can't locate the warning comment, do nothing (keeps lifecycle consistent and avoids unintended closes).
+                if (warningTimestamp !== null) {
+                  const timeSinceWarningMs = now - warningTimestamp;
+                  const shouldClose = timeSinceWarningMs >= closeInMs;
+
+                  if (shouldClose) {
+                    // Remove contributor assignment when closing.
+                    // Avoid unassigning all assignees/maintainers, since that can disrupt attribution.
+                    const issue = await github.rest.issues.get({ owner, repo, issue_number: prNumber });
+                    const assignees = issue.data.assignees || [];
+                    const prAuthor = pr.user && pr.user.login;
+
+                    if (prAuthor && assignees.some(a => a.login === prAuthor)) {
+                      await github.rest.issues.removeAssignees({
+                        owner,
+                        repo,
+                        issue_number: prNumber,
+                        assignees: [prAuthor]
+                      });
+                    }
+
+                    const finalComment = `This PR has been marked as abandoned due to ${closeThresholdText} of inactivity. Closing it now.`;
+
+                    await github.rest.issues.createComment({
                       owner,
                       repo,
                       issue_number: prNumber,
-                      assignees: assigneeLogins
+                      body: finalComment
+                    });
+
+                    await github.rest.issues.addLabels({
+                      owner,
+                      repo,
+                      issue_number: prNumber,
+                      labels: [NO_ACTIVITY_LABEL]
+                    });
+
+                    await github.rest.pulls.update({
+                      owner,
+                      repo,
+                      pull_number: prNumber,
+                      state: 'closed'
                     });
                   }
-
-                  const finalComment = `This PR has been marked as abandoned due to ${closeThresholdText} of inactivity. Closing it now.`;
-
-                  await github.rest.issues.createComment({
-                    owner,
-                    repo,
-                    issue_number: prNumber,
-                    body: finalComment
-                  });
-
-                  await github.rest.issues.addLabels({
-                    owner,
-                    repo,
-                    issue_number: prNumber,
-                    labels: [NO_ACTIVITY_LABEL]
-                  });
                 }
-
-                await github.rest.pulls.update({
-                  owner,
-                  repo,
-                  pull_number: prNumber,
-                  state: 'closed'
-                });
               }
             }
+
+
 

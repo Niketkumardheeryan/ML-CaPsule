@@ -21,10 +21,9 @@ jobs:
         stale-pr-message: 'Stale pull request message'
         stale-issue-label: 'no-issue-activity'
         stale-pr-label: 'no-pr-activity'
-        # This workflow is intentionally disabled for PR lifecycle management.
-        #PR warn/close logic is implemented in `.github/workflows/stale-pr.yml`.
-        days-before-stale: -1
-        days-before-close: -1
-
+        # PR warn/close logic is implemented in `.github/workflows/stale-pr.yml`.
+        # Disable PR handling in this workflow (keep issue staleness enabled).
+        days-before-pr-stale: -1
+        days-before-pr-close: -1
 
 

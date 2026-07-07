@@ -1,4 +1,4 @@
-name: PR Triage & Issue Link Validation
+name: PR Activity
 
 on:
   pull_request_target:
