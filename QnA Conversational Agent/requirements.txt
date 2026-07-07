@@ -1,0 +1,6 @@
+streamlit==1.7.0
+langchain==0.0.92
+PyPDF2==1.26.0
+docarray==0.0.1
+torch==1.10.1
+transformers==4.15.0

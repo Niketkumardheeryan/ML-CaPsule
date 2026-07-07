@@ -1,0 +1,94 @@
+{
+  "id": "4d646b3f-39a2-4fb1-816e-b1cc1635a7a0",
+  "parentId": "3eddd178-689e-4be7-9f9f-029c0f2039f3",
+  "rootParentId": "3eddd178-689e-4be7-9f9f-029c0f2039f3",
+  "name": "HospitalMumbai - Hiranandani",
+  "auto": true,
+  "contexts": [
+    "details",
+    "HospitalMumbai-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "HospitalMumbai.HospitalMumbai-custom",
+      "affectedContexts": [
+        {
+          "name": "end",
+          "lifespan": 1
+        }
+      ],
+      "parameters": [
+        {
+          "id": "a3d6d0ba-98bf-4224-bd76-af7289eb4b32",
+          "name": "mumbaiHospital",
+          "required": false,
+          "dataType": "@mumbaiHospital",
+          "value": "$mumbaiHospital",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "rawUrl": "https://gumlet.assettype.com/freepressjournal%2Fimport%2F2016%2F08%2FHOSPITAL.jpg?rect\u003d0%2C36%2C400%2C225\u0026w\u003d1200",
+                  "type": "image",
+                  "accessibilityText": "Dialogflow across platforms"
+                },
+                {
+                  "type": "info",
+                  "actionLink": "https://www.hiranandanihospital.org/",
+                  "subtitle": "Dr L H Hiranandani Hospital is a Public Charitable Trust Hospital, founded in honour of the legend, Padma Bhushan Dr L H Hiranandani, came into existence in February 2004.",
+                  "title": "Hiranandani Hospital"
+                },
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "link": "https://www.divcommpunecovid.com/ccsbeddashboard/hsr?d-3677810-p\u003d2",
+                      "text": "Bed Availability "
+                    },
+                    {
+                      "text": "More Details",
+                      "link": "https://www.hiranandanihospital.org/"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,45 @@
+name: Issue Reminder
+
+on:
+  schedule:
+    # Runs every day at 8 AM
+    - cron: '0 8 * * *'
+
+jobs:
+  remind-stale-issues:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the repository
+      uses: actions/checkout@v3
+
+    - name: Find and remind stale issues
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const daysBeforeReminder = 7;
+          const staleDate = new Date(Date.now() - daysBeforeReminder * 24 * 60 * 60 * 1000);
+          
+          const { data: issues } = await github.rest.issues.listForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'open',
+            since: staleDate.toISOString(),
+          });
+
+          const staleIssues = issues.filter(issue => new Date(issue.updated_at) < staleDate);
+
+          for (const issue of staleIssues) {
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: `👋 This issue hasn't been updated in over ${daysBeforeReminder} days. Please check in to see if it is still relevant!`,
+            });
+          }
+
+          if (staleIssues.length === 0) {
+            console.log('No stale issues found. All issues are up-to-date.');
+          } else {
+            console.log(`${staleIssues.length} stale issue(s) found and reminded.`);
+          }

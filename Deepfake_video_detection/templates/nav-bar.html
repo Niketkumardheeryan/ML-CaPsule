@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-lg navbar-light mb-2;">
+
+    <style>
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .navbar {
+            background: linear-gradient(-45deg, #ffd1c4, #ffd6e6, #afeaff, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @media (max-width: 767px) {
+            .navbar {
+                background: linear-gradient(-45deg, #ffad94, #ff92bc, #95e3ff, #8bffe4) !important;
+                background-size: 400% 400% !important;
+                animation: gradientAnimation 15s ease infinite !important;
+            }
+        }
+
+        /* Rest of your existing styles... */
+    </style> 
+
+
+    <a class="navbar-brand" href="#"><h2>DeepFake</h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" style="display: flex">
+                <a class="nav-link" href="{%url 'ml_app:home'%}"><strong><h6>Home</h6></strong></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<style>
+    .nav-link:hover {
+        border: 1px solid rgb(119, 119, 119);
+        border-radius: 10px;
+        padding-left:30px;
+        padding-right:30px;
+        box-shadow: 2px 4px 10px;
+        padding: 10px;
+    }
+    .nav-link{
+        margin-left: 20px;
+        margin-right: 10px;
+        padding-left: 20px;
+        padding-right: 10px;
+
+        padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+        color: var(--color);
+        --_p: var(--s);
+        background:
+            conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+            var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+        transition: .3s linear, color 0s, background-color 0s;
+        outline: var(--b) solid #0000;
+        outline-offset: .6em;
+        font-size: 16px;
+
+        border: 0;
+
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        }
+
+        .button-89:hover,
+        .button-89:focus-visible{
+        --_p: 0px;
+        outline-color: var(--color);
+        outline-offset: .05em;
+        }
+
+        .button-89:active {
+        background: var(--color);
+        color: #fff;
+        }
+</style>
+
+

@@ -1,0 +1,35 @@
+# Dataset Description
+
+State Variables:
+-----------------
+
+- Waste Level: A normalized value between 0 (empty) and 1 (full), indicating how full the waste container is.
+- Time of Day: A random value between 0 and 24, representing the time in hours.
+- Weather Conditions: A random value between 0 and 1 to represent different weather conditions, which could influence waste generation.
+- Distance to Collection Point: A random value between 0 and 10, representing the distance to the waste collection point.
+
+Action Space:
+--------------
+
+Action 0: Wait and do not collect waste.
+Action 1: Collect the waste.
+
+Reward Mechanism:
+------------------
+
+Positive Reward: A reward of +10 is given for collecting waste when the waste level exceeds a certain threshold (timely collection).
+Negative Reward: A reward of -1 for every time step that passes to incentivize efficiency and a penalty of -5 for collecting waste when it’s not yet near the threshold.
+
+Simulated Environment Parameters:
+-----------------------------------
+The waste level increases gradually, with overflow penalties if it exceeds the maximum capacity.
+Episodes run for 20 timesteps, with overflow events tracked for evaluation.
+
+
+Model Performance Tracking:
+-----------------------------
+You also track the following metrics per episode:
+
+Average Reward: The average reward earned in each episode.
+Epsilon Decay: Tracks the exploration rate as it decays over time.
+Overflow Events: Number of times waste overflowed in each episode.

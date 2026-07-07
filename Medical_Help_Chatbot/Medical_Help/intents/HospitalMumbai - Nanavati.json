@@ -1,0 +1,121 @@
+{
+  "id": "94092fa1-ab80-405c-8200-6d9366dfbf16",
+  "parentId": "3eddd178-689e-4be7-9f9f-029c0f2039f3",
+  "rootParentId": "3eddd178-689e-4be7-9f9f-029c0f2039f3",
+  "name": "HospitalMumbai - Nanavati",
+  "auto": true,
+  "contexts": [
+    "details",
+    "HospitalMumbai-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "HospitalMumbai.HospitalMumbai-custom",
+      "affectedContexts": [
+        {
+          "name": "end",
+          "lifespan": 1
+        }
+      ],
+      "parameters": [
+        {
+          "id": "ec26a3b2-a30d-4d52-ad25-4b3393f70155",
+          "name": "mumbaiHospital",
+          "required": false,
+          "dataType": "@mumbaiHospital",
+          "value": "$mumbaiHospital",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Do you want to continued?"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "image",
+                  "rawUrl": "https://doxper.com/wp-content/uploads/2019/03/nanavati_hospital-e1556097416218.jpg",
+                  "accessibilityText": "Dialogflow across platforms"
+                },
+                {
+                  "subtitle": "The iconic healthcare institution of Mumbai, Dr. Balabhai Nanavati Hospital, blessed by Mahatma Gandhi and inaugurated in 1950 by India’s first Prime Minister Jawaharlal Nehru, is now reintroduced as Nanavati Super Speciality Hospital.",
+                  "actionLink": "https://www.nanavatihospital.org/",
+                  "type": "info",
+                  "title": "Nanavati Super Speciality Hospital"
+                },
+                {
+                  "options": [
+                    {
+                      "link": "https://www.divcommpunecovid.com/ccsbeddashboard/hsr?d-3677810-p\u003d2",
+                      "text": "Bed Availability "
+                    },
+                    {
+                      "text": "More Details",
+                      "link": "https://www.nanavatihospital.org/"
+                    }
+                  ],
+                  "type": "chips"
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "text": "Yes"
+                    },
+                    {
+                      "text": "No"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

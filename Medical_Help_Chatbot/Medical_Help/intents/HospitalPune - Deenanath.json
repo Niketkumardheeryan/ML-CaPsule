@@ -1,0 +1,89 @@
+{
+  "id": "0b3975b0-ac79-4083-be11-36f232e756ae",
+  "parentId": "78e76dae-1e2d-4b54-aa85-e4c98274a46e",
+  "rootParentId": "78e76dae-1e2d-4b54-aa85-e4c98274a46e",
+  "name": "HospitalPune - Deenanath",
+  "auto": true,
+  "contexts": [
+    "HospitalPune-followup",
+    "end"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "HospitalPune.HospitalPune-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "728cd97e-4bc5-47ad-b7da-a33f1c9b6fee",
+          "name": "punehospital",
+          "required": false,
+          "dataType": "@punehospital",
+          "value": "$punehospital",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "accessibilityText": "Dialogflow across platforms",
+                  "type": "image",
+                  "rawUrl": "https://content3.jdmagicbox.com/comp/pune/t2/020pxx20.xx20.000924773752.c2t2/catalogue/deenanath-mangeshkar-hospital-and-research-center-erandwane-pune-hospitals-vdhyu.jpg?clr\u003d1f3347"
+                },
+                {
+                  "title": "Dialogflow",
+                  "type": "info",
+                  "subtitle": "Build natural and rich conversational experiences",
+                  "actionLink": "https://cloud.google.com/dialogflow/docs"
+                },
+                {
+                  "options": [
+                    {
+                      "link": "https://www.divcommpunecovid.com/ccsbeddashboard/hsr?d-3677810-p\u003d2",
+                      "text": "Bed Availability "
+                    },
+                    {
+                      "link": "https://www.dmhospital.org/",
+                      "text": "More Details"
+                    }
+                  ],
+                  "type": "chips"
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

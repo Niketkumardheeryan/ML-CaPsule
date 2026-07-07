@@ -1,0 +1,68 @@
+[
+  {
+    "id": "8aeacbb2-f1f6-45b6-b37e-9babc8f7da29",
+    "data": [
+      {
+        "text": "8805520644",
+        "meta": "@sys.number",
+        "alias": "number",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a568be35-1907-455d-859f-bd23932bbd07",
+    "data": [
+      {
+        "text": "10 July",
+        "meta": "@sys.date-time",
+        "alias": "date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "98ccd305-ac62-4536-b712-2ee8b945a7d8",
+    "data": [
+      {
+        "text": "abc@gmail.com",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "fced22e9-1c16-4492-b8fe-7af22d117c72",
+    "data": [
+      {
+        "text": "I am ",
+        "userDefined": false
+      },
+      {
+        "text": "Jyoti",
+        "meta": "@sys.person",
+        "alias": "person",
+        "userDefined": false
+      },
+      {
+        "text": " Rajput",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

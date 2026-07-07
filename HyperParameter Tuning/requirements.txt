@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+scikit-optimize
+hyperopt
+tensorflow
+matplotlib
+seaborn
+scipy
+PyWavelets

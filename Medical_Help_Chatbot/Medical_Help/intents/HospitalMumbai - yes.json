@@ -1,0 +1,40 @@
+{
+  "id": "6ec26f8a-8049-49a6-a265-61a0ac001032",
+  "parentId": "3eddd178-689e-4be7-9f9f-029c0f2039f3",
+  "rootParentId": "3eddd178-689e-4be7-9f9f-029c0f2039f3",
+  "name": "HospitalMumbai - yes",
+  "auto": true,
+  "contexts": [
+    "HospitalMumbai-followup",
+    "end"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "HospitalMumbai.HospitalMumbai-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Thanks for contacting us!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,15 @@
+import pandas as pd
+import numpy as np
+import tensorflow as tf
+import keras
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from keras.models import Sequential
+from keras.layers import Dense
+from sklearn import preprocessing
+from sklearn.preprocessing import StandardScaler
+pip install pydot
+pip install ann_visualizer
+pip install graphviz
+from tensorflow.keras.utils import plot_model

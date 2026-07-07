@@ -1,0 +1,77 @@
+{
+  "id": "3eddd178-689e-4be7-9f9f-029c0f2039f3",
+  "name": "HospitalMumbai",
+  "auto": true,
+  "contexts": [
+    "hospitalmumbai"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "details",
+          "lifespan": 1
+        },
+        {
+          "name": "HospitalMumbai-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "end",
+          "lifespan": 1
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        },
+        {
+          "type": "4",
+          "title": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "text": "Bombay Hospital"
+                    },
+                    {
+                      "text": "Nanavati Hospital"
+                    },
+                    {
+                      "text": "Hiranandani Hospital"
+                    },
+                    {
+                      "text": "Kokilaben Dhirubhai Hospital"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

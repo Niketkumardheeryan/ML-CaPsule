@@ -1,0 +1,450 @@
+Nevada: nevade
+Presbyterian: presbyterian
+RSX: rsx
+Stephen: Steffen
+Susan: susan
+ability: abilitey
+about: abouy
+absorption: absorbtion
+accidentally: accidently
+accommodate: accomodate acommadate
+accord: acord
+acquaintance: aquantance
+acquire: equire
+adultery: adultry
+aggressive: aggresive
+alcohol: alchohol
+alcoholic: alchoholic
+alive: allieve
+all_right: alright
+amateur: amature
+ambivalent: ambivilant
+amorphous: amourfous
+amplification: amification
+anatomy: anonomy anotomy
+announce: annuncio
+announcement: annonsment
+anoint: annoint
+anonymous: anynomous
+appreciate: appresteate
+appreciated: appreceiated
+archetype: archeype
+architecture: aratictature aricticure
+arctic: artic
+asterisk: asterick
+asymmetric: asymetric
+asymptote: asentote
+at: ast
+attentively: atentively
+automatically: autoamlly
+bankrupt: bankrot
+basically: basicly
+battalion: batallion
+beginning: beggining beging bigginging
+behavior: behaviour
+behaviour: behavior
+believe: beleive belive
+benefits: benidifs
+better: metter
+bleat: blait
+boycott: boygot
+broccoli: brocolli
+browse: bbrose
+buoyant: bouyant
+bureau: beauro
+bureaucracy: beaurocracy buracracy burracracy
+bush: buch
+butter: buder budr budter
+button: buton
+by_by: byby
+caller: cauler
+came: gamne
+caveats: cravets
+cemetery: cemetary
+changing: changeing
+cheat: cheet
+circle: cicle circue
+circumstances: circumstaces
+club: clob
+cockamamie: cocamena
+colleague: colleaque
+colloquialism: colloquilism
+colon: coaln
+column: columne
+combo: cumba
+commercials: commerciasl
+commitment: comitmment comittmen comittmend
+committed: commited
+committee: comitte commitee
+companies: companys
+compiler: comiler
+complicated: compicated
+computer: comupter
+congratulations: congradulations
+consensus: concensus
+consistent: consident
+consonant: consident
+constant: contast contastant
+continue: contunie
+contribution: conibation
+coolly: cooly
+coping: copping
+cosmopolitan: cosmoplyton
+court: courst
+crazy: crasy
+credibility: credetability
+critique: criqitue ctitique
+croak: croke
+crucified: crusifed
+crucifixion: crucifiction
+customization: custamisation
+daily: daly
+dangerous: danguages
+dangle: dongle
+decision: disition
+defence: defense
+defense: defence
+defiantly: defenly
+definite: definate
+definitely: definately
+deities: dieties
+dependable: dependeble
+description: descrption descrptn
+desiccate: dessicate
+despair: dispair
+desperate: desparate
+destroy: distroy
+development: developement develpond
+developments: develepment
+dictionary: ductioneery
+dinosaur: dinasaur dinasour
+directly: direcyly
+disagree: diagree
+discuss: discuess
+discussion: disssicion
+dissect: disect
+dissipate: disippate
+distant: destint
+distort: distart
+distract: distarct
+divulge: devulge
+documentation: documtations
+dog: dag doog
+download: doenload
+draft: deaft
+dramatically: dramaticly
+drunkenness: drunkeness
+due: dur
+during: duren
+dynamic: dymatic dynaic
+ecstasy: ecstacy
+efficacy: efficity
+efficient: efficat
+efforts: effots
+elegant: elagent elligit
+embarrass: embarass embaress
+embarrassment: embarassment
+embed: imbed
+encapsulation: encapsualtion
+encyclopedia: encyclapidia encyclopia
+engine: engins
+enhance: enhence
+enlightenment: enligtment
+ennui: ennuui
+enough: enought
+environment: enviroment
+environmental: envireminakl invermeantial
+epitome: epitomy
+error: errara erro
+espresso: expresso
+etiology: eitiology
+evaluation: evaualtion
+eventually: evtually
+everything: evething
+exceed: excede
+except: excpt
+execution: excution
+exercise: excercise
+exhilaration: exhileration
+existence: egsistence existance
+expedient: exspidient
+explicitly: expleyly explity
+extensions: extions
+factorization: factontion
+failure: failer
+fantasia: phantasia
+fantasy: famdasy
+favor: faver
+favour: faver
+fax: faxe
+festival: fistival
+fiery: firey
+flattering: flatterring
+flux: fluk flukse
+foresee: forsee
+frustrating: frustartaion
+function: fuction
+generally: generly
+gotten: gotton
+government: goberment gobernement gobernment
+graceful: gracefull
+gradually: gradualy
+grammar: grammer
+guard: gaurd
+guts: futs
+happily: hapily
+harass: harrass
+have: havne
+height: heighth
+hello: hallo helo herlo
+help: heellp hellp hlp
+higher: higer
+hippopotamus: hippopotamous
+horse: hourse
+housing: houssing
+however: howaver howver
+humanity: humaniti
+hyphen: hifin hifine hiphine hyfin
+hypothesis: hypotathes hypotathese
+hysterical: hystrical
+illegitimate: illegitament
+immanent: immenant
+immediately: imediaetly
+implements: implemtes
+in_case: incase
+in_depth: indepth
+in_fact: infact
+inadvertent: inadvertant
+incomplete: incompleet incomplot
+inconvenience: inconvience
+inconvenient: inconvenant
+indent: ident
+independent: independant independenent indepnends
+indispensable: indispensible
+inefficient: inefficite
+infamy: imfamy
+influential: influencial
+initial: inital
+initialized: initinized initized
+inoculate: innoculate
+insidious: incedious
+insistent: insistant insistenet
+installation: instulation
+intelligent: intealignt intejilent intelegent intelegnent intelejent inteligent intelignt intellagant intellegent intellegint intellgnt
+interested: intertes intertesd
+interface: inerface
+international: internation
+interpret: interpretate
+interpreter: interpretter
+inventions: enventions
+irresistible: irresistable
+irritable: irritible
+isotope: isotrop
+iterate: interate
+john: johhn
+judgement: judgment
+judgment: judgement
+kilometer: lilometer
+kilometre: lilometer
+kipper: kippur
+knowing: knawing
+laser: luser
+latest: latext
+layer: lloyer
+leave: leasve
+leisure: lesure
+lesion: liasion
+liaison: liason
+library: libary
+likely: likly
+liquefy: liquify
+losing: lossing
+madness: maddness
+maintenance: maintanence
+majority: majaerly majoraly
+marshal: marshall
+masks: maks
+maximum: maxium
+media: midia
+memento: momento
+memory: meory
+metaphysical: pataphysical
+mike: mic
+millennium: millenium
+minimum: minum
+minuscule: miniscule
+miscellaneous: misilous
+mischievous: mischievious
+monkey: minkay monkay
+more: mroe
+mosaic: mosaik
+most_likely: mostlikely
+mouser: mousr
+moving: oving
+naive: nieve
+necessary: neccessary necesary necesser
+neighbor: neighbour
+neighbour: neighbor
+nickelodeon: nickleodeon
+niece: neice
+no_one: noone
+not_in: notin
+noticeably: noticably
+nuzzled: nozled
+obfuscate: obsfuscate
+objects: objectsion
+occasion: ocassion
+occasionally: accosinly occusionaly
+occupied: occuppied
+occurrence: occurence
+octogenarian: octagenarian
+old: olf
+opossum: opposim
+organize: organise organiz
+orient: orientate
+oscilloscope: oscilascope
+parameter: parametic
+parameters: paramers paranets
+particular: partrucal
+pattern: patten
+peremptory: preemptory
+permissible: permissable
+permission: permition
+permissive: permmasivie
+phenomenal: phenominal
+phone: fone
+phonetic: funetik
+picturesque: picaresque
+playwright: playwrite
+police: pollice
+politic: politict
+politician: polation
+polygamy: poligamy
+polypropylene: polypropalene
+portray: protray
+possible: possable
+practical: practicle
+pragmatism: pragmaticism
+preceding: preceeding
+precision: precion precios
+prefixed: prefixt
+prefixes: prefices
+prerogative: perogative
+privilege: privielage priviledge
+problematic: proplematic
+procedures: proceedures
+pronunciation: pronensiation pronisation pronounciation
+properly: properally
+psychologist: pscolgst psicolagest psycolagest sicolagest
+pursue: persue presue
+pursued: presued
+quiz: quoz
+raccoon: reccona
+radius: radious
+rampantly: ramplily
+rank: wrank
+receive: recieve
+recognize: reconise
+recommend: reccomend
+rectangle: rectangeles
+recurring: reoccurring
+redesign: redign
+regardless: irregardless
+repetition: repitition
+replacement: replasments
+resemblance: reseblence
+respect: respct
+respectfully: respecally
+responsible: reposable
+room: roon
+roughly: rought
+rudimentary: rudemtry
+running: runnung
+sacrilegious: sacreligious
+safely: saftly
+salute: salut
+satisfy: satifly
+scrabble: scrabdle
+section: secion
+segments: segements
+seize: sieze
+sense: sence
+separate: seperate
+several: seferal
+sherbet: sherbert
+signal: singal
+simplicity: cimplicity simpfilty
+simply: simplye
+site: sitte
+situation: situration
+smile: smil
+sneaked: snuck
+sometimes: sometmes
+sonic: soonec
+specifically: specificialy
+spell: spel
+spoke: spoak
+sponsored: sponsered
+steering: stering
+stomach: stumach
+straitjacket: straightjacket
+student: stutent
+style_guide: styleguide
+subpoena: subpena
+subscribed: subjecribed
+substitutions: subisitions substations
+sugar: suger
+superfluous: superfulous
+supersede: supercede
+swimwear: swim_wear
+sylph: slyph
+synchronization: syncorization
+tattoos: tattos
+team: tem
+technically: techniquely
+test: tesst ttest
+tests: tets
+than_or: thanot
+that: taht
+the: teh thw
+themselves: theirselves
+theoretical: teridical theridically
+theoretically: thredically
+this: ths
+throughout: thruout
+titillate: titalate
+tomorrow: tommorrow tomorow
+tough: taff
+tragedy: tradegy
+trouble: trubbel
+tunnel_like: tunnellike
+turned: tured
+two: teo
+tyranny: tyrrany
+unconscious: unconscience
+unconstitutional: unconisitional
+under_ladder: underladder
+unfortunately: unformanlly unfortally unfortunently
+unintelligible: unentelegible
+unnatural: unatourral unaturral unnaturral
+up_cast: upcast
+uranium: uranisium
+utmost: upmost
+version: verison
+vinaigrette: vinagarette
+volley: volye
+voluntarism: volunteerism
+voluptuous: volumptuous
+wait: waite
+want: mant
+ward: whard
+warlord: warloord
+wasting: wadting
+weaken: wicken
+weird: wierd
+what: whaaat
+wimp: whimp
+won't: wan't
+writing: writting
+yield: yeild
+your: youe

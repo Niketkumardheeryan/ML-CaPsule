@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fb1044c8-f8c4-4588-89b5-72f899225181",
+    "data": [
+      {
+        "text": "Bombay hospital",
+        "meta": "@mumbaiHospital",
+        "alias": "mumbaiHospital",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

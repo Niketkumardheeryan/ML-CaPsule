@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Make it compatible to mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Will your Loan get approved? Check Now</title>
+  
+</head>
+
+<body style="background: #000;">
+ <div class="login">
+	<h1 style="color:Violet;">Will your Loan get approved? Please Check Now</h1>
+
+     <!-- Action is where the data is sent. In our case, predict page.
+     If action is omitted, it assumed to be the current page -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="gender" placeholder="gender" required="required" /><br>
+        <input type="text" name="married" placeholder="married" required="required" /><p>
+        <input type="text" name="edu" placeholder="edu" required="required" /><p>
+        <input type="text" name="self-employed" placeholder="self-employed" required="required" /><p>
+        <input type="text" name="applicant income" placeholder="applicant income" required="required" /><p>
+        <input type="text" name="coapplicant income" placeholder=coapplicant income" required="required" /><p>
+        <input type="text" name="loan amonut" placeholder="loan amount" required="required" /><p>
+        <input type="text" name="loan term" placeholder="loan term" required="required" /><p>
+        <input type="text" name="credit history" placeholder="credit history" required="required" /><p>
+        <input type="text" name="property" placeholder="property" required="required" /><p>
+        <input type="text" name="dep_0" placeholder="dep_0" required="required" /><p>
+        <input type="text" name="dep_1" placeholder="dep_1" required="required" /><p>
+        <input type="text" name="dep_2" placeholder="dep_2" required="required" /><p>
+        <input type="text" name="dep_3+" placeholder="dep_3+" required="required" /><p>
+
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict if you'll get a loan</button></p>
+    </form>
+
+   <br>
+   <br>
+   <h4 style="color:Violet;">
+   {{ prediction_text }} </h4>
+
+ </div>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+name: Auto Comment on PR Merge
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  comment:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Add Comment to Merged PR
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        curl -X POST \
+          -H "Authorization: token $GITHUB_TOKEN" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"body":"🎉 Your pull request has been successfully merged! 🎉 Thank you for your contribution to our project. Your efforts are greatly appreciated. Keep up the fantastic work! 🚀"}' \
+          "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments"

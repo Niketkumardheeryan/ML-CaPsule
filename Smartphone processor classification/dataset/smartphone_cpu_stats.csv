@@ -1,0 +1,126 @@
+﻿rank,company,cpuName,geekbenchSingle,geekbenchMulti,antutu9,coreCount,coreConfig,clockSpeed,gpu
+1,Apple,A15 Bionic,1727,4688,794346,6, (2+4),3223,Apple GPU
+2,MediaTek,Dimensity 9000,1269,4267,1017817,8, (1+3+4),3050,Mali-G710
+3,Qualcomm,Snapdragon 8 Gen 1,1213,3765,1028349,8, (1+3+4),3000,Adreno 730
+4,Apple,A14 Bionic,1581,4093,730211,6, (2+4),3100,Apple GPU
+5,Qualcomm,Snapdragon 888 Plus,1162,3626,838764,8, (1+3+4),2995,Adreno 660
+6,Samsung,Exynos 2200,1146,3534,963986,8, (1+3+4),2800,Samsung Xclipse 920
+7,Qualcomm,Snapdragon 888,1120,3673,792308,8, (1+3+4),2840,Adreno 660
+8,MediaTek,Dimensity 8100,915,3775,780778,8, (4+4),2850,Mali-G610 MC6
+9,Google,Google Tensor,1038,2845,717527,8, (2+2+4),2800,Mali-G78 MP20
+10,HiSilicon,Kirin 9000,1039,3677,761270,8, (1+3+4),3130,Mali-G78 MP24
+11,Samsung,Exynos 2100,1082,3580,747506,8, (1+3+4),2900,Mali-G78 MP14
+12,Apple,A13 Bionic,1321,3494,604579,6, (2+4),2660,Apple A13 Bionic GPU
+13,Qualcomm,Snapdragon 870,993,3371,692361,8, (1+3+4),3200,Adreno 650
+14,HiSilicon,Kirin 9000E,1060,3741,726361,8, (1+3+4),3130,Mali-G78 MP22
+15,Samsung,Exynos 1080,831,2902,699942,8, (1+3+4),2800,Mali-G78 MP10
+16,Qualcomm,Snapdragon 865 Plus,913,3268,701680,8, (1+3+4),3100,Adreno 650
+17,MediaTek,Dimensity 1200,972,3304,668930,8, (1+3+4),3000,Mali-G77 MC9
+18,Qualcomm,Snapdragon 865,929,3418,648129,8, (1+3+4),2840,Adreno 650
+19,MediaTek,Dimensity 1100,661,2486,664145,8, (4+4),2600,Mali-G77 MC9
+20,Samsung,Exynos 990,938,2722,599189,8, (2+2+4),2730,Mali-G77 MP11
+21,MediaTek,Dimensity 1000 Plus,788,2880,594965,8, (4+4),2600,Mali-G77 MC9
+22,Apple,A12 Bionic,1116,2908,527150,6, (2+4),2490,Apple A12 Bionic GPU
+23,Qualcomm,Snapdragon 860,732,2564,564604,8, (1+3+4),2960,Adreno 640
+24,Qualcomm,Snapdragon 855 Plus,775,2773,538497,8, (1+3+4),2960,Adreno 640
+25,HiSilicon,Kirin 990 (5G),767,3051,556879,8, (2+2+4),2860,Mali G76 MP16
+26,Qualcomm,Snapdragon 778G Plus,815,2959,543604,8, (1+3+4),2500,Adreno 642L
+27,Qualcomm,Snapdragon 780G,799,2886,528891,8, (1+3+4),2400,Adreno 642
+28,Qualcomm,Snapdragon 855,738,2595,511055,8, (1+3+4),2840,Adreno 640
+29,Qualcomm,Snapdragon 778G,770,2806,526563,8, (1+3+4),2400,Adreno 642L
+30,HiSilicon,Kirin 990 (4G),739,3041,494746,8, (2+2+4),2860,Mali G76 MP16
+31,Samsung,Exynos 9825,766,2383,503509,8, (2+2+4),2730,Mali G76 MP12
+32,MediaTek,Dimensity 920,783,2582,487320,8, (2+6),2500,Mali-G68 MC4
+33,MediaTek,Dimensity 1000,675,2865,441325,8, (4+4),2600,Mali-G77 MP9
+34,Samsung,Exynos 9820,828,2289,501815,8, (2+2+4),2700,Mali G76 MP12
+35,MediaTek,Dimensity 1000L,648,2496,428299,8, (4+4),2200,Mali-G77 MC9
+36,HiSilicon,Kirin 985,685,2559,464593,8, (1+3+4),2580,Mali-G77 MP8
+37,HiSilicon,Kirin 980,691,2459,482411,8, (2+2+4),2600,Mali G76 MP10
+38,Samsung,Exynos 1280,720,1873,414723,8, (2+6),2400,Mali-G68
+39,HiSilicon,Kirin 820,639,2448,445090,8, (1+3+4),2360,Mali-G57 MP6
+40,MediaTek,Dimensity 820,517,2374,449045,8, (4+4),2600,Mali-G57 MC5
+41,MediaTek,Dimensity 900,701,2137,421553,8, (2+6),2400,Mali-G68 MC4
+42,Qualcomm,Snapdragon 768G,701,1982,441930,8, (1+1+6),2800,Adreno 620
+43,Qualcomm,Snapdragon 845,506,2180,406115,8, (4+4),2800,Adreno 630
+44,Qualcomm,Snapdragon 695,691,1997,401626,8, (2+6),2200,Adreno 619
+45,Apple,A11 Bionic,916,2324,381419,6, (2+4),2390,Apple GPU
+46,Samsung,Exynos 9810,676,2004,412243,8, (4+4),2900,Mali-G72MP18
+47,Samsung,Exynos 980,695,1847,383525,8, (2+6),2200,Mali G76 MP5
+48,Qualcomm,Snapdragon 765G,587,1790,375497,8, (1+1+6),2400,Adreno 620
+49,MediaTek,Dimensity 800U,609,1819,389068,8, (2+6),2400,Mali-G57 MC3
+50,Qualcomm,Snapdragon 765,590,1895,337444,8, (1+1+6),2300,Adreno 620
+51,MediaTek,Dimensity 810,622,1894,372728,8, (2+6),2400,Mali-G57 MC2
+52,Qualcomm,Snapdragon 750G,656,1974,387846,8, (2+6),2200,Adreno 619
+53,HiSilicon,Kirin 810,595,1900,368674,8, (2+6),2270,Mali-G52 MP6
+54,MediaTek,Dimensity 800,507,1891,323904,8, (4+4),2000,Mali-G57 MC4
+55,Qualcomm,Snapdragon 732G,565,1781,345820,8, (2+6),2300,Adreno 618
+56,Samsung,Exynos 880,655,1804,316057,8, (2+6),2000,Mali G76 MP5
+57,Qualcomm,Snapdragon 480 Plus,533,1590,344096,8, (2+6),2200,Adreno 619
+58,MediaTek,Dimensity 700,563,1722,335210,8, (2+6),2200,Mali-G57 MC2
+59,MediaTek,Dimensity 720,525,1713,343466,8, (2+6),2000,Mali-G57 MC3
+60,Qualcomm,Snapdragon 690,605,1829,344409,8, (2+6),2000,Adreno 619L
+61,Qualcomm,Snapdragon 720G,567,1684,336689,8, (2+6),2300,Adreno 618
+62,MediaTek,Helio G90,509,1630,339645,8, (2+6),2000,Mali-G76 MC4
+63,Qualcomm,Snapdragon 730G,537,1719,331377,8, (2+6),2200,Adreno 618
+64,MediaTek,Helio G96,537,1869,330903,8, (2+6),2050,Mali G57 MC2
+65,MediaTek,Helio G95,511,1600,336924,8, (2+6),2050,Mali-G76 3EEMC4
+66,Qualcomm,Snapdragon 835,386,1710,314279,8, (4+4),2450,Adreno 540
+67,Qualcomm,Snapdragon 730,537,1760,318361,8, (2+6),2200,Adreno 618
+68,MediaTek,Helio G90T,494,1618,329108,8, (2+6),2050,Mali-G76 MC4
+69,Qualcomm,Snapdragon 480,508,1661,285291,8, (2+6),2000,Adreno 619
+70,Apple,A10 Fusion,776,1397,298838,4, (2+2),2340,PowerVR GT7600
+71,Qualcomm,Snapdragon 680,373,1548,275397,8, (4+4),2400,Adreno 610
+72,HiSilicon,Kirin 970,385,1361,321644,8, (4+4),2360,Mali G72 MP12
+73,Samsung,Exynos 8895,377,1552,287444,8, (4+4),2300,Mali-G71 MP20
+74,MediaTek,Helio P95,408,1502,274746,8, (2+6),2200,PowerVR GM9446
+75,Qualcomm,Snapdragon 712,399,1496,278912,8, (2+6),2300,Adreno 616
+76,Qualcomm,Snapdragon 678,526,1534,281383,8, (2+6),2200,Adreno 612
+77,Qualcomm,Snapdragon 710,386,1444,261027,8, (2+6),2200,Adreno 616
+78,Unisoc,Tiger T618,393,1327,250989,8, (2+6),2000,ARM Mali-G52 MP2
+79,Qualcomm,Snapdragon 820,317,799,263967,4, (2+2),2200,Adreno 530
+80,Qualcomm,Snapdragon 675,420,1375,260078,8, (2+6),2000,Adreno 612
+81,MediaTek,Helio P90,391,1473,252818,8, (2+6),2200,PowerVR GM9446
+82,MediaTek,Helio G88,362,1260,230129,8, (2+6),2000,Mali-G52 MC2
+83,MediaTek,Helio G80,350,1285,230017,8, (2+6),2000,Mali-G52 MP2
+84,HiSilicon,Kirin 960,377,1579,251942,8, (4+4),2360,Mali-G71 MP8
+85,MediaTek,Helio G85,358,1268,228942,8, (2+6),2000,Mali-G52 MP2
+86,Samsung,Exynos 9611,323,1203,228280,8, (4+4),2300,Mali-G72 MP3
+87,Samsung,Exynos 9609,329,1253,211472,8, (4+4),2200,Mali-G72 MP3
+88,Qualcomm,Snapdragon 670,343,1320,216423,8, (2+6),2000,Adreno 615
+89,Samsung,Exynos 8890,367,1304,232038,8, (4+4),2300,Mali-T880 MP12
+90,Unisoc,Tiger T616,377,1391,224095,8, (2+6),2000,Mali-G57 MP1
+91,Unisoc,Tiger T700,350,1281,218848,8, (2+6),1800,ARM Mali-G52 MC2
+92,Qualcomm,Snapdragon 662,314,1393,205946,8, (4+4),2000,Adreno 610
+93,Apple,Apple A9,526,968,204422,2, (2),1850,PowerVR GT7600
+94,Qualcomm,Snapdragon 665,314,1345,195538,8, (4+4),2000,Adreno 610
+95,MediaTek,Helio G70,391,1300,205296,8, (2+6),2000,Mali-G52 2EEMC2
+96,HiSilicon,Kirin 710F,324,1328,207028,8, (4+4),2200,Mali-G51 MP4
+97,Samsung,Exynos 9610,338,1139,203208,8, (4+4),2300,Mali-G72 MP3
+98,HiSilicon,Kirin 710A,318,1145,196708,8, (4+4),2000,Mali-G51
+99,Samsung,Exynos 850,160,941,143063,8, (8),2000,Mali-G52 MP1
+100,Qualcomm,Snapdragon 460,253,1144,161885,8, (4+4),1800,Adreno 610
+101,MediaTek,Helio P65,352,1274,196163,8, (2+6),2000,Mali-G52 MC2
+102,MediaTek,Helio P70,297,1394,179665,8, (4+4),2100,Mali-G72 MP3
+103,HiSilicon,Kirin 710,326,1271,195439,8, (4+4),2200,Mali-G51 MP4
+104,Qualcomm,Snapdragon 821,338,742,196542,4, (2+2),2342,Adreno 530
+105,Qualcomm,Snapdragon 660,334,1306,207386,8, (4+4),2200,Adreno 512
+106,Unisoc,Unisoc T606,311,1171,178069,8, (2+6),1600,Mali-G57 MP1
+107,Unisoc,Tiger T610,350,1321,192642,8, (2+6),1820,ARM Mali G52 MP2
+108,MediaTek,Helio P60,272,1121,185821,8, (4+4),2000,Mali-G72 MP3
+109,Samsung,Exynos 7904,271,1006,149013,8, (2+6),1800,Mali-G71 MP2
+110,Qualcomm,Snapdragon 636,274,1120,171003,8, (4+4),1800,Adreno 509
+111,Qualcomm,Snapdragon 632,263,1042,147457,8, (4+4),1800,Adreno 506
+112,MediaTek,Helio G35,173,679,107226,8, (8),2300,IMG PowerVR GE8320
+113,Samsung,Exynos 7885,317,1033,160366,8, (2+6),2200,Mali-G71 MP2
+114,HiSilicon,Kirin 950,336,1267,134777,8, (4+4),2400,Mali-T880 MP4
+115,MediaTek,Helio P35,169,965,99442,8, (4+4),2300,IMG PowerVR GE8320
+116,MediaTek,Helio A25,137,754,113937,8, (4+4),1800,PowerVR GE8320
+117,MediaTek,Helio G25,135,471,92753,8, (8),2000,IMG PowerVR GE8320
+118,Qualcomm,Snapdragon 630,173,977,133070,8, (4+4),2200,Adreno 508
+119,Samsung,Exynos 7872,293,770,143056,6, (2+4),2000,Mali-G71 MP1
+120,HiSilicon,Kirin 955,340,1086,139287,8, (4+4),2500,ARM Mali-T880 MP4
+121,MediaTek,Helio P23,153,851,109039,8, (4+4),2300,Mali-G71 MP2
+122,Samsung,Exynos 7884B,246,894,103821,8, (2+6),1560,Mali-G71 MP2
+123,HiSilicon,Kirin 659,193,878,120426,8, (4+4),2360,Mali-T830 MP2
+124,Samsung,Exynos 7420,259,873,95445,8, (4+4),2100,Mali-T760 MP8
+125,Qualcomm,Snapdragon 439,177,805,102154,8, (4+4),2000,Adreno 505

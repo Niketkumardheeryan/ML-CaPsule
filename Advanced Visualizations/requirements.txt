@@ -1,0 +1,3 @@
+Plotly: https://plotly.com/python/
+WordCloud: https://www.python-graph-gallery.com/wordcloud/
+pandas: https://pandas.pydata.org/
