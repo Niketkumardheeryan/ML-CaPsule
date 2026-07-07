@@ -1,0 +1,16 @@
+# Ignore dataset folders and files
+train/
+valid/
+test/
+test copy/
+Playing Cards..../
+Playing Cards.v4-fastmodel-resized640-aug3x.yolov8.zip
+data.yaml
+
+# Ignore YOLO cache and heavy run folders
+runs/
+*.cache
+__pycache__/
+
+# (Optional) You can keep the 'best.pt' model if it is under 25MB, 
+# otherwise you should ignore it too or host it on Google Drive.
