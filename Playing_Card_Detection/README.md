@@ -1,15 +1,16 @@
-# 🃏 Real-Time Playing Card Detection (YOLOv8)
+# Real-Time Playing Card Detection
 
-## 📌 Project Overview
-This project features a custom-trained **YOLOv8 Nano** object detection model capable of identifying standard playing cards in real-time through a webcam feed. It was trained on a comprehensive dataset of over 24,000 images to accurately classify cards (e.g., Ace of Spades, King of Hearts) under various lighting conditions and angles.
+## Dataset
+- **Source:** Roboflow Playing Cards Dataset
+- **Link:** `https://drive.google.com/file/d/14_F53jvnKx2CCRty_VEByWcdH_q85iWd/view?usp=drive_link`
 
-## 🚀 Features
-- **Live Webcam Inference:** Detects cards instantly using `detect.py`.
-- **High Accuracy:** Trained over 5 epochs specifically on playing card datasets.
-- **Lightweight:** Uses the YOLOv8 Nano (`yolov8n.pt`) architecture for fast processing on standard hardware.
+This project uses a custom-trained YOLOv8 Nano model for real-time playing card detection.
 
-## 💻 How to Run Locally
-1. Clone this repository and navigate to this folder.
-2. Install the required dependencies:
-   ```bash
-   pip install ultralytics opencv-python
+## Tech Stack
+- Python
+- Ultralytics (YOLOv8)
+- OpenCV
+
+## Usage
+1. Open `playing_card_detection.ipynb`.
+2. Run all cells to install dependencies and execute the model logic.
