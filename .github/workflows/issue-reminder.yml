@@ -43,3 +43,165 @@ jobs:
           } else {
             console.log(`${staleIssues.length} stale issue(s) found and reminded.`);
           }
+
+  stale-reviewed-pr-lifecycle:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+      - name: Warn 21 days after reviewed PR inactivity + Close at 30 days
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const WARNING_LABEL = 'stale-warning-21d';
+            const NO_ACTIVITY_LABEL = 'noActivity';
+
+            const warningAfterDays = 21;
+            const closeAfterDays = 30;
+
+            const now = Date.now();
+
+            const warningMs = warningAfterDays * 24 * 60 * 60 * 1000;
+            const closeMs = closeAfterDays * 24 * 60 * 60 * 1000;
+
+            const warningThresholdText = `${warningAfterDays} day(s)`;
+            const closeThresholdText = `${closeAfterDays} day(s)`;
+            const closeInText = `${Math.max(0, closeAfterDays - warningAfterDays)} day(s)`;
+
+            const closeInMs = Math.max(0, closeAfterDays - warningAfterDays) * 24 * 60 * 60 * 1000;
+
+            async function ensureLabel(name, color = 'ededed') {
+              try {
+                await github.rest.issues.getLabel({ owner, repo, name });
+              } catch (e) {
+                if (e.status === 404) {
+                  await github.rest.issues.createLabel({ owner, repo, name, color });
+                } else {
+                  throw e;
+                }
+              }
+            }
+
+            await ensureLabel(WARNING_LABEL, 'f9d0c4');
+            await ensureLabel(NO_ACTIVITY_LABEL, 'cccccc');
+
+            const prs = await github.paginate(github.rest.pulls.list, {
+              owner,
+              repo,
+              state: 'open',
+              per_page: 100
+            });
+
+            for (const pr of prs) {
+              const prNumber = pr.number;
+
+              const reviews = await github.paginate(github.rest.pulls.listReviews, {
+                owner,
+                repo,
+                pull_number: prNumber,
+                per_page: 100
+              });
+
+              let hasMaintainerReview = false;
+              for (const r of reviews) {
+                if (!r.state || r.state === 'PENDING') continue;
+
+                const assoc = r.author_association;
+                if (assoc === 'OWNER' || assoc === 'MEMBER' || assoc === 'COLLABORATOR') {
+                  hasMaintainerReview = true;
+                  break;
+                }
+              }
+
+              const lastUpdated = new Date(pr.updated_at).getTime();
+              const ageMs = now - lastUpdated;
+
+              const labels = (pr.labels || []).map(l => l.name);
+
+              // Warn at 21d (reviewed + inactivity)
+              if (hasMaintainerReview && ageMs >= warningMs && ageMs < closeMs) {
+                if (!labels.includes(WARNING_LABEL)) {
+                  const warningBody = `This PR has been marked as stale due to ${warningThresholdText} of inactivity after a review. It will be closed in ${closeInText} if there are no further updates.`;
+
+                  await github.rest.issues.createComment({
+                    owner,
+                    repo,
+                    issue_number: prNumber,
+                    body: warningBody
+                  });
+
+                  await github.rest.issues.addLabels({
+                    owner,
+                    repo,
+                    issue_number: prNumber,
+                    labels: [WARNING_LABEL]
+                  });
+                }
+              }
+
+              // Close at 30d (only after warning)
+              if (pr.state === 'open' && labels.includes(WARNING_LABEL) && !labels.includes(NO_ACTIVITY_LABEL)) {
+                const comments = await github.paginate(github.rest.issues.listComments, {
+                  owner,
+                  repo,
+                  issue_number: prNumber,
+                  per_page: 100
+                });
+
+                const warningComment = comments
+                  .filter(c => c && c.user)
+                  .find(c => (c.body || '').includes('This PR has been marked as stale due to') && (c.body || '').includes('will be closed in'));
+
+                const warningTimestamp = warningComment ? new Date(warningComment.created_at).getTime() : null;
+
+                if (warningTimestamp !== null) {
+                  const timeSinceWarningMs = now - warningTimestamp;
+                  const shouldClose = timeSinceWarningMs >= closeInMs;
+
+                  if (shouldClose) {
+                    const issue = await github.rest.issues.get({ owner, repo, issue_number: prNumber });
+                    const assignees = issue.data.assignees || [];
+                    const prAuthor = pr.user && pr.user.login;
+
+                    if (prAuthor && assignees.some(a => a.login === prAuthor)) {
+                      await github.rest.issues.removeAssignees({
+                        owner,
+                        repo,
+                        issue_number: prNumber,
+                        assignees: [prAuthor]
+                      });
+                    }
+
+                    const finalComment = `This PR has been marked as abandoned due to ${closeThresholdText} of inactivity. Closing it now.`;
+
+                    await github.rest.issues.createComment({
+                      owner,
+                      repo,
+                      issue_number: prNumber,
+                      body: finalComment
+                    });
+
+                    await github.rest.issues.addLabels({
+                      owner,
+                      repo,
+                      issue_number: prNumber,
+                      labels: [NO_ACTIVITY_LABEL]
+                    });
+
+                    await github.rest.pulls.update({
+                      owner,
+                      repo,
+                      pull_number: prNumber,
+                      state: 'closed'
+                    });
+                  }
+                }
+              }
+            }
+
