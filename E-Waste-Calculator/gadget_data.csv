@@ -3,3 +3,9 @@ SmartPhone,Plastic_Glass,3,8
 Laptop,Metal_Plastic,5,7
 Keyboard,Plastic,4,3
 Monitor,Plastic_Glass,6,6
+Mouse,Plastic,3,2
+Printer,Plastic_Metal,4,5
+Tablet,Plastic_Glass,3,6
+Camera,Metal_Glass,7,8
+Headphones,Plastic,2,3
+Router,Plastic,5,4
