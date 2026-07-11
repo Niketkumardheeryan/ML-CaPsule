@@ -35,7 +35,15 @@ Farmers often struggle to choose the right crop for their land given varying soi
 | rainfall | Rainfall in mm |
 | label | Recommended crop (target) |
 
-The dataset (`dataset/Crop_recommendation.csv`) is included in this folder for convenience.
+The dataset isn't committed to the repo directly — it's hosted on Google Drive and downloaded automatically when the notebook runs, using `gdown`:
+
+```python
+import gdown
+
+file_id = "YOUR_FILE_ID_HERE"
+url = f"https://drive.google.com/uc?id={file_id}"
+gdown.download(url, "Crop_recommendation.csv", quiet=False)
+```
 
 ## 📈 Results
 
@@ -61,8 +69,6 @@ Crop Recommendation System/
 ├── README.md
 ├── requirements.txt
 ├── Crop_Recommendation_System.ipynb   # main notebook: EDA -> training -> evaluation -> prediction
-├── dataset/
-│   └── Crop_recommendation.csv
 └── model/                             # generated after running the notebook
     ├── crop_recommendation_model.pkl
     ├── label_encoder.pkl
