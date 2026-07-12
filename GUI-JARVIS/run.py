@@ -19,6 +19,8 @@ from geopy import Nominatim
 from pip._vendor import requests
 from bs4 import BeautifulSoup as soup
 from yahoo_fin import stock_info
+from utils.load_credentials import load_credential
+
 
 
 flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint)
@@ -227,7 +229,7 @@ class mainT(QThread):
                     pass
 
             elif ('weather' in self.query or 'temperature' in self.query):
-                api_key = "54b1b9aeefe8b01a10b622d47828ef3d"
+                api_key = load_credential("JARVIS_API_KEY")
                 base_url = "http://api.openweathermap.org/data/2.5/weather?"
                 speak("which city sir")
                 city_name = self.JTT()

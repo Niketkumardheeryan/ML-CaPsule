@@ -1,9 +1,9 @@
 const vscode = require('vscode');
 const axios = require('axios');
 
-const TOGETHER_AI_API_KEY = 'your_actual_api_key_here';
-const GROQ_AI_API_KEY = 'your_actual_api_key_here';
-const LLAMA_API_KEY = 'your_actual_api_key_here';
+const TOGETHER_AI_API_KEY = process.env.TOGETHER_AI_API_KEY;
+const GROQ_AI_API_KEY = process.env.GROQ_AI_API_KEY;
+const LLAMA_API_KEY = process.env.LLAMA_API_KEY;
 
 async function getTogetherAIResponse(prompt) {
     const response = await axios.post('https://api.together.ai/v1/text/completion', {

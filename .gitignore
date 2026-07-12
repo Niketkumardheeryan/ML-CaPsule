@@ -174,3 +174,4 @@ weights/
 *.swp
 .vscode/
 *.iml
+!.env.example

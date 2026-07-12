@@ -1,8 +1,9 @@
 import googleapiclient.discovery
 from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer
 import re
+from utils.load_credentials import load_credential
 # YouTube API credentials
-api_key = 'Your- API- Key'
+api_key = load_credential("YOUTUBE_API_KEY")
 
 
 # Initialize emotion classifier
