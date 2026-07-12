@@ -9,15 +9,16 @@ This project detects whether a person is wearing a face mask or not, using a Con
 There was no beginner-friendly yet practical Computer Vision project in this repo demonstrating real-time face detection combined with image classification. This project fills that gap by showing how CNNs and OpenCV can be combined for a real-world use case: mask detection.
 
 ## 📁 Folder Structure
-
+```
 Face_Mask_Detection/
-├── Face_Mask_Detection.ipynb   # Main notebook: data loading, training, evaluation
-├── webcam_detection.py         # Real-time webcam mask detection script
-├── README.md                   # Project documentation
-├── training_results.png        # Accuracy/loss plots
-├── sample_predictions.png      # Sample model predictions
-├── dataset/                    # with_mask / without_mask images (see Dataset section)
-└── model/                      # Saved trained model (mask_detector.h5)
+├── Face_Mask_Detection.ipynb
+├── webcam_detection.py
+├── README.md
+├── training_results.png
+├── sample_predictions.png
+├── dataset/
+└── model/
+```
 
 ## 🛠️ Tech Stack
 
@@ -47,7 +48,7 @@ A CNN built from scratch (not transfer learning) consisting of:
 - Fully connected Dense layers
 - Final Dense layer with sigmoid/softmax activation for binary classification (`with_mask` / `without_mask`)
 
-## 🚀 How to Run
+## 🚀 Usage
 
 ### 1. Install dependencies
 ```bash
