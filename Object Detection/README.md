@@ -36,4 +36,4 @@ This project analyzes over a 5k images to detect these classes Pistol, Smartphon
 4. Once you have understood that you can go through the app.py to understand the backend of dashboard
 5. Then run `streamlit run app.py` in terminal to start the dashboard
 6. You will land into a dashboard like this
-![Dashboard](https://kommodo.ai/i/BQUFFVxdP2oX4BAQAZEf)
+![Dashboard](./dashboard.png)
