@@ -1,6 +1,13 @@
+import os
+import sys
 import googleapiclient.discovery
 from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer
 import re
+
+_repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if _repo_root not in sys.path:
+    sys.path.insert(0, _repo_root)
+
 from utils.load_credentials import load_credential
 # YouTube API credentials
 api_key = load_credential("YOUTUBE_API_KEY")

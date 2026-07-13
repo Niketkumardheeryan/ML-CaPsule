@@ -19,6 +19,11 @@ from geopy import Nominatim
 from pip._vendor import requests
 from bs4 import BeautifulSoup as soup
 from yahoo_fin import stock_info
+# Allow importing repo-root utils when running this script directly from GUI-JARVIS/
+_repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if _repo_root not in sys.path:
+    sys.path.insert(0, _repo_root)
+
 from utils.load_credentials import load_credential
 
 
@@ -229,7 +234,11 @@ class mainT(QThread):
                     pass
 
             elif ('weather' in self.query or 'temperature' in self.query):
-                api_key = load_credential("JARVIS_API_KEY")
+                try:
+                    api_key = load_credential("OPENWEATHERMAP_API_KEY")
+                except KeyError as e:
+                    speak(str(e))
+                    continue
                 base_url = "http://api.openweathermap.org/data/2.5/weather?"
                 speak("which city sir")
                 city_name = self.JTT()

@@ -1,8 +1,16 @@
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
 
+def _load_dotenv() -> None:
+    try:
+        from dotenv import find_dotenv, load_dotenv
+    except ImportError:
+        return
+
+    load_dotenv(find_dotenv())
+
+
+_load_dotenv()
 def load_credential(key_name: str) -> str:
     """
     Safely retrieves a credential from environment variables or Google Colab userdata.
