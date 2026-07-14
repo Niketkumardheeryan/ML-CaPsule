@@ -2,6 +2,10 @@
 
 An end-to-end PyTorch implementation for classifying human emotions from speech audio files using 2D Convolutional Neural Networks (CNNs). This project integrates data from two major datasets—**TESS (Toronto Emotional Speech Set)** and **RAVDESS (Ryerson Audio-Visual Database of Emotional Speech and Song)**—capturing both female and male speech samples for a balanced representation.
 
+----
+### ACHIEVED ACCURACY - 91.38 % (ONLY BY A SIMPLE TWO CONVOLUTIONAL LAYER MODEL!)
+---
+
 ---
 
 ##  System Architecture & Workflow
@@ -10,9 +14,13 @@ The pipeline treats audio features (**MFCCs**) exactly like single-channel grays
 
 1. **Audio Standardization:** Audio signals are loaded and forced to a sampling rate of 16kHz to maintain temporal consistency.(The second dimension of the mfcc matrix(128 columns) =Number of samples/Hop length .Here the Number of samples depends on the sampling rate.If the sampling rate was different the CNN would throw an error.)
 2. **Feature Extraction:** 20 Mel-Frequency Cepstral Coefficients (MFCCs) are extracted.
-3. **Temporal Alignment:** Features are systematically truncated or zero-padded to a static width of 128 frames, outputting a fixed matrix size of `(20, 128)`.
-4. **Custom PyTorch Dataset:** The 2D feature matrix is unsqueezed into shape `(1, 20, 128)` to append the explicit channel dimension required by `nn.Conv2d`.
+3. **Temporal Alignment:** Features are systematically truncated or zero-padded to a static width of 128 frames, outputting a fixed matrix size of `(40, 128)`.
+4. **Custom PyTorch Dataset:** The 2D feature matrix is unsqueezed into shape `(1, 40, 128)` to append the explicit channel dimension required by `nn.Conv2d`.
 5. **Stratified Sampling:** Implements a balanced collection to prevent the model from biasing toward a specific dataset, speaker gender, or target label.We have taken total 192(96 tess+96 ravdess) samples per emotion.
+6. **Data Augmentation :** Data augmentation is used by injecting white noise and specaugment by frequency and time masking. This lead to an increase in 3-4 percent of accuracy.
+7. **Learning Rate Scheduling:** High learning rate present in the initial model made no difference in the test accuracy even when number of epochs and cepstral coefficients were increased . One of the reasons could have been high learning rate which could have caused the highly optimized weights in higher epochs(above 60) to "bounce back and forth".Hence learning rate scheduling was used.
+
+
 
 ---
 
