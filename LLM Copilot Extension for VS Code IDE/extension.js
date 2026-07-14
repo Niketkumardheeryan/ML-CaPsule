@@ -4,6 +4,12 @@ const axios = require('axios');
 const TOGETHER_AI_API_KEY = process.env.TOGETHER_AI_API_KEY;
 const GROQ_AI_API_KEY = process.env.GROQ_AI_API_KEY;
 const LLAMA_API_KEY = process.env.LLAMA_API_KEY;
+if (!TOGETHER_AI_API_KEY || !GROQ_AI_API_KEY || !LLAMA_API_KEY) {
+    throw new Error(
+        "❌ LLM Copilot Extension Error: Missing required API keys in your environment variables. " +
+        "Please configure TOGETHER_AI_API_KEY, GROQ_AI_API_KEY, and LLAMA_API_KEY before running."
+    );
+}
 
 async function getTogetherAIResponse(prompt) {
     const response = await axios.post('https://api.together.ai/v1/text/completion', {

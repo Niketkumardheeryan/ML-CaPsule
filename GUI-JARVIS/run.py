@@ -19,11 +19,16 @@ from geopy import Nominatim
 from pip._vendor import requests
 from bs4 import BeautifulSoup as soup
 from yahoo_fin import stock_info
-# Allow importing repo-root utils when running this script directly from GUI-JARVIS/
-_repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-if _repo_root not in sys.path:
-    sys.path.insert(0, _repo_root)
-
+# Allow importing repo-root utils when running this script directly from GUI-JARVIS/
+
+_repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
+if _repo_root not in sys.path:
+
+    sys.path.insert(0, _repo_root)
+
+
+
 from utils.load_credentials import load_credential
 
 
@@ -52,8 +57,11 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('naugraiyasuryansh@gmail.com', '6394682401')
-    server.sendmail('naugraiyasuryansh@gmail.com', to, content)
+    sender_email = load_credential("GMAIL_USER")
+    sender_password = load_credential("GMAIL_PASSWORD")
+    
+    server.login(sender_email, sender_password)
+    server.sendmail(sender_email, to, content)
     server.close()
 
 class mainT(QThread):
@@ -234,11 +242,16 @@ class mainT(QThread):
                     pass
 
             elif ('weather' in self.query or 'temperature' in self.query):
-                try:
-                    api_key = load_credential("OPENWEATHERMAP_API_KEY")
-                except KeyError as e:
-                    speak(str(e))
-                    continue
+                try:
+
+                    api_key = load_credential("OPENWEATHERMAP_API_KEY")
+
+                except KeyError as e:
+
+                    speak(str(e))
+
+                    continue
+
                 base_url = "http://api.openweathermap.org/data/2.5/weather?"
                 speak("which city sir")
                 city_name = self.JTT()
