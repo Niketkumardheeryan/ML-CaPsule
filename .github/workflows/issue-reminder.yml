@@ -66,15 +66,34 @@ jobs:
               } catch (e) { console.log(`Could not fetch comments for #${item.number}`); }
             }
 
-            // Also consider it active if someone pushed code / updated the title recently
-            if (lastUpdated > warningDate) {
-              isActiveByHuman = true;
-            }
-
             // ==========================================
             // PROCESS PULL REQUESTS
             // ==========================================
             if (isPR) {
+
+              try {
+                const commits = await github.rest.pulls.listCommits({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: item.number,
+                });
+                
+                if (commits.data.length > 0) {
+                  // Get the date of the very last commit
+                  const lastCommitDate = new Date(commits.data[commits.data.length - 1].commit.committer.date);
+                  
+                  // If the code was pushed recently, it's active!
+                  if (lastCommitDate > warningDate) {
+                    isActiveByHuman = true;
+                    
+                    // Reset our internal timer to the commit date so it doesn't get closed unfairly
+                    if (lastCommitDate > lastUpdated) {
+                      lastUpdated = lastCommitDate; 
+                    }
+                  }
+                }
+              } catch (e) { console.log(`Could not fetch commits for PR #${item.number}`); }
+              
               try {
                 const reviews = await github.rest.pulls.listReviews({
                   owner: context.repo.owner,
