@@ -22,12 +22,11 @@ jobs:
       with:
         script: |
           const daysBeforeWarning = 2;
-          const daysBeforeClose = 5; // Days AFTER warning before closing/unassigning
+          const daysToRespondAfterWarning = 3; // Total 5 days (2 days silent + 3 days warned)
 
+          // Global warning threshold (2 days ago)
           const warningDate = new Date(Date.now() - daysBeforeWarning * 24 * 60 * 60 * 1000);
-          const closeDate = new Date(Date.now() - daysBeforeClose * 24 * 60 * 60 * 1000);
           
-          // listForRepo fetches BOTH Issues and Pull Requests
           const items = await github.paginate(github.rest.issues.listForRepo, {
             owner: context.repo.owner,
             repo: context.repo.repo,
@@ -36,41 +35,67 @@ jobs:
 
           for (const item of items) {
             const isPR = !!item.pull_request;
-            let lastUpdated = new Date(item.updated_at);
             
             // Track all inactivity labels
             let hasWarningLabel = item.labels.some(l => l.name === 'noActivity-warning');
             let hasNoActivityLabel = item.labels.some(l => l.name === 'noActivity');
             let hasUpForGrabLabel = item.labels.some(l => l.name === '🤩 Up for Grab');
             
+            // ==========================================
+            // 1. CALCULATE LAST HUMAN ACTIVITY & WARNING DATE
+            // ==========================================
+            let lastHumanActivity = new Date(item.created_at);
+            let warningAppliedDate = null;
             let isActiveByHuman = false;
 
-            // ==========================================
-            // SHARED ACTIVITY CHECK: Did a human comment?
-            // ==========================================
-            // Check for human comments if ANY inactivity label is present
-            if (hasWarningLabel || hasNoActivityLabel || hasUpForGrabLabel) {
+            // Determine who is actually allowed to keep this active
+            const validUsers = isPR ? [item.user.login] : item.assignees.map(a => a.login);
+
+            // Get all comments to find activity from the valid users
+            try {
+              const allComments = await github.paginate(github.rest.issues.listComments, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: item.number,
+              });
+              
+              for (const comment of allComments) {
+                // ONLY count the comment if it's from the PR Author or the Issue Assignee
+                if (validUsers.includes(comment.user.login)) {
+                  const commentDate = new Date(comment.created_at);
+                  if (commentDate > lastHumanActivity) {
+                    lastHumanActivity = commentDate;
+                  }
+                }
+              }
+            } catch (e) { console.log(`Could not fetch comments for #${item.number}`); }
+
+            // Get timeline events to find exactly when the warning LABEL was added
+            if (hasWarningLabel) {
               try {
-                const allComments = await github.paginate(github.rest.issues.listComments, {
+                const events = await github.paginate(github.rest.issues.listEvents, {
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: item.number,
                 });
                 
-                if (allComments.length > 0) {
-                  const lastComment = allComments[allComments.length - 1];
-                  if (lastComment.user.login !== 'github-actions[bot]') {
-                    isActiveByHuman = true; // Human replied!
-                  }
+                // Filter for label additions matching our warning label
+                const labelEvents = events.filter(e => e.event === 'labeled' && e.label.name === 'noActivity-warning');
+                
+                if (labelEvents.length > 0) {
+                  // Grab the timestamp of the MOST RECENT time this label was added
+                  const lastLabelEvent = labelEvents[labelEvents.length - 1];
+                  warningAppliedDate = new Date(lastLabelEvent.created_at);
                 }
-              } catch (e) { console.log(`Could not fetch comments for #${item.number}`); }
+              } catch (e) { console.log(`Could not fetch events for #${item.number}`); }
             }
 
             // ==========================================
             // PROCESS PULL REQUESTS
             // ==========================================
             if (isPR) {
-
+              
+              // 2. CALCULATE LAST HUMAN ACTIVITY (Commits)
               try {
                 const commits = await github.rest.pulls.listCommits({
                   owner: context.repo.owner,
@@ -79,39 +104,33 @@ jobs:
                 });
                 
                 if (commits.data.length > 0) {
-                  // Get the date of the very last commit
                   const lastCommitDate = new Date(commits.data[commits.data.length - 1].commit.committer.date);
-                  
-                  // If the code was pushed recently, it's active!
-                  if (lastCommitDate > warningDate) {
-                    isActiveByHuman = true;
-                    
-                    // Reset our internal timer to the commit date so it doesn't get closed unfairly
-                    if (lastCommitDate > lastUpdated) {
-                      lastUpdated = lastCommitDate; 
-                    }
+                  if (lastCommitDate > lastHumanActivity) {
+                    lastHumanActivity = lastCommitDate;
                   }
                 }
               } catch (e) { console.log(`Could not fetch commits for PR #${item.number}`); }
-              
+
+              // Check if PR is pending review (Protects PR)
               try {
                 const reviews = await github.rest.pulls.listReviews({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  pull_number: item.number,
+                  owner: context.repo.owner, repo: context.repo.repo, pull_number: item.number,
                 });
-                
                 if (reviews.data.length === 0) {
                   console.log(`PR #${item.number} is pending review. Skipping.`);
                   continue; 
                 }
               } catch (e) { console.log(`Could not fetch reviews for PR #${item.number}`); }
 
-              // AUTO-RECOVERY for PRs
+              // Recovery Check: Did the valid human act AFTER the bot warned them?
+              if (hasWarningLabel && warningAppliedDate && lastHumanActivity > warningAppliedDate) {
+                isActiveByHuman = true;
+              }
+
+              // AUTO-RECOVERY
               if ((hasWarningLabel || hasNoActivityLabel) && isActiveByHuman) {
                 console.log(`PR #${item.number} is active again! Removing inactivity labels.`);
                 let removedLabels = [];
-                
                 if (hasWarningLabel) {
                   try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning' }); removedLabels.push('`noActivity-warning`'); } catch (e) {}
                   hasWarningLabel = false;
@@ -120,7 +139,6 @@ jobs:
                   try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity' }); removedLabels.push('`noActivity`'); } catch (e) {}
                   hasNoActivityLabel = false;
                 }
-                
                 if (removedLabels.length > 0) {
                   await github.rest.issues.createComment({
                     owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number,
@@ -129,31 +147,30 @@ jobs:
                 }
               }
 
-              // Stale Logic for PRs
-              if (hasWarningLabel && lastUpdated < closeDate) {
-                console.log(`Closing inactive PR #${item.number}`);
-                await github.rest.issues.createComment({
-                  owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number,
-                  body: `This Pull Request has been inactive for a while since its last review. It is now being closed due to no activity. If you want to continue working on it, feel free to leave a comment!`,
-                });
-                await github.rest.pulls.update({
-                  owner: context.repo.owner, repo: context.repo.repo, pull_number: item.number, state: 'closed'
-                });
-                await github.rest.issues.addLabels({
-                  owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, labels: ['noActivity']
-                });
-                try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning' }); } catch (e) {}
+              // STALE LOGIC
+              if (hasWarningLabel && !isActiveByHuman && warningAppliedDate) {
+                // Calculate exactly when the grace period ends for THIS PR
+                const issueGracePeriodEnd = new Date(warningAppliedDate.getTime() + daysToRespondAfterWarning * 24 * 60 * 60 * 1000);
                 
-              } else if (!hasWarningLabel && !hasNoActivityLabel && lastUpdated < warningDate) {
+                if (Date.now() > issueGracePeriodEnd) {
+                  console.log(`Closing inactive PR #${item.number}`);
+                  await github.rest.issues.createComment({
+                    owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number,
+                    body: `This Pull Request has been inactive for a while since its last review. It is now being closed due to no activity. If you want to continue working on it, feel free to leave a comment!`,
+                  });
+                  await github.rest.pulls.update({ owner: context.repo.owner, repo: context.repo.repo, pull_number: item.number, state: 'closed' });
+                  await github.rest.issues.addLabels({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, labels: ['noActivity'] });
+                  try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning' }); } catch (e) {}
+                }
+              } else if (!hasWarningLabel && !hasNoActivityLabel && lastHumanActivity < warningDate) {
+                // Human hasn't acted in 2 days. Issue the warning.
                 console.log(`Warning PR #${item.number}`);
                 const author = item.user ? `@${item.user.login}` : '';
                 await github.rest.issues.createComment({
                   owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number,
                   body: `👋 Hey ${author}, this Pull Request hasn't been updated in over ${daysBeforeWarning} days since your last review. Please provide an update to keep it active! Otherwise, it will be closed soon.`,
                 });
-                await github.rest.issues.addLabels({
-                  owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, labels: ['noActivity-warning']
-                });
+                await github.rest.issues.addLabels({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, labels: ['noActivity-warning'] });
               }
             } 
             
@@ -176,9 +193,7 @@ jobs:
                                 number
                                 state
                                 updatedAt
-                                reviews(first: 1) {
-                                  totalCount
-                                }
+                                reviews(first: 1) { totalCount }
                               }
                             }
                           }
@@ -189,29 +204,17 @@ jobs:
                 }
               `;
               try {
-                const result = await github.graphql(query, {
-                  owner: context.repo.owner, repo: context.repo.repo, num: item.number
-                });
-                
+                const result = await github.graphql(query, { owner: context.repo.owner, repo: context.repo.repo, num: item.number });
                 const nodes = result.repository.issue.timelineItems.nodes;
                 for (const node of nodes) {
                   if (node.source && node.source.state === 'OPEN') {
                     const prNumber = node.source.number;
-                    const prReviewCount = node.source.reviews ? node.source.reviews.totalCount : 0;
+                    if ((node.source.reviews ? node.source.reviews.totalCount : 0) === 0) linkedPRPendingReview = true;
+                    if (!linkedOpenPRs.includes(prNumber)) linkedOpenPRs.push(prNumber);
                     
-                    if (prReviewCount === 0) {
-                      linkedPRPendingReview = true;
-                    }
-
-                    if (!linkedOpenPRs.includes(prNumber)) {
-                      linkedOpenPRs.push(prNumber);
-                    }
-
+                    // Count linked PR activity as human activity
                     const prDate = new Date(node.source.updatedAt);
-                    if (prDate > lastUpdated) {
-                      lastUpdated = prDate; 
-                      isActiveByHuman = true; 
-                    }
+                    if (prDate > lastHumanActivity) lastHumanActivity = prDate;
                   }
                 }
               } catch (e) { console.log(`Could not fetch PR data for issue #${item.number}`); }
@@ -221,11 +224,15 @@ jobs:
                 continue;
               }
 
-              // AUTO-RECOVERY for Issues
+              // Recovery Check
+              if (hasWarningLabel && warningAppliedDate && lastHumanActivity > warningAppliedDate) {
+                isActiveByHuman = true;
+              }
+
+              // AUTO-RECOVERY
               if ((hasWarningLabel || hasNoActivityLabel || hasUpForGrabLabel) && isActiveByHuman) {
                 console.log(`Issue #${item.number} is active again! Removing inactivity labels.`);
                 let removedLabels = [];
-                
                 if (hasWarningLabel) {
                   try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning' }); removedLabels.push('`noActivity-warning`'); } catch (e) {}
                   hasWarningLabel = false; 
@@ -238,7 +245,6 @@ jobs:
                   try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: '🤩 Up for Grab' }); removedLabels.push('`🤩 Up for Grab`'); } catch (e) {}
                   hasUpForGrabLabel = false;
                 }
-                
                 if (removedLabels.length > 0) {
                   await github.rest.issues.createComment({
                     owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number,
@@ -247,50 +253,44 @@ jobs:
                 }
               }
 
-              // Stale Logic for Issues
-              if (hasWarningLabel && lastUpdated < closeDate) {
-                console.log(`Marking issue #${item.number} as Up for Grab`);
-                await github.rest.issues.createComment({
-                  owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number,
-                  body: `This issue has been inactive for a while. It is now being unassigned and marked as **🤩 Up for Grab** for anyone else who wants to contribute!`,
-                });
-
-                const currentAssignees = item.assignees.map(a => a.login);
-                if (currentAssignees.length > 0) {
-                  await github.rest.issues.removeAssignees({
-                    owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, assignees: currentAssignees
-                  });
-                }
-
-                await github.rest.issues.addLabels({
-                  owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, labels: ['🤩 Up for Grab', 'noActivity']
-                });
+              // STALE LOGIC
+              if (hasWarningLabel && !isActiveByHuman && warningAppliedDate) {
+                // Calculate exactly when the grace period ends for THIS Issue
+                const issueGracePeriodEnd = new Date(warningAppliedDate.getTime() + daysToRespondAfterWarning * 24 * 60 * 60 * 1000);
                 
-                try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning' }); } catch (e) {}
-
-                for (const prNumber of linkedOpenPRs) {
-                  console.log(`Closing linked PR #${prNumber} due to issue inactivity`);
+                if (Date.now() > issueGracePeriodEnd) {
+                  console.log(`Marking issue #${item.number} as Up for Grab`);
                   await github.rest.issues.createComment({
-                    owner: context.repo.owner, repo: context.repo.repo, issue_number: prNumber,
-                    body: `This Pull Request is being closed due to no activity on the linked issue. If you would like to continue working on this, please comment on the main issue!`
+                    owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number,
+                    body: `This issue has been inactive for a while. It is now being unassigned and marked as **🤩 Up for Grab** for anyone else who wants to contribute!`,
                   });
-                  await github.rest.pulls.update({
-                    owner: context.repo.owner, repo: context.repo.repo, pull_number: prNumber, state: 'closed'
-                  });
-                }
 
-              } else if (!hasWarningLabel && !hasNoActivityLabel && lastUpdated < warningDate) {
+                  const currentAssignees = item.assignees.map(a => a.login);
+                  if (currentAssignees.length > 0) {
+                    await github.rest.issues.removeAssignees({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, assignees: currentAssignees });
+                  }
+
+                  await github.rest.issues.addLabels({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, labels: ['🤩 Up for Grab', 'noActivity'] });
+                  try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning' }); } catch (e) {}
+
+                  for (const prNumber of linkedOpenPRs) {
+                    console.log(`Closing linked PR #${prNumber} due to issue inactivity`);
+                    await github.rest.issues.createComment({
+                      owner: context.repo.owner, repo: context.repo.repo, issue_number: prNumber,
+                      body: `This Pull Request is being closed due to no activity on the linked issue. If you would like to continue working on this, please comment on the main issue!`
+                    });
+                    await github.rest.pulls.update({ owner: context.repo.owner, repo: context.repo.repo, pull_number: prNumber, state: 'closed' });
+                  }
+                }
+              } else if (!hasWarningLabel && !hasNoActivityLabel && lastHumanActivity < warningDate) {
                 console.log(`Warning issue #${item.number}`);
                 const taggedAssignees = item.assignees.map(a => `@${a.login}`).join(', ');
                 const greeting = taggedAssignees ? `👋 Hey ${taggedAssignees},` : `👋`;
-                
                 await github.rest.issues.createComment({
                   owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number,
                   body: `${greeting} this issue hasn't been updated in over ${daysBeforeWarning} days. Please provide an update or push to your linked PR to keep it assigned to you! Otherwise, it will be unassigned and opened up for other contributors soon.`,
                 });
-                await github.rest.issues.addLabels({
-                  owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, labels: ['noActivity-warning']
-                });
+                await github.rest.issues.addLabels({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, labels: ['noActivity-warning'] });
               }
             }
           }
