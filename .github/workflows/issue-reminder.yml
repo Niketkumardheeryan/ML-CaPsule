@@ -67,13 +67,6 @@ jobs:
                 });
               } catch (e) { /* ignore if removing fails */ }
 
-              // Close the issue
-              await github.rest.issues.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.number,
-                state: 'closed'
-              });
             } 
             // SCENARIO 2: The issue hasn't been warned yet, and has been inactive for 7 days
             else if (!hasWarningLabel && lastUpdated < warningDate) {
