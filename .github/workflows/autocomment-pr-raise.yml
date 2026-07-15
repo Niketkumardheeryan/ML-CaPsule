@@ -1,4 +1,4 @@
-name: Auto Comment and Assign on PR raise
+name: Auto Comment,Assign and Link Issue on PR raise
 
 on:
   pull_request_target:
@@ -50,6 +50,33 @@ jobs:
             issue_number: context.issue.number,
             assignees: [author]
           });
+
+    - name: link issue to pull request
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const issueNumber = context.payload.pull_request.number;
+          const issueTitle = context.payload.pull_request.title;
+          const issueBody = context.payload.pull_request.body || '';
+          
+          // Extract issue number from the PR title or body
+          const issueMatch = issueTitle.match(/#(\d+)/) || issueBody.match(/#(\d+)/);
+          
+          if (issueMatch) {
+            const linkedIssueNumber = parseInt(issueMatch[1], 10);
+            console.log(`Linking PR #${issueNumber} to Issue #${linkedIssueNumber}`);
+            
+            // Add a comment to the linked issue
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: linkedIssueNumber,
+              body: `This pull request (#${issueNumber}) is linked to this issue.`
+            });
+          } else {
+            // This creates the yellow warning annotation in the GitHub UI
+            core.warning('No linked issue found in the PR title or body.');
+          }   
           
 
     
