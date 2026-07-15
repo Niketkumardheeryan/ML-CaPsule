@@ -33,7 +33,7 @@ jobs:
           });
 
           for (const issue of issues) {
-            if (issue.pull_request) continue; // Skip Pull Requests
+            if (issue.pull_request) continue; // Skip Pull Requests to continue iterating throught the enitre array of issues
 
             const lastUpdated = new Date(issue.updated_at);
             const hasWarningLabel = issue.labels.some(l => l.name === 'noActivity-warning');
