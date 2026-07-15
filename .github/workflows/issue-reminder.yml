@@ -16,15 +16,15 @@ jobs:
     - name: Check out the repository
       uses: actions/checkout@v4
 
-    - name: Warn, label, and close stale issues
+    - name: Warn, unassign, and mark stale issues as Up for Grab
       uses: actions/github-script@v7
       with:
         script: |
-          const daysBeforeWarning = 0;
-          const daysBeforeClose = 0; // How many days to wait AFTER the warning to close it
+          const daysBeforeWarning = 7;
+          const daysBeforeUpForGrab = 7; // How many days to wait AFTER the warning
 
           const warningDate = new Date(Date.now() - daysBeforeWarning * 24 * 60 * 60 * 1000);
-          const closeDate = new Date(Date.now() - daysBeforeClose * 24 * 60 * 60 * 1000);
+          const upForGrabDate = new Date(Date.now() - daysBeforeUpForGrab * 24 * 60 * 60 * 1000);
           
           const issues = await github.paginate(github.rest.issues.listForRepo, {
             owner: context.repo.owner,
@@ -39,22 +39,33 @@ jobs:
             const hasWarningLabel = issue.labels.some(l => l.name === 'stale-warning');
 
             // SCENARIO 1: The issue was already warned, and still has no activity
-            if (hasWarningLabel && lastUpdated < closeDate) {
-              console.log(`Closing issue #${issue.number}`);
+            if (hasWarningLabel && lastUpdated < upForGrabDate) {
+              console.log(`Marking issue #${issue.number} as Up for Grab and unassigning`);
               
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                body: `This issue is being closed due to no activity.`,
+                body: `This issue has been inactive for a while. It is now being unassigned and marked as **🤩 Up for Grab** for anyone else who wants to contribute!`,
               });
 
-              // Apply noActivity label
+              // Unassign the previous assignees if there are any
+              const currentAssignees = issue.assignees.map(assignee => assignee.login);
+              if (currentAssignees.length > 0) {
+                await github.rest.issues.removeAssignees({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  assignees: currentAssignees
+                });
+              }
+
+              // Apply the exact labels
               await github.rest.issues.addLabels({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                labels: ['noActivity']
+                labels: ['🤩 Up for Grab', 'noActivity']
               });
               
               // Remove the temporary warning label to keep things clean
@@ -72,11 +83,15 @@ jobs:
             else if (!hasWarningLabel && lastUpdated < warningDate) {
               console.log(`Warning issue #${issue.number}`);
               
+              // Grab the assignees to tag them, formatting it like "@user1, @user2"
+              const taggedAssignees = issue.assignees.map(a => `@${a.login}`).join(', ');
+              const greeting = taggedAssignees ? `👋 Hey ${taggedAssignees},` : `👋`;
+              
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                body: `👋 This issue hasn't been updated in over ${daysBeforeWarning} days. Please check in to see if it is still relevant! Else this issue will be closed under NoActivity soon.`,
+                body: `${greeting} this issue hasn't been updated in over ${daysBeforeWarning} days. Please provide an update to keep it assigned to you! Otherwise, it will be unassigned and opened up for other contributors soon.`,
               });
 
               // Apply the temporary warning label so the bot remembers for next time
