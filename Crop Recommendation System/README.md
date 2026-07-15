@@ -35,14 +35,12 @@ Farmers often struggle to choose the right crop for their land given varying soi
 | rainfall | Rainfall in mm |
 | label | Recommended crop (target) |
 
-The dataset isn't committed to the repo directly — it's hosted on Google Drive and downloaded automatically when the notebook runs, using `gdown`:
+The dataset is downloaded automatically at runtime using `kagglehub`:
 
-```python
-import gdown
-
-file_id = "YOUR_FILE_ID_HERE"
-url = f"https://drive.google.com/uc?id={file_id}"
-gdown.download(url, "Crop_recommendation.csv", quiet=False)
+\`\`\`python
+import kagglehub
+path = kagglehub.dataset_download("atharvaingle/crop-recommendation-dataset")
+\`\`\`
 ```
 
 ## 📈 Results
