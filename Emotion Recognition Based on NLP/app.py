@@ -9,7 +9,7 @@ import os
 # load pickle files 
 filename = 'nlp.pkl'
 classifier = pickle.load(open(filename, 'rb'))  ## classfier model
-cv = pickle.load(open('transform.pkl', 'rb'))   ## this is used for transforming the data using CV class
+cv = pickle.load(open('./Model/transform.pkl', 'rb'))   ## this is used for transforming the data using CV class
 
 
 app = Flask(__name__)  ## Flask constructor takes the name of current module (__name__) as argument
