@@ -1,0 +1,161 @@
+text,label
+"Hi team, we will be having our weekly sprint planning session tomorrow at 10 AM in the conference room.",meeting
+"Please join the client review discussion scheduled for Friday afternoon.",meeting
+"The project kickoff meeting has been moved to 4 PM due to scheduling conflicts.",meeting
+"Can we arrange a quick sync-up call regarding the deployment issues?",meeting
+"You are requested to attend the department seminar tomorrow morning.",meeting
+"The interview discussion round is confirmed for Monday at 2 PM.",meeting
+"Let's connect over Google Meet this evening to discuss the assignment progress.",meeting
+"A calendar invite has been shared for the quarterly strategy meeting.",meeting
+"The faculty review session for final year projects starts at 11 AM.",meeting
+"Please be available for the onboarding discussion with the HR team tomorrow.",meeting
+"We need to schedule a brainstorming session for the new product idea.",meeting
+"The webinar on AI in healthcare begins at 6 PM tonight.",meeting
+"Could you join the Zoom call for the client presentation review?",meeting
+"The manager has called for an urgent team discussion after lunch.",meeting
+"There will be a standup meeting every morning during the development cycle.",meeting
+"Please attend the technical architecture discussion at 5 PM today.",meeting
+"The meeting agenda includes project timelines and deployment planning.",meeting
+"Our next mentorship session has been scheduled for Thursday evening.",meeting
+"Can we have a brief discussion about the internship requirements tomorrow?",meeting
+"The operations team will host a review call regarding the recent outage.",meeting
+"A virtual meeting link has been emailed to all participants.",meeting
+"Please join us for the annual academic orientation session next week.",meeting
+"We are organizing a client interaction meeting this Friday.",meeting
+"The engineering team discussion has been postponed until tomorrow morning.",meeting
+"Let's meet sometime this weekend to discuss the travel plans.",meeting
+"The hiring panel discussion for shortlisted candidates starts shortly.",meeting
+"Kindly confirm your availability for tomorrow's stakeholder meeting.",meeting
+"The investor presentation meeting has been rescheduled to Tuesday.",meeting
+"Our product demo session with the client starts in 30 minutes.",meeting
+"There will be a collaborative planning discussion between all departments.",meeting
+"The design review meeting will cover the updated UI wireframes.",meeting
+"Please connect to the online session using the provided Microsoft Teams link.",meeting
+"The principal has arranged a parent-teacher interaction meeting next Saturday.",meeting
+"The development sync-up call will begin shortly.",meeting
+"We are planning a one-on-one review discussion later today.",meeting
+"Please attend the emergency operations meeting immediately.",meeting
+"The campus placement pre-interview briefing starts at 9 AM tomorrow.",meeting
+"Our discussion regarding API optimization has been moved to evening.",meeting
+"The scheduled meeting with the external auditors has been canceled.",meeting
+"Could we organize a short call to discuss the pending approval process?",meeting
+"Hi support team, I am unable to access my dashboard after logging in.",support
+"The application crashes every time I try to upload a file.",support
+"I forgot my password and cannot reset my account credentials.",support
+"The API integration is failing with a 500 internal server error.",support
+"My account keeps getting logged out automatically after a few minutes.",support
+"I am facing issues while connecting to the company VPN.",support
+"The mobile app freezes on the loading screen after the latest update.",support
+"Unable to download the attached invoice from the portal.",support
+"The system is showing an invalid authentication token error.",support
+"I did not receive the verification email for account activation.",support
+"Our payment gateway integration is timing out frequently.",support
+"The website is extremely slow and pages are not loading correctly.",support
+"Need help configuring the SMTP email settings for notifications.",support
+"The uploaded documents are not visible in my profile section.",support
+"Please assist with recovering accidentally deleted project files.",support
+"The software installation fails midway with an unknown error.",support
+"I am unable to access admin features despite having permissions.",support
+"The server connection keeps dropping during file synchronization.",support
+"The chatbot is not responding to customer queries properly.",support
+"I am getting a database connection refused error during login.",support
+"Please submit the final project presentation before 6 PM today.",deadline
+"This is a reminder to complete your internship documentation by tomorrow.",deadline
+"The scholarship application portal closes at midnight tonight.",deadline
+"Kindly upload all pending assignments before the submission deadline.",deadline
+"Your task completion deadline has been extended until Friday evening.",deadline
+"Please finalize the client proposal before tomorrow’s review meeting.",deadline
+"The payment must be completed before the due date to avoid penalties.",deadline
+"Reminder: Submit your coding assessment before 11:59 PM.",deadline
+"All onboarding formalities should be completed within the next 24 hours.",deadline
+"The registration deadline for the workshop ends this evening.",deadline
+"Please share the signed agreement documents before the end of the day.",deadline
+"Complete the deployment checklist before tonight’s production release.",deadline
+"The university exam form submission closes tomorrow morning.",deadline
+"You are requested to complete the security training before Monday.",deadline
+"The last date to update your profile information is approaching soon.",deadline
+"Ensure all deliverables are submitted before the sprint deadline.",deadline
+"Please upload your resume before the application window closes.",deadline
+"The final evaluation report needs to be submitted by Friday afternoon.",deadline
+"Complete the reimbursement process before the finance deadline expires.",deadline
+"All pending approvals must be cleared before the audit begins tomorrow.",deadline
+"Congratulations! You have been selected to receive a free luxury car.",spam
+"Earn ₹50,000 weekly from home with zero investment required.",spam
+"Click this link immediately to claim your lottery winnings.",spam
+"Your account will be suspended unless verified within 24 hours.",spam
+"Exclusive crypto investment opportunity with guaranteed profits.",spam
+"You have won an international vacation package for free.",spam
+"Act now to unlock hidden earnings and financial freedom.",spam
+"Limited-time miracle weight loss solution available today only.",spam
+"Urgent! Confirm your bank details to avoid account blockage.",spam
+"Double your money instantly through this secret trading strategy.",spam
+"You have been randomly chosen for an iPhone giveaway contest.",spam
+"Claim your free shopping vouchers before the offer expires.",spam
+"Get rich quickly with our automated online business system.",spam
+"This is your final notice regarding unclaimed reward points.",spam
+"Click here to receive a government compensation payout instantly.",spam
+"Your PayPal account requires urgent identity verification.",spam
+"Win expensive gadgets by participating in this lucky draw.",spam
+"Congratulations! A large inheritance fund has been approved for you.",spam
+"Receive guaranteed loan approval regardless of your credit score.",spam
+"Unlock premium streaming services completely free today.",spam
+"Your monthly bank account statement is now available for review.",finance
+"The salary for this month has been credited successfully.",finance
+"Please review the attached invoice for the completed services.",finance
+"Your EMI payment is scheduled for automatic deduction tomorrow.",finance
+"The refund amount has been processed to your original payment method.",finance
+"Transaction alert: ₹12,500 has been debited from your account.",finance
+"Your insurance premium payment is due next week.",finance
+"Please verify the attached billing summary before approval.",finance
+"The annual tax filing process begins from next Monday.",finance
+"Payment confirmation received for your recent subscription renewal.",finance
+"Your reimbursement request has been approved by the finance team.",finance
+"The attached receipt confirms successful transaction processing.",finance
+"Your credit card statement for this billing cycle is attached.",finance
+"The payment gateway has successfully completed your transaction.",finance
+"Kindly clear the pending dues before the next billing cycle.",finance
+"An updated quotation has been shared for your financial review.",finance
+"The investment portfolio performance report is now available.",finance
+"Your bank account verification has been completed successfully.",finance
+"The requested withdrawal amount has been transferred securely.",finance
+"Please update your GST details for invoice generation purposes.",finance
+"Flat 70% discount available on all electronics this weekend only.",promotion
+"Unlock exclusive cashback rewards on every online purchase today.",promotion
+"Special festive offers are now live for premium members.",promotion
+"Subscribe today and enjoy one month of premium access for free.",promotion
+"Use promo code SAVE50 to receive an instant discount at checkout.",promotion
+"Book your tickets early to unlock exciting early-bird offers.",promotion
+"Mega shopping carnival starts tonight with unbelievable deals.",promotion
+"Upgrade your membership now to access exclusive premium features.",promotion
+"Claim complimentary gifts with every purchase above ₹5000.",promotion
+"Limited-time buy one get one free offer on selected products.",promotion
+"Enjoy free shipping on all orders placed before midnight.",promotion
+"Get exciting rewards through our customer referral program.",promotion
+"Exclusive student discounts are available for annual subscriptions.",promotion
+"Flash sale ending soon! Grab your favorite products before stock runs out.",promotion
+"Avail exciting travel packages at discounted prices this summer.",promotion
+"Renew your subscription today and receive bonus reward points.",promotion
+"Exclusive access to VIP deals is now available for premium users.",promotion
+"Register now to unlock complimentary workshop materials.",promotion
+"Enjoy additional cashback using our partnered payment methods.",promotion
+"Special launch offers available for our newest product collection.",promotion
+"Hey, are we still meeting for coffee this weekend?",personal
+"Wishing you a very happy birthday and a wonderful year ahead.",personal
+"It was really nice catching up with you after such a long time.",personal
+"Hope you and your family are doing well and staying healthy.",personal
+"Let’s plan a short trip together during the upcoming holidays.",personal
+"Congratulations on your recent achievement, I’m so proud of you.",personal
+"Thank you for always supporting me during difficult times.",personal
+"Can we reschedule dinner plans for tomorrow evening instead?",personal
+"I really enjoyed spending time with everyone at the reunion.",personal
+"Hope your exams went smoothly and you’re feeling relaxed now.",personal
+"Sending warm wishes to you and your family for the festive season.",personal
+"It feels great to reconnect with old college friends again.",personal
+"Please take care of yourself and don’t stress too much about work.",personal
+"I miss our late-night conversations and random jokes.",personal
+"Looking forward to celebrating your success together very soon.",personal
+"Thanks again for helping me prepare for the interview.",personal
+"Hope you recover quickly and start feeling better soon.",personal
+"Let’s organize a family gathering sometime next month.",personal
+"It was lovely meeting your parents during the function yesterday.",personal
+"Take care and stay in touch whenever you get time.",personal
