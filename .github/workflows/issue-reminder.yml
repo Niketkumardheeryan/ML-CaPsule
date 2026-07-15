@@ -21,8 +21,8 @@ jobs:
       uses: actions/github-script@v7
       with:
         script: |
-          const daysBeforeWarning = 0;
-          const daysBeforeClose = 0; // Days AFTER warning before closing/unassigning
+          const daysBeforeWarning = 2;
+          const daysBeforeClose = 5; // Days AFTER warning before closing/unassigning
 
           const warningDate = new Date(Date.now() - daysBeforeWarning * 24 * 60 * 60 * 1000);
           const closeDate = new Date(Date.now() - daysBeforeClose * 24 * 60 * 60 * 1000);
