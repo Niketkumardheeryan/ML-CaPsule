@@ -2,8 +2,11 @@ name: Issue Reminder
 
 on:
   schedule:
-    # Runs every day at 8 AM
     - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
 
 jobs:
   remind-stale-issues:
@@ -11,35 +14,84 @@ jobs:
 
     steps:
     - name: Check out the repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
-    - name: Find and remind stale issues
-      uses: actions/github-script@v6
+    - name: Warn, label, and close stale issues
+      uses: actions/github-script@v7
       with:
         script: |
-          const daysBeforeReminder = 7;
-          const staleDate = new Date(Date.now() - daysBeforeReminder * 24 * 60 * 60 * 1000);
+          const daysBeforeWarning = 7;
+          const daysBeforeClose = 7; // How many days to wait AFTER the warning to close it
+
+          const warningDate = new Date(Date.now() - daysBeforeWarning * 24 * 60 * 60 * 1000);
+          const closeDate = new Date(Date.now() - daysBeforeClose * 24 * 60 * 60 * 1000);
           
-          const { data: issues } = await github.rest.issues.listForRepo({
+          const issues = await github.paginate(github.rest.issues.listForRepo, {
             owner: context.repo.owner,
             repo: context.repo.repo,
             state: 'open',
-            since: staleDate.toISOString(),
           });
 
-          const staleIssues = issues.filter(issue => new Date(issue.updated_at) < staleDate);
+          for (const issue of issues) {
+            if (issue.pull_request) continue; // Skip Pull Requests
 
-          for (const issue of staleIssues) {
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue.number,
-              body: `👋 This issue hasn't been updated in over ${daysBeforeReminder} days. Please check in to see if it is still relevant!`,
-            });
-          }
+            const lastUpdated = new Date(issue.updated_at);
+            const hasWarningLabel = issue.labels.some(l => l.name === 'stale-warning');
 
-          if (staleIssues.length === 0) {
-            console.log('No stale issues found. All issues are up-to-date.');
-          } else {
-            console.log(`${staleIssues.length} stale issue(s) found and reminded.`);
+            // SCENARIO 1: The issue was already warned, and still has no activity
+            if (hasWarningLabel && lastUpdated < closeDate) {
+              console.log(`Closing issue #${issue.number}`);
+              
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `This issue is being closed due to no activity.`,
+              });
+
+              // Apply noActivity label
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['noActivity']
+              });
+              
+              // Remove the temporary warning label to keep things clean
+              try {
+                await github.rest.issues.removeLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  name: 'stale-warning'
+                });
+              } catch (e) { /* ignore if removing fails */ }
+
+              // Close the issue
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: 'closed'
+              });
+            } 
+            // SCENARIO 2: The issue hasn't been warned yet, and has been inactive for 7 days
+            else if (!hasWarningLabel && lastUpdated < warningDate) {
+              console.log(`Warning issue #${issue.number}`);
+              
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `👋 This issue hasn't been updated in over ${daysBeforeWarning} days. Please check in to see if it is still relevant! Else this issue will be closed under NoActivity soon.`,
+              });
+
+              // Apply the temporary warning label so the bot remembers for next time
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['stale-warning']
+              });
+            }
           }
