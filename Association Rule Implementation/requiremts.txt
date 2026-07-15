@@ -1,0 +1,12 @@
+# Core Libraries
+numpy>=1.21.0
+pandas>=1.5.0
+matplotlib>=3.5.0
+
+# Association Rule Mining
+apyori>=1.1.2
+pyECLAT>=1.0.2
+
+# Jupyter Notebook
+notebook>=6.5.0
+ipykernel>=6.20.0
