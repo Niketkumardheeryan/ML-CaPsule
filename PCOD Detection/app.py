@@ -33,7 +33,7 @@ if "cache_cleared" not in st.session_state:
 # CONSTANTS
 # ==========================================
 
-DATA_PATH = r"C:/Users/Asus/.cache/kagglehub/datasets/manasrai1406/menstrual-health-and-pcod-risk-detection-dataset/versions/1/period - Copy.csv"
+DATA_PATH = r"period - Copy.csv"
 
 TARGET_COL = "pcod_status"
 
