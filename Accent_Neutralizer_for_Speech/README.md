@@ -25,11 +25,22 @@ not an absence of accent.
 ## Approach
 
 1. **Data**: Parallel sentence pairs built from two public corpora:
-   - [L2-ARCTIC](https://huggingface.co/datasets/KoelLabs/L2Arctic) — non-native
-     English speech (Hindi and Chinese speakers used in this v1)
-   - [CMU ARCTIC](https://huggingface.co/datasets/MikhailT/cmu-arctic) — native
-     English reference speech, same underlying prompt sentences
-   - Matched by normalized sentence text → **1,148 aligned pairs** (575 Hindi, 573 Chinese)
+
+   **L2-ARCTIC** (non-native/accented speech) — https://huggingface.co/datasets/KoelLabs/L2Arctic
+   - Compiled by researchers at Texas A&M University and Iowa State University
+   - Contains English speech from 24 non-native speakers across 6 native-language backgrounds: Hindi, Chinese, Spanish, Arabic, Korean, and Vietnamese
+   - This v1 uses the Hindi and Chinese speaker subsets
+   - Includes phonemic annotations (IPA) alongside audio and transcripts
+   - License: CC BY-NC 4.0 (non-commercial use, consistent with this educational project)
+   - Approximately 220 minutes of speech, read from CMU ARCTIC prompt sentences
+
+   **CMU ARCTIC** (native reference speech) — https://huggingface.co/datasets/MikhailT/cmu-arctic
+   - Compiled by Carnegie Mellon University for speech synthesis research
+   - Native English speakers reading the same standardized prompt sentences as L2-ARCTIC
+   - This v1 uses two reference speakers: bdl (male) and slt (female)
+   - Publicly available, no access restrictions
+
+   **Pairing**: Since both corpora are built from the same underlying prompt sentence set, recordings are matched by normalized sentence text (lowercased, punctuation-stripped) to build parallel accented/native pairs, resulting in 1,148 aligned pairs (575 Hindi, 573 Chinese)
 
 2. **Feature extraction** (`feature_extractor.py`): MFCC, pitch (via `pyin`),
    and formant estimation (via LPC) extracted per clip.
@@ -77,31 +88,32 @@ not an absence of accent.
 
 ## How to Run
 
+All code lives in a single Jupyter notebook: `Accent_Neutralizer_for_Speech.ipynb`
+
 ```bash
 pip install -r requirements.txt
-
-# Train the model (uses cached/downloaded datasets automatically)
-python prepare_training_data.py
-python train.py
-
-# Run inference on your own audio file
-python main.py --input path/to/your_audio.wav --output result.wav
-
-# Or run a quick demo (no input needed, uses a sample from L2-ARCTIC)
-python main.py
+jupyter notebook Accent_Neutralizer_for_Speech.ipynb
 ```
+
+Then run all cells in order (Kernel > Restart Kernel and Run All Cells). The notebook is organized into clearly labeled sections:
+
+1. Setup - installs dependencies
+2. Feature Extractor - MFCC, pitch, and formant extraction
+3. Model Architecture - the BiLSTM conversion model
+4. Data Preparation - downloads datasets, matches sentence pairs, aligns with DTW
+5. Training - trains the model
+6. Inference - runs the full pipeline on a sample sentence and saves before/after audio
+
+Note: steps 4 and 5 automatically cache their results (extracted features, aligned tensors, and the trained model checkpoint). On first run these steps take time since they process the full dataset and train from scratch; on subsequent runs they load the cached results instantly.
 
 ## Project Structure
 
 Accent_Neutralizer_for_Speech/
 ├── README.md
 ├── requirements.txt
-├── feature_extractor.py       (MFCC, pitch, formant extraction)
-├── neutralizer_model.py       (BiLSTM conversion model)
-├── prepare_training_data.py   (DTW alignment + padding)
-├── train.py                   (Training loop)
-├── main.py                    (Entry point - inference)
-└── best_model.pt              (Trained model checkpoint)
+├── Accent_Neutralizer_for_Speech.ipynb   (all code: feature extraction, model, training, inference)
+├── best_model.pt                          (trained model checkpoint)
+└── data/processed/                        (cached features and training tensors, generated on first run)
 
 ## Acknowledgements
 
