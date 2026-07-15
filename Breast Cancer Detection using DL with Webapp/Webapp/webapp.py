@@ -11,17 +11,21 @@ logging.basicConfig(level=logging.INFO)
 app = Flask(__name__)
 
 # Load the VGG16 model
-model_path = r'C:\Users\Chimni\Projects and Coding\Version Control Systems\Breast Cancer Detection using DL\Model\model.keras'
-if not os.path.exists(model_path):
-    raise FileNotFoundError(f"The model file {model_path} does not exist.")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(BASE_DIR, "..", "Model", "model.keras")
+# if not os.path.exists(model_path):
+#     raise FileNotFoundError(f"The model file {model_path} does not exist.")
 logging.info(f"Loading VGG16 model from {model_path}")
+model = None
 
 try:
-    model = tf.keras.models.load_model(model_path)
-    logging.info("VGG16 model loaded successfully.")
+    if os.path.exists(model_path):
+        model = tf.keras.models.load_model(model_path)
+        logging.info("VGG16 model loaded successfully.")
+    else:
+        logging.warning("Model file not found. Running app without prediction model.")
 except Exception as e:
-    logging.error(f"Error loading VGG16 model: {e}")
-    raise
+    logging.error(f"Error loading model: {e}")
 
 def prepare_image(image, target_size=(300, 300)):
     try:
@@ -64,9 +68,12 @@ def predict():
             image = prepare_image(image)
             
             # Predict the class
-            predictions = model.predict(image)
-            class_names = ['Benign', 'Malignant', 'Normal']
-            predicted_class = class_names[np.argmax(predictions)]
+            if model:
+                predictions = model.predict(image)
+                class_names = ['Benign', 'Malignant', 'Normal']
+                predicted_class = class_names[np.argmax(predictions)]
+            else:
+                predicted_class = "Model Not Available"
             
             return render_template('index.html', prediction=predicted_class)
         except Exception as e:
@@ -74,4 +81,5 @@ def predict():
             return "An error occurred during prediction"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"
+    app.run(debug=debug_mode)
