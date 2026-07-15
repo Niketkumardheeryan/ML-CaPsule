@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [main, master]
   workflow_dispatch:
+  
+permissions:
+  pull-requests: write
+  contents: read
 
 jobs:
   test-notebooks:
@@ -13,6 +17,8 @@ jobs:
     
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -24,6 +30,49 @@ jobs:
           pip install jupyter nbconvert pandas numpy
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       
+      - name: Get changed files
+        id: changed-files
+        shell: bash
+        run: | # fetches newly added or changed files
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch origin "${{ github.base_ref }}" --depth=1 || true
+            if git merge-base --is-ancestor "origin/${{ github.base_ref }}" HEAD 2>/dev/null; then
+              git diff --name-only "origin/${{ github.base_ref }}"...HEAD > changed_files.txt || true
+            else
+              git diff --name-only "origin/${{ github.base_ref }}" HEAD > changed_files.txt || true
+            fi
+          else
+            git diff --name-only HEAD^ HEAD > changed_files.txt || true
+          fi
+          if [ ! -s changed_files.txt ]; then
+            echo "No changed files detected; falling back to the full notebook scan." > changed_files.txt
+          fi
+          echo "changed_files<<EOF" >> "$GITHUB_OUTPUT"
+          cat changed_files.txt >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
       - name: Run notebook health check
+        id: health_check
+        continue-on-error: true
+        env:
+          CHANGED_FILES: ${{ steps.changed-files.outputs.changed_files }}
         run: python .github/scripts/notebook_health_check.py
         
+      - name: Show Warning on PR
+        if: always() # Run even if the python script throws an error
+        env:
+          REPORT_BODY: ${{ steps.health_check.outputs.report }}
+        run: |
+          if [ -n "$REPORT_BODY" ]; then
+            # Multiline strings in annotations must use %0A for newlines
+            ESCAPED_REPORT="${REPORT_BODY//$'\n'/%0A}"
+            
+            # This creates a yellow warning box on the PR summary page
+            echo "::warning title=Notebook Health Check Summary::$ESCAPED_REPORT"
+            
+            # Also write it to the Job Summary page for better formatting
+            echo "$REPORT_BODY" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "::warning title=Notebook Health Check::No notebooks were found or checked."
+          fi
