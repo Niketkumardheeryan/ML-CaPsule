@@ -4,7 +4,7 @@ on:
   schedule:
     # Runs every day at 8 AM
     - cron: '0 8 * * *'
-
+  workflow_dispatch: 
 jobs:
   remind-stale-issues:
     runs-on: ubuntu-latest
