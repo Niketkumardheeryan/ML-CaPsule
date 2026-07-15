@@ -21,8 +21,8 @@ jobs:
       uses: actions/github-script@v7
       with:
         script: |
-          const daysBeforeWarning = 0;
-          const daysBeforeClose = 0; // Days AFTER warning before closing/unassigning
+          const daysBeforeWarning = 2;
+          const daysBeforeClose = 5; // Days AFTER warning before closing/unassigning
 
           const warningDate = new Date(Date.now() - daysBeforeWarning * 24 * 60 * 60 * 1000);
           const closeDate = new Date(Date.now() - daysBeforeClose * 24 * 60 * 60 * 1000);
@@ -37,13 +37,19 @@ jobs:
           for (const item of items) {
             const isPR = !!item.pull_request;
             let lastUpdated = new Date(item.updated_at);
+            
+            // Track all inactivity labels
             let hasWarningLabel = item.labels.some(l => l.name === 'noActivity-warning');
+            let hasNoActivityLabel = item.labels.some(l => l.name === 'noActivity');
+            let hasUpForGrabLabel = item.labels.some(l => l.name === '🤩 Up for Grab');
+            
             let isActiveByHuman = false;
 
             // ==========================================
             // SHARED ACTIVITY CHECK: Did a human comment?
             // ==========================================
-            if (hasWarningLabel) {
+            // Check for human comments if ANY inactivity label is present
+            if (hasWarningLabel || hasNoActivityLabel || hasUpForGrabLabel) {
               try {
                 const allComments = await github.paginate(github.rest.issues.listComments, {
                   owner: context.repo.owner,
@@ -69,7 +75,6 @@ jobs:
             // PROCESS PULL REQUESTS
             // ==========================================
             if (isPR) {
-              // 1. Check if PR is pending review
               try {
                 const reviews = await github.rest.pulls.listReviews({
                   owner: context.repo.owner,
@@ -77,31 +82,35 @@ jobs:
                   pull_number: item.number,
                 });
                 
-                // If there are no reviews, skip the stale process entirely!
                 if (reviews.data.length === 0) {
                   console.log(`PR #${item.number} is pending review. Skipping.`);
                   continue; 
                 }
               } catch (e) { console.log(`Could not fetch reviews for PR #${item.number}`); }
 
-              // 2. Auto-Recovery
-              if (hasWarningLabel && isActiveByHuman) {
-                console.log(`PR #${item.number} is active again! Removing warning.`);
-                try {
-                  await github.rest.issues.removeLabel({
-                    owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning'
-                  });
-                  
+              // AUTO-RECOVERY for PRs
+              if ((hasWarningLabel || hasNoActivityLabel) && isActiveByHuman) {
+                console.log(`PR #${item.number} is active again! Removing inactivity labels.`);
+                let removedLabels = [];
+                
+                if (hasWarningLabel) {
+                  try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning' }); removedLabels.push('`noActivity-warning`'); } catch (e) {}
+                  hasWarningLabel = false;
+                }
+                if (hasNoActivityLabel) {
+                  try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity' }); removedLabels.push('`noActivity`'); } catch (e) {}
+                  hasNoActivityLabel = false;
+                }
+                
+                if (removedLabels.length > 0) {
                   await github.rest.issues.createComment({
                     owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number,
-                    body: `Activity detected! The \`noActivity-warning\` label has been removed.`,
+                    body: `Activity detected! The ${removedLabels.join(' and ')} label(s) have been removed.`,
                   });
-                  
-                  hasWarningLabel = false;
-                } catch (e) {}
+                }
               }
 
-              // 3. Stale Logic for PRs
+              // Stale Logic for PRs
               if (hasWarningLabel && lastUpdated < closeDate) {
                 console.log(`Closing inactive PR #${item.number}`);
                 await github.rest.issues.createComment({
@@ -116,7 +125,7 @@ jobs:
                 });
                 try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning' }); } catch (e) {}
                 
-              } else if (!hasWarningLabel && lastUpdated < warningDate) {
+              } else if (!hasWarningLabel && !hasNoActivityLabel && lastUpdated < warningDate) {
                 console.log(`Warning PR #${item.number}`);
                 const author = item.user ? `@${item.user.login}` : '';
                 await github.rest.issues.createComment({
@@ -136,7 +145,6 @@ jobs:
               let linkedPRPendingReview = false;
               const linkedOpenPRs = [];
 
-              // 1. GraphQL Check for linked Pull Requests & their Review Status
               const query = `
                 query($owner: String!, $repo: String!, $num: Int!) {
                   repository(owner: $owner, name: $repo) {
@@ -172,7 +180,6 @@ jobs:
                     const prNumber = node.source.number;
                     const prReviewCount = node.source.reviews ? node.source.reviews.totalCount : 0;
                     
-                    // If a linked PR has 0 reviews, the ISSUE is also protected!
                     if (prReviewCount === 0) {
                       linkedPRPendingReview = true;
                     }
@@ -190,30 +197,38 @@ jobs:
                 }
               } catch (e) { console.log(`Could not fetch PR data for issue #${item.number}`); }
 
-              // If a linked PR is pending review, skip the stale process for this issue
               if (linkedPRPendingReview) {
                 console.log(`Issue #${item.number} has a linked PR pending review. Skipping.`);
                 continue;
               }
 
-              // 2. Auto-Recovery
-              if (hasWarningLabel && isActiveByHuman) {
-                console.log(`Issue #${item.number} is active again! Removing warning.`);
-                try {
-                  await github.rest.issues.removeLabel({
-                    owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning'
-                  });
-                  
+              // AUTO-RECOVERY for Issues
+              if ((hasWarningLabel || hasNoActivityLabel || hasUpForGrabLabel) && isActiveByHuman) {
+                console.log(`Issue #${item.number} is active again! Removing inactivity labels.`);
+                let removedLabels = [];
+                
+                if (hasWarningLabel) {
+                  try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning' }); removedLabels.push('`noActivity-warning`'); } catch (e) {}
+                  hasWarningLabel = false; 
+                }
+                if (hasNoActivityLabel) {
+                  try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity' }); removedLabels.push('`noActivity`'); } catch (e) {}
+                  hasNoActivityLabel = false;
+                }
+                if (hasUpForGrabLabel) {
+                  try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: '🤩 Up for Grab' }); removedLabels.push('`🤩 Up for Grab`'); } catch (e) {}
+                  hasUpForGrabLabel = false;
+                }
+                
+                if (removedLabels.length > 0) {
                   await github.rest.issues.createComment({
                     owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number,
-                    body: `Activity detected! The \`noActivity-warning\` label has been removed.`,
+                    body: `Activity detected! The ${removedLabels.join(', ')} label(s) have been removed.`,
                   });
-                  
-                  hasWarningLabel = false; 
-                } catch (e) {}
+                }
               }
 
-              // 3. Stale Logic for Issues
+              // Stale Logic for Issues
               if (hasWarningLabel && lastUpdated < closeDate) {
                 console.log(`Marking issue #${item.number} as Up for Grab`);
                 await github.rest.issues.createComment({
@@ -234,7 +249,6 @@ jobs:
                 
                 try { await github.rest.issues.removeLabel({ owner: context.repo.owner, repo: context.repo.repo, issue_number: item.number, name: 'noActivity-warning' }); } catch (e) {}
 
-                // Close any linked Pull Requests
                 for (const prNumber of linkedOpenPRs) {
                   console.log(`Closing linked PR #${prNumber} due to issue inactivity`);
                   await github.rest.issues.createComment({
@@ -246,7 +260,7 @@ jobs:
                   });
                 }
 
-              } else if (!hasWarningLabel && lastUpdated < warningDate) {
+              } else if (!hasWarningLabel && !hasNoActivityLabel && lastUpdated < warningDate) {
                 console.log(`Warning issue #${item.number}`);
                 const taggedAssignees = item.assignees.map(a => `@${a.login}`).join(', ');
                 const greeting = taggedAssignees ? `👋 Hey ${taggedAssignees},` : `👋`;
