@@ -1,4 +1,4 @@
-name: Auto Comment on PR
+name: Auto Comment and Assign on PR raise
 
 on:
   pull_request_target:
