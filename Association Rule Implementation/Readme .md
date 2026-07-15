@@ -1,38 +1,29 @@
 # Association Rule Mining using Apriori and ECLAT
 
-Association Rule Mining is an unsupervised machine learning technique used to discover hidden relationships and co-occurrence patterns among items within transactional datasets. This project implements the **Apriori** and **ECLAT (Equivalence Class Clustering and Bottom-up Lattice Traversal)** algorithms to identify frequent itemsets and generate high-quality association rules from a retail bakery transaction dataset.
+This project demonstrates the implementation of **Association Rule Mining** techniques using the **Apriori** and **ECLAT** algorithms for Market Basket Analysis. The objective is to discover frequent itemsets and generate association rules from transactional retail data, enabling the identification of purchasing patterns and product associations.
 
-The objective is to analyze customer purchasing behavior through **Market Basket Analysis (MBA)** by extracting statistically significant associations between products. The resulting patterns can be leveraged for recommendation systems, cross-selling strategies, inventory optimization, and retail merchandising.
+## Overview
 
----
+Association Rule Mining is an unsupervised data mining technique used to uncover relationships among items frequently purchased together. This implementation applies two classical frequent pattern mining algorithms:
 
-## Features
+- **Apriori** – Candidate generation with iterative pruning based on the downward closure property.
+- **ECLAT** – Depth-first frequent itemset mining using a vertical transaction database representation.
 
-* Implementation of the Apriori algorithm for frequent itemset generation
-* Implementation of the ECLAT algorithm using a vertical transaction representation
-* Market Basket Analysis on real-world transactional data
-* Association rule generation using Support, Confidence, and Lift metrics
-* Ranking of discovered rules based on Lift
-* Data preprocessing for transactional datasets
-* Comparative analysis of Apriori and ECLAT
+The generated association rules are evaluated using **Support**, **Confidence**, and **Lift**.
 
 ---
 
 ## Dataset
 
-The project utilizes the **Bakery Dataset**, where each record represents an item purchased within a customer transaction.
+The project uses the **Bakery Dataset**, containing customer transaction records.
 
-### Dataset Attributes
-
-| Attribute     | Description                   |
-| ------------- | ----------------------------- |
+| Column | Description |
+|--------|-------------|
 | TransactionNo | Unique transaction identifier |
-| Items         | Purchased product             |
-| DateTime      | Timestamp of transaction      |
-| Daypart       | Morning, Afternoon, Evening   |
-| DayType       | Weekday or Weekend            |
-
-The transactional dataset is transformed into a list-based representation required by association rule mining algorithms.
+| Items | Purchased product |
+| DateTime | Timestamp of purchase |
+| Daypart | Time segment of the day |
+| DayType | Weekday / Weekend |
 
 ---
 
@@ -44,78 +35,33 @@ Association Rule Implementation/
 ├── Bakery.csv
 ├── association.ipynb
 ├── Apriori_and_ECLAT.ipynb
-├── README.md
+└── README.md
 ```
 
 ---
 
-## Methodology
+## Features
 
-The overall workflow consists of the following stages:
-
-1. Data acquisition and preprocessing
-2. Transaction encoding
-3. Frequent itemset mining using Apriori
-4. Frequent itemset mining using ECLAT
-5. Association rule generation
-6. Rule evaluation using interestingness measures
-7. Rule ranking and interpretation
-
----
-
-## Algorithms
-
-### Apriori
-
-Apriori follows a level-wise candidate generation approach based on the **downward closure property**, which states that every subset of a frequent itemset must also be frequent. Candidate itemsets are iteratively generated and pruned according to a minimum support threshold.
-
-### ECLAT
-
-ECLAT adopts a depth-first search strategy using a **vertical data format (Transaction ID Sets)** instead of candidate generation. This approach significantly reduces computational overhead for dense transactional datasets and generally outperforms Apriori in terms of execution speed.
+- Transaction preprocessing
+- Market Basket Analysis
+- Frequent Itemset Mining
+- Apriori implementation
+- ECLAT implementation
+- Association Rule Generation
+- Rule ranking using Lift
+- Comparative analysis of Apriori and ECLAT
 
 ---
 
-## Evaluation Metrics
+## Tech Stack
 
-Association rules are evaluated using the following metrics:
-
-### Support
-
-Measures the frequency of occurrence of an itemset within the dataset.
-
-[
-Support(A \rightarrow B)=\frac{Transactions(A \cup B)}{Total\ Transactions}
-]
-
-### Confidence
-
-Represents the conditional probability of purchasing item **B** given that item **A** has already been purchased.
-
-[
-Confidence(A \rightarrow B)=\frac{Support(A \cup B)}{Support(A)}
-]
-
-### Lift
-
-Measures the strength of an association relative to random chance.
-
-[
-Lift(A \rightarrow B)=\frac{Confidence(A \rightarrow B)}{Support(B)}
-]
-
-A Lift value greater than **1** indicates a positive association between items.
-
----
-
-## Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Apyori
-* PyECLAT
-* Jupyter Notebook
+- Python 3.x
+- Pandas
+- NumPy
+- Matplotlib
+- Apyori
+- PyECLAT
+- Jupyter Notebook
 
 ---
 
@@ -124,16 +70,11 @@ A Lift value greater than **1** indicates a positive association between items.
 Clone the repository:
 
 ```bash
-git clone https://github.com/nitikasingh12/ML-CaPsule.git
+git clone https://github.com/<repository-name>.git
+cd <repository-name>
 ```
 
-Navigate to the project directory:
-
-```bash
-cd ML-CaPsule
-```
-
-Install the required dependencies:
+Install dependencies:
 
 ```bash
 pip install pandas numpy matplotlib apyori pyECLAT
@@ -143,72 +84,81 @@ pip install pandas numpy matplotlib apyori pyECLAT
 
 ## Usage
 
-Launch Jupyter Notebook:
+Run the notebooks sequentially:
 
-```bash
-jupyter notebook
+```text
+association.ipynb
 ```
 
-Execute the notebooks sequentially:
+or
 
-* `association.ipynb`
-* `Apriori_and_ECLAT.ipynb`
+```text
+Apriori_and_ECLAT.ipynb
+```
+
+Ensure `Bakery.csv` is placed in the project directory before execution.
 
 ---
 
-## Results
+## Algorithm Workflow
 
-The implementation generates:
+1. Load transactional dataset
+2. Preprocess transaction records
+3. Transform transactions into list format
+4. Mine frequent itemsets using Apriori
+5. Generate association rules
+6. Evaluate rules using Support, Confidence, and Lift
+7. Mine frequent itemsets using ECLAT
+8. Compare discovered patterns
 
-* Frequent Itemsets
-* Association Rules
-* Support Scores
-* Confidence Scores
-* Lift Values
-* Ranked Association Rules
-* Comparative analysis between Apriori and ECLAT
+---
 
-The extracted rules reveal statistically significant product co-occurrence patterns that can support data-driven retail decision making.
+## Evaluation Metrics
+
+| Metric | Description |
+|---------|-------------|
+| Support | Frequency of an itemset in the dataset |
+| Confidence | Conditional probability of consequent given antecedent |
+| Lift | Strength of association relative to random occurrence |
 
 ---
 
 ## Applications
 
-* Market Basket Analysis
-* Recommendation Systems
-* Product Bundling
-* Cross-selling and Up-selling
-* Shelf Space Optimization
-* Customer Purchase Behavior Analysis
-* Inventory Management
-* Retail Analytics
+- Product Recommendation Systems
+- Market Basket Analysis
+- Retail Analytics
+- Cross-selling
+- Inventory Planning
+- Customer Purchase Behavior Analysis
 
 ---
 
-## Future Work
+## Future Enhancements
 
-* FP-Growth implementation for improved scalability
-* Interactive visualization dashboard using Streamlit
-* Rule network visualization using NetworkX
-* Hyperparameter optimization
-* Comparative benchmarking across multiple frequent pattern mining algorithms
-* Integration with real-time recommendation systems
+- FP-Growth implementation
+- Interactive visualizations
+- Rule network graph generation
+- Performance benchmarking
+- Streamlit dashboard
+- Hyperparameter optimization
 
 ---
 
 ## References
 
-* Agrawal, R., Imieliński, T., & Swami, A. (1993). *Mining Association Rules Between Sets of Items in Large Databases.*
-* Borgelt, C. (2002). *Efficient Implementations of Apriori and ECLAT.*
-* Apyori Documentation
-* PyECLAT Documentation
+- Agrawal, R., Imieliński, T., & Swami, A. (1993). *Mining Association Rules Between Sets of Items in Large Databases.*
+- Borgelt, C. (2002). *Efficient Implementations of Apriori and ECLAT.*
+- Apyori Documentation
+- PyECLAT Documentation
 
 ---
 
-## Author
+## Contributing
 
-**Nitika Singh**
+Contributions are welcome. Feel free to open an issue or submit a pull request for improvements, optimizations, or additional association rule mining algorithms.
 
-* GitHub: https://github.com/nitikasingh12
-* LinkedIn: https://www.linkedin.com/in/nitika-singh-497534312
+## License
+
+This project is distributed under the MIT License.
 
