@@ -172,6 +172,36 @@ Based on the provided classification reports, the performance ranking from best 
 In conclusion, VGG16 is the most suitable model for this task due to its superior performance, followed by the custom CNN. The MLP, while simpler, is not as effective for this particular problem.
 
 ## How to Use
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Niketkumardheeryan/ML-CaPsule.git
+cd ML-CaPsule/Brain\ Tumor\ Detection
+```
+
+2. (Optional) Create a virtual environment:
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+**Windows**
+```bash
+venv\Scripts\activate
+```
+
+**Linux/macOS**
+```bash
+source venv/bin/activate
+```
+
+3. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
 Requirements: Ensure you have the necessary libraries and dependencies installed. You can find the list of required packages in the requirements.txt file.
 
 Download Data: Download the Brain Tumor MRI Dataset from Kaggle mentioned in the dataset section of the project.
