@@ -6,3 +6,4 @@ data/*.mp3
 data/processed/*.npy
 data/processed/*.pkl
 output_*.wav
+.ipynb_checkpoints/
