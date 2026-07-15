@@ -36,7 +36,7 @@ jobs:
             if (issue.pull_request) continue; // Skip Pull Requests
 
             const lastUpdated = new Date(issue.updated_at);
-            const hasWarningLabel = issue.labels.some(l => l.name === 'stale-warning');
+            const hasWarningLabel = issue.labels.some(l => l.name === 'noActivity-warning');
 
             // SCENARIO 1: The issue was already warned, and still has no activity
             if (hasWarningLabel && lastUpdated < upForGrabDate) {
@@ -74,7 +74,7 @@ jobs:
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issue.number,
-                  name: 'stale-warning'
+                  name: 'noActivity-warning'
                 });
               } catch (e) { /* ignore if removing fails */ }
 
@@ -99,7 +99,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                labels: ['stale-warning']
+                labels: ['noActivity-warning']
               });
             }
           }
