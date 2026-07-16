@@ -74,13 +74,15 @@ jobs:
               body: `This pull request (#${issueNumber}) is linked to this issue.`
             });
           } else {
-            // This marks the workflow as failed 
+            // Add a warning comment to the Pull Request itself
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: linkedIssueNumber,
-              body: `No issue found to linked to this please link an issue`
+              issue_number: issueNumber, 
+              body: `No issue found linked to this PR. Please link an issue in the title or body.`
             });
+            
+            // This marks the workflow as failed 
             core.setFailed('No linked issue found in the PR title or body.');
           }   
           
