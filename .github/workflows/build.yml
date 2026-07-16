@@ -15,7 +15,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GH_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: Setup Python
       uses: actions/setup-python@v5
       with:
@@ -32,7 +32,7 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Update README.md
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}bui
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |-
         python build_readme.py
         cat README.md
