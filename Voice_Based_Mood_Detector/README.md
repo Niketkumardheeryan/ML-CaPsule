@@ -59,3 +59,64 @@ The network relies on a 2D CNN architecture tailored for spectrograms/MFCC spati
 ### I have also made a raw_&_mfcc_demonstration.py file which can be used to visualize the raw waveform and mfcc spectrogram of a test audio.Clone the repo and load any audio file in wav format and run the python file to see the waveforms for better understanding.
 ---
 
+
+-----
+### THIS IS THE STREAMLIT APP .UPLOAD THE AUDIO FILE AND GET THE CONFUSION MATRIX .FOR TEST YOU CAN USE THE AUDIO PRESENT IN  THE DIRECTORY
+![alt text](image.png)
+
+-----
+
+##  Installation & Execution
+
+Follow these steps to set up and run the Voice Based Mood Detector application.
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd voice_based_mood_detector
+```
+
+> If you have already downloaded the project, navigate to the project directory instead.
+
+---
+
+### 2. Install Dependencies
+
+Install all the required Python packages using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 3. Launch the Application
+
+Start the Streamlit application by running:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+### 4. Open the Application
+
+Once the server starts, Streamlit will automatically display a local URL similar to:
+
+```text
+http://localhost:8501
+```
+
+Open this URL in your web browser to use the application.
+
+---
+
+##  Requirements
+
+- Python 3.9 or later
+- pip
+- All required dependencies listed in `requirements.txt`
+
+
