@@ -74,7 +74,7 @@ jobs:
               body: `This pull request (#${issueNumber}) is linked to this issue.`
             });
           } else {
-            // This creates the yellow warning annotation in the GitHub UI
+            // This marks the workflow as failed 
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
