@@ -526,11 +526,11 @@ Thanks to all these amazing people who made **ML-CaPsule** possible! 🎉
 
 ### ⭐ Stargazers
 
-[![Stargazers](https://reporoster.com/stars/dark/Niketkumardheeryan/ML-CaPsule)](https://github.com/Niketkumardheeryan/ML-CaPsule/stargazers)
+![Stargazers](https://readme-contribs.as93.net/stargazers/Niketkumardheeryan/ML-CaPsule)
 
 ### 🍴 Forkers
 
-[![Forkers](https://reporoster.com/forks/dark/Niketkumardheeryan/ML-CaPsule)](https://github.com/Niketkumardheeryan/ML-CaPsule/network/members)
+![Forkers](https://readme-contribs.as93.net/forkers/Niketkumardheeryan/ML-CaPsule)
 
 ![Rainbow Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
