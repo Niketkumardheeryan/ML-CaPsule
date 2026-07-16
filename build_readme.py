@@ -1,7 +1,13 @@
 from pathlib import Path
 import re
+import requests
+from bs4 import BeautifulSoup  # You will need to run: pip install beautifulsoup4
+import sys
 
 ROOT_PATH = Path(__file__).parent.resolve()
+
+# Add your GitHub repository URL here
+FEED_URL = "https://github.com/Niketkumardheeryan/ML-CaPsule"
 
 EXCLUDED_NAMES = {
     ".github",
@@ -17,7 +23,6 @@ EXCLUDED_NAMES = {
     ".git",
     "__pycache__",
 }
-
 
 def replace_chunk(content, marker, chunk, inline=False):
     r = re.compile(
@@ -36,55 +41,42 @@ def replace_chunk(content, marker, chunk, inline=False):
 
     return r.sub(chunk, content)
 
-def Exract_files_names():
-    try:
-        req = requests.get(FEED_URL, timeout=10)
-        req.raise_for_status()
-    except requests.exceptions.Timeout:
-        print("ERROR: Request timed out. GitHub may be rate-limiting or unreachable.")
-        sys.exit(1)
-    except requests.exceptions.HTTPError as e:
-        print("ERROR: HTTP error occurred: {}".format(e))
-        sys.exit(1)
-    except requests.exceptions.ConnectionError:
-        print("ERROR: Failed to connect. Check your internet connection.")
-        sys.exit(1)
-    except requests.exceptions.RequestException as e:
-        print("ERROR: An unexpected error occurred: {}".format(e))
-        sys.exit(1)
-
 def extract_file_names():
     temp = []
 
-    for path in sorted(ROOT_PATH.iterdir(), key=lambda item: item.name.casefold()):
-        if not path.is_dir():
-            continue
+    # 1. Fetch the HTML from GitHub
+    try:
+        req = requests.get(FEED_URL, timeout=10)
+        req.raise_for_status()
+    except requests.exceptions.RequestException as e:
+        print("ERROR: Failed to fetch repository data: {}".format(e))
+        sys.exit(1)
 
-        if path.name in EXCLUDED_NAMES or path.name.startswith("."):
-            continue
+    # 2. Parse the HTML using BeautifulSoup
+    soup = BeautifulSoup(req.text, "html.parser")
 
-        temp.append(
-            {
-                "fname": path.name,
-                "furl": path.name,
-            }
-        )
+    # 3. Define the missing 'li' variable. 
+    # Wrapping soup in a list allows your existing 'for i in li:' loop to work perfectly.
+    li = [soup] 
 
-    return temp
-
+    # 4. Your existing loop
     for i in li:
         for x in i.findAll('a', class_="js-navigation-open Link--primary"):
-            if (x.text != ".github" and x.text != "CODE_OF_CONDUCT.md" and x.text != "CONTRIBUTING_GUIDELINES.md" and x.text != ".github/workflows" and x.text != "build_readme.py" and x.text != "requirements.txt" and x.text != "README.md" and x.text != "download statistics.jpg" and x.text != "img" and x.text != "ml img.jpg"):
+            if (x.text not in EXCLUDED_NAMES): # Streamlined your exclusion list check
                 temp2 = {
                     'fname': x.text,
-                    'furl': x["href"].split('/')[-1]
+                    # Grabs the actual file/folder name from the end of the URL
+                    'furl': x["href"].split('/')[-1].replace(" ", "%20") 
                 }
                 temp.append(temp2)
     return temp
 
 if __name__ == "__main__":
-
     readme = ROOT_PATH / "README.md"
+
+    if not readme.exists():
+        print(f"ERROR: {readme} not found.")
+        sys.exit(1)
 
     with open(readme, "r", encoding="utf-8") as readme_file:
         readme_contents = readme_file.read()

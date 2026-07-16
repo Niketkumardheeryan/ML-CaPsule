@@ -6,7 +6,7 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron:  '5 * * * *'  
+    - cron:  '5 * * * *' # Runs every hour at 5 minutes past the hour
 
 jobs:
   build:
@@ -32,7 +32,7 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Update README.md
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}bui
       run: |-
         python build_readme.py
         cat README.md
