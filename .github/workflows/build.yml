@@ -9,7 +9,7 @@ on:
     - cron:  '5 * * * *' # Runs every hour at 5 minutes past the hour
 
 jobs:
-  build:
+  build-and-update-requirements:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
@@ -30,6 +30,9 @@ jobs:
     - name: Install Python dependencies
       run: |
         python -m pip install -r requirements.txt
+    - name : Update requirements.txt
+      run: |
+        python .github/scripts/update_requirements.py
     - name: Update README.md
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -44,3 +47,5 @@ jobs:
         git add README.md
         git commit -m "This is an automated update of README.md." || exit 0
         git push
+      
+      
