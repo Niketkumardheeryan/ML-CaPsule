@@ -16,6 +16,8 @@ The notebook is designed to help beginners understand how healthcare datasets ca
 ## Dataset
 
 **Dataset Used:** Pima Indians Diabetes Dataset
+**Original Dataset:**
+https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
 
 The dataset contains several medical diagnostic measurements of female patients, including:
 
