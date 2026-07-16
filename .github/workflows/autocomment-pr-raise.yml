@@ -75,7 +75,13 @@ jobs:
             });
           } else {
             // This creates the yellow warning annotation in the GitHub UI
-            core.warning('No linked issue found in the PR title or body.');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: linkedIssueNumber,
+              body: `No issue found to linked to this please link an issue`
+            });
+            core.setFailed('No linked issue found in the PR title or body.');
           }   
           
 
