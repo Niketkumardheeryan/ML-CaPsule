@@ -342,6 +342,26 @@ This repository offers a rich collection of machine learning and data science pr
 ## 🚀 Get Started
 This repository showcases a diverse collection of machine learning projects and data science algorithms, ranging from basic to advanced levels. It includes topics on machine learning, deep learning, SQL, NLP, object detection, classification, recommendation systems, chatbots, and much more.
 
+### 🐳 Running with Docker (Recommended)
+
+To run and develop any of the repository's projects in a consistent environment without installing packages locally:
+
+1. **Prerequisites**: Ensure you have [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) installed.
+2. **Launch Environment**: Run the following command in the repository root:
+   ```bash
+   docker compose up --build
+   ```
+3. **Access Jupyter Notebook**:
+   - Open your browser and navigate to: `http://localhost:8888/?token=mlcapsule`
+   - The workspace matches your local workspace, allowing you to edit and execute notebooks in real-time.
+4. **Access Streamlit / Other Webapps**:
+   - Streamlit apps are pre-configured to bind to port `8501`.
+   - Access web interfaces at: `http://localhost:8501`
+5. **Open Terminal inside Container**:
+   - Open a shell session inside the running container to run custom commands:
+     ```bash
+     docker exec -it ml-capsule-dev-container bash
+     ```
 
 ### 🌟 Have a Look!
 Give this project a ⭐ if you love it!

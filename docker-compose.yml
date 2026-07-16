@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ml-capsule-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ml-capsule-dev-container
+    volumes:
+      - .:/workspace
+    ports:
+      - "8888:8888"
+      - "8501:8501"
+    environment:
+      - JUPYTER_TOKEN=mlcapsule
+    restart: unless-stopped
