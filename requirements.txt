@@ -1,2 +1,9 @@
 requests
 bs4
+ultralytics==8.3.0
+streamlit>=1.28.0
+opencv-python-headless==4.8.0.76
+Pillow>=9.0.0
+numpy>=1.24.0
+torch==2.1.0
+torchvision==0.16.0
