@@ -51,21 +51,52 @@ files.upload()  # Upload your kaggle.json here
 
 import os
 
-# Paste your API token here (the one you just copied)
-KAGGLE_TOKEN = "KGAT_d5508e77030136fba01282c937c8313d"  # ← Replace with YOUR token
+# ------------------------------------------------------------------
+# 🔐 Kaggle API Credentials — loaded from environment variables
+#
+# Option A (Google Colab):
+#   1. Open the 🔑 Secrets panel (left sidebar → key icon)
+#   2. Add  KAGGLE_USERNAME  and  KAGGLE_KEY
+#   3. Toggle "Notebook access" ON for both
+#
+# Option B (local .py):
+#   1. Copy .env.example → .env
+#   2. Fill in your KAGGLE_USERNAME and KAGGLE_KEY
+#   3. pip install python-dotenv, then the block below auto-loads them
+#
+# Get your credentials at:  https://www.kaggle.com/settings → API
+# ------------------------------------------------------------------
+try:
+    # Try Colab secrets first
+    from google.colab import userdata
+    KAGGLE_USERNAME = userdata.get('KAGGLE_USERNAME')
+    KAGGLE_KEY      = userdata.get('KAGGLE_KEY')
+except Exception:
+    # Fall back to .env / system environment
+    try:
+        from dotenv import load_dotenv
+        load_dotenv()
+    except ImportError:
+        pass  # dotenv not installed; rely on shell-exported vars
+    KAGGLE_USERNAME = os.environ.get('KAGGLE_USERNAME', '')
+    KAGGLE_KEY      = os.environ.get('KAGGLE_KEY', '')
 
-# Set as environment variable
-os.environ['KAGGLE_API_TOKEN'] = KAGGLE_TOKEN
+if not KAGGLE_USERNAME or not KAGGLE_KEY:
+    raise EnvironmentError(
+        "❌ Kaggle credentials not found.\n"
+        "   • In Colab: add KAGGLE_USERNAME and KAGGLE_KEY in the Secrets panel.\n"
+        "   • Locally:  copy .env.example → .env and fill in your values."
+    )
 
-# Also save it to the kaggle config location
-os.makedirs('/root/.kaggle', exist_ok=True)
+# Write credentials to ~/.kaggle/kaggle.json (required by kaggle CLI)
+import json
+os.makedirs(os.path.expanduser('~/.kaggle'), exist_ok=True)
+kaggle_json_path = os.path.expanduser('~/.kaggle/kaggle.json')
+with open(kaggle_json_path, 'w') as f:
+    json.dump({"username": KAGGLE_USERNAME, "key": KAGGLE_KEY}, f)
+os.chmod(kaggle_json_path, 0o600)
 
-with open('/root/.kaggle/access_token', 'w') as f:
-    f.write(KAGGLE_TOKEN)
-
-os.chmod('/root/.kaggle/access_token', 0o600)
-
-print("✅ Kaggle API Token set successfully!")
+print("✅ Kaggle credentials configured successfully!")
 
 # Download ImageNet Mini Dataset
 !kaggle datasets download -d ifigotin/imagenetmini-1000 \

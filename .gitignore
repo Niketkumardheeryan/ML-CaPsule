@@ -1,0 +1,43 @@
+# ============================================================
+#  ML-CaPsule — Global .gitignore
+# ============================================================
+
+# --- Secrets / Environment ---
+.env
+*.env
+!*.env.example
+
+# --- Kaggle credentials ---
+kaggle.json
+/root/.kaggle/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.venv/
+venv/
+env/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.nbconvert.py
+
+# --- Data / Models ---
+*.h5
+*.pt
+*.pth
+*.pkl
+*.ckpt
+/content/
+
+# --- OS ---
+.DS_Store
+Thumbs.db

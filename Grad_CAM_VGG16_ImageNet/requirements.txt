@@ -1,4 +1,9 @@
-tensorflow
-opencv-python
+torch
+torchvision
+opencv-python-headless
 matplotlib
-numpy
+Pillow
+requests
+kaggle
+python-dotenv
+pytorch-grad-cam
