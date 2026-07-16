@@ -14,11 +14,10 @@ This project trains a YOLOv8n model on a custom 55-class playing card dataset an
 ## Files
 | File | Description |
 |---|---|
-| `download_dataset.py` | Downloads the playing card dataset from Roboflow |
-| `playing_card_detection.ipynb` | Full pipeline: trains the model and runs real-time webcam detection |
+| `playing_card_detection.ipynb` | Full pipeline: downloads the dataset, trains the model, and runs real-time webcam detection |
 
 ## Dataset
-Custom playing card dataset (55 classes: ranks 2-10, J, Q, K, A across all 4 suits, plus face-up/face-down pile classes), sourced from Roboflow.
+Custom playing card dataset (55 classes: ranks 2-10, J, Q, K, A across all 4 suits, plus face-up/face-down pile classes), sourced from Roboflow: https://universe.roboflow.com/0lauk0/playing-cards-muou8
 
 ## Model Weights
 Trained weights (`best.pt`) are not committed to the repo (`.gitignore` excludes `*.pt` files). Download them from the release attached to the PR and place `best.pt` in this folder before running the notebook.
@@ -37,10 +36,10 @@ Trained for 50 epochs on a Tesla T4 GPU (~37 minutes).
 ![Sample detection](sample_detection.jpg)
 
 ## How to Run
-1. Install dependencies: `pip install ultralytics opencv-python`
-2. Download the dataset: run `download_dataset.py`, or download `Playing-cards-10.zip` manually and extract into this folder
+1. Install dependencies: `pip install ultralytics opencv-python roboflow python-dotenv`
+2. Add a `.env` file with your `ROBOFLOW_API_KEY`
 3. Download `best.pt` (from the release) and place it in this folder
-4. Open `playing_card_detection.ipynb` and run all cells to train and/or run detection
+4. Open `playing_card_detection.ipynb` and run all cells — this downloads the dataset, trains the model, and runs real-time webcam detection
 
 ## Notes
 Webcam inference logic follows standard Ultralytics real-time detection patterns.
