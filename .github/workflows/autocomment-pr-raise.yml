@@ -1,4 +1,4 @@
-name: Auto Comment on PR
+name: Auto Comment and Assign on PR raise
 
 on:
   pull_request_target:
@@ -17,8 +17,8 @@ jobs:
       run: |
         COMMENT=$(cat <<EOF
         {
-          "body": "Thank you for submitting your pull request! 🙌 We'll review it as soon as possible. If there are any specific instructions or feedback regarding your PR, we'll provide them here. Thanks again for your contribution! 😊"
-        }
+          "body": "Thank you for submitting your pull request 🙌! Please assign this pull request yourself by commenting `/assign`. We'll review it as soon as possible. If there are any specific instructions or feedback regarding your PR, we'll provide them here. Thanks again for your contribution! 😊"
+        } 
         EOF
         )
         RESPONSE=$(curl -s -o response.json -w "%{http_code}" \
@@ -34,3 +34,22 @@ jobs:
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Try assign the author to PR
+      uses: actions/github-script@v7
+      with:
+        script: |
+          // Get the username of the person who opened the Pull Request
+          const author = context.payload.pull_request.user.login;
+          
+          console.log(`Assigning PR #${context.issue.number} to ${author}`);
+          
+          // Assign the author to the PR
+          await github.rest.issues.addAssignees({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            assignees: [author]
+          });
+          
+
+    

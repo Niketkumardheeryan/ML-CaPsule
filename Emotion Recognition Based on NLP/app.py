@@ -4,12 +4,12 @@ from flask import Flask, render_template, request, redirect, url_for
 import pickle
 import numpy as np
 import nltk
-
+import os
 
 # load pickle files 
 filename = 'nlp.pkl'
 classifier = pickle.load(open(filename, 'rb'))  ## classfier model
-cv = pickle.load(open('transform.pkl', 'rb'))   ## this is used for transforming the data using CV class
+cv = pickle.load(open('./Model/transform.pkl', 'rb'))   ## this is used for transforming the data using CV class
 
 
 app = Flask(__name__)  ## Flask constructor takes the name of current module (__name__) as argument
@@ -38,5 +38,6 @@ def predict():
     return render_template('home.html', prediction=emotion, errors=errors)        ## render the page for the user
 
 
-if __name__ == '__main__':     ## Execution starts here
-    app.run(debug=True)
+if __name__ == "__main__":
+    debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"
+    app.run(debug=debug_mode)
