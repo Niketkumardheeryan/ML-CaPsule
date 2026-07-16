@@ -1,142 +1,108 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "d2029e3e-8c59-4e88-91c6-8a085a508bda",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# 🤖 Gestura AI: Real-Time Hand Gesture Recognition Web App\n",
-    "\n",
-    "A high-performance, real-time Hand Gesture Recognition Web Application built using **MediaPipe**, **OpenCV**, **Scikit-learn**, and **Streamlit**. \n",
-    "\n",
-    "This system processes live webcam feeds through a specialized background processing thread, detects hand structures, instantly registers gestures inside the system terminal, and appends them to a continuous visual chronological stack log.\n",
-    "\n",
-    "---\n",
-    "\n",
-    "## Features\n",
-    "\n",
-    "- **Multi-Threaded Video Streaming:** High-efficiency web camera stream powered by `streamlit-webrtc`.\n",
-    "- **Precision Landmark Tracking:** Extracts 21 precise 3D hand coordinates using Google MediaPipe.\n",
-    "- **Instant Inference Pipeline:** Real-time gesture prediction via a pre-trained Scikit-learn classifier.\n",
-    "- **Console Telemetry Logs:** Prints gesture updates immediately to the system terminal on sign modification.\n",
-    "- **Glassmorphism Premium UI:** High-contrast dark mode design with responsive live badges and glowing metrics.\n",
-    "- **Log Queue & System Flush:** A running history queue of all continuous inputs with a one-click workspace reset button.\n",
-    "\n",
-    "---\n",
-    "\n",
-    "## Live Application Preview\n",
-    "\n",
-    "\n",
-    "\n",
-    "---\n",
-    "\n",
-    "## Tech Stack\n",
-    "\n",
-    "- **Core Engine:** Python 3.9+\n",
-    "- **Deep Learning Tracking:** MediaPipe Tasks (Vision)\n",
-    "- **Computer Vision Processing:** OpenCV-Python\n",
-    "- **Inference & Serialization:** Scikit-learn, Joblib, NumPy\n",
-    "- **Interactive Framework:** Streamlit, streamlit-webrtc\n",
-    "\n",
-    "---\n",
-    "\n",
-    "## Project Structure\n",
-    "\n",
-    "```bash\n",
-    "Real_Time_Hand_Gesture_Recognition_WebApp_Gestura_AI/\n",
-    "├── fresh_gesture_app.py              # Main multi-threaded frontend web dashboard\n",
-    "├── model/\n",
-    "│   └── keypoint_classifier/\n",
-    "│       ├── hand_landmarker.task      # MediaPipe asset file for tracking\n",
-    "│       └── gesture_classifier.pkl    # Pre-trained ML/DL classification model\n",
-    "├── requirements.txt                  # Python dependencies configuration\n",
-    "└── README.md                         # Project documentation\n",
-    "\n",
-    "---\n",
-    "\n",
-    "## Installation & Rapid Deployment\n",
-    "\n",
-    "### 1️⃣ Clone Repository\n",
-    "\n",
-    "```bash\n",
-    "git clone https://github.com/your-username/your-repo-name.git\n",
-    "cd your-repo-name\n",
-    "```\n",
-    "\n",
-    "### 2️⃣ Create Virtual Environment\n",
-    "\n",
-    "```bash\n",
-    "python -m venv venv\n",
-    "```\n",
-    "\n",
-    "### 3️⃣ Activate Virtual Environment\n",
-    "\n",
-    "#### Windows\n",
-    "\n",
-    "```bash\n",
-    "venv\\Scripts\\activate\n",
-    "```\n",
-    "\n",
-    "#### Linux / Mac\n",
-    "\n",
-    "```bash\n",
-    "source venv/bin/activate\n",
-    "```\n",
-    "\n",
-    "---\n",
-    "\n",
-    "##  Install Dependencies\n",
-    "\n",
-    "```bash\n",
-    "pip install streamlit streamlit-webrtc opencv-python numpy mediapipe joblib scikit-learn\n",
-    "```\n",
-    "\n",
-    "---\n",
-    "\n",
-    "##  Run the Application\n",
-    "\n",
-    "```bash\n",
-    "streamlit run fresh_gesture_app.py\n",
-    "```\n",
-    "\n",
-    "---\n",
-    "\n",
-    "##  Neural Class Mapping Information\n",
-    "\n",
-    "The gesture recognition model is trained using hand landmark coordinates extracted using MediaPipe.\n",
-    "\n",
-    "Possible recognized gestures may include:\n",
-    "\n",
-    "- 🖐️ Open Palm (Class 0) → Toggles background simulation media threads\n",
-    "- ✊ Closed Fist (Class 1) → Flushes logs and restores workspace view defaults\n",
-    "- 👍 Thumbs Up (Class 2) → Locks feature matrices and triggers live UI badges\n",
-    "- ✌️ Peace Sign (Class 3) → Swaps interactive panel dashboard navigation rows\n",
-    "- 👌 OK Sign (Class 4) → Appends continuous token signals to terminal logs safely\n",
-    "\n"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3 (ipykernel)",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.13.1"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+# 🤖 Gestura AI: Real-Time Hand Gesture Recognition Web App
+
+A high-performance, real-time Hand Gesture Recognition Web Application built using **MediaPipe**, **OpenCV**, **Scikit-learn**, and **Streamlit**.
+
+This system processes live webcam feeds through a specialized background processing thread, detects hand structures, instantly registers gestures inside the system terminal, and appends them to a continuous visual chronological stack log.
+
+---
+
+## ✨ Features 
+
+- **Multi-Threaded Video Streaming:** High-efficiency web camera stream powered by `streamlit-webrtc`.
+- **Precision Landmark Tracking:** Extracts 21 precise 3D hand coordinates using Google MediaPipe.
+- **Instant Inference Pipeline:** Real-time gesture prediction via a pre-trained Scikit-learn classifier.
+- **Console Telemetry Logs:** Prints gesture updates immediately to the system terminal on sign modification.
+- **Glassmorphism Premium UI:** High-contrast dark mode design with responsive live badges and glowing metrics.
+- **Log Queue & System Flush:** A running history queue of all continuous inputs with a one-click workspace reset button.
+
+---
+
+## 📸 Live Application Preview
+
+> Add screenshots or GIFs of your application here.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Core Engine:** Python 3.9+
+- **Deep Learning Tracking:** MediaPipe Tasks (Vision)
+- **Computer Vision Processing:** OpenCV-Python
+- **Inference & Serialization:** Scikit-learn, Joblib, NumPy
+- **Interactive Framework:** Streamlit, streamlit-webrtc
+
+---
+
+## 📂 Project Structure
+
+```text
+Real_Time_Hand_Gesture_Recognition_WebApp_Gestura_AI/
+├── fresh_gesture_app.py              # Main multi-threaded frontend web dashboard
+├── model/
+│   └── keypoint_classifier/
+│       ├── hand_landmarker.task      # MediaPipe asset file for tracking
+│       └── gesture_classifier.pkl    # Pre-trained ML/DL classification model
+├── requirements.txt                  # Python dependencies configuration
+└── README.md                         # Project documentation
+```
+
+---
+
+## 🚀 Installation & Rapid Deployment
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+### 2️⃣ Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### 3️⃣ Activate Virtual Environment
+
+#### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+#### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## 📦 Install Dependencies
+
+```bash
+pip install streamlit streamlit-webrtc opencv-python numpy mediapipe joblib scikit-learn
+```
+
+---
+
+## ▶️ Run the Application
+
+```bash
+streamlit run fresh_gesture_app.py
+```
+
+---
+
+## 🧠 Neural Class Mapping Information
+
+The gesture recognition model is trained using hand landmark coordinates extracted using MediaPipe.
+
+Possible recognized gestures may include:
+
+- 🖐️ **Open Palm (Class 0)** → Toggles background simulation media threads
+- ✊ **Closed Fist (Class 1)** → Flushes logs and restores workspace view defaults
+- 👍 **Thumbs Up (Class 2)** → Locks feature matrices and triggers live UI badges
+- ✌️ **Peace Sign (Class 3)** → Swaps interactive panel dashboard navigation rows
+- 👌 **OK Sign (Class 4)** → Appends continuous token signals to terminal logs safely
