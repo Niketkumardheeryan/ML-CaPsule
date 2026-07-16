@@ -1,127 +1,51 @@
-# 🛒 Association Rule Implementation
+# Association Rule Implementation
 
-A data mining project implementing **Apriori** and **ECLAT** association rule algorithms to discover frequent itemsets and buying patterns from real bakery and grocery transaction datasets.
+This folder contains notebooks and data for performing association rule mining on transaction datasets (supermarket and bakery). The notebooks demonstrate Apriori and an ECLAT-style frequency analysis, exploratory data analysis (EDA), and visualization of item associations.
 
----
+## Datasets
+- `Market_Basket_Optimisation.csv` — weekly supermarket baskets (7,501 transactions). Each row is a customer's basket with up to 20 item columns.
+- `Bakery.csv` — bakery transactions (20,507 rows, ~9,465 unique transactions) including `TransactionNo`, `Items`, `DateTime`, `Daypart`, and `DayType`.
 
-## 📌 Project Description
+## Notebooks
 
-Association Rule Mining finds relationships between items in large datasets — for example, *"customers who buy bread also tend to buy coffee."*
+- `Apriori_and_ECLAT.ipynb`
+	- Loads supermarket basket data and prepares transaction lists.
+	- Runs Apriori (using `apyori`) to find frequent itemsets and association rules (min_support ~0.003, min_confidence=0.2, min_lift=3).
+	- Implements an ECLAT-style frequency calculation (pairs and trios) to rank most common item combinations by raw frequency.
+	- Compares Apriori results (association strength) with ECLAT frequency rankings.
 
-This project implements two popular algorithms:
+- `association.ipynb`
+	- Loads `Bakery.csv`, runs EDA (top items, peak sale hours, day/month trends) using `pandas` and `plotly`.
+	- Prepares transactions and one-hot encodes items with `mlxtend.preprocessing.TransactionEncoder`.
+	- Runs `mlxtend.frequent_patterns.apriori` and `mlxtend.frequent_patterns.association_rules` to generate and filter rules.
+	- Visualizes item connections with `networkx` and interactive Plotly graphs.
 
-| Algorithm | Description |
-|-----------|-------------|
-| **Apriori** | Finds frequent itemsets level by level using a bottom-up approach |
-| **ECLAT** | Uses vertical data format for faster frequent itemset mining |
+## Key Methods and Libraries
+- Apriori: discovers frequent itemsets and derives rules (support, confidence, lift).
+- ECLAT-style frequency scoring: counts how often combinations appear across transactions.
+- Libraries: `pandas`, `numpy`, `mlxtend`, `apyori`, `plotly`, `networkx`, `matplotlib`.
 
-> 💡 Key insight from the project: Confidence should not be set too high — some items appear together simply because they are popular (e.g. mineral water + toilet paper), not because they are truly associated.
-
----
-
-## 📂 Datasets
-
-### 1. Bakery Dataset (`Bakery.csv`) — included in the folder
-Real bakery transaction data with the following columns:
-
-| Column | Description |
-|--------|-------------|
-| `TransactionNo` | Unique transaction ID |
-| `Items` | Item purchased |
-| `DateTime` | Date and time of purchase |
-| `Daypart` | Morning / Afternoon / Evening |
-| `DayType` | Weekend / Weekday |
-
-**Sample data:**
-
-| TransactionNo | Items | DateTime | Daypart | DayType |
-|---|---|---|---|---|
-| 1 | Bread | 2016-10-30 09:58 | Morning | Weekend |
-| 2 | Scandinavian | 2016-10-30 10:05 | Morning | Weekend |
-| 3 | Hot chocolate | 2016-10-30 10:07 | Morning | Weekend |
-
-### 2. Groceries Dataset (`Groceries_dataset.csv`) — included in the folder
-Grocery store transaction data used for Apriori implementation.
-
-> ✅ Both datasets are already included in the project folder — no external download needed.
-
----
-
-## 🛠️ Dependencies
-
-Install the required libraries:
+## Quick Usage
+1. Install dependencies (recommended in a venv):
 
 ```bash
-pip install pandas numpy mlxtend apyori matplotlib seaborn
+pip install pandas numpy mlxtend apyori plotly networkx matplotlib
 ```
 
-| Library | Purpose |
-|---------|---------|
-| `pandas` | Data loading and manipulation |
-| `mlxtend` | Apriori and association rules implementation |
-| `apyori` | Alternative Apriori implementation ([source](https://github.com/ymoch/apyori)) |
-| `matplotlib` / `seaborn` | Visualization |
+2. Open the notebooks in Jupyter or VS Code and run cells in order. The notebooks load `Market_Basket_Optimisation.csv` and `Bakery.csv` from this folder.
+
+## Example Findings (from notebooks)
+- Supermarket data: combinations like `olive oil`, `whole wheat pasta`, and `mineral water` appear as strong association rules by Apriori.
+- Bakery data: `Coffee` is the top-selling item and shows strong associations with cakes, pastries, and tea.
+
+## Business Impact
+- Use discovered rules for: product recommendations, bundle offers, targeted promotions, and strategic product placement in stores.
+
+## Notes & Next Steps
+- You can tune Apriori `min_support`, `min_confidence`, and `min_lift` to find more or fewer rules.
+- Consider persisting rules and building a simple recommender that suggests items at checkout.
 
 ---
 
-## 🚀 How to Run
+Contributed as part of the ML-CaPsule project.
 
-> ✅ This project can be run on **Google Colab** or **locally with Jupyter Notebook**.
-
-### Option A — Google Colab (easier)
-1. Open [colab.research.google.com](https://colab.research.google.com/)
-2. Upload the notebook (`Apriori_and_ECLAT.ipynb` or `19csu207.ipynb`)
-3. Upload `Bakery.csv` and `Groceries_dataset.csv` to the Colab session
-4. Run all cells via `Runtime` → `Run all`
-
-### Option B — Local Jupyter Notebook
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Niketkumardheeryan/ML-CaPsule.git
-   cd "ML-CaPsule/Association Rule Implementation"
-   ```
-2. Install dependencies:
-   ```bash
-   pip install pandas numpy mlxtend apyori matplotlib seaborn
-   ```
-3. Launch Jupyter:
-   ```bash
-   jupyter notebook Apriori_and_ECLAT.ipynb
-   ```
-4. Run all cells in order
-
----
-
-## 📊 Sample Output
-
-The algorithms output association rules in the form:
-
-```
-{coffee} → {bread}   | Support: 0.32 | Confidence: 0.71 | Lift: 1.84
-{cake}   → {coffee}  | Support: 0.21 | Confidence: 0.65 | Lift: 1.62
-```
-
-| Metric | Meaning |
-|--------|---------|
-| **Support** | How often the itemset appears in all transactions |
-| **Confidence** | How often the rule is correct |
-| **Lift** | How much more likely items are bought together vs. independently |
-
----
-
-## 📁 Project Structure
-
-```
-Association Rule Implementation/
-├── Apriori_and_ECLAT.ipynb     ← Main notebook (Apriori + ECLAT)
-├── 19csu207.ipynb              ← Additional implementation notebook
-├── Bakery.csv                  ← Bakery transactions dataset
-├── Groceries_dataset.csv       ← Groceries transactions dataset
-└── README.md
-```
-
----
-
-## 👤 Contributor
-
-- README added as part of [ML-CaPsule](https://github.com/Niketkumardheeryan/ML-CaPsule) open-source contribution

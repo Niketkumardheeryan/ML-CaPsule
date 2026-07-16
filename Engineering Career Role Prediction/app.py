@@ -1,7 +1,6 @@
 import streamlit as st
 import joblib
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder
 
 # Load the Logistic Regression model
 model = joblib.load('logistic.pkl')
@@ -24,13 +23,11 @@ def preprocess_input(data):
     df = pd.DataFrame([data])
     categorical_columns = ['can work long time before system?', 'self-learning capability?', 'talent tests taken?',
                            'higher education?']
-    label_encoders = {}
+    yes_no_mapping = {'Yes': 1, 'No': 0}
 
     for col in categorical_columns:
         if col in df.columns:
-            le = LabelEncoder()
-            df[col] = le.fit_transform(df[col])
-            label_encoders[col] = le
+            df[col] = df[col].map(yes_no_mapping)
 
     return df
 
@@ -48,41 +45,99 @@ def main():
     # Apply custom CSS
     st.markdown("""
         <style>
+        @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
         .stApp {
-            background-color: #000000;
-            color: #ffffff;
-        }
-        .input-container {
-            border: 2px solid #333333;
-            border-radius: 10px;
-            padding: 15px;
-            background-color: #1e1e1e;
-        }
-        .output-container {
-            border: 2px solid #333333;
-            border-radius: 10px;
-            padding: 10px;
-            background-color: #1e1e1e;
-            color: #ffffff;
-        }
-        .success-message {
-            font-weight: bold;
-            color: #ffffff;
-            background-color: #4CAF50;
-            border-radius: 10px;
-            padding: 10px;
-            text-align: center;
+            background-color: #F7F3E8;
+            color: #1B2A4A;
+            font-family: 'IBM Plex Sans', sans-serif;
         }
         .header {
+            font-family: 'Spectral', serif;
             text-align: center;
-            color: #90EE90; /* Light green color */
-            font-weight: bold;
-            font-size: 2em;
+            color: #1B2A4A;
+            font-weight: 700;
+            font-size: 2.3em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-bottom: 0.4em;
+            border-bottom: 3px double #1B2A4A;
+            margin-bottom: 0;
+        }
+        .subheader {
+            text-align: center;
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            color: #5B6478;
+            font-size: 0.95em;
+            margin-top: 0.6em;
+            margin-bottom: 1.8em;
+        }
+        div[data-testid="stForm"] {
+            background-color: #FFFDF7;
+            border: 1px solid #C9CEDC;
+            border-radius: 2px;
+            padding: 2em 2em 1.5em;
+        }
+        div[data-testid="stForm"] h2 {
+            font-family: 'Spectral', serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1em;
+            color: #1B2A4A;
+            border-bottom: 1px solid #C9CEDC;
+            padding-bottom: 0.6em;
+            margin-bottom: 1em;
+        }
+        .stButton button {
+            background-color: #1B2A4A;
+            color: #F7F3E8;
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            border: none;
+            border-radius: 2px;
+            padding: 0.6em 1.8em;
+        }
+        .stButton button:hover {
+            background-color: #28396B;
+            color: #F7F3E8;
+        }
+        .result-card {
+            margin-top: 2em;
+            display: flex;
+            justify-content: center;
+        }
+        .stamp {
+            border: 3px double #B23A2E;
+            color: #B23A2E;
+            font-family: 'IBM Plex Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            padding: 1em 1.6em;
+            text-align: center;
+            transform: rotate(-3deg);
+            background: transparent;
+        }
+        .stamp-label {
+            display: block;
+            font-size: 0.7em;
+            letter-spacing: 2px;
+            margin-bottom: 0.3em;
+            opacity: 0.85;
+        }
+        .stamp-value {
+            display: block;
+            font-size: 1.3em;
         }
         </style>
         """, unsafe_allow_html=True)
 
-    st.markdown('<h1 style="font-size:48px;" class="header">Job Role Predictor</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="header">Engineering Career Role Predictor</h1>', unsafe_allow_html=True)
+    st.markdown('<p class="subheader">Based on your academic record and work habits</p>', unsafe_allow_html=True)
 
     with st.form(key='input_form'):
         st.header("Enter Your Details")
@@ -112,7 +167,6 @@ def main():
         higher_education = st.selectbox('Do you want to pursue higher education?', ['Yes', 'No'])
 
         submit_button = st.form_submit_button("Predict Job Role")
-        st.markdown('</div>', unsafe_allow_html=True)
 
     if submit_button:
         user_input = {
@@ -143,7 +197,14 @@ def main():
 
         predicted_job_role = predict_job_role(user_input)
 
-        st.success(f"**Predicted Job Role:** {predicted_job_role}")
+        st.markdown(f"""
+            <div class="result-card">
+                <div class="stamp">
+                    <span class="stamp-label">Predicted Role</span>
+                    <span class="stamp-value">{predicted_job_role}</span>
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()

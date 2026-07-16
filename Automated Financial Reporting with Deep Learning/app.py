@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
 
 # Load the dataset
 df = pd.read_csv('financial_data.csv')
@@ -11,17 +12,28 @@ df['Date'] = pd.to_datetime(df['Date'])
 # Load the trained model
 model = tf.keras.models.load_model('financial_model.h5')
 
-# Normalize the data using the same scaler as during training
-scaler = MinMaxScaler()
-data_scaled = scaler.fit_transform(df.drop('Date', axis=1))
-
 # Prepare features and target
-X = data_scaled[:, :-1]
-y = data_scaled[:, -1]
+X = df.drop('Date', axis=1).iloc[:, :-1]
+y = df.drop('Date', axis=1).iloc[:, -1]
+
+# Split dataset
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+# Normalize data
+scaler = MinMaxScaler()
+
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
 
 # Make predictions
-y_pred = model.predict(X)
-y_pred_original = scaler.inverse_transform(np.c_[X, y_pred])[:, -1]
+y_pred = model.predict(X_test_scaled)
+
+# Reconstruct for inverse transform
+y_pred_original = scaler.inverse_transform(
+    np.c_[X_test_scaled, y_pred]
+)[:, -1]
 
 # Add predictions to the DataFrame
 df['Predicted_Equity'] = y_pred_original
