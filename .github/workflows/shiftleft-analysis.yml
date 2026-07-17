@@ -32,14 +32,17 @@ jobs:
     #    Example: mvn compile, or npm install or pip install goes here
     # 3. Invoke Scan with the github token. Leave the workspace empty to use relative url
 
-    - name: Clean ML Datasets , Weights and Notebook Outputs
+    - name: Clean ML Data and Notebook Outputs
       run: |
         find . -name "*.csv" -type f -delete
         find . -name "*.json" -type f -delete
         find . -name "*.pkl" -type f -delete
         find . -name "*.h5" -type f -delete
+        
         pip install nbstripout
-        find . -name "*.ipynb" -exec nbstripout {} +
+        
+        # CHANGED: Run sequentially and ignore failures on empty/corrupted notebooks
+        find . -name "*.ipynb" -exec nbstripout {} \; || true
 
     - name: Perform Scan
       uses: ShiftLeftSecurity/scan-action@master
