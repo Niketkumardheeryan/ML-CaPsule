@@ -33,36 +33,38 @@ finger positions into system-level cursor movement and click events.
 - NumPy — coordinate interpolation
 
 ## 📂 Project Structure
-
-```
-ai-virtual-mouse/
-├── hand_tracking_module.py   # Reusable MediaPipe hand-detection wrapper
-├── virtual_mouse.py          # Main application loop (run this)
-├── requirements.txt          # Python dependencies
+AI mouse and gesture control/
+├── Ai_virtual_mouse.ipynb    # Jupyter notebook — run this
 └── README.md
-```
 
 ## 🚀 Setup & Usage
 
 1. Clone the repo and navigate into this project folder.
 2. Create a virtual environment (recommended):
-   ```bash
+```bash
    python -m venv venv
    source venv/bin/activate   # Windows: venv\Scripts\activate
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```
+3. Launch Jupyter and open the notebook:
+```bash
+   pip install notebook
+   jupyter notebook
+```
 4. Run the application:
-   ```bash
-   python virtual_mouse.py
-   ```
-5. Press **`q`** at any time to quit.
+   - Open `Ai_virtual_mouse.ipynb`
+   - Run the first cell to install dependencies (`opencv-python`, `mediapipe`, `pyautogui`, `numpy`)
+   - Run all remaining cells in order (`Kernel → Restart & Run All`)
+   - A window titled **"AI Virtual Mouse"** will open showing your webcam feed
+
+   > **Note:** Must be run locally with webcam + display access. Will not
+   > work on Google Colab or any headless/cloud environment.
+5. Press **`q`** inside the video window at any time to quit.
+   - If the kernel is interrupted before pressing `q`, run the final cleanup
+     cell in the notebook to release the webcam and close the window.
 
 ## ⚙️ Configuration
 
-Tunable constants are at the top of `virtual_mouse.py`:
+Tunable constants are set in the notebook's configuration cell:
 
 - `FRAME_REDUCTION` — margin so the cursor can still reach screen edges
 - `SMOOTHENING` — higher value = smoother movement but more input lag
