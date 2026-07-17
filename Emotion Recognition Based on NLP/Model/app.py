@@ -24,6 +24,7 @@ def home():
 def predict():
     errors=[]                                     ## for finding out errors
     if request.method == 'POST':
+        emotion = ''                                 ## empty string for emotion
         try:                                      ## try block starts here
             message = request.form['text']        ## get the data from home.html
             data = [message]                  
