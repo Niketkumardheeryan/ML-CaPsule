@@ -15,9 +15,11 @@ The notebook is designed to help beginners understand how healthcare datasets ca
 
 ## Dataset
 
-**Dataset Used:** Pima Indians Diabetes Dataset
+**Dataset Used:** Pima Indians Diabetes Dataset from Kaggle
 **Original Dataset:**
 https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
+
+The notebook automatically downloads the dataset using `kagglehub`.
 
 The dataset contains several medical diagnostic measurements of female patients, including:
 
@@ -35,8 +37,6 @@ The target variable is:
 - **Outcome**
   - 0 → Non-Diabetic
   - 1 → Diabetic
-
-The dataset is downloaded automatically using **gdown**, so no manual dataset download is required.
 
 ---
 
@@ -61,7 +61,7 @@ Diabetes_Prediction/
 - Seaborn
 - Scikit-learn
 - Google Colab / Jupyter Notebook
-- gdown
+- Kagglehub
 
 ---
 
@@ -128,7 +128,7 @@ The Random Forest model achieved higher recall for diabetic patients compared to
 
 1. Open the notebook in Google Colab or Jupyter Notebook.
 2. Run all cells sequentially.
-3. The dataset will be downloaded automatically using **gdown**.
+3. The dataset will be downloaded automatically using **Kagglehub**.
 4. The notebook will generate all visualizations and evaluation results.
 
 ---
