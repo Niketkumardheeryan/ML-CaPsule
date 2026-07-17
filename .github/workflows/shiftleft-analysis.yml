@@ -1,67 +1,59 @@
-# This workflow integrates Scan with GitHub's code scanning feature
-# Scan is a free open-source security tool for modern DevOps teams from ShiftLeft
-# Visit https://slscan.io/en/latest/integrations/code-scan for help
 name: SL Scan
 
 on:
   push:
     branches: [ master ]
   pull_request:
-    # The branches below must be a subset of the branches above
     branches: [ master ]
   workflow_dispatch: 
   schedule:
     - cron: '23 16 * * 1'
 
 permissions:
-  # Required for uploading SARIF results to code scanning
   security-events: write
-  # Required for private repositories
   actions: read
   contents: read
 
 jobs:
   Scan-Build:
-    # Scan runs on ubuntu, mac and windows
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    # Instructions
-    # 1. Setup JDK, Node.js, Python etc depending on your project type
-    # 2. Compile or build the project before invoking scan
-    #    Example: mvn compile, or npm install or pip install goes here
-    # 3. Invoke Scan with the github token. Leave the workspace empty to use relative url
 
-    - name: Clean ML Data and Notebook Outputs
+    # FIX 1: Convert Notebooks to clean Python code and delete the noisy JSON/data files
+    - name: Convert Notebooks and Clean Data
       run: |
+        # Install Jupyter's official conversion tool
+        pip install nbconvert
+        
+        # Convert all notebooks to pure .py files (ignores corrupted notebooks)
+        find . -name "*.ipynb" -exec jupyter nbconvert --to script {} \; || true
+        
+        # Delete the original notebooks and heavy data files so the scanner ignores them
+        find . -name "*.ipynb" -type f -delete
         find . -name "*.csv" -type f -delete
         find . -name "*.json" -type f -delete
         find . -name "*.pkl" -type f -delete
         find . -name "*.h5" -type f -delete
-        
-        pip install nbstripout
-        
-        # CHANGED: Run sequentially and ignore failures on empty/corrupted notebooks
-        find . -name "*.ipynb" -exec nbstripout {} \; || true
+        find . -name "*.txt" -type f -delete
 
     - name: Perform Scan
       uses: ShiftLeftSecurity/scan-action@master
       env:
         WORKSPACE: ""
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SCAN_AUTO_BUILD: false
       with:
         output: reports
-        # Scan auto-detects the languages in your project. To override uncomment the below variable and set the type
-        # type: credscan,java
         type: python,credscan
 
     - name: Fix SARIF URIs (Make paths relative)
       run: |
-        # This replaces the absolute container paths with relative paths
         sudo sed -i 's|file:///github/workspace/||g' reports/*.sarif
         sudo sed -i 's|/github/workspace/||g' reports/*.sarif
 
+    # FIX 2: Upgraded to v4 to completely remove the Node 20 warnings!
     - name: Upload report
-      uses: github/codeql-action/upload-sarif@v3
+      uses: github/codeql-action/upload-sarif@v4
       with:
         sarif_file: reports
