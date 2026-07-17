@@ -30,6 +30,9 @@ Fake_Review_Detection_BERT_XAI/
 ## 📊 Dataset Details
 
 We use the **Deceptive Opinion Spam Corpus** (Ott et al.), a widely accepted NLP benchmark dataset.
+
+- **Dataset Link:** [deceptive-opinion.csv (GitHub - shubham5351)](https://raw.githubusercontent.com/shubham5351/Fake-Review-Detection-/master/deceptive-opinion.csv)
+- **Original Paper:** [Ott et al., 2011 — Finding Deceptive Opinion Spam by Any Stretch of the Imagination](https://aclanthology.org/P11-1032/)
 - **Size:** 1,600 reviews.
 - **Labels:** 
   - `truthful` (800 reviews from TripAdvisor) - mapped to `0`
