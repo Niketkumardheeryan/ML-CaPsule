@@ -9,6 +9,7 @@ on:
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ master ]
+  workflow_dispatch: 
   schedule:
     - cron: '23 16 * * 1'
 
@@ -42,6 +43,12 @@ jobs:
         # Scan auto-detects the languages in your project. To override uncomment the below variable and set the type
         # type: credscan,java
         # type: python
+
+    - name: Fix SARIF URIs (Make paths relative)
+      run: |
+        # This replaces the absolute container paths with relative paths
+        sudo sed -i 's|file:///github/workspace/||g' reports/*.sarif
+        sudo sed -i 's|/github/workspace/||g' reports/*.sarif
 
     - name: Upload report
       uses: github/codeql-action/upload-sarif@v3
