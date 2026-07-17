@@ -43,6 +43,12 @@ jobs:
         # type: credscan,java
         # type: python
 
+    - name: Fix SARIF URIs (Make paths relative)
+      run: |
+        # This replaces the absolute container paths with relative paths
+        sed -i 's|file:///github/workspace/||g' reports/*.sarif
+        sed -i 's|/github/workspace/||g' reports/*.sarif
+
     - name: Upload report
       uses: github/codeql-action/upload-sarif@v3
       with:

@@ -6,23 +6,32 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+    <header class="text-gray-600 body-font shadow-sm">
+        <div class="container mx-auto flex flex-wrap p-5 items-center justify-between">
+          <a href="index.html" class="flex title-font font-medium items-center text-gray-900">
             <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-full">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
             <span class="ml-3 text-xl">ML-CaPsule</span>
           </a>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href="home.html"class="mr-5 hover:text-gray-900">Home<a href="home.html"></a>
-            <a href="contribution.html" class="mr-5 hover:text-gray-900">Open-source Contribution<a href="contribution.html"></a>
-            <a href="webprojects.html" class="mr-5 hover:text-gray-900">Projects<a ></a>
-            
+          <!-- Mobile menu button -->
+          <button id="menu-toggle" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+          <!-- Navigation links -->
+          <nav id="navbar" class="hidden md:flex md:ml-auto flex-wrap items-center text-base justify-center w-full md:w-auto mt-4 md:mt-0">
+            <a href="home.html" class="block md:inline-block mr-0 md:mr-5 py-2 md:py-0 hover:text-gray-900">Home</a>
+            <a href="contribution.html" class="block md:inline-block mr-0 md:mr-5 py-2 md:py-0 hover:text-gray-900">Open-source Contribution</a>
+            <a href="webprojects.html" class="block md:inline-block py-2 md:py-0 hover:text-gray-900">Projects</a>
           </nav>
-          
         </div>
       </header>
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        const navbar = document.getElementById('navbar');
+        navbar.classList.toggle('hidden');
+      });
+    </script>
 
 
 
