@@ -102,6 +102,7 @@
 | Bird Species Classification Web App | CNN, Flask, deployment | [View](./Bird%20Species%20Classification%20Web%20App) |
 | Brain Tumor Detection | CNN, image classification | [View](./Brain%20Tumor%20Detection) |
 | Breast Cancer Detection using DL with Webapp | Deep Learning, Flask | [View](./Breast%20Cancer%20Detection%20using%20DL%20with%20Webapp) |
+| CBOW_PyTorch | CBOW, PyTorch, Word Embeddings, NLP | [View](./CBOW_PyTorch) |
 | CBT_ChatBot | NLP, chatbot basics | [View](./CBT_ChatBot) |
 | Chatbot Using RASA | RASA, NLP, dialogue | [View](./Chatbot%20Using%20RASA) |
 | Chicken_Disease_Classification | CNN, image classification | [View](./Chicken_Disease_Classification) |

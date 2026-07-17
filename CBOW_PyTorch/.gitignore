@@ -1,0 +1,5 @@
+# Ignore trained model artifacts
+saved_model/
+
+# Ignore python cache files
+__pycache__/

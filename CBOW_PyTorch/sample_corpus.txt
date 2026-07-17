@@ -1,0 +1,8 @@
+Continuous Bag-of-Words (CBOW) is a popular model architecture for training word embeddings.
+Word embeddings are dense vector representations of words in a continuous vector space where semantically similar words are mapped to nearby points.
+In the CBOW architecture, the model predicts a target word from a set of surrounding context words.
+This is in contrast to the Skip-Gram architecture, which predicts the surrounding context words given a single target word.
+PyTorch is a powerful deep learning library that provides tools like embedding layers to implement these architectures easily.
+We can train a CBOW model using a small corpus of text to learn word vectors.
+Once trained, the model can predict the most likely target word given some context words.
+Word embeddings are foundational for many natural language processing tasks such as sentiment analysis, machine translation, and language modeling.
