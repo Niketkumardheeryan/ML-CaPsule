@@ -7,6 +7,7 @@ import wikipedia
 import sys
 import os
 import webbrowser
+import shutil
 import datetime
 import speech_recognition as sr
 from urllib.request import urlopen
@@ -19,6 +20,50 @@ from geopy import Nominatim
 from pip._vendor import requests
 from bs4 import BeautifulSoup as soup
 from yahoo_fin import stock_info
+
+
+# Helper functions to find application paths dynamically
+def find_vscode():
+    path_val = shutil.which("code") or shutil.which("code.cmd")
+    if path_val:
+        return path_val
+    paths = [
+        os.path.expandvars(r"%LOCALAPPDATA%\Programs\Microsoft VS Code\Code.exe"),
+        os.path.expandvars(r"%APPDATA%\Microsoft\Windows\Start Menu\Programs\Visual Studio Code"),
+        r"C:\Program Files\Microsoft VS Code\Code.exe",
+        r"C:\Program Files (x86)\Microsoft VS Code\Code.exe"
+    ]
+    for path in paths:
+        if os.path.exists(path):
+            return path
+    return None
+
+def find_intellij():
+    path_val = shutil.which("idea") or shutil.which("idea64.exe")
+    if path_val:
+        return path_val
+    base_path = r"C:\Program Files\JetBrains"
+    if os.path.exists(base_path):
+        for folder in os.listdir(base_path):
+            if folder.startswith("IntelliJ IDEA"):
+                exe_path = os.path.join(base_path, folder, "bin", "idea64.exe")
+                if os.path.exists(exe_path):
+                    return exe_path
+    return None
+
+def find_notepad():
+    return shutil.which("notepad") or r"C:\Windows\System32\notepad.exe"
+
+def find_chrome():
+    paths = [
+        r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+        r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+        os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe")
+    ]
+    for path in paths:
+        if os.path.exists(path):
+            return path
+    return None
 
 
 flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint)
@@ -134,18 +179,27 @@ class mainT(QThread):
 
             elif 'launch vs code' in self.query:
                 speak("please wait i am launching v s code")
-                self.codepath = "C:\\Users\\snaug\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code"
-                os.startfile(self.codepath)
+                self.codepath = find_vscode()
+                if self.codepath:
+                    os.startfile(self.codepath)
+                else:
+                    speak("Visual Studio Code could not be found.")
 
             elif ('launch java') in self.query:
                 speak("please wait i am launching intelli j")
-                self.codepath = "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2020.1.1\\bin\\idea64.exe"
-                os.startfile(self.codepath)
+                self.codepath = find_intellij()
+                if self.codepath:
+                    os.startfile(self.codepath)
+                else:
+                    speak("IntelliJ IDEA could not be found.")
 
             elif ('launch notepad') in self.query:
                 speak("please wait i am launching notepad")
-                self.codepath = "C:\\Users\\snaug\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Accessories\\notepad"
-                os.startfile(self.codepath)
+                self.codepath = find_notepad()
+                if self.codepath:
+                    os.startfile(self.codepath)
+                else:
+                    speak("Notepad could not be found.")
 
             elif 'email' in self.query:
                 try:
@@ -290,9 +344,12 @@ class mainT(QThread):
                     search = reg_ex.group(1)
                     speak("Hold on, I will search " + search)
                     url = 'https://www.google.com/search?q=' + search
-                    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-                    webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
-                    webbrowser.get('chrome').open_new_tab(url)
+                    chrome_path = find_chrome()
+                    if chrome_path:
+                        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+                        webbrowser.get('chrome').open_new_tab(url)
+                    else:
+                        webbrowser.open(url)
                 else:
                     speak("sorry sir not able to recognize")
                     pass

@@ -12,7 +12,10 @@ import os
 import time
 
 # Update this line with your Tesseract installation path
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\kulitesh\ML-CaPsule\Dark Pattern Detection\Tesseract-OCR\tesseract.exe'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+local_tesseract = os.path.join(BASE_DIR, 'Tesseract-OCR', 'tesseract.exe')
+if os.path.exists(local_tesseract):
+    pytesseract.pytesseract.tesseract_cmd = local_tesseract
 
 # URL to analyze
 url_to_analyze = "https://www.myntra.com/"
