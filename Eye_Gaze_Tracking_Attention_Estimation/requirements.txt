@@ -1,0 +1,5 @@
+opencv-python>=4.5.0
+mediapipe>=0.8.9
+numpy>=1.20.0
+ipykernel      # For Jupyter notebook walkthrough
+matplotlib     # For Jupyter notebook visualizations

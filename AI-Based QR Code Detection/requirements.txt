@@ -1,0 +1,10 @@
+opencv-python
+pyzbar
+scikit-learn
+pandas
+joblib
+numpy
+pytest
+pillow
+requests
+xgboost

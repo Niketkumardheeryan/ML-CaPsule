@@ -4,13 +4,14 @@ on: [pull_request, issues]
 
 jobs:
   greeting:
+    name: First interaction
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      pull-requests: write
     steps:
-    - uses: actions/first-interaction@v1
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Thanks for creating the issue,Please read the Pinned issued first and Readme.md in each Pull Request you made. Keep learning...'
-        pr-message: ' keep doing it '
+      - uses: actions/first-interaction@v1.3.0
+        with:
+          # Token for the repository. Can be passed in using ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          # Comment to post on an individual's first issue
+          issue-message: 'Thanks for raising this issue. Please go through pinned issues (#5, #214, #1358) to abide the repository rules in each pull request you make. Thanks for your contribution, Keep learning!'
+          # Comment to post on an individual's first pull request
+          pr-message: 'Congratulations on opening your first pull request! Please go through pinned issues (#5, #214, #1358) to abide the repository rules in each pull request you make. If you feel you failed to miss some rule just make changes before a reviewer reviews this PR else it will be closed! Thanks for your contribution, Keep learning!'

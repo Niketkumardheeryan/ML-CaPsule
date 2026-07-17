@@ -1,0 +1,6 @@
+ultralytics==8.3.0
+streamlit>=1.28.0
+Pillow>=9.0.0
+numpy>=1.24.0
+torch
+torchvision

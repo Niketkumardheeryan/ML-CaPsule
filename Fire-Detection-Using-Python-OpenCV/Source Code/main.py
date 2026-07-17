@@ -20,7 +20,7 @@ thresh = cv2.threshold(blurred, 150, 255, cv2.THRESH_BINARY)[1]
 thresh = cv2.erode(thresh, None, iterations=2)
 thresh = cv2.dilate(thresh, None, iterations=4)
 
-labels = measure.label(thresh, neighbors=8, background=0)
+labels = measure.label(thresh, connectivity=2, background=0)
 mask = np.zeros(thresh.shape, dtype="uint8")
 
 for label in np.unique(labels):

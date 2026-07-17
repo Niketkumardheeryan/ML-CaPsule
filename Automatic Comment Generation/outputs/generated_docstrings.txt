@@ -1,0 +1,176 @@
+FUNCTION:
+def add_numbers(a, b):
+    return a + b
+
+GENERATED DOCSTRING:
+The function `add_numbers` takes two parameters `a` and `b`, and returns their sum. Here's how it works:
+================================================================================
+
+FUNCTION:
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+GENERATED DOCSTRING:
+The function `factorial` calculates the factorial of a given number `n`. The factorial of a non-negative integer `n` is the product of all positive integers less than or equal to `n
+================================================================================
+
+FUNCTION:
+def is_prime(num):
+
+    if num <= 1:
+        return False
+
+    for i in range(2, int(num ** 0.5) + 1):
+
+        if num % i == 0:
+            return False
+
+    return True
+
+GENERATED DOCSTRING:
+The function `is_prime` takes an integer `num` as input and returns `True` if the number is prime, otherwise it returns `False`. A prime number is a natural number greater than
+================================================================================
+
+FUNCTION:
+def reverse_string(text):
+    return text[::-1]
+
+GENERATED DOCSTRING:
+Reverse a given string using slicing.
+================================================================================
+
+FUNCTION:
+def count_vowels(sentence):
+
+    vowels = "aeiouAEIOU"
+
+    return sum(
+        1 for char in sentence
+        if char in vowels
+    )
+
+GENERATED DOCSTRING:
+This function takes a string as input and returns the number of vowels present in it. It uses a generator expression to iterate over each character in the string and checks if it is a vowel by comparing it
+================================================================================
+
+FUNCTION:
+def find_max(numbers):
+
+    maximum = numbers[0]
+
+    for num in numbers:
+
+        if num > maximum:
+            maximum = num
+
+    return maximum
+
+GENERATED DOCSTRING:
+This function takes a list of numbers as input and returns the maximum number in the list. It initializes a variable `maximum` with the first element of the list, then iterates through each element in
+================================================================================
+
+FUNCTION:
+def fibonacci(n):
+
+    sequence = [0, 1]
+
+    while len(sequence) < n:
+
+        sequence.append(
+            sequence[-1] + sequence[-2]
+        )
+
+    return sequence
+
+GENERATED DOCSTRING:
+
+================================================================================
+
+FUNCTION:
+def remove_duplicates(items):
+    return list(set(items))
+
+GENERATED DOCSTRING:
+The function `remove_duplicates` takes a list of items as input and returns a new list with duplicates removed. It achieves this by converting the input list to a set, which automatically removes any duplicate elements
+================================================================================
+
+FUNCTION:
+def calculate_average(values):
+
+    if not values:
+        return 0
+
+    return sum(values) / len(values)
+
+GENERATED DOCSTRING:
+The function `calculate_average` takes a list of numbers as input and returns the average of those numbers. If the list is empty, it returns 0.
+================================================================================
+
+FUNCTION:
+def sort_dictionary_by_value(data):
+
+    return dict(
+        sorted(
+            data.items(),
+            key=lambda item: item[1]
+        )
+    )
+
+GENERATED DOCSTRING:
+The function `sort_dictionary_by_value` takes a dictionary as input and returns a new dictionary with the items sorted by their values in ascending order. Here's how it works:
+================================================================================
+
+FUNCTION:
+def count_words(paragraph):
+
+    words = paragraph.split()
+
+    return len(words)
+
+GENERATED DOCSTRING:
+The function `count_words` takes a string `paragraph` as input and returns the number of words in that string. It does this by splitting the string into a list of words using the `split
+================================================================================
+
+FUNCTION:
+def celsius_to_fahrenheit(celsius):
+
+    return (celsius * 9/5) + 32
+
+GENERATED DOCSTRING:
+The function `celsius_to_fahrenheit` takes a temperature in Celsius as input and returns the equivalent temperature in Fahrenheit. The formula used for conversion is `(Celsius * 9/5) +
+================================================================================
+
+FUNCTION:
+def palindrome_check(word):
+
+    cleaned = word.lower()
+
+    return cleaned == cleaned[::-1]
+
+GENERATED DOCSTRING:
+The function `palindrome_check` takes a string `word` as input and returns `True` if the string is a palindrome, and `False` otherwise. A palindrome is a word that reads
+================================================================================
+
+FUNCTION:
+def merge_lists(list1, list2):
+
+    return list1 + list2
+
+GENERATED DOCSTRING:
+Merge two lists into one.
+================================================================================
+
+FUNCTION:
+def find_even_numbers(numbers):
+
+    return [
+        num for num in numbers
+        if num % 2 == 0
+    ]
+
+GENERATED DOCSTRING:
+This function takes a list of numbers as input and returns a new list containing only the even numbers from the original list. The function uses a list comprehension to iterate over each number in the input list and
+================================================================================
+

@@ -16,20 +16,20 @@ from torch import nn
 import json
 import glob
 import copy
-from torchvision import models
 import shutil
 from PIL import Image as pImage
-import time
 from django.conf import settings
 from .forms import VideoUploadForm
+import matplotlib
+matplotlib.use('Agg')
 
 index_template_name = 'index.html'
 predict_template_name = 'predict.html'
-
+about_template_name   = 'about.html'
 im_size = 112
 mean=[0.485, 0.456, 0.406]
 std=[0.229, 0.224, 0.225]
-sm = nn.Softmax()
+sm = nn.Softmax(dim=1)
 inv_normalize =  transforms.Normalize(mean=-1*np.divide(mean,std),std=np.divide([1,1,1],std))
 
 train_transforms = transforms.Compose([
@@ -118,15 +118,10 @@ def im_convert(tensor, video_file_name):
     # cv2.imwrite(os.path.join(settings.PROJECT_DIR, 'uploaded_images', video_file_name+'_convert_2.png'),image*255)
     return image
 
-def im_plot(tensor):
-    image = tensor.cpu().numpy().transpose(1,2,0)
-    b,g,r = cv2.split(image)
-    image = cv2.merge((r,g,b))
-    image = image*[0.22803, 0.22145, 0.216989] +  [0.43216, 0.394666, 0.37645]
-    image = image*255.0
+def im_plot(image):
     plt.imshow(image.astype(int))
-    plt.show()
-
+    plt.savefig('im_plot_output.png')
+    plt.close()
 
 def predict(model,img,path = './', video_file_name=""):
   fmap,logits = model(img.to('cuda'))
@@ -217,7 +212,7 @@ def index(request):
         if video_upload_form.is_valid():
             video_file = video_upload_form.cleaned_data['upload_video_file']
             video_file_ext = video_file.name.split('.')[-1]
-            sequence_length = 20
+            sequence_length = int(video_upload_form.cleaned_data.get('sequence_length', 20))
             video_content_type = video_file.content_type.split('/')[0]
             if video_content_type in settings.CONTENT_TYPES:
                 if video_file.size > int(settings.MAX_UPLOAD_SIZE):
@@ -262,11 +257,12 @@ def predict_page(request):
             print("Production file name",production_video_name)
         video_file_name_only = video_file_name.split('.')[0]
         video_dataset = validation_dataset(path_to_videos, sequence_length=sequence_length,transform= train_transforms)
-        model = Model(2).cuda()
+        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        model = Model(2).to(device)
         model_name = os.path.join(settings.PROJECT_DIR,'models', get_accurate_model(sequence_length))
         models_location = os.path.join(settings.PROJECT_DIR,'models')
-        path_to_model = os.path.join(settings.PROJECT_DIR, model_name)
-        model.load_state_dict(torch.load(path_to_model))
+        model_filename = get_accurate_model(sequence_length)
+        path_to_model  = os.path.join(settings.PROJECT_DIR, 'models', model_filename)
         model.eval()
         start_time = time.time()
         # Start: Displaying preprocessing images
@@ -314,7 +310,12 @@ def predict_page(request):
             if len(face_locations) == 0:
                 continue
             top, right, bottom, left = face_locations[0]
-            frame_face = frame[top-padding:bottom+padding, left-padding:right+padding]
+            h, w = frame.shape[:2]
+            top_crop    = max(0, top - padding)
+            bottom_crop = min(h, bottom + padding)
+            left_crop   = max(0, left - padding)
+            right_crop  = min(w, right + padding)
+            frame_face  = frame[top_crop:bottom_crop, left_crop:right_crop]
             image = cv2.cvtColor(frame_face, cv2.COLOR_BGR2RGB)
 
             img = pImage.fromarray(image, 'RGB')

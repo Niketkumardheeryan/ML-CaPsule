@@ -1,55 +1,12 @@
 const express = require('express');
-const request = require('request');
-const cors = require('cors')
+const cors = require('cors');
+const needle = require('needle'); 
+require('dotenv').config();
+
 const app = express();
-require('dotenv').config()
 
-app.use(cors())
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  // res.header()
-  next();
-});
+app.use(cors());
 
-
-// ==========================================================
-
-// const {TwitterApi} = require('twitter-api-v2');
-//
-// const client = new TwitterApi({
-//
-// });
-
-// Instanciate with desired auth type (here's Bearer v2 auth)
-// const twitterClient = new TwitterApi('AAAAAAAAAAAZFJOfG8cMdgkEJ3fSpdHN2qB%2TxBIJBRqa1n0YgeuaZfPLN');
-// const roClient = twitterClient.readOnly;
-
-// var url1 = "https://api.twitter.com/2/users/by/username/";
-// var url2 = req.params.tagId;
-// var url3 = "?user.fields=created_at,description,entities,id,location,name,profile_image_url,protected,url,username,verified,created_at,id";
-// var url = url1.concat(url2,url3)
-// console.log(url)
-//
-// var access_token = "AAAAAAAAAAApagEAAAABMdgkEJ3fSKzeiE2U4lRqa1nOfG8cHN2qpd0YgeuaZfPLN"
-// // const user = await roClient.v2.userByUsername('TwitterDev');
-// request( url ,{
-  //   method: 'POST',
-  //   dataType: 'json',
-  //   headers :{
-    //       Authorization:"Bearer " + access_token // token
-    //   }
-    // },
-    //   (response, res, resagain) => {
-      //     console.log("third" , resagain)
-      //   }
-      // )
-      //
-      // res.send(url)
-
-
-// ===========================================================
-
-const needle = require('needle');
 const token = process.env.BEARER_TOKEN;
 const endpointURL = "https://api.twitter.com/2/users/by?usernames="
 
@@ -69,27 +26,25 @@ async function getRequest() {
     })
 
     if (res.body) {
-
-          request.post({url:'http://localhost:8000/scoreJson', formData: {"heelo":"okay"}}, function optionalCallback(err, httpResponse, body) {
-            if (err) {
-              return console.error("8000 Fail");
+        
+        // FIX: Replaced deprecated 'request.post' with 'needle.post'
+        const formData = { "heelo": "okay" };
+        
+        // CHANGE 2: Proper Error aur Status Code handling add kar di gayi hai
+        needle.post('http://localhost:8000/scoreJson', formData, { multipart: true }, function(err, httpResponse, body) {
+            if (err || (httpResponse && httpResponse.statusCode !== 200)) {
+              return console.error("8000 Fail. Status:", httpResponse ? httpResponse.statusCode : "Network Error", err || "");
             }
             console.log("8000 Pass" , body);
-          });
+        });
 
         return res.body;
     } else {
-        throw new Error('Unsuccessful request')
+        throw new Error('Unsuccessful request');
     }
-
 }
 
-
-
 app.get('/:tagId', async (req, res) => {
-
-
-
       try {
           const response = await getRequest();
           console.dir(response, {
@@ -98,11 +53,9 @@ app.get('/:tagId', async (req, res) => {
 
       } catch (e) {
           console.log(e);
-
       }
 
-      res.send("Request Complete, please check console")
-
+      res.send("Request Complete, please check console");
 });
 
 const PORT = process.env.PORT || 5000;
