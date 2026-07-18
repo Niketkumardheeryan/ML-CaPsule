@@ -1,79 +1,144 @@
-PROJECT TITLE : Sms Spam Detection
+# 🛡️ Spam Mail Detection
 
-GOAL : To predict whether the given message is spam or ham.
+A machine learning project that classifies SMS messages as **Spam** or **Ham (Not Spam)** using Natural Language Processing and multiple ML classifiers — now with an interactive **Streamlit web interface**.
 
-DATASET : https://www.kaggle.com/uciml/sms-spam-collection-dataset
+---
 
-WHAT I HAD DONE : In this project first I performed a exploratory data analysis on the Sms Spam dataset which includes of data cleaning , data manipulation, data preprocessing , data visualization and after that I did the model building using different machine learning classification and regression algorithms and then predicted the accuracy of every model . In the model prediction part I used different machine learning algorithms . In each algorithm I had included the accuracy score , training score , classification report , confusion matrix . While in the EDA part I have included different plots for the different visualizations of our dataset . During the model prediction I got different accuracies from different models , I got the highest accuracy of 98 % using the Random Forest Classifier, XG Boost Classifier which is quite well for the given Brazil Fires dataset . I then did processing NLP using NLTK in which I have included Count Vectorizer for bag of words and TfiDf Vectorizer and I also included some steeming algorithms like Porter Stemmer in it . While the other model accuracies can be increased more using the hypertuning . Some plots which I used for visualizing the dataset are Histogram , Barplot , Boxplot, Heatmap , Scatter plot , Pairplot , Jointplot etc.
+## 📌 Project Overview
 
-MODELS and Accuracy Scores :
+SMS spam is unsolicited bulk messaging sent to mobile phones. This project trains several ML classifiers on the [SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) and wraps the best model in a browser-based UI so anyone can test predictions without writing code.
 
-1. Logistic Regression : 96.19% %
+| Metric | Value |
+|--------|-------|
+| Dataset size | 5,572 SMS messages |
+| Spam ratio | ~13% spam, ~87% ham |
+| Best accuracy | ~97–98% (SVC / Random Forest) |
+| Deployed model | Multinomial Naïve Bayes + TF-IDF Pipeline |
 
-2. KNeighborsClassifier : 90.45 %
+---
 
-3. SVC : 97.84 %
+## 🗂️ Folder Structure
 
-4. Naive Bayes : 96.69 %
+```
+spam detection/
+├── dataset/
+│   └── dataset.zip            ← Raw SMS Spam Collection CSV
+├── model/
+│   ├── readme.md
+│   ├── save_model.py          ← Script to train & save the model
+│   ├── spam_mail_detection.ipynb  ← Original notebook with EDA + 11 models
+│   └── spam_model.pkl         ← Saved model (generated after running save_model.py)
+├── app.py                     ← Streamlit web application ⭐
+└── requirements.txt           ← All Python dependencies
+```
 
-5. DECISION TREE CLASSIFIER : 94.90% %
+---
 
-6. RandomForestClassifier : 97.83 %
+## ⚙️ Setup & Installation
 
-7. AdaBoostClassifier : 97.48% %
- 
-8. Gradient Boosting Classifier : 97.70%
+### 1. Clone the repository
+```bash
+git clone https://github.com/<your-username>/ML-CaPsule.git
+cd "ML-CaPsule/spam detection"
+```
 
-9. XGBClassifier : 97.68%
+### 2. Create a virtual environment (recommended)
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
 
-10. ExtraTreesClassifier : 97.27%
+# macOS / Linux
+python -m venv venv
+source venv/bin/activate
+```
 
-11. Bagging Classifier : 95.59 %
+### 3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
-LIBRARIES:
+### 4. Prepare the dataset
+Unzip `dataset/dataset.zip` so that `dataset/spam.csv` exists.
 
-PANDAS
+### 5. Train and save the model
+```bash
+python model/save_model.py
+```
+This creates `model/spam_model.pkl`.
 
-NUMPY
+### 6. Run the Streamlit app
+```bash
+streamlit run app.py
+```
+Open your browser at **http://localhost:8501** 🎉
 
-MATPLOTLIB
+---
 
-SEABORN
+## 🖥️ Web Interface Features
 
-SCIPY
+- **SMS input** — type or paste any message
+- **Quick-fill sample buttons** — test with pre-loaded spam/ham examples  
+- **Instant prediction** — Spam 🚫 or Not Spam ✅
+- **Confidence scores** — probability breakdown for each class
+- **Model stats** — algorithm, vectorizer, accuracy, training size
 
-SKLEARN
+---
 
-NLP
+## 🤖 Models Explored (Notebook)
 
-NLTK
+| Model | Accuracy |
+|-------|----------|
+| Logistic Regression | 96.19% |
+| K-Nearest Neighbours | 90.16% |
+| Support Vector Classifier | **97.84%** |
+| Naïve Bayes (Bernoulli) | 96.69% |
+| Decision Tree | 94.90% |
+| **Random Forest** | **97.63%** |
+| AdaBoost | 97.55% |
+| Gradient Boosting | 97.70% |
+| XGBoost | 97.70% |
+| Extra Trees | 97.27% |
+| Bagging Classifier | 96.26% |
 
-CONCLUSION :
+---
 
-So, We get a good accuracy score of 98 % using Random Forest , Ada Boost and Extra Trees Classifier.
+## 🧹 Preprocessing Pipeline
 
-The accuracy of other models can be increased by Hypertuning.
+1. Lowercase the text  
+2. Remove punctuation  
+3. Remove English stop words (NLTK)  
+4. `CountVectorizer` — bag-of-words representation  
+5. `TfidfTransformer` — TF-IDF weighting  
+6. `MultinomialNB` — final classifier  
 
--Aryan Tiwari
+---
 
+## 🧪 Sample Test Messages
 
+| Message | Expected |
+|---------|----------|
+| "Congratulations! You've won a £1,000 gift card. Click now!" | 🚫 Spam |
+| "Hey, are we still meeting at 6pm today?" | ✅ Ham |
+| "URGENT: Your account is suspended. Verify immediately." | 🚫 Spam |
+| "Can you pick up milk on your way home?" | ✅ Ham |
 
+---
 
+## 📦 Dependencies
 
+See [`requirements.txt`](requirements.txt).  
+Key packages: `streamlit`, `scikit-learn`, `nltk`, `pandas`, `numpy`.
 
+---
 
+## 🤝 Contributing
 
+This project is part of [ML-CaPsule](https://github.com/Girlscript/ML-CaPsule) under **GirlScript Summer of Code (GSSoC)**.  
+Contributions, issues, and feature requests are welcome!
 
+---
 
+## 📄 License
 
-
-
-
-
-
-
-
-
-
-
-
+This project is open-source under the [MIT License](../../LICENSE).

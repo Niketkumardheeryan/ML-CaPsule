@@ -1,5 +1,5 @@
-streamlit==1.8.0
-numpy
-Pillow==9.0.1
-tensorflow==2.8.0
-opencv-python-headless
+streamlit==1.35.0
+numpy==1.26.4
+Pillow==10.4.0
+tensorflow==2.18.0
+opencv-python-headless==4.10.0.84

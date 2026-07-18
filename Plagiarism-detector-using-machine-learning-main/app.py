@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import pickle
+import os
 
 app = Flask(__name__)
 
@@ -26,4 +27,5 @@ def detect_plagiarism():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"
+    app.run(debug=debug_mode)

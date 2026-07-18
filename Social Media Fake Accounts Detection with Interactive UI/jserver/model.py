@@ -73,14 +73,14 @@ for index in range(len(user_object["fake"])):
     X[len(user_object["legit"]) + index] = user_object["fake"][index] / bound  # Normalizing Data [0 <--> 1]
     Y[len(user_object["legit"]) + index] = 1
 
-X_train_data, X_test_data, y_train_data, y_test_data = train_test_split(X, Y,
-                                                                        test_size=0.24, random_state=42)
+X_train_data, X_test_data, y_train_data, y_test_data = train_test_split(X, Y, test_size=0.24, random_state=42)
 
 early_stopping = EarlyStopping(monitor='val_loss', patience=2)
 
 
 class PlotLearning(Callback):
-    def on_train_begin(self, logs={}):
+    def on_train_begin(self, logs=None):
+        logs = logs or {}
         self.i = 0
         self.x = []
         self.losses = []
@@ -91,7 +91,8 @@ class PlotLearning(Callback):
 
         self.logs = []
 
-    def on_epoch_end(self, epoch, logs={}):
+    def on_epoch_end(self, epoch, logs=None):
+        logs = logs or {}
         self.logs.append(logs)
         self.x.append(self.i)
         self.losses.append(logs.get('loss'))

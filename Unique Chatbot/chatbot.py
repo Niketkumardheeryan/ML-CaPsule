@@ -3,6 +3,7 @@
 
 #import necessary libraries
 import io
+import os
 import random
 import string # to process standard python strings
 import warnings
@@ -20,9 +21,11 @@ nltk.download('popular', quiet=True) # for downloading packages
 #nltk.download('punkt') # first-time use only
 #nltk.download('wordnet') # first-time use only
 
+# Reading in the corpus with robust path handling
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+corpus_path = os.path.join(BASE_DIR, 'chatbot.txt')
 
-#Reading in the corpus
-with open('chatbot.txt','r', encoding='utf8', errors ='ignore') as fin:
+with open(corpus_path, 'r', encoding='utf8', errors='ignore') as fin:
     raw = fin.read().lower()
 
 #TOkenisation
