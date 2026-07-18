@@ -1,0 +1,1001 @@
+OrderID,Date,Region,Category,Customer_Segment,Quantity_Sold,Unit_Price,Revenue,Profit
+ORD-0898,2023-01-01,North,Electronics,Consumer,9,312.89,2816.0099999999998,962.31
+ORD-0368,2023-01-01,East,Office Supplies,Home Office,2,75.47,150.94,15.93
+ORD-0285,2023-01-01,East,Electronics,Home Office,5,371.77,1858.85,277.86
+ORD-0091,2023-01-01,North,Electronics,Consumer,6,52.34,314.04,77.43
+ORD-0180,2023-01-02,North,Electronics,Consumer,8,177.52,1420.16,400.1
+ORD-0579,2023-01-02,East,Electronics,Consumer,5,112.58,562.9,185.4
+ORD-0835,2023-01-03,Central,Furniture,Consumer,3,239.23,717.6899999999999,244.85
+ORD-0958,2023-01-03,West,Office Supplies,Corporate,5,266.7,1333.5,517.49
+ORD-0376,2023-01-03,North,Office Supplies,Home Office,1,441.64,441.64,52.54
+ORD-0996,2023-01-04,West,Office Supplies,Consumer,1,470.16,470.16,82.62
+ORD-0948,2023-01-05,East,Office Supplies,Consumer,1,464.4,464.4,66.02
+ORD-0069,2023-01-05,East,Furniture,Corporate,6,193.59,1161.54,332.59
+ORD-0717,2023-01-05,West,Clothing,Corporate,3,236.13,708.39,225.96
+ORD-0131,2023-01-06,North,Electronics,Consumer,7,467.22,3270.54,577.34
+ORD-0465,2023-01-06,East,Office Supplies,Corporate,9,155.54,1399.86,498.26
+ORD-0189,2023-01-06,South,Electronics,Consumer,6,233.8,1402.8000000000002,309.1
+ORD-0685,2023-01-06,West,Furniture,Consumer,7,69.14,483.98,77.54
+ORD-0539,2023-01-07,Central,Electronics,Consumer,9,374.32,3368.88,597.42
+ORD-0785,2023-01-07,East,Electronics,Consumer,7,401.92,2813.44,697.69
+ORD-0496,2023-01-07,East,Furniture,Consumer,7,402.22,2815.54,1062.92
+ORD-0035,2023-01-08,East,Electronics,Consumer,7,334.83,2343.81,840.64
+ORD-0062,2023-01-08,Central,Electronics,Corporate,1,172.97,172.97,20.03
+ORD-0437,2023-01-08,East,Electronics,Home Office,3,246.81,740.4300000000001,230.0
+ORD-0008,2023-01-08,South,Office Supplies,Consumer,6,52.63,315.78000000000003,100.01
+ORD-0808,2023-01-09,North,Clothing,Consumer,7,434.55,3041.85,409.68
+ORD-0668,2023-01-09,South,Electronics,Consumer,1,268.26,268.26,37.06
+ORD-0225,2023-01-10,South,Furniture,Home Office,8,88.16,705.28,271.6
+ORD-0447,2023-01-10,North,Electronics,Consumer,7,192.99,1350.93,385.86
+ORD-0154,2023-01-10,North,Office Supplies,Corporate,4,271.24,1084.96,208.4
+ORD-0853,2023-01-11,West,Electronics,Consumer,5,239.39,1196.9499999999998,253.18
+ORD-0430,2023-01-12,West,Clothing,Corporate,8,467.82,3742.56,1203.9
+ORD-0160,2023-01-12,East,Clothing,Consumer,4,387.29,1549.16,219.84
+ORD-0210,2023-01-13,West,Electronics,Consumer,7,413.87,2897.09,555.5
+ORD-0537,2023-01-13,West,Furniture,Consumer,4,206.09,824.36,215.11
+ORD-0084,2023-01-13,North,Electronics,Consumer,3,99.02,297.06,56.13
+ORD-0724,2023-01-13,East,Electronics,Home Office,9,493.19,4438.71,846.85
+ORD-0766,2023-01-14,East,Electronics,Corporate,9,333.72,3003.4800000000005,924.33
+ORD-0440,2023-01-14,Central,Clothing,Consumer,8,218.29,1746.32,243.09
+ORD-0882,2023-01-14,West,Electronics,Home Office,2,370.4,740.8,225.78
+ORD-0523,2023-01-14,South,Electronics,Consumer,4,314.31,1257.24,207.05
+ORD-0476,2023-01-14,West,Clothing,Home Office,7,299.9,2099.2999999999997,402.92
+ORD-0817,2023-01-14,East,Electronics,Corporate,6,49.86,299.15999999999997,47.02
+ORD-0374,2023-01-14,North,Electronics,Consumer,3,310.84,932.52,178.83
+ORD-0153,2023-01-15,North,Electronics,Consumer,9,23.27,209.43,64.89
+ORD-0129,2023-01-15,North,Furniture,Corporate,8,265.86,2126.88,540.8
+ORD-0820,2023-01-15,Central,Clothing,Consumer,1,212.81,212.81,24.53
+ORD-0970,2023-01-15,North,Electronics,Home Office,9,86.71,780.39,285.45
+ORD-0713,2023-01-16,South,Electronics,Consumer,2,120.34,240.68,72.13
+ORD-0933,2023-01-17,East,Electronics,Home Office,9,358.64,3227.7599999999998,374.77
+ORD-0587,2023-01-17,North,Office Supplies,Consumer,7,47.51,332.57,102.77
+ORD-0470,2023-01-17,North,Furniture,Home Office,4,307.7,1230.8,133.5
+ORD-0651,2023-01-17,North,Furniture,Consumer,4,140.43,561.72,134.13
+ORD-0463,2023-01-18,East,Electronics,Home Office,8,135.31,1082.48,124.75
+ORD-0161,2023-01-18,South,Clothing,Home Office,9,88.72,798.48,251.3
+ORD-0556,2023-01-19,South,Electronics,Corporate,6,286.64,1719.84,615.67
+ORD-0297,2023-01-19,Central,Clothing,Consumer,8,460.56,3684.48,837.98
+ORD-0121,2023-01-19,North,Office Supplies,Corporate,4,20.45,81.8,10.02
+ORD-0576,2023-01-19,North,Furniture,Consumer,8,167.01,1336.08,133.86
+ORD-0385,2023-01-20,North,Furniture,Consumer,7,334.27,2339.89,258.14
+ORD-0571,2023-01-20,Central,Furniture,Corporate,2,379.05,758.1,194.27
+ORD-0890,2023-01-21,West,Electronics,Consumer,2,208.6,417.2,57.45
+ORD-0913,2023-01-21,North,Electronics,Corporate,7,47.72,334.03999999999996,64.59
+ORD-0604,2023-01-21,West,Clothing,Consumer,9,369.45,3325.0499999999997,805.87
+ORD-0616,2023-01-21,South,Furniture,Home Office,9,206.16,1855.44,705.74
+ORD-0041,2023-01-22,West,Electronics,Consumer,8,142.18,1137.44,149.37
+ORD-0141,2023-01-23,South,Electronics,Corporate,2,46.14,92.28,22.06
+ORD-0778,2023-01-23,North,Electronics,Home Office,4,76.75,307.0,65.63
+ORD-0133,2023-01-24,East,Electronics,Home Office,8,405.8,3246.4,1056.83
+ORD-0805,2023-01-25,North,Furniture,Home Office,6,248.22,1489.32,547.42
+ORD-0650,2023-01-25,West,Clothing,Corporate,6,473.01,2838.06,780.55
+ORD-0870,2023-01-26,South,Furniture,Consumer,7,282.71,1978.9699999999998,313.35
+ORD-0006,2023-01-26,North,Office Supplies,Corporate,4,198.62,794.48,144.07
+ORD-0836,2023-01-27,North,Electronics,Consumer,4,178.03,712.12,179.93
+ORD-0742,2023-01-27,South,Furniture,Consumer,9,67.63,608.67,77.27
+ORD-0640,2023-01-28,East,Clothing,Consumer,5,417.43,2087.15,381.5
+ORD-0792,2023-01-28,West,Furniture,Consumer,1,402.75,402.75,90.96
+ORD-0921,2023-01-29,North,Office Supplies,Corporate,3,84.0,252.0,72.99
+ORD-0086,2023-01-30,North,Office Supplies,Consumer,6,399.53,2397.18,550.4
+ORD-0282,2023-01-30,West,Electronics,Corporate,5,155.07,775.3499999999999,204.3
+ORD-0645,2023-01-31,West,Furniture,Home Office,6,213.11,1278.66,315.55
+ORD-0216,2023-01-31,North,Clothing,Consumer,1,249.06,249.06,49.46
+ORD-0015,2023-02-01,North,Clothing,Consumer,9,316.93,2852.37,665.51
+ORD-0878,2023-02-02,North,Electronics,Home Office,4,302.06,1208.24,275.34
+ORD-0727,2023-02-02,West,Clothing,Consumer,3,172.59,517.77,109.15
+ORD-0962,2023-02-02,East,Office Supplies,Home Office,9,446.73,4020.57,901.09
+ORD-0652,2023-02-03,West,Office Supplies,Consumer,8,68.27,546.16,188.69
+ORD-0549,2023-02-03,West,Clothing,Corporate,4,258.68,1034.72,310.62
+ORD-0076,2023-02-03,North,Clothing,Corporate,7,302.28,2115.96,697.07
+ORD-0761,2023-02-04,East,Office Supplies,Home Office,6,321.86,1931.16,473.34
+ORD-0200,2023-02-04,South,Furniture,Consumer,8,59.34,474.72,185.13
+ORD-0621,2023-02-04,East,Clothing,Consumer,9,171.68,1545.1200000000001,399.15
+ORD-0167,2023-02-05,West,Electronics,Consumer,1,148.36,148.36,37.14
+ORD-0473,2023-02-05,East,Clothing,Consumer,5,75.16,375.79999999999995,108.73
+ORD-0806,2023-02-05,North,Furniture,Corporate,7,383.33,2683.31,499.5
+ORD-0378,2023-02-05,West,Furniture,Corporate,3,382.18,1146.54,453.02
+ORD-0483,2023-02-05,Central,Office Supplies,Consumer,1,61.81,61.81,13.83
+ORD-0757,2023-02-05,East,Electronics,Consumer,3,42.56,127.68,32.75
+ORD-0402,2023-02-05,South,Clothing,Corporate,2,261.77,523.54,79.49
+ORD-0673,2023-02-06,East,Office Supplies,Consumer,6,147.3,883.8000000000001,281.57
+ORD-0017,2023-02-06,West,Electronics,Corporate,8,48.4,387.2,121.96
+ORD-0580,2023-02-07,East,Furniture,Home Office,4,64.5,258.0,31.92
+ORD-0517,2023-02-07,North,Electronics,Consumer,5,252.65,1263.25,323.48
+ORD-0001,2023-02-07,North,Electronics,Corporate,3,28.0,84.0,13.95
+ORD-0395,2023-02-07,South,Electronics,Consumer,2,145.24,290.48,42.5
+ORD-0094,2023-02-08,South,Clothing,Consumer,5,367.07,1835.35,330.63
+ORD-0005,2023-02-08,Central,Electronics,Corporate,2,371.15,742.3,233.53
+ORD-0596,2023-02-08,North,Office Supplies,Corporate,1,108.22,108.22,20.21
+ORD-0818,2023-02-09,West,Electronics,Corporate,4,414.9,1659.6,396.0
+ORD-0278,2023-02-10,East,Clothing,Home Office,4,433.8,1735.2,393.97
+ORD-0268,2023-02-10,East,Office Supplies,Home Office,2,466.8,933.6,146.64
+ORD-0284,2023-02-10,East,Electronics,Corporate,9,381.37,3432.33,587.12
+ORD-0399,2023-02-10,East,Office Supplies,Corporate,8,429.4,3435.2,629.13
+ORD-0486,2023-02-11,South,Electronics,Home Office,3,145.64,436.91999999999996,46.93
+ORD-0734,2023-02-11,North,Clothing,Consumer,5,324.59,1622.9499999999998,514.34
+ORD-0911,2023-02-12,Central,Electronics,Home Office,5,46.74,233.70000000000002,90.33
+ORD-0609,2023-02-12,West,Office Supplies,Consumer,6,263.21,1579.2599999999998,535.46
+ORD-0623,2023-02-12,West,Electronics,Corporate,9,39.65,356.84999999999997,140.42
+ORD-0386,2023-02-13,North,Clothing,Consumer,2,217.38,434.76,126.29
+ORD-0600,2023-02-13,East,Office Supplies,Consumer,2,139.43,278.86,99.26
+ORD-0959,2023-02-14,West,Office Supplies,Corporate,9,351.26,3161.34,942.4
+ORD-0308,2023-02-14,North,Electronics,Consumer,8,441.18,3529.44,1260.47
+ORD-0010,2023-02-14,West,Electronics,Consumer,4,479.45,1917.8,484.71
+ORD-0324,2023-02-14,South,Electronics,Consumer,7,432.21,3025.47,305.91
+ORD-0612,2023-02-15,East,Clothing,Corporate,6,406.46,2438.7599999999998,491.61
+ORD-0883,2023-02-15,South,Electronics,Home Office,3,191.72,575.16,207.89
+ORD-0561,2023-02-15,Central,Office Supplies,Corporate,4,190.92,763.68,251.07
+ORD-0495,2023-02-16,North,Electronics,Corporate,7,368.05,2576.35,417.47
+ORD-0138,2023-02-16,East,Electronics,Consumer,7,92.66,648.62,180.19
+ORD-0868,2023-02-17,South,Office Supplies,Consumer,5,466.88,2334.4,455.06
+ORD-0382,2023-02-17,North,Clothing,Home Office,8,113.25,906.0,125.34
+ORD-0020,2023-02-17,East,Electronics,Consumer,7,497.16,3480.1200000000003,799.28
+ORD-0296,2023-02-17,North,Electronics,Corporate,3,379.7,1139.1,161.95
+ORD-0058,2023-02-17,West,Electronics,Home Office,8,219.45,1755.6,331.69
+ORD-0155,2023-02-18,North,Electronics,Corporate,5,462.33,2311.65,270.76
+ORD-0826,2023-02-18,North,Furniture,Corporate,6,266.33,1597.98,478.32
+ORD-0912,2023-02-18,Central,Office Supplies,Corporate,5,82.03,410.15,154.17
+ORD-0426,2023-02-18,East,Electronics,Consumer,9,224.48,2020.32,468.82
+ORD-0142,2023-02-20,North,Office Supplies,Consumer,1,107.58,107.58,36.07
+ORD-0937,2023-02-21,East,Electronics,Consumer,7,88.9,622.3000000000001,182.76
+ORD-0548,2023-02-21,Central,Furniture,Consumer,9,267.52,2407.68,831.72
+ORD-0803,2023-02-22,East,Electronics,Consumer,6,470.66,2823.96,359.85
+ORD-0976,2023-02-22,South,Furniture,Consumer,7,386.65,2706.5499999999997,382.14
+ORD-0815,2023-02-22,East,Clothing,Consumer,7,125.94,881.5799999999999,213.25
+ORD-0321,2023-02-22,East,Clothing,Consumer,5,434.2,2171.0,525.87
+ORD-0363,2023-02-22,West,Furniture,Consumer,5,374.18,1870.9,475.9
+ORD-0920,2023-02-23,East,Electronics,Consumer,3,340.64,1021.92,347.7
+ORD-0339,2023-02-23,North,Office Supplies,Consumer,6,194.37,1166.22,319.4
+ORD-0338,2023-02-23,West,Clothing,Consumer,6,127.48,764.88,87.09
+ORD-0814,2023-02-24,West,Electronics,Corporate,9,439.53,3955.7699999999995,1443.25
+ORD-0562,2023-02-24,South,Office Supplies,Home Office,3,346.58,1039.74,286.43
+ORD-0356,2023-02-24,Central,Clothing,Consumer,6,29.96,179.76,29.47
+ORD-0403,2023-02-25,South,Office Supplies,Corporate,8,417.99,3343.92,958.35
+ORD-0641,2023-02-25,East,Electronics,Consumer,5,201.44,1007.2,321.6
+ORD-0384,2023-02-25,West,Electronics,Consumer,1,418.31,418.31,79.46
+ORD-0512,2023-02-26,East,Electronics,Consumer,3,250.54,751.62,215.81
+ORD-0130,2023-02-26,South,Clothing,Corporate,2,346.63,693.26,181.47
+ORD-0468,2023-02-27,West,Clothing,Consumer,9,369.86,3328.7400000000002,457.93
+ORD-0375,2023-02-27,North,Clothing,Home Office,3,261.78,785.3399999999999,192.36
+ORD-0212,2023-02-27,West,Electronics,Consumer,3,325.3,975.9000000000001,279.03
+ORD-0693,2023-02-27,East,Electronics,Home Office,6,209.16,1254.96,445.31
+ORD-0032,2023-02-28,South,Furniture,Consumer,6,470.56,2823.36,1016.04
+ORD-0416,2023-02-28,South,Electronics,Consumer,2,463.56,927.12,148.24
+ORD-0102,2023-02-28,Central,Clothing,Consumer,7,434.47,3041.29,504.73
+ORD-0492,2023-02-28,East,Clothing,Home Office,6,163.63,981.78,347.25
+ORD-0854,2023-03-01,Central,Furniture,Consumer,7,159.32,1115.24,117.45
+ORD-0827,2023-03-01,South,Clothing,Home Office,4,363.38,1453.52,342.78
+ORD-0411,2023-03-01,South,Clothing,Consumer,2,236.14,472.28,144.96
+ORD-0064,2023-03-02,Central,Clothing,Corporate,8,81.73,653.84,174.05
+ORD-0877,2023-03-02,North,Furniture,Consumer,2,360.32,720.64,88.65
+ORD-0845,2023-03-02,South,Furniture,Home Office,7,325.24,2276.6800000000003,736.23
+ORD-0711,2023-03-02,South,Electronics,Consumer,1,94.33,94.33,30.53
+ORD-0846,2023-03-03,East,Electronics,Corporate,7,387.62,2713.34,1056.38
+ORD-0208,2023-03-03,North,Electronics,Corporate,2,62.31,124.62,23.07
+ORD-0466,2023-03-04,East,Clothing,Home Office,7,58.86,412.02,156.6
+ORD-0917,2023-03-04,East,Clothing,Corporate,3,69.8,209.39999999999998,54.96
+ORD-0885,2023-03-04,East,Clothing,Consumer,2,55.68,111.36,43.84
+ORD-0522,2023-03-05,East,Electronics,Consumer,6,209.97,1259.82,255.04
+ORD-0843,2023-03-05,Central,Office Supplies,Corporate,5,79.83,399.15,50.11
+ORD-0966,2023-03-06,South,Clothing,Consumer,8,77.37,618.96,100.0
+ORD-0786,2023-03-06,West,Electronics,Home Office,7,57.19,400.33,40.51
+ORD-0675,2023-03-07,South,Clothing,Home Office,5,65.91,329.54999999999995,52.93
+ORD-0876,2023-03-07,East,Clothing,Corporate,5,415.35,2076.75,431.96
+ORD-0481,2023-03-07,South,Clothing,Consumer,2,123.96,247.92,97.15
+ORD-0307,2023-03-08,West,Electronics,Home Office,5,411.23,2056.15,343.55
+ORD-0821,2023-03-09,Central,Electronics,Home Office,5,261.32,1306.6,469.16
+ORD-0325,2023-03-09,East,Office Supplies,Corporate,4,176.42,705.68,104.98
+ORD-0631,2023-03-10,South,Furniture,Consumer,8,155.05,1240.4,450.5
+ORD-0237,2023-03-10,North,Furniture,Consumer,8,434.47,3475.76,851.81
+ORD-0126,2023-03-10,South,Office Supplies,Corporate,1,191.15,191.15,24.38
+ORD-0560,2023-03-10,North,Office Supplies,Consumer,7,60.45,423.15000000000003,123.95
+ORD-0048,2023-03-10,North,Electronics,Corporate,9,113.96,1025.6399999999999,103.2
+ORD-0902,2023-03-10,Central,Office Supplies,Corporate,7,276.39,1934.73,598.53
+ORD-0764,2023-03-10,Central,Furniture,Consumer,7,375.62,2629.34,800.73
+ORD-0904,2023-03-11,North,Electronics,Corporate,3,379.38,1138.1399999999999,455.03
+ORD-0462,2023-03-11,South,Office Supplies,Consumer,2,363.05,726.1,138.48
+ORD-0029,2023-03-11,North,Furniture,Home Office,6,370.82,2224.92,741.6
+ORD-0487,2023-03-11,North,Electronics,Corporate,5,319.64,1598.1999999999998,354.91
+ORD-0754,2023-03-11,East,Clothing,Corporate,6,117.67,706.02,200.0
+ORD-0851,2023-03-12,West,Furniture,Home Office,4,218.92,875.68,264.12
+ORD-0427,2023-03-12,South,Electronics,Consumer,5,484.52,2422.6,292.63
+ORD-0581,2023-03-13,North,Electronics,Consumer,7,275.47,1928.2900000000002,451.7
+ORD-0737,2023-03-13,West,Electronics,Corporate,8,488.94,3911.52,520.4
+ORD-0316,2023-03-13,East,Electronics,Consumer,7,289.97,2029.7900000000002,476.56
+ORD-0977,2023-03-14,North,Electronics,Consumer,5,266.76,1333.8,267.97
+ORD-0156,2023-03-14,South,Clothing,Consumer,7,409.8,2868.6,582.08
+ORD-0323,2023-03-14,Central,Electronics,Home Office,2,276.64,553.28,100.38
+ORD-0656,2023-03-15,South,Electronics,Consumer,4,186.17,744.68,170.28
+ORD-0103,2023-03-15,North,Office Supplies,Consumer,8,168.23,1345.84,314.19
+ORD-0306,2023-03-15,South,Furniture,Consumer,7,349.53,2446.71,446.54
+ORD-0924,2023-03-15,West,Electronics,Corporate,7,26.56,185.92,69.68
+ORD-0085,2023-03-16,North,Electronics,Consumer,9,106.96,962.64,172.83
+ORD-0188,2023-03-17,North,Furniture,Home Office,3,22.47,67.41,10.57
+ORD-0381,2023-03-17,East,Furniture,Consumer,3,356.45,1069.35,267.35
+ORD-0012,2023-03-19,East,Electronics,Consumer,4,333.09,1332.36,479.47
+ORD-0923,2023-03-19,South,Furniture,Consumer,8,412.25,3298.0,389.27
+ORD-0828,2023-03-19,East,Electronics,Corporate,1,487.17,487.17,170.83
+ORD-0124,2023-03-20,North,Electronics,Corporate,4,120.54,482.16,98.52
+ORD-0866,2023-03-20,East,Clothing,Corporate,9,473.78,4264.0199999999995,1045.35
+ORD-0772,2023-03-20,East,Electronics,Consumer,8,160.01,1280.08,345.27
+ORD-0287,2023-03-21,West,Office Supplies,Corporate,1,366.94,366.94,76.97
+ORD-0658,2023-03-21,Central,Electronics,Consumer,6,188.1,1128.6,208.27
+ORD-0649,2023-03-21,South,Furniture,Consumer,4,282.81,1131.24,424.35
+ORD-0888,2023-03-21,North,Electronics,Consumer,1,246.67,246.67,55.86
+ORD-0181,2023-03-21,North,Furniture,Home Office,7,45.81,320.67,92.85
+ORD-0467,2023-03-21,South,Electronics,Consumer,9,440.77,3966.93,1506.56
+ORD-0676,2023-03-22,West,Clothing,Corporate,4,221.19,884.76,117.69
+ORD-0824,2023-03-22,East,Furniture,Corporate,1,315.23,315.23,120.5
+ORD-0292,2023-03-23,West,Clothing,Home Office,3,55.04,165.12,21.6
+ORD-0255,2023-03-23,South,Furniture,Corporate,9,247.52,2227.6800000000003,828.34
+ORD-0448,2023-03-23,East,Furniture,Consumer,3,61.79,185.37,23.08
+ORD-0238,2023-03-23,Central,Electronics,Corporate,8,83.5,668.0,69.74
+ORD-0398,2023-03-24,South,Office Supplies,Consumer,8,355.81,2846.48,834.35
+ORD-0928,2023-03-24,North,Furniture,Corporate,5,35.55,177.75,53.9
+ORD-0926,2023-03-25,East,Electronics,Home Office,4,33.89,135.56,21.39
+ORD-0236,2023-03-25,East,Electronics,Corporate,9,322.22,2899.9800000000005,331.83
+ORD-0152,2023-03-25,North,Office Supplies,Consumer,4,211.17,844.68,274.41
+ORD-0841,2023-03-25,East,Clothing,Consumer,3,358.7,1076.1,140.7
+ORD-0205,2023-03-25,North,Office Supplies,Home Office,3,432.65,1297.9499999999998,397.28
+ORD-0441,2023-03-25,South,Office Supplies,Home Office,6,115.69,694.14,130.01
+ORD-0790,2023-03-26,East,Electronics,Consumer,6,468.31,2809.86,415.15
+ORD-0257,2023-03-26,North,Furniture,Consumer,2,437.2,874.4,305.96
+ORD-0934,2023-03-26,West,Electronics,Corporate,5,110.0,550.0,72.53
+ORD-0377,2023-03-26,West,Electronics,Consumer,3,477.21,1431.6299999999999,405.64
+ORD-0266,2023-03-26,East,Clothing,Consumer,6,152.9,917.4000000000001,241.92
+ORD-0627,2023-03-27,West,Clothing,Consumer,2,175.81,351.62,53.15
+ORD-0830,2023-03-27,West,Furniture,Consumer,2,24.58,49.16,16.35
+ORD-0070,2023-03-29,South,Furniture,Consumer,3,80.18,240.54000000000002,45.83
+ORD-0198,2023-03-29,East,Electronics,Corporate,3,493.55,1480.65,274.24
+ORD-0999,2023-03-29,Central,Furniture,Home Office,6,53.09,318.54,45.62
+ORD-0215,2023-03-30,North,Clothing,Consumer,6,167.78,1006.6800000000001,204.35
+ORD-0055,2023-03-30,Central,Clothing,Home Office,9,353.13,3178.17,741.75
+ORD-0303,2023-03-31,East,Electronics,Consumer,7,58.96,412.72,69.29
+ORD-0521,2023-03-31,North,Clothing,Consumer,9,275.05,2475.4500000000003,759.36
+ORD-0638,2023-03-31,West,Electronics,Consumer,7,74.83,523.81,81.36
+ORD-0840,2023-04-02,West,Office Supplies,Corporate,2,188.9,377.8,53.83
+ORD-0488,2023-04-02,East,Electronics,Corporate,6,418.1,2508.6000000000004,416.95
+ORD-0721,2023-04-02,East,Clothing,Consumer,5,118.88,594.4,95.95
+ORD-0987,2023-04-02,East,Clothing,Consumer,9,23.73,213.57,52.8
+ORD-0871,2023-04-02,East,Electronics,Consumer,9,447.41,4026.69,1081.51
+ORD-1000,2023-04-02,North,Furniture,Home Office,7,252.1,1764.7,705.6
+ORD-0036,2023-04-02,West,Clothing,Consumer,6,115.43,692.58,238.82
+ORD-0113,2023-04-02,East,Electronics,Consumer,5,29.09,145.45,51.99
+ORD-0665,2023-04-03,West,Clothing,Home Office,3,291.03,873.0899999999999,279.76
+ORD-0371,2023-04-03,West,Electronics,Consumer,9,26.9,242.1,77.05
+ORD-0493,2023-04-03,East,Furniture,Home Office,2,226.81,453.62,131.81
+ORD-0991,2023-04-03,South,Electronics,Home Office,7,209.8,1468.6000000000001,313.7
+ORD-0397,2023-04-03,East,Electronics,Consumer,6,372.66,2235.96,242.92
+ORD-0689,2023-04-04,North,Furniture,Consumer,5,275.76,1378.8,394.57
+ORD-0247,2023-04-05,North,Furniture,Consumer,8,102.37,818.96,168.08
+ORD-0943,2023-04-05,East,Furniture,Corporate,1,359.34,359.34,125.75
+ORD-0575,2023-04-06,Central,Clothing,Corporate,5,374.6,1873.0,354.13
+ORD-0361,2023-04-06,North,Clothing,Corporate,9,102.5,922.5,202.79
+ORD-0793,2023-04-07,West,Electronics,Consumer,4,263.82,1055.28,229.22
+ORD-0707,2023-04-08,Central,Clothing,Corporate,4,341.48,1365.92,433.59
+ORD-0273,2023-04-08,East,Clothing,Home Office,1,144.61,144.61,29.02
+ORD-0593,2023-04-08,South,Office Supplies,Corporate,2,79.57,159.14,34.3
+ORD-0109,2023-04-09,South,Furniture,Consumer,5,338.03,1690.1499999999999,399.18
+ORD-0630,2023-04-09,East,Electronics,Corporate,4,106.21,424.84,130.37
+ORD-0004,2023-04-09,West,Office Supplies,Consumer,7,150.87,1056.0900000000001,133.99
+ORD-0106,2023-04-09,West,Clothing,Consumer,3,179.73,539.1899999999999,116.47
+ORD-0065,2023-04-10,East,Clothing,Consumer,4,295.45,1181.8,223.82
+ORD-0776,2023-04-10,North,Electronics,Consumer,6,197.29,1183.74,262.7
+ORD-0449,2023-04-11,North,Clothing,Consumer,9,117.03,1053.27,174.12
+ORD-0747,2023-04-11,South,Clothing,Consumer,3,463.36,1390.08,555.97
+ORD-0420,2023-04-11,East,Clothing,Corporate,8,464.63,3717.04,1350.75
+ORD-0031,2023-04-11,East,Office Supplies,Consumer,2,302.73,605.46,92.52
+ORD-0771,2023-04-12,South,Electronics,Consumer,5,136.42,682.0999999999999,174.66
+ORD-0312,2023-04-12,Central,Furniture,Home Office,2,276.78,553.56,91.52
+ORD-0477,2023-04-12,West,Clothing,Consumer,7,297.9,2085.2999999999997,810.48
+ORD-0241,2023-04-13,North,Office Supplies,Home Office,2,497.83,995.66,165.96
+ORD-0446,2023-04-13,West,Clothing,Home Office,6,368.14,2208.84,697.53
+ORD-0452,2023-04-14,South,Furniture,Corporate,2,281.11,562.22,134.35
+ORD-0715,2023-04-14,Central,Electronics,Consumer,6,473.22,2839.32,1070.29
+ORD-0647,2023-04-14,West,Clothing,Consumer,6,203.78,1222.68,387.38
+ORD-0506,2023-04-15,North,Clothing,Corporate,6,29.61,177.66,52.42
+ORD-0664,2023-04-15,North,Clothing,Home Office,8,436.91,3495.28,961.14
+ORD-0148,2023-04-15,Central,Furniture,Home Office,7,90.67,634.69,237.48
+ORD-0311,2023-04-17,East,Clothing,Consumer,9,35.23,317.07,78.24
+ORD-0115,2023-04-18,North,Electronics,Consumer,7,120.03,840.21,194.11
+ORD-0359,2023-04-19,East,Furniture,Home Office,1,435.03,435.03,77.52
+ORD-0719,2023-04-20,North,Office Supplies,Consumer,3,232.56,697.6800000000001,82.68
+ORD-0867,2023-04-20,North,Clothing,Consumer,1,47.47,47.47,15.12
+ORD-0480,2023-04-20,East,Electronics,Consumer,9,259.62,2336.58,569.86
+ORD-0370,2023-04-21,North,Clothing,Consumer,1,261.18,261.18,77.67
+ORD-0935,2023-04-21,Central,Electronics,Corporate,9,380.29,3422.61,520.58
+ORD-0566,2023-04-21,Central,Clothing,Home Office,3,398.73,1196.19,342.94
+ORD-0022,2023-04-23,Central,Electronics,Home Office,8,370.48,2963.84,960.23
+ORD-0563,2023-04-25,South,Electronics,Home Office,3,151.58,454.74,81.79
+ORD-0068,2023-04-25,Central,Furniture,Home Office,9,362.92,3266.28,624.63
+ORD-0034,2023-04-25,East,Furniture,Consumer,8,137.02,1096.16,154.69
+ORD-0965,2023-04-25,West,Electronics,Consumer,9,148.05,1332.45,216.5
+ORD-0253,2023-04-26,West,Clothing,Corporate,1,50.3,50.3,5.07
+ORD-0540,2023-04-27,West,Office Supplies,Consumer,7,431.34,3019.3799999999997,937.24
+ORD-0494,2023-04-28,West,Clothing,Consumer,8,169.85,1358.8,152.82
+ORD-0501,2023-04-28,West,Furniture,Corporate,4,182.83,731.32,132.12
+ORD-0865,2023-04-29,South,Furniture,Consumer,5,253.96,1269.8,465.5
+ORD-0326,2023-04-29,East,Electronics,Consumer,9,477.94,4301.46,881.18
+ORD-0683,2023-04-29,Central,Furniture,Home Office,3,125.75,377.25,104.29
+ORD-0949,2023-04-30,North,Clothing,Corporate,9,336.8,3031.2000000000003,705.92
+ORD-0013,2023-05-01,South,Electronics,Consumer,3,240.63,721.89,260.95
+ORD-0231,2023-05-01,North,Furniture,Corporate,8,54.04,432.32,70.46
+ORD-0119,2023-05-03,East,Clothing,Consumer,1,47.42,47.42,14.05
+ORD-0348,2023-05-03,East,Clothing,Consumer,6,497.02,2982.12,373.33
+ORD-0408,2023-05-03,East,Electronics,Corporate,9,388.63,3497.67,1046.86
+ORD-0687,2023-05-03,West,Office Supplies,Corporate,4,454.99,1819.96,288.46
+ORD-0228,2023-05-04,South,Clothing,Consumer,2,313.76,627.52,144.08
+ORD-0856,2023-05-04,North,Clothing,Corporate,7,73.73,516.11,54.97
+ORD-0075,2023-05-04,North,Furniture,Consumer,7,78.41,548.87,137.14
+ORD-0661,2023-05-04,East,Electronics,Consumer,5,131.05,655.25,111.6
+ORD-0024,2023-05-05,North,Clothing,Consumer,7,228.35,1598.45,468.9
+ORD-0137,2023-05-05,North,Electronics,Consumer,9,445.42,4008.78,478.13
+ORD-0782,2023-05-05,North,Electronics,Consumer,7,343.54,2404.78,291.27
+ORD-0861,2023-05-05,North,Clothing,Home Office,6,140.42,842.52,87.67
+ORD-0565,2023-05-05,North,Office Supplies,Consumer,5,375.14,1875.6999999999998,254.79
+ORD-0364,2023-05-06,East,Furniture,Consumer,4,86.72,346.88,108.47
+ORD-0335,2023-05-06,East,Office Supplies,Corporate,6,108.76,652.5600000000001,257.07
+ORD-0072,2023-05-06,North,Electronics,Corporate,9,328.2,2953.7999999999997,852.24
+ORD-0606,2023-05-06,North,Office Supplies,Consumer,1,143.59,143.59,29.81
+ORD-0960,2023-05-07,South,Clothing,Corporate,2,421.98,843.96,216.74
+ORD-0234,2023-05-07,East,Electronics,Consumer,4,131.87,527.48,87.2
+ORD-0901,2023-05-07,East,Furniture,Corporate,5,31.54,157.7,35.36
+ORD-0328,2023-05-07,East,Furniture,Corporate,7,28.77,201.39,67.95
+ORD-0478,2023-05-07,East,Electronics,Home Office,1,46.17,46.17,17.98
+ORD-0586,2023-05-08,South,Furniture,Consumer,5,251.49,1257.45,466.34
+ORD-0550,2023-05-09,South,Furniture,Corporate,2,105.64,211.28,29.09
+ORD-0667,2023-05-10,Central,Electronics,Consumer,6,156.61,939.6600000000001,103.73
+ORD-0953,2023-05-11,Central,Furniture,Consumer,9,298.98,2690.82,1010.74
+ORD-0248,2023-05-11,South,Clothing,Consumer,3,100.38,301.14,105.34
+ORD-0896,2023-05-12,West,Furniture,Consumer,2,346.26,692.52,208.87
+ORD-0859,2023-05-13,West,Clothing,Consumer,8,400.16,3201.28,863.32
+ORD-0442,2023-05-13,South,Office Supplies,Corporate,3,217.94,653.8199999999999,235.82
+ORD-0077,2023-05-14,North,Clothing,Home Office,4,171.72,686.88,123.41
+ORD-0802,2023-05-14,East,Electronics,Corporate,5,232.91,1164.55,120.14
+ORD-0594,2023-05-15,West,Office Supplies,Consumer,3,78.28,234.84,52.92
+ORD-0906,2023-05-15,Central,Furniture,Consumer,1,436.25,436.25,44.95
+ORD-0768,2023-05-15,West,Furniture,Consumer,3,304.67,914.01,346.86
+ORD-0957,2023-05-16,East,Electronics,Consumer,6,284.17,1705.02,468.74
+ORD-0262,2023-05-16,North,Electronics,Consumer,4,449.63,1798.52,690.97
+ORD-0016,2023-05-16,West,Furniture,Home Office,8,292.91,2343.28,447.53
+ORD-0940,2023-05-16,East,Electronics,Consumer,9,266.17,2395.53,604.89
+ORD-0471,2023-05-16,West,Electronics,Corporate,2,116.61,233.22,83.15
+ORD-0744,2023-05-17,East,Furniture,Consumer,8,321.68,2573.44,328.77
+ORD-0436,2023-05-17,East,Furniture,Home Office,9,246.23,2216.0699999999997,827.74
+ORD-0149,2023-05-18,East,Office Supplies,Consumer,1,119.16,119.16,46.99
+ORD-0240,2023-05-18,South,Electronics,Consumer,9,299.66,2696.94,1059.43
+ORD-0700,2023-05-19,West,Office Supplies,Corporate,4,277.92,1111.68,142.93
+ORD-0127,2023-05-19,North,Furniture,Consumer,1,457.63,457.63,139.25
+ORD-0798,2023-05-20,West,Office Supplies,Corporate,8,244.1,1952.8,488.37
+ORD-0293,2023-05-20,Central,Clothing,Corporate,6,377.13,2262.7799999999997,343.17
+ORD-0239,2023-05-20,East,Electronics,Consumer,7,489.24,3424.6800000000003,1288.85
+ORD-0277,2023-05-21,North,Electronics,Corporate,1,249.78,249.78,33.01
+ORD-0276,2023-05-21,Central,Furniture,Home Office,5,293.97,1469.8500000000001,373.31
+ORD-0899,2023-05-21,South,Furniture,Consumer,7,472.34,3306.3799999999997,1149.21
+ORD-0028,2023-05-21,East,Electronics,Corporate,5,165.36,826.8000000000001,328.97
+ORD-0514,2023-05-21,West,Office Supplies,Corporate,4,125.18,500.72,67.46
+ORD-0066,2023-05-22,South,Furniture,Corporate,5,49.23,246.14999999999998,58.22
+ORD-0090,2023-05-22,North,Furniture,Consumer,9,303.03,2727.2699999999995,751.39
+ORD-0988,2023-05-22,East,Clothing,Home Office,7,256.2,1793.3999999999999,219.98
+ORD-0092,2023-05-22,East,Furniture,Corporate,6,419.14,2514.84,646.96
+ORD-0425,2023-05-23,North,Furniture,Home Office,8,136.08,1088.64,223.73
+ORD-0187,2023-05-23,East,Office Supplies,Corporate,5,105.02,525.1,189.5
+ORD-0519,2023-05-23,North,Furniture,Corporate,4,202.63,810.52,100.67
+ORD-0613,2023-05-23,North,Clothing,Corporate,9,85.69,771.21,89.95
+ORD-0145,2023-05-23,East,Furniture,Consumer,2,323.37,646.74,141.89
+ORD-0847,2023-05-23,Central,Electronics,Corporate,9,58.02,522.1800000000001,164.68
+ORD-0788,2023-05-24,Central,Furniture,Home Office,9,300.94,2708.46,582.68
+ORD-0807,2023-05-24,North,Office Supplies,Corporate,9,350.78,3157.0199999999995,626.11
+ORD-0750,2023-05-24,East,Furniture,Consumer,2,133.08,266.16,37.89
+ORD-0716,2023-05-25,South,Electronics,Consumer,8,497.85,3982.8,417.22
+ORD-0419,2023-05-25,Central,Furniture,Consumer,6,342.27,2053.62,295.01
+ORD-0184,2023-05-25,East,Electronics,Consumer,6,136.91,821.46,250.66
+ORD-0783,2023-05-25,North,Electronics,Corporate,6,28.0,168.0,34.69
+ORD-0823,2023-05-25,North,Furniture,Home Office,4,332.4,1329.6,491.76
+ORD-0543,2023-05-26,West,Furniture,Corporate,6,356.42,2138.52,598.37
+ORD-0309,2023-05-26,South,Clothing,Corporate,6,391.13,2346.7799999999997,809.95
+ORD-0428,2023-05-26,East,Electronics,Corporate,4,335.73,1342.92,367.24
+ORD-0294,2023-05-27,Central,Electronics,Consumer,8,361.28,2890.24,662.72
+ORD-0334,2023-05-27,Central,Electronics,Consumer,9,278.04,2502.36,952.47
+ORD-0383,2023-05-27,South,Clothing,Corporate,8,234.66,1877.28,515.63
+ORD-0099,2023-05-27,East,Furniture,Consumer,6,192.98,1157.8799999999999,339.18
+ORD-0932,2023-05-27,North,Electronics,Corporate,3,182.23,546.6899999999999,210.11
+ORD-0204,2023-05-28,Central,Clothing,Home Office,6,167.43,1004.58,316.13
+ORD-0163,2023-05-28,North,Electronics,Consumer,1,327.95,327.95,129.51
+ORD-0907,2023-05-29,South,Electronics,Corporate,9,478.8,4309.2,623.29
+ORD-0955,2023-05-29,West,Furniture,Home Office,9,79.72,717.48,189.87
+ORD-0531,2023-05-29,West,Office Supplies,Corporate,7,265.27,1856.8899999999999,501.79
+ORD-0251,2023-05-30,North,Electronics,Consumer,5,78.51,392.55,148.54
+ORD-0026,2023-05-31,North,Furniture,Corporate,4,216.36,865.44,146.88
+ORD-0938,2023-05-31,East,Office Supplies,Corporate,6,109.0,654.0,240.42
+ORD-0743,2023-05-31,North,Furniture,Corporate,4,225.75,903.0,159.88
+ORD-0872,2023-05-31,South,Furniture,Home Office,6,146.11,876.6600000000001,170.4
+ORD-0357,2023-05-31,South,Clothing,Home Office,5,385.23,1926.15,644.33
+ORD-0710,2023-06-01,Central,Electronics,Consumer,5,320.23,1601.15,257.56
+ORD-0302,2023-06-01,East,Office Supplies,Corporate,8,319.84,2558.72,782.19
+ORD-0733,2023-06-01,North,Electronics,Corporate,4,213.46,853.84,170.34
+ORD-0393,2023-06-02,West,Office Supplies,Home Office,8,476.39,3811.12,665.57
+ORD-0745,2023-06-02,North,Electronics,Consumer,3,123.27,369.81,48.18
+ORD-0147,2023-06-02,South,Clothing,Consumer,5,196.14,980.6999999999999,197.58
+ORD-0394,2023-06-03,South,Furniture,Consumer,4,120.75,483.0,180.19
+ORD-0855,2023-06-03,North,Electronics,Consumer,1,289.73,289.73,90.09
+ORD-0705,2023-06-05,East,Office Supplies,Corporate,6,425.59,2553.54,770.64
+ORD-0080,2023-06-05,South,Electronics,Corporate,1,313.59,313.59,108.85
+ORD-0660,2023-06-07,South,Office Supplies,Consumer,7,444.71,3112.97,796.18
+ORD-0002,2023-06-08,North,Electronics,Home Office,2,113.49,226.98,39.99
+ORD-0643,2023-06-08,North,Electronics,Home Office,8,243.8,1950.4,583.58
+ORD-0305,2023-06-09,North,Clothing,Consumer,5,374.76,1873.8,686.02
+ORD-0444,2023-06-09,North,Furniture,Home Office,1,296.38,296.38,29.7
+ORD-0680,2023-06-10,East,Furniture,Consumer,5,99.01,495.05,139.04
+ORD-0931,2023-06-10,West,Furniture,Home Office,7,402.39,2816.73,773.01
+ORD-0271,2023-06-10,North,Clothing,Home Office,9,169.55,1525.95,185.11
+ORD-0789,2023-06-11,North,Furniture,Corporate,9,143.08,1287.72,504.3
+ORD-0874,2023-06-11,North,Clothing,Corporate,7,175.68,1229.76,375.69
+ORD-0572,2023-06-11,East,Furniture,Corporate,8,421.53,3372.24,1014.3
+ORD-0634,2023-06-12,East,Furniture,Corporate,9,395.84,3562.56,675.28
+ORD-0995,2023-06-13,East,Clothing,Home Office,9,168.64,1517.7599999999998,476.72
+ORD-0884,2023-06-13,North,Electronics,Home Office,7,50.67,354.69,60.74
+ORD-0456,2023-06-14,East,Electronics,Consumer,7,137.86,965.0200000000001,356.67
+ORD-0373,2023-06-14,East,Electronics,Corporate,7,490.78,3435.46,594.72
+ORD-0655,2023-06-14,North,Clothing,Corporate,4,433.18,1732.72,600.0
+ORD-0079,2023-06-15,North,Electronics,Corporate,8,408.03,3264.24,573.01
+ORD-0110,2023-06-15,East,Office Supplies,Home Office,4,407.7,1630.8,411.12
+ORD-0794,2023-06-15,West,Clothing,Consumer,3,380.16,1140.48,341.86
+ORD-0893,2023-06-15,West,Furniture,Home Office,2,401.21,802.42,296.97
+ORD-0250,2023-06-15,West,Furniture,Consumer,8,35.97,287.76,107.48
+ORD-0752,2023-06-16,North,Clothing,Consumer,6,211.58,1269.48,162.61
+ORD-0014,2023-06-16,South,Electronics,Home Office,5,344.37,1721.85,388.28
+ORD-0177,2023-06-17,South,Electronics,Corporate,1,457.67,457.67,49.2
+ORD-0432,2023-06-17,North,Furniture,Consumer,1,272.52,272.52,71.5
+ORD-0980,2023-06-17,North,Furniture,Home Office,6,327.69,1966.1399999999999,627.28
+ORD-0033,2023-06-17,North,Clothing,Consumer,8,187.93,1503.44,350.69
+ORD-0111,2023-06-17,East,Electronics,Consumer,9,445.24,4007.16,1088.55
+ORD-0193,2023-06-17,South,Clothing,Consumer,3,472.92,1418.76,365.52
+ORD-0327,2023-06-18,North,Furniture,Consumer,1,78.5,78.5,15.29
+ORD-0011,2023-06-19,West,Furniture,Home Office,5,447.27,2236.35,317.11
+ORD-0435,2023-06-20,West,Electronics,Consumer,1,112.72,112.72,13.16
+ORD-0811,2023-06-20,Central,Clothing,Corporate,2,73.35,146.7,55.05
+ORD-0547,2023-06-21,West,Electronics,Consumer,4,469.63,1878.52,590.07
+ORD-0235,2023-06-21,Central,Clothing,Home Office,6,353.69,2122.14,607.71
+ORD-0945,2023-06-21,North,Furniture,Corporate,1,438.81,438.81,129.28
+ORD-0140,2023-06-21,West,Furniture,Consumer,6,177.71,1066.26,381.19
+ORD-0265,2023-06-21,West,Electronics,Consumer,1,85.93,85.93,14.34
+ORD-0354,2023-06-21,North,Electronics,Corporate,8,156.13,1249.04,400.07
+ORD-0401,2023-06-21,East,Furniture,Consumer,7,358.86,2512.02,511.4
+ORD-0694,2023-06-22,South,Office Supplies,Corporate,2,428.46,856.92,222.67
+ORD-0659,2023-06-22,East,Electronics,Consumer,3,316.27,948.81,171.03
+ORD-0040,2023-06-22,East,Office Supplies,Home Office,6,417.2,2503.2,289.8
+ORD-0608,2023-06-22,Central,Furniture,Consumer,9,205.07,1845.6299999999999,508.14
+ORD-0524,2023-06-23,West,Electronics,Home Office,2,406.69,813.38,279.89
+ORD-0469,2023-06-23,North,Furniture,Corporate,3,164.7,494.09999999999997,106.04
+ORD-0097,2023-06-23,North,Office Supplies,Home Office,6,297.91,1787.46,247.97
+ORD-0892,2023-06-23,East,Clothing,Home Office,1,186.65,186.65,61.36
+ORD-0044,2023-06-23,North,Furniture,Consumer,7,355.68,2489.76,591.04
+ORD-0455,2023-06-24,East,Electronics,Home Office,9,210.69,1896.21,552.04
+ORD-0812,2023-06-25,South,Office Supplies,Corporate,1,34.6,34.6,10.45
+ORD-0059,2023-06-26,South,Clothing,Consumer,1,455.85,455.85,172.72
+ORD-0203,2023-06-26,West,Electronics,Corporate,1,326.41,326.41,114.74
+ORD-0626,2023-06-27,East,Office Supplies,Consumer,7,50.29,352.03,117.41
+ORD-0343,2023-06-27,North,Clothing,Consumer,1,373.96,373.96,127.76
+ORD-0838,2023-06-28,East,Office Supplies,Consumer,4,236.11,944.44,203.23
+ORD-0513,2023-06-28,West,Clothing,Home Office,4,337.62,1350.48,189.35
+ORD-0025,2023-06-28,East,Electronics,Corporate,1,81.23,81.23,12.58
+ORD-0151,2023-06-28,North,Office Supplies,Corporate,3,325.31,975.9300000000001,336.76
+ORD-0741,2023-06-29,East,Office Supplies,Consumer,7,410.27,2871.89,597.44
+ORD-0128,2023-06-29,South,Clothing,Consumer,8,39.34,314.72,114.49
+ORD-0690,2023-06-30,South,Electronics,Home Office,9,433.12,3898.08,1136.31
+ORD-0270,2023-06-30,South,Clothing,Corporate,5,378.25,1891.25,455.26
+ORD-0479,2023-06-30,South,Clothing,Corporate,2,170.74,341.48,63.8
+ORD-0858,2023-06-30,North,Clothing,Corporate,6,292.85,1757.1000000000001,261.96
+ORD-0143,2023-07-01,South,Furniture,Home Office,7,483.3,3383.1,1299.33
+ORD-0862,2023-07-01,West,Electronics,Corporate,3,264.64,793.92,165.82
+ORD-0722,2023-07-01,South,Furniture,Consumer,4,477.01,1908.04,515.09
+ORD-0182,2023-07-02,East,Electronics,Corporate,8,341.29,2730.32,704.74
+ORD-0162,2023-07-02,Central,Electronics,Consumer,6,335.7,2014.1999999999998,789.24
+ORD-0739,2023-07-02,North,Clothing,Corporate,8,233.73,1869.84,322.21
+ORD-0974,2023-07-02,East,Office Supplies,Consumer,6,361.36,2168.16,392.06
+ORD-0903,2023-07-03,North,Furniture,Consumer,7,350.4,2452.7999999999997,442.67
+ORD-0423,2023-07-03,North,Electronics,Corporate,6,350.63,2103.7799999999997,452.04
+ORD-0057,2023-07-03,East,Furniture,Consumer,3,173.14,519.42,121.95
+ORD-0801,2023-07-04,East,Office Supplies,Consumer,6,364.33,2185.98,341.58
+ORD-0905,2023-07-04,East,Electronics,Consumer,7,122.31,856.1700000000001,130.65
+ORD-0534,2023-07-04,North,Clothing,Consumer,4,30.6,122.4,22.28
+ORD-0233,2023-07-04,South,Electronics,Corporate,2,434.0,868.0,288.5
+ORD-0864,2023-07-05,East,Clothing,Consumer,2,396.89,793.78,281.46
+ORD-0081,2023-07-05,West,Clothing,Consumer,1,161.96,161.96,20.34
+ORD-0274,2023-07-05,South,Clothing,Consumer,4,20.79,83.16,22.65
+ORD-0319,2023-07-05,North,Furniture,Consumer,9,445.52,4009.68,688.86
+ORD-0042,2023-07-05,South,Electronics,Home Office,8,247.05,1976.4,535.0
+ORD-0337,2023-07-05,North,Electronics,Corporate,1,49.48,49.48,7.53
+ORD-0400,2023-07-05,South,Furniture,Home Office,9,75.6,680.4,159.83
+ORD-0939,2023-07-06,West,Furniture,Corporate,2,107.39,214.78,68.7
+ORD-0464,2023-07-06,North,Furniture,Consumer,9,233.01,2097.09,504.33
+ORD-0542,2023-07-06,South,Clothing,Home Office,3,256.33,768.99,88.32
+ORD-0618,2023-07-06,East,Electronics,Home Office,9,367.85,3310.65,1242.59
+ORD-0684,2023-07-07,Central,Office Supplies,Home Office,6,267.35,1604.1000000000001,481.37
+ORD-0460,2023-07-07,North,Furniture,Corporate,7,293.8,2056.6,488.67
+ORD-0852,2023-07-08,North,Electronics,Corporate,2,469.2,938.4,291.51
+ORD-0472,2023-07-08,East,Electronics,Home Office,3,447.31,1341.93,278.62
+ORD-0842,2023-07-08,West,Electronics,Consumer,4,270.34,1081.36,281.85
+ORD-0670,2023-07-09,Central,Electronics,Consumer,7,348.88,2442.16,605.81
+ORD-0136,2023-07-09,East,Clothing,Consumer,1,199.49,199.49,25.76
+ORD-0532,2023-07-10,East,Clothing,Corporate,2,225.81,451.62,96.24
+ORD-0211,2023-07-10,East,Clothing,Consumer,5,344.79,1723.95,565.06
+ORD-0770,2023-07-10,North,Electronics,Home Office,5,84.01,420.05,75.77
+ORD-0936,2023-07-11,East,Electronics,Consumer,7,133.28,932.96,286.47
+ORD-0881,2023-07-13,South,Office Supplies,Home Office,6,234.82,1408.92,274.21
+ORD-0930,2023-07-13,South,Clothing,Home Office,8,266.66,2133.28,672.9
+ORD-0527,2023-07-15,East,Office Supplies,Consumer,5,277.1,1385.5,540.99
+ORD-0209,2023-07-16,North,Electronics,Corporate,6,113.38,680.28,209.63
+ORD-0967,2023-07-16,West,Electronics,Consumer,4,130.55,522.2,81.91
+ORD-0701,2023-07-18,East,Clothing,Consumer,7,112.14,784.98,84.97
+ORD-0986,2023-07-18,West,Furniture,Corporate,2,258.1,516.2,90.67
+ORD-0172,2023-07-18,East,Office Supplies,Consumer,1,282.04,282.04,65.95
+ORD-0461,2023-07-18,North,Electronics,Consumer,9,299.15,2692.35,415.94
+ORD-0758,2023-07-19,West,Furniture,Consumer,8,182.63,1461.04,261.24
+ORD-0347,2023-07-20,West,Clothing,Home Office,1,360.27,360.27,61.62
+ORD-0662,2023-07-20,East,Clothing,Consumer,4,214.04,856.16,117.35
+ORD-0191,2023-07-21,North,Furniture,Corporate,9,347.67,3129.03,685.19
+ORD-0227,2023-07-22,East,Clothing,Consumer,1,86.84,86.84,9.18
+ORD-0101,2023-07-22,West,Electronics,Consumer,8,205.98,1647.84,472.03
+ORD-0220,2023-07-22,East,Furniture,Home Office,9,468.26,4214.34,510.94
+ORD-0714,2023-07-22,South,Furniture,Consumer,4,353.98,1415.92,351.21
+ORD-0985,2023-07-22,South,Office Supplies,Consumer,2,202.83,405.66,129.99
+ORD-0914,2023-07-22,Central,Office Supplies,Corporate,7,425.61,2979.27,484.78
+ORD-0624,2023-07-23,East,Clothing,Corporate,2,43.84,87.68,29.11
+ORD-0039,2023-07-24,East,Clothing,Home Office,5,53.19,265.95,94.56
+ORD-0088,2023-07-24,South,Electronics,Consumer,7,229.28,1604.96,266.58
+ORD-0052,2023-07-24,East,Furniture,Consumer,2,172.31,344.62,52.47
+ORD-0443,2023-07-24,East,Clothing,Corporate,6,54.69,328.14,121.85
+ORD-0813,2023-07-25,North,Clothing,Home Office,9,368.9,3320.1,1318.83
+ORD-0073,2023-07-25,North,Clothing,Consumer,3,152.26,456.78,105.79
+ORD-0199,2023-07-25,East,Clothing,Consumer,2,306.96,613.92,244.61
+ORD-0272,2023-07-25,Central,Office Supplies,Consumer,4,425.91,1703.64,588.59
+ORD-0499,2023-07-25,Central,Office Supplies,Consumer,1,399.82,399.82,124.23
+ORD-0799,2023-07-25,East,Furniture,Corporate,9,192.67,1734.03,389.37
+ORD-0093,2023-07-25,North,Electronics,Consumer,8,105.12,840.96,252.36
+ORD-0941,2023-07-25,North,Furniture,Home Office,6,425.5,2553.0,1014.94
+ORD-0288,2023-07-25,North,Clothing,Home Office,7,131.28,918.96,155.14
+ORD-0054,2023-07-26,South,Electronics,Consumer,6,49.25,295.5,92.89
+ORD-0816,2023-07-26,East,Electronics,Corporate,2,96.06,192.12,49.16
+ORD-0564,2023-07-27,East,Furniture,Consumer,9,417.28,3755.5199999999995,410.86
+ORD-0500,2023-07-27,North,Electronics,Consumer,8,308.66,2469.28,468.76
+ORD-0366,2023-07-28,North,Furniture,Consumer,6,251.77,1510.6200000000001,213.48
+ORD-0164,2023-07-28,South,Furniture,Consumer,3,32.27,96.81,24.03
+ORD-0221,2023-07-28,South,Electronics,Home Office,4,213.07,852.28,254.08
+ORD-0577,2023-07-28,Central,Clothing,Consumer,1,147.24,147.24,57.27
+ORD-0195,2023-07-29,South,Clothing,Consumer,8,158.93,1271.44,204.52
+ORD-0559,2023-07-29,North,Electronics,Consumer,9,428.67,3858.03,482.78
+ORD-0709,2023-07-29,South,Electronics,Consumer,1,163.04,163.04,49.56
+ORD-0417,2023-07-30,North,Furniture,Corporate,7,413.76,2896.3199999999997,941.78
+ORD-0218,2023-07-30,West,Clothing,Consumer,4,491.0,1964.0,386.31
+ORD-0635,2023-07-31,West,Furniture,Corporate,2,380.07,760.14,229.34
+ORD-0390,2023-08-02,East,Electronics,Consumer,6,400.7,2404.2,883.08
+ORD-0834,2023-08-02,South,Furniture,Consumer,8,23.43,187.44,49.18
+ORD-0144,2023-08-04,South,Electronics,Home Office,2,225.53,451.06,82.34
+ORD-0989,2023-08-05,North,Furniture,Home Office,3,493.51,1480.53,422.48
+ORD-0779,2023-08-05,East,Electronics,Consumer,6,477.89,2867.34,327.36
+ORD-0067,2023-08-07,East,Electronics,Consumer,2,34.85,69.7,10.39
+ORD-0625,2023-08-07,East,Electronics,Corporate,4,319.29,1277.16,168.43
+ORD-0732,2023-08-07,East,Furniture,Consumer,6,262.58,1575.48,427.75
+ORD-0603,2023-08-08,North,Furniture,Corporate,6,85.46,512.76,80.76
+ORD-0482,2023-08-09,North,Clothing,Home Office,6,438.86,2633.16,267.16
+ORD-0718,2023-08-09,North,Electronics,Corporate,1,141.21,141.21,51.77
+ORD-0729,2023-08-09,West,Furniture,Corporate,3,203.42,610.26,223.15
+ORD-0451,2023-08-10,South,Furniture,Home Office,1,119.39,119.39,41.73
+ORD-0681,2023-08-10,North,Electronics,Consumer,3,50.66,151.98,48.37
+ORD-0322,2023-08-10,South,Clothing,Home Office,8,148.2,1185.6,430.02
+ORD-0315,2023-08-10,West,Clothing,Consumer,3,173.95,521.8499999999999,67.58
+ORD-0264,2023-08-10,West,Furniture,Consumer,7,343.3,2403.1,682.73
+ORD-0279,2023-08-11,East,Furniture,Corporate,6,70.59,423.54,99.83
+ORD-0360,2023-08-11,South,Clothing,Consumer,7,76.96,538.7199999999999,68.83
+ORD-0175,2023-08-11,West,Clothing,Consumer,7,396.84,2777.8799999999997,489.68
+ORD-0787,2023-08-11,North,Clothing,Consumer,2,155.51,311.02,77.86
+ORD-0663,2023-08-11,West,Electronics,Corporate,5,496.77,2483.85,340.55
+ORD-0706,2023-08-11,South,Electronics,Corporate,3,248.63,745.89,113.39
+ORD-0573,2023-08-11,East,Electronics,Consumer,1,358.08,358.08,123.36
+ORD-0009,2023-08-12,Central,Furniture,Consumer,8,106.99,855.92,87.49
+ORD-0735,2023-08-13,Central,Furniture,Home Office,6,318.17,1909.02,481.69
+ORD-0226,2023-08-14,South,Furniture,Consumer,8,166.04,1328.32,252.36
+ORD-0578,2023-08-14,East,Office Supplies,Home Office,7,354.17,2479.19,930.35
+ORD-0365,2023-08-15,North,Electronics,Corporate,6,231.23,1387.3799999999999,515.87
+ORD-0505,2023-08-16,Central,Electronics,Consumer,4,234.06,936.24,368.95
+ORD-0280,2023-08-16,East,Clothing,Consumer,4,285.84,1143.36,365.98
+ORD-0740,2023-08-16,North,Clothing,Consumer,3,254.3,762.9000000000001,79.88
+ORD-0391,2023-08-16,South,Clothing,Corporate,5,125.84,629.2,216.5
+ORD-0244,2023-08-17,East,Furniture,Home Office,6,46.96,281.76,49.59
+ORD-0389,2023-08-17,North,Clothing,Consumer,4,212.72,850.88,184.72
+ORD-0825,2023-08-19,North,Electronics,Corporate,4,104.32,417.28,125.71
+ORD-0617,2023-08-19,West,Electronics,Home Office,2,158.18,316.36,100.55
+ORD-0243,2023-08-19,East,Office Supplies,Consumer,8,126.33,1010.64,329.59
+ORD-0850,2023-08-19,East,Furniture,Consumer,2,110.62,221.24,41.62
+ORD-0595,2023-08-20,East,Electronics,Corporate,3,366.14,1098.42,124.51
+ORD-0889,2023-08-21,North,Furniture,Home Office,4,362.18,1448.72,185.9
+ORD-0232,2023-08-21,West,Furniture,Corporate,8,187.9,1503.2,506.09
+ORD-0511,2023-08-21,Central,Furniture,Consumer,5,317.22,1586.1000000000001,586.39
+ORD-0295,2023-08-21,East,Electronics,Consumer,7,132.56,927.9200000000001,234.91
+ORD-0346,2023-08-21,North,Clothing,Consumer,6,182.87,1097.22,333.19
+ORD-0429,2023-08-21,East,Clothing,Consumer,6,290.91,1745.46,487.49
+ORD-0622,2023-08-21,North,Office Supplies,Corporate,9,429.06,3861.54,1031.93
+ORD-0178,2023-08-22,South,Furniture,Corporate,5,66.8,334.0,105.62
+ORD-0286,2023-08-22,Central,Electronics,Consumer,6,440.57,2643.42,363.16
+ORD-0350,2023-08-22,South,Furniture,Corporate,8,343.53,2748.24,794.39
+ORD-0615,2023-08-22,South,Office Supplies,Home Office,2,448.83,897.66,248.09
+ORD-0857,2023-08-24,Central,Clothing,Consumer,6,312.56,1875.3600000000001,542.65
+ORD-0963,2023-08-24,West,Electronics,Home Office,3,97.1,291.29999999999995,55.28
+ORD-0223,2023-08-24,South,Furniture,Home Office,3,358.7,1076.1,324.82
+ORD-0139,2023-08-24,East,Electronics,Consumer,2,92.91,185.82,64.57
+ORD-0061,2023-08-24,West,Electronics,Consumer,7,63.83,446.81,132.14
+ORD-0252,2023-08-25,East,Electronics,Home Office,3,219.61,658.83,98.58
+ORD-0844,2023-08-26,South,Electronics,Consumer,1,481.48,481.48,91.91
+ORD-0544,2023-08-26,South,Furniture,Consumer,6,430.66,2583.96,523.26
+ORD-0886,2023-08-26,West,Clothing,Corporate,6,75.37,452.22,97.64
+ORD-0372,2023-08-26,North,Furniture,Home Office,7,405.43,2838.01,953.43
+ORD-0944,2023-08-27,East,Clothing,Corporate,5,334.09,1670.4499999999998,380.92
+ORD-0642,2023-08-27,West,Electronics,Corporate,2,490.97,981.94,120.77
+ORD-0592,2023-08-27,North,Electronics,Consumer,8,299.69,2397.52,816.77
+ORD-0207,2023-08-27,Central,Electronics,Home Office,6,124.5,747.0,229.2
+ORD-0929,2023-08-28,East,Clothing,Consumer,3,181.2,543.5999999999999,140.1
+ORD-0459,2023-08-28,West,Electronics,Corporate,4,73.51,294.04,111.44
+ORD-0379,2023-08-28,West,Clothing,Corporate,4,233.82,935.28,194.76
+ORD-0599,2023-08-28,North,Electronics,Corporate,1,31.89,31.89,7.53
+ORD-0598,2023-08-28,North,Electronics,Consumer,2,253.86,507.72,68.59
+ORD-0679,2023-08-28,South,Clothing,Home Office,1,282.72,282.72,101.66
+ORD-0832,2023-08-28,South,Clothing,Corporate,3,200.41,601.23,169.57
+ORD-0863,2023-08-28,South,Electronics,Corporate,5,456.26,2281.3,639.51
+ORD-0330,2023-08-29,Central,Clothing,Home Office,8,52.95,423.6,80.43
+ORD-0021,2023-08-29,West,Furniture,Corporate,8,25.32,202.56,25.82
+ORD-0891,2023-08-29,East,Clothing,Corporate,4,144.18,576.72,129.38
+ORD-0019,2023-08-30,Central,Clothing,Consumer,8,389.08,3112.64,561.33
+ORD-0696,2023-08-30,Central,Office Supplies,Corporate,9,36.9,332.09999999999997,130.96
+ORD-0557,2023-08-30,South,Clothing,Corporate,4,300.28,1201.12,196.88
+ORD-0509,2023-08-30,Central,Office Supplies,Corporate,7,300.04,2100.28,286.65
+ORD-0763,2023-08-30,North,Clothing,Home Office,7,428.24,2997.6800000000003,1009.27
+ORD-0762,2023-08-30,North,Clothing,Home Office,8,327.38,2619.04,509.84
+ORD-0259,2023-08-30,North,Office Supplies,Home Office,2,244.63,489.26,86.94
+ORD-0439,2023-09-01,North,Furniture,Corporate,6,268.3,1609.8000000000002,374.2
+ORD-0956,2023-09-01,West,Furniture,Consumer,7,307.81,2154.67,730.19
+ORD-0597,2023-09-01,West,Electronics,Corporate,6,177.63,1065.78,250.87
+ORD-0387,2023-09-02,North,Furniture,Consumer,1,338.41,338.41,121.04
+ORD-0263,2023-09-02,North,Clothing,Consumer,7,429.56,3006.92,486.18
+ORD-0300,2023-09-02,Central,Electronics,Consumer,4,380.13,1520.52,155.17
+ORD-0916,2023-09-02,West,Office Supplies,Corporate,3,150.4,451.20000000000005,167.76
+ORD-0927,2023-09-03,Central,Furniture,Consumer,3,135.03,405.09000000000003,114.2
+ORD-0699,2023-09-03,North,Electronics,Consumer,1,97.08,97.08,31.74
+ORD-0146,2023-09-03,East,Furniture,Corporate,5,368.53,1842.6499999999999,699.18
+ORD-0961,2023-09-03,South,Furniture,Home Office,2,175.04,350.08,37.49
+ORD-0749,2023-09-03,South,Office Supplies,Consumer,6,35.58,213.48,62.25
+ORD-0254,2023-09-04,West,Furniture,Consumer,3,210.44,631.3199999999999,249.48
+ORD-0414,2023-09-05,East,Furniture,Home Office,5,416.45,2082.25,480.14
+ORD-0043,2023-09-06,North,Clothing,Corporate,3,40.79,122.37,31.75
+ORD-0219,2023-09-06,East,Furniture,Consumer,1,467.59,467.59,155.74
+ORD-0525,2023-09-06,North,Electronics,Consumer,6,163.84,983.04,162.33
+ORD-0298,2023-09-06,West,Clothing,Corporate,2,71.85,143.7,29.1
+ORD-0568,2023-09-06,North,Electronics,Home Office,2,87.46,174.92,28.33
+ORD-0168,2023-09-06,South,Office Supplies,Home Office,9,409.95,3689.5499999999997,1002.92
+ORD-0258,2023-09-06,West,Clothing,Consumer,7,274.43,1921.01,455.94
+ORD-0915,2023-09-07,East,Electronics,Home Office,3,48.34,145.02,51.42
+ORD-0538,2023-09-07,East,Furniture,Consumer,4,86.42,345.68,86.69
+ORD-0503,2023-09-07,North,Electronics,Corporate,8,39.71,317.68,113.55
+ORD-0050,2023-09-07,North,Electronics,Consumer,5,82.64,413.2,105.57
+ORD-0431,2023-09-08,North,Clothing,Corporate,3,301.53,904.5899999999999,98.38
+ORD-0756,2023-09-08,South,Furniture,Corporate,1,460.89,460.89,169.7
+ORD-0567,2023-09-09,West,Electronics,Corporate,5,77.17,385.85,146.75
+ORD-0704,2023-09-09,East,Electronics,Consumer,8,171.78,1374.24,209.52
+ORD-0194,2023-09-09,West,Electronics,Consumer,3,438.2,1314.6,174.64
+ORD-0698,2023-09-09,East,Clothing,Corporate,7,404.98,2834.86,383.85
+ORD-0267,2023-09-09,East,Electronics,Consumer,9,42.11,378.99,115.66
+ORD-0769,2023-09-10,East,Furniture,Home Office,5,254.83,1274.15,167.49
+ORD-0819,2023-09-10,North,Clothing,Consumer,1,169.46,169.46,62.85
+ORD-0646,2023-09-11,North,Clothing,Consumer,8,223.98,1791.84,332.97
+ORD-0964,2023-09-11,West,Clothing,Corporate,8,103.05,824.4,267.46
+ORD-0558,2023-09-11,North,Furniture,Corporate,2,119.36,238.72,67.4
+ORD-0214,2023-09-12,West,Office Supplies,Consumer,4,297.36,1189.44,301.94
+ORD-0283,2023-09-12,Central,Clothing,Consumer,8,414.67,3317.36,418.1
+ORD-0045,2023-09-12,West,Clothing,Consumer,1,178.67,178.67,39.14
+ORD-0784,2023-09-12,North,Electronics,Consumer,9,182.69,1644.21,412.62
+ORD-0484,2023-09-12,North,Electronics,Consumer,3,253.94,761.8199999999999,99.14
+ORD-0114,2023-09-13,West,Furniture,Corporate,4,373.24,1492.96,225.71
+ORD-0007,2023-09-13,East,Electronics,Corporate,2,270.5,541.0,177.5
+ORD-0098,2023-09-13,West,Clothing,Consumer,2,27.01,54.02,17.43
+ORD-0972,2023-09-14,South,Office Supplies,Corporate,3,43.0,129.0,41.35
+ORD-0633,2023-09-14,West,Furniture,Home Office,2,248.19,496.38,61.85
+ORD-0409,2023-09-14,West,Clothing,Home Office,3,321.71,965.1299999999999,195.93
+ORD-0992,2023-09-15,South,Electronics,Corporate,5,349.85,1749.25,675.78
+ORD-0301,2023-09-16,West,Electronics,Corporate,1,151.76,151.76,36.44
+ORD-0249,2023-09-16,North,Electronics,Corporate,3,242.04,726.12,180.09
+ORD-0341,2023-09-16,North,Office Supplies,Consumer,8,489.2,3913.6,599.58
+ORD-0879,2023-09-17,North,Furniture,Home Office,7,413.88,2897.16,674.17
+ORD-0117,2023-09-19,West,Clothing,Corporate,4,326.47,1305.88,439.73
+ORD-0796,2023-09-19,West,Electronics,Consumer,3,266.96,800.8799999999999,133.2
+ORD-0412,2023-09-19,North,Electronics,Home Office,2,274.93,549.86,210.95
+ORD-0979,2023-09-21,North,Clothing,Home Office,4,270.8,1083.2,141.76
+ORD-0116,2023-09-21,South,Furniture,Consumer,6,83.81,502.86,120.28
+ORD-0170,2023-09-22,East,Clothing,Consumer,8,307.98,2463.84,939.46
+ORD-0725,2023-09-22,Central,Electronics,Corporate,7,422.53,2957.71,703.92
+ORD-0553,2023-09-22,North,Electronics,Consumer,4,314.78,1259.12,248.09
+ORD-0165,2023-09-22,Central,Electronics,Consumer,2,398.23,796.46,287.37
+ORD-0112,2023-09-22,South,Clothing,Home Office,9,411.72,3705.4800000000005,1406.99
+ORD-0100,2023-09-23,North,Electronics,Corporate,6,310.32,1861.92,362.56
+ORD-0746,2023-09-23,East,Furniture,Home Office,7,321.18,2248.26,359.05
+ORD-0781,2023-09-23,West,Electronics,Home Office,1,297.06,297.06,114.89
+ORD-0299,2023-09-23,North,Electronics,Corporate,9,131.67,1185.03,183.71
+ORD-0829,2023-09-24,West,Electronics,Corporate,7,116.68,816.76,317.3
+ORD-0968,2023-09-24,North,Office Supplies,Corporate,1,71.08,71.08,9.79
+ORD-0981,2023-09-24,East,Furniture,Corporate,2,397.44,794.88,171.83
+ORD-0666,2023-09-25,East,Furniture,Corporate,7,267.98,1875.8600000000001,368.53
+ORD-0950,2023-09-25,East,Furniture,Corporate,2,206.61,413.22,110.92
+ORD-0765,2023-09-25,North,Clothing,Consumer,4,280.44,1121.76,411.27
+ORD-0291,2023-09-25,South,Electronics,Corporate,5,136.24,681.2,71.73
+ORD-0498,2023-09-25,Central,Electronics,Consumer,1,493.17,493.17,64.65
+ORD-0797,2023-09-25,North,Furniture,Corporate,4,431.28,1725.12,549.9
+ORD-0202,2023-09-25,Central,Office Supplies,Consumer,7,319.99,2239.9300000000003,398.98
+ORD-0174,2023-09-26,South,Furniture,Consumer,3,438.23,1314.69,263.16
+ORD-0755,2023-09-26,East,Electronics,Corporate,1,478.19,478.19,48.0
+ORD-0607,2023-09-27,West,Clothing,Consumer,8,391.72,3133.76,810.96
+ORD-0971,2023-09-27,South,Furniture,Corporate,2,378.7,757.4,251.82
+ORD-0197,2023-09-28,West,Electronics,Corporate,5,405.56,2027.8,532.11
+ORD-0475,2023-09-29,North,Furniture,Corporate,6,260.96,1565.7599999999998,358.49
+ORD-0246,2023-09-29,West,Furniture,Consumer,4,273.23,1092.92,297.47
+ORD-0653,2023-09-30,West,Clothing,Home Office,9,208.77,1878.93,573.07
+ORD-0438,2023-09-30,East,Electronics,Corporate,5,201.55,1007.75,254.17
+ORD-0118,2023-09-30,West,Electronics,Corporate,2,173.48,346.96,97.45
+ORD-0037,2023-09-30,East,Office Supplies,Consumer,2,171.21,342.42,135.31
+ORD-0206,2023-09-30,West,Electronics,Consumer,8,480.55,3844.4,1414.49
+ORD-0320,2023-10-01,North,Clothing,Consumer,7,211.35,1479.45,424.95
+ORD-0982,2023-10-01,East,Furniture,Consumer,2,214.45,428.9,143.82
+ORD-0619,2023-10-01,North,Furniture,Home Office,2,421.48,842.96,314.01
+ORD-0833,2023-10-01,South,Clothing,Consumer,8,413.86,3310.88,1174.84
+ORD-0723,2023-10-02,West,Office Supplies,Consumer,4,184.1,736.4,217.14
+ORD-0887,2023-10-02,North,Electronics,Consumer,5,437.45,2187.25,394.09
+ORD-0671,2023-10-03,North,Clothing,Corporate,1,159.22,159.22,37.59
+ORD-0748,2023-10-04,West,Clothing,Corporate,7,498.81,3491.67,351.45
+ORD-0526,2023-10-04,South,Electronics,Corporate,2,481.81,963.62,253.05
+ORD-0688,2023-10-04,North,Electronics,Corporate,3,376.85,1130.5500000000002,219.38
+ORD-0669,2023-10-05,East,Electronics,Consumer,7,427.13,2989.91,1119.45
+ORD-0678,2023-10-05,East,Office Supplies,Home Office,8,102.52,820.16,288.0
+ORD-0331,2023-10-06,North,Office Supplies,Corporate,5,496.11,2480.55,588.69
+ORD-0925,2023-10-06,North,Furniture,Home Office,4,449.95,1799.8,512.29
+ORD-0125,2023-10-06,South,Office Supplies,Home Office,1,219.81,219.81,23.41
+ORD-0362,2023-10-06,North,Furniture,Consumer,2,248.73,497.46,112.27
+ORD-0682,2023-10-07,West,Furniture,Corporate,1,172.35,172.35,23.19
+ORD-0183,2023-10-07,South,Electronics,Corporate,6,131.01,786.06,215.98
+ORD-0179,2023-10-07,East,Furniture,Consumer,5,429.6,2148.0,546.04
+ORD-0310,2023-10-07,South,Clothing,Consumer,5,342.36,1711.8000000000002,401.42
+ORD-0023,2023-10-08,West,Electronics,Corporate,8,294.46,2355.68,244.47
+ORD-0329,2023-10-08,North,Furniture,Home Office,6,453.98,2723.88,828.52
+ORD-0095,2023-10-08,East,Electronics,Corporate,3,390.88,1172.6399999999999,437.63
+ORD-0150,2023-10-09,North,Furniture,Corporate,8,170.37,1362.96,406.9
+ORD-0582,2023-10-09,North,Clothing,Corporate,2,414.39,828.78,108.21
+ORD-0445,2023-10-10,North,Clothing,Consumer,4,429.75,1719.0,478.3
+ORD-0541,2023-10-10,Central,Clothing,Corporate,3,470.58,1411.74,147.26
+ORD-0082,2023-10-10,East,Furniture,Corporate,5,142.76,713.8,256.86
+ORD-0728,2023-10-10,West,Electronics,Consumer,6,24.21,145.26,21.48
+ORD-0071,2023-10-10,East,Office Supplies,Corporate,7,141.73,992.1099999999999,367.0
+ORD-0158,2023-10-11,West,Office Supplies,Consumer,1,401.63,401.63,52.52
+ORD-0351,2023-10-11,South,Office Supplies,Consumer,6,425.27,2551.62,1011.84
+ORD-0767,2023-10-11,East,Electronics,Consumer,6,151.51,909.06,157.32
+ORD-0570,2023-10-12,West,Office Supplies,Corporate,2,268.68,537.36,193.41
+ORD-0047,2023-10-12,West,Furniture,Corporate,7,217.95,1525.6499999999999,413.13
+ORD-0951,2023-10-13,Central,Clothing,Consumer,9,83.08,747.72,265.23
+ORD-0516,2023-10-13,West,Clothing,Corporate,5,306.29,1531.45,217.15
+ORD-0873,2023-10-14,West,Furniture,Consumer,5,246.68,1233.4,154.56
+ORD-0602,2023-10-14,East,Electronics,Home Office,4,154.23,616.92,76.3
+ORD-0611,2023-10-15,East,Office Supplies,Corporate,6,379.98,2279.88,778.9
+ORD-0636,2023-10-15,West,Clothing,Consumer,5,239.27,1196.3500000000001,237.63
+ORD-0504,2023-10-16,East,Office Supplies,Consumer,5,377.52,1887.6,419.77
+ORD-0497,2023-10-16,North,Electronics,Corporate,8,419.81,3358.48,704.72
+ORD-0122,2023-10-16,South,Electronics,Corporate,1,453.55,453.55,75.7
+ORD-0686,2023-10-16,North,Furniture,Consumer,8,380.85,3046.8,1109.18
+ORD-0795,2023-10-17,South,Electronics,Consumer,1,169.14,169.14,27.85
+ORD-0224,2023-10-17,West,Electronics,Corporate,3,462.65,1387.9499999999998,345.83
+ORD-0186,2023-10-17,East,Furniture,Corporate,6,50.57,303.42,96.56
+ORD-0217,2023-10-17,North,Electronics,Corporate,4,400.67,1602.68,449.84
+ORD-0849,2023-10-17,East,Electronics,Corporate,6,29.34,176.04,54.48
+ORD-0998,2023-10-18,West,Office Supplies,Consumer,7,77.13,539.91,86.1
+ORD-0450,2023-10-18,South,Furniture,Home Office,7,281.84,1972.8799999999999,345.46
+ORD-0229,2023-10-18,West,Clothing,Consumer,8,167.02,1336.16,146.85
+ORD-0775,2023-10-18,North,Furniture,Home Office,6,158.84,953.04,198.69
+ORD-0418,2023-10-19,West,Furniture,Corporate,5,289.69,1448.45,469.19
+ORD-0674,2023-10-19,North,Clothing,Consumer,2,101.48,202.96,52.45
+ORD-0620,2023-10-19,North,Furniture,Corporate,8,434.0,3472.0,976.92
+ORD-0552,2023-10-19,West,Clothing,Consumer,5,424.21,2121.0499999999997,345.85
+ORD-0166,2023-10-20,West,Clothing,Corporate,9,453.56,4082.04,1310.53
+ORD-0869,2023-10-20,Central,Office Supplies,Consumer,6,44.24,265.44,53.79
+ORD-0275,2023-10-21,East,Electronics,Home Office,6,200.68,1204.08,306.36
+ORD-0027,2023-10-21,Central,Clothing,Corporate,4,190.1,760.4,221.04
+ORD-0520,2023-10-23,North,Office Supplies,Consumer,4,70.94,283.76,85.61
+ORD-0132,2023-10-23,West,Clothing,Consumer,8,317.78,2542.24,839.86
+ORD-0993,2023-10-24,East,Office Supplies,Home Office,6,411.1,2466.6000000000004,893.53
+ORD-0919,2023-10-24,East,Office Supplies,Corporate,6,63.47,380.82,67.43
+ORD-0380,2023-10-24,South,Electronics,Corporate,4,304.27,1217.08,396.59
+ORD-0458,2023-10-24,Central,Clothing,Consumer,5,184.56,922.8,133.65
+ORD-0108,2023-10-24,North,Electronics,Home Office,1,359.37,359.37,140.46
+ORD-0421,2023-10-24,North,Clothing,Corporate,4,317.2,1268.8,229.34
+ORD-0529,2023-10-25,South,Furniture,Consumer,4,346.72,1386.88,530.15
+ORD-0060,2023-10-26,East,Office Supplies,Consumer,7,136.44,955.0799999999999,131.21
+ORD-0591,2023-10-26,Central,Clothing,Consumer,3,451.21,1353.6299999999999,445.27
+ORD-0256,2023-10-26,West,Furniture,Corporate,5,236.61,1183.0500000000002,137.98
+ORD-0342,2023-10-26,North,Electronics,Corporate,1,407.78,407.78,41.64
+ORD-0997,2023-10-27,West,Electronics,Consumer,3,345.03,1035.09,307.47
+ORD-0410,2023-10-27,West,Furniture,Consumer,6,323.97,1943.8200000000002,205.52
+ORD-0589,2023-10-27,West,Electronics,Home Office,8,359.56,2876.48,524.24
+ORD-0908,2023-10-27,East,Electronics,Corporate,6,133.62,801.72,266.78
+ORD-0096,2023-10-27,East,Furniture,Consumer,3,363.15,1089.4499999999998,251.34
+ORD-0261,2023-10-28,West,Clothing,Corporate,7,412.46,2887.22,459.07
+ORD-0738,2023-10-28,East,Office Supplies,Consumer,4,109.73,438.92,95.18
+ORD-0536,2023-10-28,North,Electronics,Consumer,4,180.16,720.64,284.55
+ORD-0457,2023-10-29,East,Electronics,Consumer,3,409.92,1229.76,291.39
+ORD-0533,2023-10-29,North,Electronics,Consumer,6,45.82,274.92,107.08
+ORD-0894,2023-10-29,West,Electronics,Home Office,8,320.1,2560.8,766.82
+ORD-0918,2023-10-29,East,Clothing,Home Office,6,161.8,970.8000000000001,280.39
+ORD-0610,2023-10-30,West,Furniture,Consumer,5,430.88,2154.4,435.81
+ORD-0269,2023-10-30,South,Furniture,Home Office,3,337.18,1011.54,259.22
+ORD-0056,2023-10-30,South,Furniture,Home Office,2,107.72,215.44,23.29
+ORD-0601,2023-10-30,East,Clothing,Consumer,6,215.79,1294.74,355.27
+ORD-0860,2023-10-31,East,Furniture,Corporate,8,493.61,3948.88,991.86
+ORD-0551,2023-10-31,South,Electronics,Corporate,2,71.91,143.82,47.41
+ORD-0708,2023-10-31,North,Furniture,Consumer,3,213.14,639.42,160.88
+ORD-0672,2023-11-01,Central,Office Supplies,Corporate,9,116.7,1050.3,117.02
+ORD-0304,2023-11-01,South,Clothing,Consumer,5,237.06,1185.3,165.4
+ORD-0313,2023-11-01,South,Electronics,Corporate,1,38.09,38.09,4.7
+ORD-0569,2023-11-01,South,Furniture,Consumer,4,157.51,630.04,201.93
+ORD-0135,2023-11-02,West,Clothing,Consumer,5,205.25,1026.25,168.1
+ORD-0157,2023-11-02,North,Furniture,Corporate,4,416.1,1664.4,499.45
+ORD-0213,2023-11-02,North,Furniture,Consumer,4,212.86,851.44,104.92
+ORD-0712,2023-11-03,East,Furniture,Home Office,1,199.04,199.04,79.35
+ORD-0063,2023-11-03,North,Electronics,Home Office,9,70.24,632.16,147.83
+ORD-0831,2023-11-03,West,Office Supplies,Consumer,9,56.14,505.26,144.8
+ORD-0726,2023-11-05,North,Electronics,Corporate,4,408.11,1632.44,300.05
+ORD-0800,2023-11-06,West,Clothing,Consumer,3,277.35,832.0500000000001,125.44
+ORD-0508,2023-11-07,South,Furniture,Consumer,7,205.98,1441.86,157.82
+ORD-0396,2023-11-07,South,Electronics,Consumer,3,485.42,1456.26,419.45
+ORD-0695,2023-11-07,South,Electronics,Consumer,5,186.01,930.05,224.51
+ORD-0555,2023-11-07,South,Electronics,Consumer,5,112.03,560.15,146.18
+ORD-0289,2023-11-08,East,Furniture,Home Office,4,358.67,1434.68,237.43
+ORD-0038,2023-11-08,West,Clothing,Consumer,7,127.81,894.6700000000001,333.64
+ORD-0134,2023-11-08,East,Clothing,Corporate,7,60.19,421.33,116.5
+ORD-0880,2023-11-09,East,Electronics,Consumer,5,208.29,1041.45,313.06
+ORD-0190,2023-11-09,North,Furniture,Consumer,8,60.44,483.52,185.84
+ORD-0404,2023-11-10,Central,Furniture,Home Office,7,263.91,1847.3700000000001,673.54
+ORD-0003,2023-11-10,South,Clothing,Consumer,2,409.02,818.04,297.2
+ORD-0637,2023-11-10,West,Electronics,Corporate,4,425.92,1703.68,312.51
+ORD-0107,2023-11-11,North,Furniture,Corporate,3,287.55,862.6500000000001,298.77
+ORD-0340,2023-11-11,West,Clothing,Home Office,3,230.55,691.6500000000001,258.53
+ORD-0196,2023-11-11,East,Clothing,Consumer,1,395.94,395.94,158.18
+ORD-0588,2023-11-12,Central,Furniture,Corporate,2,103.8,207.6,26.78
+ORD-0773,2023-11-12,North,Office Supplies,Consumer,9,463.67,4173.03,436.47
+ORD-0528,2023-11-12,West,Furniture,Home Office,6,316.78,1900.6799999999998,274.37
+ORD-0969,2023-11-13,East,Office Supplies,Consumer,4,414.44,1657.76,320.45
+ORD-0185,2023-11-13,North,Office Supplies,Corporate,2,166.9,333.8,108.8
+ORD-0751,2023-11-13,North,Clothing,Corporate,3,168.95,506.84999999999997,190.67
+ORD-0349,2023-11-14,East,Electronics,Home Office,3,171.02,513.0600000000001,169.83
+ORD-0018,2023-11-14,Central,Clothing,Home Office,8,323.75,2590.0,537.68
+ORD-0169,2023-11-14,North,Clothing,Consumer,9,59.55,535.9499999999999,75.66
+ORD-0502,2023-11-14,Central,Furniture,Consumer,5,281.41,1407.0500000000002,561.97
+ORD-0089,2023-11-14,North,Electronics,Corporate,8,305.14,2441.12,319.7
+ORD-0774,2023-11-14,South,Electronics,Home Office,9,130.59,1175.31,392.76
+ORD-0875,2023-11-15,Central,Clothing,Consumer,1,477.03,477.03,148.99
+ORD-0053,2023-11-15,South,Clothing,Consumer,9,457.74,4119.66,1087.86
+ORD-0120,2023-11-16,East,Clothing,Consumer,4,86.06,344.24,137.51
+ORD-0407,2023-11-16,West,Clothing,Consumer,7,249.52,1746.64,550.56
+ORD-0583,2023-11-16,North,Furniture,Home Office,1,68.66,68.66,7.19
+ORD-0453,2023-11-16,West,Electronics,Corporate,1,131.17,131.17,32.27
+ORD-0367,2023-11-17,North,Clothing,Consumer,2,121.9,243.8,28.36
+ORD-0777,2023-11-17,South,Clothing,Consumer,9,338.6,3047.4,1044.68
+ORD-0780,2023-11-17,East,Furniture,Corporate,4,435.47,1741.88,266.39
+ORD-0990,2023-11-18,South,Office Supplies,Consumer,3,153.57,460.71,138.1
+ORD-0546,2023-11-18,East,Furniture,Home Office,9,168.52,1516.68,562.62
+ORD-0434,2023-11-18,Central,Electronics,Corporate,4,362.08,1448.32,449.48
+ORD-0314,2023-11-18,South,Office Supplies,Consumer,8,407.87,3262.96,887.62
+ORD-0585,2023-11-18,West,Clothing,Consumer,1,409.55,409.55,159.01
+ORD-0804,2023-11-19,West,Furniture,Consumer,4,161.57,646.28,172.59
+ORD-0922,2023-11-19,North,Furniture,Consumer,8,428.89,3431.12,861.4
+ORD-0942,2023-11-19,Central,Electronics,Consumer,8,58.21,465.68,83.74
+ORD-0628,2023-11-19,South,Furniture,Home Office,1,342.92,342.92,80.31
+ORD-0810,2023-11-21,North,Electronics,Corporate,1,224.89,224.89,25.0
+ORD-0192,2023-11-21,Central,Electronics,Home Office,1,133.1,133.1,18.3
+ORD-0474,2023-11-21,South,Furniture,Corporate,5,21.84,109.2,34.34
+ORD-0895,2023-11-22,East,Office Supplies,Consumer,6,470.07,2820.42,371.07
+ORD-0424,2023-11-23,Central,Clothing,Corporate,2,284.93,569.86,87.4
+ORD-0720,2023-11-23,North,Office Supplies,Consumer,3,426.69,1280.07,300.84
+ORD-0629,2023-11-23,East,Clothing,Corporate,3,181.89,545.67,89.02
+ORD-0692,2023-11-23,West,Office Supplies,Home Office,9,25.06,225.54,30.13
+ORD-0074,2023-11-23,North,Furniture,Corporate,2,257.37,514.74,57.46
+ORD-0406,2023-11-23,North,Furniture,Consumer,3,249.32,747.96,117.96
+ORD-0369,2023-11-23,North,Clothing,Consumer,4,421.48,1685.92,241.23
+ORD-0201,2023-11-24,South,Electronics,Consumer,3,330.48,991.44,230.23
+ORD-0736,2023-11-25,East,Electronics,Corporate,3,77.96,233.88,58.41
+ORD-0535,2023-11-25,West,Furniture,Consumer,6,191.82,1150.92,253.08
+ORD-0677,2023-11-26,North,Electronics,Consumer,7,74.38,520.66,111.95
+ORD-0318,2023-11-27,East,Clothing,Corporate,6,395.6,2373.6000000000004,915.85
+ORD-0697,2023-11-27,South,Clothing,Consumer,8,378.17,3025.36,974.51
+ORD-0614,2023-11-27,South,Electronics,Consumer,4,53.47,213.88,56.95
+ORD-0984,2023-11-27,East,Office Supplies,Home Office,7,427.97,2995.79,462.14
+ORD-0657,2023-11-28,East,Clothing,Corporate,2,333.82,667.64,104.62
+ORD-0405,2023-11-29,West,Furniture,Consumer,8,317.72,2541.76,985.5
+ORD-0839,2023-11-29,South,Clothing,Home Office,9,142.28,1280.52,298.79
+ORD-0791,2023-11-30,West,Office Supplies,Consumer,3,82.91,248.73,51.3
+ORD-0422,2023-11-30,South,Clothing,Consumer,7,415.91,2911.3700000000003,1149.05
+ORD-0388,2023-12-01,North,Electronics,Corporate,3,76.75,230.25,46.84
+ORD-0753,2023-12-01,South,Furniture,Consumer,4,136.28,545.12,210.7
+ORD-0994,2023-12-02,East,Furniture,Consumer,8,220.35,1762.8,550.67
+ORD-0123,2023-12-02,East,Furniture,Home Office,6,31.82,190.92000000000002,42.45
+ORD-0530,2023-12-02,East,Electronics,Consumer,3,340.03,1020.0899999999999,157.98
+ORD-0973,2023-12-02,South,Furniture,Consumer,8,475.29,3802.32,1289.75
+ORD-0730,2023-12-02,West,Office Supplies,Corporate,6,164.87,989.22,101.89
+ORD-0983,2023-12-03,East,Furniture,Home Office,2,21.3,42.6,10.56
+ORD-0490,2023-12-04,West,Electronics,Corporate,4,460.27,1841.08,734.22
+ORD-0978,2023-12-05,South,Electronics,Corporate,9,394.1,3546.9,979.03
+ORD-0518,2023-12-05,East,Furniture,Consumer,7,32.9,230.29999999999998,25.59
+ORD-0159,2023-12-05,North,Office Supplies,Corporate,9,175.39,1578.5099999999998,163.49
+ORD-0344,2023-12-05,East,Furniture,Consumer,6,277.78,1666.6799999999998,205.07
+ORD-0909,2023-12-05,North,Clothing,Corporate,5,443.66,2218.3,519.16
+ORD-0702,2023-12-05,North,Electronics,Consumer,7,365.23,2556.61,565.24
+ORD-0087,2023-12-06,North,Electronics,Corporate,4,204.67,818.68,327.24
+ORD-0333,2023-12-06,North,Electronics,Corporate,1,85.77,85.77,31.69
+ORD-0910,2023-12-06,North,Furniture,Consumer,7,66.55,465.84999999999997,109.13
+ORD-0590,2023-12-07,Central,Clothing,Consumer,4,361.65,1446.6,283.56
+ORD-0345,2023-12-07,East,Clothing,Consumer,1,423.2,423.2,94.84
+ORD-0897,2023-12-07,North,Clothing,Consumer,6,293.69,1762.1399999999999,512.13
+ORD-0822,2023-12-07,East,Furniture,Corporate,2,422.94,845.88,171.11
+ORD-0507,2023-12-10,East,Office Supplies,Consumer,5,50.0,250.0,80.65
+ORD-0176,2023-12-10,North,Clothing,Consumer,1,151.38,151.38,43.8
+ORD-0083,2023-12-10,East,Electronics,Consumer,6,177.16,1062.96,265.48
+ORD-0848,2023-12-11,North,Furniture,Consumer,4,42.59,170.36,67.77
+ORD-0355,2023-12-11,West,Electronics,Consumer,3,176.62,529.86,135.92
+ORD-0809,2023-12-12,West,Clothing,Corporate,6,498.47,2990.82,647.78
+ORD-0605,2023-12-13,South,Electronics,Consumer,8,410.31,3282.48,684.22
+ORD-0222,2023-12-13,West,Office Supplies,Corporate,7,245.02,1715.14,587.88
+ORD-0353,2023-12-13,North,Electronics,Corporate,5,364.61,1823.0500000000002,216.08
+ORD-0946,2023-12-13,East,Furniture,Corporate,8,137.19,1097.52,349.21
+ORD-0281,2023-12-13,North,Electronics,Consumer,9,266.23,2396.07,843.43
+ORD-0433,2023-12-14,North,Furniture,Corporate,4,384.47,1537.88,178.2
+ORD-0332,2023-12-14,South,Electronics,Consumer,1,476.67,476.67,61.33
+ORD-0837,2023-12-14,West,Clothing,Consumer,2,45.19,90.38,10.73
+ORD-0030,2023-12-14,East,Electronics,Corporate,4,356.35,1425.4,239.11
+ORD-0078,2023-12-14,East,Office Supplies,Home Office,9,320.94,2888.46,987.95
+ORD-0104,2023-12-15,South,Clothing,Consumer,9,160.9,1448.1000000000001,535.54
+ORD-0230,2023-12-15,East,Electronics,Consumer,1,176.53,176.53,68.17
+ORD-0413,2023-12-15,South,Furniture,Home Office,5,377.94,1889.7,547.33
+ORD-0051,2023-12-15,South,Clothing,Consumer,8,231.46,1851.68,586.36
+ORD-0049,2023-12-15,North,Clothing,Consumer,7,266.32,1864.24,332.23
+ORD-0242,2023-12-15,West,Clothing,Consumer,3,457.53,1372.59,222.95
+ORD-0654,2023-12-15,East,Electronics,Consumer,1,316.02,316.02,49.0
+ORD-0703,2023-12-15,North,Clothing,Consumer,6,150.34,902.04,359.08
+ORD-0454,2023-12-16,South,Furniture,Corporate,9,427.48,3847.32,1463.78
+ORD-0975,2023-12-16,South,Furniture,Consumer,8,23.26,186.08,68.15
+ORD-0173,2023-12-16,East,Office Supplies,Consumer,8,464.58,3716.64,1120.56
+ORD-0554,2023-12-16,North,Electronics,Home Office,7,176.4,1234.8,426.96
+ORD-0510,2023-12-17,Central,Electronics,Consumer,4,242.82,971.28,281.6
+ORD-0639,2023-12-17,East,Clothing,Corporate,8,142.57,1140.56,284.29
+ORD-0336,2023-12-17,East,Clothing,Consumer,5,225.51,1127.55,406.56
+ORD-0392,2023-12-19,West,Electronics,Consumer,4,109.26,437.04,137.44
+ORD-0952,2023-12-19,North,Electronics,Corporate,1,145.99,145.99,34.03
+ORD-0954,2023-12-20,South,Electronics,Corporate,4,364.72,1458.88,338.62
+ORD-0545,2023-12-20,East,Clothing,Consumer,4,220.78,883.12,340.88
+ORD-0947,2023-12-20,South,Office Supplies,Consumer,8,236.05,1888.4,547.87
+ORD-0731,2023-12-20,West,Office Supplies,Corporate,9,37.95,341.55,124.57
+ORD-0648,2023-12-21,North,Clothing,Consumer,4,365.16,1460.64,560.29
+ORD-0245,2023-12-21,West,Electronics,Corporate,9,142.71,1284.39,473.33
+ORD-0900,2023-12-21,North,Electronics,Consumer,9,398.34,3585.06,1292.27
+ORD-0260,2023-12-21,South,Office Supplies,Consumer,4,217.14,868.56,315.83
+ORD-0046,2023-12-22,East,Office Supplies,Corporate,1,377.47,377.47,86.58
+ORD-0759,2023-12-22,West,Furniture,Corporate,8,214.47,1715.76,566.52
+ORD-0317,2023-12-24,North,Office Supplies,Consumer,8,154.13,1233.04,471.21
+ORD-0489,2023-12-24,West,Office Supplies,Consumer,9,111.36,1002.24,260.57
+ORD-0491,2023-12-24,West,Electronics,Corporate,7,285.71,1999.9699999999998,680.31
+ORD-0515,2023-12-25,South,Electronics,Corporate,3,74.16,222.48,78.59
+ORD-0352,2023-12-26,East,Office Supplies,Corporate,1,459.59,459.59,93.43
+ORD-0171,2023-12-26,Central,Electronics,Consumer,8,253.11,2024.88,416.27
+ORD-0691,2023-12-26,East,Clothing,Corporate,6,353.56,2121.36,657.23
+ORD-0358,2023-12-27,South,Electronics,Home Office,6,40.52,243.12,39.17
+ORD-0584,2023-12-28,North,Clothing,Consumer,1,400.11,400.11,113.97
+ORD-0574,2023-12-28,North,Clothing,Consumer,7,465.73,3260.11,580.96
+ORD-0485,2023-12-28,Central,Electronics,Consumer,2,351.88,703.76,177.87
+ORD-0105,2023-12-29,West,Furniture,Home Office,6,147.68,886.08,124.1
+ORD-0290,2023-12-29,East,Electronics,Home Office,2,167.7,335.4,39.04
+ORD-0644,2023-12-29,West,Electronics,Consumer,2,400.13,800.26,137.06
+ORD-0415,2023-12-29,East,Clothing,Corporate,7,354.35,2480.4500000000003,638.83
+ORD-0760,2023-12-30,North,Clothing,Corporate,4,134.73,538.92,203.71
+ORD-0632,2023-12-30,West,Clothing,Consumer,6,239.64,1437.84,269.03

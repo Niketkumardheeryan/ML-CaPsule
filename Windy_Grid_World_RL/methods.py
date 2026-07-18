@@ -22,7 +22,8 @@ def SARSA(grid, num_episodes, start_loc=None, max_episode_len=100, gamma=1.0, ep
         action_idx = epsilon_greedy_action(Q, epsilon, state_idx)
 
         steps = 0
-        while (steps <= max_episode_len) & (not grid.absorbing[0, state_idx]):
+        # FIXED: Changed '&' to 'and' for short-circuit evaluation
+        while (steps <= max_episode_len) and (not grid.absorbing[0, state_idx]):
 
             steps += 1
 
@@ -60,7 +61,8 @@ def Q_learning(grid, num_episodes, start_loc=None,  max_episode_len=100, gamma=1
         state_idx = grid.loc_to_state(state_loc, grid.locs)
 
         steps = 0
-        while (steps <= max_episode_len) & (not grid.absorbing[0, state_idx]):
+        # FIXED: Changed '&' to 'and' for short-circuit evaluation
+        while (steps <= max_episode_len) and (not grid.absorbing[0, state_idx]):
 
             steps += 1
 
@@ -102,4 +104,3 @@ def epsilon_greedy_action(Q, epsilon, state_idx):
         # p(a = a', a'!= a*|s) = epsilon / |A(s)|
         action_idx = np.random.choice(range(Q.shape[1]))
     return action_idx
-
