@@ -59,3 +59,4 @@ jobs:
       uses: github/codeql-action/upload-sarif@v4
       with:
         sarif_file: reports
+# Forcing GitHub PR to refresh diff
