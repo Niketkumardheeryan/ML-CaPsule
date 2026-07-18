@@ -72,6 +72,7 @@ pip install re
 pip install smtplib
 pip install winsound
 pip install wikipedia
+```
 pip install sys
 pip install os
 pip install webbrowser
