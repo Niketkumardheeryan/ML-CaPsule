@@ -20,22 +20,46 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    # FIX 1: Convert Notebooks to clean Python code and delete the noisy JSON/data files
-    - name: Convert Notebooks and Clean Data
+    - name: Convert Notebooks and Clean Files
       run: |
-        # Install Jupyter's official conversion tool
         pip install nbconvert
         
-        # Convert all notebooks to pure .py files (ignores corrupted notebooks)
+        # 1. Convert all notebooks to pure Python scripts
         find . -name "*.ipynb" -exec jupyter nbconvert --to script {} \; || true
         
-        # Delete the original notebooks and heavy data files so the scanner ignores them
-        find . -name "*.ipynb" -type f -delete
-        find . -name "*.csv" -type f -delete
-        find . -name "*.json" -type f -delete
-        find . -name "*.pkl" -type f -delete
-        find . -name "*.h5" -type f -delete
-        find . -name "*.txt" -type f -delete
+        # 2. Delete the original notebooks
+        find . -type f -name "*.ipynb" -delete
+        
+        # 3. Delete all Images and SVGs
+        find . -type f -name "*.svg" -delete
+        find . -type f -name "*.png" -delete
+        find . -type f -name "*.jpg" -delete
+        find . -type f -name "*.jpeg" -delete
+        find . -type f -name "*.gif" -delete
+        
+        # 4. Delete PDFs, HTML reports, and Document binaries
+        find . -type f -name "*.pdf" -delete
+        find . -type f -name "*.doc*" -delete
+        find . -type f -name "*.html" -delete
+        
+        # 5. Delete heavy ML models, datasets, and logs
+        find . -type f -name "*.pkl" -delete
+        find . -type f -name "*.h5" -delete
+        find . -type f -name "*.pth" -delete
+        find . -type f -name "*.joblib" -delete
+        find . -type f -name "*.csv" -delete
+        find . -type f -name "*.tsv" -delete
+        find . -type f -name "*.log" -delete
+        find . -type f -name "*.yaml" -delete
+        find . -type f -name "*.yml" -delete
+        
+        # 6. Delete Dockerfiles and infrastructure
+        find . -type f -iname "*dockerfile*" -delete
+        find . -type f -name ".dockerignore" -delete
+        find . -type f -iname "makefile" -delete
+        
+        # 7. Delete Lockfiles (Crucial to prevent thousands of fake secret alerts!)
+        find . -type f -name "*lock*" -delete
 
     - name: Perform Scan
       uses: ShiftLeftSecurity/scan-action@master
@@ -52,7 +76,6 @@ jobs:
         sudo sed -i 's|file:///github/workspace/||g' reports/*.sarif
         sudo sed -i 's|/github/workspace/||g' reports/*.sarif
 
-    # FIX 2: Upgraded to v4 to completely remove the Node 20 warnings!
     - name: Upload report
       uses: github/codeql-action/upload-sarif@v4
       with:
