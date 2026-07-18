@@ -46,3 +46,27 @@ We can conclude that our Web App classifies bird species with the help of Xcepti
 #### CONTRIBUTED BY
 
 [Shreya Ghosh](https://github.com/shreya024)
+
+#### Docker Deployment
+
+This app can be run inside a Docker container for consistent deployment across machines.
+
+> Note: The trained model file `bird_classification_new_model.h5` is required by `app.py`. Download the model from the link mentioned above and place it inside this project folder before building the image.
+
+Build the Docker image:
+
+```bash
+docker build -t bird-species-classification .
+```
+
+Run the container:
+
+```bash
+docker run -p 8501:8501 bird-species-classification
+```
+
+Open the app in your browser:
+
+```text
+http://localhost:8501
+```

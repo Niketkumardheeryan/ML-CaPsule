@@ -59,3 +59,25 @@ We can conclude that our Web App predicts the best with  Lasso Regression and gi
 CONTRIBUTED BY
 
 Tandrima Singha
+
+#### Docker Deployment
+
+This app can be run inside a Docker container for consistent local and cloud deployment.
+
+Build the Docker image:
+
+```bash
+docker build -t bitcoin-price-prediction .
+```
+
+Run the container:
+
+```bash
+docker run -p 8501:8501 bitcoin-price-prediction
+```
+
+Open the app in your browser:
+
+```text
+http://localhost:8501
+```
