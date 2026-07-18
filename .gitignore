@@ -5,7 +5,6 @@
 # --- Secrets / Environment ---
 .env
 *.env
-!*.env.example
 .env.local
 .env.*.local
 
@@ -182,5 +181,4 @@ weights/
  
 # Misc
 *.iml
-!.env.example
 /content/
