@@ -8,6 +8,8 @@ import sys
 import os
 import webbrowser
 import datetime
+import shutil
+from pathlib import Path
 import speech_recognition as sr
 from urllib.request import urlopen
 from PyQt5 import QtWidgets, QtGui,QtCore
@@ -111,10 +113,10 @@ class mainT(QThread):
                     speak("wait i am playing music")
                 else:
                     speak("ok then i am playing music to refresh ur mind")
-                self.music_dir ="D:\\SONGS\\English Songs"
+                self.music_dir = os.environ.get("JARVIS_MUSIC_DIR", str(Path.home() / "Music"))
                 self.musics = os.listdir(self.music_dir)
-                num = random.randint(0, 11)
-                os.startfile(os.path.join(self.music_dir,self.musics[num]))
+                num = random.randint(0, len(self.musics) - 1)
+                os.startfile(os.path.join(self.music_dir, self.musics[num]))
 
             elif 'wikipedia' in self.query:
                 self.query = self.query.replace("wikipedia", "")
@@ -134,18 +136,27 @@ class mainT(QThread):
 
             elif 'launch vs code' in self.query:
                 speak("please wait i am launching v s code")
-                self.codepath = "C:\\Users\\snaug\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code"
-                os.startfile(self.codepath)
+                code_exe = os.environ.get("VSCODE_CMD") or shutil.which("code") or shutil.which("code.exe")
+                if code_exe:
+                    os.startfile(code_exe)
+                else:
+                    speak("Unable to locate Visual Studio Code executable")
 
             elif ('launch java') in self.query:
                 speak("please wait i am launching intelli j")
-                self.codepath = "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2020.1.1\\bin\\idea64.exe"
-                os.startfile(self.codepath)
+                idea_exe = os.environ.get("INTELLIJ_CMD") or shutil.which("idea") or shutil.which("idea64") or shutil.which("idea64.exe")
+                if idea_exe:
+                    os.startfile(idea_exe)
+                else:
+                    speak("Unable to locate IntelliJ IDEA executable")
 
             elif ('launch notepad') in self.query:
                 speak("please wait i am launching notepad")
-                self.codepath = "C:\\Users\\snaug\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Accessories\\notepad"
-                os.startfile(self.codepath)
+                notepad_exe = os.environ.get("NOTEPAD_CMD") or shutil.which("notepad")
+                if notepad_exe:
+                    os.startfile(notepad_exe)
+                else:
+                    speak("Unable to locate Notepad executable")
 
             elif 'email' in self.query:
                 try:
@@ -290,9 +301,12 @@ class mainT(QThread):
                     search = reg_ex.group(1)
                     speak("Hold on, I will search " + search)
                     url = 'https://www.google.com/search?q=' + search
-                    chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-                    webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
-                    webbrowser.get('chrome').open_new_tab(url)
+                    chrome_path = os.environ.get("CHROME_PATH") or shutil.which("chrome") or shutil.which("google-chrome") or shutil.which("chromium-browser") or shutil.which("chromium")
+                    if chrome_path:
+                        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+                        webbrowser.get('chrome').open_new_tab(url)
+                    else:
+                        webbrowser.open_new_tab(url)
                 else:
                     speak("sorry sir not able to recognize")
                     pass
