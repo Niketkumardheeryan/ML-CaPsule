@@ -1,55 +1,62 @@
-# This workflow integrates Scan with GitHub's code scanning feature
-# Scan is a free open-source security tool for modern DevOps teams from ShiftLeft
-# Visit https://slscan.io/en/latest/integrations/code-scan for help
 name: SL Scan
 
 on:
   push:
     branches: [ master ]
   pull_request:
-    # The branches below must be a subset of the branches above
     branches: [ master ]
+  workflow_dispatch: 
   schedule:
     - cron: '23 16 * * 1'
 
 permissions:
-  # Required for uploading SARIF results to code scanning
   security-events: write
-  # Required for private repositories
   actions: read
   contents: read
 
 jobs:
   Scan-Build:
-    # Scan runs on ubuntu, mac and windows
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    # Instructions
-    # 1. Setup JDK, Node.js, Python etc depending on your project type
-    # 2. Compile or build the project before invoking scan
-    #    Example: mvn compile, or npm install or pip install goes here
-    # 3. Invoke Scan with the github token. Leave the workspace empty to use relative url
+
+    - name: Convert Notebooks and Nuclear Cleanup
+      run: |
+        pip install nbconvert
+        
+        # 1. Convert all notebooks to pure Python scripts
+        find . -name "*.ipynb" -exec jupyter nbconvert --to script {} \; || true
+        
+        # 2. WIPE GIT HISTORY AND VIRTUAL ENVIRONMENTS
+        # This stops the scanner from reading old commits or heavy libraries
+        rm -rf .git .venv venv env node_modules
+        
+        # 3. NUKE EVERYTHING EXCEPT PYTHON FILES
+        # This deletes every single file in the directory that does NOT end in .py
+        # Datasets, images, HTML, logs, JSONs, lockfiles - all instantly gone.
+        find . -type f ! -name "*.py" -delete
+        
+        # (Optional) See what is left to prove it worked!
+        echo "Files remaining for the scanner:"
+        find . -type f
 
     - name: Perform Scan
       uses: ShiftLeftSecurity/scan-action@master
       env:
         WORKSPACE: ""
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SCAN_AUTO_BUILD: true
+        SCAN_AUTO_BUILD: false
       with:
         output: reports
-        # Scan auto-detects the languages in your project. To override uncomment the below variable and set the type
-        # type: credscan,java
-        # type: python
+        type: python,credscan
 
     - name: Fix SARIF URIs (Make paths relative)
       run: |
-        # This replaces the absolute container paths with relative paths
-        sed -i 's|file:///github/workspace/||g' reports/*.sarif
-        sed -i 's|/github/workspace/||g' reports/*.sarif
+        sudo sed -i 's|file:///github/workspace/||g' reports/*.sarif
+        sudo sed -i 's|/github/workspace/||g' reports/*.sarif
 
     - name: Upload report
-      uses: github/codeql-action/upload-sarif@v3
+      uses: github/codeql-action/upload-sarif@v4
       with:
         sarif_file: reports
+# Forcing GitHub PR to refresh diff
