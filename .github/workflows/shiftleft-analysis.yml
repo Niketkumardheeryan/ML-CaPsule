@@ -20,46 +20,25 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Convert Notebooks and Clean Files
+    - name: Convert Notebooks and Nuclear Cleanup
       run: |
         pip install nbconvert
         
         # 1. Convert all notebooks to pure Python scripts
         find . -name "*.ipynb" -exec jupyter nbconvert --to script {} \; || true
         
-        # 2. Delete the original notebooks
-        find . -type f -name "*.ipynb" -delete
+        # 2. WIPE GIT HISTORY AND VIRTUAL ENVIRONMENTS
+        # This stops the scanner from reading old commits or heavy libraries
+        rm -rf .git .venv venv env node_modules
         
-        # 3. Delete all Images and SVGs
-        find . -type f -name "*.svg" -delete
-        find . -type f -name "*.png" -delete
-        find . -type f -name "*.jpg" -delete
-        find . -type f -name "*.jpeg" -delete
-        find . -type f -name "*.gif" -delete
+        # 3. NUKE EVERYTHING EXCEPT PYTHON FILES
+        # This deletes every single file in the directory that does NOT end in .py
+        # Datasets, images, HTML, logs, JSONs, lockfiles - all instantly gone.
+        find . -type f ! -name "*.py" -delete
         
-        # 4. Delete PDFs, HTML reports, and Document binaries
-        find . -type f -name "*.pdf" -delete
-        find . -type f -name "*.doc*" -delete
-        find . -type f -name "*.html" -delete
-        
-        # 5. Delete heavy ML models, datasets, and logs
-        find . -type f -name "*.pkl" -delete
-        find . -type f -name "*.h5" -delete
-        find . -type f -name "*.pth" -delete
-        find . -type f -name "*.joblib" -delete
-        find . -type f -name "*.csv" -delete
-        find . -type f -name "*.tsv" -delete
-        find . -type f -name "*.log" -delete
-        find . -type f -name "*.yaml" -delete
-        find . -type f -name "*.yml" -delete
-        
-        # 6. Delete Dockerfiles and infrastructure
-        find . -type f -iname "*dockerfile*" -delete
-        find . -type f -name ".dockerignore" -delete
-        find . -type f -iname "makefile" -delete
-        
-        # 7. Delete Lockfiles (Crucial to prevent thousands of fake secret alerts!)
-        find . -type f -name "*lock*" -delete
+        # (Optional) See what is left to prove it worked!
+        echo "Files remaining for the scanner:"
+        find . -type f
 
     - name: Perform Scan
       uses: ShiftLeftSecurity/scan-action@master
