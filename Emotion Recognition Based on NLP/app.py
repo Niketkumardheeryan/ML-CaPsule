@@ -22,7 +22,8 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    errors=[]                                     ## for finding out errors
+    errors=[]                                      ## for finding out errors
+    emotion = ""                                   # initialize Before the try block to prevent Unbound Local Error
     if request.method == 'POST':
         try:                                      ## try block starts here
             message = request.form['text']        ## get the data from home.html
@@ -31,10 +32,9 @@ def predict():
             prediction = classifier.predict(vect) ## predict over the model
             string = " "                          ## an empty string , will be used for getting the emotion  
             emotion = string.join(prediction)     ## join to return the answer
-        except:
-            errors.append(
-                "Unable to get URL. Please make sure it's valid and try again."   ## If any errors would , then this block would execute
-            )
+        except Exception as e :
+            errors.append(f"Prediction failed: {str(e)}")
+                
     return render_template('home.html', prediction=emotion, errors=errors)        ## render the page for the user
 
 
