@@ -73,6 +73,7 @@ Clone the repository
 2. run this command in terminal
    ```bash
    python scrapp_ocr_csv.py
+   ```
 
 ## Example output   
    ```python 

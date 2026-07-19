@@ -1,0 +1,1 @@
+Accuracy and loss plots will be saved here by `train.py` as PNG files (accuracy.png, loss.png).

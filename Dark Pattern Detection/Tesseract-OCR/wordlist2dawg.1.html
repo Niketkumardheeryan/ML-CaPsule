@@ -673,15 +673,16 @@ footnotes: function () {
         // Use [\s\S] in place of . so multi-line matches work.
         // Because JavaScript has no s (dotall) regex flag.
         note = spans[i].innerHTML.match(/\s*\[([\s\S]*)]\s*/)[1];
-        spans[i].innerHTML =
+        spans[i].setHTML(
           "[<a id='_footnoteref_" + n + "' href='#_footnote_" + n +
-          "' title='View footnote' class='footnote'>" + n + "</a>]";
+          "' title='View footnote' class='footnote'>" + n + "</a>]");
         spans[i].setAttribute("data-note", note);
       }
-      noteholder.innerHTML +=
-        "<div class='footnote' id='_footnote_" + n + "'>" +
+      // using setHTML for security purposes 
+      noteholder.setHTML(
+        noteholder.innerHTML + "<div class='footnote' id='_footnote_" + n + "'>" +
         "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
-        n + "</a>. " + note + "</div>";
+        n + "</a>. " + note + "</div>");
       var id =spans[i].getAttribute("id");
       if (id != null) refs["#"+id] = n;
     }
