@@ -25,3 +25,18 @@ Wildfire_Survival_Prediction/
 
 ## References
 - Inspired by the WiDS 2026 Global Datathon (Kaggle).
+
+## Dataset
+
+This project uses data from the [WiDS Global Datathon 2026](https://www.kaggle.com/competitions/WiDSWorldWide_GlobalDathon26) — "Predicting Time-to-Threat for Evacuation Zones Using Survival Analysis," in collaboration with Watch Duty.
+
+- **Rows:** 221 training wildfires, 95 test wildfires
+- **Features:** 34 features derived from the first 5 hours after ignition (fire growth, spread rate, wind-fire alignment, distance to evacuation zones, timing)
+- **Target:** `time_to_hit_hours` (time until the fire threatens an evacuation zone) and `event` (1 = observed, 0 = right-censored)
+- **Goal:** predict the probability a wildfire threatens an evacuation zone within 12, 24, 48, and 72 hours
+
+**To use it:**
+1. Join the competition on Kaggle and accept the rules: https://www.kaggle.com/competitions/WiDSWorldWide_GlobalDathon26
+2. Download `train.csv`, `test.csv`, and `metaData.csv`
+3. Place them in `Wildfire_Survival_Prediction/data/`
+4. Run the notebooks in `notebooks/`
