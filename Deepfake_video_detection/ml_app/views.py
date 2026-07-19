@@ -169,7 +169,7 @@ def get_accurate_model(sequence_length):
     final_model = ""
     list_models = glob.glob(os.path.join(settings.PROJECT_DIR, "models", "*.pt"))
     for i in list_models:
-        model_name.append(i.split("\\")[-1])
+        model_name.append(os.path.basename(i))
     for i in model_name:
         try:
             seq = i.split("_")[3]
@@ -250,7 +250,7 @@ def predict_page(request):
         if 'sequence_length' in request.session:
             sequence_length = request.session['sequence_length']
         path_to_videos = [video_file]
-        video_file_name = video_file.split('\\')[-1]
+        video_file_name = os.path.basename(video_file)
         if settings.DEBUG == False:
             production_video_name = video_file_name.split('/')[3:]
             production_video_name = '/'.join([str(elem) for elem in production_video_name])
