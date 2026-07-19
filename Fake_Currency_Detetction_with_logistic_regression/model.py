@@ -128,6 +128,11 @@ if __name__ == "__main__":
     # 2. Split into Train and Test sets
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
+    from sklearn.preprocessing import StandardScaler
+    scaler = StandardScaler()
+    X_train = scaler.fit_transform(X_train)
+    X_test = scaler.transform(X_test)
+
     # 3. Initialize and Train the custom model
     model = LogisticRegression()
     print("Starting Training...")
