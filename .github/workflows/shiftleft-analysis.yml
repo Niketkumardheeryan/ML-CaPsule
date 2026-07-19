@@ -31,17 +31,47 @@ jobs:
     #    Example: mvn compile, or npm install or pip install goes here
     # 3. Invoke Scan with the github token. Leave the workspace empty to use relative url
 
+    - name : Rename for Scan
+      run : python .github/scripts/rename_for_scan.py
+
+    #This jobs reduces the runtime
+    - name : Convert notebooks to scripts and clean unwanted data
+    # This removes unwanted data other than ipynbs and py files 
+    # ipynbs are converted to py files for code review to avoid the Scanner confusing with ipynbs big json structure
+    # These job also reduces the false posititves
+      run : |
+
+        pip install nbconvert
+
+        find . -name "*.ipynb" -exec jupyter nbconvert --to script {} \; || true
+
+        rm -rf .git .venv venv env node_modules
+
+        find . -type f ! -name "*.py" -delete
+
+        echo "Files remaining for the scanner:"
+        find . -type f
+
+
+
     - name: Perform Scan
       uses: ShiftLeftSecurity/scan-action@master
       env:
         WORKSPACE: ""
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SCAN_AUTO_BUILD: true
+        SCAN_AUTO_BUILD: false #this will make sure that the scanner will not build the entire directory again
+        #this is being done because the build is automatically check via build.yml
       with:
         output: reports
         # Scan auto-detects the languages in your project. To override uncomment the below variable and set the type
-        # type: credscan,java
+        type: credscan,python
         # type: python
+
+    - name: Fix SARIF URIs (Make paths relative)
+    # this will fix the unwanted docker file paths 
+      run: |
+        sudo sed -i 's|file:///github/workspace/||g' reports/*.sarif
+        sudo sed -i 's|/github/workspace/||g' reports/*.sarif
 
     - name: Upload report
       uses: github/codeql-action/upload-sarif@v3

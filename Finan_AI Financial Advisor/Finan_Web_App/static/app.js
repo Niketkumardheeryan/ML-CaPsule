@@ -114,7 +114,9 @@ function appendMsg(containerId, role, content) {
     bubble.className = 'msg-bubble';
 
     if (typeof content === 'string') {
-        bubble.innerHTML = content;
+        //using .innerHTML is not a big issue here however it is best to user .setHTML most of the modern
+        //browsers with remove harmful code like <script> clickon or <iframe> and others
+        bubble.setHTML(content);
     } else {
         bubble.appendChild(content);
     }

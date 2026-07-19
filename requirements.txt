@@ -1,3 +1,6 @@
+# This is a requirements file for a Python project. It lists the dependencies needed to run the project. Each line specifies a package and its version (if applicable).
+# This file is tracked by build workflow and commits to this requirements.txt will not be accepted
+
 requests
 bs4
 ultralytics==8.3.0

@@ -79,7 +79,8 @@ early_stopping = EarlyStopping(monitor='val_loss', patience=2)
 
 
 class PlotLearning(Callback):
-    def on_train_begin(self, logs={}):
+    def on_train_begin(self, logs=None):
+        logs = logs or {}
         self.i = 0
         self.x = []
         self.losses = []
@@ -90,7 +91,8 @@ class PlotLearning(Callback):
 
         self.logs = []
 
-    def on_epoch_end(self, epoch, logs={}):
+    def on_epoch_end(self, epoch, logs=None):
+        logs = logs or {}
         self.logs.append(logs)
         self.x.append(self.i)
         self.losses.append(logs.get('loss'))

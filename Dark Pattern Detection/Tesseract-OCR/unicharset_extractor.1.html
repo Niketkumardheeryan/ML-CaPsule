@@ -678,10 +678,11 @@ footnotes: function () {
           "' title='View footnote' class='footnote'>" + n + "</a>]";
         spans[i].setAttribute("data-note", note);
       }
-      noteholder.innerHTML +=
-        "<div class='footnote' id='_footnote_" + n + "'>" +
+      //using setHTML instead of innerHTML
+      noteholder.setHTML(
+        noteholder.innerHTML + "<div class='footnote' id='_footnote_" + n + "'>" +
         "<a href='#_footnoteref_" + n + "' title='Return to text'>" +
-        n + "</a>. " + note + "</div>";
+        n + "</a>. " + note + "</div>");
       var id =spans[i].getAttribute("id");
       if (id != null) refs["#"+id] = n;
     }
