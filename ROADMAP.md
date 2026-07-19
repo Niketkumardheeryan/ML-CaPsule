@@ -21,6 +21,7 @@
 | Project Name | Key Concepts/Libraries | Link |
 |---|---|---|
 | Basics of ML and DL | ML fundamentals, intro to deep learning | [View](./Basics%20of%20ML%20and%20DL) |
+| ML Project Roadmap | End-to-End ML development lifecycle guide | [View](./ML-Project-Roadmap) |
 | Basics of the Python | Python basics, syntax | [View](./Basics%20of%20the%20Python) |
 | Basics of Power Bi | Data visualization, BI tools | [View](./Basics%20of%20Power%20Bi) |
 | NumPy - Basics | numpy arrays, operations | [View](./NumPy%20-%20Basics) |
