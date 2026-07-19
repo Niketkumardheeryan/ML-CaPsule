@@ -1,0 +1,4983 @@
+[
+  {
+    "name": "Accent Neutralizer for Speech",
+    "path": "Accent_Neutralizer_for_Speech",
+    "description": "Accent Neutralizer for Speech A Deep Learning + Speech Processing project that transforms speech from non native accents toward a native English refer...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "numpy",
+      "pytorch"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Accent_Neutralizer_for_Speech.ipynb"
+  },
+  {
+    "name": "Univariate Analysis",
+    "path": "Advanced Visualizations",
+    "description": "Warning: If you create a lot of plotly plots in a notebook,then your browser may get slowed down This notebook is created to make you comfortable with...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "advanced_visualizations.ipynb"
+  },
+  {
+    "name": "AI Based QR Code Detection",
+    "path": "AI-Based QR Code Detection",
+    "description": "Machine learning project for AI Based QR Code Detection",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "AI Based Resume Gap Detector",
+    "path": "AI_Based__Resume_Gap_Detector",
+    "description": "Machine learning project for AI Based Resume Gap Detector",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "AI Language Learning Assistant",
+    "path": "AI_Language_Learning_Assistant",
+    "description": "Machine learning project for AI Language Learning Assistant",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "AI-Language-Learning-Assistant.ipynb"
+  },
+  {
+    "name": "AI Resume Analyzer",
+    "path": "AI_Resume Analyzer",
+    "description": "Machine learning project for AI Resume Analyzer",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Algorithmic Trading Strategy Optimization Using Genetic Algorithms",
+    "path": "Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms",
+    "description": "Algorithmic Trading Strategy Optimization Using Genetic Algorithms This notebook implements a biologically inspired Genetic Algorithm (GA) to search f...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms (1).ipynb"
+  },
+  {
+    "name": "Copy The Brain Scan Image Dataset of Alzheimer Patient",
+    "path": "Alzheimer's Disease Predictor",
+    "description": "Copy The Brain Scan Image Dataset of Alzheimer Patient Store The Images in The List Split The Dataset into Test and Train Deep Learning CNN Model Arch...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "opencv",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Alzheimer_Disease_predictor.ipynb"
+  },
+  {
+    "name": "Problem Statement #",
+    "path": "Analysis_&_predict_Black_friday_sale",
+    "description": "Problem Statement Variable Statement Calculate Null Value in our dataset Show Unique elements in each attributes Remove the unnecessary columns Splitt...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Black_friday_sale_analysis.ipynb"
+  },
+  {
+    "name": "Animal Cancer Disease Prediction",
+    "path": "Animal_Cancer_Disease_Prediction",
+    "description": "Animal Cancer Disease Prediction Problem statement This notebook demonstrates a complete binary image classification workflow for animal cell or tissu...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "animal_cancer_prediction.ipynb"
+  },
+  {
+    "name": "🐾 Animal Detection & Alert System",
+    "path": "Animal_Detection_Alert_System",
+    "description": "🐾 Animal Detection & Alert System YOLOv8 + EfficientNet | Danger Level Classification This notebook demonstrates the full pipeline of the Animal Detec...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Animal_Detection_Demo.ipynb"
+  },
+  {
+    "name": "Title: Anime Exploratory Data Analysis and Prediction",
+    "path": "Anime Data Analysis and Prediction",
+    "description": "Title: Anime Exploratory Data Analysis and Prediction Importing the libraries Extracting the dataset and deriving the general model Data filtering Dat...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Model/anime_analysis_and_prediction.ipynb"
+  },
+  {
+    "name": "ANN-Based Energy Consumption Predictor",
+    "path": "ANN_Energy_Consumption_Predictor",
+    "description": "ANN Based Energy Consumption Predictor",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "energy_predictor.ipynb"
+  },
+  {
+    "name": "Anomaly Detection in Transactions using Deep Learning",
+    "path": "Anomaly Detection in Transactions using Deep Learning",
+    "description": "Handling Class Imbalance with SMOTE We use SMOTE to address the severe class imbalance in the dataset",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Anomaly_Detection_in_Transactions_using_Deep_Learning.ipynb"
+  },
+  {
+    "name": "ANPR PI",
+    "path": "ANPR_PI",
+    "description": "Machine learning project for ANPR PI",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Artifical neural network from scratch",
+    "path": "Artifical neural network from scratch",
+    "description": "<h3>Build an ANN by implementing of backpropogation algorithm and test the same using a apporpiate dataset</h3>",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "main.ipynb.ipynb"
+  },
+  {
+    "name": "Association Rule Implementation",
+    "path": "Association Rule Implementation",
+    "description": "<h2 style=\"text align:left; font family:Arial;\"><b>1",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "association.ipynb"
+  },
+  {
+    "name": "Audio Deepfake Detection",
+    "path": "Audio_Deepfake_Detection",
+    "description": "Machine learning project for Audio Deepfake Detection",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Audio_Deepfake_Detection.ipynb"
+  },
+  {
+    "name": "Autism Identification System",
+    "path": "Autism Identification System",
+    "description": "<H1>AUTISM IDENTIFICATION SYSTEM</H1> <H2>1",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "autism_identification_notebook.ipynb"
+  },
+  {
+    "name": "Automated Financial Reporting with Deep Learning",
+    "path": "Automated Financial Reporting with Deep Learning",
+    "description": "Machine learning project for Automated Financial Reporting with Deep Learning",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Automatic Comment Generation",
+    "path": "Automatic Comment Generation",
+    "description": "Import necessary modules Read The sample code file Initialize the Pretrained Model Generate Doc Strings with the Model",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "pytorch",
+      "transformers"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "model/commentGeneration.ipynb"
+  },
+  {
+    "name": "<center> Automatic Summarization of Scientific Papers",
+    "path": "Automatic Summarization of Scientific Papers",
+    "description": "<center> Automatic Summarization of Scientific Papers Exploratory Data Analysis (EDA) Data Preprocessing Word count Check for null values Delete all r...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas",
+      "transformers"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Automatic_summarization_of_scientific_papers.ipynb"
+  },
+  {
+    "name": "AutoML Tabular Pipeline",
+    "path": "AutoML_Tabular_Pipeline",
+    "description": "Machine learning project for AutoML Tabular Pipeline",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": null
+  },
+  {
+    "name": "Autonomous Research AI Agent",
+    "path": "Autonomous Research AI Agent",
+    "description": "Machine learning project for Autonomous Research AI Agent",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Bidirectional LSTM",
+    "path": "Bidirectional LSTM",
+    "description": "TEMPERATURE PREDICTION USING BIDIRECTIONAL LSTM",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Models/temperature-prediction-using-bidirectional-lstm.ipynb"
+  },
+  {
+    "name": "Bird Species Classification Web App",
+    "path": "Bird Species Classification Web App",
+    "description": "Machine learning project for Bird Species Classification Web App",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "keras",
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "bird_species_model.ipynb"
+  },
+  {
+    "name": "Bitcoin Price Prediction Web App",
+    "path": "Bitcoin Price Prediction Web App",
+    "description": "Machine learning project for Bitcoin Price Prediction Web App",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Include More Features",
+    "path": "Bitcoin Price Predictor",
+    "description": "<a href=\"https://colab.research.google.com/github/psyduck1203/Hands on ML Basic to Advance /blob/master/Bitcoin%20Price%20Predictor/Bitcoin Price Pred...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Bitcoin_Price_Prediction.ipynb"
+  },
+  {
+    "name": "Bitcoin Price Prediction Mobile App",
+    "path": "Bitcoin_Price_Prediction_Mobile_App",
+    "description": "Machine learning project for Bitcoin Price Prediction Mobile App",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "**Import needed libraries**",
+    "path": "Brain Tumor Detection",
+    "description": "Import needed libraries Loading the dataset > Read the training dataset into the dataframe > read the testing dataset into the dataframe Data preproce...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Model/brain_tumor_model.ipynb"
+  },
+  {
+    "name": "Breast Cancer Detection using DL with Webapp",
+    "path": "Breast Cancer Detection using DL with Webapp",
+    "description": "Machine learning project for Breast Cancer Detection using DL with Webapp",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "opencv",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Model/Model.ipynb"
+  },
+  {
+    "name": "CBT ChatBot",
+    "path": "CBT_ChatBot",
+    "description": "Machine learning project for CBT ChatBot",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "keras",
+      "nltk",
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "CBT_ChatBot.ipynb"
+  },
+  {
+    "name": "Training the model",
+    "path": "Chatbot Using RASA",
+    "description": "CHATBOT USING RASA Import rasa core, rasa nlu spacy and sys Declaration of intent and sample words/phrases/sentences which refer to the intention decl...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "spacy"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "RASA_Chatbot.ipynb"
+  },
+  {
+    "name": "**Data Preprocessing**",
+    "path": "chess image classification",
+    "description": "Data Preprocessing EDA CNN",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "opencv",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "chess_piece_classification.ipynb"
+  },
+  {
+    "name": "Chi Square Test",
+    "path": "Chi-Square Test",
+    "description": "Machine learning project for Chi Square Test",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Chi_Square_Test.ipynb"
+  },
+  {
+    "name": "Chicken Disease Classification",
+    "path": "Chicken_Disease_Classification",
+    "description": "Machine learning project for Chicken Disease Classification",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Chronic Kidney Disease Prediction",
+    "path": "Chronic Kidney Disease Prediction",
+    "description": "Side Bar for CKD overview",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Chronic_Kidney_Disease.ipynb"
+  },
+  {
+    "name": "📉 Customer Churn Prediction",
+    "path": "ChurnScope",
+    "description": "📉 Customer Churn Prediction Step 1 — Import Libraries & Load Dataset Step 2 — Exploratory Data Analysis (EDA) Step 3 — Feature Engineering We use 10 e...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "notebook/Churn_Prediction.ipynb"
+  },
+  {
+    "name": "Class Imbalance problem",
+    "path": "Class Imbalance problem",
+    "description": "Machine learning project for Class Imbalance problem",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "smote.ipynb"
+  },
+  {
+    "name": "Classification Algorithms",
+    "path": "Classification Algorithms",
+    "description": "Machine learning project for Classification Algorithms",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Classification_Algorithms.ipynb"
+  },
+  {
+    "name": "Clustering Algorithms",
+    "path": "Clustering Algorithms",
+    "description": "Clustering Algorithms Example BIRCH Algorithm DBSCAN Algorithm K Means Algorithm Mini Batch K Means Algorithm Mean Shift Algorithm OPTICS Algorithm Sp...",
+    "difficulty": "beginner",
+    "category": [
+      "clustering"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Clustering_Algorithms.ipynb"
+  },
+  {
+    "name": "Unsupervised Machine Learning",
+    "path": "Company Bankruptcy Using unsupervised",
+    "description": "Importing the required libraries Defining the customization settings Loading the dataset Examining the content of the dataset Feature Engineering Expl...",
+    "difficulty": "beginner",
+    "category": [
+      "clustering"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Bank Customer Segmentation using K means,DBCAN.ipynb"
+  },
+  {
+    "name": "Text Classification Using Random Forest",
+    "path": "Consumer Complaint Dataset",
+    "description": "Text Classification Using Random Forest In this notebook, we will perform text classification using the Random Forest classifier",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "nlp"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Text_Classification_Random_Forest.ipynb"
+  },
+  {
+    "name": "1. Data Acquisition",
+    "path": "Continuous Handwriting Text Recognition",
+    "description": "Data preprocessing (Image binarization and Fixed Height Padding) and Tokenization 3",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "opencv",
+      "pytorch",
+      "requests"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "htr-pipeline.ipynb"
+  },
+  {
+    "name": "Model Evaluation and Cross-Validation",
+    "path": "Core-Utilty-Functions-for-robust-model-handling",
+    "description": "Model Evaluation and Cross Validation This notebook contains functions for evaluating classification models and performing cross validation",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "numpy",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "model_evaluation.ipynb"
+  },
+  {
+    "name": "**Forecasting using Facebook Prophet-time-series model.**",
+    "path": "Covid19 forecasting with prophet",
+    "description": "Forecasting using Facebook Prophet time series model. Performing forecasting on covid19 confirmed cases using previous data of confirmed cases",
+    "difficulty": "beginner",
+    "category": [
+      "time-series"
+    ],
+    "technologies": [
+      "matplotlib",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Covid19_forecasting_with_prophet.ipynb"
+  },
+  {
+    "name": "scatterplot",
+    "path": "COVID_19-DATA-ANALYSIS",
+    "description": "Machine learning project for COVID 19 DATA ANALYSIS",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Covid19_italy.ipynb"
+  },
+  {
+    "name": "Arima",
+    "path": "Covid_Third_Wave_Forecasting",
+    "description": "<a href=\"https://www.kaggle.com/shiv28/covid 19 forecasting using arima?scriptVersionId=89158469\" target=\" blank\"><img align=\"left\" alt=\"Kaggle\" title...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision",
+      "time-series"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "statsmodels"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "covid-19-forecasting-using-arima.ipynb"
+  },
+  {
+    "name": "💳 Credit Card Fraud Anomaly Detection",
+    "path": "Credit_Card_Fraud_Anomaly_Detection",
+    "description": "💳 Credit Card Fraud Anomaly Detection Advanced Imbalance Handling: SMOTE + Isolation Forest + XGBoost Dataset: [Kaggle Credit Card Fraud Detection](ht...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "TrainingFile.ipynb"
+  },
+  {
+    "name": "🌾 Crop Recommendation System",
+    "path": "Crop Recommendation System",
+    "description": "🌾 Crop Recommendation System A machine learning system that recommends the most suitable crop to cultivate based on soil nutrients (N, P, K) and envir...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Crop_Recommendation_System.ipynb"
+  },
+  {
+    "name": "Copy The Image Dataset of Tomato Leaf",
+    "path": "CrowdAI Plant Disease",
+    "description": "Copy The Image Dataset of Tomato Leaf Store The Images and The Corresponding Lables in The List Tomato Leaf Image having Bacterial spot Tomato Leaf Im...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "opencv",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": "tomato disease detection/Tomato_Disease_Prediction.ipynb"
+  },
+  {
+    "name": "Data Analysis and Price Forecasting of Crude Oil",
+    "path": "Crude oil forecasting",
+    "description": "Data Analysis and Price Forecasting of Crude Oil In this notebook we will be deploying a model to forecast the price of Crude Oil and carry out analys...",
+    "difficulty": "beginner",
+    "category": [
+      "time-series"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "crudeoil.ipynb"
+  },
+  {
+    "name": "Customer Segmentation using Machine Learning",
+    "path": "Customer Segmentation using Machine Learning",
+    "description": "Customer Segmentation Analysis Reading data Checking for any null values Since Gender is not a numerical value but an object type variable, we are goi...",
+    "difficulty": "beginner",
+    "category": [
+      "clustering"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Customer Segmentation from Marketing Data.ipynb"
+  },
+  {
+    "name": "<b><u> Online Retail Customer Segmentation. </u></b>",
+    "path": "Customer Segmentation USvAlgorithm",
+    "description": "<b><u> Online Retail Customer Segmentation",
+    "difficulty": "beginner",
+    "category": [
+      "clustering",
+      "computer-vision",
+      "nlp"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Online_Retail_Customer_Segmentation_.ipynb"
+  },
+  {
+    "name": "Customer Review Sentiment Analyzer",
+    "path": "Customer_Review_Sentiment_Analyzer",
+    "description": "Customer Review Sentiment Analyzer Project: Customer Review Sentiment Analyzer Repository: ML CaPsule | GSSoC'26 Issue: 1921 Category: NLP · Sentiment...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision",
+      "nlp",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Customer_Review_Sentiment_Analyzer.ipynb"
+  },
+  {
+    "name": "Cyberbullying Classification",
+    "path": "Cyberbullying Classification",
+    "description": "Importing Libraries Data Import Data Pre processing Looking for null and duplicate values Dropping duplicates Checking for balanced classes Label Enco...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "nlp",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "cyberbullying-classification.ipynb"
+  },
+  {
+    "name": "Dark Pattern Detection",
+    "path": "Dark Pattern Detection",
+    "description": "Machine learning project for Dark Pattern Detection",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Data Cleaning",
+    "path": "Data Cleaning Techniques",
+    "description": "Data Cleaning Method Delete Rows & Columns",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Data Cleaning.ipynb"
+  },
+  {
+    "name": "Data Filling and Cleaning Techniques",
+    "path": "Data Filling and Cleaning Techniques",
+    "description": "Data Cleaning HANDLING MISSING VALUES METHOD 1: dropping missing values and row/columns",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "DATA CLEANING-1.ipynb"
+  },
+  {
+    "name": "You need to give the path of an image as an input, and you will see similar fashion recommendations as output.",
+    "path": "Deep-Fashion-Recommendation-system",
+    "description": "Let’s ignore the macOS metadata and focus on the women fashion directory, listing its contents to understand the types and number of images we have: N...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "fashion_recommendation_system_using_image_features.ipynb"
+  },
+  {
+    "name": "Deepfake image analyzer",
+    "path": "Deepfake_image_analyzer",
+    "description": "Machine learning project for Deepfake image analyzer",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "cnn_image_classifier.ipynb"
+  },
+  {
+    "name": "Deepfake video detection",
+    "path": "Deepfake_video_detection",
+    "description": "Machine learning project for Deepfake video detection",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Downloading the Dataset",
+    "path": "Defective Captcha Image Recognition",
+    "description": "Defective Captcha Image Recognition Downloading the Dataset First, we need to install the Kaggle API and authenticate it to download the \"Defective Ca...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Models/models_Defective_Captcha_Image_Recognition_.ipynb"
+  },
+  {
+    "name": "Detection Transformer DETR",
+    "path": "Detection_Transformer_DETR",
+    "description": "Machine learning project for Detection Transformer DETR",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "pytorch",
+      "requests"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "DETR.ipynb"
+  },
+  {
+    "name": "Diabetes Prediction",
+    "path": "Diabetes_Prediction",
+    "description": "Machine learning project for Diabetes Prediction",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": null
+  },
+  {
+    "name": "Different types of Clustering",
+    "path": "Different types of Clustering",
+    "description": "DBSCAN (Density Based Spatial Clustering of Applications with Noise) OPTICS (Ordering Points to Identify Clustering Structure) Hierarchical Clustering...",
+    "difficulty": "beginner",
+    "category": [
+      "clustering"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "clustering in python.ipynb"
+  },
+  {
+    "name": "Different types of feature selection techniques",
+    "path": "Different types of feature selection techniques",
+    "description": "What is Feature Selection",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision",
+      "regression"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Feature Selection Explaination.ipynb"
+  },
+  {
+    "name": "Different types of scaling Method",
+    "path": "Different_types_of_scaling_Method",
+    "description": "1.MinMax The MinMax scaler is one of the simplest scalers to understand",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Different type of Scaling Method.ipynb"
+  },
+  {
+    "name": "Digital Image Tampering Detection",
+    "path": "Digital Image Tampering Detection",
+    "description": "Machine learning project for Digital Image Tampering Detection",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "opencv",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "notebook.ipynb"
+  },
+  {
+    "name": "Targets",
+    "path": "Diseases_Prediction",
+    "description": "Machine learning project for Diseases Prediction",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Diseases_Prediction.ipynb"
+  },
+  {
+    "name": "dog vs cat",
+    "path": "dog vs cat",
+    "description": "Build Custom CNN Model",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "dog-vs-cat.ipynb"
+  },
+  {
+    "name": "CNN Model for Driver Drowsiness Detection",
+    "path": "Driver_Drowsiness_Detection",
+    "description": "CNN Model for Driver Drowsiness Detection CNN Model Import libraries Data Preprocessing Preprocessing the training & testing dataset Building the CNN ...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "keras",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "CNN_Model.ipynb"
+  },
+  {
+    "name": "Duplicate Question pair",
+    "path": "Duplicate_Question_pair",
+    "description": "Machine learning project for Duplicate Question pair",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "only-bow.ipynb"
+  },
+  {
+    "name": "Dynamic Hedging Strategies using Reinforcement Learning",
+    "path": "Dynamic Hedging Strategies using Reinforcement Learning",
+    "description": "Preprocessing the data Define the Environment Train the DQN Agent Evaluate Agent Saving the model Testing the Model",
+    "difficulty": "beginner",
+    "category": [
+      "reinforcement-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Dynamic_Hedging_StrategiesReinforcementLear.ipynb"
+  },
+  {
+    "name": "EDA StackOverflow Survey 2023",
+    "path": "EDA StackOverflow Survey 2023",
+    "description": "Datsaet has over 89000 rows and 84 columns A pandas Series containing the 'question' column, with 'qname' serving as the index",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "EDA.ipynb"
+  },
+  {
+    "name": "Project Description:",
+    "path": "EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main",
+    "description": "Project Description: The following project aims to predict class using various technical specifications (features) as input to the logistic regression...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "EDA and Perform modelling on Ionosphere dataset.ipynb"
+  },
+  {
+    "name": "**Classify the Emails into Spam or Not.**",
+    "path": "Email Classifier",
+    "description": "Classify the Emails into Spam or Not. Importing Libraries Reading the Data Understanding the Data Data Visualization Splitting the Data into Dependent...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Emails_spam_or_not.ipynb"
+  },
+  {
+    "name": "📧 Email Intent Classification using DistilBERT",
+    "path": "Email_Intent_Classification_DistilBERT",
+    "description": "📧 Email Intent Classification using DistilBERT Author: Sanvi Kulkarni Domain: Natural Language Processing | Transformers Difficulty: Intermediate 📌 Pr...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision",
+      "nlp"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "pytorch",
+      "scikit-learn",
+      "seaborn",
+      "transformers"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Email_Intent_Classification_DistilBERT.ipynb"
+  },
+  {
+    "name": "Emotion Recognition Based on NLP",
+    "path": "Emotion Recognition Based on NLP",
+    "description": "Machine learning project for Emotion Recognition Based on NLP",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Using Youtibe for recommendation",
+    "path": "emotion-based music recommendtion",
+    "description": "Trying with sample recommendation system First trying with sample songs list Using Youtibe for recommendation Youtube recommendation based on Likes Us...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "pandas",
+      "transformers"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "work.ipynb"
+  },
+  {
+    "name": "**DATA Processing**",
+    "path": "Employee_attrittion_prediction_using_ML",
+    "description": "DATA Processing EDA FEATURE ENGINEERING MODEL TRAINING AND EVALUATION KNN NAIVE BAYES GBM XGBOOST",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "model/employee_attrition_prediction.ipynb"
+  },
+  {
+    "name": "**Random Forest**",
+    "path": "Engineering Career Role Prediction",
+    "description": "Random Forest Naive Bayes GBM Logistic Regression",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Engineering_career_role_prediction.ipynb"
+  },
+  {
+    "name": "Ensemble Methods in ML",
+    "path": "Ensemble Methods in ML",
+    "description": "Machine learning project for Ensemble Methods in ML",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "ensemble methods notebooks master",
+    "path": "ensemble-methods-notebooks-master",
+    "description": "Machine learning project for ensemble methods notebooks master",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "visualization.ipynb"
+  },
+  {
+    "name": "experiment capsule",
+    "path": "experiment_capsule",
+    "description": "Machine learning project for experiment capsule",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Explaination and Example for P value with code",
+    "path": "Explaination and Example for P value with code",
+    "description": "What is p value? Let’s start with the absolute basics",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "P - value Explaination.ipynb"
+  },
+  {
+    "name": "SUYASH PRATAP SINGH",
+    "path": "Exploratory-data-analysis",
+    "description": "SUYASH PRATAP SINGH Exploratory data analysis The Dataset description > The dataset was released by Aspiring Minds from the Aspiring Mind Employment O...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Exploratory Data Analysis .ipynb"
+  },
+  {
+    "name": "Extract Text from PDF using Python",
+    "path": "Extract_Text_from_PDF_using_Python",
+    "description": "for more information: PyPDF2 Docs: https://pythonhosted.org/PyPDF2/ UTF 8: https://stackoverflow.com/questions/2241348/what is unicode utf 8 utf 16",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Text_to_pdf.py.ipynb"
+  },
+  {
+    "name": "👁️ Real-Time Eye Gaze Tracking & Attention Estimation",
+    "path": "Eye_Gaze_Tracking_Attention_Estimation",
+    "description": "👁️ Real Time Eye Gaze Tracking & Attention Estimation Welcome to the Real Time Eye Gaze Tracking & Attention Estimation educational walkthrough",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Gaze_Tracking_Walkthrough.ipynb"
+  },
+  {
+    "name": "face recognition",
+    "path": "face-recognition",
+    "description": "Machine learning project for face recognition",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "deepface.ipynb"
+  },
+  {
+    "name": "Fake Currency Detetction with logistic regression",
+    "path": "Fake_Currency_Detetction_with_logistic_regression",
+    "description": "Machine learning project for Fake Currency Detetction with logistic regression",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "pipeline.ipynb"
+  },
+  {
+    "name": "Fake News Detection",
+    "path": "Fake_News_Detection",
+    "description": "Fake News Detection Importing Libraries Loading the dataset Loading the dataset Data Preprocessing Stemming Procedure Stemming is the process of reduc...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision",
+      "nlp",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Fake_News_Detection.ipynb"
+  },
+  {
+    "name": "Feature Eye Disease Classified RNN",
+    "path": "Feature Eye Disease Classified RNN",
+    "description": "Machine learning project for Feature Eye Disease Classified RNN",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "**Data Preprocessing Project: Impact Of Feature Scaling on Model's Performance**",
+    "path": "Feature Scaling Techniques",
+    "description": "Data Preprocessing Project: Impact Of Feature Scaling on Model's Performance In this project, I discuss various data preprocessing techniques related ...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Data_Preprocessing_project.ipynb"
+  },
+  {
+    "name": "Feature Selection using Genetic ALgorithm",
+    "path": "Feature Selection using Genetic ALgorithm",
+    "description": "Define Helper Functions Initialize the Population Define Genetic Algorithm Operations Run the Genetic Algorithm Evaluate the best feature set",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Feature_Selection_for_Machine_Learning_with_Genetic_Algorithm.ipynb"
+  },
+  {
+    "name": "Feature Engineering",
+    "path": "Feature-Engineering",
+    "description": "Feature: In the context of machine learning, a feature (also known as a variable or attribute) is an individual measurable property or characteristic ...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision",
+      "nlp",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Feature_Engineering.ipynb"
+  },
+  {
+    "name": "Feature Selection and Model Performance Analysis",
+    "path": "Feature_Selection_Analysis",
+    "description": "Feature Selection and Model Performance Analysis Complete Tutorial with Explanation → Code → Summary This notebook teaches feature selection step by s...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "feature_selection.ipynb"
+  },
+  {
+    "name": "Feed Forward Neural Networks (Deep Learning Algorithm)",
+    "path": "Feed-Forward Neural Networks (Deep Learning Algorithm)",
+    "description": "Machine learning project for Feed Forward Neural Networks (Deep Learning Algorithm)",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "feedforwardnet.ipynb"
+  },
+  {
+    "name": "FIFA World Cup 2022 Winner Prediction",
+    "path": "FIFA_World_Cup_2022_Winner_Prediction",
+    "description": "<a href=\"https://colab.research.google.com/github/AkshataJv/FIFA World Cup 2022 Winner Prediction/blob/main/FIFA World Cup 2022 Winner.ipynb\" target=\"...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "FIFA_World_Cup_2022_Winner.ipynb"
+  },
+  {
+    "name": "Finan AI Financial Advisor",
+    "path": "Finan_AI Financial Advisor",
+    "description": "STEP 1: Install Required Packages STEP 2: Import All Libraries STEP 3: Load Dataset STEP 4: Train ML Model (Support Vector Classifier (SVC)) For Predi...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Finan_Jupyter_Notebook/Finan_AI Financial Advisor.ipynb"
+  },
+  {
+    "name": "Financial Crisis Early Warning System",
+    "path": "Financial Crisis Early Warning System",
+    "description": "Machine learning project for Financial Crisis Early Warning System",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Financial_Crisis_Early_Warning_System.ipynb"
+  },
+  {
+    "name": "Financial Impact Forecasting Pipeline",
+    "path": "Financial_Impact_Forecasting",
+    "description": "Financial Impact Forecasting Pipeline This notebook demonstrates how to load text data over a mock timeline, process sequential inputs, and bench mark...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp",
+      "time-series"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": "Financial_Forecasting_Pipeline.ipynb"
+  },
+  {
+    "name": "Fire Detection Using Python OpenCV",
+    "path": "Fire-Detection-Using-Python-OpenCV",
+    "description": "Machine learning project for Fire Detection Using Python OpenCV",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Fish Weight Estimation",
+    "path": "Fish-Weight-Estimation",
+    "description": "Fish Weight Estimation Introduction A fish market is a marketplace for selling fish and fish products",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "statsmodels",
+      "tensorflow",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "fish-weight-estimation.ipynb"
+  },
+  {
+    "name": "Flight delay prediction",
+    "path": "Flight_delay_prediction_project",
+    "description": "Flight delay prediction Import the needed libraries From a technical point of view, the main aspects of python covered throughout the notebook are: vi...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "flight_delay.ipynb"
+  },
+  {
+    "name": "Flood Prediction Machine Learning Model",
+    "path": "Flood_Prediction",
+    "description": "Flood Prediction Machine Learning Model Importing Required Libraries",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Model/Flood_Prediction.ipynb"
+  },
+  {
+    "name": "Flower classification android app",
+    "path": "Flower_classification_android_app",
+    "description": "Machine learning project for Flower classification android app",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Football Analyser using YOLO",
+    "path": "Football_Analyser_using_YOLO",
+    "description": "Machine learning project for Football Analyser using YOLO",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Foreign Exchange Rate Prediction",
+    "path": "Foreign Exchange Rate Prediction",
+    "description": "Machine learning project for Foreign Exchange Rate Prediction",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "LSTM_model.ipynb"
+  },
+  {
+    "name": "EDA",
+    "path": "GDP Prediction",
+    "description": "Importing necessary libraries Initial Check on Dataset Dataset has 20 Columns with 227 Entries Only three columns are having proper numeric values",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "gdp-prediction-model.ipynb"
+  },
+  {
+    "name": "**Analysing Gender Pay Gap**",
+    "path": "Gender Pay Gap Analysis",
+    "description": "<a href=\"https://colab.research.google.com/github/UrviSinghal28/ML CaPsule/blob/master/Gender%20Pay%20Gap%20Analysis/analyze gender pay gap.ipynb\" tar...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "analyze_gender_pay_gap.ipynb"
+  },
+  {
+    "name": "Generating 3D Design Voxels using GANs",
+    "path": "Generating 3D Design Voxels using GANs",
+    "description": "Machine learning project for Generating 3D Design Voxels using GANs",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "3D_Gen.ipynb"
+  },
+  {
+    "name": "Gesture Related Projects",
+    "path": "Gesture Related Projects",
+    "description": "Machine learning project for Gesture Related Projects",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": "Real_Time_Hand_Gesture_Recognition_WebApp_Gestura_AI/train_model.ipynb"
+  },
+  {
+    "name": "GitHub Topic Scraper",
+    "path": "GitHub Topic Scraper",
+    "description": "Scrape the list of topics from Github Get the top 25 repositories from a topic page Final Function",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "beautifulsoup4",
+      "pandas",
+      "requests"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Github_Repo_Topics_Scraper.ipynb"
+  },
+  {
+    "name": "Google Teachable Machine",
+    "path": "Google Teachable Machine",
+    "description": "Machine learning project for Google Teachable Machine",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "keras",
+      "pandas",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Model/google_teachable_machine.ipynb"
+  },
+  {
+    "name": "GRAD CAM Visualizer",
+    "path": "GRAD-CAM-Visualizer",
+    "description": "Machine learning project for GRAD CAM Visualizer",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "GRAD_CAM_Visualizer.ipynb"
+  },
+  {
+    "name": "Grad CAM VGG16 ImageNet",
+    "path": "Grad_CAM_VGG16_ImageNet",
+    "description": "Machine learning project for Grad CAM VGG16 ImageNet",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "opencv",
+      "pytorch",
+      "requests"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "GRAD_CAM.ipynb"
+  },
+  {
+    "name": "GUI JARVIS",
+    "path": "GUI-JARVIS",
+    "description": "Machine learning project for GUI JARVIS",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Hand Written Digit Recognition",
+    "path": "Hand-Written-Digit-Recognition",
+    "description": "Machine learning project for Hand Written Digit Recognition",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "hand sign project",
+    "path": "hand_sign_project",
+    "description": "Machine learning project for hand sign project",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Handwritten character recognition",
+    "path": "Handwritten character recognition",
+    "description": "Machine learning project for Handwritten character recognition",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "opencv",
+      "pandas",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Handwritten character recognition.ipynb"
+  },
+  {
+    "name": "Handwritten Equation Solver using CNN",
+    "path": "Handwritten Equation Solver using CNN",
+    "description": "Importing required libraries",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "keras",
+      "numpy",
+      "opencv",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Equation solver CNN.ipynb"
+  },
+  {
+    "name": "Data Analysis",
+    "path": "heart failure",
+    "description": "Data Analysis Model Creation Model File Model Comparison",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "lightgbm",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "heart_fail.ipynb"
+  },
+  {
+    "name": "Heart Disease Prediction",
+    "path": "Heart_Disease_Prediction",
+    "description": "Machine learning project for Heart Disease Prediction",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Heart_Disease_Prediction.ipynb"
+  },
+  {
+    "name": "Standardization",
+    "path": "Heart_Predection",
+    "description": "Problem Statement:<br> In this problem we will be using Machine Learning to predict if any person is suffering from heart disease or not.We be also pe...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "HeartDisease.ipynb"
+  },
+  {
+    "name": "Heat Stroke Risk Prediction",
+    "path": "heat_stroke_risk_predictor",
+    "description": "Heat Stroke Risk Prediction Predict the risk of heat stroke using factors such as temperature, humidity, age, physical activity, and water intake",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "HeatStrokeRiskPredictor.ipynb"
+  },
+  {
+    "name": "Importing Streamlit",
+    "path": "Hindi_Letter_Classification",
+    "description": "Importing Streamlit Creating Web App After clicking submit button Creating training data and then making training and test set Creating LENET 5 archit...",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "keras",
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Web_app.ipynb"
+  },
+  {
+    "name": "🏠 House Price Prediction — California Housing Dataset",
+    "path": "Housing_Prediction",
+    "description": "🏠 House Price Prediction — California Housing Dataset A complete supervised ML pipeline to predict California housing prices",
+    "difficulty": "beginner",
+    "category": [
+      "nlp",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "main_housing.ipynb"
+  },
+  {
+    "name": "Preprocessing: Denoising, Scaling, Classes Segmentation",
+    "path": "HyperParameter Tuning",
+    "description": "Initially data processing was done by denoising the data and then it was normalised using z score values 2",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Bayesian Optimization/GaussianProcesses.ipynb"
+  },
+  {
+    "name": "Image Captioning",
+    "path": "Image Captioning",
+    "description": "NOTE: For convience , try to run this over Kaggle",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision",
+      "nlp"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "opencv",
+      "pandas",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Notebook/image-captioning.ipynb"
+  },
+  {
+    "name": "Image Stitching",
+    "path": "Image Stitching",
+    "description": "Machine learning project for Image Stitching",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "numpy",
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "stitching.ipynb"
+  },
+  {
+    "name": "ImageGen using GANs",
+    "path": "ImageGen using GANs",
+    "description": "Machine learning project for ImageGen using GANs",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": null
+  },
+  {
+    "name": "IMDB Box Office Prediction",
+    "path": "IMDB Box Office Prediction",
+    "description": "IMPORTING IMPORTANT LIBRARIES LOADING THE DATASET drop unnessary features Data analysis Data preprocessing Released change release equal 1 and rumored...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "IMDB_Box_Office_Prediction.ipynb"
+  },
+  {
+    "name": "Downloading the Dataset",
+    "path": "Indian Currency Detection using DL",
+    "description": "Indian Currency Detection Downloading the Dataset First, we need to install the Kaggle API and authenticate it to download the \"Indian Currency\" datas...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Models/models_IndianCurrencyDetection.ipynb"
+  },
+  {
+    "name": "Indian Elections",
+    "path": "Indian Elections",
+    "description": "SENSEX performance around Indian general elections Additional Visualisations 1",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "generalelections.ipynb"
+  },
+  {
+    "name": "Infant Health Prediction",
+    "path": "Infant_Health_Prediction",
+    "description": "Building other models Logistic Regression Decision Tree RandomForest K Neighbors Gaussian Naive Bayes Boosting AdaBoostClassfier GradientBoostingClass...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "statsmodels",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Infant_Health_Prediction.ipynb"
+  },
+  {
+    "name": "Instagram Reach Prediction",
+    "path": "Instagram Reach Prediction",
+    "description": "Random Forest Regressor Gradient Boosting Regressor Linear Regression We see that posts regarding artificial intelligence, machine learning, big data,...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Insta Reach Algorithm.ipynb"
+  },
+  {
+    "name": "Internship Scam Detection using Machine Learning",
+    "path": "Internship Spam Detect",
+    "description": "Internship Scam Detection using Machine Learning Module: Binary Classification Project Aim & Objective The primary goal of this project is to build an...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "internship_scam_detection.ipynb"
+  },
+  {
+    "name": "IPL Cricket Match Win Prediction",
+    "path": "IPL Cricket Match Win Prediction",
+    "description": "Load and Inspect the Dataset Data Preprocessing Splitting the dataset into training and testing sets Accuracy And Predictions Confusion Matrix Visuali...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "lightgbm",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Model/IPL_Cricket_Match_Win_Probability_Prediction_using_Machine_Learning.ipynb"
+  },
+  {
+    "name": "Irrigation Prediction",
+    "path": "Irrigation_Prediction",
+    "description": "Irrigation Prediction",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "irrigation_prediction.ipynb"
+  },
+  {
+    "name": "task 1",
+    "path": "job_Advertisement_detection",
+    "description": "The flow of this job advertisement detection for classification Create a classification model that uses text data features and meta features and predi...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision",
+      "nlp"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "job_ad_detection.ipynb"
+  },
+  {
+    "name": "K Means Clustering",
+    "path": "K Means Clustering",
+    "description": "Importing Libraries Loading the dataset Data Preprocessing Convert the Gender column to numerical values: 0 for Male and 1 for Female",
+    "difficulty": "beginner",
+    "category": [
+      "clustering"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Customer Segmentation and Marketing Strategy with KMeans Clustering.ipynb"
+  },
+  {
+    "name": "kmeans vs spectral clustering",
+    "path": "kmeans_vs_spectral_clustering",
+    "description": "Machine learning project for kmeans vs spectral clustering",
+    "difficulty": "beginner",
+    "category": [
+      "clustering"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "kmeans_vs_spectral_clustering.ipynb"
+  },
+  {
+    "name": "🎯 KNN Imputation vs Traditional Simple Imputation (Mean/Median)",
+    "path": "KNN_Imputation_Example",
+    "description": "🎯 KNN Imputation vs Traditional Simple Imputation (Mean/Median) This notebook provides an educational walkthrough demonstrating how K Nearest Neighbor...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "knn_imputation.ipynb"
+  },
+  {
+    "name": "Lane Line Detection [OPEN CV]",
+    "path": "Lane Line Detection [OPEN CV]",
+    "description": "Machine learning project for Lane Line Detection [OPEN CV]",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Language Detection Model",
+    "path": "LanguageDetection",
+    "description": "Language Detection Model",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "LanguageDetectionModel.ipynb"
+  },
+  {
+    "name": "Learning Rules In ANN",
+    "path": "Learning Rules In ANN",
+    "description": "<h3>Implementation of different activation fucntion in learning rules</h3>",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "learning_rules.ipynb"
+  },
+  {
+    "name": "Modellng",
+    "path": "Loan Repayment Prediction",
+    "description": "Importing Libraries Reading file Here we can see that attribute purpose has object datatype",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Loan_Repayment_Prediction.ipynb"
+  },
+  {
+    "name": "Data Visualization",
+    "path": "Loan-Prediction-main",
+    "description": "Loan Prediction Data Visualization Data Cleaning Training",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": "Loan-Prediction-main/LoanPreds.ipynb"
+  },
+  {
+    "name": "logistic regression scratch",
+    "path": "logistic_regression_scratch",
+    "description": "Data analysis and Preprocessing Building the logistic regression model Implementing Gradient descent Writing the predicting function Combining preceed...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "diabetes_predictor.ipynb"
+  },
+  {
+    "name": "Long Short Term Memory from Scratch",
+    "path": "LSTM from Scratch",
+    "description": "Long Short Term Memory from Scratch Importing Required Libraries Load the data Transforming the names to equal length by adding dots Making the Vocabu...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "lstm_from_scratch.ipynb"
+  },
+  {
+    "name": "Detecting Malicious URLs using Machine Learning",
+    "path": "Malicious Url Detection",
+    "description": "Detecting Malicious URLs using Machine Learning 1",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "MaliciousUrlDetection.ipynb"
+  },
+  {
+    "name": "Recommendation System Evolution",
+    "path": "market-basket-recommendation",
+    "description": "Market Basket Analysis using Apriori Algorithm Market Basket Analysis is a popular data mining technique used to identify associations between items i...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Apriori.ipynb"
+  },
+  {
+    "name": "🔴 Mars Weather Prediction using XGBoost",
+    "path": "Mars_Weather_Prediction",
+    "description": "🔴 Mars Weather Prediction using XGBoost This notebook analyzes NASA Curiosity Rover weather datasets to predict atmospheric conditions on Mars — speci...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Mars_Weather_Prediction.ipynb"
+  },
+  {
+    "name": "Maternal Health Risk Prediction",
+    "path": "Maternal Health Risk Prediction",
+    "description": "Data: Age: Age of pregnant women",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "maternal-health-risk-prediction.ipynb"
+  },
+  {
+    "name": "Calculus for Machine Learning",
+    "path": "Math_for_ML",
+    "description": "Calculus for Machine Learning Calculus, specifically differential calculus, is how ML models learn",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Calculus_for_ML.ipynb"
+  },
+  {
+    "name": "Medical Costs Analysis for Smokers and Non-smokers",
+    "path": "Medical Charges for Smokers and Non-smoker",
+    "description": "Medical Costs Analysis for Smokers and Non smokers Analysis and Regression Models Abstract : The cumulative impact of excess medical care required by ...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Medicine Charges.ipynb"
+  },
+  {
+    "name": "Medical Insurance Cost Prediction",
+    "path": "Medical Insurance Cost Prediction",
+    "description": "Importing the Dependencies Data Collection & Analysis Categorical Features: Sex Smoker Region Data Analysis Normal BMI Range > 18.5 to 24.9 Data Pre P...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Project_11_Medical_Insurance_Cost_Prediction.ipynb"
+  },
+  {
+    "name": "Medical Cost Prediction",
+    "path": "Medical_Cost_Prediction",
+    "description": "Machine learning project for Medical Cost Prediction",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Medical_Cost_Prediction.ipynb"
+  },
+  {
+    "name": "**Data Analysis Project on Meteorite Landings Dataset (Recorded by The Meteoritical Society and Provided by NASA)**",
+    "path": "Meteorite Landing Data Analysis",
+    "description": "Data Analysis Project on Meteorite Landings Dataset (Recorded by The Meteoritical Society and Provided by NASA) Abhinav Dubey https://data.nasa.gov/Sp...",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Meteorite.ipynb"
+  },
+  {
+    "name": "Missing Values - 0",
+    "path": "Migraine Type Prediction",
+    "description": "Missing Values 0 Duplicated Rows 6 Exploratory Data Analysis (EDA) Univariate Analysis Bivariate Analysis Prediction System Data Splitting Model Creat...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Migraine_Prediction_System.ipynb"
+  },
+  {
+    "name": "MIXUP&CUTMIX DASHBOARD",
+    "path": "MIXUP&CUTMIX-DASHBOARD",
+    "description": "Machine learning project for MIXUP&CUTMIX DASHBOARD",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "MNIST English Classification",
+    "path": "MNIST English Classification",
+    "description": "Machine learning project for MNIST English Classification",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "pytorch",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "CNN/.ipynb files/CNN_PyTorch.ipynb"
+  },
+  {
+    "name": "Mobile Price Prediction",
+    "path": "Mobile Price Prediction",
+    "description": "Install Required Libraries Create the Dataset EDA and Data Preprocessing Training and Evaluating Models Linear Regression Random Forest Regressor Supp...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Model/Mobile_Price_Prediction_Model.ipynb"
+  },
+  {
+    "name": "Model Selection Tool",
+    "path": "Model Selection Tool",
+    "description": "Machine learning project for Model Selection Tool",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Packages install & import",
+    "path": "Molecule_Property_Analysis",
+    "description": "Packages install & import Installing rdkit and pyg Import Data Loading Molecular Graphs for pyg Train, Val & Test Split ECFP4 + Random forest Attentiv...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "pytorch",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "molecule_property_analysis.ipynb"
+  },
+  {
+    "name": "Movie Genre Classification",
+    "path": "Movie Genre Classification",
+    "description": "Movie Genre Classification Movie genre classification is a fundamental task in the domain of natural language processing (NLP) and machine learning",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "nlp"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Movie Genre.ipynb"
+  },
+  {
+    "name": "Movie Recommendation System",
+    "path": "Movie-Recommendation-System",
+    "description": "Machine learning project for Movie Recommendation System",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Movie Lens Collaborative Filtering.ipynb"
+  },
+  {
+    "name": "Movie Recommender System using python",
+    "path": "Movie-Recommender-System using python",
+    "description": "Importing the dependencies Data Collection and Pre Processing Cosine Similarity Getting the movie name from the user Movie Recommendation Sytem",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Movie_Recommendation_System_using_Python.ipynb"
+  },
+  {
+    "name": "Music Generation using LSTM",
+    "path": "Music Generation using LSTM",
+    "description": "Generate new samples using this model Comparing the generated samples",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Music_Generation.ipynb"
+  },
+  {
+    "name": "Naive Bayes Classifier",
+    "path": "Naive Bayes Documentation",
+    "description": "Naive Bayes Classifier Naive Bayes Classifier is a supervised ML algorithm, which is based on Bayes Theorem and used for solving classification probel...",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Naive Bayes Classifier.ipynb"
+  },
+  {
+    "name": "NASA Asteroids Datasets",
+    "path": "Nasa-Asteroids-Dataset-Analysis",
+    "description": "NASA Asteroids Datasets The aim of this analysis is to explore the features associated with the hazardous asteroids Importing the dataset and explorin...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "analysis.ipynb"
+  },
+  {
+    "name": "NLP Project",
+    "path": "NLP-Project",
+    "description": "<a href=\"https://colab.research.google.com/github/Apoorva57/NLP Project/blob/main/NLP Project.ipynb\" target=\" parent\"><img src=\"https://colab.research...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "nltk",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "NLP_Project.ipynb"
+  },
+  {
+    "name": "Word Embeddings",
+    "path": "NLP_Techniques",
+    "description": "Word Embeddings Word embeddings are numerical representations of words that capture semantic relationships between them",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "nltk"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "word_embedding.ipynb"
+  },
+  {
+    "name": "NLTK Documentation",
+    "path": "NLTK Documentation",
+    "description": "NLTK : A NATURAL LANGUAGE PROCESSING TOOLKIT TOKENIZING Here’s how to import the relevant parts of NLTK so you can tokenize by word and by sentence: P...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "nltk"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "NLTK.ipynb"
+  },
+  {
+    "name": "Install OpenCV and imutils",
+    "path": "Number_of_people_counter",
+    "description": "Install OpenCV and imutils Importing necessary libraries Reading the Image Initializing the HOG person Resizing the image Detecting all humans Applyin...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "people_counter.ipynb"
+  },
+  {
+    "name": "NumPy",
+    "path": "NumPy - Basics",
+    "description": "NumPy NumPy is a Python package",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "NumPy - Basics.ipynb"
+  },
+  {
+    "name": "Object Detection",
+    "path": "Object Detection",
+    "description": "[click](https://drive.google.com/drive/folders/10Uqr lQUgamXQs5Z43PKwwuCRx6hG52b?usp=sharing) here for the furniture dataset",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "object_detection.ipynb"
+  },
+  {
+    "name": "Initialization of Model and Detection",
+    "path": "OCR-Medicine-Reader",
+    "description": "Initialization of Model and Detection Visualization of Results",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Medicine_Label_Reader_OCR.ipynb"
+  },
+  {
+    "name": "Ola Bike Ride Request Demand Forecast",
+    "path": "Ola Bike Ride Request Demand Forecast",
+    "description": "Loading the saved models Loading the test data Getting the predictions using the pre trained hypertuned Random Forest model Getting the predictions us...",
+    "difficulty": "beginner",
+    "category": [
+      "time-series"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": "Model/testing_and_predictions.ipynb"
+  },
+  {
+    "name": "OnlinePaymentFraudDetection",
+    "path": "OnlinePaymentFraudDetection",
+    "description": "To identify online payment fraud with machine learning,we need to train a machine learning model for classifying fraudulent and non fraudulent payment...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "PaymentFraudDetection.ipynb"
+  },
+  {
+    "name": "Optical character recognition (OCR)",
+    "path": "Optical character recognition (OCR)",
+    "description": "Optical Character Recognition (OCR) Installing the dependencie Download the Tesseract module for your Operating System https://github.com/UB Mannheim/...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Optical Character Recognition (OCR).ipynb"
+  },
+  {
+    "name": "optimized the trading strategy based on sentiment analysis",
+    "path": "optimized the trading strategy based on sentiment analysis",
+    "description": "optimized the trading strategy based on sentiment analysis Loading the Dataset Intialize the fitness function Intialize Population Perform Selection P...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "optimized_the_trading_strategy_based_on_sentiment_analysis.ipynb"
+  },
+  {
+    "name": "Optimizing Dividend Capture Strategies Using Genetics Algorithms",
+    "path": "Optimizing_Dividend_Capture_Strategies_Using_Genetics_Algorithms",
+    "description": "Machine learning project for Optimizing Dividend Capture Strategies Using Genetics Algorithms",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Optimizing_Dividend_Capture_Strategies_Using_Genetics_Algorithms.ipynb"
+  },
+  {
+    "name": "What is Interquartile Range?",
+    "path": "Outlier Detection",
+    "description": "What is Interquartile Range",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Outlier1.ipynb"
+  },
+  {
+    "name": "Importing_and_Exporting_Data_in_Pandas",
+    "path": "Pandas-Basics",
+    "description": "Importing and Exporting Data in Pandas >Created by Krishna Kaushik Now we're able to create Series and DataFrames in pandas, but we usually do not do ...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Importing_and_Exporting_Data_in_Pandas.ipynb"
+  },
+  {
+    "name": "PCOD Detection Using Ensemble Learning XAI",
+    "path": "PCOD_Detection_Using_Ensemble_Learning_XAI",
+    "description": "Machine learning project for PCOD Detection Using Ensemble Learning XAI",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "notebook.ipynb"
+  },
+  {
+    "name": "Pension Fund Optimization",
+    "path": "Pension Fund Optimization",
+    "description": "Machine learning project for Pension Fund Optimization",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "PensionFundOptimization.ipynb"
+  },
+  {
+    "name": "Perceptron From Scratch",
+    "path": "Perceptron From Scratch",
+    "description": "<h3>Implementation of Perceptron Network</h3>",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": "perceptron.ipynb"
+  },
+  {
+    "name": "personalityPrediction",
+    "path": "personalityPrediction",
+    "description": "Machine learning project for personalityPrediction",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "PersonalityPredictionUsingMl.ipynb"
+  },
+  {
+    "name": "What is plagiarism?",
+    "path": "Plagiarism-detector-using-machine-learning-main",
+    "description": "Plagiarism is the act of using someone else’s work, ideas, or intellectual property without proper attribution or permission and presenting it as one’...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision",
+      "nlp",
+      "regression"
+    ],
+    "technologies": [
+      "nltk",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Building Plagiarism checker using Machine Learning.ipynb"
+  },
+  {
+    "name": "<b>Tomato Plant Disease Detection Model<b>",
+    "path": "Plant Disease Prediction",
+    "description": "<b>Tomato Plant Disease Detection Model<b> Importing Required Libraries Defining all Hyperparameters <b>Stage 1: Data Preprocessing and Exploration</b...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "disease-prediction/model.ipynb"
+  },
+  {
+    "name": "Plant Seedlings Classification",
+    "path": "Plant Seedlings Classification",
+    "description": "Plant Seedlings Classification ![](plant1.jpg) Contents [ Abstract ]( abstract) [ Dataset ]( dataset) [ Importing Dataset and the required libraries ]...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "pytorch",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Model/Plant_seedlings_classification.ipynb"
+  },
+  {
+    "name": "Real-Time Playing Card Detection using YOLOv8",
+    "path": "Playing-Card-Detection-YOLOv8",
+    "description": "Part 0: Download Dataset Real Time Playing Card Detection using YOLOv8 This notebook covers training a custom YOLOv8 model on a playing card dataset a...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "playing_card_detection.ipynb"
+  },
+  {
+    "name": "Pneumonia Classification using Chest X Ray",
+    "path": "Pneumonia Classification using Chest X-Ray",
+    "description": "Machine learning project for Pneumonia Classification using Chest X Ray",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Predicting Poker Hand",
+    "path": "Poker Hand Prediction",
+    "description": "Predicting Poker Hand STEP 1: IMPORTING LIBRARIES STEP 2: LOADING THE DATASET STEP 3: ANALYSING AND PRE PROCESSING THE DATA STEP 4: CHANGING NAMES OF ...",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "matplotlib",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "003_Poker_Hand_Prediction.ipynb"
+  },
+  {
+    "name": "**Portfolio Optimization Using Genetic Algorithm**",
+    "path": "PortFolio Optimaization Using Genetic ALgorithm",
+    "description": "Portfolio Optimization Using Genetic Algorithm Calculate Return Define Fitness Function Initial Population Selection Crossover Mutation Termination Ev...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Portfolio_Optimization_Using_Genetic_Algorithm.ipynb"
+  },
+  {
+    "name": "Portuguese Bank Marketing Dataset - Binary Classification ML Project",
+    "path": "Portuguese_Bank_Marketing",
+    "description": "Portuguese Bank Marketing Dataset Binary Classification ML Project This notebook implements an end to end Machine Learning pipeline to predict whether...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Portuguese_Bank_Marketing.ipynb"
+  },
+  {
+    "name": "Pothole Detection using YOLOv8",
+    "path": "Pothole_Detection",
+    "description": "Pothole Detection using YOLOv8 Detect potholes in road images using a fine tuned YOLOv8n model",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Pothole_Detection_YOLOv8.ipynb"
+  },
+  {
+    "name": "Predicting Next Sequence Of Numbers Using LSTM",
+    "path": "Predicting Next Sequence Of Numbers Using LSTM",
+    "description": "Importing the Libraries Step 1: Loading the Dataset Step 2: Data Preprocessing Step 3: Create the LSTM Model Step 4: Train The Model Step 5: Evaluatin...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "pytorch"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Model/Predict_next_Sequence_of_numbers_Using_LSTM.ipynb"
+  },
+  {
+    "name": "Water Potability Prediction",
+    "path": "Projects",
+    "description": "Water Potability Prediction Predict whether water is potable (safe to drink) based on physicochemical measurements",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": "Water Potability/water_potability.ipynb"
+  },
+  {
+    "name": "PulseLangX",
+    "path": "PulseLangX",
+    "description": "Machine learning project for PulseLangX",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "PyPI Package",
+    "path": "PyPI Package",
+    "description": "Machine learning project for PyPI Package",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "PyScript Tutorial",
+    "path": "PyScript Tutorial",
+    "description": "Machine learning project for PyScript Tutorial",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "**CUSTOMER CHURN PREDICTION**",
+    "path": "pytorch_tabular",
+    "description": "CUSTOMER CHURN PREDICTION CUSTOMER CHURN PREDICTION IS ONE OF THE VERY IMPORTANT TASKS FOR ANY KIND OF BUSINESS",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "pytorch_tabular_tutorial.ipynb"
+  },
+  {
+    "name": "MountainCar Q-Learning",
+    "path": "Q-Learning From Scratch",
+    "description": "MountainCar Q Learning Tabular Q learning (with state space discretisation ) on the MountainCar v0 Gymnasium environment",
+    "difficulty": "beginner",
+    "category": [
+      "reinforcement-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "car_mountain_q_learning.ipynb"
+  },
+  {
+    "name": "QnA Conversational Agent",
+    "path": "QnA Conversational Agent",
+    "description": "QnA Conversational Agent 📚 Chat with Your Data Bot Jupyter Notebook 🤖 Welcome to the Chat with Your Data Bot Jupyter Notebook",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "PDFChat.ipynb"
+  },
+  {
+    "name": "Quantitative Finance Strategy Development",
+    "path": "Quantitative Finance Strategy Development",
+    "description": "Machine learning project for Quantitative Finance Strategy Development",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Quantitative_Finance_Strategy_Development.ipynb"
+  },
+  {
+    "name": "railway person detection",
+    "path": "railway_person_detection",
+    "description": "Machine learning project for railway person detection",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "**Rainfall Trends in India Analysis**",
+    "path": "Rainfall_Trend_Analysis_and_Forecasting",
+    "description": "Rainfall Trends in India Analysis Rainfall is a critical element of India’s climate system, which impacts agriculture, water resources, and the overal...",
+    "difficulty": "beginner",
+    "category": [
+      "clustering",
+      "time-series"
+    ],
+    "technologies": [
+      "pandas",
+      "prophet",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Rainfall_Trends_in_India_Analysis_and Forecasting.ipynb"
+  },
+  {
+    "name": "Random forest from scratch",
+    "path": "Random forest from scratch",
+    "description": "Machine learning project for Random forest from scratch",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "random_forest.ipynb"
+  },
+  {
+    "name": "Random forest test",
+    "path": "Random forest test",
+    "description": "Machine learning project for Random forest test",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "random_fore.ipynb"
+  },
+  {
+    "name": "Importing Libraries",
+    "path": "Random Oversampler",
+    "description": "Importing Libraries Reading Dataset Instances before balancing Random Oversampling Instances after balancing the data",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": "Random_Oversampler.ipynb"
+  },
+  {
+    "name": "Rating Prediction",
+    "path": "Rating_Prediction",
+    "description": "Imports Reading the DataSet Data Preprocessing Data Visualisation Data Split Model Fitting Linear Regression Random Forest Regressor Gradient Boosting...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Movie_Rating_Prediction (1).ipynb"
+  },
+  {
+    "name": "recommendation system",
+    "path": "recommendation_system",
+    "description": "Content based Movie Recommendation Visualizing Data Using all four features Using Genre and Keywords only Using cast and director",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "content_based_recommendation.ipynb"
+  },
+  {
+    "name": "Rock Paper Scissors Python Game",
+    "path": "Rock Paper Scissors Python Game",
+    "description": "Importing randint from random module: Create a list of play options and the initial player and computer scores: Ask the user to start or end the game:...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "RockPaperScissorsPythonGame.ipynb"
+  },
+  {
+    "name": "Roommate Compatibility",
+    "path": "Roommate-Compatibility",
+    "description": "Machine learning project for Roommate Compatibility",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "salary prediction using RF",
+    "path": "salary-prediction-using-RF",
+    "description": "Machine learning project for salary prediction using RF",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "salary_prediction_rf_fixed.ipynb"
+  },
+  {
+    "name": "Sentiment analysis for depression based on social media posts",
+    "path": "Sentiment analysis for depression based on social media posts",
+    "description": "<a href=\"https://colab.research.google.com/github/psyduck1203/Hands on ML Basic to Advance /blob/master/Sentiment%20analysis%20for%20depression%20base...",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision",
+      "nlp"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Model/Depression_detection_tweets.ipynb"
+  },
+  {
+    "name": "Sentiment Analysis",
+    "path": "Sentiment-Analysis",
+    "description": "<a href=\"https://colab.research.google.com/github/vp1099/Sentiment Analysis Heroku Streamlit/blob/main/Sentiment Analysis Major Project.ipynb\" target=...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "nltk",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Sentiment_Analysis_Major_Project.ipynb"
+  },
+  {
+    "name": "**Sentiment Analysis on IMDb reviews 😊 😐 😔 😡**",
+    "path": "Sentiment-Analysis-on-IMDb-reviews",
+    "description": "<a href=\"https://colab.research.google.com/github/GaganpreetKaurKalsi/ML CaPsule/blob/master/Sentiment Analysis on IMDb reviews/Sentiment Analysis on ...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision",
+      "nlp"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "opencv",
+      "pandas",
+      "requests"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Sentiment_Analysis_on_IMDb_reviews.ipynb"
+  },
+  {
+    "name": "Sign Language Translator",
+    "path": "Sign-Language-Translator",
+    "description": "Machine learning project for Sign Language Translator",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "code file sign language translator.ipynb"
+  },
+  {
+    "name": "🚗 Simulating Self-Driving Cars",
+    "path": "Simulating Self Driving Cars",
+    "description": "🚗 Simulating Self Driving Cars Deep Learning + Computer Vision | GSSoC 2026 | Issue 383 Two core capabilities: 1",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "simulating_self_driving_cars.ipynb"
+  },
+  {
+    "name": "Skin Disease Predictor",
+    "path": "Skin Disease Predictor",
+    "description": "Skin Disease Predictor Using Deep Learning",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "keras",
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "skin-disease-inception.ipynb"
+  },
+  {
+    "name": "😴 Sleep Alarm Detector",
+    "path": "Sleep_Alarm_Detector",
+    "description": "😴 Sleep Alarm Detector A real time drowsiness detection system built using OpenCV and MediaPipe",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "numpy",
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Sleep_Alarm.ipynb"
+  },
+  {
+    "name": "Sleep Disorder and Stress Level Prediction",
+    "path": "Sleep_Disorder_Prediction",
+    "description": "Sleep Disorder and Stress Level Prediction Objective: To analyze lifestyle factors such as stress levels, sleep duration, and daily physical activity ...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "sleep_disorder_analysis.ipynb"
+  },
+  {
+    "name": "Smart Container Risk Prediction",
+    "path": "Smart_Container_Risk_Prediction",
+    "description": "Machine learning project for Smart Container Risk Prediction",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "model.ipynb"
+  },
+  {
+    "name": "Smartphone processor classification",
+    "path": "Smartphone processor classification",
+    "description": "Machine learning project for Smartphone processor classification",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "model/Ranking.ipynb"
+  },
+  {
+    "name": "Social Media Fake Accounts Detection with Interactive UI",
+    "path": "Social Media Fake Accounts Detection with Interactive UI",
+    "description": "Machine learning project for Social Media Fake Accounts Detection with Interactive UI",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Import the dependencies",
+    "path": "solar-panel-defect-detection",
+    "description": "Import the dependencies Load the dataset Base model (CNN 2D) with 10 epochs Plot Training vs Validation Accuracy for Conv2D For EPOCHS = 20 We see acu...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "solar-panel-defect-classification.ipynb"
+  },
+  {
+    "name": "SongGenreClassifier",
+    "path": "SongGenreClassifier",
+    "description": "<a href=\"https://colab.research.google.com/github/KritikaIyer17/Song Genre Classifier/blob/master/TF IDF Model.ipynb\" target=\" parent\"><img src=\"https...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "nltk",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "TF_IDF_Model.ipynb"
+  },
+  {
+    "name": "Spam Mail Classifier",
+    "path": "Spam Mail Classifier",
+    "description": "Imorting the Dependencies Data Collection & Pre processing Label Encoding spam 0 ham 1 Splitting the data into training data and test data Feature Ext...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Spam_Mail_Prediction_using_Machine_Learning (1).ipynb"
+  },
+  {
+    "name": "Spam Mail Detection",
+    "path": "Spam Mail Detection",
+    "description": "Machine learning project for Spam Mail Detection",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": false,
+    "notebook": null
+  },
+  {
+    "name": "Speech to Image Generator",
+    "path": "Speech-to-Image Generator",
+    "description": "Machine learning project for Speech to Image Generator",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "EDA",
+    "path": "Speech_Emotion_Recognition",
+    "description": "EDA Male Neutral Female Calm Male Happy Female Sad Male Angry Female Fearful Male Disgust Female Surprised Data Preprocessing Labeling Audio Files Fea...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Model/speech-emotion-recognition.ipynb"
+  },
+  {
+    "name": "Model Creation",
+    "path": "Spelling Corrector",
+    "description": "Model Creation Some Utils",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "keras",
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "spell-check-using-encoder-decoder.ipynb"
+  },
+  {
+    "name": "WHO WON?",
+    "path": "Sports Analytics Project",
+    "description": "Flow of the Project: 1",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "beautifulsoup4",
+      "matplotlib",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Messi_vs_Ronaldo_An_Analytical_Debate.ipynb"
+  },
+  {
+    "name": "Downloading the Dataset",
+    "path": "Sports Image Classification",
+    "description": "Sports Image Classification Downloading the Dataset First, we need to install the Kaggle API and authenticate it to download the \"Traffic Sign Detecti...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": "Models/models_SportsImageClassification_final.ipynb"
+  },
+  {
+    "name": "SQL injection detection",
+    "path": "SQL injection detection",
+    "description": "Machine learning project for SQL injection detection",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "SQLID.ipynb"
+  },
+  {
+    "name": "Startup Profit Prediction",
+    "path": "Startup_Profit_Prediction",
+    "description": "Data Exploration Data Preparation Training Our Data Model Creation Linear Regression Lasso Regression Ridge Regression Performance Check Conclusion Al...",
+    "difficulty": "beginner",
+    "category": [
+      "regression"
+    ],
+    "technologies": [
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Startup_Profit_Prediction.ipynb"
+  },
+  {
+    "name": "Statistical modeling python",
+    "path": "Statistical_modeling_python",
+    "description": "Importing libraries Exploratory Data Analysis Minimum age is 18 and maximum is 64 year Minimum cost per unit 25 and maximum is 500 Which product categ...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "statsmodels"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "stats_modelling.ipynb"
+  },
+  {
+    "name": "**Stock Market Prediction**",
+    "path": "Stock Price Analysis",
+    "description": "Stock Market Prediction Importing Libraries Loading Dataset Basic Data Analysis The dataset contains 5306 rows and 15 columns",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "statsmodels"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "stock-market-prediction.ipynb"
+  },
+  {
+    "name": "**Sudoku Solver**",
+    "path": "Sudoku Solver using CNN",
+    "description": "Sudoku Solver Importing Required Libraries Method to read and collect Data from Dataset Load the data Train your own Model Or load pretrained model So...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "keras",
+      "numpy",
+      "pandas",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": false,
+    "notebook": "sudoku.ipynb"
+  },
+  {
+    "name": "TCS Stock Analysis",
+    "path": "TCS Stock Analysis",
+    "description": "Step 1: Load and Inspect the Dataset Step 2: Exploratory Data Analysis (EDA) Step 3: Implementing all Models LSTM K Means Clustering Logistic Regressi...",
+    "difficulty": "beginner",
+    "category": [
+      "clustering",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Model/TCS_Stock_Price_Prediction_using_LSTM,_K_Means_Clustering_And_Logistic_Regression.ipynb"
+  },
+  {
+    "name": "Terrain Classificaton",
+    "path": "Terrain_Classificaton",
+    "description": "To load and test model with example image",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "matplotlib",
+      "pytorch"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "load_model.ipynb"
+  },
+  {
+    "name": "Text Summarization Model",
+    "path": "Text Summarization Model",
+    "description": "Machine learning project for Text Summarization Model",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "nltk",
+      "numpy"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Model/text_summary.ipynb"
+  },
+  {
+    "name": "Theatre audience forecasting",
+    "path": "Theatre-audience-forecasting",
+    "description": "Machine learning project for Theatre audience forecasting",
+    "difficulty": "beginner",
+    "category": [
+      "time-series"
+    ],
+    "technologies": [
+      "lightgbm",
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "notebook.ipynb"
+  },
+  {
+    "name": "Time Series Forecasting with Python",
+    "path": "Time Series Forecasting with Python",
+    "description": "<br> dataset: GE.csv included in the directory<br> reading the csv file separating the dates for plotting training variables date and volume fields no...",
+    "difficulty": "beginner",
+    "category": [
+      "time-series"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "index.ipynb"
+  },
+  {
+    "name": "Time Series LSTM Model",
+    "path": "Time-Series LSTM Model",
+    "description": "Give the Name of Stock Training Data is from 2007 till 2018 The Time Series Plot Preprocessing Normalize the Dataset Creating Time Step Model Test our...",
+    "difficulty": "beginner",
+    "category": [
+      "time-series"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "requests",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Time-Series Stock Price Prediction .ipynb"
+  },
+  {
+    "name": "Traffic Sign Recognition",
+    "path": "Traffic Sign Recognition",
+    "description": "Machine learning project for Traffic Sign Recognition",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Dog Breed Classification Using Transfer Learning",
+    "path": "Transfer Learning",
+    "description": "Dog Breed Classification Using Transfer Learning Import necessary Libraries Load Data Build Model Model Training Save Model",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "pytorch",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "dog_breed_classification_transferlearning.ipynb"
+  },
+  {
+    "name": "Tweets Classification",
+    "path": "Tweets Classification",
+    "description": "Load Data Data Cleaning Data Visualization Data Preprocessing XGB Model The XGBoost Classifier gives an accuracy of 74.07%",
+    "difficulty": "beginner",
+    "category": [
+      "classification"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "pandas",
+      "scikit-learn",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Classify Tweets.ipynb"
+  },
+  {
+    "name": "Building a Simple Chatbot from Scratch in Python (using NLTK)",
+    "path": "Unique Chatbot",
+    "description": "Building a Simple Chatbot from Scratch in Python (using NLTK) ![Alt text](https://cdn images 1.medium.com/max/800/1 pPcVfZ7i gLMabUol3zezA.gif) Histor...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "computer-vision",
+      "nlp"
+    ],
+    "technologies": [
+      "nltk",
+      "numpy",
+      "scikit-learn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Chatbot.ipynb"
+  },
+  {
+    "name": "Bus Detection",
+    "path": "Vehicles and Pedestrian Detection",
+    "description": "Machine learning project for Vehicles and Pedestrian Detection",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "opencv"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Bus Detection/bus.ipynb"
+  },
+  {
+    "name": "Virtual Drag and Drop Using OpenCV",
+    "path": "Virtual Drag and Drop Using OpenCV",
+    "description": "Machine learning project for Virtual Drag and Drop Using OpenCV",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Waste Management through Reinforcement Learning",
+    "path": "Waste Management through Reinforcement Learning",
+    "description": "Machine learning project for Waste Management through Reinforcement Learning",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "tensorflow"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "Waste_Management_through_RL.ipynb"
+  },
+  {
+    "name": "WEAPON DETECTION SYSTEM",
+    "path": "WEAPON-DETECTION-SYSTEM",
+    "description": "Machine learning project for WEAPON DETECTION SYSTEM",
+    "difficulty": "beginner",
+    "category": [
+      "computer-vision"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "Weather Prediction",
+    "path": "Weather Prediction",
+    "description": "Machine learning project for Weather Prediction",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn",
+      "statsmodels"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "weather_predication.ipynb"
+  },
+  {
+    "name": "Web Traffic Time series forecasting",
+    "path": "Web Traffic Time series forecasting",
+    "description": "Machine learning project for Web Traffic Time series forecasting",
+    "difficulty": "beginner",
+    "category": [
+      "time-series"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "prophet",
+      "scikit-learn",
+      "statsmodels",
+      "tensorflow",
+      "xgboost"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Web_Traffic_Time_series_Forecast.ipynb"
+  },
+  {
+    "name": "Web Scraping with Beautiful Soup master",
+    "path": "Web-Scraping-with-Beautiful-Soup-master",
+    "description": "Machine learning project for Web Scraping with Beautiful Soup master",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "beautifulsoup4",
+      "requests"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "scrape_jobs.ipynb"
+  },
+  {
+    "name": "WEBSITE CLASSIFICATION:",
+    "path": "Website Classification",
+    "description": "WEBSITE CLASSIFICATION: Objective: The primary objective of this project is to classify different websites into various categories based on the extrac...",
+    "difficulty": "beginner",
+    "category": [
+      "classification",
+      "nlp",
+      "regression"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "website_classification.ipynb"
+  },
+  {
+    "name": "Windy Grid World RL",
+    "path": "Windy_Grid_World_RL",
+    "description": "Machine learning project for Windy Grid World RL",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "python"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": null
+  },
+  {
+    "name": "**Data analyasis and visualisation**",
+    "path": "Wine_Quality_Prediction",
+    "description": "Data collection Data analyasis and visualisation Creating a graph showing count of wines for each quality Scatter plot of alcohol vs pH ABOUT CORRELAT...",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scikit-learn",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "wine_quality_prediction.ipynb"
+  },
+  {
+    "name": "XgBoost Algorithm",
+    "path": "XgBoost_Algorithm",
+    "description": "Libraries Used tqdm is a Python library that allows you to output a smart progress bar by wrapping around any iterable",
+    "difficulty": "beginner",
+    "category": [
+      "machine-learning"
+    ],
+    "technologies": [
+      "numpy"
+    ],
+    "author": "contributor",
+    "has_requirements": false,
+    "has_readme": true,
+    "notebook": "Notebook/XgBoost.ipynb"
+  },
+  {
+    "name": "YOUTUBE COMMENTS SENTIMENT ANALYSIS:",
+    "path": "Youtube Comment Analysis",
+    "description": "YOUTUBE COMMENTS SENTIMENT ANALYSIS: Objective: The primary objective of this project is to analyse the comments posted by various users in the youtub...",
+    "difficulty": "beginner",
+    "category": [
+      "nlp"
+    ],
+    "technologies": [
+      "matplotlib",
+      "nltk",
+      "numpy",
+      "pandas",
+      "seaborn"
+    ],
+    "author": "contributor",
+    "has_requirements": true,
+    "has_readme": true,
+    "notebook": "youtube_comment_analysis.ipynb"
+  }
+]

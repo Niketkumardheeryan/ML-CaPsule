@@ -1,0 +1,64 @@
+name: "➕ New Project Suggestion"
+description: "Suggest a new machine learning project to be added to ML-CaPsule"
+title: "[Project]: "
+labels: ["new-project"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for suggesting a new project! Please fill out the structured fields below."
+  - type: input
+    id: project_name
+    attributes:
+      label: "Project Name"
+      placeholder: "e.g., Diabetes Prediction"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Project Description"
+      placeholder: "Describe the goal, dataset used, and approach of this project."
+    validations:
+      required: true
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: "Difficulty Level"
+      options:
+        - beginner
+        - intermediate
+        - advanced
+    validations:
+      required: true
+  - type: textarea
+    id: category
+    attributes:
+      label: "Project Category"
+      placeholder: "Comma-separated tags (e.g., classification, regression, nlp, computer-vision)"
+    validations:
+      required: true
+  - type: textarea
+    id: technologies
+    attributes:
+      label: "Technologies & Libraries"
+      placeholder: "Comma-separated list (e.g., scikit-learn, pandas, tensorflow)"
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: "Author"
+      placeholder: "Your GitHub username"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Project Standards Checklist"
+      options:
+        - label: "I will include requirements.txt with the dependencies"
+          required: true
+        - label: "I will include a project-specific README.md following the template"
+          required: true
+        - label: "My Jupyter Notebook/Script will not contain absolute paths"
+          required: true
