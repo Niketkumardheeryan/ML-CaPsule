@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spam Mail Detector</title>
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Local Custom Style -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- Blurred Background Glow Blobs -->
+  <div class="background-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <div class="container">
+    <!-- Header with Theme Toggle -->
+    <header>
+      <div class="theme-toggle-container">
+        <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle light/dark theme">
+          <!-- moon icon (for when in dark mode) -->
+          <svg class="moon-icon" viewBox="0 0 24 24">
+            <path d="M12.3 22h-.1c-5.5 0-10-4.5-10-10 0-4.8 3.5-8.9 8.2-9.8.5-.1 1 .2 1.2.7.2.5 0 1.1-.4 1.4-2.8 1.9-4.3 5.3-3.7 8.7.6 3.5 3.3 6.2 6.8 6.8 3.4.6 6.8-.9 8.7-3.7.3-.4.9-.6 1.4-.4.5.2.8.7.7 1.2-.9 4.7-5 8.2-9.8 8.2l-3.1-.1z"/>
+          </svg>
+          <!-- sun icon (for when in light mode) -->
+          <svg class="sun-icon" viewBox="0 0 24 24">
+            <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-12.37c-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.38.39-1.02 0-1.41zM5.99 18.01l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.39.39-1.03 0-1.41z"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="icon-wrapper">🛡️</div>
+      <h1>Spam Mail Detector</h1>
+      <p class="subtitle">Paste any message below. The pre-trained machine learning model will tell you if it's spam or legitimate in milliseconds.</p>
+    </header>
+
+    <!-- Main Card Body -->
+    <main class="card-main">
+
+      <!-- Model Stats Badges -->
+      <section class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-val">MNB</span>
+          <span class="stat-lbl">Algorithm</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">TF-IDF</span>
+          <span class="stat-lbl">Vectorizer</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">~97%</span>
+          <span class="stat-lbl">Accuracy</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-val">5,572</span>
+          <span class="stat-lbl">Training</span>
+        </div>
+      </section>
+
+      <!-- Quick Fill Samples -->
+      <section class="samples-section">
+        <p class="samples-title">Quick fill with a test case</p>
+        <div class="chips-container">
+          <button type="button" class="chip-btn" data-text="Congratulations! You've won a £1,000 Tesco gift card. Click here to claim your prize now!">🎁 Spam Promo</button>
+          <button type="button" class="chip-btn" data-text="Hey, are we still meeting at 6pm today? Let me know if plans changed.">💬 Friend Text</button>
+          <button type="button" class="chip-btn" data-text="WINNER!! As a valued customer you have been selected to receive a £900 prize reward! Call 09061701461">🚨 Win Alert</button>
+          <button type="button" class="chip-btn" data-text="Can you pick up some groceries on the way home? We need milk and eggs.">📱 Family Chat</button>
+        </div>
+      </section>
+
+      <!-- Inputs Form -->
+      <section class="input-form-section">
+        <div class="textarea-group">
+          <textarea 
+            id="message-input" 
+            class="main-textarea" 
+            placeholder="Paste your email or SMS content here..." 
+            maxlength="2000"
+            aria-label="SMS or email content to check"
+          ></textarea>
+          <div id="char-counter" class="char-counter">0 / 2000 characters</div>
+        </div>
+
+        <div class="actions-row">
+          <button id="detect-btn" class="btn btn-primary" disabled>
+            <span class="spinner"></span>
+            <span class="btn-icon">🔍</span>
+            <span class="btn-text">Detect Spam</span>
+          </button>
+          <button id="reset-btn" class="btn btn-secondary">
+            <span>Reset</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Dynamic Prediction Result Card -->
+      <section id="result-container" class="result-container">
+        
+        <!-- Spam Result Card -->
+        <div id="result-card-spam" class="result-card spam" style="display: none;">
+          <div class="result-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            </svg>
+          </div>
+          <div class="result-content">
+            <p class="result-title">Spam Detected</p>
+            <p class="result-desc">Caution: This card matches patterns commonly found in promotional or fraudulent spam messages.</p>
+          </div>
+        </div>
+
+        <!-- Safe Result Card (Not Spam) -->
+        <div id="result-card-safe" class="result-card safe" style="display: none;">
+          <div class="result-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+            </svg>
+          </div>
+          <div class="result-content">
+            <p class="result-title">Safe Email</p>
+            <p class="result-desc">This message appears clean and doesn't match typical spam vectors. It is safe to interact with.</p>
+          </div>
+        </div>
+
+        <!-- Error Card -->
+        <div id="result-card-error" class="result-card error" style="display: none;">
+          <div class="result-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+            </svg>
+          </div>
+          <div class="result-content">
+            <p class="result-title">System Error</p>
+            <p id="error-message-text" class="result-desc">Unable to retrieve predictions. Please check your flask connection and try again.</p>
+          </div>
+        </div>
+
+        <!-- Confidence Scores Visualization -->
+        <div id="confidence-box" class="confidence-section" style="display: none;">
+          <p class="confidence-title">Confidence Level</p>
+          <div class="confidence-bar-container">
+            <div id="bar-safe" class="confidence-bar bar-safe" style="width: 0%;"></div>
+            <div id="bar-spam" class="confidence-bar bar-spam" style="width: 0%;"></div>
+          </div>
+          <div class="confidence-labels">
+            <span>Safe: <span id="val-safe" class="confidence-lbl-val">0.0%</span></span>
+            <span>Spam: <span id="val-spam" class="confidence-lbl-val">0.0%</span></span>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Built for <b>ML-CaPsule</b> · GirlScript Summer of Code</p>
+      <p style="margin-top: 0.25rem;">Powered by Naïve Bayes + TF-IDF Pipeline</p>
+    </footer>
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Elements
+      const themeToggleBtn = document.getElementById('theme-toggle-btn');
+      const messageInput = document.getElementById('message-input');
+      const charCounter = document.getElementById('char-counter');
+      const detectBtn = document.getElementById('detect-btn');
+      const resetBtn = document.getElementById('reset-btn');
+      const chipBtns = document.querySelectorAll('.chip-btn');
+      
+      const resultContainer = document.getElementById('result-container');
+      const cardSpam = document.getElementById('result-card-spam');
+      const cardSafe = document.getElementById('result-card-safe');
+      const cardError = document.getElementById('result-card-error');
+      const errorMessageText = document.getElementById('error-message-text');
+      
+      const confidenceBox = document.getElementById('confidence-box');
+      const barSafe = document.getElementById('bar-safe');
+      const barSpam = document.getElementById('bar-spam');
+      const valSafe = document.getElementById('val-safe');
+      const valSpam = document.getElementById('val-spam');
+
+      // Theme toggle initialization
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+
+      themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+
+      // Character count and button disabled state
+      function updateInputState() {
+        const text = messageInput.value.trim();
+        const length = messageInput.value.length;
+        charCounter.textContent = `${length} / 2000 characters`;
+        detectBtn.disabled = text.length === 0;
+      }
+
+      messageInput.addEventListener('input', updateInputState);
+
+      // Chip fillings
+      chipBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          messageInput.value = btn.getAttribute('data-text');
+          updateInputState();
+        });
+      });
+
+      // Clear layout state
+      function clearResults() {
+        resultContainer.style.display = 'none';
+        cardSpam.style.display = 'none';
+        cardSafe.style.display = 'none';
+        cardError.style.display = 'none';
+        confidenceBox.style.display = 'none';
+      }
+
+      resetBtn.addEventListener('click', () => {
+        messageInput.value = '';
+        updateInputState();
+        clearResults();
+      });
+
+      // Detect spam process
+      detectBtn.addEventListener('click', async () => {
+        const messageText = messageInput.value.trim();
+        if (!messageText) return;
+
+        // Visual loading state
+        detectBtn.classList.add('btn-loading');
+        detectBtn.disabled = true;
+        messageInput.disabled = true;
+        resetBtn.disabled = true;
+        clearResults();
+
+        // Simulate a minor latency so loading spinner is elegant and noticeable
+        await new Promise(resolve => setTimeout(resolve, 450));
+
+        try {
+          const response = await fetch('/predict', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message: messageText })
+          });
+
+          if (!response.ok) {
+            const errData = await response.json();
+            throw new Error(errData.error || `HTTP error! Status: ${response.status}`);
+          }
+
+          const data = await response.json();
+          renderPredictionResult(data);
+
+        } catch (error) {
+          // Display Amber Error Card
+          errorMessageText.textContent = error.message || 'Verification request timed out. Please check your web service.';
+          cardError.style.display = 'flex';
+          resultContainer.style.display = 'block';
+        } finally {
+          // Re-enable interactive elements
+          detectBtn.classList.remove('btn-loading');
+          detectBtn.disabled = false;
+          messageInput.disabled = false;
+          resetBtn.disabled = false;
+        }
+      });
+
+      // Render results view
+      function renderPredictionResult(data) {
+        // Safe reset view
+        cardSpam.style.display = 'none';
+        cardSafe.style.display = 'none';
+        cardError.style.display = 'none';
+
+        if (data.prediction === 'spam') {
+          cardSpam.style.display = 'flex';
+        } else {
+          cardSafe.style.display = 'flex';
+        }
+
+        // Handle confidence displaying
+        if (data.confidence) {
+          const rawHam = data.confidence.ham * 100;
+          const rawSpam = data.confidence.spam * 100;
+
+          // Rounding values safely
+          const hamPercent = rawHam.toFixed(1);
+          const spamPercent = rawSpam.toFixed(1);
+
+          valSafe.textContent = `${hamPercent}%`;
+          valSpam.textContent = `${spamPercent}%`;
+
+          barSafe.style.width = `${rawHam}%`;
+          barSpam.style.width = `${rawSpam}%`;
+          confidenceBox.style.display = 'block';
+        } else {
+          confidenceBox.style.display = 'none';
+        }
+
+        resultContainer.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

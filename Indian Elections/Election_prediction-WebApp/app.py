@@ -94,12 +94,11 @@ if vote is not None:
             st.subheader("Statewise report card for the Political Parties in India")
             # Plot the heatmap
             plt.style.use('dark_background')
-            plt.figure(figsize=(15, 35))
-            sns.heatmap(pvt_st_prty, annot=True, fmt='g', cmap='terrain')
-            plt.xlabel('States', size=20)
-            plt.ylabel('Party', size=20)
-            st.set_option('deprecation.showPyplotGlobalUse', False)
-            st.pyplot()
+            fig, ax = plt.subplots(figsize=(15, 35))
+            sns.heatmap(pvt_st_prty, ax=ax, annot=True, fmt='g', cmap='terrain')
+            ax.set_xlabel('States', size=20)
+            ax.set_ylabel('Party', size=20)
+            st.pyplot(fig)
 
         # Prediction Section
         elif choice == "Prediction":
