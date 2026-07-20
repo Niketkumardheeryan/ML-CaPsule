@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -12,16 +13,16 @@ from sklearn.model_selection import train_test_split
 data = []
 labels = []
 classes = 43
-cur_path = os.getcwd()
+cur_path = Path(__file__).resolve().parent
 
 # Retrieving the images and their labels
 for i in range(classes):
-    path = os.path.join(cur_path, 'train', str(i))
+    path = cur_path / 'train' / str(i)
     images = os.listdir(path)
 
     for a in images:
         try:
-            image = Image.open(path + '\\' + a)
+            image = Image.open(path / a)
             image = image.resize((30, 30))
             image = np.array(image)
             data.append(image)

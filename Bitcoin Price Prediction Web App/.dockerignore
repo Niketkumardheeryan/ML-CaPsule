@@ -1,0 +1,15 @@
+﻿__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.env
+.venv
+venv/
+env/
+.git/
+.gitignore
+.ipynb_checkpoints/
+*.ipynb
+.DS_Store
+Thumbs.db

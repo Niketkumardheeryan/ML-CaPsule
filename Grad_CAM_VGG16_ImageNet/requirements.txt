@@ -1,0 +1,9 @@
+torch
+torchvision
+opencv-python-headless
+matplotlib
+Pillow
+requests
+kaggle
+python-dotenv
+pytorch-grad-cam

@@ -1,0 +1,6 @@
+tensorflow>=2.11.0,<2.15.0
+h5py>=3.1.0
+
+# Note: TensorFlow support for new Python versions (e.g., 3.14) may lag behind.
+# If pip cannot find a compatible wheel, consider using a supported Python version
+# (3.8-3.11) or installing a CPU-only wheel from the TensorFlow website.
