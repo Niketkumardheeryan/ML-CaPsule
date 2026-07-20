@@ -29,7 +29,7 @@ jobs:
       env:
         WORKSPACE: ""
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SCAN_AUTO_BUILD: true
+        SCAN_AUTO_BUILD: false
       with:
         output: reports
         # Scan auto-detects the languages in your project. To override uncomment the below variable and set the type
