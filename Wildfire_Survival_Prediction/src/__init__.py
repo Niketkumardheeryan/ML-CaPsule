@@ -1,1 +1,0 @@
-"""Wildfire Survival Prediction package."""
