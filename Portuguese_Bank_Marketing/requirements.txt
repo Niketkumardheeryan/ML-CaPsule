@@ -9,3 +9,4 @@ jupyter
 nbformat
 ipykernel
 gdown
+imbalanced-learn
