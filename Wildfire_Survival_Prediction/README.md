@@ -35,7 +35,9 @@ This project uses data from the [WiDS Global Datathon 2026](https://www.kaggle.c
 - **Goal:** predict the probability a wildfire threatens an evacuation zone within 12, 24, 48, and 72 hours
 
 **To use it:**
-1. Join the competition on Kaggle and accept the rules: https://www.kaggle.com/competitions/WiDSWorldWide_GlobalDathon26
-2. Download `train.csv`, `test.csv`, and `metaData.csv`
-3. Place them in `Wildfire_Survival_Prediction/data/`
-4. Run the notebooks in `notebooks/`
+The dataset is hosted as a public GitHub Gist (originally sourced from the [WiDS Global Datathon 2026](https://www.kaggle.com/competitions/WiDSWorldWide_GlobalDathon26)):
+- [`train.csv`](https://gist.githubusercontent.com/aaniya22/6dc5b5551cedb694667959e21a249f00/raw/46d89936c8d98d7b9c39cbed9b133bc859f809a2/train.csv)
+- [`test.csv`](https://gist.githubusercontent.com/aaniya22/6dc5b5551cedb694667959e21a249f00/raw/46d89936c8d98d7b9c39cbed9b133bc859f809a2/test.csv)
+- [`metaData.csv`](https://gist.githubusercontent.com/aaniya22/6dc5b5551cedb694667959e21a249f00/raw/46d89936c8d98d7b9c39cbed9b133bc859f809a2/metaData.csv)
+
+Run the notebooks in `notebooks/` — they load these files directly via `pandas.read_csv()`, no manual download needed.

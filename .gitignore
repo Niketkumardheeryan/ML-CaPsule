@@ -144,7 +144,6 @@ Thumbs.db
  
 # Data files (large datasets and model weights)
 *.csv
-!Wildfire_Survival_Prediction/data/*.csv
 *.tsv
 *.xlsx
 *.xls
