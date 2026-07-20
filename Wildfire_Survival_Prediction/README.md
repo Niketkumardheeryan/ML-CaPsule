@@ -10,9 +10,8 @@ Survival analysis (time-to-event modeling) with right-censored data — not a st
 Wildfire_Survival_Prediction/
 ├── data/           # raw and processed datasets (not committed if large — see .gitignore)
 ├── notebooks/       # EDA and experimentation notebooks
-├── src/            # reusable Python modules (data prep, models, evaluation)
 ├── requirements.txt
-└── readme.md
+└── README.md
 ## Workflow
 1. **EDA** — explore censoring patterns, event timing, terrain/wind features
 2. **Baseline survival models** — Kaplan-Meier, Cox Proportional Hazards
