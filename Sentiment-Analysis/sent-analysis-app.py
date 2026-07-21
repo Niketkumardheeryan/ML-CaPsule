@@ -5,7 +5,9 @@ import streamlit as st
 import base64
 from PIL import Image
 #df = pd.read_csv('/content/drive/My Drive/amazonreviews.tsv',sep='\t')
-model=pickle.load(open('sentiment_analysis_model.p','rb'))
+import os
+MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sentiment_analysis_model.p')
+model = pickle.load(open(MODEL_PATH, 'rb'))
 
 st.set_page_config(page_title="Sentiment Analysis Web App",page_icon="",layout="centered",initial_sidebar_state="expanded",)
 st.title('Sentiment Analysis Model')

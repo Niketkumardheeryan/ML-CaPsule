@@ -1,0 +1,11 @@
+librosa==0.10.2
+numpy==1.26.4
+soundfile==0.12.1
+scikit-learn==1.5.0
+torch>=2.4.0
+torchcodec>=0.1.0
+scipy==1.13.1
+matplotlib==3.9.0
+datasets>=3.0.0
+huggingface_hub>=0.24.0
+tqdm>=4.60.0

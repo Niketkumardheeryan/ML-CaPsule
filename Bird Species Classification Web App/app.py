@@ -1,19 +1,308 @@
 import streamlit as st
 import tensorflow as tf
+from streamlit_option_menu import option_menu
+
+st.set_page_config(
+
+page_title="Bird Species Classification",
+
+page_icon="🐦",
+
+layout="wide"
+
+)
+
+st.markdown("""
+
+<style>
+
+[data-testid="stAppViewContainer"]{
+
+background:
+
+linear-gradient(
+135deg,
+#0B3D2E,
+#14532D,
+#1B4332
+);
+
+}
+
+section[data-testid="stSidebar"]{
+
+display:none;
+
+}
+
+.nav-space{
+
+margin-top:20px;
+
+}
+
+.hero{
+
+padding:60px 30px;
+
+text-align:center;
+
+color:white;
+
+border-radius:25px;
+
+background:
+
+rgba(255,255,255,.08);
+
+backdrop-filter:blur(12px);
+
+box-shadow:
+
+0 8px 30px rgba(0,0,0,.25);
+
+margin-top:20px;
+
+}
+
+.hero-title{
+
+font-size:72px;
+
+font-weight:800;
+
+}
+
+.hero-sub{
+
+font-size:24px;
+
+opacity:.9;
+
+margin-top:20px;
+
+}
+
+.info-card{
+
+background:
+
+rgba(255,255,255,.08);
+
+backdrop-filter:blur(10px);
+
+padding:30px;
+
+border-radius:20px;
+
+color:white;
+
+margin-top:40px;
+
+box-shadow:
+
+0 4px 20px rgba(0,0,0,.2);
+
+}
+
+.upload-box{
+
+background:
+
+rgba(255,255,255,.95);
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:
+
+0px 4px 20px rgba(0,0,0,.15);
+
+margin-top:20px;
+
+}
+
+.prediction-card{
+
+padding:30px;
+
+border-radius:20px;
+
+background:
+
+linear-gradient(
+135deg,
+#10B981,
+#059669
+);
+
+color:white;
+
+font-size:28px;
+
+font-weight:bold;
+
+text-align:center;
+
+box-shadow:
+
+0px 5px 25px rgba(0,0,0,.2);
+
+}
+
+.stButton > button{
+
+width:100%;
+
+height:55px;
+
+border-radius:12px;
+
+font-size:18px;
+
+font-weight:bold;
+
+}
+
+
+</style>
+
+""",unsafe_allow_html=True)
+
+
+selected = option_menu(
+
+menu_title=None,
+
+options=[
+
+"About",
+
+"Bird Species Classification"
+
+],
+
+icons=[
+
+"house",
+
+"search"
+
+],
+
+orientation="horizontal"
+
+)
+
+
+if selected=="About":
+
+    st.markdown("""
+
+    <div class='hero'>
+
+    <div class='hero-title'>
+
+      Bird Species Classification
+
+    </div>
+
+    <div class='hero-sub'>
+
+    AI Powered Bird Recognition Platform
+
+    </div>
+
+    <div class='info-card'>
+
+    Upload bird images and allow deep learning models
+    to recognize species instantly.
+
+    This platform helps researchers, students,
+    bird enthusiasts and nature lovers classify
+    hundreds of bird species quickly.
+
+    </div>
+
+    </div>
+
+    """,unsafe_allow_html=True)
+
+    # VIDEO SECTION
+
+    video_file = open("bird.mp4","rb")
+
+    video_bytes = video_file.read()
+
+    st.video(video_bytes)
+
+    st.markdown("""
+
+    <div class='info-card'>
+
+    <h2>What This Website Does?</h2>
+
+    ✔ Upload bird images<br>
+
+    ✔ Deep learning identifies species<br>
+
+    ✔ Supports hundreds of bird classes<br>
+
+    ✔ Fast AI-powered predictions
+
+    </div>
+
+    """,
+
+    unsafe_allow_html=True)
+
+
 
 @st.cache_resource
 def load_model():
-  model=tf.keras.models.load_model('./bird_classification_new_model.h5')
-  return model
+    model = tf.keras.models.load_model(
+        "bird_classification_new_model.h5"
+    )
+    return model
 with st.spinner('Model is being loaded..'):
   model=load_model()
 
-st.write("""
-         # Birds Species Classification
-         """
-         )
+with st.spinner('Loading UI...'):
+    pass
 
-file = st.file_uploader("Please upload an image of a bird", type=["jpg", "png"])
+
+if selected=="Bird Species Classification":
+
+    st.markdown("""
+
+    <div class='upload-box'>
+
+    <h1 style='text-align:center;'>
+
+    Upload Bird Image
+
+    </h1>
+
+    <p style='text-align:center;color:gray;'>
+
+    Supported formats:
+
+    JPG • PNG • JPEG
+
+    </p>
+
+    </div>
+
+    """,
+
+    unsafe_allow_html=True
+    )
+
+file = st.file_uploader(
+"",
+type=["jpg","png","jpeg"]
+)
 import cv2
 from PIL import Image, ImageOps
 import numpy as np
@@ -30,15 +319,85 @@ def import_and_predict(image_data, model):
         
         return prediction
 
-if file is None:
-    st.text("Please upload an image file")
-else:
-    image = Image.open(file)
-    st.image(image, use_column_width=True)
-    predictions = import_and_predict(image, model)
-    score = tf.nn.softmax(predictions[0])
-    index = np.argmax(predictions[0])
-    predicted_class = classes[index]
-    probability = predictions[0][index]*100
-    st.write("This bird species belongs to the ",predicted_class," species with a ",probability," percent confidence."
-)
+if selected=="Bird Species Classification":
+
+    if file is None:
+
+        st.markdown("""
+
+        <div style="
+        background:rgba(255,255,255,.08);
+        padding:16px;
+        border-radius:12px;
+        color:white;
+        font-size:18px;
+        text-align:center;
+        ">
+
+        Upload a bird image to start classification
+
+        </div>
+
+        """, unsafe_allow_html=True)
+
+    else:
+
+        image = Image.open(file)
+
+        col1,col2 = st.columns([1,1])
+
+        with col1:
+
+            st.markdown(
+            """
+            <div class="info-card">
+            <h3>Uploaded Image</h3>
+            </div>
+            """,
+            unsafe_allow_html=True
+            )
+
+            st.image(
+                image,
+                use_container_width=True
+            )
+
+        with col2:
+
+              predictions = import_and_predict(
+                  image,
+                  model
+              )
+
+              index=np.argmax(
+                  predictions[0]
+              )
+
+              predicted_class=classes[index]
+
+              probability=float(
+                  predictions[0][index]*100
+              )
+
+              st.markdown(
+              f"""
+
+              <div class="prediction-card">
+
+              Prediction
+
+              <br><br>
+
+              {predicted_class}
+
+              <br><br>
+
+              Confidence:
+              {probability:.2f}%
+
+              </div>
+
+              """,
+
+              unsafe_allow_html=True
+              )
