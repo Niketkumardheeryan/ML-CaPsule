@@ -49,12 +49,3 @@ Scatter plots of Actual vs. Predicted Prices for train and test sets.
 KDE plots and boxplots to analyze skewness and outliers.
 Bar plots for top localities, property types, and furnishing categories.
 
-# How to Run
-Clone the repo:
-git clone https://github.com/yourusername/mumbai-house-price-predictor.git
-
-Install dependencies:
-pip install -r requirements.txt
-
-Run the notebook:
-jupyter notebook Mumbai_House_Price_Predictor.ipynb
