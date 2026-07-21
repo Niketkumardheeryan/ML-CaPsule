@@ -1,0 +1,23 @@
+Data Scientist
+
+Responsibilities:
+- Build machine learning models.
+- Analyze large datasets.
+- Develop predictive analytics solutions.
+- Collaborate with cross-functional teams.
+
+Required Skills:
+- Python
+- SQL
+- Pandas
+- NumPy
+- Scikit-learn
+- Machine Learning
+- Data Visualization
+- Git
+- Docker
+- AWS
+
+Qualifications:
+- Bachelor's degree in Computer Science or related field.
+- Strong problem-solving skills.
