@@ -1,6 +1,3 @@
 opencv-python
-dlib
-imutils
+mediapipe
 numpy
-scipy
-pygame
