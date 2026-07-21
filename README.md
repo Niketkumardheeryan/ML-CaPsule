@@ -103,6 +103,7 @@
 | ⚙️ | [Contribution Guidelines](#️-contribution-guidelines) | 📖 | [Code of Conduct](#-code-of-conduct) |
 | ✨ | [Contributors](#-contributors) | ❤️ | [Stargazers & Forkers](#️-stargazers--forkers) |
 | 🔍 | [Notebook Health Check](#-notebook-health-check-bot) | 📝 | [License](#-license) |
+| 🎓 | [Interview Preparation](./Interview-Preparation/README.md) | | |
 
 ---
 
@@ -473,10 +474,11 @@ Then open a Pull Request on GitHub with a clear description of your changes.
 
 ```
 ML-CaPsule/
-├── 📂 Project folders/     # 500+ individual ML projects
-├── 📄 CONTRIBUTING.md      # Contribution guidelines
-├── 📄 CODE_OF_CONDUCT.md   # Community standards
-└── 📄 LICENSE              # MIT License
+├── 📂 Interview-Preparation/ # ML & DL Interview Q&As and System Design
+├── 📂 Project folders/       # 500+ individual ML projects
+├── 📄 CONTRIBUTING.md        # Contribution guidelines
+├── 📄 CODE_OF_CONDUCT.md     # Community standards
+└── 📄 LICENSE                # MIT License
 ```
 
 ---
