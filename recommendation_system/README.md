@@ -1,4 +1,5 @@
-# Recommendation System
+# Recommendation System (This is the system which basically recommends about movies)
+
 
 ## About the Project
 
