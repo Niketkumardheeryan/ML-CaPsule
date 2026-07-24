@@ -1,0 +1,15 @@
+# Python & Jupyter cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Machine learning trained model binary artifacts
+models/*.joblib
+
+# Datasets (Fetch dynamically via kagglehub)
+data/*.csv
+*.csv
+
+# Output EDA plots
+eda_plots/
+.cache/
