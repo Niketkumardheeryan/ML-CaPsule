@@ -8,6 +8,7 @@ The final model achieves an R² score of ~0.91 on test data, showing strong pred
 # Dataset
 Rows: 71,938
 Columns: 15 (before dropping latitude/longitude)
+https://www.kaggle.com/datasets/dravidvaishnav/mumbai-house-prices
 
 # Key Notes:
 The dataset contains a very large number of unique titles and localities (high cardinality).
