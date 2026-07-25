@@ -1,0 +1,289 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section class="section-panel form-panel">
+    <div class="form-header">
+        <div>
+            <p class="eyebrow">Prediction Engine</p>
+            <h1>Predict whether a visitor is likely to complete a purchase</h1>
+            <p>Enter session values from the dataset schema to generate a business-friendly purchase intent summary.</p>
+        </div>
+    </div>
+    <form method="post" novalidate class="prediction-form">
+        <div class="form-section-card guide-card">
+            <h2>Prediction Guide</h2>
+            <details open>
+                <summary>How this prediction is generated and what to enter</summary>
+                <p>The model estimates the likelihood that a visitor session will result in a completed purchase based on historical online shopping behaviour.</p>
+                <h3>How to fill the form</h3>
+                <div class="guide-table-wrapper">
+                    <table class="guide-table">
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Description</th>
+                                <th>Typical Range</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Administrative Pages Visited</td>
+                                <td>Number of administrative pages viewed</td>
+                                <td>0–20</td>
+                            </tr>
+                            <tr>
+                                <td>Informational Pages Viewed</td>
+                                <td>Number of informational pages viewed</td>
+                                <td>0–20</td>
+                            </tr>
+                            <tr>
+                                <td>Product Pages Viewed</td>
+                                <td>Number of product pages viewed</td>
+                                <td>0–100+</td>
+                            </tr>
+                            <tr>
+                                <td>Bounce Rate</td>
+                                <td>Percentage of sessions with a single page view</td>
+                                <td>0.00–1.00</td>
+                            </tr>
+                            <tr>
+                                <td>Exit Rate</td>
+                                <td>Percentage of sessions that ended on a page</td>
+                                <td>0.00–1.00</td>
+                            </tr>
+                            <tr>
+                                <td>Page Value Score</td>
+                                <td>Estimated value generated during the session</td>
+                                <td>0–500</td>
+                            </tr>
+                            <tr>
+                                <td>Special Day Proximity</td>
+                                <td>Indicator for a special event or holiday</td>
+                                <td>0–1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Example Profiles</h3>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <h4>Low Intent Visitor</h4>
+                        <p>Minimal browsing, high bounce behaviour, and low page value.</p>
+                        <ul>
+                            <li>Product Pages Viewed: 6</li>
+                            <li>Bounce Rate: 0.72</li>
+                            <li>Exit Rate: 0.85</li>
+                            <li>Page Value Score: 0.5</li>
+                        </ul>
+                    </div>
+                    <div class="profile-card">
+                        <h4>Moderate Intent Visitor</h4>
+                        <p>Some product exploration, moderate engagement, and mixed purchase signals.</p>
+                        <ul>
+                            <li>Product Pages Viewed: 18</li>
+                            <li>Bounce Rate: 0.28</li>
+                            <li>Exit Rate: 0.22</li>
+                            <li>Page Value Score: 22.4</li>
+                        </ul>
+                    </div>
+                    <div class="profile-card">
+                        <h4>High Intent Visitor</h4>
+                        <p>Strong product interaction, low bounce, and high session value.</p>
+                        <ul>
+                            <li>Product Pages Viewed: 45</li>
+                            <li>Bounce Rate: 0.05</li>
+                            <li>Exit Rate: 0.07</li>
+                            <li>Page Value Score: 85</li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <div class="form-section-card example-card">
+            <h2>Load Example</h2>
+            <p>Select a visitor profile to auto-fill the form for fast review.</p>
+            <div class="example-actions">
+                <button type="button" class="button button-secondary load-example" data-example="low">Example 1: Low Intent Visitor</button>
+                <button type="button" class="button button-secondary load-example" data-example="moderate">Example 2: Moderate Intent Visitor</button>
+                <button type="button" class="button button-secondary load-example" data-example="high">Example 3: High Intent Visitor</button>
+            </div>
+        </div>
+
+        <div class="form-section-card">
+            <h2>Session Activity</h2>
+            <div class="form-grid">
+                {% for field in input_fields[:6] %}
+                <label class="field-block">
+                    <span>{{ field.label }}</span>
+                    <input
+                        name="{{ field.name }}"
+                        type="number"
+                        step="{{ field.step }}"
+                        min="{{ field.min }}"
+                        max="{{ field.max }}"
+                        value="{{ values.get(field.name, '') }}"
+                        required
+                        data-invalid-message="{{ field.label }} must be between {{ field.min }} and {{ field.max }}"
+                    />
+                    {% if errors.get(field.name) %}
+                    <span class="field-error">{{ errors[field.name] }}</span>
+                    {% endif %}
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="form-section-card">
+            <h2>Engagement Metrics</h2>
+            <div class="form-grid">
+                {% for field in input_fields[6:] %}
+                <label class="field-block">
+                    <span>{{ field.label }}</span>
+                    <input
+                        name="{{ field.name }}"
+                        type="number"
+                        step="{{ field.step }}"
+                        min="{{ field.min }}"
+                        max="{{ field.max }}"
+                        value="{{ values.get(field.name, '') }}"
+                        required
+                        data-invalid-message="{{ field.label }} must be between {{ field.min }} and {{ field.max }}"
+                    />
+                    {% if errors.get(field.name) %}
+                    <span class="field-error">{{ errors[field.name] }}</span>
+                    {% endif %}
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="form-section-card">
+            <h2>Visitor Profile</h2>
+            <div class="form-grid">
+                <label class="field-block select-block">
+                    <span>Session Month</span>
+                    <select name="Month" required data-invalid-message="Select a valid session month from the dataset options.">
+                        <option value="" disabled hidden>Choose month</option>
+                        {% for value, label in month_options %}
+                        <option value="{{ value }}" {% if values.get('Month') == value %}selected{% endif %}>{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                    {% if errors.get('Month') %}
+                    <span class="field-error">{{ errors['Month'] }}</span>
+                    {% endif %}
+                </label>
+
+                <label class="field-block select-block">
+                    <span>Visitor Type</span>
+                    <select name="VisitorType" required data-invalid-message="Select a valid visitor type.">
+                        <option value="" disabled hidden>Choose visitor type</option>
+                        {% for value, label in visitor_options %}
+                        <option value="{{ value }}" {% if values.get('VisitorType') == value %}selected{% endif %}>{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                    {% if errors.get('VisitorType') %}
+                    <span class="field-error">{{ errors['VisitorType'] }}</span>
+                    {% endif %}
+                </label>
+
+                <label class="field-block select-block">
+                    <span>Weekend Visit</span>
+                    <select name="Weekend" required data-invalid-message="Select whether the session occurred over a weekend.">
+                        <option value="" disabled hidden>Choose weekend option</option>
+                        <option value="Yes" {% if values.get('Weekend') == 'Yes' %}selected{% endif %}>Yes</option>
+                        <option value="No" {% if values.get('Weekend') == 'No' %}selected{% endif %}>No</option>
+                    </select>
+                    {% if errors.get('Weekend') %}
+                    <span class="field-error">{{ errors['Weekend'] }}</span>
+                    {% endif %}
+                </label>
+
+                <label class="field-block select-block">
+                    <span>Operating System Category</span>
+                    <select name="OperatingSystems" required data-invalid-message="Select an operating system category.">
+                        <option value="" disabled hidden>Select operating system category</option>
+                        {% for value, label in os_options %}
+                        <option value="{{ value }}" {% if values.get('OperatingSystems') == value|int %}selected{% endif %}>{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                    {% if errors.get('OperatingSystems') %}
+                    <span class="field-error">{{ errors['OperatingSystems'] }}</span>
+                    {% endif %}
+                </label>
+
+                <label class="field-block select-block">
+                    <span>Browser Category</span>
+                    <select name="Browser" required data-invalid-message="Select a browser category.">
+                        <option value="" disabled hidden>Select browser category</option>
+                        {% for value, label in browser_options %}
+                        <option value="{{ value }}" {% if values.get('Browser') == value|int %}selected{% endif %}>{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                    {% if errors.get('Browser') %}
+                    <span class="field-error">{{ errors['Browser'] }}</span>
+                    {% endif %}
+                </label>
+
+                <label class="field-block select-block">
+                    <span>Region Category</span>
+                    <select name="Region" required data-invalid-message="Select a region category.">
+                        <option value="" disabled hidden>Select region category</option>
+                        {% for value, label in region_options %}
+                        <option value="{{ value }}" {% if values.get('Region') == value|int %}selected{% endif %}>{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                    {% if errors.get('Region') %}
+                    <span class="field-error">{{ errors['Region'] }}</span>
+                    {% endif %}
+                </label>
+
+                <label class="field-block select-block">
+                    <span>Traffic Source Category</span>
+                    <select name="TrafficType" required data-invalid-message="Select a traffic source category.">
+                        <option value="" disabled hidden>Select traffic source category</option>
+                        {% for value, label in traffic_options %}
+                        <option value="{{ value }}" {% if values.get('TrafficType') == value|int %}selected{% endif %}>{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                    {% if errors.get('TrafficType') %}
+                    <span class="field-error">{{ errors['TrafficType'] }}</span>
+                    {% endif %}
+                </label>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="button button-primary">Run Prediction</button>
+        </div>
+    </form>
+
+    {% if result %}
+    <section class="result-panel">
+        <h2>{{ result.title }}</h2>
+        <p class="result-description">{{ result.description }}</p>
+        <div class="result-grid">
+            <div class="result-card">
+                <span class="result-label">Purchase probability</span>
+                <strong>{{ result.probability }}</strong>
+            </div>
+            <div class="result-card">
+                <span class="result-label">Confidence score</span>
+                <strong>{{ result.confidence }}</strong>
+            </div>
+            <div class="result-card">
+                <span class="result-label">Model used</span>
+                <strong>{{ result.model }}</strong>
+            </div>
+        </div>
+        <div class="insight-panel">
+            <h3>Key indicators</h3>
+            <ul>
+                {% for indicator in result.indicators %}
+                <li>{{ indicator }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+    {% endif %}
+</section>
+{% endblock %}

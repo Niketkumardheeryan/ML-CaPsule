@@ -1,0 +1,103 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section class="section-panel">
+    <div class="section-header">
+        <div>
+            <p class="eyebrow">Analytics Dashboard</p>
+            <h1>Enterprise purchase intent intelligence</h1>
+            <p>This dashboard presents deployment-ready results for the online shoppers purchase intent model.</p>
+        </div>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-box">
+            <span class="stat-label">Total sessions</span>
+            <span class="stat-value">{{ stats.total_sessions }}</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">Purchase sessions</span>
+            <span class="stat-value">{{ stats.purchase_rate }}%</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">Browsing sessions</span>
+            <span class="stat-value">{{ stats.browse_rate }}%</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">Top predictor</span>
+            <span class="stat-value">Page Values</span>
+        </div>
+    </div>
+</section>
+
+<section class="section-panel metrics-panel">
+    <h2>Model comparison</h2>
+    <div class="model-grid">
+        {% for model in models %}
+        <article class="model-card {% if model.name == 'Deep Network' %}model-card-highlight{% endif %}">
+            <div class="model-card-header">
+                <span>{{ model.name }}</span>
+                {% if model.name == 'Deep Network' %}<span class="badge">Production model</span>{% endif %}
+            </div>
+            <div class="model-metric"><strong>Accuracy</strong><span>{{ model.accuracy }}</span></div>
+            <div class="model-metric"><strong>Precision</strong><span>{{ model.precision }}</span></div>
+            <div class="model-metric"><strong>Recall</strong><span>{{ model.recall }}</span></div>
+            <div class="model-metric"><strong>F1 score</strong><span>{{ model.f1 }}</span></div>
+            <div class="model-metric"><strong>ROC-AUC</strong><span>{{ model.roc_auc }}</span></div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="section-panel analysis-panel">
+    <div class="analysis-block">
+        <h2>Production model rationale</h2>
+        <p>The deployed Deep Network is selected for production because it offers stronger precision and ROC-AUC for purchase intent decisions, even when the MLP baseline reports slightly higher raw accuracy.</p>
+    </div>
+    <div class="analysis-block">
+        <h2>ROC-AUC analysis</h2>
+        <p>ROC-AUC reflects how well the model distinguishes between likely buyers and browsers across all score thresholds.</p>
+    </div>
+</section>
+
+<section class="section-panel">
+    <h2>Feature importance</h2>
+    <div class="feature-grid">
+        {% for item in stats.top_features %}
+        <div class="feature-card">
+            <span>{{ item.name }}</span>
+            <div class="feature-bar"><span style="width: {{ item.value * 100 }}%"></span></div>
+            <small>Correlation: {{ item.value }}</small>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="section-panel insights-panel">
+    <h2>Business insights</h2>
+    <ul>
+        <li>Sessions with high page value scores and low bounce rates are more likely to convert.</li>
+        <li>Product page interactions remain a reliable signal for purchase intent.</li>
+        <li>Weekend and special-day traffic provide useful secondary signals in the model.</li>
+        <li>Enterprise teams can use this application to monitor and react to visitor conversion trends.</li>
+    </ul>
+</section>
+
+<section class="section-panel final-panel">
+    <h2>Production model summary</h2>
+    <p>The Deep Network architecture is selected as the business-facing production model because it delivers superior precision and ROC-AUC for purchase intent prediction, while maintaining competitive accuracy.</p>
+    <div class="summary-grid">
+        <div>
+            <strong>Model</strong>
+            <p>Deep Network</p>
+        </div>
+        <div>
+            <strong>Use case</strong>
+            <p>Production purchase intent inference</p>
+        </div>
+        <div>
+            <strong>Business value</strong>
+            <p>Early detection of likely buyers to optimize marketing and conversion workflows.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
