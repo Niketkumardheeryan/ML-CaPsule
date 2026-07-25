@@ -1,44 +1,44 @@
 # Driver Drowsiness Detection
 
-A real-time driver drowsiness alert system built with OpenCV and MediaPipe Face Landmarker. It estimates eye closure from facial landmarks using the Eye Aspect Ratio (EAR) and plays an alarm when both eyes remain closed for a configurable number of consecutive frames.
+This project contains two independently documented implementations of real-time driver drowsiness detection.
 
-## Features
+## Implementations
 
-- Real-time webcam monitoring
-- MediaPipe Face Landmarker facial-landmark tracking
-- Eye Aspect Ratio (EAR) calculation for both eyes
-- Configurable EAR and consecutive-frame thresholds
-- Built-in Windows audio alert
-- No dataset, Haar Cascade XML files, or pretrained CNN model required
+| Folder | Method | Description |
+| --- | --- | --- |
+| [Legacy_Haar_CNN](Legacy_Haar_CNN) | Haar Cascades + CNN | Original implementation using Haar Cascade classifiers with a CNN for eye state classification. |
+| [MediaPipe_EAR](MediaPipe_EAR) | MediaPipe Face Landmarker + Eye Aspect Ratio (EAR) | Modern implementation using MediaPipe facial landmarks and the Eye Aspect Ratio for drowsiness detection. |
 
-## How it works
+Each implementation contains:
+- A dedicated Jupyter notebook
+- A separate README
+- A requirements.txt file
+- Implementation-specific assets
 
-MediaPipe provides landmark coordinates around each eye. The Eye Aspect Ratio compares the vertical eye distances with the horizontal eye distance:
+## Codebase
 
-    EAR = (||p2 - p6|| + ||p3 - p5||) / (2 * ||p1 - p4||)
+### Legacy Haar + CNN
+- **Folder:** [Legacy_Haar_CNN](Legacy_Haar_CNN)
+- **Notebook:** [CNN_Model.ipynb](Legacy_Haar_CNN/CNN_Model.ipynb)
+- **Detection Notebook:** [Driver_Drowsiness_Detection_Haar_CNN.ipynb](Legacy_Haar_CNN/Driver_Drowsiness_Detection_Haar_CNN.ipynb)
 
-An open eye has a larger EAR than a closed eye. The notebook raises an alert only after the average EAR stays below the configured threshold for a configured number of consecutive frames, so normal blinks do not trigger the alarm.
+### MediaPipe + EAR
+- **Folder:** [MediaPipe_EAR](MediaPipe_EAR)
+- **Notebook:** [Driver_Drowsiness_Detection_MediaPipe.ipynb](MediaPipe_EAR/Driver_Drowsiness_Detection_MediaPipe.ipynb)
 
-## Installation
+## Dataset
 
-    pip install -r requirements.txt
+### Legacy Haar + CNN
+The CNN model is trained using eye image directories (Open/Closed). The dataset is organized into training and testing folders and **does not use a CSV file**.
 
-## Run
+### MediaPipe + EAR
+This implementation performs real-time webcam inference using MediaPipe Face Landmarker and **does not require any dataset or CSV file**.
 
-Open and run Driver_Drowsiness_Detection.ipynb in Jupyter Notebook or VS Code. On the first run, the notebook downloads the official MediaPipe Face Landmarker model automatically; later runs reuse the downloaded file. Allow webcam access when prompted.
+## Running the Project
 
-- Press q in the webcam window to exit.
-- Adjust EAR_THRESHOLD for your camera and lighting conditions.
-- Adjust CLOSED_FRAME_THRESHOLD to control how long eyes must remain closed before an alarm.
+Each implementation can be executed independently by following the instructions provided in its respective README.
 
-## Dependencies
-
-- OpenCV
-- MediaPipe
-- NumPy
-
-The alarm uses Python's built-in Windows audio module, so no audio package or sound file is needed.
-
-## Note
-
-This is an educational computer-vision project and must not be used as the sole safety system in a real vehicle.
+Before submitting:
+- All notebook cells should be executed.
+- Outputs should remain saved in the notebook.
+- Follow the setup instructions inside the corresponding implementation folder.
