@@ -403,6 +403,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | Toxic Comment Classifier | NLP | Intermediate | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Toxic%20Comment%20Classifier) |
 | Currency Arbitrage with RL | Reinforcement Learning | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Currency%20Arbitrage%20with%20Reinforcement%20Learning) |
 | Sales Prediction (Research) | ML | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Sales%20Prediction) |
+| TweetMiner AI | NLP | Beginner | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/TweetMiner_AI) |
+
 
 </details>
 
