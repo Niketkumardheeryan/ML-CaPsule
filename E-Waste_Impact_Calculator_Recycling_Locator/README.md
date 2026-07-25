@@ -23,6 +23,14 @@ E-Waste_Impact_Calculator_Recycling_Locator/
 └── README.md          # Project documentation
 ```
 
+## Dataset
+
+The synthetic dataset containing device configurations along with calculated carbon footprint, toxicity score, and recyclability index is saved at:
+- **Local path:** `E-Waste_Impact_Calculator_Recycling_Locator/dataset.csv`
+- **Remote Dataset Link:** [dataset.csv](https://raw.githubusercontent.com/Rakshak05/ML-CaPsule/issue-%232028/E-Waste_Impact_Calculator_Recycling_Locator/dataset.csv) (This remote RAW link is loaded dynamically inside `train_model.py`).
+
+
+
 ## Setup & Installation
 
 1. Navigate to the project directory:

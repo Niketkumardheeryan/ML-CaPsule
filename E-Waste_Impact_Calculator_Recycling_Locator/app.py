@@ -79,7 +79,7 @@ st.markdown("""
         margin-bottom: 15px;
     }
 </style>
-""", unsafe_allow_index=True)
+""", unsafe_allow_html=True)
 
 # Main Title & Hero Header
 st.title("🌱 E-Waste Environmental Impact Calculator & Recycler Locator")
