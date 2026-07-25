@@ -1,0 +1,11 @@
+# Python & Jupyter cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datasets (Fetch dynamically via kagglehub)
+dataset/*.csv
+*.csv
+
+# Cache
+.cache/

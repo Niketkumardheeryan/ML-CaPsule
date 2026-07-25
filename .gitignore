@@ -155,6 +155,7 @@ Thumbs.db
  
 # Data files (large datasets and model weights)
 *.csv
+!Constellation_Classification/constellations.csv
 *.tsv
 *.xlsx
 *.xls
