@@ -21,6 +21,7 @@
 | Project Name | Key Concepts/Libraries | Link |
 |---|---|---|
 | Basics of ML and DL | ML fundamentals, intro to deep learning | [View](./Basics%20of%20ML%20and%20DL) |
+| Interactive ML Algorithm Recommendation Guide for Beginners | Decision tree flowchart, algorithm selection, visual comparison guide | [View](./Interactive%20ML%20Algorithm%20Recommendation%20Guide%20for%20Beginners) |
 | Basics of the Python | Python basics, syntax | [View](./Basics%20of%20the%20Python) |
 | Basics of Power Bi | Data visualization, BI tools | [View](./Basics%20of%20Power%20Bi) |
 | NumPy - Basics | numpy arrays, operations | [View](./NumPy%20-%20Basics) |
