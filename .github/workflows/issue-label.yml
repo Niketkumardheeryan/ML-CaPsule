@@ -34,13 +34,4 @@ jobs:
               repo: context.repo.repo,
               body: 'The issue is already assigned!\nPlease find/create a new issue to contribute to.\nYou can safely disregard the failed workflow notification for this issue. ❌',
             });          
-      - name: Checkout code
-        uses: actions/checkout@main
-      - name: Run Action
-        uses: Suvraneel/Issue_Watcher@main
-        with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
-          author: "${{github.actor}}"
-          repo: ${{ github.event.repository.name }} 
-          # changed it robustly to handle across all the forks!
-          maxIssue: 3
+      
