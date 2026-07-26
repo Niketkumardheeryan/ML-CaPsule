@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section class="hero-panel">
+    <div class="hero-copy">
+        <p class="eyebrow">Enterprise AI for E-commerce</p>
+        <h1>Predict purchase intent from visitor session behavior</h1>
+        <p class="hero-description">Transform real browsing sessions into actionable business insights with a deployable AI application that surfaces likely buyers before checkout.</p>
+        <div class="hero-actions">
+            <a class="button button-primary" href="{{ url_for('predict') }}">Start Prediction</a>
+            <a class="button button-secondary" href="{{ url_for('dashboard') }}">View Analytics</a>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="hero-card">
+            <div class="hero-card-title">Purchase intent view</div>
+            <div class="hero-stats-grid">
+                <div class="stat-card">
+                    <span class="stat-label">Sessions analyzed</span>
+                    <span class="stat-value">12,330</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Purchase signal</span>
+                    <span class="stat-value">15.5%</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Key predictor</span>
+                    <span class="stat-value">Page Value</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-panel">
+    <h2>Project Overview</h2>
+    <p>This solution turns online shopper activity into a deployable intelligence layer. Using session-level data and deep learning, the application predicts whether a visitor is likely to complete a purchase and provides a professional analytics dashboard for model validation.</p>
+</section>
+
+<section class="grid-panel">
+    <article>
+        <h3>Business Problem</h3>
+        <p>Online commerce teams need to identify high-value visitors early in the customer journey to personalize offers, reduce churn, and increase conversions.</p>
+    </article>
+    <article>
+        <h3>Dataset Overview</h3>
+        <p>The model uses 12,330 session records from real e-commerce traffic, including page interactions, engagement metrics, traffic source, and session metadata.</p>
+    </article>
+    <article>
+        <h3>Model Architecture</h3>
+        <p>The deployed service relies on a production-grade deep feedforward neural network trained with regularized dense layers and early stopping to reduce overfitting.</p>
+    </article>
+    <article>
+        <h3>Pipeline</h3>
+        <p>Data is preprocessed, encoded, scaled, and passed through a production-ready inference engine that validates user input and returns business-friendly purchase predictions.</p>
+    </article>
+</section>
+
+<section class="section-panel">
+    <h2>System Architecture</h2>
+    <div class="architecture-panel">
+        <div class="architecture-step">Landing page</div>
+        <div class="architecture-step">Prediction interface</div>
+        <div class="architecture-step">Flask backend</div>
+        <div class="architecture-step">Model inference</div>
+        <div class="architecture-step">Business result</div>
+        <div class="architecture-step">Analytics dashboard</div>
+    </div>
+</section>
+
+<section class="section-panel">
+    <h2>Why Deep Learning</h2>
+    <p>Deep learning enables the application to learn complex interactions across page behavior, session duration, and visitor signals that are difficult to capture with traditional rules-based systems.</p>
+</section>
+
+<section class="callout-panel">
+    <div>
+        <h3>See the product in action</h3>
+        <p>Submit real session values and see purchase intent in a format suitable for business stakeholders.</p>
+    </div>
+    <div class="callout-actions">
+        <a class="button button-primary" href="{{ url_for('predict') }}">Predict Now</a>
+        <a class="button button-secondary" href="{{ url_for('dashboard') }}">Explore Dashboard</a>
+    </div>
+</section>
+{% endblock %}

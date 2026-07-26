@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title if title else 'Online Shoppers Intention' }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand-mark">OSIP</div>
+                <div>
+                    <span class="brand-name">Online Shoppers Intention</span>
+                    <span class="brand-subtitle">Enterprise purchase intent analytics</span>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('predict') }}">Predict</a>
+                <a href="{{ url_for('dashboard') }}">Dashboard</a>
+            </nav>
+        </header>
+
+        <main class="page-content">
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer class="site-footer">
+            <p>Built with Flask, TensorFlow, and production-quality inference patterns.</p>
+            <p>Model inference powered by the Deep Network trained on real shopper session data.</p>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
