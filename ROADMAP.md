@@ -102,6 +102,7 @@
 | Bird Species Classification Web App | CNN, Flask, deployment | [View](./Bird%20Species%20Classification%20Web%20App) |
 | Brain Tumor Detection | CNN, image classification | [View](./Brain%20Tumor%20Detection) |
 | Breast Cancer Detection using DL with Webapp | Deep Learning, Flask | [View](./Breast%20Cancer%20Detection%20using%20DL%20with%20Webapp) |
+| CBOW_PyTorch | CBOW, PyTorch, Word Embeddings, NLP | [View](./CBOW_PyTorch) |
 | CBT_ChatBot | NLP, chatbot basics | [View](./CBT_ChatBot) |
 | Chatbot Using RASA | RASA, NLP, dialogue | [View](./Chatbot%20Using%20RASA) |
 | Chicken_Disease_Classification | CNN, image classification | [View](./Chicken_Disease_Classification) |
@@ -122,6 +123,7 @@
 | Diseases_Prediction | multi-class classification | [View](./Diseases_Prediction) |
 | Driver_Drowsiness_Detection | OpenCV, CNN | [View](./Driver_Drowsiness_Detection) |
 | Duplicate_Question_pair | NLP, similarity, Siamese networks | [View](./Duplicate_Question_pair) |
+| E-Waste Impact Calculator & Recycling Locator | Random Forest, Streamlit, Geospatial | [View](./E-Waste_Impact_Calculator_Recycling_Locator) |
 | Emotion Recognition Based on NLP | NLP, sentiment, classification | [View](./Emotion%20Recognition%20Based%20on%20NLP) |
 | emotion-based music recommendation | NLP, recommendation | [View](./emotion-based%20music%20recommendation) |
 | Employee_attrittion_prediction_using_ML | HR analytics, classification | [View](./Employee_attrittion_prediction_using_ML) |
