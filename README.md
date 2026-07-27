@@ -98,8 +98,8 @@
 |:---:|:---|:---|
 | 📈 | [Why Machine Learning?](#-why-machine-learning) | 🗂️ | [Topics Covered](#️-topics-covered) |
 | 📚 | [Pre-requisites](#-pre-requisites) | 📦 | [Dataset Resources](#-dataset-resources) |
-| ⭐ | [Featured Projects](#-featured-projects) | 📂 | [All Projects](#-all-projects) |
-| 🔗 | [Useful URLs](#-useful-urls) | 🚀 | [Get Started](#-get-started) |
+| 🤖 | [ML Algorithm Recommendation Guide](./Interactive%20ML%20Algorithm%20Recommendation%20Guide%20for%20Beginners) | ⭐ | [Featured Projects](#-featured-projects) |
+| 📂 | [All Projects](#-all-projects) | 🔗 | [Useful URLs](#-useful-urls) |
 | ⚙️ | [Contribution Guidelines](#️-contribution-guidelines) | 📖 | [Code of Conduct](#-code-of-conduct) |
 | ✨ | [Contributors](#-contributors) | ❤️ | [Stargazers & Forkers](#️-stargazers--forkers) |
 | 🔍 | [Notebook Health Check](#-notebook-health-check-bot) | 📝 | [License](#-license) |
@@ -363,7 +363,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 41 | [Captcha Recognition](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Defective%20Captcha%20Image%20Recognition) | 42 | [Diabetes Prediction](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Diabetes%20Prediction) | 43 | [Clustering Types](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different%20types%20of%20Clustering) | 44 | [Feature Selection](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different%20types%20of%20feature%20selection%20techniques) |
 | 45 | [Scaling Methods](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different_types_of_scaling_Method) | 46 | [Diseases Prediction](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Diseases_Prediction) | 47 | [Drowsiness Detection](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Driver_Drowsiness_Detection) | 48 | [Duplicate Questions](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Duplicate_Question_pair) |
 | 49 | [Ionosphere EDA](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main) | 50 | [Email Classifier](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Email%20Classifier) | 51 | [Emotion Recognition](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Emotion%20Recognition%20Based%20on%20NLP) | 52 | [Eye Gaze Tracking](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Eye_Gaze_Tracking_Attention_Estimation) |
-| 53 | [Bank Marketing](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Portuguese_Bank_Marketing) | 54 | [CBOW PyTorch](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/CBOW_PyTorch) | | | | |
+| 53 | [Bank Marketing](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Portuguese_Bank_Marketing) | 54 | [Constellation Classification](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Constellation_Classification) | | | | |
+| 55 | [CBOW PyTorch](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/CBOW_PyTorch) | | | | |
 
 > 📌 **& many more...** Explore the full repository for 500+ additional projects!
 
@@ -380,6 +381,7 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | Medical Cost Prediction | ML | Beginner | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Medical%20Cost%20Prediction) |
 | Heart Disease Detection | ML | Beginner | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Heart%20Disease%20Prediction) |
 | Water Potability | ML | Intermediate | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Water%20Potability) |
+| Constellation Classification | ML | Intermediate | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Constellation_Classification) |
 
 </details>
 
