@@ -1,100 +1,282 @@
 # 🏠 House Price Prediction
 
-## GOAL
-Predict California housing prices using regression techniques, leveraging features such as geographic location, household income, and housing characteristics. This project demonstrates a complete supervised machine learning pipeline from data loading to hyperparameter tuning.
+## Overview
+
+This project predicts California housing prices using supervised machine learning techniques. It demonstrates a complete end-to-end regression pipeline, including data loading, preprocessing, feature engineering, model training, hyperparameter tuning, evaluation, and model serialization.
+
+The notebook compares multiple regression algorithms and selects the best-performing model for predicting median house values.
 
 ---
 
-## DATASET
-- **Source:** California Housing Dataset (Aurélien Géron — Hands-On ML2 repository)
-- **Auto-fetch:** The notebook automatically downloads the dataset on first run
-- **Training Examples:** ~16,512
-- **Test Examples:** ~4,128
-- **Target Variable:** `median_house_value` (USD)
+## Dataset
+
+- **Dataset:** California Housing Dataset
+- **Source:** Aurélien Géron's Hands-On Machine Learning repository
+- **Training Samples:** ~16,512
+- **Testing Samples:** ~4,128
+- **Target Variable:** `median_house_value`
+
+> The dataset is automatically downloaded during the first execution of the notebook. Future runs use the cached local copy.
 
 ---
 
-## MODELS USED
-| Model | RMSE | Notes |
-|---|---|---|
-| Linear Regression | ~67,239 | Baseline — underfits the data |
-| Decision Tree Regressor | ~69,383 | Overfits — poor cross-val performance |
-| **Random Forest Regressor** | **~48,100** | **Best model — used for final evaluation** |
+## Model Performance
 
-**Final R² Score: 82.25%** (after Grid Search CV hyperparameter tuning)
+| Model | RMSE | Remarks |
+|------|------:|------|
+| Linear Regression | ~67,239 | Baseline model |
+| Decision Tree Regressor | ~69,383 | Overfits the training data |
+| **Random Forest Regressor** | **47,149.20** | Best-performing model after GridSearchCV |
+
+### Final Metrics
+
+- **RMSE:** **47,149.20**
+- **R² Score:** **82.94%**
 
 ---
 
-## LIBRARIES NEEDED
+# Project Structure
+
 ```
-numpy
-pandas
-matplotlib
-scikit-learn
-six
-joblib
+Housing_Prediction/
+│
+├── Dataset/
+│   └── housing.csv
+│
+├── Model/
+│   ├── des_tree.pkl
+│   └── lin_reg.pkl
+│
+├── 2-project-houseprediction/
+│   ├── house-price-pridiction.ipynb
+│   ├── readme.md
+│   └── submission.csv
+│
+├── main_housing.ipynb
+├── Readme.md
+└── requirements.txt
 ```
 
-Install all at once:
+---
+
+# Requirements
+
+Install the required dependencies using:
+
 ```bash
-pip install numpy pandas matplotlib scikit-learn six joblib
+pip install -r requirements.txt
 ```
+
+Required packages:
+
+- numpy
+- pandas
+- matplotlib
+- scikit-learn
+- six
+- joblib
 
 ---
 
-## HOW TO RUN
+# Installation
 
-**Step 1 — Clone the repository and navigate to the project:**
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Niketkumardheeryan/ML-CaPsule.git
+```
+
+### 2. Navigate to the project
+
 ```bash
 cd ML-CaPsule/Housing_Prediction
 ```
 
-**Step 2 — Install dependencies:**
+### 3. (Optional) Create a virtual environment
+
+**Windows**
+
 ```bash
-pip install numpy pandas matplotlib scikit-learn six joblib
+python -m venv venv
+venv\Scripts\activate
 ```
 
-**Step 3 — Launch Jupyter Notebook:**
+**Linux/macOS**
+
 ```bash
-jupyter notebook main_housing.ipynb
+python3 -m venv venv
+source venv/bin/activate
 ```
 
-**Step 4 — Run all cells in order:**
-Go to `Kernel → Restart & Run All`
+### 4. Install dependencies
 
-> **Note:** The first run will automatically download the dataset from the internet. Subsequent runs use the cached local copy.
-
----
-
-## STEPS FOLLOWED
-
-1. **Data Loading** — Fetches the California Housing dataset from Aurélien Géron's Hands-On ML2 GitHub repository and loads it into a pandas DataFrame.
-
-2. **Stratified Train/Test Split** — Creates an `income_cat` column by binning `median_income` into 5 brackets, then uses `StratifiedShuffleSplit` to maintain the income distribution in both the training (80%) and test (20%) sets. This prevents sampling bias on the most important feature.
-
-3. **Exploratory Data Analysis (EDA)** — Engineers three new informative features:
-   - `rooms_per_house` = total_rooms / households
-   - `bedrooms_per_rooms` = total_bedrooms / total_rooms
-   - `population_per_house` = population / households
-   
-   Then computes Pearson correlation to identify the strongest predictors of house value.
-
-4. **Data Preprocessing Pipeline** — Applies a `ColumnTransformer` that:
-   - Imputes missing values in numeric columns using the median
-   - Scales numeric features using `StandardScaler`
-   - One-hot encodes the categorical `ocean_proximity` feature
-
-5. **Model Training & Comparison** — Trains three models (Linear Regression, Decision Tree, Random Forest) and compares them using 10-fold cross-validation RMSE scores.
-
-6. **Hyperparameter Tuning** — Uses `GridSearchCV` to find the optimal `n_estimators` and `max_features` for the Random Forest Regressor across 90 training runs.
-
-7. **Final Evaluation** — Evaluates the best model on the held-out test set, reporting RMSE and R² score.
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## CONCLUSION
-The **Random Forest Regressor** significantly outperformed both the Linear Regression and Decision Tree models. The stratified split on `median_income` ensured both the training and test sets accurately reflect the income distribution of the full dataset, leading to more reliable model evaluation. Hyperparameter tuning via Grid Search CV further improved performance, achieving an R² of **82.25%** and an RMSE of **~48,100 USD**.
+# How to Run
+
+### Step 1
+
+Launch Jupyter Notebook or JupyterLab.
+
+```bash
+jupyter notebook
+```
+
+or
+
+```bash
+jupyter lab
+```
+
+### Step 2
+
+Open
+
+```
+main_housing.ipynb
+```
+
+### Step 3
+
+Run all notebook cells sequentially.
+
+The notebook will automatically:
+
+- Download the California Housing dataset (if not already present)
+- Perform data preprocessing
+- Create engineered features
+- Train multiple regression models
+- Tune the Random Forest model using GridSearchCV
+- Evaluate the final model
+- Save serialized models in the `Model/` directory where applicable
 
 ---
 
-*Contributed by: [Chirag](https://github.com/chiragHimself)*
+# Machine Learning Pipeline
+
+## 1. Data Loading
+
+The California Housing dataset is downloaded and loaded into a Pandas DataFrame.
+
+---
+
+## 2. Stratified Train-Test Split
+
+The dataset is divided using **StratifiedShuffleSplit** based on categorized median income to preserve the income distribution across training and testing datasets.
+
+---
+
+## 3. Feature Engineering
+
+Additional informative features are created:
+
+- Rooms per Household
+- Bedrooms per Room
+- Population per Household
+
+Correlation analysis is then performed to identify influential predictors.
+
+---
+
+## 4. Data Preprocessing
+
+A preprocessing pipeline performs:
+
+- Median imputation for missing values
+- Standardization of numerical features
+- One-Hot Encoding of `ocean_proximity`
+
+using a `ColumnTransformer`.
+
+---
+
+## 5. Model Training
+
+The notebook trains and compares:
+
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+
+using cross-validation.
+
+---
+
+## 6. Hyperparameter Tuning
+
+GridSearchCV searches for the best Random Forest hyperparameters, including:
+
+- `n_estimators`
+- `max_features`
+
+to maximize predictive performance.
+
+---
+
+## 7. Final Evaluation
+
+The optimized model is evaluated on the held-out test set using:
+
+- Root Mean Squared Error (RMSE)
+- R² Score
+
+---
+
+# Model Directory
+
+The `Model/` directory stores serialized machine learning models for reuse without retraining.
+
+| File | Description |
+|------|-------------|
+| `des_tree.pkl` | Serialized Decision Tree Regressor model. |
+| `lin_reg.pkl` | Serialized Linear Regression model. |
+
+These models can be loaded directly using Joblib for inference or experimentation.
+
+---
+
+# Loading a Saved Model
+
+```python
+import joblib
+
+model = joblib.load("Model/lin_reg.pkl")
+
+predictions = model.predict(sample_data)
+
+print(predictions)
+```
+
+Similarly, the Decision Tree model can be loaded using:
+
+```python
+tree_model = joblib.load("Model/des_tree.pkl")
+```
+
+> **Note:** The Random Forest model is trained and evaluated within the notebook. If exported, it can also be serialized using Joblib following the same approach.
+
+---
+
+# Conclusion
+
+The Random Forest Regressor achieves the best predictive performance for this dataset after hyperparameter tuning.
+
+The project demonstrates an end-to-end machine learning workflow covering preprocessing, feature engineering, model comparison, hyperparameter optimization, evaluation, and model serialization.
+
+**Best Results**
+
+- **Model:** Random Forest Regressor
+- **RMSE:** **47,149.20**
+- **R² Score:** **82.94%**
+
+---
+
+## Author
+
+**Chirag**
+
+GitHub: https://github.com/chiragHimself
