@@ -98,8 +98,8 @@
 |:---:|:---|:---|
 | 📈 | [Why Machine Learning?](#-why-machine-learning) | 🗂️ | [Topics Covered](#️-topics-covered) |
 | 📚 | [Pre-requisites](#-pre-requisites) | 📦 | [Dataset Resources](#-dataset-resources) |
-| ⭐ | [Featured Projects](#-featured-projects) | 📂 | [All Projects](#-all-projects) |
-| 🔗 | [Useful URLs](#-useful-urls) | 🚀 | [Get Started](#-get-started) |
+| 🤖 | [ML Algorithm Recommendation Guide](./Interactive%20ML%20Algorithm%20Recommendation%20Guide%20for%20Beginners) | ⭐ | [Featured Projects](#-featured-projects) |
+| 📂 | [All Projects](#-all-projects) | 🔗 | [Useful URLs](#-useful-urls) |
 | ⚙️ | [Contribution Guidelines](#️-contribution-guidelines) | 📖 | [Code of Conduct](#-code-of-conduct) |
 | ✨ | [Contributors](#-contributors) | ❤️ | [Stargazers & Forkers](#️-stargazers--forkers) |
 | 🔍 | [Notebook Health Check](#-notebook-health-check-bot) | 📝 | [License](#-license) |
