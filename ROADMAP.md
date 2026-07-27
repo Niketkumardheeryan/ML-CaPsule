@@ -123,6 +123,7 @@
 | Diseases_Prediction | multi-class classification | [View](./Diseases_Prediction) |
 | Driver_Drowsiness_Detection | OpenCV, CNN | [View](./Driver_Drowsiness_Detection) |
 | Duplicate_Question_pair | NLP, similarity, Siamese networks | [View](./Duplicate_Question_pair) |
+| E-Waste Impact Calculator & Recycling Locator | Random Forest, Streamlit, Geospatial | [View](./E-Waste_Impact_Calculator_Recycling_Locator) |
 | Emotion Recognition Based on NLP | NLP, sentiment, classification | [View](./Emotion%20Recognition%20Based%20on%20NLP) |
 | emotion-based music recommendation | NLP, recommendation | [View](./emotion-based%20music%20recommendation) |
 | Employee_attrittion_prediction_using_ML | HR analytics, classification | [View](./Employee_attrittion_prediction_using_ML) |
