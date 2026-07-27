@@ -2,6 +2,8 @@
 
 # 🧠 ML-CaPsule
 
+[📖 Code of Conduct](CODE_OF_CONDUCT.md) • [🤝 Contributing Guidelines](CONTRIBUTING.md) • [🗺️ Learning Roadmap](ROADMAP.md) • [📋 Project Template](.github/readme_template.md) • [🔀 PR Template](.github/pullrequest_template.md)
+
 ### *Hands-on Machine Learning — From Basics to Advanced*
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=45FFAA&center=true&vCenter=true&width=900&lines=Welcome+to+ML-CaPsule!;500%2B+Real-World+ML+Projects;Learn+ML+%7C+DL+%7C+NLP+%7C+CV;Open+Source+%E2%80%A2+Interview+Ready)](https://github.com/Niketkumardheeryan/ML-CaPsule)
@@ -471,15 +473,63 @@ git push origin my-feature
 
 Then open a Pull Request on GitHub with a clear description of your changes.
 
-### 📁 Repository Structure
+### 📁 Repository Structure & Architecture
 
 ```
 ML-CaPsule/
-├── 📂 Project folders/     # 500+ individual ML projects
-├── 📄 CONTRIBUTING.md      # Contribution guidelines
-├── 📄 CODE_OF_CONDUCT.md   # Community standards
-└── 📄 LICENSE              # MIT License
+├── 📂 .github/                   # GitHub templates & workflows
+│   ├── ISSUE_TEMPLATE/           # Standardized issue templates
+│   ├── readme_template.md        # Template for project READMEs
+│   └── pullrequest_template.md   # Template for submitting Pull Requests
+├── 📂 Project Folders/           # 500+ self-contained ML/DL/NLP/CV projects
+│   ├── 📂 <Project_Name>/        # Individual project folder (descriptive name)
+│   │   ├── 📄 README.md          # Project specific description, results & instructions
+│   │   ├── 📄 *.ipynb / *.py     # Implementation notebooks/scripts
+│   │   ├── 📄 requirements.txt   # (Optional) Folder-specific dependencies
+│   │   └── 📂 assets / images    # Screenshots & visual demonstrations
+├── 📄 build_readme.py            # Utility script for automated README index updating
+├── 📄 CODE_OF_CONDUCT.md         # Community behavioral standards
+├── 📄 CONTRIBUTING.md            # Detailed contribution workflow & coding guidelines
+├── 📄 LICENSE                    # MIT License
+├── 📄 README.md                  # Main repository overview & directory hub
+└── 📄 ROADMAP.md                  # Structured 3-tier learning path (Beginner/Intermediate/Advanced)
 ```
+
+#### 🏗️ Architecture & Component Responsibilities
+
+1. **Self-Contained ML Projects**: Each directory represents an isolated Machine Learning workspace containing its own dataset loader, model training routine, analysis, visual outputs, and project README.
+2. **Standardized Documentation Engine**: All sub-projects conform to [.github/readme_template.md](.github/readme_template.md) to ensure consistent presentation of goals, models used, tech stack, and evaluation metrics.
+3. **Automated Indexing**: `build_readme.py` acts as a repository maintenance tool that dynamically updates project listings.
+4. **Structured Roadmap**: `ROADMAP.md` organizes projects into clear skill tiers (Beginner, Intermediate, Advanced) guiding new learners step by step.
+
+---
+
+## Frequently Asked Questions & Troubleshooting
+
+<details>
+<summary><b>Q1: How do I choose which project to start with?</b></summary>
+
+Refer to [ROADMAP.md](ROADMAP.md) which classifies projects into Beginner (foundational ML & EDA), Intermediate (Neural Networks, NLP, Web Apps), and Advanced (Computer Vision, Reinforcement Learning, Transformers).
+</details>
+
+<details>
+<summary><b>Q2: What if a project has missing Python packages?</b></summary>
+
+Ensure your virtual environment is active and install common data science packages:
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn jupyter
+```
+If the project folder contains a local `requirements.txt`, install it directly using:
+```bash
+pip install -r requirements.txt
+```
+</details>
+
+<details>
+<summary><b>Q3: Should I submit Jupyter Notebooks (`.ipynb`) or Python scripts (`.py`)?</b></summary>
+
+Jupyter Notebooks (`.ipynb`) are preferred for project submissions as they combine code, visualization outputs, and explanations. Ensure all notebook cells are executed before committing.
+</details>
 
 ---
 
