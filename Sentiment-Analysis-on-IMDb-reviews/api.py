@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "ccb04c2c5a99c2c5c2033e0e44226b71"
+API_KEY = "Add_API_KEY"
 
 BASE_URL = "https://api.themoviedb.org/3"
 
