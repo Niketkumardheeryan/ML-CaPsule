@@ -16,5 +16,13 @@ Link to the dataset: [Cyberbullying Classification Dataset](https://www.kaggle.c
 3. Random Forest Classifier
 4. Voting Classifier (Ensemble Model): Combines predictions from the above models using a majority voting scheme.
 
+## How to run dashboard?
+
+- Run all cells in training notebook to train and save model weights
+- Run
+```bash
+streamlit run app.py
+```
+
 ## Contribution
 Contributions are welcome! Feel free to submit issues, feature requests, or pull requests to improve the system.
