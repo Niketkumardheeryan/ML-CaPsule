@@ -643,15 +643,6 @@ This makes the prediction process more transparent by helping users understand *
 
 ---
 
-# 📸 Application Preview
-
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-
-*Streamlit web application for predicting student placement based on academic performance, skills, and experience.*
-
----
 
 
 # ▶️ Running the Project
