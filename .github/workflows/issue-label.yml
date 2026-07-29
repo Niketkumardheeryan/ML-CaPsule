@@ -20,7 +20,8 @@ jobs:
           days_until_unassign: 7
           stale_assignment_label: Stale
           assigned_comment: "This issue [has been assigned]({{ comment.html_url }}) to {{ comment.user.login }}!\nIt will become unassigned if it is nott closed within {{ totalDays }} days. A maintainer can also add the **{{ inputs.pin_label }}** label to prevent it from being unassigned."
-          fail_comment: "This issue is already assigned to a contributor."
+          # fail_comment: "This issue is already assigned to a contributor."
+          # this not required and is not required by the workflow as mentioned in the documentation of https://github.com/JasonEtco/slash-assign-action
 
       - name: Message failure
         if: ${{ failure() }}
@@ -33,12 +34,4 @@ jobs:
               repo: context.repo.repo,
               body: 'The issue is already assigned!\nPlease find/create a new issue to contribute to.\nYou can safely disregard the failed workflow notification for this issue. ❌',
             });          
-      - name: Checkout code
-        uses: actions/checkout@main
-      - name: Run Action
-        uses: Suvraneel/Issue_Watcher@main
-        with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
-          author: "${{github.actor}}"
-          repo: Suvraneel/Automated-assign-labeler #Change the Repo name
-          maxIssue: 3
+      

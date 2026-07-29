@@ -1,63 +1,103 @@
-# 🎇Contributing Guidelines
+# 🎇 Contributing Guidelines
+
+[🏠 Main README](README.md) • [📖 Code of Conduct](CODE_OF_CONDUCT.md) • [🗺️ Learning Roadmap](ROADMAP.md) • [📋 Project README Template](.github/readme_template.md) • [🔀 PR Template](.github/pullrequest_template.md)
 
 This documentation contains a set of guidelines to help you during the contribution process.
 
-We welcome all contributions from anyone willing to add new scripts to this repository. Thank you for helping out — **no contribution is too small.**
+We welcome all contributions from anyone willing to add new scripts or refine projects in this repository. Thank you for helping out — **no contribution is too small.**
 
 ---
 
-## 💻Before Contributing
+## 💻 Local Environment Setup
 
-Welcome to [ML-CaPsule](https://github.com/Niketkumardheeryan/ML-CaPsule). Before sending your pull requests, make sure that you **read the whole guidelines**. If you have any doubt on the contributing guide, please feel free to reach out.
+Before contributing, set up a isolated Python development environment to ensure clean dependencies.
+
+```bash
+# 1. Clone your fork
+git clone https://github.com/<your-username>/ML-CaPsule.git
+cd ML-CaPsule
+
+# 2. Create and activate a virtual environment
+# Windows (PowerShell):
+python -m venv venv
+.\venv\Scripts\activate
+
+# Linux / macOS:
+python -m venv venv
+source venv/bin/activate
+
+# 3. Install core dependencies & Jupyter Notebook
+pip install --upgrade pip
+pip install numpy pandas matplotlib seaborn scikit-learn jupyter notebook
+```
 
 ---
 
-## 🙌Contribution
+## 🙌 Contribution Scope
 
-Any contribution is accepted, from fixing grammatical mistakes to implementing complex Python scripts. Please read this section if you are contributing your work.
+Any contribution is accepted, from fixing documentation typos to implementing complex Machine Learning models, Deep Learning architectures, NLP pipelines, and Computer Vision solutions.
 
 ---
 
-## 🔖Steps to Contribute
+## 🔖 Step-by-Step Contribution Workflow
 
-1. **Fork the repo** and clone it on your machine:
-   ```
+1. **Fork the repo** and clone it on your local machine:
+   ```bash
    git clone https://github.com/<your-username>/ML-CaPsule.git
    ```
 
-2. **Add an upstream link** to the main branch in your cloned repo:
-   ```
+2. **Add an upstream link** to track changes from the main repository:
+   ```bash
    git remote add upstream https://github.com/Niketkumardheeryan/ML-CaPsule.git
    ```
 
-3. **Keep your cloned repo up to date** by pulling from upstream (this also avoids merge conflicts):
-   ```
-   git pull upstream main
-   ```
-
-4. **Create your feature branch** (do not skip this step):
-   ```
-   git checkout -b <feature-name>
+3. **Keep your repo up to date** by syncing with `upstream`:
+   ```bash
+   git fetch upstream
+   git checkout main
+   git merge upstream/main
    ```
 
-5. **Commit your changes** with a meaningful but concise message:
+4. **Create a descriptive feature branch** (do not work directly on `main`):
+   ```bash
+   # Branch Naming Conventions:
+   #   feature/<feature-name> (for new ML project / feature)
+   #   fix/<bug-name>         (for bug fixes)
+   #   docs/<doc-name>        (for documentation improvements)
+   git checkout -b feature/heart-disease-predictor
    ```
-   git commit -m "Write a meaningful but small commit message"
+
+5. **Commit your changes** with clear, imperative commit messages:
+   ```bash
+   # Format: <type>: <short summary>
+   git commit -m "docs: improve project structure section in CONTRIBUTING.md"
    ```
 
-6. **Push the changes** for review:
+6. **Push the branch** to your fork:
+   ```bash
+   git push origin feature/heart-disease-predictor
    ```
-   git push origin <branch-name>
-   ```
 
-7. **Create a PR on GitHub.** Don't just hit the button — write a PR message to clarify why and what you are contributing.
+7. **Create a Pull Request on GitHub**:
+   Follow the provided [.github/pullrequest_template.md](.github/pullrequest_template.md) template, link the corresponding issue (`Closes #issue_number`), and attach screenshots/results.
 
-### 💡What should I keep in mind while contributing?
+---
 
-## 🔨Note
+## 🏗️ Project Structure Expectations for New Submissions
 
-> - Do not edit/delete someone else's code in this repository. You can only insert new files/folders.
-> - Give a meaningful name to whatever file or folder you are adding. For example, if you have written a Python script for Hello World, then `hello_world.py` is a valid name.
+When adding a new project directory to `ML-CaPsule`, ensure it contains:
+1. **Descriptive Folder Name**: Use clear names (e.g., `Heart_Disease_Prediction`).
+2. **Standardized README.md**: Follow the structure in [.github/readme_template.md](.github/readme_template.md).
+3. **Executable Notebook (`.ipynb`)**: Clear outputs, code comments, and visualizations.
+4. **Visual Demonstrations**: Screenshots, output tables, or confusion matrices stored in an `assets/` or `images/` folder inside the project directory.
+
+---
+
+## 🔨 Repository Rules & Best Practices
+
+> - Do not edit/delete someone else's code unless explicitly fixing a bug or improving performance.
+> - Avoid duplicate projects; check existing directories or [ROADMAP.md](ROADMAP.md) before starting.
+> - Maintain clean snake_case file names for scripts (e.g., `model_training.py`).
 
 ---
 
