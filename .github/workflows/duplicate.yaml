@@ -1,0 +1,40 @@
+name: Duplicate Issue Detector
+
+# Triggers the workflow whenever a new issue is opened
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  detect-duplicate:
+    runs-on: ubuntu-latest
+    
+    # Required permissions for the GITHUB_TOKEN to add comments and labels
+    permissions:
+      issues: write
+      contents: read 
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # sentence-transformers will automatically install torch and transformers
+          pip install pandas numpy scikit-learn sentence-transformers PyGithub
+
+      - name: Run Duplicate Detector Script
+        env:
+          # Automatically provided by GitHub Actions
+          Token: ${{ secrets.GITHUB_TOKEN }}
+          Issue: ${{ github.event.issue.number }}
+          Repo: ${{ github.repository }}
+        run: |
+          python .github/scripts/check_for_duplicates.py
