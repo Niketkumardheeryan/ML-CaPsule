@@ -88,9 +88,12 @@ sim_issue_id = df.loc[max_sim_idx, 'ids']
 if max_sim_score > 0.7:
     print(f"Duplicate found! Issue #{sim_issue_id} with score {max_sim_score:.2f}")
     target_issue.create_comment(
-        f"Found a similar issue #{sim_issue_id}. Please explain the differences if you feel the bot made a false positive."
+        f"Found a similar issue #{sim_issue_id} with a similarity score of {max_sim_score:.2f}. Please explain the differences to respective maintainer or collaborator eith write access if you feel the bot made a false positive. The issue will be reopened if found genuine"
     )
     target_issue.add_to_labels("duplicate")
+    target_issue.add_to_labels("needs-issue-review")
+    print(f"Closing {issue_no}")
+    target_issue.edit(state="closed")
 else:
     print("No duplicates found.")
     sys.exit(0)
