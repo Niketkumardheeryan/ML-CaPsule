@@ -642,7 +642,11 @@ Once all details are entered, clicking the **Predict** button displays:
 This makes the prediction process more transparent by helping users understand **why** the model generated a particular prediction instead of only displaying the final result.
 
 ---
+### Correlation Heatmap
 
+![Correlation Heatmap](correlation_heatmap.png)
+
+The correlation heatmap shows the relationship between numerical features in the dataset. Correlation values range from **-1 to +1**, where **+1** indicates a strong positive correlation, **-1** indicates a strong negative correlation, and **0** indicates no linear relationship. It helps identify feature relationships before model training.
 
 
 # ▶️ Running the Project
