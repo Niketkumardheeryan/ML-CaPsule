@@ -18,21 +18,22 @@ This project implements a state-of-the-art machine learning system to predict no
 
 ---
 
+## Dataset
+
+The dataset contains normalized traffic demand (0.0 to 1.0) along with 15-minute timestamps, geohashes, road types, and weather conditions.
+
+- **Dataset Link**: Hosted as a public GitHub Gist: [`traffic_demand_dataset.csv`](https://gist.githubusercontent.com/Rakshak05/7376a9172bc97df255562725e24a87c1/raw/traffic_demand_dataset.csv)
+
+---
+
 ## Directory Structure
 
 ```text
 Traffic_Demand_Prediction/
-├── data/
-│   └── traffic_demand_dataset.csv     # Traffic logs with coordinates, geohashes, road types
 ├── models/
 │   ├── lightgbm_model.pkl             # Serialized LightGBM weights
 │   └── catboost_model.cbm             # CatBoost model weights
-├── images/
-│   ├── demand_distribution.png        # Visualization of demand labels
-│   ├── hourly_demand_by_road_type.png # Peak hour demand trends
-│   ├── weekly_demand.png              # Weekday vs Weekend demand profile
-│   ├── actual_vs_predicted.png        # Scatter plot of model predictions
-│   └── feature_importance.png         # Feature importance chart
+├── Traffic_Demand_Prediction_Report.pdf # Comprehensive technical PDF report
 ├── traffic_demand_prediction.ipynb    # Main Jupyter Notebook walkthrough
 ├── requirements.txt                   # Environment setup dependencies
 └── README.md                          # Documentation
@@ -52,16 +53,11 @@ Evaluation metrics computed on the chronological out-of-time test set (20% split
 
 ---
 
-## Visualizations
+## Technical Report & Visualizations
 
-### 1. Demand Patterns by Road Type
-![Hourly Demand](images/hourly_demand_by_road_type.png)
+All detailed exploratory data analysis, visual charts, feature importance plots, and model evaluation metrics are documented in the technical PDF report:
 
-### 2. Feature Importance
-![Feature Importance](images/feature_importance.png)
-
-### 3. Model Accuracy (Actual vs. Predicted)
-![Actual vs Predicted](images/actual_vs_predicted.png)
+📄 **[Traffic_Demand_Prediction_Report.pdf](Traffic_Demand_Prediction_Report.pdf)**
 
 ---
 
