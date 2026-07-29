@@ -78,14 +78,14 @@ print("Done!")
 print("Checking for similar issues")
 
 # Calculate the combined average similarity score
-df['avg_sim'] = (df['sim_title'] + df['sim_body']) / 2
+df['avg_sim'] = (0.35*df['sim_title'] + 0.65*df['sim_body']) / 2
 
 # Find the row with the maximum similarity
 max_sim_idx = df['avg_sim'].idxmax()
 max_sim_score = df['avg_sim'].max()
 sim_issue_id = df.loc[max_sim_idx, 'ids']
 
-if max_sim_score > 0.7:
+if max_sim_score > 0.85:
     print(f"Duplicate found! Issue #{sim_issue_id} with score {max_sim_score:.2f}")
     target_issue.create_comment(
         f"Found a similar issue #{sim_issue_id} with a similarity score of {max_sim_score:.2f}. Please explain the differences to respective maintainer or collaborator eith write access if you feel the bot made a false positive. The issue will be reopened if found genuine"
