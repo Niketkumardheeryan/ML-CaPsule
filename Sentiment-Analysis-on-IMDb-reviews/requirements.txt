@@ -4,3 +4,4 @@ pandas
 plotly
 textblob
 nltk
+python-dotenv

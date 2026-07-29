@@ -1,8 +1,15 @@
+import os
+from dotenv import load_dotenv
 import requests
 
-API_KEY = "Add_API_KEY"
+load_dotenv()
 
-BASE_URL = "https://api.themoviedb.org/3"
+API_KEY = os.getenv("TMDB_API_KEY")
+
+if not API_KEY:
+    raise ValueError("TMDB_API_KEY not found. Please configure it in the .env file.")
+
+# BASE_URL = "https://api.themoviedb.org/3"     /3 is the version of the api.
 
 
 def get_movies(movie_name):

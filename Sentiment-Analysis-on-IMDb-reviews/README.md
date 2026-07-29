@@ -56,10 +56,23 @@ A Streamlit interface has been added as an alternative way to interact with the 
 * Visualize sentiment distribution
 * Display review predictions
 
-### Run the Streamlit App
+### Environment Variables
+
+Create a `.env` file in the project root and add your TMDB API key:
+
+```env
+TMDB_API_KEY=your_tmdb_api_key
+```
+
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Run the Streamlit app:
+
+```bash
 streamlit run app.py
 ```
 
@@ -91,9 +104,6 @@ streamlit run app.py
 
 <br>
 
-## Output Preview 👇
-
-![image](https://user-images.githubusercontent.com/54144759/169329120-c4a5afcd-6ce4-433f-b0c2-b4b05e88483d.png)
 
 ## Streamlit Version Output
 <img width="1918" height="967" alt="Screenshot 2026-07-28 110630" src="https://github.com/user-attachments/assets/fb4f34e7-9275-4745-84a8-7daa731b7d39" />
