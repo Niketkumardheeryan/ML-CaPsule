@@ -1,0 +1,12 @@
+# Core dependency - used for weather, news and the Wikipedia REST fallback.
+requests>=2.28.0
+
+# Optional dependencies. The assistant detects each one at runtime and falls
+# back to a text-only or platform-native path when it is missing, so it starts
+# and runs even if none of these are installed.
+pyttsx3>=2.90            # offline text-to-speech synthesis
+SpeechRecognition>=3.10  # microphone speech-to-text (also needs PyAudio)
+wikipedia>=1.4.0         # Wikipedia summaries
+psutil>=5.9.0            # battery telemetry
+pyautogui>=0.9.54        # desktop screenshots
+pyperclip>=1.8.2         # clipboard access

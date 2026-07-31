@@ -1,0 +1,103 @@
+=== Voice & CLI Virtual Assistant - recorded demo session ===
+Host: macOS (Darwin 25.5.0, arm64) | Python 3.14
+Installed extras: requests, psutil, wikipedia, pyperclip, pyttsx3, SpeechRecognition
+Not installed: pyautogui (screenshot falls back to the native macOS utility)
+
+--- 1. One-shot commands --------------------------------------------
+
+$ python main.py --no-tts --say "hello"
+assistant > Good morning! How can I help you?
+
+$ python main.py --no-tts --say "what is the time"
+assistant > The time is 1:16 AM.
+
+$ python main.py --no-tts --say "todays date"
+assistant > Today is Saturday, 1 August 2026.
+
+$ python main.py --no-tts --say "system info"
+assistant > Darwin 25.5.0 on arm64, running Python 3.14.
+
+$ python main.py --no-tts --say "battery"
+assistant > The battery is at 76 percent and on battery. About 7 hours and 41 minutes remaining.
+
+$ python main.py --no-tts --say "weather"
+assistant > Mist in Jamshedpur. It is 26 degrees Celsius and feels like 30, with 95% humidity and 4 kilometres per hour of wind.
+
+$ python main.py --no-tts --say "weather in mumbai today"
+assistant > Mist in Mumbai. It is 28 degrees Celsius and feels like 32, with 89% humidity and 35 kilometres per hour of wind.
+
+$ python main.py --no-tts --say "news"
+assistant > Here are the top 5 headlines.
+1. 'Want To Forgive Them': PM Modi On Students Who Abused Him at Jantar Mantar - NDTV
+2. Spain deploys military to Ceuta after migrant surge: What we know - Al Jazeera
+3. 'Pak-trained Mujahideen have turned their guns inwards': India slams Islamabad over PoK crackdown - The Times of India
+4. Breaking | Tahir Hussain, Others Get Life Imprisonment For Murder Of IB Staffer Ankit Sharma During Delhi ... - livelaw.in
+5. At least one non-local labourer killed, another injured in terrorist shooting in J&K’s Kulgam - The Hindu
+
+$ python main.py --no-tts --say "who is Alan Turing"
+assistant > According to Wikipedia: Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst, philosopher and theoretical biologist. He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer.
+
+$ python main.py --no-tts --say "clipboard"
+assistant > The clipboard says: https://github.com/Niketkumardheeryan/ML-CaPsule/issues/1984
+
+$ python main.py --no-tts --say "take a screenshot"
+assistant > Screen capture is unavailable. Install pyautogui, and on macOS grant your terminal Screen Recording permission in System Settings > Privacy & Security.
+
+$ python main.py --no-tts --say "play file /nope/missing.mp3"
+assistant > I could not find any file at /nope/missing.mp3.
+
+$ python main.py --no-tts --say "shutdown"
+assistant > Power commands are disabled. Restart me with --allow-power to enable 'shutdown' (it would run: osascript -e tell app "System Events" to shut down).
+
+$ python main.py --no-tts --say "make me a sandwich"
+assistant > I did not understand that. Say 'help' to see what I can do.
+
+--- 2. Interactive session (typed input, 'exit' quits) --------------
+
+$ python main.py --no-tts
+assistant > Good morning! I am your ML-CaPsule assistant, listening in text mode. Say 'help' to see what I can do.
+you > hello
+assistant > Good morning! How can I help you?
+you > battery
+assistant > The battery is at 76 percent and on battery. About 7 hours and 41 minutes remaining.
+you > what is the time
+assistant > The time is 1:16 AM.
+you > exit
+assistant > Goodbye! Shutting down the assistant.
+
+--- 3. Full command surface -----------------------------------------
+
+$ python main.py --list-commands
+Here is what I can do:
+  - exit / quit / bye - close the assistant
+  - help - list every supported command
+  - hello - time aware greeting
+  - what is the time - current clock time
+  - what is the date - today's date
+  - weather [in <city>] - live weather report
+  - news - top headlines of the day
+  - battery - charge percentage and time left
+  - screenshot - timestamped desktop capture
+  - clipboard - read back the copied text
+  - system info - host operating system summary
+  - play file <path> - open media in the default player
+  - shutdown / restart / logout - guarded power controls
+  - play <query> - stream the top YouTube result
+  - who is <topic> - Wikipedia summary
+  - google <query> - open Google results
+
+--- 4. Power-control safety gates -----------------------------------
+
+$ python main.py --no-tts --say "restart"            # gate 1: disabled by default
+assistant > Power commands are disabled. Restart me with --allow-power to enable 'restart' (it would run: osascript -e tell app "System Events" to restart).
+
+$ python main.py --no-tts --allow-power --say "restart"   # gate 2: confirmation declined
+Type 'restart' to confirm, anything else cancels: assistant > Cancelled the restart request.
+
+--- 5. Test suite ----------------------------------------------------
+
+$ python -m unittest discover -s tests
+----------------------------------------------------------------------
+Ran 43 tests in 0.004s
+
+OK
