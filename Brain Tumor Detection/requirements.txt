@@ -5,3 +5,4 @@ matplotlib==3.6.3
 scikit-learn==1.2.1
 tensorflow==2.11.0
 keras==2.11.0
++gradio

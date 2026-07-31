@@ -1,5 +1,7 @@
 # 🗺️ ML-CaPsule Learning Roadmap
 
+[🏠 Main README](README.md) • [📖 Code of Conduct](CODE_OF_CONDUCT.md) • [🤝 Contributing Guidelines](CONTRIBUTING.md) • [📋 Project Template](.github/readme_template.md)
+
 > A structured 3-tier learning path across 150+ projects.  
 > Built for beginners who don't know where to start.
 
@@ -21,6 +23,7 @@
 | Project Name | Key Concepts/Libraries | Link |
 |---|---|---|
 | Basics of ML and DL | ML fundamentals, intro to deep learning | [View](./Basics%20of%20ML%20and%20DL) |
+| Interactive ML Algorithm Recommendation Guide for Beginners | Decision tree flowchart, algorithm selection, visual comparison guide | [View](./Interactive%20ML%20Algorithm%20Recommendation%20Guide%20for%20Beginners) |
 | Basics of the Python | Python basics, syntax | [View](./Basics%20of%20the%20Python) |
 | Basics of Power Bi | Data visualization, BI tools | [View](./Basics%20of%20Power%20Bi) |
 | NumPy - Basics | numpy arrays, operations | [View](./NumPy%20-%20Basics) |
@@ -83,6 +86,8 @@
 | Road accident Analysis using Power BI | Power BI, data analysis | [View](./Road%20accident%20Analysis%20using%20Power%20BI) |
 | Rock Paper Scissors Python Game | Python basics, OpenCV | [View](./Rock%20Paper%20Scissors%20Python%20Game) |
 | Github Topic Scraper | web scraping, BeautifulSoup | [View](./GitHub%20Topic%20Scraper) |
+| TweetMiner AI | NLP, Tweepy, VADER, TextBlob, scikit-learn | [View](./TweetMiner_AI) |
+
 
 ---
 
