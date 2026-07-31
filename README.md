@@ -2,6 +2,8 @@
 
 # 🧠 ML-CaPsule
 
+[📖 Code of Conduct](CODE_OF_CONDUCT.md) • [🤝 Contributing Guidelines](CONTRIBUTING.md) • [🗺️ Learning Roadmap](ROADMAP.md) • [📋 Project Template](.github/readme_template.md) • [🔀 PR Template](.github/pullrequest_template.md)
+
 ### *Hands-on Machine Learning — From Basics to Advanced*
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=45FFAA&center=true&vCenter=true&width=900&lines=Welcome+to+ML-CaPsule!;500%2B+Real-World+ML+Projects;Learn+ML+%7C+DL+%7C+NLP+%7C+CV;Open+Source+%E2%80%A2+Interview+Ready)](https://github.com/Niketkumardheeryan/ML-CaPsule)
@@ -363,8 +365,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 41 | [Captcha Recognition](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Defective%20Captcha%20Image%20Recognition) | 42 | [Diabetes Prediction](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Diabetes%20Prediction) | 43 | [Clustering Types](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different%20types%20of%20Clustering) | 44 | [Feature Selection](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different%20types%20of%20feature%20selection%20techniques) |
 | 45 | [Scaling Methods](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different_types_of_scaling_Method) | 46 | [Diseases Prediction](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Diseases_Prediction) | 47 | [Drowsiness Detection](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Driver_Drowsiness_Detection) | 48 | [Duplicate Questions](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Duplicate_Question_pair) |
 | 49 | [Ionosphere EDA](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main) | 50 | [Email Classifier](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Email%20Classifier) | 51 | [Emotion Recognition](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Emotion%20Recognition%20Based%20on%20NLP) | 52 | [Eye Gaze Tracking](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Eye_Gaze_Tracking_Attention_Estimation) |
-| 53 | [Bank Marketing](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Portuguese_Bank_Marketing) | 54 | [Constellation Classification](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Constellation_Classification) | | | | |
-| 55 | [CBOW PyTorch](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/CBOW_PyTorch) | | | | |
+| 53 | [Bank Marketing](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Portuguese_Bank_Marketing) | 54 | [Constellation Classification](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Constellation_Classification) | 55 | [Crime Analytics](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Crime_Analytics) | 56 | [CBOW PyTorch](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/CBOW_PyTorch) |
+| 57 | [Mental Health Risk Scorer](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Mental_Health_Text_Analysis_%26_Depression_Risk_Scorer) | | | | |
 
 > 📌 **& many more...** Explore the full repository for 500+ additional projects!
 
@@ -405,6 +407,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | Toxic Comment Classifier | NLP | Intermediate | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Toxic%20Comment%20Classifier) |
 | Currency Arbitrage with RL | Reinforcement Learning | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Currency%20Arbitrage%20with%20Reinforcement%20Learning) |
 | Sales Prediction (Research) | ML | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Sales%20Prediction) |
+| TweetMiner AI | NLP | Beginner | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/TweetMiner_AI) |
+| Mental Health Risk Scorer | NLP & Transformers | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Mental_Health_Text_Analysis_%26_Depression_Risk_Scorer) |
 
 </details>
 
@@ -471,15 +475,63 @@ git push origin my-feature
 
 Then open a Pull Request on GitHub with a clear description of your changes.
 
-### 📁 Repository Structure
+### 📁 Repository Structure & Architecture
 
 ```
 ML-CaPsule/
-├── 📂 Project folders/     # 500+ individual ML projects
-├── 📄 CONTRIBUTING.md      # Contribution guidelines
-├── 📄 CODE_OF_CONDUCT.md   # Community standards
-└── 📄 LICENSE              # MIT License
+├── 📂 .github/                   # GitHub templates & workflows
+│   ├── ISSUE_TEMPLATE/           # Standardized issue templates
+│   ├── readme_template.md        # Template for project READMEs
+│   └── pullrequest_template.md   # Template for submitting Pull Requests
+├── 📂 Project Folders/           # 500+ self-contained ML/DL/NLP/CV projects
+│   ├── 📂 <Project_Name>/        # Individual project folder (descriptive name)
+│   │   ├── 📄 README.md          # Project specific description, results & instructions
+│   │   ├── 📄 *.ipynb / *.py     # Implementation notebooks/scripts
+│   │   ├── 📄 requirements.txt   # (Optional) Folder-specific dependencies
+│   │   └── 📂 assets / images    # Screenshots & visual demonstrations
+├── 📄 build_readme.py            # Utility script for automated README index updating
+├── 📄 CODE_OF_CONDUCT.md         # Community behavioral standards
+├── 📄 CONTRIBUTING.md            # Detailed contribution workflow & coding guidelines
+├── 📄 LICENSE                    # MIT License
+├── 📄 README.md                  # Main repository overview & directory hub
+└── 📄 ROADMAP.md                  # Structured 3-tier learning path (Beginner/Intermediate/Advanced)
 ```
+
+#### 🏗️ Architecture & Component Responsibilities
+
+1. **Self-Contained ML Projects**: Each directory represents an isolated Machine Learning workspace containing its own dataset loader, model training routine, analysis, visual outputs, and project README.
+2. **Standardized Documentation Engine**: All sub-projects conform to [.github/readme_template.md](.github/readme_template.md) to ensure consistent presentation of goals, models used, tech stack, and evaluation metrics.
+3. **Automated Indexing**: `build_readme.py` acts as a repository maintenance tool that dynamically updates project listings.
+4. **Structured Roadmap**: `ROADMAP.md` organizes projects into clear skill tiers (Beginner, Intermediate, Advanced) guiding new learners step by step.
+
+---
+
+## Frequently Asked Questions & Troubleshooting
+
+<details>
+<summary><b>Q1: How do I choose which project to start with?</b></summary>
+
+Refer to [ROADMAP.md](ROADMAP.md) which classifies projects into Beginner (foundational ML & EDA), Intermediate (Neural Networks, NLP, Web Apps), and Advanced (Computer Vision, Reinforcement Learning, Transformers).
+</details>
+
+<details>
+<summary><b>Q2: What if a project has missing Python packages?</b></summary>
+
+Ensure your virtual environment is active and install common data science packages:
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn jupyter
+```
+If the project folder contains a local `requirements.txt`, install it directly using:
+```bash
+pip install -r requirements.txt
+```
+</details>
+
+<details>
+<summary><b>Q3: Should I submit Jupyter Notebooks (`.ipynb`) or Python scripts (`.py`)?</b></summary>
+
+Jupyter Notebooks (`.ipynb`) are preferred for project submissions as they combine code, visualization outputs, and explanations. Ensure all notebook cells are executed before committing.
+</details>
 
 ---
 

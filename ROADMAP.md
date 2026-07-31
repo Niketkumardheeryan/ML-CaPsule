@@ -1,5 +1,7 @@
 # 🗺️ ML-CaPsule Learning Roadmap
 
+[🏠 Main README](README.md) • [📖 Code of Conduct](CODE_OF_CONDUCT.md) • [🤝 Contributing Guidelines](CONTRIBUTING.md) • [📋 Project Template](.github/readme_template.md)
+
 > A structured 3-tier learning path across 150+ projects.  
 > Built for beginners who don't know where to start.
 
@@ -84,6 +86,8 @@
 | Road accident Analysis using Power BI | Power BI, data analysis | [View](./Road%20accident%20Analysis%20using%20Power%20BI) |
 | Rock Paper Scissors Python Game | Python basics, OpenCV | [View](./Rock%20Paper%20Scissors%20Python%20Game) |
 | Github Topic Scraper | web scraping, BeautifulSoup | [View](./GitHub%20Topic%20Scraper) |
+| TweetMiner AI | NLP, Tweepy, VADER, TextBlob, scikit-learn | [View](./TweetMiner_AI) |
+
 
 ---
 

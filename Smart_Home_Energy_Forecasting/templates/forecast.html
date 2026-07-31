@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIMA Time Series Forecasting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="brand-section">
+                <i class="fa-solid fa-house-laptop brand-icon"></i>
+                <h1 class="brand-title">EnergyIntel</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="{{ url_for('index') }}"><i class="fa-solid fa-gauge"></i> <span>Dashboard</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('predict') }}"><i class="fa-solid fa-bolt"></i> <span>Real-time Predictor</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="{{ url_for('forecast') }}"><i class="fa-solid fa-chart-line"></i> <span>ARIMA Forecasting</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('analytics') }}"><i class="fa-solid fa-chart-pie"></i> <span>Data Analytics</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header-container">
+                <div>
+                    <h2 class="page-title">ARIMA Time Series Forecasting</h2>
+                    <p class="page-subtitle">14-Day out-of-sample future average daily energy projections.</p>
+                </div>
+            </div>
+
+            <div class="visual-panel">
+                <h3 class="panel-title">14-Day Energy Forecast Trend</h3>
+                <canvas id="forecastChart" height="110"></canvas>
+            </div>
+            
+            <div class="visual-panel">
+                <h3 class="panel-title">Forecast Data Table</h3>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid var(--border-color); color: var(--accent-color);">
+                                <th style="padding: 10px;">Date</th>
+                                <th style="padding: 10px;">Forecasted Value (kWh)</th>
+                                <th style="padding: 10px;">95% Lower Bound (kWh)</th>
+                                <th style="padding: 10px;">95% Upper Bound (kWh)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in range(forecast_dates|length) %}
+                            <tr style="border-bottom: 1px solid var(--border-color); hover: background-color: var(--bg-tertiary);">
+                                <td style="padding: 10px;">{{ forecast_dates[i] }}</td>
+                                <td style="padding: 10px; font-weight: 600;">{{ forecast_values[i] }}</td>
+                                <td style="padding: 10px; color: var(--text-muted);">{{ lower_bound[i] }}</td>
+                                <td style="padding: 10px; color: var(--text-muted);">{{ upper_bound[i] }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('forecastChart').getContext('2d');
+        
+        // Prepare historical and forecast labels & datasets
+        const histDates = {{ hist_dates | tojson }};
+        const histVals = {{ hist_values | tojson }};
+        
+        const foreDates = {{ forecast_dates | tojson }};
+        const foreVals = {{ forecast_values | tojson }};
+        const lowerBound = {{ lower_bound | tojson }};
+        const upperBound = {{ upper_bound | tojson }};
+        
+        // Merge historical and forecast labels
+        const allLabels = [...histDates, ...foreDates];
+        
+        // Historical values padded with nulls for forecast duration
+        const histDataset = [...histVals, ...Array(foreDates.length).fill(null)];
+        
+        // Forecast values padded with null at intersection point to connect visually
+        const foreDataset = [...Array(histDates.length - 1).fill(null), histVals[histVals.length - 1], ...foreVals];
+        const lowerDataset = [...Array(histDates.length - 1).fill(null), histVals[histVals.length - 1], ...lowerBound];
+        const upperDataset = [...Array(histDates.length - 1).fill(null), histVals[histVals.length - 1], ...upperBound];
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: allLabels,
+                datasets: [
+                    {
+                        label: 'Historical Daily Avg (kWh)',
+                        data: histDataset,
+                        borderColor: '#00adb5',
+                        borderWidth: 2,
+                        fill: false,
+                        tension: 0.3
+                    },
+                    {
+                        label: 'ARIMA Future Forecast (kWh)',
+                        data: foreDataset,
+                        borderColor: '#ffb400',
+                        borderWidth: 3,
+                        fill: false,
+                        tension: 0.2
+                    },
+                    {
+                        label: 'Lower Bound (95% CI)',
+                        data: lowerDataset,
+                        borderColor: 'rgba(255, 180, 0, 0.25)',
+                        borderDash: [5, 5],
+                        fill: false,
+                        pointRadius: 0
+                    },
+                    {
+                        label: 'Upper Bound (95% CI)',
+                        data: upperDataset,
+                        borderColor: 'rgba(255, 180, 0, 0.25)',
+                        borderDash: [5, 5],
+                        fill: false,
+                        pointRadius: 0
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#e0e0e0'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.05)'
+                        },
+                        ticks: {
+                            color: '#b0b0b0'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.05)'
+                        },
+                        ticks: {
+                            color: '#b0b0b0'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
