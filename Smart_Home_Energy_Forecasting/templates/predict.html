@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Energy Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="brand-section">
+                <i class="fa-solid fa-house-laptop brand-icon"></i>
+                <h1 class="brand-title">EnergyIntel</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="{{ url_for('index') }}"><i class="fa-solid fa-gauge"></i> <span>Dashboard</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="{{ url_for('predict') }}"><i class="fa-solid fa-bolt"></i> <span>Real-time Predictor</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('forecast') }}"><i class="fa-solid fa-chart-line"></i> <span>ARIMA Forecasting</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('analytics') }}"><i class="fa-solid fa-chart-pie"></i> <span>Data Analytics</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header-container">
+                <div>
+                    <h2 class="page-title">Real-time Predictor</h2>
+                    <p class="page-subtitle">Input environmental and appliance metrics to predict load and evaluate efficiency.</p>
+                </div>
+            </div>
+
+            <div class="visual-panel">
+                <h3 class="panel-title">Energy Usage Calculator</h3>
+                <form action="{{ url_for('predict') }}" method="POST">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="temperature">Temperature (°C)</label>
+                            <input type="number" step="0.1" name="temperature" id="temperature" value="{{ features.get('temperature', 20.0) }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="humidity">Humidity (%)</label>
+                            <input type="number" step="0.1" name="humidity" id="humidity" value="{{ features.get('humidity', 50.0) }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="square_footage">Home Sq Footage</label>
+                            <input type="number" name="square_footage" id="square_footage" value="{{ features.get('square_footage', 2000.0) }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="occupants">Occupants Count</label>
+                            <input type="number" name="occupants" id="occupants" value="{{ features.get('occupants', 3.0) }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hour">Hour of Day (0-23)</label>
+                            <input type="number" min="0" max="23" name="hour" id="hour" value="{{ features.get('hour', 12) }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="month">Month (1-12)</label>
+                            <input type="number" min="1" max="12" name="month" id="month" value="{{ features.get('month', 6) }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="day_of_week">Day of Week (0-6)</label>
+                            <select name="day_of_week" id="day_of_week">
+                                <option value="0" {{ 'selected' if features.get('day_of_week') == 0 else '' }}>Monday</option>
+                                <option value="1" {{ 'selected' if features.get('day_of_week') == 1 else '' }}>Tuesday</option>
+                                <option value="2" {{ 'selected' if features.get('day_of_week') == 2 else '' }}>Wednesday</option>
+                                <option value="3" {{ 'selected' if features.get('day_of_week') == 3 else '' }}>Thursday</option>
+                                <option value="4" {{ 'selected' if features.get('day_of_week') == 4 else '' }}>Friday</option>
+                                <option value="5" {{ 'selected' if features.get('day_of_week') == 5 else '' }}>Saturday</option>
+                                <option value="6" {{ 'selected' if features.get('day_of_week') == 6 else '' }}>Sunday</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="is_holiday">Is Weekend / Holiday</label>
+                            <select name="is_holiday" id="is_holiday">
+                                <option value="0" {{ 'selected' if features.get('is_holiday') == 0 else '' }}>No</option>
+                                <option value="1" {{ 'selected' if features.get('is_holiday') == 1 else '' }}>Yes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="energy_lag1">Usage 1 Hour Ago (kWh)</label>
+                            <input type="number" step="0.01" name="energy_lag1" id="energy_lag1" value="{{ features.get('energy_lag1', 1.1) }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="energy_lag2">Usage 2 Hours Ago (kWh)</label>
+                            <input type="number" step="0.01" name="energy_lag2" id="energy_lag2" value="{{ features.get('energy_lag2', 1.0) }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="energy_lag3">Usage 3 Hours Ago (kWh)</label>
+                            <input type="number" step="0.01" name="energy_lag3" id="energy_lag3" value="{{ features.get('energy_lag3', 0.9) }}" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary">Analyze & Predict</button>
+                </form>
+
+                {% if prediction is not none %}
+                <div class="result-box">
+                    <div class="result-item">
+                        <span>Predicted Hourly Consumption:</span>
+                        <strong>{{ prediction }} kWh</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>Classified Efficiency Profile:</span>
+                        {% if 'Efficient' in waste_class %}
+                            <span class="status-badge status-efficient">Efficient</span>
+                        {% elif 'Normal' in waste_class %}
+                            <span class="status-badge status-normal">Normal</span>
+                        {% else %}
+                            <span class="status-badge status-wasteful">Wasteful</span>
+                        {% endif %}
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 5px;">{{ waste_class }}</p>
+                </div>
+                {% endif %}
+                
+                {% if error %}
+                <div class="result-box" style="border-color: var(--accent-highlight);">
+                    <p style="color: var(--accent-highlight); font-weight: bold;">Error during computation:</p>
+                    <p style="font-size: 0.9rem;">{{ error }}</p>
+                </div>
+                {% endif %}
+            </div>
+        </main>
+    </div>
+</body>
+</html>
