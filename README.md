@@ -365,8 +365,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 41 | [Captcha Recognition](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Defective%20Captcha%20Image%20Recognition) | 42 | [Diabetes Prediction](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Diabetes%20Prediction) | 43 | [Clustering Types](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different%20types%20of%20Clustering) | 44 | [Feature Selection](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different%20types%20of%20feature%20selection%20techniques) |
 | 45 | [Scaling Methods](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different_types_of_scaling_Method) | 46 | [Diseases Prediction](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Diseases_Prediction) | 47 | [Drowsiness Detection](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Driver_Drowsiness_Detection) | 48 | [Duplicate Questions](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Duplicate_Question_pair) |
 | 49 | [Ionosphere EDA](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main) | 50 | [Email Classifier](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Email%20Classifier) | 51 | [Emotion Recognition](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Emotion%20Recognition%20Based%20on%20NLP) | 52 | [Eye Gaze Tracking](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Eye_Gaze_Tracking_Attention_Estimation) |
-| 53 | [Bank Marketing](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Portuguese_Bank_Marketing) | 54 | [Constellation Classification](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Constellation_Classification) | 55 | [Crime Analytics](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Crime_Analytics) | |
-| 56 | [CBOW PyTorch](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/CBOW_PyTorch) | | | | |
+| 53 | [Bank Marketing](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Portuguese_Bank_Marketing) | 54 | [Constellation Classification](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Constellation_Classification) | 55 | [Crime Analytics](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Crime_Analytics) | 56 | [CBOW PyTorch](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/CBOW_PyTorch) |
+| 57 | [Mental Health Risk Scorer](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Mental_Health_Text_Analysis_%26_Depression_Risk_Scorer) | | | | |
 
 > 📌 **& many more...** Explore the full repository for 500+ additional projects!
 
@@ -409,6 +409,7 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | Sales Prediction (Research) | ML | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Sales%20Prediction) |
 | TweetMiner AI | NLP | Beginner | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/TweetMiner_AI) |
 | Intelligent Network Intrusion Detection System | ML | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Intelligent%20Network%20Intrusion%20Detection%20System%20using%20Machine%20Learning) |
+| Mental Health Risk Scorer | NLP & Transformers | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Mental_Health_Text_Analysis_%26_Depression_Risk_Scorer) |
 
 </details>
 
