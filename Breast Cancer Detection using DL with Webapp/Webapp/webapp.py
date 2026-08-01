@@ -5,6 +5,7 @@ from flask import Flask, request, render_template, jsonify, send_from_directory
 import numpy as np
 import cv2
 import tensorflow as tf
+from werkzeug.exceptions import NotFound
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -160,14 +161,25 @@ def api_predict():
 @app.route('/app/<path:path>')
 def spa(path):
     """Serve the built React PWA, falling back to its index for client routes."""
+    # 1. Ensure the build directory actually exists
     if not os.path.isdir(FRONTEND_DIST):
         return (
             "The PWA has not been built yet. Run: "
             "cd frontend && npm install && npm run build",
             404,
         )
-    if path and os.path.exists(os.path.join(FRONTEND_DIST, path)):
-        return send_from_directory(FRONTEND_DIST, path)
+    
+    # 2. Attempt to serve a specific static file (like .js, .css, images)
+    if path:
+        try:
+            # send_from_directory natively sanitizes input and prevents path traversal.
+            return send_from_directory(FRONTEND_DIST, path)
+        except NotFound:
+            # Catch the 404 if the file doesn't exist or if a traversal was blocked.
+            # This allows the request to fall through to the React Router fallback below.
+            pass
+
+    # 3. Fallback for React/Client-side routing
     return send_from_directory(FRONTEND_DIST, 'index.html')
 
 
