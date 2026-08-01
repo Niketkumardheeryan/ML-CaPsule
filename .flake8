@@ -1,0 +1,33 @@
+# PEP8 configuration for ML-CaPsule.
+#
+# Only files changed by a pull request are linted (see
+# .github/workflows/pr_quality_check.yml), so pre-existing style in the rest of
+# the repository never blocks a contribution.
+
+[flake8]
+max-line-length = 120
+
+exclude =
+    .git,
+    __pycache__,
+    .ipynb_checkpoints,
+    node_modules,
+    venv,
+    .venv,
+    env,
+    build,
+    dist,
+    *.egg-info
+
+# E203  whitespace before ':'      - disagrees with black's slicing style
+# W503  line break before binary operator - superseded by W504, PEP8 now prefers it
+# E266  too many leading '#'       - block comments like ### are common in notebooks
+extend-ignore = E203, W503, E266
+
+# Notebook exports and demo scripts often keep unused imports for clarity.
+per-file-ignores =
+    __init__.py: F401
+
+max-complexity = 15
+count = True
+statistics = True

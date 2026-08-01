@@ -115,6 +115,60 @@ We want your work to be readable by others; therefore, we encourage you to note 
 
 ---
 
+## 🤖 Automated Quality Checks (CI)
+
+Every pull request targeting `main` / `master` is checked automatically by **GitHub Actions**
+(`.github/workflows/pr_quality_check.yml`). The checks look **only at the files your PR
+changed**, so pre-existing issues elsewhere in the repository never block your contribution.
+
+### What gets checked
+
+**🐍 Python files (`.py`)**
+
+| Check | Tool | Catches | Blocks the PR? |
+|-------|------|---------|:--------------:|
+| Syntax errors | `py_compile` | Invalid Python that will not even import | ✅ Yes |
+| PEP8 style | `flake8` | Indentation, spacing, naming, line length (max 120) | ❌ Advisory |
+
+**📓 Notebooks (`.ipynb`)** — `.github/scripts/check_notebooks.py`
+
+| Check | Catches | Blocks the PR? |
+|-------|---------|:--------------:|
+| Valid notebook JSON | Corrupt or truncated files | ✅ Yes |
+| Committed error outputs | A saved traceback, meaning the notebook was committed while failing | ✅ Yes |
+| Local absolute paths | `/Users/you/...` or `C:\Users\you\...`, which will not exist for anyone else | ❌ Advisory |
+| Large notebooks | Bulky embedded outputs that bloat every clone | ❌ Advisory |
+| No code cells | A notebook that contains only prose | ❌ Advisory |
+
+This is separate from the existing **Notebook Health Check**, which *executes* changed
+notebooks. These checks read the file without running it.
+
+### Where results appear
+
+Findings show up as **inline annotations on your diff** and in the **job summary** on the
+Actions tab. Results are not posted as a PR comment, because a pull request opened from a
+fork gets a read-only token, so a bot comment would fail for most contributors.
+
+### Running the checks locally
+
+```bash
+pip install flake8
+
+flake8 path/to/your_file.py                       # PEP8, uses the repo's .flake8
+python -m py_compile path/to/your_file.py         # syntax
+python .github/scripts/check_notebooks.py --changed-files your_notebook.ipynb
+```
+
+To check everything you changed against `master`:
+
+```bash
+git diff --name-only --diff-filter=ACM master...HEAD | grep '\.py$'    | xargs -r flake8
+git diff --name-only --diff-filter=ACM master...HEAD | grep '\.ipynb$' \
+  | xargs -r python .github/scripts/check_notebooks.py --changed-files
+```
+
+---
+
 ## 🔑Guidelines
 
 1. Welcome to this repository, if you are here as an open source program participant/contributor.

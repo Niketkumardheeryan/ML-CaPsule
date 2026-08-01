@@ -1,0 +1,134 @@
+name: PR Quality Check
+
+# Runs on every pull request, but only ever looks at the files that pull
+# request changed - pre-existing issues elsewhere in the repository never block
+# a contribution.
+on:
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+# Read-only: this workflow checks out pull request code, so it must never hold
+# a writable token. Results are published as annotations and a job summary,
+# which work for pull requests from forks too (a fork's GITHUB_TOKEN is
+# read-only, so a bot comment would simply fail for most contributors).
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: Syntax, PEP8 and notebooks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install linters
+        run: python -m pip install --quiet --upgrade pip flake8
+
+      - name: Collect changed files
+        id: changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="origin/${{ github.base_ref }}"
+          if [ "${{ github.event_name }}" != "pull_request" ]; then
+            BASE="HEAD^"
+          fi
+          git fetch origin "${{ github.base_ref }}" --depth=1 || true
+
+          # Only Added/Copied/Modified files: a file deleted by this PR cannot be linted.
+          git diff --name-only --diff-filter=ACM "$BASE"...HEAD > changed.txt \
+            || git diff --name-only --diff-filter=ACM "$BASE" HEAD > changed.txt \
+            || true
+
+          grep -E '\.py$'    changed.txt > changed_py.txt    || true
+          grep -E '\.ipynb$' changed.txt > changed_nb.txt    || true
+
+          echo "py_count=$(wc -l < changed_py.txt | tr -d ' ')"    >> "$GITHUB_OUTPUT"
+          echo "nb_count=$(wc -l < changed_nb.txt | tr -d ' ')"    >> "$GITHUB_OUTPUT"
+          {
+            echo "### 🔍 PR Quality Check"
+            echo ""
+            echo "Changed Python files: $(wc -l < changed_py.txt | tr -d ' ') ·"\
+                 "Changed notebooks: $(wc -l < changed_nb.txt | tr -d ' ')"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # A file that will not even parse is always a hard failure.
+      - name: Python syntax (py_compile)
+        if: steps.changed.outputs.py_count != '0'
+        shell: bash
+        run: |
+          set -uo pipefail
+          status=0
+          while IFS= read -r file; do
+            [ -f "$file" ] || continue
+            if ! output=$(python -m py_compile "$file" 2>&1); then
+              echo "::error file=$file::Syntax error - $(echo "$output" | tail -1)"
+              status=1
+            fi
+          done < changed_py.txt
+          if [ "$status" -eq 0 ]; then
+            echo "✅ All changed Python files parse cleanly." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "❌ Some changed Python files have syntax errors." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          exit "$status"
+
+      # Style is advisory, matching how the existing Notebook Health Check
+      # behaves, so a first-time contributor is guided rather than blocked.
+      - name: PEP8 style (flake8)
+        if: steps.changed.outputs.py_count != '0'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -uo pipefail
+          mapfile -t files < changed_py.txt
+          existing=()
+          for file in "${files[@]}"; do
+            [ -f "$file" ] && existing+=("$file")
+          done
+          if [ ${#existing[@]} -eq 0 ]; then
+            echo "No Python files to lint." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          # GitHub renders this format as inline annotations on the diff.
+          flake8 "${existing[@]}" \
+            --format='::warning file=%(path)s,line=%(row)d,col=%(col)d::%(code)s %(text)s' \
+            || true
+
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "#### 🐍 PEP8 (flake8, max line length 120)" >> "$GITHUB_STEP_SUMMARY"
+          if flake8 "${existing[@]}" > flake8.txt 2>&1; then
+            echo "✅ No style issues in the changed files." >> "$GITHUB_STEP_SUMMARY"
+          else
+            {
+              echo ""
+              echo '```'
+              head -50 flake8.txt
+              echo '```'
+              echo ""
+              echo "Style issues are advisory and do not block this PR."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Notebook quality
+        if: steps.changed.outputs.nb_count != '0'
+        shell: bash
+        run: |
+          set -uo pipefail
+          mapfile -t notebooks < changed_nb.txt
+          python .github/scripts/check_notebooks.py --changed-files "${notebooks[@]}"
+
+      - name: Nothing to check
+        if: steps.changed.outputs.py_count == '0' && steps.changed.outputs.nb_count == '0'
+        run: echo "No Python files or notebooks changed - nothing to check. 🎉"
