@@ -28,6 +28,26 @@ This code structure enables seamless integration of deep learning models into a 
 https://github.com/TheNaiveSamosa/ML-CaPsule/assets/112872086/e38a9bd4-fa0f-4e59-b5f6-d346350fd427
 
 
+### Modern PWA Frontend 📱
+
+An optional, installable **offline-first Progressive Web App** frontend now ships alongside
+the original interface — see [`frontend/`](frontend/README.md).
+
+- **Stack:** React 19, Vite 7, Tailwind CSS 4, Zustand 5, Workbox (`vite-plugin-pwa`).
+- **Why:** the Jinja page reloads on every prediction, is hard to use on a phone, and needs a
+  live connection. The PWA is mobile-first, installs to the home screen, pre-caches its shell
+  so it opens offline, keeps recent results on-device, and queues a scan made while offline —
+  sending it automatically once the connection returns.
+- **The classic UI is unchanged.** `webapp.py` gained three additive routes — `GET /api/health`,
+  `POST /api/predict` (JSON) and `GET /app` (serves the built SPA) — while `/` and `/predict`
+  behave exactly as before.
+
+```bash
+cd frontend && npm install && npm run build
+cd .. && python webapp.py
+# classic UI -> http://127.0.0.1:5000/     new PWA -> http://127.0.0.1:5000/app
+```
+
 ### Signature ✒️
 Aditya Khamitkar (TheNaiveSamosa)
 [![Twitter](https://img.shields.io/badge/Twitter-%40Couch_Potatoh_-blue?style=flat&logo=twitter)](https://twitter.com/Couch_Potatoh_)
