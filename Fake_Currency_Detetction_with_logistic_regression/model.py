@@ -2,8 +2,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix, accuracy_score
-from sklearn.datasets import make_classification
-from sklearn.model_selection import train_test_split
+
+from banknote_data import (
+    CLASS_NAMES,
+    FEATURE_NAMES,
+    load_banknote_data,
+    standardize,
+    summary,
+    train_test_split,
+)
 
 class LogisticRegression:
     def __init__(self):
@@ -54,8 +61,13 @@ class LogisticRegression:
             self.b = self.b - gamma * self.b_error
             
             # Loss Calculation
-            epsilon = 1e-15 
-            loss = -np.mean(self.y * np.log(self._y + epsilon) + (1 - self.y) * np.log(1 - self._y + epsilon))
+            # Clip rather than add epsilon inside the log: log(p + eps) is
+            # slightly positive when p saturates at 1, which made the reported
+            # loss dip marginally below zero. Cross-entropy is never negative.
+            epsilon = 1e-15
+            probabilities = np.clip(self._y, epsilon, 1 - epsilon)
+            loss = -np.mean(self.y * np.log(probabilities)
+                            + (1 - self.y) * np.log(1 - probabilities))
             self.loss_history.append(loss)
             
             if self.epoch_count % self.cutoff == 0:
@@ -121,23 +133,33 @@ def visualize_training_and_evaluation(model, X_train, y_train, X_test, y_test):
 # Example Usage Block
 # ==========================================
 if __name__ == "__main__":
-    # 1. Generate dummy 2D linearly separable data
-    X, y = make_classification(n_samples=500, n_features=2, n_redundant=0, 
-                               n_informative=2, random_state=42, n_clusters_per_class=1)
-    
-    # 2. Split into Train and Test sets
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    # 1. Load the real banknote authentication dataset (downloaded and cached
+    #    on first run; no Kaggle credentials required).
+    X, y = load_banknote_data()
+    print(f"Dataset: {summary(X, y)}")
+    print(f"Features: {', '.join(FEATURE_NAMES)}\n")
 
-    from sklearn.preprocessing import StandardScaler
-    scaler = StandardScaler()
-    X_train = scaler.fit_transform(X_train)
-    X_test = scaler.transform(X_test)
+    # 2. Stratified train/test split.
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, seed=42)
 
-    # 3. Initialize and Train the custom model
+    # 3. Scale using training statistics only, so nothing leaks from the test set.
+    X_train, X_test, _ = standardize(X_train, X_test)
+
+    # 4. Train the custom, from-scratch model.
     model = LogisticRegression()
     print("Starting Training...")
     model.fit(X_train, y_train, epochs=1000, gamma=0.1)
     print("Training Complete!\n")
 
-    # 4. Generate Visualizations
+    # 5. Report held-out performance.
+    predictions = model.predict(X_test)
+    accuracy = accuracy_score(y_test, predictions)
+    matrix = confusion_matrix(y_test, predictions)
+    true_negative, false_positive, false_negative, true_positive = matrix.ravel()
+
+    print(f"Test accuracy : {accuracy * 100:.2f}%  ({len(y_test)} held-out notes)")
+    print(f"Genuine  ({CLASS_NAMES[0]}): {true_negative} correct, {false_positive} flagged as forged")
+    print(f"Forged   ({CLASS_NAMES[1]}): {true_positive} caught,  {false_negative} missed")
+
+    # 6. Generate Visualizations
     visualize_training_and_evaluation(model, X_train, y_train, X_test, y_test)

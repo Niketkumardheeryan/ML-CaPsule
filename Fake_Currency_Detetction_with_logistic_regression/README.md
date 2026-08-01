@@ -5,10 +5,13 @@ A custom-built Machine Learning application that detects counterfeit currency us
 ## Project Structure
 
 ```text
-├── app.py           # Streamlit dashboard for image upload and real-time inference
-├── model.py         # Core Logistic Regression implementation (from scratch)
-├── pipeline.ipynb   # Data processing, training, and model saving notebook
-├── README.md        # Project documentation
+├── app.py             # Streamlit dashboard for image upload and real-time inference
+├── model.py           # Core Logistic Regression implementation (from scratch)
+├── banknote_data.py   # Downloads/caches the UCI banknote dataset, split and scaling
+├── pipeline.ipynb     # Data processing, training, and model saving notebook
+├── tests/             # Offline unit tests for the model and data pipeline
+├── requirements.txt
+├── README.md          # Project documentation
 ```
 
 ## Features
@@ -33,6 +36,43 @@ pip install numpy pandas scikit-learn streamlit kagglehub joblib pillow scipy ma
 - Persistence: Trained models are exported using joblib for efficient loading.
 
 - Inference: app.py loads the saved model, accepts an image upload, extracts the necessary statistical features, and performs a prediction.
+
+## Quick start — train and evaluate on the real dataset
+
+`model.py` trains the hand-written model on the **UCI banknote authentication** dataset
+(1,372 notes, 4 wavelet features). The data is downloaded and cached on first run, so no
+Kaggle account or API token is needed:
+
+```bash
+pip install -r requirements.txt
+python model.py
+```
+
+Measured on a stratified 80/20 split, scaled with training statistics only:
+
+```text
+Dataset: 1372 banknotes, 4 features (762 genuine / 610 forged)
+Features: variance, skewness, kurtosis, entropy
+
+Epoch : 1000 Loss : 0.080568
+Test accuracy : 97.45%  (274 held-out notes)
+Genuine : 146 correct, 6 flagged as forged
+Forged  : 121 caught,  1 missed
+```
+
+Only **one forged note out of 122 was missed**, which is the error that matters most here —
+a false negative means a counterfeit passes as genuine.
+
+### Tests
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+15 tests run fully offline, with no download. They cover the maths of the from-scratch
+model — the sigmoid stays in `[0, 1]`, the analytic gradient is checked against a
+finite-difference estimate, the loss decreases and never goes negative — plus the stratified
+split and the scaler.
 
 ## Usage
 - Train the model: Run the cells in pipeline.ipynb to generate and save your model weights.
