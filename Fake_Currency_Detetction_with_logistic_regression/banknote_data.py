@@ -42,7 +42,7 @@ def download(cache_path=CACHE_PATH, sources=SOURCES):
     if cache_path.exists() and cache_path.stat().st_size > 0:
         return cache_path
 
-    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    cache_path.parent.mkdir(parents=True, exist_ok=True, mode=0o755)
     errors = []
     for url in sources:
         try:
@@ -50,6 +50,7 @@ def download(cache_path=CACHE_PATH, sources=SOURCES):
                 payload = response.read()
             if payload:
                 cache_path.write_bytes(payload)
+                cache_path.chmod(0o644)
                 return cache_path
         except Exception as error:  # try the next mirror
             errors.append(f"{url}: {error}")
