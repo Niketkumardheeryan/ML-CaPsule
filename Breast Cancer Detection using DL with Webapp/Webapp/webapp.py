@@ -2,6 +2,7 @@ import os
 import time
 import logging
 from flask import Flask, request, render_template, jsonify, send_from_directory
+from werkzeug.security import safe_join
 import numpy as np
 import cv2
 import tensorflow as tf
@@ -166,8 +167,12 @@ def spa(path):
             "cd frontend && npm install && npm run build",
             404,
         )
-    if path and os.path.exists(os.path.join(FRONTEND_DIST, path)):
-        return send_from_directory(FRONTEND_DIST, path)
+    if path:
+        # safe_join returns None when `path` tries to escape the directory, so a
+        # traversal attempt can never reach os.path.isfile or be served.
+        candidate = safe_join(FRONTEND_DIST, path)
+        if candidate is not None and os.path.isfile(candidate):
+            return send_from_directory(FRONTEND_DIST, path)
     return send_from_directory(FRONTEND_DIST, 'index.html')
 
 
