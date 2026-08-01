@@ -147,7 +147,7 @@ search work.
 ## 🚀 How to run
 
 ```bash
-cd Fashion_MNIST_Recommendation_System
+cd "Deep-Fashion-Recommendation-system/CNN_Embeddings_FashionMNIST"
 pip install -r requirements.txt
 jupyter notebook fashion_recommendation_system.ipynb
 ```
@@ -179,7 +179,7 @@ print(fr.precision_at_k(recommender, gallery[:500], y_train[:500], k=5))
 ## 📁 Project structure
 
 ```
-Fashion_MNIST_Recommendation_System/
+Deep-Fashion-Recommendation-system/CNN_Embeddings_FashionMNIST/
 ├── fashion_recommendation_system.ipynb   # annotated end-to-end notebook (executed)
 ├── fashion_recommender.py                # reusable pipeline: data, model, retrieval, metrics
 ├── requirements.txt
@@ -218,11 +218,13 @@ precision@k = 1.0 while random embeddings score near chance, and that misuse (qu
 
 ---
 
-## 🔍 How this differs from `Deep-Fashion-Recommendation-system`
+## 🔍 How this method compares with the other one in this folder
 
-The repository already contains a fashion recommender, so to be explicit about the difference:
+`Deep-Fashion-Recommendation-system/` holds more than one way to build a fashion recommender.
+This sub-folder is the **trained-CNN-embeddings** method; the notebook in the parent folder is
+the **pretrained-VGG16-features** method.
 
-| | `Deep-Fashion-Recommendation-system` | **this project** |
+| | Pretrained VGG16 features *(parent folder)* | **CNN embeddings — this folder** |
 |---|---|---|
 | Dataset | Women's fashion images, manual Google Drive download | Fashion-MNIST, ships with Keras |
 | Model | Pretrained VGG16, no training | CNN trained from scratch |
