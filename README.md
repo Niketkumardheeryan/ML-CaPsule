@@ -408,6 +408,7 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | Currency Arbitrage with RL | Reinforcement Learning | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Currency%20Arbitrage%20with%20Reinforcement%20Learning) |
 | Sales Prediction (Research) | ML | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Sales%20Prediction) |
 | TweetMiner AI | NLP | Beginner | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/TweetMiner_AI) |
+| Intelligent Network Intrusion Detection System | ML | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Intelligent%20Network%20Intrusion%20Detection%20System%20using%20Machine%20Learning) |
 | Mental Health Risk Scorer | NLP & Transformers | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Mental_Health_Text_Analysis_%26_Depression_Risk_Scorer) |
 
 </details>
