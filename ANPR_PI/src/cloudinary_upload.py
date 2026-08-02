@@ -17,19 +17,16 @@ except ImportError:
 
 from utils.load_credentials import get_credential
 
-# Cloudinary credentials (loaded securely from environment variables)
-CLOUDINARY_CONFIG = {
-    "cloud_name": get_credential("CLOUDINARY_CLOUD_NAME"),
-    "api_key": get_credential("CLOUDINARY_API_KEY"),
-    "api_secret": get_credential("CLOUDINARY_API_SECRET"),
-}
-
-if CLOUDINARY_AVAILABLE and CLOUDINARY_CONFIG["api_key"] and CLOUDINARY_CONFIG["api_secret"]:
-    cloudinary.config(
-        cloud_name=CLOUDINARY_CONFIG["cloud_name"],
-        api_key=CLOUDINARY_CONFIG["api_key"],
-        api_secret=CLOUDINARY_CONFIG["api_secret"]
-    )
+if CLOUDINARY_AVAILABLE:
+    _cloud_name = get_credential("CLOUDINARY_CLOUD_NAME")
+    _api_key = get_credential("CLOUDINARY_API_KEY")
+    _api_secret = get_credential("CLOUDINARY_API_SECRET")
+    if _api_key and _api_secret:
+        cloudinary.config(
+            cloud_name=_cloud_name,
+            api_key=_api_key,
+            api_secret=_api_secret
+        )
 
 
 def upload_car_photo(frame, crop, plate_text, bbox):
