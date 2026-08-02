@@ -50,14 +50,9 @@ The two-sample KS test is a non-parametric statistical test that compares the cu
 ## 📁 Directory Structure
 ```text
 Concept_Drift_Detection_and_Adaptive_Retraining_Pipeline/
-├── generate_data.py          # Synthetic data generator
-├── drift_detector.py         # PSI and KS-test implementations
-├── pipeline.py               # End-to-end retraining simulation pipeline
-├── concept_drift_pipeline.ipynb # Google Colab-friendly Jupyter Notebook
-├── requirements.txt          # Python dependencies
-└── outputs/                  # Saved visualization plots
-    ├── drift_analysis.png    # Feature shift & PSI over time
-    └── f1_comparison.png     # Performance: Static vs. Adaptive Model
+├── concept_drift_pipeline.ipynb # Executed Jupyter Notebook with inline visualizations
+├── requirements.txt              # Python dependencies
+└── README.md                     # Project documentation
 ```
 
 ---
@@ -70,14 +65,8 @@ Make sure you have Python 3.8+ installed. Install the dependencies:
 pip install -r requirements.txt
 ```
 
-### Running the Python Pipeline
-Execute the end-to-end command-line pipeline:
-```bash
-python pipeline.py
-```
-
 ### Running the Jupyter Notebook
-Open the notebook in Jupyter or upload it to Google Colab:
+Open the notebook in Jupyter or upload it directly to Google Colab:
 ```bash
 jupyter notebook concept_drift_pipeline.ipynb
 ```
@@ -86,15 +75,15 @@ jupyter notebook concept_drift_pipeline.ipynb
 
 ## 📊 Results & Visualizations
 
-During execution, the pipeline evaluates performance across 10 sequential batches:
+During execution, the notebook evaluates performance across 10 sequential batches:
 - **Batches 1-3**: Stable baseline.
 - **Batches 4-6**: Covariate shift (sudden drift detected by PSI and KS test).
 - **Batches 7-10**: Concept drift (additional shift in classification boundaries).
 
 ### Model Performance Comparison
-The plot below compares the F1-score of a static model (trained once on Batch 1) vs. our adaptive model (which retrains when drift is detected).
+The interactive plots rendered directly inside `concept_drift_pipeline.ipynb` compare the accuracy/F1-score of a static model (trained once on Batch 1) vs. our adaptive model (which retrains when drift is detected).
 
 * **Static Model (Red)**: Suffers from performance decay as the distribution and concept shift.
 * **Adaptive Model (Green)**: Detects the shift, triggers retraining on the drifted batch, and recovers its high predictive accuracy/F1-score.
 
-*You can find the generated charts in the `outputs/` folder after running the pipeline.*
+*All cell outputs, distribution charts, and accuracy comparison plots are pre-rendered directly inside the notebook.*
