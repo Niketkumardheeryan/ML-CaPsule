@@ -15,26 +15,38 @@ jobs:
       contents: read 
 
     steps:
-      - name: Checkout Repository
+      # Use sparse-checkout to download ONLY the python script
+      - name: Sparse Checkout Repository
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/scripts/check_for_duplicates.py
+          sparse-checkout-cone-mode: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
           cache: 'pip'
+          cache-dependency-path: '.github/workflows/duplicate.yaml'
+          
+      # Cache the Hugging Face model directory to prevent re-downloading weights
+      - name: Cache Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: ${{ runner.os }}-huggingface-bge-small-en-v1.5
 
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          # sentence-transformers will automatically install torch and transformers
           pip install pandas numpy scikit-learn sentence-transformers PyGithub
 
       - name: Run Duplicate Detector Script
         env:
-          # Automatically provided by GitHub Actions
           Token: ${{ secrets.GITHUB_TOKEN }}
           Issue: ${{ github.event.issue.number }}
           Repo: ${{ github.repository }}
+          HF_HOME: ~/.cache/huggingface 
         run: |
           python .github/scripts/check_for_duplicates.py
