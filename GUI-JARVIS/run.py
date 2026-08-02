@@ -6,6 +6,7 @@ import winsound
 import wikipedia
 import sys
 import os
+from utils.load_credentials import get_credential
 import webbrowser
 import datetime
 import shutil
@@ -238,7 +239,7 @@ class mainT(QThread):
                     pass
 
             elif ('weather' in self.query or 'temperature' in self.query):
-                api_key = os.environ.get("OPENWEATHERMAP_API_KEY", "")
+                api_key = get_credential("OPENWEATHERMAP_API_KEY") or ""
                 base_url = "http://api.openweathermap.org/data/2.5/weather?"
                 speak("which city sir")
                 city_name = self.JTT()
