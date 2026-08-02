@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Energy Analytics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="brand-section">
+                <i class="fa-solid fa-house-laptop brand-icon"></i>
+                <h1 class="brand-title">EnergyIntel</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <a href="{{ url_for('index') }}"><i class="fa-solid fa-gauge"></i> <span>Dashboard</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('predict') }}"><i class="fa-solid fa-bolt"></i> <span>Real-time Predictor</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('forecast') }}"><i class="fa-solid fa-chart-line"></i> <span>ARIMA Forecasting</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('analytics') }}"><i class="fa-solid fa-chart-pie"></i> <span>Data Analytics</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header-container">
+                <div>
+                    <h2 class="page-title" id="main-heading">Smart Home Energy Analytics</h2>
+                    <p class="page-subtitle">Track, analyze, and optimize your household power consumption.</p>
+                </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="dashboard-grid">
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-title">Analyzed Records</div>
+                        <div class="stat-value">{{ total_records }}</div>
+                    </div>
+                    <i class="fa-solid fa-database stat-icon"></i>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-title">Avg Consumption</div>
+                        <div class="stat-value">{{ avg_energy }} kWh</div>
+                    </div>
+                    <i class="fa-solid fa-bolt-lightning stat-icon"></i>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-title">Peak Usage Record</div>
+                        <div class="stat-value">{{ max_energy }} kWh</div>
+                    </div>
+                    <i class="fa-solid fa-fire stat-icon"></i>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-title">Avg Temp</div>
+                        <div class="stat-value">{{ avg_temp }} °C</div>
+                    </div>
+                    <i class="fa-solid fa-temperature-half stat-icon"></i>
+                </div>
+            </div>
+
+            <!-- Chart Panel -->
+            <div class="visual-panel">
+                <h3 class="panel-title">Recent Consumption Trend (Daily Average)</h3>
+                <canvas id="recentTrendChart" height="100"></canvas>
+            </div>
+            
+            <!-- Features Description -->
+            <div class="dashboard-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="visual-panel" style="margin-bottom: 0;">
+                    <h3 class="panel-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Predictive Insights</h3>
+                    <p>Utilize high-accuracy XGBoost models trained on 100K smart home records to predict total hourly energy demands and identify if current habits fall under a wasteful or efficient pattern.</p>
+                </div>
+                <div class="visual-panel" style="margin-bottom: 0;">
+                    <h3 class="panel-title"><i class="fa-solid fa-clock-rotate-left"></i> ARIMA Forecasting</h3>
+                    <p>Forecast future power grids requirements. Our Autoregressive Integrated Moving Average (ARIMA) models evaluate historical patterns to forecast the next 14 days of energy metrics.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('recentTrendChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: {{ recent_dates | tojson }},
+                datasets: [{
+                    label: 'Daily Average Energy (kWh)',
+                    data: {{ recent_values | tojson }},
+                    borderColor: '#00adb5',
+                    backgroundColor: 'rgba(0, 173, 181, 0.1)',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#e0e0e0'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.05)'
+                        },
+                        ticks: {
+                            color: '#b0b0b0'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.05)'
+                        },
+                        ticks: {
+                            color: '#b0b0b0'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

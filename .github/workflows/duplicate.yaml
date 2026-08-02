@@ -1,0 +1,51 @@
+name: Duplicate Issue Detector
+
+# Triggers the workflow whenever a new issue is opened
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  detect-duplicate:
+    runs-on: ubuntu-latest
+    
+    # Required permissions for the GITHUB_TOKEN to add comments and labels
+    permissions:
+      issues: write
+      contents: read 
+
+    steps:
+      # Use sparse-checkout to download ONLY the python script
+      - name: Sparse Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/scripts/check_for_duplicates.py
+          sparse-checkout-cone-mode: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+          
+      # Cache the Hugging Face model directory to prevent re-downloading weights
+      - name: Cache Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: ${{ runner.os }}-huggingface-bge-small-en-v1.5
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy scikit-learn sentence-transformers PyGithub
+
+      - name: Run Duplicate Detector Script
+        env:
+          Token: ${{ secrets.GITHUB_TOKEN }}
+          Issue: ${{ github.event.issue.number }}
+          Repo: ${{ github.repository }}
+          HF_HOME: ~/.cache/huggingface 
+        run: |
+          python .github/scripts/check_for_duplicates.py

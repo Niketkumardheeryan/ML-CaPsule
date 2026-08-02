@@ -1,0 +1,7 @@
+streamlit
+requests
+pandas
+plotly
+textblob
+nltk
+python-dotenv
