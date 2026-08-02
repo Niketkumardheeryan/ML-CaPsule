@@ -9,6 +9,12 @@ if sys.platform == 'win32':
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
+# Security Configurations
+app.config['PREFERRED_URL_SCHEME'] = 'https'
+app.config['SESSION_COOKIE_SECURE'] = True
+app.config['SESSION_COOKIE_HTTPONLY'] = True
+app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, 'models', 'model.pkl')
 VECTORIZER_PATH = os.path.join(BASE_DIR, 'models', 'vectorizer.pkl')
