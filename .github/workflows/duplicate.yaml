@@ -12,7 +12,8 @@ jobs:
     # Required permissions for the GITHUB_TOKEN to add comments and labels
     permissions:
       issues: write
-      contents: read 
+      contents: read
+      actions: write
 
     steps:
       # Use sparse-checkout to download ONLY the python script
