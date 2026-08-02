@@ -21,6 +21,7 @@ jobs:
         with:
           sparse-checkout: |
             .github/scripts/check_for_duplicates.py
+            .github/workflows/duplicate.yaml
           sparse-checkout-cone-mode: false
 
       - name: Set up Python
