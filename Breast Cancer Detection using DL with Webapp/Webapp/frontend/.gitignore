@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dev-dist/
+coverage/
+*.local
+.DS_Store
+npm-debug.log*
+
+# The repository root .gitignore carries a Python virtualenv rule (`lib/`) that
+# would otherwise silently exclude this app's src/lib/ directory.
+!src/lib/
+
