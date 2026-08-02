@@ -1,6 +1,5 @@
 import sys
 import os
-import numpy as np
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 from github import Github, Auth
@@ -21,8 +20,7 @@ all_issues = repo.get_issues(state="all")
 
 data = {
     'ids': [],
-    'issue_title': [],
-    'issue_body': []
+    'issue_text': []
 }
 
 for issue in all_issues:
@@ -35,10 +33,14 @@ for issue in all_issues:
         print(f"Skipping target issue #{issue_no}")
         continue
 
-    # Append the CURRENT issue's number, not the target issue_no
+    issue_body = "" if issue.body is None else issue.body
+    issue_text = "\n\n".join(part for part in [issue.title, issue_body] if part).strip()
+
+    if not issue_text:
+        continue
+
     data['ids'].append(issue.number)
-    data['issue_title'].append(issue.title)
-    data['issue_body'].append("" if issue.body is None else issue.body)
+    data['issue_text'].append(issue_text)
 
 # Handle case where there are no other issues to compare against
 if not data['ids']:
@@ -48,41 +50,31 @@ if not data['ids']:
 df = pd.DataFrame.from_dict(data=data)
 
 print("Developed dataset")
-print("Calculating embeddings for titles and descriptions")
+print("Calculating embeddings for issue text")
 
 target_issue = repo.get_issue(issue_no)
 target_issue_body = "" if not target_issue.body else target_issue.body
+target_issue_text = "\n\n".join(part for part in [target_issue.title, target_issue_body] if part).strip()
 
 model = SentenceTransformer('BAAI/bge-small-en-v1.5')
 
-# Create lists of embeddings (better compatibility with pandas)
-df['embed_title'] = list(model.encode(df['issue_title'].tolist()))
-df['embed_body'] = list(model.encode(df['issue_body'].tolist()))
+issue_embeddings = model.encode(df['issue_text'].tolist())
 
 print("Done!")
 
-# Generate embeddings for the target issue
-target_embeddings = model.encode([target_issue.title, target_issue_body])
+target_embedding = model.encode([target_issue_text])[0]
 
 print("Calculating cosine similarities")
 
-# Sklearn cosine_similarity expects 2D arrays. We reshape the 1D arrays to (1, -1)
-df['sim_title'] = df['embed_title'].apply(
-    lambda x: cosine_similarity(target_embeddings[0].reshape(1, -1), x.reshape(1, -1))[0][0]
-)
-df['sim_body'] = df['embed_body'].apply(
-    lambda x: cosine_similarity(target_embeddings[1].reshape(1, -1), x.reshape(1, -1))[0][0]
-)
+scores = cosine_similarity(target_embedding.reshape(1, -1), issue_embeddings)[0]
+df['similarity_score'] = scores
 
 print("Done!")
 print("Checking for similar issues")
 
-# Calculate the combined average similarity score
-df['avg_sim'] = (0.35*df['sim_title'] + 0.65*df['sim_body'])
-
 # Find the row with the maximum similarity
-max_sim_idx = df['avg_sim'].idxmax()
-max_sim_score = df['avg_sim'].max()
+max_sim_idx = df['similarity_score'].idxmax()
+max_sim_score = df['similarity_score'].max()
 sim_issue_id = df.loc[max_sim_idx, 'ids']
 
 if max_sim_score > 0.85:
