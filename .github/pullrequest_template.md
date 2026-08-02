@@ -34,6 +34,7 @@ Example how to mark a checkbox:-
 - [x] My code follows the code style of this project.
 -->
 - [ ] My code follows the guidelines of this project.
+- [ ] No hardcoded API keys, tokens, or credentials are introduced in this PR.
 - [ ] I have performed a self-review of my own code.
 - [ ] I have commented my code, particularly whereever it was hard to understand.
 - [ ] I have made corresponding changes to the documentation.

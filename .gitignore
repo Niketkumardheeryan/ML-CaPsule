@@ -8,6 +8,10 @@
 !*.env.example
 .env.local
 .env.*.local
+*.pem
+*.key
+*_credentials.json
+service_account*.json
 
 # --- Kaggle credentials ---
 kaggle.json

@@ -15,11 +15,11 @@ try:
 except ImportError:
     CLOUDINARY_AVAILABLE = False
 
-# Cloudinary credentials
+# Cloudinary credentials (loaded securely from environment variables)
 CLOUDINARY_CONFIG = {
-    "cloud_name": "dmia3iqeh",
-    "api_key": "437237689967824",
-    "api_secret": "1_BTfBDRRMotPzevPnPhsQ2LF9A",
+    "cloud_name": os.environ.get("CLOUDINARY_CLOUD_NAME", "dmia3iqeh"),
+    "api_key": os.environ.get("CLOUDINARY_API_KEY", ""),
+    "api_secret": os.environ.get("CLOUDINARY_API_SECRET", ""),
 }
 
 if CLOUDINARY_AVAILABLE:
