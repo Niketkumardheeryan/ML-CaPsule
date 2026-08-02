@@ -11,7 +11,7 @@ def SARSA(grid, num_episodes, start_loc=None, max_episode_len=100, gamma=1.0, ep
     Q = np.zeros((grid.state_size, grid.action_size))
 
     for i in range(num_episodes):
-        if start_loc == None:
+        if start_loc is None:
         # Start at random location
             state_loc = random.choice(list(set(grid.locs) - set(grid.absorbing_locs)))
         else:
@@ -47,13 +47,14 @@ def SARSA(grid, num_episodes, start_loc=None, max_episode_len=100, gamma=1.0, ep
 
     return Q, policy
 
+
 def Q_learning(grid, num_episodes, start_loc=None,  max_episode_len=100, gamma=1.0, epsilon=1.0, alpha=0.1):
 
     # Init state-action function to zeros
     Q = np.zeros((grid.state_size, grid.action_size))
 
     for i in range(num_episodes):
-        if start_loc == None:
+        if start_loc is None:
         # Start at random location
             state_loc = random.choice(list(set(grid.locs) - set(grid.absorbing_locs)))
         else:
@@ -86,14 +87,16 @@ def Q_learning(grid, num_episodes, start_loc=None,  max_episode_len=100, gamma=1
 
     return Q, policy
 
+
 def epsilon_greedy_policy(Q, epsilon):
     policy = np.zeros(Q.shape)
     best_actions = np.argmax(Q, 1)
     policy[range(Q.shape[0]), best_actions] = 1 - epsilon + epsilon / Q.shape[1]
-    other_actions = [[i for i in range(Q.shape[1]) if i!= j] for j in best_actions]
+    other_actions = [[i for i in range(Q.shape[1]) if i != j] for j in best_actions]
     other_actions = np.array(other_actions).T
     policy[range(Q.shape[0]), other_actions] = epsilon / Q.shape[1]
     return policy
+
 
 def epsilon_greedy_action(Q, epsilon, state_idx):
 
