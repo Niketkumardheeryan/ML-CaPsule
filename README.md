@@ -410,6 +410,7 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | TweetMiner AI | NLP | Beginner | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/TweetMiner_AI) |
 | Intelligent Network Intrusion Detection System | ML | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Intelligent%20Network%20Intrusion%20Detection%20System%20using%20Machine%20Learning) |
 | Mental Health Risk Scorer | NLP & Transformers | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Mental_Health_Text_Analysis_%26_Depression_Risk_Scorer) |
+| Code Vulnerability Classifier | ML & Transformers | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Code%20Vulnerability%20Classifier) |
 
 </details>
 
