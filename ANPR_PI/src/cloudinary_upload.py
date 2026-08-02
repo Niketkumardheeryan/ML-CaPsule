@@ -18,11 +18,12 @@ except ImportError:
 from utils.load_credentials import get_credential
 
 if CLOUDINARY_AVAILABLE:
-    cloudinary.config(
-        cloud_name=get_credential("CLOUDINARY_CLOUD_NAME"),
-        api_key=get_credential("CLOUDINARY_API_KEY"),
-        api_secret=get_credential("CLOUDINARY_API_SECRET")
-    )
+    # Ensure environment variables are loaded from .env or Colab secrets
+    get_credential("CLOUDINARY_CLOUD_NAME")
+    get_credential("CLOUDINARY_API_KEY")
+    get_credential("CLOUDINARY_API_SECRET")
+    # Cloudinary SDK automatically initializes from environment variables
+    cloudinary.config(secure=True)
 
 
 def upload_car_photo(frame, crop, plate_text, bbox):
