@@ -1,40 +1,44 @@
 # Driver Drowsiness Detection
-This is a driver drowsiness detection project, that detects if the drivers eyes are closed for 15 continuous frames, then the system alerts the driver. The project uses OpenCV and Haarcascade classifier to detect the eyes. A CNN model is trained on the given dataset to detect whether the eye is open or closed.
 
-## Libraries Used : 
-### CNN Model
-- tensorflow
-- keras.preprocessing.image
+This project contains two independently documented implementations of real-time driver drowsiness detection.
 
-### Driver Drowsiness Detection
-- OpenCV
-- keras.models
-- tensorflow
-- numpy
-- keras.preprocessing
+## Implementations
 
-## Steps being followed :
-### CNN Model
-- Import Libraries
-- Data Preprocessing
-- Initializing CNN
-- Convolutional Layer
-- Max Pooling Layer
-- Adding a second convolution and max pooling layer
-- Flattening
-- Full Connections
-- Output Layer
-- Training the CNN
-- Saving the model
+| Folder | Method | Description |
+| --- | --- | --- |
+| [Legacy_Haar_CNN](Legacy_Haar_CNN) | Haar Cascades + CNN | Original implementation using Haar Cascade classifiers with a CNN for eye state classification. |
+| [MediaPipe_EAR](MediaPipe_EAR) | MediaPipe Face Landmarker + Eye Aspect Ratio (EAR) | Modern implementation using MediaPipe facial landmarks and the Eye Aspect Ratio for drowsiness detection. |
 
-### Driver Drowsiness Detection
-- Import Libraries
-- Load CNN Model
-- Face and Eye Detection using Haar Cascade
-- Eye open or closed prediction using the CNN Model
-- Alert if drowsy
+Each implementation contains:
+- A dedicated Jupyter notebook
+- A separate README
+- A requirements.txt file
+- Implementation-specific assets
 
+## Codebase
 
-## Demo
-<img width="458" alt="image" src="https://user-images.githubusercontent.com/73430464/160766013-f7214357-ecf7-4463-b43f-077c45936da2.png">
+### Legacy Haar + CNN
+- **Folder:** [Legacy_Haar_CNN](Legacy_Haar_CNN)
+- **Notebook:** [CNN_Model.ipynb](Legacy_Haar_CNN/CNN_Model.ipynb)
+- **Detection Notebook:** [Driver_Drowsiness_Detection_Haar_CNN.ipynb](Legacy_Haar_CNN/Driver_Drowsiness_Detection_Haar_CNN.ipynb)
 
+### MediaPipe + EAR
+- **Folder:** [MediaPipe_EAR](MediaPipe_EAR)
+- **Notebook:** [Driver_Drowsiness_Detection_MediaPipe.ipynb](MediaPipe_EAR/Driver_Drowsiness_Detection_MediaPipe.ipynb)
+
+## Dataset
+
+### Legacy Haar + CNN
+The CNN model is trained using eye image directories (Open/Closed). The dataset is organized into training and testing folders and **does not use a CSV file**.
+
+### MediaPipe + EAR
+This implementation performs real-time webcam inference using MediaPipe Face Landmarker and **does not require any dataset or CSV file**.
+
+## Running the Project
+
+Each implementation can be executed independently by following the instructions provided in its respective README.
+
+Before submitting:
+- All notebook cells should be executed.
+- Outputs should remain saved in the notebook.
+- Follow the setup instructions inside the corresponding implementation folder.

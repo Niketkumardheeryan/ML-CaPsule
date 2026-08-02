@@ -44,7 +44,7 @@ if __name__ == "__main__":
         )
 
     # Split the data into training and test sets. (0.75, 0.25) split.
-    train, test = train_test_split(data)
+    train, test = train_test_split(data , random_state=42)
 
     # The predicted column is "quality" which is a scalar from [3, 9]
     train_x = train.drop(["quality"], axis=1)

@@ -1,0 +1,5 @@
+streamlit
+torchvision
+numpy 
+pillow
+numpy

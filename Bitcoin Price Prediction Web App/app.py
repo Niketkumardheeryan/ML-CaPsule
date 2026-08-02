@@ -1,77 +1,80 @@
-import streamlit as st
-import sklearn
-from sklearn import datasets
-from sklearn import metrics
-import numpy as np
+﻿import os
+
 import pandas as pd
-from sklearn import preprocessing
+import streamlit as st
+from sklearn.linear_model import Lasso
 from sklearn.model_selection import train_test_split
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+st.set_page_config(
+    page_title="Bitcoin Price Predictor",
+    layout="centered",
+)
 
-r = st.sidebar.radio("Navigation Menu",["Home","Bitcoin Price"])
+r = st.sidebar.radio(
+    "Navigation Menu",
+    ["Home", "Bitcoin Price Prediction"],
+)
 
-if r=="Home":
-    
-    st.write("""
-    # Bitcoin Price Predictive 
-    #    
-    """)
-    st.image("price.png")
-    st.subheader(" Bitcoin Price ")
-    st.write(" Bitcoin is widely used cryptocurrency for digital market. It is decentralised that means it is not own by government or any other company.Transactions are simple and easy as it doesn’t belong to any country.Records data are stored in Blockchain.Bitcoin price is variable and it is widely used so it is important to predict the price of it for making any investment")
-    
-    
+if r == "Home":
+    st.title("Bitcoin Price Prediction Web App")
 
-        
+    image_path = os.path.join(BASE_DIR, "price.png")
+    st.image(image_path, use_column_width=True)
 
-# Biocoin Price Prediction
-bitcoin=pd.read_csv('coin_Bitcoin.csv')
-bitcoin.drop(["Name"],axis=1, inplace=True)
-bitcoin.drop(["SNo"],axis=1, inplace=True)
-bitcoin.drop(["Symbol"],axis=1, inplace=True)
+    st.markdown("## About Bitcoin")
 
-# import datetime as dt
-# bitcoin["Date"]=pd.to_datetime(bitcoin["Date"])
-# bitcoin['Date_year'] = bitcoin["Date"].dt.year
-# bitcoin['Date_month'] = bitcoin["Date"].dt.month
-# bitcoin['Date_day'] = bitcoin["Date"].dt.day
-# bitcoin['Date_hour'] = bitcoin["Date"].dt.hour
-# bitcoin['Date_minute'] = bitcoin["Date"].dt.minute
-# bitcoin['Date_seconde'] = bitcoin["Date"].dt.second
-bitcoin.drop(["Date"], axis=1, inplace=True)
+    st.write(
+        """
+        Bitcoin is one of the most widely used cryptocurrencies in the digital market.
+        It is decentralized, meaning it is not controlled by any government or company.
 
+        Transactions are simple, secure, and recorded on blockchain technology.
+        Since Bitcoin prices are highly volatile, predicting its market value can help users make better investment decisions.
+        """
+    )
 
-X=bitcoin.drop(["Marketcap"], axis=1)
-Y=bitcoin["Marketcap"]
+    st.info(
+        "This web application uses Machine Learning with Lasso Regression "
+        "to predict Bitcoin market trends."
+    )
 
-from sklearn.linear_model import Lasso
-Ls=Lasso()
-xtrain,xtest,ytrain,ytest=train_test_split(X,Y,test_size=0.2)
-Ls.fit(xtrain,ytrain)
+csv_path = os.path.join(BASE_DIR, "coin_Bitcoin.csv")
+bitcoin = pd.read_csv(csv_path)
 
-if r=='Bitcoin Price':
-    st.header("Know the Price of Bitcoin")
-    High=st.number_input("Highest Price of bitcoin")
-    Low=st.number_input("Lowest Price of")
-    Open=st.number_input("Opening Price of bitcoin")
-    Close=st.number_input("Closing Price of Bitcoin")
-    volume=st.number_input("Volume of the bitcoin")
-    
-    ypred=Ls.predict([[High,Low,Open,Close,volume]])
-    if(st.button("Predict")):
-        st.success(f"Your Predicted Salary Is {abs(ypred)}")
-        
+bitcoin.drop(["Name", "SNo", "Symbol", "Date"], axis=1, inplace=True)
 
-    
-    
+X = bitcoin.drop(["Marketcap"], axis=1)
+Y = bitcoin["Marketcap"]
 
-        
-        
+xtrain, xtest, ytrain, ytest = train_test_split(
+    X,
+    Y,
+    test_size=0.2,
+    random_state=42,
+)
 
-   
-    
+model = Lasso()
+model.fit(xtrain, ytrain)
 
-    
-    
-    
+if r == "Bitcoin Price Prediction":
+    st.title("Bitcoin Marketcap Prediction")
+
+    st.markdown("### Enter Bitcoin Market Details")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        high = st.number_input("Highest Price of Bitcoin", min_value=0.0)
+        open_price = st.number_input("Opening Price of Bitcoin", min_value=0.0)
+        volume = st.number_input("Volume of Bitcoin", min_value=0.0)
+
+    with col2:
+        low = st.number_input("Lowest Price of Bitcoin", min_value=0.0)
+        close = st.number_input("Closing Price of Bitcoin", min_value=0.0)
+
+    if st.button("Predict Marketcap"):
+        prediction = model.predict([[high, low, open_price, close, volume]])
+        st.success(f"Predicted Bitcoin Marketcap: ${abs(prediction[0]):,.2f}")
+        st.balloons()

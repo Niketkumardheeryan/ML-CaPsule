@@ -1,0 +1,13 @@
+{
+  "model_configuration": {
+    "model": "gpt-4o",
+    "model_provider": "openai",
+    "configurable": true,
+    "extra_params": {
+      "temperature": 0.2,
+      "max_tokens": 1024,
+      "timeout": 30.0,
+      "max_retries": 2
+    }
+  }
+}

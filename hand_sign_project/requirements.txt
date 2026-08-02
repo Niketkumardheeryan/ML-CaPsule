@@ -1,0 +1,8 @@
+mediapipe>=0.10.0
+opencv-python>=4.5.5
+numpy>=1.19.5
+matplotlib>=3.3.0
+scikit-learn>=0.24.0
+# Optional: TensorFlow is separate due to potential Python/TensorFlow compatibility
+# Install TensorFlow only if your Python and platform support it: see `requirements-tf.txt`.
+h5py>=3.1.0
