@@ -13,6 +13,7 @@ jobs:
     permissions:
       issues: write
       contents: read 
+      actions: write
 
     steps:
       # Use sparse-checkout to download ONLY the python script
