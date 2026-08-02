@@ -6,6 +6,7 @@ from werkzeug.security import safe_join
 import numpy as np
 import cv2
 import tensorflow as tf
+from werkzeug.exceptions import NotFound
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -161,6 +162,7 @@ def api_predict():
 @app.route('/app/<path:path>')
 def spa(path):
     """Serve the built React PWA, falling back to its index for client routes."""
+    # 1. Ensure the build directory actually exists
     if not os.path.isdir(FRONTEND_DIST):
         return (
             "The PWA has not been built yet. Run: "
