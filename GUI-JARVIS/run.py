@@ -21,8 +21,14 @@ from geopy import Nominatim
 from pip._vendor import requests
 from bs4 import BeautifulSoup as soup
 from yahoo_fin import stock_info
+from dotenv import load_dotenv
 
+load_dotenv()
 
+EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+DEFAULT_RECEIVER = os.getenv("DEFAULT_RECEIVER")
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
 flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint)
 
 engine = pyttsx3.init('sapi5')
@@ -44,11 +50,21 @@ def wish():
         speak("hello sir Good evening i am jarvis")
 
 def sendEmail(to, content):
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server = smtplib.SMTP("smtp.gmail.com", 587)
     server.ehlo()
     server.starttls()
-    server.login('naugraiyasuryansh@gmail.com', '6394682401')
-    server.sendmail('naugraiyasuryansh@gmail.com', to, content)
+
+    server.login(
+        EMAIL_ADDRESS,
+        EMAIL_PASSWORD
+    )
+
+    server.sendmail(
+        EMAIL_ADDRESS,
+        to,
+        content
+    )
+
     server.close()
 
 class mainT(QThread):
@@ -162,7 +178,7 @@ class mainT(QThread):
                 try:
                     speak("What should i say?")
                     self.content = self.STT()
-                    to = "snaugraiya10@gmail.com"
+                    to = DEFAULT_RECEIVER
                     sendEmail(to, self.content)
                     speak("Email has been sent!")
                 except Exception as e:
@@ -238,7 +254,7 @@ class mainT(QThread):
                     pass
 
             elif ('weather' in self.query or 'temperature' in self.query):
-                api_key = "54b1b9aeefe8b01a10b622d47828ef3d"
+                api_key = OPENWEATHER_API_KEY
                 base_url = "http://api.openweathermap.org/data/2.5/weather?"
                 speak("which city sir")
                 city_name = self.JTT()
