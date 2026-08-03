@@ -17,7 +17,9 @@ def value_cleaner(x):
         for i in str_temp.split(","):
             str_temp_2 = str_temp_2 + i
         return str_temp_2
-    except:
+    except Exception as e:
+        # Optionally log the exception for debugging
+        print(f"Error cleaning value: {e}")
         return 0
 
 # Function to load data
