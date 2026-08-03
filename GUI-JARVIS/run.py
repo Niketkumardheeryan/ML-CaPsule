@@ -8,6 +8,10 @@ import sys
 import os
 import webbrowser
 import datetime
+import ctypes
+import threading
+import traceback
+import multiprocessing
 import speech_recognition as sr
 from urllib.request import urlopen
 from PyQt5 import QtWidgets, QtGui,QtCore
@@ -16,21 +20,33 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.uic import loadUiType
 from geopy import Nominatim
-from pip._vendor import requests
+import requests
 from bs4 import BeautifulSoup as soup
 from yahoo_fin import stock_info
 
 
 flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint)
 
-engine = pyttsx3.init('sapi5')
-voices = engine.getProperty('voices')
-engine.setProperty('voice',voices[0].id)
-engine.setProperty('rate',180)
+def speak_helper(audio):
+    try:
+        import pyttsx3
+        import ctypes
+        ctypes.windll.ole32.CoInitialize(None)
+        
+        engine = pyttsx3.init('sapi5')
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[0].id)
+        engine.setProperty('rate', 180)
+        engine.say(audio)
+        engine.runAndWait()
+    except Exception as e:
+        print(f"[JARVIS Subprocess Speak Error] {e}")
 
 def speak(audio):
-    engine.say(audio)
-    engine.runAndWait()
+    print(f"[JARVIS Speak]: {audio}")
+    p = multiprocessing.Process(target=speak_helper, args=(audio,))
+    p.start()
+    p.join()
 
 def wish():
     hour = int(datetime.datetime.now().hour)
@@ -54,17 +70,25 @@ class mainT(QThread):
         super(mainT,self).__init__()
     
     def run(self):
+        print("[JARVIS/WorkerThread]: Thread run() started.")
         self.JARVIS()
     
     def STT(self):
         R = sr.Recognizer()
         with sr.Microphone() as source:
+            print("[JARVIS STT]: Adjusting for ambient noise...")
+            R.adjust_for_ambient_noise(source)
             speak("please tell me what to do")
+            print("[JARVIS STT]: Listening...")
             audio = R.listen(source)
         try:
+            print("[JARVIS STT]: Recognizing using Google Speech Recognizer...")
             speak("wait Recognizing")
             text = R.recognize_google(audio,language='en-in')
-        except Exception:
+            print(f"[JARVIS STT]: Recognized text: '{text}'")
+        except Exception as e:
+            print(f"[JARVIS STT Exception]: {e}")
+            traceback.print_exc()
             return "none"
         text = text.lower()
         return text
@@ -72,18 +96,26 @@ class mainT(QThread):
     def JTT(self):
         R = sr.Recognizer()
         with sr.Microphone() as source:
+            print("[JARVIS JTT]: Adjusting for ambient noise...")
+            R.adjust_for_ambient_noise(source)
             speak("listening")
+            print("[JARVIS JTT]: Listening...")
             audio = R.listen(source)
         try:
+            print("[JARVIS JTT]: Recognizing using Google Speech Recognizer...")
             speak("wait Recognizing")
             text1 = R.recognize_google(audio,language='en-in')
-        except Exception:
+            print(f"[JARVIS JTT]: Recognized text: '{text1}'")
+        except Exception as e:
+            print(f"[JARVIS JTT Exception]: {e}")
+            traceback.print_exc()
             speak("not able to recognize")
             return ""
         text1 = text1.lower()
         return text1
 
     def JARVIS(self):
+        print("[JARVIS/WorkerThread]: Starting loop...")
         speak("starting")
         speak("initiating the system")
         speak("loading")
@@ -279,7 +311,8 @@ class mainT(QThread):
                 speak("PLease tell city or state name")
                 self.line = self.JTT()
                 if self.line:
-                    location = geolocator.geocode(self.JTT())
+                    print(f"[JARVIS location]: Seeking geocode for: {self.line}")
+                    location = geolocator.geocode(self.line)
                     speak("Country location is:" + str(location))
                 else:
                     pass
@@ -331,7 +364,7 @@ class Main(QMainWindow,FROM_MAIN):
         "border:none;")
         self.exitB.clicked.connect(self.close)
         self.setWindowFlags(flags)
-        Dspeak = mainT()
+        self.Dspeak = mainT()
         self.label_8 = QMovie("./lib/initiating system.gif", QByteArray(), self)
         self.label_8.setCacheMode(QMovie.CacheAll)
         self.label_6.setMovie(self.label_8)
@@ -340,10 +373,12 @@ class Main(QMainWindow,FROM_MAIN):
         self.label_9.setCacheMode(QMovie.CacheAll)
         self.label_7.setMovie(self.label_9)
         self.label_9.start()
-        Dspeak.start()
+        self.Dspeak.start()
         self.label.setPixmap(QPixmap("./lib/tuse.png"))
 
-app = QtWidgets.QApplication(sys.argv)
-main = Main()
-main.show()
-exit(app.exec_())
+if __name__ == "__main__":
+    multiprocessing.freeze_support()
+    app = QtWidgets.QApplication(sys.argv)
+    main = Main()
+    main.show()
+    sys.exit(app.exec_())
