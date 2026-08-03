@@ -16,7 +16,8 @@
 5. **Play Music**: Select a video from the recommendations and play it directly within the app.
 
 ## YouTube API Setup
-YOUTUBE_API_KEY=your_actual_key_here
+
+    YOUTUBE_API_KEY=your_actual_key_here
 
 This app requires a YouTube Data API key to fetch video recommendations.
 
