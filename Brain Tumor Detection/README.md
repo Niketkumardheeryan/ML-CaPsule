@@ -110,3 +110,16 @@ Interpret Results: Analyze the model's performance using the visualizations and 
 
 Feel free to reach out if you encounter any issues or need further assistance with running the notebook.
 
+
++ ## Interactive UI with Gradio 🚀
++ We have added a lightweight, interactive web UI built using Gradio. You can easily upload MRI scans and see classification results in real-time.
++ 
++ ### How to run:
++ 1. Install dependencies:
++    ```bash
++    pip install -r requirements.txt
++    ```
++ 2. Run the application:
++    ```bash
++    python gradio_app.py
++    ```

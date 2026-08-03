@@ -1,0 +1,29 @@
+{
+  "name": "breast-cancer-detection-pwa",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Offline-first PWA frontend for the Breast Cancer Detection ultrasound classifier",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src tests"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@vitejs/plugin-react": "^5.1.0",
+    "jsdom": "^28.0.0",
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.1.12",
+    "vite-plugin-pwa": "^1.0.5",
+    "vitest": "^3.2.4"
+  }
+}
