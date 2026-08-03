@@ -42,7 +42,16 @@ app.config.update(
     SESSION_COOKIE_SAMESITE="Lax",
 )
 
-# Talisman(app)
+Talisman(
+    app,
+    force_https=True,
+    session_cookie_secure=True,
+    content_security_policy={
+        "default-src": "'self'",
+        "style-src": ["'self'", "'unsafe-inline'"],
+        "script-src": ["'self'", "'unsafe-inline'"],
+    },
+)
 
 
 # ==========================

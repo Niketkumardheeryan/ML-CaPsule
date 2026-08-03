@@ -156,7 +156,7 @@ The repository includes:
 ## Repository structure
 
 ```text
-Online Shoppers Intention Prediction/
+online-shoppers-intention-prediction/
 ├── Dataset/
 │   └── online_shoppers_intention.csv
 ├── Images/
