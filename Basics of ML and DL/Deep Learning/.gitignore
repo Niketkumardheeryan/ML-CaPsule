@@ -1,0 +1,4 @@
+*.pt
+*.tar.gz
+data_for_cifar_10/
+*.csv

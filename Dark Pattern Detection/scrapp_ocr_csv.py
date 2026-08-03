@@ -10,9 +10,13 @@ from io import BytesIO
 import random
 import os
 import time
+from pathlib import Path
 
-# Update this line with your Tesseract installation path
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\kulitesh\ML-CaPsule\Dark Pattern Detection\Tesseract-OCR\tesseract.exe'
+BASE_DIR = Path(__file__).resolve().parent
+
+tesseract_cmd = os.environ.get("TESSERACT_CMD") or os.environ.get("TESSERACT_PATH")
+if tesseract_cmd:
+    pytesseract.pytesseract.tesseract_cmd = tesseract_cmd
 
 # URL to analyze
 url_to_analyze = "https://www.myntra.com/"
@@ -26,9 +30,8 @@ def take_screenshot_and_analyze(url, num_screenshots=4):
         driver.get(url)
         WebDriverWait(driver, 20).until(lambda driver: driver.execute_script('return document.readyState') == 'complete')
 
-        # Create a directory to store screenshots if it doesn't exist
-        if not os.path.exists("Screenshots"):
-            os.makedirs("Screenshots")
+        screenshots_dir = BASE_DIR / "Screenshots"
+        screenshots_dir.mkdir(parents=True, exist_ok=True)
 
         for i in range(num_screenshots):
             # Scroll down a random amount
@@ -41,7 +44,7 @@ def take_screenshot_and_analyze(url, num_screenshots=4):
             image = Image.open(BytesIO(screenshot))
 
             # Save screenshot to file
-            screenshot_path = f"Screenshots/screenshot_{i + 1}.png"
+            screenshot_path = screenshots_dir / f"screenshot_{i + 1}.png"
             image.save(screenshot_path)
 
             # Use Tesseract OCR to extract text

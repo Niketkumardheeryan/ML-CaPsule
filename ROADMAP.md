@@ -1,5 +1,7 @@
 # 🗺️ ML-CaPsule Learning Roadmap
 
+[🏠 Main README](README.md) • [📖 Code of Conduct](CODE_OF_CONDUCT.md) • [🤝 Contributing Guidelines](CONTRIBUTING.md) • [📋 Project Template](.github/readme_template.md)
+
 > A structured 3-tier learning path across 150+ projects.  
 > Built for beginners who don't know where to start.
 
@@ -14,12 +16,14 @@
 ---
 
 ## 🟢 Beginner
+>
 > **Prerequisites:** Basic Python, High School Math  
 > **Key Libraries:** numpy, pandas, matplotlib, seaborn, scikit-learn
 
 | Project Name | Key Concepts/Libraries | Link |
 |---|---|---|
 | Basics of ML and DL | ML fundamentals, intro to deep learning | [View](./Basics%20of%20ML%20and%20DL) |
+| Interactive ML Algorithm Recommendation Guide for Beginners | Decision tree flowchart, algorithm selection, visual comparison guide | [View](./Interactive%20ML%20Algorithm%20Recommendation%20Guide%20for%20Beginners) |
 | Basics of the Python | Python basics, syntax | [View](./Basics%20of%20the%20Python) |
 | Basics of Power Bi | Data visualization, BI tools | [View](./Basics%20of%20Power%20Bi) |
 | NumPy - Basics | numpy arrays, operations | [View](./NumPy%20-%20Basics) |
@@ -82,10 +86,13 @@
 | Road accident Analysis using Power BI | Power BI, data analysis | [View](./Road%20accident%20Analysis%20using%20Power%20BI) |
 | Rock Paper Scissors Python Game | Python basics, OpenCV | [View](./Rock%20Paper%20Scissors%20Python%20Game) |
 | Github Topic Scraper | web scraping, BeautifulSoup | [View](./GitHub%20Topic%20Scraper) |
+| TweetMiner AI | NLP, Tweepy, VADER, TextBlob, scikit-learn | [View](./TweetMiner_AI) |
+
 
 ---
 
 ## 🟡 Intermediate
+>
 > **Prerequisites:** Beginner topics, Python proficiency  
 > **Key Libraries:** scikit-learn, TensorFlow/Keras, OpenCV, NLTK, Flask
 
@@ -100,6 +107,7 @@
 | Bird Species Classification Web App | CNN, Flask, deployment | [View](./Bird%20Species%20Classification%20Web%20App) |
 | Brain Tumor Detection | CNN, image classification | [View](./Brain%20Tumor%20Detection) |
 | Breast Cancer Detection using DL with Webapp | Deep Learning, Flask | [View](./Breast%20Cancer%20Detection%20using%20DL%20with%20Webapp) |
+| CBOW_PyTorch | CBOW, PyTorch, Word Embeddings, NLP | [View](./CBOW_PyTorch) |
 | CBT_ChatBot | NLP, chatbot basics | [View](./CBT_ChatBot) |
 | Chatbot Using RASA | RASA, NLP, dialogue | [View](./Chatbot%20Using%20RASA) |
 | Chicken_Disease_Classification | CNN, image classification | [View](./Chicken_Disease_Classification) |
@@ -107,7 +115,7 @@
 | Company Bankruptcy Using unsupervised | clustering, unsupervised ML | [View](./Company%20Bankruptcy%20Using%20unsupervised) |
 | Consumer Complaint Dataset | NLP, text classification | [View](./Consumer%20Complaint%20Dataset) |
 | Covid19 forecasting with prophet | Facebook Prophet, time series | [View](./Covid19%20forecasting%20with%20prophet) |
-| COVID-19-DATA-ANALYSIS | EDA, pandas, visualization | [View](./COVID-19-DATA-ANALYSIS) |
+| COVID-19-DATA-ANALYSIS | EDA, pandas, visualization | [View](./COVID_19-DATA-ANALYSIS) |
 | Covid_Third_Wave_Forecasting | time series, forecasting | [View](./Covid_Third_Wave_Forecasting) |
 | CrowdAI Plant Disease | CNN, image classification | [View](./CrowdAI%20Plant%20Disease) |
 | Crude oil forecasting | time series, regression | [View](./Crude%20oil%20forecasting) |
@@ -120,8 +128,9 @@
 | Diseases_Prediction | multi-class classification | [View](./Diseases_Prediction) |
 | Driver_Drowsiness_Detection | OpenCV, CNN | [View](./Driver_Drowsiness_Detection) |
 | Duplicate_Question_pair | NLP, similarity, Siamese networks | [View](./Duplicate_Question_pair) |
+| E-Waste Impact Calculator & Recycling Locator | Random Forest, Streamlit, Geospatial | [View](./E-Waste_Impact_Calculator_Recycling_Locator) |
 | Emotion Recognition Based on NLP | NLP, sentiment, classification | [View](./Emotion%20Recognition%20Based%20on%20NLP) |
-| emotion-based music recommendation | NLP, recommendation | [View](./emotion-based%20music%20recommendtion) |
+| emotion-based music recommendation | NLP, recommendation | [View](./emotion-based%20music%20recommendation) |
 | Employee_attrittion_prediction_using_ML | HR analytics, classification | [View](./Employee_attrittion_prediction_using_ML) |
 | Engineering Career Role Prediction | classification, scikit-learn | [View](./Engineering%20Career%20Role%20Prediction) |
 | Face-recognition | OpenCV, face detection | [View](./Face-recognition) |
@@ -152,7 +161,7 @@
 | Maternal Health Risk Prediction | classification, health ML | [View](./Maternal%20Health%20Risk%20Prediction) |
 | Medical_Help_Chatbot | NLP, chatbot | [View](./Medical_Help_Chatbot) |
 | Migraine Type Prediction | classification, health ML | [View](./Migraine%20Type%20Prediction) |
-| Mid English Classification | NLP, text classification | [View](./Mid%20English%20Classification) |
+| Mid English Classification | NLP, text classification | [View](./MNIST%20English%20Classification) |
 | Mobile Price Prediction | classification, scikit-learn | [View](./Mobile%20Price%20Prediction) |
 | Molecule_Property_Analysis | cheminformatics, ML | [View](./Molecule_Property_Analysis) |
 | Movie Genre Classification | NLP, multi-label classification | [View](./Movie%20Genre%20Classification) |
@@ -186,7 +195,7 @@
 | Sports Analytics Project | EDA, sports ML | [View](./Sports%20Analytics%20Project) |
 | Sports Image Classification | CNN, image classification | [View](./Sports%20Image%20Classification) |
 | SQL injection detection | NLP, cybersecurity ML | [View](./SQL%20injection%20detection) |
-| Stock Price Analysis | time series, pandas | [View](./Stock%20Analysis) |
+| Stock Price Analysis | time series, pandas | [View](./Stock%20Price%20Analysis) |
 | Text Summarization Model | NLP, summarization | [View](./Text%20Summarization%20Model) |
 | Time Series Forecasting with Python | time series, statsmodels | [View](./Time%20Series%20Forecasting%20with%20Python) |
 | Traffic Sign Recognition | CNN, OpenCV | [View](./Traffic%20Sign%20Recognition) |
@@ -202,6 +211,7 @@
 ---
 
 ## 🔴 Advanced
+>
 > **Prerequisites:** Intermediate topics, strong Python, math (Linear Algebra, Calculus)  
 > **Key Libraries:** TensorFlow, PyTorch, Keras, OpenCV, Reinforcement Learning libraries
 

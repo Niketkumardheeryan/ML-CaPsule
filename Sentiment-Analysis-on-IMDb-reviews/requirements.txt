@@ -1,0 +1,14 @@
+streamlit
+requests
+pandas
+plotly
+textblob
+nltk
+python-dotenv
+
+# Transformer analyser
+transformers
+torch
+
+# Only needed by compare_models.py
+datasets

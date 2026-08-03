@@ -2,14 +2,18 @@ name: Assigner
 
 on:
   issue_comment:
-    types: [created]
+    types: [created, edited]
+  issues:
+    types: [opened, edited]
+  workflow_dispatch:
 
 jobs:
   slash_assign:
-    # If the acton was triggered by a new comment that starts with `/assign`
-    # or a on a schedule
+    # Trigger if it's an issue comment, an issue description, or manually dispatched
     if: >
-      (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/assign')) || github.event_name == 'workflow_dispatch'
+      (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/assign')) || 
+      (github.event_name == 'issues' && startsWith(github.event.issue.body, '/assign')) || 
+      github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - name: Assign the user or unassign stale assignments
@@ -19,8 +23,26 @@ jobs:
           days_until_warning: 5
           days_until_unassign: 7
           stale_assignment_label: Stale
-          assigned_comment: "This issue [has been assigned]({{ comment.html_url }}) to {{ comment.user.login }}!\nIt will become unassigned if it is nott closed within {{ totalDays }} days. A maintainer can also add the **{{ inputs.pin_label }}** label to prevent it from being unassigned."
-          fail_comment: "This issue is already assigned to a contributor."
+          assigned_comment: "This issue [has been assigned]({{ comment.html_url }}) to {{ comment.user.login }}!\nIt will become unassigned if it is not closed within {{ totalDays }} days. A maintainer can also add the **{{ inputs.pin_label }}** label to prevent it from being unassigned."
+
+      - name: Remove specific labels after successful assignment
+        if: ${{ success() }}
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const labelsToRemove = ['noActivity', '🤩 Up for Grab'];
+            const currentLabels = context.payload.issue.labels.map(l => l.name);
+            
+            for (const label of labelsToRemove) {
+              if (currentLabels.includes(label)) {
+                await github.issues.removeLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.issue.number,
+                  name: label
+                });
+              }
+            }
 
       - name: Message failure
         if: ${{ failure() }}
@@ -32,13 +54,4 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               body: 'The issue is already assigned!\nPlease find/create a new issue to contribute to.\nYou can safely disregard the failed workflow notification for this issue. ❌',
-            });          
-      - name: Checkout code
-        uses: actions/checkout@main
-      - name: Run Action
-        uses: Suvraneel/Issue_Watcher@main
-        with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
-          author: "${{github.actor}}"
-          repo: Suvraneel/Automated-assign-labeler #Change the Repo name
-          maxIssue: 3
+            });

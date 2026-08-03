@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupyter Notebook Analysis & EDA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="brand-section">
+                <i class="fa-solid fa-house-laptop brand-icon"></i>
+                <h1 class="brand-title">EnergyIntel</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="{{ url_for('index') }}"><i class="fa-solid fa-gauge"></i> <span>Dashboard</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('predict') }}"><i class="fa-solid fa-bolt"></i> <span>Real-time Predictor</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('forecast') }}"><i class="fa-solid fa-chart-line"></i> <span>ARIMA Forecasting</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="{{ url_for('analytics') }}"><i class="fa-solid fa-chart-pie"></i> <span>Data Analytics</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header-container">
+                <div>
+                    <h2 class="page-title">Jupyter Notebook Analysis & EDA</h2>
+                    <p class="page-subtitle">Auto-generated plots mapping our end-to-end Machine Learning pipeline stages.</p>
+                </div>
+            </div>
+
+            <!-- Plots Grid -->
+            <div class="plots-grid">
+                {% for plot in plots %}
+                <div class="plot-card">
+                    <div class="plot-img-container">
+                        <img src="{{ url_for('static', filename='images/plots/' + plot.filename) }}" alt="{{ plot.title }}" class="plot-img" loading="lazy">
+                    </div>
+                    <div class="plot-details">
+                        <div class="plot-title">Plot {{ plot.id }}: {{ plot.title }}</div>
+                        <div class="plot-desc">{{ plot.desc }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </main>
+    </div>
+</body>
+</html>

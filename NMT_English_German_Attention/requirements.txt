@@ -1,0 +1,8 @@
+torch
+torchvision
+torchaudio
+torchtext
+numpy
+pandas
+matplotlib
+nltk
