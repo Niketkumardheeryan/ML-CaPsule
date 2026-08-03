@@ -561,3 +561,315 @@ This project is licensed under the **MIT License**.
 <sub>Built with ❤️ by <a href="https://github.com/Niketkumardheeryan">Niketkumardheeryan</a> and contributors</sub>
 
 </div>
+
+<!-- Projects start -->
+| Content List |
+|---------------|
+| [Accent_Neutralizer_for_Speech](Accent_Neutralizer_for_Speech) |
+| [Advanced Visualizations](Advanced%20Visualizations) |
+| [AI-Based QR Code Detection](AI-Based%20QR%20Code%20Detection) |
+| [AI_Based__Resume_Gap_Detector](AI_Based__Resume_Gap_Detector) |
+| [AI_Language_Learning_Assistant](AI_Language_Learning_Assistant) |
+| [AI_Resume Analyzer](AI_Resume%20Analyzer) |
+| [Air_quality_prediction](Air_quality_prediction) |
+| [Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms](Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms) |
+| [Alzheimer's Disease Predictor](Alzheimer's%20Disease%20Predictor) |
+| [Analysis_&_predict_Black_friday_sale](Analysis_&_predict_Black_friday_sale) |
+| [Animal_Cancer_Disease_Prediction](Animal_Cancer_Disease_Prediction) |
+| [Animal_Detection_Alert_System](Animal_Detection_Alert_System) |
+| [Anime Data Analysis and Prediction](Anime%20Data%20Analysis%20and%20Prediction) |
+| [ANN_Energy_Consumption_Predictor](ANN_Energy_Consumption_Predictor) |
+| [Anomaly Detection in Transactions using Deep Learning](Anomaly%20Detection%20in%20Transactions%20using%20Deep%20Learning) |
+| [ANPR_PI](ANPR_PI) |
+| [Artifical neural network from scratch](Artifical%20neural%20network%20from%20scratch) |
+| [Association Rule Implementation](Association%20Rule%20Implementation) |
+| [Attention_and_Transformers](Attention_and_Transformers) |
+| [Audio Classification](Audio%20Classification) |
+| [Audio_Deepfake_Detection](Audio_Deepfake_Detection) |
+| [Autism Identification System](Autism%20Identification%20System) |
+| [Automated Financial Reporting with Deep Learning](Automated%20Financial%20Reporting%20with%20Deep%20Learning) |
+| [Automatic Comment Generation](Automatic%20Comment%20Generation) |
+| [Automatic Summarization of Scientific Papers](Automatic%20Summarization%20of%20Scientific%20Papers) |
+| [AutoML_Tabular_Pipeline](AutoML_Tabular_Pipeline) |
+| [Autonomous Research AI Agent](Autonomous%20Research%20AI%20Agent) |
+| [Basics of ML and DL](Basics%20of%20ML%20and%20DL) |
+| [Basics of Power Bi](Basics%20of%20Power%20Bi) |
+| [Basics of the Python](Basics%20of%20the%20Python) |
+| [Bidirectional LSTM](Bidirectional%20LSTM) |
+| [Bike Price Prediction](Bike%20Price%20Prediction) |
+| [Bird Species Classification Web App](Bird%20Species%20Classification%20Web%20App) |
+| [Bitcoin Price Prediction Web App](Bitcoin%20Price%20Prediction%20Web%20App) |
+| [Bitcoin Price Predictor](Bitcoin%20Price%20Predictor) |
+| [Bitcoin_Price_Prediction_Mobile_App](Bitcoin_Price_Prediction_Mobile_App) |
+| [Brain Tumor Detection](Brain%20Tumor%20Detection) |
+| [Breast Cancer Detection using DL with Webapp](Breast%20Cancer%20Detection%20using%20DL%20with%20Webapp) |
+| [CBOW_PyTorch](CBOW_PyTorch) |
+| [CBT_ChatBot](CBT_ChatBot) |
+| [Chatbot Using RASA](Chatbot%20Using%20RASA) |
+| [Cheat Sheets](Cheat%20Sheets) |
+| [chess image classification](chess%20image%20classification) |
+| [Chi-Square Test](Chi-Square%20Test) |
+| [Chicken_Disease_Classification](Chicken_Disease_Classification) |
+| [Chronic Kidney Disease Prediction](Chronic%20Kidney%20Disease%20Prediction) |
+| [ChurnScope](ChurnScope) |
+| [Class Imbalance problem](Class%20Imbalance%20problem) |
+| [Classification Algorithms](Classification%20Algorithms) |
+| [Cloud Details](Cloud%20Details) |
+| [Clustering Algorithms](Clustering%20Algorithms) |
+| [Company Bankruptcy Using unsupervised](Company%20Bankruptcy%20Using%20unsupervised) |
+| [Concept_Drift_Detection_and_Adaptive_Retraining_Pipeline](Concept_Drift_Detection_and_Adaptive_Retraining_Pipeline) |
+| [Constellation_Classification](Constellation_Classification) |
+| [Consumer Complaint Dataset](Consumer%20Complaint%20Dataset) |
+| [Continuous Handwriting Text Recognition](Continuous%20Handwriting%20Text%20Recognition) |
+| [Core-Utilty-Functions-for-robust-model-handling](Core-Utilty-Functions-for-robust-model-handling) |
+| [Covid19 forecasting with prophet](Covid19%20forecasting%20with%20prophet) |
+| [COVID_19-DATA-ANALYSIS](COVID_19-DATA-ANALYSIS) |
+| [Covid_Third_Wave_Forecasting](Covid_Third_Wave_Forecasting) |
+| [Credit_Card_Fraud_Anomaly_Detection](Credit_Card_Fraud_Anomaly_Detection) |
+| [Crime_Analytics](Crime_Analytics) |
+| [Crop Recommendation System](Crop%20Recommendation%20System) |
+| [CrowdAI Plant Disease](CrowdAI%20Plant%20Disease) |
+| [Crude oil forecasting](Crude%20oil%20forecasting) |
+| [Customer Segmentation using Machine Learning](Customer%20Segmentation%20using%20Machine%20Learning) |
+| [Customer Segmentation USvAlgorithm](Customer%20Segmentation%20USvAlgorithm) |
+| [Customer_Review_Sentiment_Analyzer](Customer_Review_Sentiment_Analyzer) |
+| [Cyberbullying Classification](Cyberbullying%20Classification) |
+| [Dark Pattern Detection](Dark%20Pattern%20Detection) |
+| [Data Cleaning Techniques](Data%20Cleaning%20Techniques) |
+| [Data Filling and Cleaning Techniques](Data%20Filling%20and%20Cleaning%20Techniques) |
+| [Dataset_Resources](Dataset_Resources) |
+| [Deep-Fashion-Recommendation-system](Deep-Fashion-Recommendation-system) |
+| [Deepfake_image_analyzer](Deepfake_image_analyzer) |
+| [Deepfake_video_detection](Deepfake_video_detection) |
+| [Defective Captcha Image Recognition](Defective%20Captcha%20Image%20Recognition) |
+| [Detection_Transformer_DETR](Detection_Transformer_DETR) |
+| [Diabetes Prediction](Diabetes%20Prediction) |
+| [Diabetes_Prediction](Diabetes_Prediction) |
+| [Different types of Clustering](Different%20types%20of%20Clustering) |
+| [Different types of feature selection techniques](Different%20types%20of%20feature%20selection%20techniques) |
+| [Different_types_of_scaling_Method](Different_types_of_scaling_Method) |
+| [Digital Image Tampering Detection](Digital%20Image%20Tampering%20Detection) |
+| [Diseases_Prediction](Diseases_Prediction) |
+| [dog vs cat](dog%20vs%20cat) |
+| [Driver_Drowsiness_Detection](Driver_Drowsiness_Detection) |
+| [Duplicate_Question_pair](Duplicate_Question_pair) |
+| [Dynamic Hedging Strategies using Reinforcement Learning](Dynamic%20Hedging%20Strategies%20using%20Reinforcement%20Learning) |
+| [E-Waste_Impact_Calculator_Recycling_Locator](E-Waste_Impact_Calculator_Recycling_Locator) |
+| [EDA StackOverflow Survey 2023](EDA%20StackOverflow%20Survey%202023) |
+| [EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main](EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main) |
+| [Email Classifier](Email%20Classifier) |
+| [Email_Intent_Classification_DistilBERT](Email_Intent_Classification_DistilBERT) |
+| [Emotion Recognition Based on NLP](Emotion%20Recognition%20Based%20on%20NLP) |
+| [emotion-based music recommendtion](emotion-based%20music%20recommendtion) |
+| [Employee_attrittion_prediction_using_ML](Employee_attrittion_prediction_using_ML) |
+| [Engineering Career Role Prediction](Engineering%20Career%20Role%20Prediction) |
+| [Ensemble Methods in ML](Ensemble%20Methods%20in%20ML) |
+| [ensemble-methods-notebooks-master](ensemble-methods-notebooks-master) |
+| [experiment_capsule](experiment_capsule) |
+| [Explaination and Example for P value with code](Explaination%20and%20Example%20for%20P%20value%20with%20code) |
+| [Exploratory-data-analysis](Exploratory-data-analysis) |
+| [Extract_Text_from_PDF_using_Python](Extract_Text_from_PDF_using_Python) |
+| [Eye_Gaze_Tracking_Attention_Estimation](Eye_Gaze_Tracking_Attention_Estimation) |
+| [face-recognition](face-recognition) |
+| [Fake_Currency_Detetction_with_logistic_regression](Fake_Currency_Detetction_with_logistic_regression) |
+| [Fake_News_Detection](Fake_News_Detection) |
+| [Feature Eye Disease Classified RNN](Feature%20Eye%20Disease%20Classified%20RNN) |
+| [Feature Scaling Techniques](Feature%20Scaling%20Techniques) |
+| [Feature Selection using Genetic ALgorithm](Feature%20Selection%20using%20Genetic%20ALgorithm) |
+| [Feature-Engineering](Feature-Engineering) |
+| [Feature_Selection_Analysis](Feature_Selection_Analysis) |
+| [Feed-Forward Neural Networks (Deep Learning Algorithm)](Feed-Forward%20Neural%20Networks%20(Deep%20Learning%20Algorithm)) |
+| [FIFA_World_Cup_2022_Winner_Prediction](FIFA_World_Cup_2022_Winner_Prediction) |
+| [File of SQL Commands](File%20of%20SQL%20Commands) |
+| [Finan_AI Financial Advisor](Finan_AI%20Financial%20Advisor) |
+| [Financial Crisis Early Warning System](Financial%20Crisis%20Early%20Warning%20System) |
+| [Financial_Impact_Forecasting](Financial_Impact_Forecasting) |
+| [Fire-Detection-Using-Python-OpenCV](Fire-Detection-Using-Python-OpenCV) |
+| [Fire_Detection_Mask_RCNN](Fire_Detection_Mask_RCNN) |
+| [Fish-Weight-Estimation](Fish-Weight-Estimation) |
+| [Flight_delay_prediction_project](Flight_delay_prediction_project) |
+| [Flood_Prediction models](Flood_Prediction%20models) |
+| [Flower_classification_android_app](Flower_classification_android_app) |
+| [Football_Analyser_using_YOLO](Football_Analyser_using_YOLO) |
+| [Foreign Exchange Rate Prediction](Foreign%20Exchange%20Rate%20Prediction) |
+| [GDP Prediction](GDP%20Prediction) |
+| [Gender Pay Gap Analysis](Gender%20Pay%20Gap%20Analysis) |
+| [Generating 3D Design Voxels using GANs](Generating%203D%20Design%20Voxels%20using%20GANs) |
+| [Gesture Related Projects](Gesture%20Related%20Projects) |
+| [GitHub Topic Scraper](GitHub%20Topic%20Scraper) |
+| [Google Teachable Machine](Google%20Teachable%20Machine) |
+| [GRAD-CAM-Visualizer](GRAD-CAM-Visualizer) |
+| [Grad_CAM_VGG16_ImageNet](Grad_CAM_VGG16_ImageNet) |
+| [GUI-JARVIS](GUI-JARVIS) |
+| [Hand-Written-Digit-Recognition](Hand-Written-Digit-Recognition) |
+| [hand_sign_project](hand_sign_project) |
+| [Handwritten character recognition](Handwritten%20character%20recognition) |
+| [Handwritten Equation Solver using CNN](Handwritten%20Equation%20Solver%20using%20CNN) |
+| [Health prediction](Health%20prediction) |
+| [heart failure](heart%20failure) |
+| [Heart_Disease_Prediction](Heart_Disease_Prediction) |
+| [Heart_Predection](Heart_Predection) |
+| [heat_stroke_risk_predictor](heat_stroke_risk_predictor) |
+| [Hindi_Letter_Classification](Hindi_Letter_Classification) |
+| [House_Price_Prediction](House_Price_Prediction) |
+| [Housing_Prediction](Housing_Prediction) |
+| [HyperParameter Tuning](HyperParameter%20Tuning) |
+| [Image Captioning](Image%20Captioning) |
+| [Image Stitching](Image%20Stitching) |
+| [ImageGen using GANs](ImageGen%20using%20GANs) |
+| [IMDB Box Office Prediction](IMDB%20Box%20Office%20Prediction) |
+| [Indian Currency Detection using DL](Indian%20Currency%20Detection%20using%20DL) |
+| [Indian Elections](Indian%20Elections) |
+| [Infant_Health_Prediction](Infant_Health_Prediction) |
+| [Instagram Reach Prediction](Instagram%20Reach%20Prediction) |
+| [Intelligent Network Intrusion Detection System using Machine Learning](Intelligent%20Network%20Intrusion%20Detection%20System%20using%20Machine%20Learning) |
+| [Interactive ML Algorithm Recommendation Guide for Beginners](Interactive%20ML%20Algorithm%20Recommendation%20Guide%20for%20Beginners) |
+| [Internship Spam Detect](Internship%20Spam%20Detect) |
+| [IPL Cricket Match Win Prediction](IPL%20Cricket%20Match%20Win%20Prediction) |
+| [Irrigation_Prediction](Irrigation_Prediction) |
+| [job_Advertisement_detection](job_Advertisement_detection) |
+| [K Means Clustering](K%20Means%20Clustering) |
+| [kmeans_vs_spectral_clustering](kmeans_vs_spectral_clustering) |
+| [KNN_Imputation_Example](KNN_Imputation_Example) |
+| [Lane Line Detection [OPEN CV]](Lane%20Line%20Detection%20[OPEN%20CV]) |
+| [LanguageDetection](LanguageDetection) |
+| [Learning Rules In ANN](Learning%20Rules%20In%20ANN) |
+| [LLM Copilot Extension for VS Code IDE](LLM%20Copilot%20Extension%20for%20VS%20Code%20IDE) |
+| [Loan Repayment Prediction](Loan%20Repayment%20Prediction) |
+| [Loan-Prediction-main](Loan-Prediction-main) |
+| [LSTM from Scratch](LSTM%20from%20Scratch) |
+| [Malicious Url Detection](Malicious%20Url%20Detection) |
+| [market-basket-recommendation](market-basket-recommendation) |
+| [Mars_Weather_Prediction](Mars_Weather_Prediction) |
+| [Maternal Health Risk Prediction](Maternal%20Health%20Risk%20Prediction) |
+| [Math_for_ML](Math_for_ML) |
+| [Medical Charges for Smokers and Non-smoker](Medical%20Charges%20for%20Smokers%20and%20Non-smoker) |
+| [Medical Insurance Cost Prediction](Medical%20Insurance%20Cost%20Prediction) |
+| [Medical_Cost_Prediction](Medical_Cost_Prediction) |
+| [Medical_Help_Chatbot](Medical_Help_Chatbot) |
+| [Mental_Health_Text_Analysis_&_Depression_Risk_Scorer](Mental_Health_Text_Analysis_&_Depression_Risk_Scorer) |
+| [Meteorite Landing Data Analysis](Meteorite%20Landing%20Data%20Analysis) |
+| [Migraine Type Prediction](Migraine%20Type%20Prediction) |
+| [MIXUP&CUTMIX-DASHBOARD](MIXUP&CUTMIX-DASHBOARD) |
+| [ML_Capsule_Cross_Platform_App](ML_Capsule_Cross_Platform_App) |
+| [MLOps-for-Beginners](MLOps-for-Beginners) |
+| [MLOps_Learning_Module](MLOps_Learning_Module) |
+| [MNIST English Classification](MNIST%20English%20Classification) |
+| [Mobile Price Prediction](Mobile%20Price%20Prediction) |
+| [Model Selection Tool](Model%20Selection%20Tool) |
+| [Molecule_Property_Analysis](Molecule_Property_Analysis) |
+| [Movie Genre Classification](Movie%20Genre%20Classification) |
+| [Movie-Recommendation-System](Movie-Recommendation-System) |
+| [Movie-Recommender-System using python](Movie-Recommender-System%20using%20python) |
+| [Music Generation using LSTM](Music%20Generation%20using%20LSTM) |
+| [Naive Bayes Documentation](Naive%20Bayes%20Documentation) |
+| [Nasa-Asteroids-Dataset-Analysis](Nasa-Asteroids-Dataset-Analysis) |
+| [NLP-Project](NLP-Project) |
+| [NLP_Techniques](NLP_Techniques) |
+| [NLTK Documentation](NLTK%20Documentation) |
+| [NMT_English_German_Attention](NMT_English_German_Attention) |
+| [Number_of_people_counter](Number_of_people_counter) |
+| [NumPy - Basics](NumPy%20-%20Basics) |
+| [Object Detection](Object%20Detection) |
+| [OCR-Medicine-Reader](OCR-Medicine-Reader) |
+| [Ola Bike Ride Request Demand Forecast](Ola%20Bike%20Ride%20Request%20Demand%20Forecast) |
+| [Online Shoppers Intention Prediction](Online%20Shoppers%20Intention%20Prediction) |
+| [OnlinePaymentFraudDetection](OnlinePaymentFraudDetection) |
+| [Optical character recognition (OCR)](Optical%20character%20recognition%20(OCR)) |
+| [optimized the trading strategy based on sentiment analysis](optimized%20the%20trading%20strategy%20based%20on%20sentiment%20analysis) |
+| [Optimizing_Dividend_Capture_Strategies_Using_Genetics_Algorithms](Optimizing_Dividend_Capture_Strategies_Using_Genetics_Algorithms) |
+| [Outlier Detection](Outlier%20Detection) |
+| [Pandas-Basics](Pandas-Basics) |
+| [PCOD_Detection_Using_Ensemble_Learning_XAI](PCOD_Detection_Using_Ensemble_Learning_XAI) |
+| [Pension Fund Optimization](Pension%20Fund%20Optimization) |
+| [Perceptron From Scratch](Perceptron%20From%20Scratch) |
+| [personalityPrediction](personalityPrediction) |
+| [Plagiarism-detector-using-machine-learning-main](Plagiarism-detector-using-machine-learning-main) |
+| [Plant Disease Prediction](Plant%20Disease%20Prediction) |
+| [Plant Seedlings Classification](Plant%20Seedlings%20Classification) |
+| [Playing-Card-Detection-YOLOv8](Playing-Card-Detection-YOLOv8) |
+| [Pneumonia Classification using Chest X-Ray](Pneumonia%20Classification%20using%20Chest%20X-Ray) |
+| [Poker Hand Prediction](Poker%20Hand%20Prediction) |
+| [PortFolio Optimaization Using Genetic ALgorithm](PortFolio%20Optimaization%20Using%20Genetic%20ALgorithm) |
+| [Portuguese_Bank_Marketing](Portuguese_Bank_Marketing) |
+| [Pothole_Detection](Pothole_Detection) |
+| [Predicting Next Sequence Of Numbers Using LSTM](Predicting%20Next%20Sequence%20Of%20Numbers%20Using%20LSTM) |
+| [Projects](Projects) |
+| [Prompt_Engineering_Techniques](Prompt_Engineering_Techniques) |
+| [PulseLangX](PulseLangX) |
+| [PyPI Package](PyPI%20Package) |
+| [PyScript Tutorial](PyScript%20Tutorial) |
+| [pytorch_tabular](pytorch_tabular) |
+| [Q-Learning From Scratch](Q-Learning%20From%20Scratch) |
+| [QnA Conversational Agent](QnA%20Conversational%20Agent) |
+| [Quantitative Finance Strategy Development](Quantitative%20Finance%20Strategy%20Development) |
+| [R language](R%20language) |
+| [railway_person_detection](railway_person_detection) |
+| [Rainfall_Trend_Analysis_and_Forecasting](Rainfall_Trend_Analysis_and_Forecasting) |
+| [Random forest from scratch](Random%20forest%20from%20scratch) |
+| [Random forest test](Random%20forest%20test) |
+| [Random Oversampler](Random%20Oversampler) |
+| [Rating_Prediction](Rating_Prediction) |
+| [recommendation_system](recommendation_system) |
+| [Road accident Analysis using Power BI](Road%20accident%20Analysis%20using%20Power%20BI) |
+| [Rock Paper Scissors Python Game](Rock%20Paper%20Scissors%20Python%20Game) |
+| [Roommate-Compatibility](Roommate-Compatibility) |
+| [salary-prediction-using-RF](salary-prediction-using-RF) |
+| [SalesProject](SalesProject) |
+| [Sentiment analysis for depression based on social media posts](Sentiment%20analysis%20for%20depression%20based%20on%20social%20media%20posts) |
+| [Sentiment-Analysis](Sentiment-Analysis) |
+| [Sentiment-Analysis-on-IMDb-reviews](Sentiment-Analysis-on-IMDb-reviews) |
+| [Sign-Language-Translator](Sign-Language-Translator) |
+| [Simulating Self Driving Cars](Simulating%20Self%20Driving%20Cars) |
+| [Skin Disease Predictor](Skin%20Disease%20Predictor) |
+| [Sleep_Alarm_Detector](Sleep_Alarm_Detector) |
+| [Sleep_Disorder_Prediction](Sleep_Disorder_Prediction) |
+| [Smart_Container_Risk_Prediction](Smart_Container_Risk_Prediction) |
+| [Smart_Home_Energy_Forecasting](Smart_Home_Energy_Forecasting) |
+| [Smartphone processor classification](Smartphone%20processor%20classification) |
+| [Social Media Fake Accounts Detection with Interactive UI](Social%20Media%20Fake%20Accounts%20Detection%20with%20Interactive%20UI) |
+| [solar-panel-defect-detection](solar-panel-defect-detection) |
+| [SongGenreClassifier](SongGenreClassifier) |
+| [Spam Mail Classifier](Spam%20Mail%20Classifier) |
+| [Spam Mail Detection](Spam%20Mail%20Detection) |
+| [Speech-to-Image Generator](Speech-to-Image%20Generator) |
+| [Speech_Emotion_Recognition](Speech_Emotion_Recognition) |
+| [Spelling Corrector](Spelling%20Corrector) |
+| [Sports Analytics Project](Sports%20Analytics%20Project) |
+| [Sports Image Classification](Sports%20Image%20Classification) |
+| [SQL injection detection](SQL%20injection%20detection) |
+| [Startup_Profit_Prediction](Startup_Profit_Prediction) |
+| [Statistical_modeling_python](Statistical_modeling_python) |
+| [Stock Price Analysis](Stock%20Price%20Analysis) |
+| [Student Placement Predictor](Student%20Placement%20Predictor) |
+| [Sudoku Solver using CNN](Sudoku%20Solver%20using%20CNN) |
+| [TCS Stock Analysis](TCS%20Stock%20Analysis) |
+| [Tensorflow.js Demo](Tensorflow.js%20Demo) |
+| [Terrain_Classificaton](Terrain_Classificaton) |
+| [tests](tests) |
+| [Text Summarization Model](Text%20Summarization%20Model) |
+| [Theatre-audience-forecasting](Theatre-audience-forecasting) |
+| [Time Series Forecasting with Python](Time%20Series%20Forecasting%20with%20Python) |
+| [Time-Series LSTM Model](Time-Series%20LSTM%20Model) |
+| [Traffic Sign Recognition](Traffic%20Sign%20Recognition) |
+| [Traffic_Demand_Prediction](Traffic_Demand_Prediction) |
+| [Transfer Learning](Transfer%20Learning) |
+| [TweetMiner_AI](TweetMiner_AI) |
+| [Tweets Classification](Tweets%20Classification) |
+| [Unique Chatbot](Unique%20Chatbot) |
+| [Various Plots using Matplot,Seaborn,Pandas](Various%20Plots%20using%20Matplot,Seaborn,Pandas) |
+| [Vehicles and Pedestrian Detection](Vehicles%20and%20Pedestrian%20Detection) |
+| [Virtual Drag and Drop Using OpenCV](Virtual%20Drag%20and%20Drop%20Using%20OpenCV) |
+| [Waste Management through Reinforcement Learning](Waste%20Management%20through%20Reinforcement%20Learning) |
+| [WEAPON-DETECTION-SYSTEM](WEAPON-DETECTION-SYSTEM) |
+| [Weather Prediction](Weather%20Prediction) |
+| [Web Traffic Time series forecasting](Web%20Traffic%20Time%20series%20forecasting) |
+| [Web-Scraping-with-Beautiful-Soup-master](Web-Scraping-with-Beautiful-Soup-master) |
+| [Website Classification](Website%20Classification) |
+| [website ML-CaPsule](website%20ML-CaPsule) |
+| [Wildfire_Survival_Prediction](Wildfire_Survival_Prediction) |
+| [Windy_Grid_World_RL](Windy_Grid_World_RL) |
+| [Wine_Quality_Prediction](Wine_Quality_Prediction) |
+| [XgBoost_Algorithm](XgBoost_Algorithm) |
+| [Youtube Comment Analysis](Youtube%20Comment%20Analysis) |
+<!-- Projects end -->
