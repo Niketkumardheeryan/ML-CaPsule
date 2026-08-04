@@ -869,6 +869,7 @@ This project is licensed under the **MIT License**.
 | [Roommate-Compatibility](Roommate-Compatibility) |
 | [salary-prediction-using-RF](salary-prediction-using-RF) |
 | [SalesProject](SalesProject) |
+| [Scam_SMS_Detector](Scam_SMS_Detector) |
 | [Sentiment analysis for depression based on social media posts](Sentiment%20analysis%20for%20depression%20based%20on%20social%20media%20posts) |
 | [Sentiment-Analysis](Sentiment-Analysis) |
 | [Sentiment-Analysis-on-IMDb-reviews](Sentiment-Analysis-on-IMDb-reviews) |
