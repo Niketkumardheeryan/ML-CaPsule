@@ -8,6 +8,8 @@ import sys
 import os
 import webbrowser
 import datetime
+import ctypes
+import multiprocessing
 import shutil
 from pathlib import Path
 import speech_recognition as sr
@@ -18,21 +20,32 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.uic import loadUiType
 from geopy import Nominatim
-from pip._vendor import requests
+import requests
 from bs4 import BeautifulSoup as soup
 from yahoo_fin import stock_info
 
 
 flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint)
 
-engine = pyttsx3.init('sapi5')
-voices = engine.getProperty('voices')
-engine.setProperty('voice',voices[0].id)
-engine.setProperty('rate',180)
+def speak_helper(audio):
+    try:
+        import pyttsx3
+        import ctypes
+        ctypes.windll.ole32.CoInitialize(None)
+        
+        engine = pyttsx3.init('sapi5')
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[0].id)
+        engine.setProperty('rate', 180)
+        engine.say(audio)
+        engine.runAndWait()
+    except Exception:
+        pass
 
 def speak(audio):
-    engine.say(audio)
-    engine.runAndWait()
+    p = multiprocessing.Process(target=speak_helper, args=(audio,))
+    p.start()
+    p.join()
 
 def wish():
     hour = int(datetime.datetime.now().hour)
@@ -61,6 +74,7 @@ class mainT(QThread):
     def STT(self):
         R = sr.Recognizer()
         with sr.Microphone() as source:
+            R.adjust_for_ambient_noise(source)
             speak("please tell me what to do")
             audio = R.listen(source)
         try:
@@ -74,6 +88,7 @@ class mainT(QThread):
     def JTT(self):
         R = sr.Recognizer()
         with sr.Microphone() as source:
+            R.adjust_for_ambient_noise(source)
             speak("listening")
             audio = R.listen(source)
         try:
@@ -290,7 +305,7 @@ class mainT(QThread):
                 speak("PLease tell city or state name")
                 self.line = self.JTT()
                 if self.line:
-                    location = geolocator.geocode(self.JTT())
+                    location = geolocator.geocode(self.line)
                     speak("Country location is:" + str(location))
                 else:
                     pass
@@ -345,7 +360,7 @@ class Main(QMainWindow,FROM_MAIN):
         "border:none;")
         self.exitB.clicked.connect(self.close)
         self.setWindowFlags(flags)
-        Dspeak = mainT()
+        self.Dspeak = mainT()
         self.label_8 = QMovie("./lib/initiating system.gif", QByteArray(), self)
         self.label_8.setCacheMode(QMovie.CacheAll)
         self.label_6.setMovie(self.label_8)
@@ -354,10 +369,12 @@ class Main(QMainWindow,FROM_MAIN):
         self.label_9.setCacheMode(QMovie.CacheAll)
         self.label_7.setMovie(self.label_9)
         self.label_9.start()
-        Dspeak.start()
+        self.Dspeak.start()
         self.label.setPixmap(QPixmap("./lib/tuse.png"))
 
-app = QtWidgets.QApplication(sys.argv)
-main = Main()
-main.show()
-exit(app.exec_())
+if __name__ == "__main__":
+    multiprocessing.freeze_support()
+    app = QtWidgets.QApplication(sys.argv)
+    main = Main()
+    main.show()
+    sys.exit(app.exec_())
