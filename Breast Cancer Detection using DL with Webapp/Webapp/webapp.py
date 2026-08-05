@@ -169,8 +169,15 @@ def spa(path):
             "cd frontend && npm install && npm run build",
             404,
         )
-    if path and os.path.exists(os.path.join(FRONTEND_DIST, path)):
-        return send_from_directory(FRONTEND_DIST, path)
+
+    # 2. Attempt to serve a specific static file (like .js, .css, images)
+    if path:
+        try:
+            return send_from_directory(FRONTEND_DIST, path)
+        except NotFound:
+            pass
+
+    # 3. Fallback for React/Client-side routing
     return send_from_directory(FRONTEND_DIST, 'index.html')
 
 
