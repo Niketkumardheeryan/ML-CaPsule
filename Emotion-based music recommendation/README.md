@@ -49,7 +49,7 @@ This app requires a YouTube Data API key to fetch video recommendations.
 ```
 2. Navigate to this project's folder:
 ```bash
-   cd "ML-CaPsule/Emotion-based music recommendtion"
+   cd "ML-CaPsule/Emotion-based music recommendation"
 ```
 3. Install the required dependencies:
 ```bash
