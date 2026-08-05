@@ -713,7 +713,7 @@ This project is licensed under the **MIT License**.
 | [Email Classifier](Email%20Classifier) |
 | [Email_Intent_Classification_DistilBERT](Email_Intent_Classification_DistilBERT) |
 | [Emotion Recognition Based on NLP](Emotion%20Recognition%20Based%20on%20NLP) |
-| [emotion-based music recommendtion](emotion-based%20music%20recommendtion) |
+| [Emotion-based music recommendation](Emotion-based%20music%20recommendation) |
 | [Employee_attrittion_prediction_using_ML](Employee_attrittion_prediction_using_ML) |
 | [Engineering Career Role Prediction](Engineering%20Career%20Role%20Prediction) |
 | [Ensemble Methods in ML](Ensemble%20Methods%20in%20ML) |
@@ -876,6 +876,7 @@ This project is licensed under the **MIT License**.
 | [Sign-Language-Translator](Sign-Language-Translator) |
 | [Simulating Self Driving Cars](Simulating%20Self%20Driving%20Cars) |
 | [Skin Disease Predictor](Skin%20Disease%20Predictor) |
+| [SkinGen_CGAN_Skin_Cancer](SkinGen_CGAN_Skin_Cancer) |
 | [Sleep_Alarm_Detector](Sleep_Alarm_Detector) |
 | [Sleep_Disorder_Prediction](Sleep_Disorder_Prediction) |
 | [Smart_Container_Risk_Prediction](Smart_Container_Risk_Prediction) |
