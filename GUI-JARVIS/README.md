@@ -22,69 +22,112 @@ AI-JARVIS is an intelligent voice assistant or personal assistant that can perfo
 #### A glimpse of the project:
  ![GIF](Material/jarvis_gif.gif)
 
-## Table of Content
-  * [Demo](#demo)
-  * [Overview](#overview)
-  * [Motivation](#motivation)
-  * [Installation](#installation)
-  * [Directory Tree](#directory-tree)
-  * [Bug / Feature Request](#bug---feature-request)
-  * [Future scope of project](#future-scope)
+# Table of Contents
 
-## Demo
-Link: [https://youtu.be/c5g8Q0sDR0g](https://youtu.be/c5g8Q0sDR0g)
+- [Demo](#demo)
+- [Overview](#overview)
+- [Motivation](#motivation)
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Directory Tree](#directory-tree)
+- [Technologies Used](#technologies-used)
+- [Bug / Feature Request](#bug--feature-request)
+- [Future Scope](#future-scope)
 
-## Overview
-AI JARVIS has 19 functionalities :-
-1) **Predicts the innings Score**
-2) **Predicts the winner of the match**
-3) **Predicting the current condition of any place**
-4) **Predicting the current temperature**
-5) **To play a random song**
-6) **To open any application**
-7) **To search anything on wikipedia**
-8) **To predicting the current stock price of amazon**
-9) **To find the location of city or place**
-10) **Greeting according to time**
-11) **To search anything on google**
-12) **To know about Jarvis**
-13) **To send the email**
-14) **To open any website**
-15) **To tell joke**
-16) **To provide the top news of current time**
-17) **To know about Jarvis's age**
-18) **To search anything on Youtube**
-19) **To stop the program**
+---
 
+# Demo
 
+https://youtu.be/c5g8Q0sDR0g
 
+---
 
+# Overview
 
-## Motivation
-Who doesn't want to have the luxury to own an assistant who always listens for your call, anticipates your every need, and takes action when necessary? That luxury is now available thanks to artificial intelligence-based voice assistants. Finally it is important to work on application (real world application) to actually make a difference.
+AI-JARVIS currently supports the following functionalities:
 
-## Installation
-The Code is written in Python 3.9.2 If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To run this project in your system, after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository, install the required packages and libraries:
+1. Predicts the innings score
+2. Predicts the winner of the match
+3. Predicts the current weather conditions
+4. Predicts the current temperature
+5. Plays a random song
+6. Opens installed applications
+7. Searches Wikipedia
+8. Retrieves Amazon stock price
+9. Finds the location of a city
+10. Greets according to the current time
+11. Searches Google
+12. Introduces itself
+13. Sends emails
+14. Opens websites
+15. Tells jokes
+16. Reads the latest news
+17. Tells its age
+18. Searches YouTube
+19. Stops the program
+
+---
+
+# Motivation
+
+Who doesn't want an assistant that listens to your commands and performs everyday tasks automatically?
+
+AI-JARVIS is built as a real-world voice assistant application demonstrating speech recognition, desktop automation, APIs, and GUI development using Python.
+
+---
+
+## Run the application
+
+## 1. Create a virtual environment
+
+### Windows
+
 ```bash
-pip install pyttsx3
-pip install random
-pip install re
-pip install smtplib
-pip install winsound
-pip install wikipedia
+python -m venv .venv
+.\.venv\Scripts\activate
 ```
-pip install sys
-pip install os
-pip install webbrowser
-pip install datetime
-pip install speech_recognition
-pip install urllib
-pip install PyQt5
-pip install geopy
-pip install bs4
-pip install yahoo_fin
-pip install stock_info
+
+### Linux / macOS
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
 ```
+
+## 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+```bash
+python run.py
+```
+
+# Environment Variables
+
+The project uses environment variables to configure sensitive information such as email credentials and API keys.
+
+Create a file named `.env` in the project root.
+
+Example:
+
+```env
+EMAIL_ADDRESS=your_email@gmail.com
+EMAIL_PASSWORD=your_app_password
+DEFAULT_RECEIVER=receiver@gmail.com
+OPENWEATHER_API_KEY=your_openweathermap_api_key
+```
+
+You can use the provided `.env.example` file as a template.
+
+**Note:** Never commit your `.env` file to version control.
+
+---
+
+
 
 ## Directory Tree 
 ```
@@ -113,21 +156,39 @@ pip install stock_info
 ├──scifi.ui
 ```
 
-## Technologies Used
+---
 
-![](https://forthebadge.com/images/badges/made-with-python.svg)
+# Technologies Used
 
-[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) 
-[<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) 
-[<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/stable/) 
+- Python
+- PyQt5
+- SpeechRecognition
+- pyttsx3
+- BeautifulSoup4
+- Geopy
+- Yahoo Finance API
+- OpenWeatherMap API
+- Wikipedia API
 
-## Bug / Feature Request
-• If you find a bug, kindly open an [issue](https://github.com/SuryanshNaugraiya/AI-JARVIS/issues) here by including your search query and the expected result.<br />
+---
 
-## Future Scope
-* Implement machine learning and deep learning algorithms
-* Add multiple features
-* Make front-end more attractive
-* Can mix augmented reality and gestures
+# Bug / Feature Request
 
-#### Please do ⭐ the repository, if it helped you in anyway.
+If you discover a bug or would like to request a new feature, please open an issue on the GitHub repository with:
+
+- A clear description of the problem
+- Steps to reproduce
+- Expected behavior
+- Screenshots (if applicable)
+
+---
+
+# Future Scope
+
+- Implement additional Machine Learning and Deep Learning models
+- Add more voice commands
+- Improve GUI design
+- Integrate gesture recognition and augmented reality
+- Add cross-platform support
+
+---

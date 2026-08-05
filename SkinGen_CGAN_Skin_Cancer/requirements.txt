@@ -1,0 +1,8 @@
+torch>=2.1.0
+numpy>=1.24.0
+matplotlib>=3.6.0
+
+# Only needed the first time, to download and cache HAM10000. After that the
+# cached tensor under cache/ is used and neither package is imported again.
+datasets>=2.14.0
+pillow>=9.0.0

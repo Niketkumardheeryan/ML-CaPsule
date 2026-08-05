@@ -72,6 +72,9 @@ df['similarity_score'] = scores
 print("Done!")
 print("Checking for similar issues")
 
+# Calculate the combined average similarity score
+df['avg_sim'] = (0.35*df['sim_title'] + 0.65*df['sim_body'])
+
 # Find the row with the maximum similarity
 max_sim_idx = df['similarity_score'].idxmax()
 max_sim_score = df['similarity_score'].max()

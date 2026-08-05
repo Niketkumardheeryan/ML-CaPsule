@@ -27,8 +27,8 @@ for i in range(classes):
             image = np.array(image)
             data.append(image)
             labels.append(i)
-        except:
-            print("Error loading image")
+        except Exception as e:
+            print(f"Error loading image '{path / a}': {e}")
 
 # Converting lists into numpy arrays
 data = np.array(data)
