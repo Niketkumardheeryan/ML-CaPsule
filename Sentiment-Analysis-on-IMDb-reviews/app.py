@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 from api import get_movies, get_reviews
-from sentiment import textblob_sentiment, vader_sentiment
+from sentiment import ANALYSERS
 
 st.set_page_config(
     page_title="IMDb Sentiment Analysis",
@@ -17,8 +17,14 @@ movie_name = st.text_input("Enter Movie Name")
 
 model = st.selectbox(
     "Select Sentiment Model",
-    ["TextBlob", "VADER"]
+    list(ANALYSERS)
 )
+
+if model.startswith("Transformer"):
+    st.caption(
+        "The transformer downloads about 250 MB the first time it runs, "
+        "then reads each review in full."
+    )
 
 if st.button("Analyze"):
 
@@ -47,15 +53,11 @@ if st.button("Analyze"):
             else:
 
                 sentiments = []
+                analyse = ANALYSERS[model]
 
-                for review in reviews:
-
-                    if model == "TextBlob":
-                        sentiment = textblob_sentiment(review)
-                    else:
-                        sentiment = vader_sentiment(review)
-
-                    sentiments.append(sentiment)
+                with st.spinner(f"Analysing {len(reviews)} reviews with {model}..."):
+                    for review in reviews:
+                        sentiments.append(analyse(review))
 
                 df = pd.DataFrame({
                     "Review": reviews,
