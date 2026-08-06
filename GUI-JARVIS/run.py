@@ -6,9 +6,10 @@ import winsound
 import wikipedia
 import sys
 import os
-from utils.load_credentials import get_credential
 import webbrowser
 import datetime
+import ctypes
+import multiprocessing
 import shutil
 from pathlib import Path
 import speech_recognition as sr
@@ -19,21 +20,38 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.uic import loadUiType
 from geopy import Nominatim
-from pip._vendor import requests
+import requests
 from bs4 import BeautifulSoup as soup
 from yahoo_fin import stock_info
+from dotenv import load_dotenv
 
+load_dotenv()
 
+EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+DEFAULT_RECEIVER = os.getenv("DEFAULT_RECEIVER")
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
 flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint)
 
-engine = pyttsx3.init('sapi5')
-voices = engine.getProperty('voices')
-engine.setProperty('voice',voices[0].id)
-engine.setProperty('rate',180)
+def speak_helper(audio):
+    try:
+        import pyttsx3
+        import ctypes
+        ctypes.windll.ole32.CoInitialize(None)
+        
+        engine = pyttsx3.init('sapi5')
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[0].id)
+        engine.setProperty('rate', 180)
+        engine.say(audio)
+        engine.runAndWait()
+    except Exception:
+        pass
 
 def speak(audio):
-    engine.say(audio)
-    engine.runAndWait()
+    p = multiprocessing.Process(target=speak_helper, args=(audio,))
+    p.start()
+    p.join()
 
 def wish():
     hour = int(datetime.datetime.now().hour)
@@ -45,11 +63,21 @@ def wish():
         speak("hello sir Good evening i am jarvis")
 
 def sendEmail(to, content):
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server = smtplib.SMTP("smtp.gmail.com", 587)
     server.ehlo()
     server.starttls()
-    server.login('naugraiyasuryansh@gmail.com', '6394682401')
-    server.sendmail('naugraiyasuryansh@gmail.com', to, content)
+
+    server.login(
+        EMAIL_ADDRESS,
+        EMAIL_PASSWORD
+    )
+
+    server.sendmail(
+        EMAIL_ADDRESS,
+        to,
+        content
+    )
+
     server.close()
 
 class mainT(QThread):
@@ -62,6 +90,7 @@ class mainT(QThread):
     def STT(self):
         R = sr.Recognizer()
         with sr.Microphone() as source:
+            R.adjust_for_ambient_noise(source)
             speak("please tell me what to do")
             audio = R.listen(source)
         try:
@@ -75,6 +104,7 @@ class mainT(QThread):
     def JTT(self):
         R = sr.Recognizer()
         with sr.Microphone() as source:
+            R.adjust_for_ambient_noise(source)
             speak("listening")
             audio = R.listen(source)
         try:
@@ -163,7 +193,7 @@ class mainT(QThread):
                 try:
                     speak("What should i say?")
                     self.content = self.STT()
-                    to = "snaugraiya10@gmail.com"
+                    to = DEFAULT_RECEIVER
                     sendEmail(to, self.content)
                     speak("Email has been sent!")
                 except Exception as e:
@@ -239,7 +269,7 @@ class mainT(QThread):
                     pass
 
             elif ('weather' in self.query or 'temperature' in self.query):
-                api_key = get_credential("OPENWEATHERMAP_API_KEY") or ""
+                api_key = OPENWEATHER_API_KEY or ""
                 base_url = "http://api.openweathermap.org/data/2.5/weather?"
                 speak("which city sir")
                 city_name = self.JTT()
@@ -291,7 +321,7 @@ class mainT(QThread):
                 speak("PLease tell city or state name")
                 self.line = self.JTT()
                 if self.line:
-                    location = geolocator.geocode(self.JTT())
+                    location = geolocator.geocode(self.line)
                     speak("Country location is:" + str(location))
                 else:
                     pass
@@ -346,7 +376,7 @@ class Main(QMainWindow,FROM_MAIN):
         "border:none;")
         self.exitB.clicked.connect(self.close)
         self.setWindowFlags(flags)
-        Dspeak = mainT()
+        self.Dspeak = mainT()
         self.label_8 = QMovie("./lib/initiating system.gif", QByteArray(), self)
         self.label_8.setCacheMode(QMovie.CacheAll)
         self.label_6.setMovie(self.label_8)
@@ -355,10 +385,12 @@ class Main(QMainWindow,FROM_MAIN):
         self.label_9.setCacheMode(QMovie.CacheAll)
         self.label_7.setMovie(self.label_9)
         self.label_9.start()
-        Dspeak.start()
+        self.Dspeak.start()
         self.label.setPixmap(QPixmap("./lib/tuse.png"))
 
-app = QtWidgets.QApplication(sys.argv)
-main = Main()
-main.show()
-exit(app.exec_())
+if __name__ == "__main__":
+    multiprocessing.freeze_support()
+    app = QtWidgets.QApplication(sys.argv)
+    main = Main()
+    main.show()
+    sys.exit(app.exec_())

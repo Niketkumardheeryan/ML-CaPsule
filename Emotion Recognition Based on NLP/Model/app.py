@@ -32,9 +32,10 @@ def predict():
             prediction = classifier.predict(vect) ## predict over the model
             string = " "                          ## an empty string , will be used for getting the emotion  
             emotion = string.join(prediction)     ## join to return the answer
-        except:
+        except Exception as e:
+            print(f"Prediction error: {e}")
             errors.append(
-                "Unable to get URL. Please make sure it's valid and try again."   ## If any errors would , then this block would execute
+                "Unable to process the input. Please try again."
             )
     return render_template('home.html', prediction=emotion, errors=errors)        ## render the page for the user
 
