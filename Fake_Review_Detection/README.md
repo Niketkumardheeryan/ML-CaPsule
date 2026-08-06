@@ -50,6 +50,12 @@ Fake_Review_Detection/
 
 ## Dataset Overview
 
+- **Source & Public Dataset Links:**
+  - [Fake Reviews Dataset (Kaggle)](https://www.kaggle.com/datasets/saloni1751/fake-reviews)
+  - [Amazon Product Reviews Dataset (Kaggle)](https://www.kaggle.com/datasets/lievgarcia/amazon-reviews)
+  - [Yelp Review Dataset (Kaggle)](https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset)
+- **Local Benchmark File:** [`data/fake_reviews.csv`](data/fake_reviews.csv)
+
 The dataset contains 1,200 labeled reviews with balanced target classes:
 
 - `review_id`: Unique identifier for each review.
