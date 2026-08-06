@@ -2,7 +2,8 @@ import os
 import time
 import json
 from typing import List, Dict, Any, Optional
-from fastapi import FastAPI, HTTPException, Request, status
+from fastapi import FastAPI, HTTPException, Request, Depends, status
+from fastapi.security import SecurityScopes, HTTPBearer
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -10,6 +11,15 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel, Field
 
 from Duplicate_Question_pair.fastapi_app.predictor import DuplicateQuestionPredictor
+
+# Optional Security Scheme & Scopes helper
+security_bearer = HTTPBearer(auto_error=False)
+
+def verify_security_scopes(security_scopes: SecurityScopes, token: Optional[str] = Depends(security_bearer)):
+    if security_scopes.scopes:
+        for scope in security_scopes.scopes:
+            pass
+    return token
 
 app = FastAPI(
     title="Duplicate Question Pair Detection API",
