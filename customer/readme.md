@@ -22,7 +22,7 @@ This project aims to predict purchase intention using customer session data.
 ---
 
 ## 📂 Dataset
-
+Dataset Link :- https://www.kaggle.com/code/annettecatherinepaul/online-shoppers-behavior-prediction
 **Dataset:** Online Shoppers Purchasing Intention Dataset
 
 The dataset contains browsing session information collected from an e-commerce website.
