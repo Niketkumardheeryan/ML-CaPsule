@@ -25,6 +25,28 @@ To run this project, ensure you have the following Python libraries installed:
 CatBoost is a powerful algorithm for gradient boosting on decision trees, developed by Yandex. It excels in various applications such as search engines, recommendation systems, personal assistants, self-driving cars, and weather prediction. Notably, it is also used by organizations like CERN, Cloudflare, and Careem.
 Model Workflow
 
+## Feature Importance Visualization
+
+To understand which features contribute most to the model’s predictions, we extracted and visualized the feature importance scores:
+
+- Feature importance extraction  
+   We used model.get_feature_importance() to obtain the importance values for each feature. These scores indicate how much each feature helps reduce error in the model.
+
+- Ranking features  
+   The scores were converted into a pandas.Series with feature names as the index. We then sorted them in descending order to highlight the most influential predictors.
+
+- Top N selection  
+   For clarity, we selected the top 10 features (N=10) that had the highest importance scores.
+
+- Visualization  
+A horizontal bar plot was created using Seaborn with the following enhancements:
+   - Viridis color palette for readability.
+   - Grid lines along the x‑axis for easier comparison.
+   - Adjusted figure size and tight layout to prevent label overlap.
+   - Clear axis labels and title for context.
+
+This plot provides a quick, interpretable view of which features drive the model’s decisions most strongly.
+
 ## The workflow of the model is as follows:
 
     Input: User provides symptoms.
