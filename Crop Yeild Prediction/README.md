@@ -51,6 +51,17 @@ The dataset used is `crop yield data sheet.xlsx`, containing:
 - Temperature and nutrient levels strongly correlate with yield.
 - Linear Regression provides a simple yet effective baseline.
 - Feature scaling and imputation improve model stability.
+---
+
+## Results
+
+GradientBoostingRegressor :0.91
+LinearRegression: 0.93
+DecisionTreeRegressor: 0.83
+XGBRFRegressor : 0.90
+RandomForestRegressor : 0.90
+
+Linear Regression has best performance with r2_score=0.93
 
 ---
 
