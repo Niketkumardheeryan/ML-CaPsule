@@ -11,24 +11,72 @@ st.title("Speech/Text to Image Converter")
 st.markdown("### Using Speech Recognition and Stable Diffusion")
 st.markdown("Please be patient, Image Generation takes some time.")
 
+# Sidebar Settings for Speech Recognition
+st.sidebar.header("Speech Recognition Settings")
+calib_duration = st.sidebar.slider(
+    "Ambient Noise Calibration (seconds)",
+    min_value=1.0,
+    max_value=5.0,
+    value=2.0,
+    step=0.5,
+    help="Duration to analyze background noise before listening. Increase in noisy environments."
+)
+energy_ratio = st.sidebar.slider(
+    "Energy Sensitivity Factor",
+    min_value=1.1,
+    max_value=2.5,
+    value=1.5,
+    step=0.1,
+    help="Higher values require louder speech relative to background noise."
+)
+listen_timeout = st.sidebar.slider(
+    "Listening Timeout (seconds)",
+    min_value=3,
+    max_value=15,
+    value=7,
+    help="Maximum time to wait for speech input to begin."
+)
+phrase_limit = st.sidebar.slider(
+    "Phrase Limit (seconds)",
+    min_value=5,
+    max_value=30,
+    value=15,
+    help="Maximum duration allowed for a single spoken sentence."
+)
+
+# Initialize Session State
+if "prompt_text" not in st.session_state:
+    st.session_state["prompt_text"] = ""
+
 # Function to recognize speech
-def recognize_speech():
+def recognize_speech(calibration_duration=2.0, dynamic_energy_ratio=1.5, timeout=7, phrase_time_limit=15):
     recognizer = sr.Recognizer()
-    with sr.Microphone() as source:
-        st.info("Listening for speech...")
-        recognizer.adjust_for_ambient_noise(source, duration=1)
-        audio = recognizer.listen(source)
-        
-        try:
-            st.info("Recognizing speech...")
+    recognizer.dynamic_energy_ratio = dynamic_energy_ratio
+    
+    status = st.empty()
+    try:
+        with sr.Microphone() as source:
+            status.info("Calibrating background noise... Please remain quiet.")
+            recognizer.adjust_for_ambient_noise(source, duration=calibration_duration)
+            
+            status.info("Listening... Speak now!")
+            audio = recognizer.listen(source, timeout=timeout, phrase_time_limit=phrase_time_limit)
+            
+            status.info("Processing speech...")
             text = recognizer.recognize_google(audio)
-            st.success(f"Recognized: {text}")
+            status.success(f"Recognized: '{text}'")
             return text
-        except sr.UnknownValueError:
-            st.error("Could not understand audio")
-        except sr.RequestError as e:
-            st.error(f"Could not request results; {e}")
-        return None
+    except sr.WaitTimeoutError:
+        status.warning("No speech was detected within the timeout period. Please try again.")
+    except sr.UnknownValueError:
+        status.error("Could not understand the audio. Please speak clearly or adjust noise calibration.")
+    except sr.RequestError as e:
+        status.error(f"Speech recognition service error: {e}")
+    except OSError as e:
+        status.error(f"Microphone input error: {e}. Please ensure a working microphone is connected.")
+    except Exception as e:
+        status.error(f"An unexpected error occurred during speech recognition: {e}")
+    return None
 
 # Function to generate image
 @st.cache_resource
@@ -45,30 +93,37 @@ def generate_image(prompt):
         output = pipe(prompt, guidance_scale=8.5)
     return output.images[0]
 
-# Text input for prompt
-prompt_text = st.text_input("Enter a prompt for the image generation:")
-
-# Button to trigger speech recognition
+# Speech Recognition Trigger
 if st.button("Recognize Speech"):
-    recognized_text = recognize_speech()
+    recognized_text = recognize_speech(
+        calibration_duration=calib_duration,
+        dynamic_energy_ratio=energy_ratio,
+        timeout=listen_timeout,
+        phrase_time_limit=phrase_limit
+    )
     if recognized_text:
-        prompt_text = f"{recognized_text}, 4k, High Resolution"
-        if prompt_text:
-            st.text_input("Recognized Prompt", value=prompt_text)
-            with st.spinner("Generating image..."):
-                image = generate_image(prompt_text)
-                st.image(image, caption="Generated Image", use_column_width=True)
-                st.success("Image generated successfully!")
+        formatted_prompt = f"{recognized_text}, 4k, High Resolution"
+        st.session_state["prompt_text"] = formatted_prompt
+        st.rerun()
 
-# Generate button
+# Text input for prompt linked to session state
+prompt_text = st.text_area(
+    "Enter or edit prompt for image generation:",
+    value=st.session_state["prompt_text"],
+    key="prompt_input_field",
+    help="You can manually type a prompt or edit text captured via speech recognition."
+)
+st.session_state["prompt_text"] = prompt_text
+
+# Generate Button
 if st.button("Generate Image"):
-    if prompt_text:
+    current_prompt = st.session_state["prompt_text"].strip()
+    if current_prompt:
         with st.spinner("Generating image..."):
-            image = generate_image(prompt_text)
+            image = generate_image(current_prompt)
             st.image(image, caption="Generated Image", use_column_width=True)
             # Optionally, save the image
             image.save('generated_image.png')
             st.success("Image generated successfully!")
     else:
         st.warning("Please enter a prompt or use speech recognition first.")
-
