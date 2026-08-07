@@ -12,7 +12,65 @@ To run this project, ensure you have the following Python libraries installed:
     catboost
     langchain-openai
     langchain
+    openai
+    python-dotenv
 
+You can install them using:
+
+    
+    pip install -r requirements.txt
+    
+# Environment Variables
+
+This project uses OpenAI models through LangChain for generating prescription suggestions. Before running the notebook, you must configure your OpenAI API key.
+
+## Option 1: Using a `.env` file (Recommended)
+
+1. Create a file named `.env` in the project root.
+
+2. Add your OpenAI API key:
+
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+3. Load the environment variables in your notebook or Python script:
+
+```python
+from dotenv import load_dotenv
+load_dotenv()
+```
+
+## Option 2: Set the Environment Variable Directly
+
+### Windows (Command Prompt)
+
+```cmd
+set OPENAI_API_KEY=your_openai_api_key_here
+```
+
+### Windows (PowerShell)
+
+```powershell
+$env:OPENAI_API_KEY="your_openai_api_key_here"
+```
+
+### Linux/macOS
+
+```bash
+export OPENAI_API_KEY="your_openai_api_key_here"
+```
+
+You can verify that the key is available by running:
+
+```python
+import os
+print(os.getenv("OPENAI_API_KEY"))
+```
+
+> **Note:** Never commit your API key or `.env` file to version control. Add `.env` to your `.gitignore` file if it is not already included.
+
+---
 ## Algorithms Used
 
     Disease Prediction:
