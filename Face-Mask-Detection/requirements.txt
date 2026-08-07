@@ -1,0 +1,11 @@
+tensorflow>=2.15.0
+numpy>=1.26.0
+opencv-python>=4.9.0
+matplotlib>=3.8.0
+pillow>=10.2.0
+scikit-learn>=1.4.0
+mtcnn>=0.1.1
+streamlit>=1.35.0
+streamlit-webrtc>=0.47.0
+av>=11.0.0
+kagglehub>=0.2.5
