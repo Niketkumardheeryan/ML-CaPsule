@@ -4,3 +4,8 @@ scikit-learn
 catboost
 langchain-openai
 langchain
+matplotlib 
+seaborn
+catboost
+xgboost
+lightgbm
