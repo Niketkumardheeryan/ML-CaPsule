@@ -1,0 +1,27 @@
+data:
+  raw_path: "Dataset/All_Anime.csv"
+  drop_columns:
+    - "Story"
+    - "Certificate"
+    - "Unnamed: 0"
+
+filtering:
+  min_year: 2000
+  min_duration: 5
+  min_rating: 0.0
+  target_genres:
+    - "Animation, Action, Comedy"
+    - "Animation, Adventure, Drama"
+    - "Animation, Comedy, Fantasy"
+
+feature_engineering:
+  target_column: "Rating"
+  drop_features:
+    - "name"
+  test_size: 0.33
+  random_state: 42
+
+model_training:
+  output_dir: "Model"
+  model_1_filename: "model_1.pkl"
+  model_2_filename: "model_2.pkl"

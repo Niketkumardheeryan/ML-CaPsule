@@ -1,66 +1,90 @@
-## Title: Anime Data Analysis and Prediction
+# Anime Data Analysis and Prediction
 
-## Goal: To analyze the Anime Dataset using Exploratory Data Analysis using several parameters and then try to make predictions
+## Project Goal
+To perform exploratory data analysis and build predictive machine learning models for Anime ratings based on features like duration, release year, and genre.
 
-## Dataset link:
-https://www.kaggle.com/datasets/ayush4807/aad-dataset
+## Dataset Link
+[Anime Dataset on Kaggle](https://www.kaggle.com/datasets/ayush4807/aad-dataset)
 
-## Techniques used: 
-1. Data Filtering
-2. Data Preprocessing
-3. Data Extraction
-4. Data visualization
-5. Data Modelling
-6. Pickling the model
+## Project Structure
+```text
+Anime Data Analysis and Prediction/
+├── config/
+│   └── config.yaml             # Pipeline configuration (data paths, hyperparams, filters)
+├── Dataset/
+│   └── All_Anime.csv           # Raw dataset
+├── Model/
+│   ├── anime_analysis_and_prediction.ipynb # Original notebook
+│   ├── model_1.pkl             # Trained DecisionTreeRegressor artifact
+│   └── model_2.pkl             # Trained RandomForestRegressor artifact
+├── src/
+│   ├── __init__.py
+│   ├── utils.py                # Logging and I/O utilities
+│   ├── data_ingestion.py       # Data loading, cleaning, and filtering
+│   ├── feature_engineering.py  # Encoding, feature selection, and train-test split
+│   └── model_training.py       # Model training, evaluation, and pickling
+├── tests/
+│   ├── __init__.py
+│   ├── test_data_ingestion.py  # Unit tests for data ingestion
+│   ├── test_feature_engineering.py # Unit tests for feature engineering
+│   └── test_model_training.py # Unit tests for model training & evaluation
+├── main.py                     # Central CLI execution script
+├── requirements.txt            # Project dependencies
+└── Readme.md                   # Project documentation
+```
 
-## Libraries used:
-1. Pandas
-2. Pandas profiling
-3. Numpy 
-4. Matplotlib
-5. Scikit Learn
-6. Pickle
+## Modular Pipeline Features
+- **Data Ingestion & Cleaning**: Robust loading, missing value imputation, string parsing for durations and years, and filtering rules.
+- **Feature Engineering**: Target genre extraction, one-hot encoding categorical variables (`pd.get_dummies`), and reproducible train-test splitting.
+- **Model Training & Evaluation**: Trains `LinearRegression`, `DecisionTreeRegressor`, and `RandomForestRegressor`. Evaluates model metrics (Train Score, R2 Score, MAE, MSE, RMSE).
+- **Configuration-Driven**: All file paths, filtering criteria, and model output settings managed via `config/config.yaml`.
+- **Logging & Utilities**: Replaced plain `print()` statements with structured, production-level logging (`src/utils.py`).
 
-## Data visuals created:
-1. Hsitogram
-2. Box plot
-3. Scatter Plot
-4. Bar plot
-5. Heatmap
-6. Pairplot
+## Installation & Setup
 
-## Machine Learning Models used:
-1. Linear Regression
-2. Decsion Tree Regression
-3. Random Forest Regressor
+1. **Navigate to project directory**:
+   ```bash
+   cd "Anime Data Analysis and Prediction"
+   ```
 
-## Evaluation metrics used:
-1. Root Mean Squared error
-2. Mean Squared error
-3. R2 score
-4. Training Score
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Visuals:
-<img src = "https://github.com/PiyushBL45t/ML-Crate/blob/main/Anime%20Data%20Analysis%20and%20Prediction/Images/Box%20plot%20pr%20year.png"/>
-<img src = "https://github.com/PiyushBL45t/ML-Crate/blob/main/Anime%20Data%20Analysis%20and%20Prediction/Images/Heatmap.png"/>
-<img src = "https://github.com/PiyushBL45t/ML-Crate/blob/main/Anime%20Data%20Analysis%20and%20Prediction/Images/Histograms.png"/>
-<img src = "https://github.com/PiyushBL45t/ML-Crate/blob/main/Anime%20Data%20Analysis%20and%20Prediction/Images/Normal%20Distributions.png"/>
-<img src = "https://github.com/PiyushBL45t/ML-Crate/blob/main/Anime%20Data%20Analysis%20and%20Prediction/Images/Pairplot.png"/>
+## Running the Pipeline via CLI
 
-## Conclusion
-### We tried to implement three model on our analyzed data. 
-#### 1. Linear Regression
-#### 2. Decision Tree Regressor
-#### 3. Random Forest Regressor
+To execute the end-to-end modular pipeline:
 
-### This was a continuous data thus, we applied the Regression Algorithms for this purpose.
-### The training paramter was "Rating": This depicts the Anime ratings on scale of 10. We trained and tested our model with two random types of Anime Genres: 
-#### 1. Animation, Adventure, Drama
-#### 2. Animation, Comedy, Fantasy
-## Results say that:
-### 1. Linear Regression and Random Forest Algorithms show a very low training score and a high error values and due to which they are not the best fit models. The predictions of <u>Ratings</u> based on those models is also very low for the future years.
-### 2. The Decision Tree on the other hand makes a very good predictions of ratings and we can say that the type of Animes we selected can catch more attention of audiences in the coming years. The evaluation metrics are stable and error results are very low this makes it fit to create a good predictive analysis example.
+```bash
+python main.py
+```
+
+You can also specify a custom configuration file path:
+
+```bash
+python main.py --config config/config.yaml
+```
+
+## Running Unit Tests
+
+Run the test suite using `pytest`:
+
+```bash
+python -m pytest tests/
+```
+
+## Visuals
+<img src="https://github.com/PiyushBL45t/ML-Crate/blob/main/Anime%20Data%20Analysis%20and%20Prediction/Images/Box%20plot%20pr%20year.png"/>
+<img src="https://github.com/PiyushBL45t/ML-Crate/blob/main/Anime%20Data%20Analysis%20and%20Prediction/Images/Heatmap.png"/>
+<img src="https://github.com/PiyushBL45t/ML-Crate/blob/main/Anime%20Data%20Analysis%20and%20Prediction/Images/Histograms.png"/>
+<img src="https://github.com/PiyushBL45t/ML-Crate/blob/main/Anime%20Data%20Analysis%20and%20Prediction/Images/Normal%20Distributions.png"/>
+<img src="https://github.com/PiyushBL45t/ML-Crate/blob/main/Anime%20Data%20Analysis%20and%20Prediction/Images/Pairplot.png"/>
+
+## Conclusion & Evaluation Summary
+- **Linear Regression & Random Forest**: Exhibit lower training fit and higher error metrics on target genre slices.
+- **Decision Tree Regressor**: Captures non-linear relationships effectively, yielding stable predictive metrics for rating forecasting. Trained models are automatically serialized to `Model/model_1.pkl` and `Model/model_2.pkl`.
 
 ## Authors
-
-- Created by [@Priyankesh](https://github.com/priyankeshh), GSSoC 2024
+- Originally created by [@Priyankesh](https://github.com/priyankeshh), GSSoC 2024
+- Modularized refactor for Issue #1696
