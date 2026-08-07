@@ -105,7 +105,8 @@
 | ⚙️ | [Contribution Guidelines](#️-contribution-guidelines) | 📖 | [Code of Conduct](#-code-of-conduct) |
 | ✨ | [Contributors](#-contributors) | ❤️ | [Stargazers & Forkers](#️-stargazers--forkers) |
 | 🔍 | [Notebook Health Check](#-notebook-health-check-bot) | 📝 | [License](#-license) |
-
+| ❓ | [Frequently Asked Questions](#-frequently-asked-questions-faq) |
+| 🔧 | [Troubleshooting Guide](#-troubleshooting-guide) |
 ---
 
 ## 📈 Why Machine Learning?
@@ -929,3 +930,345 @@ This project is licensed under the **MIT License**.
 | [XgBoost_Algorithm](XgBoost_Algorithm) |
 | [Youtube Comment Analysis](Youtube%20Comment%20Analysis) |
 <!-- Projects end -->
+
+---
+
+# ❓ Frequently Asked Questions (FAQ)
+
+### 1. Which Python version is recommended?
+
+Python **3.10 or later** is recommended for the best compatibility with most projects in this repository. Some projects may specify a different version in their local documentation, so always check the project's `README.md` before getting started.
+
+---
+
+### 2. How do I install the required dependencies?
+
+Most projects include a `requirements.txt` file. Install the dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+If a project does not include a `requirements.txt`, check the project file and install the dependencies using:
+
+```bash
+pip install <package_name>
+```
+
+---
+
+### 3. Do all projects use the same dependencies?
+
+No. Each project is self-contained and may require different libraries. Always check the project's directory for a `requirements.txt`, `environment.yml`, or installation instructions.
+
+---
+
+### 4. Which projects are best for beginners?
+
+If you're new to Machine Learning, start with the projects listed in **ROADMAP.md** under the Beginner section. Some recommended beginner-friendly projects include:
+
+- Iris Classification
+- Titanic Survival Prediction
+- Basic ML & DL
+- Data Cleaning Techniques
+- Feature Scaling Techniques
+
+---
+
+### 5. Can I contribute my own project?
+
+Yes! We welcome contributions from everyone.
+
+Before submitting a Pull Request:
+
+1. Read **CONTRIBUTING.md**
+2. Follow the repository structure
+3. Include a clear README for your project
+4. Test your code before submitting
+
+---
+
+### 6. My project uses a dataset. Where should I place it?
+
+Follow the instructions provided inside the project's README. Whenever possible, avoid committing large datasets directly to the repository and provide download links instead.
+
+---
+
+### 7. Can I submit Jupyter Notebooks?
+
+Yes.
+
+Jupyter notebooks (`.ipynb`) are encouraged because they combine explanations, code, and visualizations in one place.
+
+Before submitting:
+
+- Execute all cells
+- Remove unnecessary outputs if requested
+- Ensure the notebook runs from start to finish without errors
+
+---
+
+### 8. I found a bug. How do I report it?
+
+Please open a GitHub Issue with:
+
+- Project name
+- Steps to reproduce
+- Expected behavior
+- Actual behavior
+- Error message (if any)
+- Screenshots (optional)
+
+---
+
+### 9. How do I update my fork before creating a Pull Request?
+
+Sync your fork with the upstream repository before starting new work to avoid merge conflicts.
+
+---
+
+### 10. Where can I get additional help?
+
+If your question is not answered here:
+
+- Read the project-specific README
+- Check the repository's CONTRIBUTING.md
+- Browse existing GitHub Issues
+- Open a new Issue if needed
+
+---
+
+# 🔧 Troubleshooting Guide
+
+This section covers some of the most common issues contributors may encounter while setting up or running projects.
+
+---
+
+## Python command not found
+
+### Error
+
+```text
+python: command not found
+```
+
+### Solution
+
+Verify Python is installed:
+
+```bash
+python --version
+```
+
+or
+
+```bash
+python3 --version
+```
+
+If Python is not installed, download it from the official website and ensure it is added to your system PATH.
+
+---
+
+## pip command not found
+
+### Error
+
+```text
+pip: command not found
+```
+
+### Solution
+
+Upgrade or reinstall pip:
+
+```bash
+python -m ensurepip --upgrade
+python -m pip install --upgrade pip
+```
+
+---
+
+## ModuleNotFoundError
+
+### Error
+
+```text
+ModuleNotFoundError: No module named 'pandas'
+```
+
+### Solution
+
+Install the missing package:
+
+```bash
+pip install pandas
+```
+
+or install all dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Virtual environment is not activated
+
+Using a virtual environment is highly recommended.
+
+### Windows
+
+```powershell
+venv\Scripts\activate
+```
+
+### Linux/macOS
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## Jupyter Notebook does not start
+
+Install Jupyter Notebook:
+
+```bash
+pip install notebook
+```
+
+Launch it:
+
+```bash
+jupyter notebook
+```
+
+If using JupyterLab:
+
+```bash
+pip install jupyterlab
+jupyter lab
+```
+
+---
+
+## ImportError or dependency conflicts
+
+Sometimes different package versions conflict with each other.
+
+Try upgrading dependencies:
+
+```bash
+pip install --upgrade -r requirements.txt
+```
+
+If the problem persists, create a fresh virtual environment.
+
+---
+
+## Dataset not found
+
+### Error
+
+```text
+FileNotFoundError
+```
+
+### Solution
+
+Check:
+
+- Dataset has been downloaded
+- File path is correct
+- Dataset location matches the code
+- Project README has been followed
+
+---
+
+## Notebook fails after opening
+
+Restart the kernel and execute every cell again.
+
+In Jupyter:
+
+```
+Kernel → Restart & Run All
+```
+
+This helps identify hidden execution-order issues.
+
+---
+
+## Git clone failed
+
+Verify Git is installed:
+
+```bash
+git --version
+```
+
+Clone again:
+
+```bash
+git clone https://github.com/Niketkumardheeryan/ML-CaPsule.git
+```
+
+Also verify your internet connection and repository URL.
+
+---
+
+## Permission denied while installing packages
+
+Avoid using system-wide installations.
+
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate it before installing packages.
+
+---
+
+## Pull Request has merge conflicts
+
+Before creating a Pull Request:
+
+```bash
+git fetch upstream
+git merge upstream/master
+```
+
+Resolve conflicts locally before pushing.
+
+---
+
+## GitHub contribution graph not updating
+
+Ensure that:
+
+- Your commits are pushed successfully.
+- Your Pull Request has been merged.
+- Your GitHub email matches your commit email.
+- You contributed to the default branch.
+
+---
+
+## Still need help?
+
+If you're unable to resolve the issue:
+
+1. Check the project's README.
+2. Read the contribution guidelines.
+3. Search existing GitHub Issues.
+4. Open a new Issue with:
+   - Error message
+   - Operating System
+   - Python version
+   - Steps to reproduce
+   - Screenshots (if applicable)
+
+Happy learning and happy contributing! 🚀
