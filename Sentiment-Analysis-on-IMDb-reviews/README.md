@@ -39,6 +39,53 @@ The original implementation is provided as a **Jupyter Notebook**, which fetches
 2. Vader
 3. Flair
 4. text2emotion
+5. Transformer — DistilBERT fine-tuned on SST-2 (Hugging Face)
+
+<br>
+
+## Traditional vs Transformer 🤖
+
+TextBlob and VADER are **lexicon based**: every word carries a fixed score and the scores are
+added up. A transformer reads the sentence as a whole, so word order, negation and sarcasm
+change the answer.
+
+`compare_models.py` runs all three over the same labelled reviews from the IMDb test split:
+
+```bash
+python compare_models.py --sample 200
+```
+
+| Model | Accuracy | Time for 200 reviews |
+|-------|:--------:|:--------------------:|
+| TextBlob | 62.0% | 0.2 s |
+| VADER | 69.5% | 0.2 s |
+| **DistilBERT (SST-2)** | **86.5%** | 36.5 s |
+
+*200 reviews from the IMDb test split, seed 42.*
+
+The accuracy comes at a cost: the transformer is roughly **180× slower** and downloads about
+250 MB the first time. For short, plainly worded text the lexicon models are often enough.
+
+### Where the lexicon models break
+
+Three real reviews from that run, and what each model said:
+
+**Sarcasm** — *"This movie spends most of its time preaching that it is the script that makes
+the movie, but apparently there was no script when they shot this waste of time!"*
+True: **Negative**. TextBlob: Positive · VADER: Positive · DistilBERT: **Negative**
+
+**A positive review about a sad subject** — *"This is a really sad, and touching movie! It
+deals with the subject of child abuse."*
+True: **Positive**. TextBlob: Negative · VADER: Positive · DistilBERT: **Positive**
+TextBlob sees "sad" and "abuse" and stops there.
+
+**Negation** — *"Don't pay any attention to the rave reviews of this film here. It is the
+worst Van Damme film..."*
+True: **Negative**. TextBlob: Negative · VADER: Positive · DistilBERT: **Negative**
+VADER scores "rave" positively and misses that the sentence rejects it.
+
+> DistilBERT SST-2 is a binary model. When its confidence falls below 0.6 the app reports
+> **Neutral**, so its output matches the labels the other analysers return.
 
 <br>
 
