@@ -634,7 +634,7 @@ This project is licensed under the **MIT License**.
 | [ANN_Energy_Consumption_Predictor](ANN_Energy_Consumption_Predictor) |
 | [Anomaly Detection in Transactions using Deep Learning](Anomaly%20Detection%20in%20Transactions%20using%20Deep%20Learning) |
 | [ANPR_PI](ANPR_PI) |
-| [Artifical neural network from scratch](Artifical%20neural%20network%20from%20scratch) |
+| [Artificial neural network from scratch](Artificial%20neural%20network%20from%20scratch) |
 | [Association Rule Implementation](Association%20Rule%20Implementation) |
 | [Attention_and_Transformers](Attention_and_Transformers) |
 | [Audio Classification](Audio%20Classification) |
@@ -765,6 +765,7 @@ This project is licensed under the **MIT License**.
 | [heat_stroke_risk_predictor](heat_stroke_risk_predictor) |
 | [Hindi_Letter_Classification](Hindi_Letter_Classification) |
 | [House_Price_Prediction](House_Price_Prediction) |
+| [Household_monthly_bill_prediction](Household_monthly_bill_prediction) |
 | [Housing_Prediction](Housing_Prediction) |
 | [HyperParameter Tuning](HyperParameter%20Tuning) |
 | [Image Captioning](Image%20Captioning) |
