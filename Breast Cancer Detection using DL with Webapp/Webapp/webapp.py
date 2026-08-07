@@ -1,9 +1,12 @@
 import os
+import time
 import logging
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, jsonify, send_from_directory
+from werkzeug.security import safe_join
 import numpy as np
 import cv2
 import tensorflow as tf
+from werkzeug.exceptions import NotFound
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -79,6 +82,104 @@ def predict():
         except Exception as e:
             logging.error(f"Prediction error: {e}")
             return "An error occurred during prediction"
+
+# ---------------------------------------------------------------------------
+# JSON API + single page app
+#
+# Everything below is additive: the original `/` and `/predict` routes above are
+# untouched, so the classic Jinja interface keeps working exactly as before.
+# The React PWA in ./frontend talks to these endpoints instead.
+# ---------------------------------------------------------------------------
+
+CLASS_NAMES = ['Benign', 'Malignant', 'Normal']
+FRONTEND_DIST = os.path.join(BASE_DIR, "frontend", "dist")
+
+
+@app.route('/api/health', methods=['GET'])
+def api_health():
+    """Report whether the service is up and the model is loaded."""
+    return jsonify({
+        "status": "ok",
+        "model_loaded": model is not None,
+        "classes": CLASS_NAMES,
+    })
+
+
+@app.route('/api/predict', methods=['POST'])
+def api_predict():
+    """Classify an uploaded ultrasound image and return JSON.
+
+    Response shape:
+        {"prediction": "Benign", "confidence": 0.93,
+         "probabilities": {"Benign": 0.93, ...},
+         "model": "VGG16", "elapsed_ms": 118.4}
+    """
+    if 'image' not in request.files:
+        return jsonify({"error": "No image was uploaded."}), 400
+
+    file = request.files['image']
+    if not file or file.filename == '':
+        return jsonify({"error": "No image was selected."}), 400
+
+    if model is None:
+        return jsonify({
+            "error": "The model file is not available on the server."
+        }), 503
+
+    started = time.perf_counter()
+    try:
+        raw = np.frombuffer(file.read(), np.uint8)
+        image = cv2.imdecode(raw, cv2.IMREAD_COLOR)
+        if image is None:
+            return jsonify({"error": "The file could not be read as an image."}), 400
+
+        predictions = model.predict(prepare_image(image))
+        scores = np.asarray(predictions).reshape(-1).astype(float)
+
+        # Guard against a model whose head is not already normalised.
+        total = float(scores.sum())
+        if total > 0 and not np.isclose(total, 1.0):
+            scores = scores / total
+
+        probabilities = {
+            name: float(score) for name, score in zip(CLASS_NAMES, scores)
+        }
+        best = int(np.argmax(scores))
+
+        return jsonify({
+            "prediction": CLASS_NAMES[best],
+            "confidence": float(scores[best]),
+            "probabilities": probabilities,
+            "model": "VGG16",
+            "elapsed_ms": (time.perf_counter() - started) * 1000.0,
+        })
+    except Exception as e:
+        logging.error(f"API prediction error: {e}")
+        return jsonify({"error": "An error occurred during prediction."}), 500
+
+
+@app.route('/app', defaults={'path': ''})
+@app.route('/app/<path:path>')
+def spa(path):
+    """Serve the built React PWA, falling back to its index for client routes."""
+    # 1. Ensure the build directory actually exists
+    if not os.path.isdir(FRONTEND_DIST):
+        return (
+            "The PWA has not been built yet. Run: "
+            "cd frontend && npm install && npm run build",
+            404,
+        )
+
+    # 2. Attempt to serve a specific static file (like .js, .css, images)
+    if path:
+        try:
+            return send_from_directory(FRONTEND_DIST, path)
+        except NotFound:
+            pass
+
+    # 3. Fallback for React/Client-side routing
+    return send_from_directory(FRONTEND_DIST, 'index.html')
+
 
 if __name__ == "__main__":
     debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"

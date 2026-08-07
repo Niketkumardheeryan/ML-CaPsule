@@ -2,7 +2,11 @@
 
 ## Overview
 
-This notebook demonstrates image classification using a Convolutional Neural Network (CNN) implemented with PyTorch. The notebook uses the CIFAR-10 dataset from the Hugging Face Datasets library and covers the complete deep learning workflow, including dataset loading, preprocessing, model building, training, evaluation, and prediction.
+This directory contains notebooks demonstrating image classification using Convolutional Neural Networks (CNNs) implemented with PyTorch on the **CIFAR-10** dataset:
+
+1. **`PyTorch_CIFAR10_CNN.ipynb`**: Baseline PyTorch CNN model utilizing `torchvision.datasets.CIFAR10`.
+2. **`CNN_CIFAR10_HuggingFace.ipynb`**: PyTorch CNN model utilizing the Hugging Face `datasets` library.
+
 
 ---
 
