@@ -1,0 +1,104 @@
+{
+  "name": "constellation_classification_raw_schema",
+  "strict_column_order": true,
+  "allow_extra_columns": false,
+  "required_columns": [
+    "Constellation",
+    "Name",
+    "Bayer",
+    "Flamsteed",
+    "Variable Star",
+    "Henry Draper Number",
+    "Hipparcos Number",
+    "Right Ascension",
+    "Declination",
+    "Visual Magnitude",
+    "Absolute Magnitude",
+    "Distance",
+    "Spectral class",
+    "Notes"
+  ],
+  "row_count": {
+    "min": 10000,
+    "max": 15000
+  },
+  "max_duplicate_percentage": 0.0,
+  "columns": {
+    "Constellation": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 0.0
+    },
+    "Name": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 12.0
+    },
+    "Bayer": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 85.0
+    },
+    "Flamsteed": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 80.0
+    },
+    "Variable Star": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 85.0
+    },
+    "Henry Draper Number": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 15.0
+    },
+    "Hipparcos Number": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 15.0
+    },
+    "Right Ascension": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 0.1
+    },
+    "Declination": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 0.1
+    },
+    "Visual Magnitude": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 3.0
+    },
+    "Absolute Magnitude": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 25.0
+    },
+    "Distance": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 10.0
+    },
+    "Spectral class": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 5.0
+    },
+    "Notes": {
+      "allowed_dtypes": ["object", "string"],
+      "max_null_percentage": 60.0
+    }
+  },
+  "numeric_checks": {
+    "Visual Magnitude": {
+      "min": -2.0,
+      "max": 30.0,
+      "max_parse_failure_percentage": 0.25,
+      "max_out_of_range_percentage": 0.0
+    },
+    "Distance": {
+      "min": 0.0,
+      "max": 13000000.0,
+      "max_parse_failure_percentage": 0.25,
+      "max_out_of_range_percentage": 0.0
+    }
+  },
+  "unique_count_checks": {
+    "Constellation": {
+      "min": 80,
+      "max": 100
+    }
+  }
+}
