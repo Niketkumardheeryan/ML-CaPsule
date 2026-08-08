@@ -76,11 +76,19 @@ pip install -r requirements.txt
 1. Sign up for free at app.roboflow.com
 2. Go to Settings then API Keys
 3. Copy your key
+4. Copy `.env.example` to `.env` in this folder and paste your key:
+
+cp .env.example .env
+
+Then open `.env` and set:
+
+ROBOFLOW_API_KEY=your_actual_key_here
 
 ### 4. Run the Notebook
+
 jupyter notebook chess_piece_detection_yolo.ipynb
 
-Open the notebook and paste your Roboflow API key into the ROBOFLOW_API_KEY variable in Section 2, then run all cells top to bottom.
+The notebook loads your API key automatically via python-dotenv when you run the Configuration cell. Then run all cells top to bottom.
 
 ---
 
