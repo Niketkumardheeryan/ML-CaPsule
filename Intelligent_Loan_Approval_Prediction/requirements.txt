@@ -1,0 +1,12 @@
+
+---
+
+### 📦 `requirements.txt`
+
+```text
+numpy
+pandas
+scikit-learn
+matplotlib
+optuna
+imbalanced-learn
