@@ -71,16 +71,38 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 
 ## 🚀 How to Run
 
-> ✅ This project can be run on **Google Colab** or **locally with Jupyter Notebook**.
+> ✅ This project can be run as an **interactive Streamlit App**, via a **Jupyter Notebook**, or on **Google Colab**.
 
-### Option A — Google Colab (easier)
+### Option A — Streamlit Web App (Recommended)
+
+1. Navigate to the project directory:
+   ```bash
+   cd "Autism Identification System"
+   ```
+
+2. Install the required dependencies:
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn streamlit
+   ```
+
+3. Launch the Streamlit dashboard locally:
+   ```bash
+   streamlit run streamlit_app.py
+   ```
+
+4. Alternatively, you can run the CLI model evaluation validation script:
+   ```bash
+   python example_usage.py
+   ```
+
+### Option B — Google Colab (easier)
 
 1. Open [colab.research.google.com](https://colab.research.google.com/)
 2. Upload the notebook file (`.ipynb`)
 3. Upload `Data.csv` to the Colab session storage
 4. Run all cells via `Runtime` → `Run all`
 
-### Option B — Local Jupyter Notebook
+### Option C — Local Jupyter Notebook
 
 1. Clone the repository:
    ```bash
@@ -131,8 +153,12 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 
 ```
 Autism Identification System/
-├── Data.csv          ← ASD screening dataset
-├── *.ipynb           ← Main notebook
+├── Data.csv              ← ASD screening dataset
+├── model_evaluation.py   ← Core evaluation and preprocessing module
+├── streamlit_app.py      ← Interactive Streamlit web application
+├── example_usage.py      ← CLI evaluation example script
+├── test_evaluation.py    ← Unit test suite
+├── *.ipynb               ← Main notebook
 └── README.md
 ```
 
@@ -140,4 +166,5 @@ Autism Identification System/
 
 ## 👤 Contributor
 
-- README added as part of [ML-CaPsule](https://github.com/Niketkumardheeryan/ML-CaPsule) open-source contribution
+- README and Streamlit framework added as part of [ML-CaPsule](https://github.com/Niketkumardheeryan/ML-CaPsule) open-source contribution
+
