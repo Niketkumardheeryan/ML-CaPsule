@@ -41,3 +41,25 @@ There are two phases namely 🌴:
 
 ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
 
+### Files 📁
+
+| File | Contents |
+|------|----------|
+| `random_forest.py` | `Node`, `DecisionTree` and `RandomForest`, written from scratch with NumPy |
+| `train_random_forest.py` | Trains the forest on the sklearn breast cancer dataset and prints test accuracy |
+
+### Run it ▶️
+
+```bash
+pip install numpy scikit-learn
+cd "Random forest from scratch"
+python train_random_forest.py
+```
+
+```text
+Accuracy: 0.9385964912280702
+```
+
+3 trees, `max_depth=10`, 80/20 split. Bootstrap sampling and feature selection are not
+seeded, so accuracy moves around roughly 92-94% between runs.
+
