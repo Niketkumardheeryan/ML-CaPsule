@@ -6,7 +6,7 @@ A modern, lightweight web application for classifying pet images as **cats** or 
 
 ## ✨ Features
 
-- **🎯 Accurate Classification** — MobileNetV2 transfer learning on 25,000+ Kaggle cat/dog images
+- **🎯 Accurate Classification** — MobileNetV2 transfer learning on 10,000+ Kaggle cat/dog images
 - **🖥️ Modern Web UI** — Clean, responsive Streamlit interface with dark/light mode support
 - **📊 Confidence Visualization** — Real-time probability bars and confidence scores
 - **🖼️ Sample Images** — Built-in test images for quick demos
@@ -21,7 +21,7 @@ A modern, lightweight web application for classifying pet images as **cats** or 
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Niketkumardheeryan/ML-CaPsule.git
 cd "Classification of Pets' Faces"
 
 # Create virtual environment
@@ -35,10 +35,7 @@ pip install -r requirements.txt
 ### Run the Web App
 
 ```bash
-# Option 1: Direct Streamlit
-streamlit run app.py
-
-# Option 2: Using the entry point
+# Using the entry point
 python main.py
 ```
 
@@ -56,9 +53,7 @@ Classification of Pets' Faces/
 ├── requirements.txt       # Python dependencies
 ├── pet_classifier.keras   # Trained model (9.6 MB)
 ├── class_names.json       # Class labels ["Cat", "Dog"]
-├── .gitignore
-├── .venv/                 # Virtual environment (ignored)
-└── kagglecatsanddogs_3367a/
+└── kagglecatsanddogs/
     └── PetImages/         # Training dataset (Cat/ and Dog/ folders)
 ```
 
@@ -71,7 +66,7 @@ Classification of Pets' Faces/
 | **Architecture** | MobileNetV2 (ImageNet pre-trained) |
 | **Input Size** | 160 × 160 × 3 |
 | **Classes** | 2 (Cat, Dog) |
-| **Training Data** | ~25,000 images (Kaggle Cats vs Dogs) |
+| **Training Data** | ~10,000 images (Kaggle Cats vs Dogs) |
 | **Validation Split** | 20% |
 | **Epochs** | 5 (with early stopping) |
 | **Optimizer** | Adam (lr=1e-3) |
@@ -93,10 +88,8 @@ Classification of Pets' Faces/
 ## 📦 Dependencies
 
 ```txt
-streamlit>=1.28.0
-tensorflow>=2.13.0
-numpy>=1.24.0
-pillow>=10.0.0
+streamlit
+tensorflow
 ```
 
 ---
@@ -128,7 +121,7 @@ EPOCHS = 5                 # Max epochs (early stopping may stop earlier)
 ```
 
 The script will:
-1. Clean corrupt images from `kagglecatsanddogs_3367a/PetImages/Cat` and `Dog`
+1. Clean corrupt images from `kagglecatsanddogs/PetImages/Cat` and `Dog`
 2. Load and preprocess the dataset
 3. Build the MobileNetV2 transfer learning model
 4. Train with early stopping (patience=2)
@@ -140,8 +133,8 @@ The script will:
 
 | Metric | Typical Value |
 |--------|---------------|
-| Training Accuracy | ~98%+ |
-| Validation Accuracy | ~96-98% |
+| Training Accuracy | ~60%+ |
+| Validation Accuracy | ~60-65% |
 | Inference Time | ~50-100ms per image |
 
 ---
@@ -157,12 +150,6 @@ The script will:
 
 ---
 
-## 📄 License
-
-This project is part of an **AI & ML Internship Project**. The dataset is from [Kaggle Cats vs Dogs](https://www.kaggle.com/datasets/tongpython/cat-and-dog).
-
----
-
 ## 🙏 Acknowledgments
 
 - **MobileNetV2** — Google Research
@@ -173,5 +160,7 @@ This project is part of an **AI & ML Internship Project**. The dataset is from [
 ---
 
 ## 📬 Contact
+- Author - Dhritiman Modak
+- Github - [[Dhritiman2510](https://github.com/Dhritiman2510)]
 
 Built with ❤️ for learning and demonstration purposes.
