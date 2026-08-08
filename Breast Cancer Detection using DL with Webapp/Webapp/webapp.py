@@ -6,6 +6,7 @@ from werkzeug.security import safe_join
 import numpy as np
 import cv2
 import tensorflow as tf
+from werkzeug.exceptions import NotFound
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -161,18 +162,22 @@ def api_predict():
 @app.route('/app/<path:path>')
 def spa(path):
     """Serve the built React PWA, falling back to its index for client routes."""
+    # 1. Ensure the build directory actually exists
     if not os.path.isdir(FRONTEND_DIST):
         return (
             "The PWA has not been built yet. Run: "
             "cd frontend && npm install && npm run build",
             404,
         )
+
+    # 2. Attempt to serve a specific static file (like .js, .css, images)
     if path:
-        # safe_join returns None when `path` tries to escape the directory, so a
-        # traversal attempt can never reach os.path.isfile or be served.
-        candidate = safe_join(FRONTEND_DIST, path)
-        if candidate is not None and os.path.isfile(candidate):
+        try:
             return send_from_directory(FRONTEND_DIST, path)
+        except NotFound:
+            pass
+
+    # 3. Fallback for React/Client-side routing
     return send_from_directory(FRONTEND_DIST, 'index.html')
 
 

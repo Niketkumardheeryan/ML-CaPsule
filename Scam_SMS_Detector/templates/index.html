@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered Scam SMS Detector web application using Natural Language Processing and Machine Learning to classify text messages as safe or scam.">
+    <title>Scam SMS Detector | AI-Powered Message Safety Analysis</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="bg-gradient-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header class="app-header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fa-solid fa-shield-cat logo-icon"></i>
+                <div class="logo-text">
+                    <h1>Scam SMS <span>Detector</span></h1>
+                    <p class="tagline">NLP & Machine Learning Security Guard</p>
+                </div>
+            </div>
+            <div class="header-badge">
+                <span class="pulse-dot"></span>
+                <span>AI Model Active</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="detector-section">
+            <div class="card glass-card">
+                <div class="card-header">
+                    <h2><i class="fa-solid fa-message"></i> SMS Message Inspection</h2>
+                    <p>Paste or type any suspicious text message below to detect phishing, scams, or fraud attempts.</p>
+                </div>
+
+                <form id="sms-form" class="sms-form">
+                    <div class="textarea-wrapper">
+                        <textarea 
+                            id="message-input" 
+                            name="message" 
+                            rows="5" 
+                            placeholder="e.g. URGENT! Your bank account #9281 has been locked. Verify immediately at http://bit.ly/bank-verify..."
+                            required
+                        ></textarea>
+                        <div class="textarea-footer">
+                            <span id="char-count">0 characters</span>
+                            <button type="button" id="clear-btn" class="btn-text"><i class="fa-solid fa-trash-can"></i> Clear</button>
+                        </div>
+                    </div>
+
+                    <div class="preset-samples">
+                        <span class="samples-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Try Quick Samples:</span>
+                        <div class="sample-chips">
+                            <button type="button" class="chip chip-scam" data-text="URGENT! Your bank account #9281 has been locked due to suspicious activity. Verify immediately at http://bit.ly/bank-verify-sec">
+                                🚨 Bank Phishing Scam
+                            </button>
+                            <button type="button" class="chip chip-scam" data-text="ALERT: Your package delivery failed. Pay $2.99 redelivery fee now at http://usps-track-parcel-alert.info or parcel will be returned.">
+                                📦 Package Delivery Scam
+                            </button>
+                            <button type="button" class="chip chip-scam" data-text="CONGRATS! Your phone number selected as lucky winner of $50,000 cash. Reply WINNER to 77892 to claim.">
+                                🎁 Lottery Prize Scam
+                            </button>
+                            <button type="button" class="chip chip-safe" data-text="Hey are we still meeting for lunch at 1pm today? Let me know!">
+                                🟢 Genuine Personal Text
+                            </button>
+                            <button type="button" class="chip chip-safe" data-text="Did you get a chance to review the code documentation I sent yesterday?">
+                                🟢 Work Discussion
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" id="analyze-btn" class="btn-primary">
+                            <span class="btn-content">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i> Analyze SMS Safety
+                            </span>
+                            <span class="btn-spinner hidden">
+                                <i class="fa-solid fa-spinner fa-spin"></i> Analyzing...
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div id="results-placeholder" class="card glass-card placeholder-card">
+                <div class="placeholder-content">
+                    <i class="fa-solid fa-shield-halved placeholder-icon"></i>
+                    <h3>Awaiting Message Analysis</h3>
+                    <p>Enter a message above and click <strong>Analyze SMS Safety</strong> to see real-time AI security metrics and threat breakdown.</p>
+                </div>
+            </div>
+
+            <div id="results-card" class="card glass-card results-card hidden">
+                <div class="results-header">
+                    <h3><i class="fa-solid fa-chart-line"></i> Safety Analysis Results</h3>
+                    <span id="risk-badge" class="risk-badge badge-safe">SAFE</span>
+                </div>
+
+                <div class="gauge-container">
+                    <div class="confidence-display">
+                        <div class="gauge-meter">
+                            <svg class="progress-ring" width="140" height="140">
+                                <circle class="progress-ring-bg" stroke="rgba(255, 255, 255, 0.1)" stroke-width="12" fill="transparent" r="56" cx="70" cy="70"/>
+                                <circle id="progress-circle" class="progress-ring-circle" stroke="#10b981" stroke-width="12" stroke-dasharray="351.858" stroke-dashoffset="351.858" stroke-linecap="round" fill="transparent" r="56" cx="70" cy="70"/>
+                            </svg>
+                            <div class="gauge-text">
+                                <span id="confidence-score">0%</span>
+                                <span class="gauge-label">Scam Probability</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="verdict-box">
+                        <h4 id="verdict-title">Message is Safe</h4>
+                        <p id="verdict-desc">Our machine learning model analyzed text patterns and found no significant security threats or phishing characteristics.</p>
+                    </div>
+                </div>
+
+                <div class="trigger-analysis">
+                    <h4><i class="fa-solid fa-triangle-exclamation"></i> Suspicious Signals Detected</h4>
+                    <div id="trigger-list" class="trigger-list">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>Built with <i class="fa-solid fa-heart heart-icon"></i> using Python, Scikit-learn & Flask | ML-CaPsule Open Source</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

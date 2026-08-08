@@ -15,10 +15,25 @@ This project is a Fake News Detection system using NLP and Logistic regression t
 - Load the dataset
 - Data Processing
 - Stemming
+- Word Cloud Visualization
 - Convert text to numerical data
 - Splitting data into test and train
 - Logistic Regression model
 - Evaluate
+
+## Word Cloud Visualization
+
+To better understand the dataset, separate word clouds are generated for Fake News and Real News articles after preprocessing.
+
+These visualizations highlight the most frequently occurring words in each class and provide insights into common textual patterns.
+
+### Fake News Word Cloud
+
+![alt text](image.png)
+
+### Real News Word Cloud
+
+![alt text](image-1.png)
 
 # Included Gradio as User Interface
 # How to use it:
