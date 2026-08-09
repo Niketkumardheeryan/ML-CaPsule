@@ -765,6 +765,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [heart failure](heart%20failure) | 🟡 Intermediate | 3-6 hours |
 | [Heart_Disease_Prediction](Heart_Disease_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Heart_Predection](Heart_Predection) | 🟡 Intermediate | 3-6 hours |
+| [Heart_Prediction](Heart_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [heat_stroke_risk_predictor](heat_stroke_risk_predictor) | 🟡 Intermediate | 3-6 hours |
 | [Hindi_Letter_Classification](Hindi_Letter_Classification) | 🟡 Intermediate | 3-6 hours |
 | [House_Price_Prediction](House_Price_Prediction) | 🟡 Intermediate | 3-6 hours |
