@@ -1,11 +1,8 @@
 from pathlib import Path
 import re
-import requests
 import sys
 
 ROOT_PATH = Path(__file__).parent.resolve()
-
-API_URL = "https://api.github.com/repos/Niketkumardheeryan/ML-CaPsule/contents?per_page=1000"
 
 EXCLUDED_NAMES = {
     ".github",
@@ -51,27 +48,79 @@ def replace_chunk(content, marker, chunk):
     )
 
 
+def infer_project_metadata(project_name):
+    name = project_name.lower()
+
+    advanced_keywords = (
+        "gan",
+        "transformer",
+        "reinforcement learning",
+        "reinforcement",
+        "rl",
+        "llm",
+        "genetic",
+        "trading",
+        "optimization",
+        "deepfake",
+        "yolo",
+        "stitching",
+        "captioning",
+        "generator",
+        "virtual drag",
+    )
+
+    beginner_keywords = (
+        "basics",
+        "python",
+        "power bi",
+        "cheat sheets",
+        "statistics",
+        "eda",
+        "pandas",
+        "numpy",
+        "sql",
+        "data cleaning",
+        "data filling",
+        "visualization",
+        "plot",
+        "matplotlib",
+        "seaborn",
+    )
+
+    if any(keyword in name for keyword in advanced_keywords):
+        return "🟠 Advanced", "6-12 hours"
+
+    if any(keyword in name for keyword in beginner_keywords):
+        return "🟢 Beginner", "1-3 hours"
+
+    return "🟡 Intermediate", "3-6 hours"
+
+
+def build_project_table(projects):
+    headers = [
+        "| Project | Difficulty | Estimated Time |",
+        "|---------|------------|----------------|",
+    ]
+
+    rows = []
+    for project in projects:
+        difficulty, time_estimate = infer_project_metadata(project["fname"])
+        rows.append(
+            f"| [{project['fname']}]({project['furl']}) | {difficulty} | {time_estimate} |"
+        )
+
+    return "\n".join(headers + rows)
+
+
 def extract_file_names():
-    try:
-        response = requests.get(API_URL, timeout=10)
-        response.raise_for_status()
-    except requests.exceptions.RequestException as e:
-        print(f"ERROR: {e}")
-        sys.exit(1)
-
-    items = response.json()
-
     projects = []
 
-    for item in items:
-        if (
-            item["type"] == "dir"
-            and item["name"] not in EXCLUDED_NAMES
-        ):
+    for path in sorted(ROOT_PATH.iterdir(), key=lambda item: item.name.lower()):
+        if path.is_dir() and path.name not in EXCLUDED_NAMES:
             projects.append(
                 {
-                    "fname": item["name"],
-                    "furl": item["path"].replace(" ", "%20"),
+                    "fname": path.name,
+                    "furl": path.name.replace(" ", "%20"),
                 }
             )
 
@@ -92,22 +141,18 @@ def main():
 
     projects = extract_file_names()
 
-    table = [
-        "| Content List |",
-        "|---------------|",
-    ]
-
-    table.extend(
-        [
-            f"| [{p['fname']}]({p['furl']}) |"
-            for p in projects
-        ]
+    table = build_project_table(projects)
+    section = (
+        "### 🧭 Suggested Learning Path\n"
+        "Start with beginner-friendly projects, then move to intermediate and advanced ones as your confidence grows. "
+        "The table below adds quick difficulty and time guidance for each project.\n\n"
+        f"{table}"
     )
 
     updated = replace_chunk(
         readme_contents,
         "Projects",
-        "\n".join(table),
+        section,
     )
 
     with open(readme, "w", encoding="utf-8") as f:
