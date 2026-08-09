@@ -621,7 +621,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 
 | Project | Difficulty | Estimated Time |
 |---------|------------|----------------|
-| [.vscode](.vscode) | 🟡 Intermediate | 3-6 hours |
 | [Accent_Neutralizer_for_Speech](Accent_Neutralizer_for_Speech) | 🟡 Intermediate | 3-6 hours |
 | [Advanced Visualizations](Advanced%20Visualizations) | 🟢 Beginner | 1-3 hours |
 | [AI-Based QR Code Detection](AI-Based%20QR%20Code%20Detection) | 🟡 Intermediate | 3-6 hours |
