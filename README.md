@@ -27,8 +27,9 @@ Welcome to **ML-Capsule**!!! This repository is a comprehensive collection of ma
     <img src="https://img.shields.io/github/issues-closed-raw/Niketkumardheeryan/ML-CaPsule" alt="GitHub closed issues" />
     <img src="https://img.shields.io/github/issues-pr/Niketkumardheeryan/ML-CaPsule" alt="GitHub pull requests" />
     <img src="https://img.shields.io/github/issues-pr-closed/Niketkumardheeryan/ML-CaPsule" alt="GitHub closed pull requests" />
-  </p>
+ </p>
 </div>
+
 ## 📑 Table of Contents
 
 - [📈 Why Machine Learning?](#-why-machine-learning)
