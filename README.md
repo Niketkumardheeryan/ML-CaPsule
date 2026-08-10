@@ -726,6 +726,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Exploratory-data-analysis](Exploratory-data-analysis) | 🟡 Intermediate | 3-6 hours |
 | [Extract_Text_from_PDF_using_Python](Extract_Text_from_PDF_using_Python) | 🟢 Beginner | 1-3 hours |
 | [Eye_Gaze_Tracking_Attention_Estimation](Eye_Gaze_Tracking_Attention_Estimation) | 🟡 Intermediate | 3-6 hours |
+| [Face-Mask-Detection](Face-Mask-Detection) | 🟡 Intermediate | 3-6 hours |
 | [face-recognition](face-recognition) | 🟡 Intermediate | 3-6 hours |
 | [Fake_Currency_Detetction_with_logistic_regression](Fake_Currency_Detetction_with_logistic_regression) | 🟡 Intermediate | 3-6 hours |
 | [Fake_News_Detection](Fake_News_Detection) | 🟡 Intermediate | 3-6 hours |
