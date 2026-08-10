@@ -31,6 +31,8 @@
 [![Star Repo](https://img.shields.io/badge/⭐_Star_this_Repo-Support_Us-gold?style=for-the-badge&logo=github)](https://github.com/Niketkumardheeryan/ML-CaPsule/stargazers)
 [![Contribute](https://img.shields.io/badge/🤝_Contribute-Join_Us-orange?style=for-the-badge&logo=github)](https://github.com/Niketkumardheeryan/ML-CaPsule/blob/master/CONTRIBUTING.md)
 
+[![Project Index](https://img.shields.io/badge/📚_Project_Index-Open_Index-45FFAA?style=for-the-badge)](./docs/index.html)
+
 <br>
 
 <img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" width="500" alt="Machine Learning Animation"/>
