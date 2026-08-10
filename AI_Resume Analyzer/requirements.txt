@@ -6,3 +6,4 @@ pandas
 spacy
 google-genai
 python-dotenv
+reportlab
