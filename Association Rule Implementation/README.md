@@ -1,51 +1,71 @@
 # Association Rule Implementation
 
-This folder contains notebooks and data for performing association rule mining on transaction datasets (supermarket and bakery). The notebooks demonstrate Apriori and an ECLAT-style frequency analysis, exploratory data analysis (EDA), and visualization of item associations.
+This folder contains notebooks and data for performing association rule mining on transaction datasets. The notebook demonstrates exploratory data analysis (EDA), association rule mining using the Apriori algorithm, and visualization of item associations.
 
-## Datasets
-- `Market_Basket_Optimisation.csv` — weekly supermarket baskets (7,501 transactions). Each row is a customer's basket with up to 20 item columns.
+## Dataset
+
 - `Bakery.csv` — bakery transactions (20,507 rows, ~9,465 unique transactions) including `TransactionNo`, `Items`, `DateTime`, `Daypart`, and `DayType`.
 
-## Notebooks
-
-- `Apriori_and_ECLAT.ipynb`
-	- Loads supermarket basket data and prepares transaction lists.
-	- Runs Apriori (using `apyori`) to find frequent itemsets and association rules (min_support ~0.003, min_confidence=0.2, min_lift=3).
-	- Implements an ECLAT-style frequency calculation (pairs and trios) to rank most common item combinations by raw frequency.
-	- Compares Apriori results (association strength) with ECLAT frequency rankings.
+## Notebook
 
 - `association.ipynb`
-	- Loads `Bakery.csv`, runs EDA (top items, peak sale hours, day/month trends) using `pandas` and `plotly`.
-	- Prepares transactions and one-hot encodes items with `mlxtend.preprocessing.TransactionEncoder`.
-	- Runs `mlxtend.frequent_patterns.apriori` and `mlxtend.frequent_patterns.association_rules` to generate and filter rules.
-	- Visualizes item connections with `networkx` and interactive Plotly graphs.
+
+  - Loads `Bakery.csv` and performs exploratory data analysis (EDA), including top-selling items, peak sale hours, and day/month trends using `pandas` and `plotly`.
+  - Prepares transactions and one-hot encodes items using `mlxtend.preprocessing.TransactionEncoder`.
+  - Applies the Apriori algorithm using `mlxtend.frequent_patterns.apriori`.
+  - Generates association rules with `mlxtend.frequent_patterns.association_rules`.
+  - Visualizes item relationships using `networkx` and interactive Plotly graphs.
 
 ## Key Methods and Libraries
-- Apriori: discovers frequent itemsets and derives rules (support, confidence, lift).
-- ECLAT-style frequency scoring: counts how often combinations appear across transactions.
-- Libraries: `pandas`, `numpy`, `mlxtend`, `apyori`, `plotly`, `networkx`, `matplotlib`.
+
+- **Apriori Algorithm** for discovering frequent itemsets and generating association rules based on support, confidence, and lift.
+- Libraries used:
+  - pandas
+  - numpy
+  - mlxtend
+  - plotly
+  - networkx
+  - matplotlib
 
 ## Quick Usage
-1. Install dependencies (recommended in a venv):
+
+### Prerequisites
+
+Ensure Python is installed on your system. All required dependencies are listed in the `requirements.txt` file.
+
+### Installation
+
+Install all required dependencies using:
 
 ```bash
-pip install pandas numpy mlxtend apyori plotly networkx matplotlib
+pip install -r requirements.txt
 ```
 
-2. Open the notebooks in Jupyter or VS Code and run cells in order. The notebooks load `Market_Basket_Optimisation.csv` and `Bakery.csv` from this folder.
+### Run the Project
 
-## Example Findings (from notebooks)
-- Supermarket data: combinations like `olive oil`, `whole wheat pasta`, and `mineral water` appear as strong association rules by Apriori.
-- Bakery data: `Coffee` is the top-selling item and shows strong associations with cakes, pastries, and tea.
+Open `association.ipynb` in Jupyter Notebook, JupyterLab, or Visual Studio Code and run the cells sequentially.
+
+## Example Findings
+
+- `Coffee` is the top-selling bakery item.
+- Strong association rules are observed between coffee, cakes, pastries, and tea.
+- Interactive network visualizations help identify relationships between frequently purchased items.
 
 ## Business Impact
-- Use discovered rules for: product recommendations, bundle offers, targeted promotions, and strategic product placement in stores.
 
-## Notes & Next Steps
-- You can tune Apriori `min_support`, `min_confidence`, and `min_lift` to find more or fewer rules.
-- Consider persisting rules and building a simple recommender that suggests items at checkout.
+The discovered association rules can be used for:
+
+- Product recommendations
+- Bundle offers
+- Cross-selling strategies
+- Targeted promotions
+- Store layout optimization
+
+## Notes & Future Improvements
+
+- Tune `min_support`, `min_confidence`, and `min_lift` to discover different sets of association rules.
+- Extend the project by building a recommendation system based on the generated rules.
 
 ---
 
 Contributed as part of the ML-CaPsule project.
-
