@@ -29,7 +29,6 @@ Anime Data Analysis and Prediction/
 │   ├── test_feature_engineering.py # Unit tests for feature engineering
 │   └── test_model_training.py # Unit tests for model training & evaluation
 ├── main.py                     # Central CLI execution script
-├── requirements.txt            # Project dependencies
 └── Readme.md                   # Project documentation
 ```
 
@@ -45,11 +44,6 @@ Anime Data Analysis and Prediction/
 1. **Navigate to project directory**:
    ```bash
    cd "Anime Data Analysis and Prediction"
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
    ```
 
 ## Running the Pipeline via CLI
