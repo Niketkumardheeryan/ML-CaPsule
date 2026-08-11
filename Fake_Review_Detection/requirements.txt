@@ -1,0 +1,22 @@
+# Core Deep Learning & NLP
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.12.0
+
+# Baseline ML & Metrics
+scikit-learn>=1.2.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Explainable AI (XAI)
+shap>=0.41.0
+lime>=0.2.0
+
+# Visualization & EDA
+matplotlib>=3.7.0
+seaborn>=0.12.0
+wordcloud>=1.9.0
+
+# Utilities
+tqdm>=4.65.0
+jupyter>=1.0.0
