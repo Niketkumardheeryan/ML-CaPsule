@@ -619,11 +619,16 @@ This project is licensed under the **MIT License**.
 </div>
 
 <!-- Projects start -->
-### 🧭 Suggested Learning Path
+<details>
+<summary><b>🧭 Suggested Learning Path</b> — Click to expand</summary>
+
+<br>
+
 Start with beginner-friendly projects, then move to intermediate and advanced ones as your confidence grows. The table below adds quick difficulty and time guidance for each project.
 
 | Project | Difficulty | Estimated Time |
 |---------|------------|----------------|
+| [.vscode](.vscode) | 🟡 Intermediate | 3-6 hours |
 | [Accent_Neutralizer_for_Speech](Accent_Neutralizer_for_Speech) | 🟡 Intermediate | 3-6 hours |
 | [Advanced Visualizations](Advanced%20Visualizations) | 🟢 Beginner | 1-3 hours |
 | [AI-Based QR Code Detection](AI-Based%20QR%20Code%20Detection) | 🟡 Intermediate | 3-6 hours |
@@ -709,6 +714,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Different_types_of_scaling_Method](Different_types_of_scaling_Method) | 🟡 Intermediate | 3-6 hours |
 | [Digital Image Tampering Detection](Digital%20Image%20Tampering%20Detection) | 🟡 Intermediate | 3-6 hours |
 | [Diseases_Prediction](Diseases_Prediction) | 🟡 Intermediate | 3-6 hours |
+| [docs](docs) | 🟡 Intermediate | 3-6 hours |
 | [dog vs cat](dog%20vs%20cat) | 🟡 Intermediate | 3-6 hours |
 | [Driver_Drowsiness_Detection](Driver_Drowsiness_Detection) | 🟡 Intermediate | 3-6 hours |
 | [Duplicate_Question_pair](Duplicate_Question_pair) | 🟡 Intermediate | 3-6 hours |
@@ -879,6 +885,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [salary-prediction-using-RF](salary-prediction-using-RF) | 🟡 Intermediate | 3-6 hours |
 | [SalesProject](SalesProject) | 🟡 Intermediate | 3-6 hours |
 | [Scam_SMS_Detector](Scam_SMS_Detector) | 🟡 Intermediate | 3-6 hours |
+| [scripts](scripts) | 🟡 Intermediate | 3-6 hours |
 | [Sentiment analysis for depression based on social media posts](Sentiment%20analysis%20for%20depression%20based%20on%20social%20media%20posts) | 🟡 Intermediate | 3-6 hours |
 | [Sentiment-Analysis](Sentiment-Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Sentiment-Analysis-on-IMDb-reviews](Sentiment-Analysis-on-IMDb-reviews) | 🟡 Intermediate | 3-6 hours |
@@ -936,4 +943,5 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Wine_Quality_Prediction](Wine_Quality_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [XgBoost_Algorithm](XgBoost_Algorithm) | 🟡 Intermediate | 3-6 hours |
 | [Youtube Comment Analysis](Youtube%20Comment%20Analysis) | 🟡 Intermediate | 3-6 hours |
+</details>
 <!-- Projects end -->

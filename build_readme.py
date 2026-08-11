@@ -143,10 +143,13 @@ def main():
 
     table = build_project_table(projects)
     section = (
-        "### 🧭 Suggested Learning Path\n"
+        "<details>\n"
+        "<summary><b>🧭 Suggested Learning Path</b> — Click to expand</summary>\n\n"
+        "<br>\n\n"
         "Start with beginner-friendly projects, then move to intermediate and advanced ones as your confidence grows. "
         "The table below adds quick difficulty and time guidance for each project.\n\n"
-        f"{table}"
+        f"{table}\n"
+        "</details>"
     )
 
     updated = replace_chunk(
