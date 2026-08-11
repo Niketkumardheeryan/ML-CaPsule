@@ -766,7 +766,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Google Teachable Machine](Google%20Teachable%20Machine) | 🟡 Intermediate | 3-6 hours |
 | [GRAD-CAM-Visualizer](GRAD-CAM-Visualizer) | 🟡 Intermediate | 3-6 hours |
 | [Grad_CAM_VGG16_ImageNet](Grad_CAM_VGG16_ImageNet) | 🟡 Intermediate | 3-6 hours |
-| [GUI-JARVIS](GUI-JARVIS) | 🟡 Intermediate | 3-6 hours |
+| [GUI-JARVIS-2026](GUI-JARVIS-2026) | 🟡 Intermediate | 3-6 hours |
 | [Hand-Written-Digit-Recognition](Hand-Written-Digit-Recognition) | 🟡 Intermediate | 3-6 hours |
 | [hand_sign_project](hand_sign_project) | 🟡 Intermediate | 3-6 hours |
 | [Handwritten character recognition](Handwritten%20character%20recognition) | 🟡 Intermediate | 3-6 hours |
