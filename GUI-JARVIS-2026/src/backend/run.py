@@ -1,0 +1,426 @@
+import pyttsx3
+import random
+import re
+import smtplib
+import winsound
+import wikipedia
+import sys
+import os
+import webbrowser
+import datetime
+import ctypes
+import multiprocessing
+import shutil
+from pathlib import Path
+import speech_recognition as sr
+from urllib.request import urlopen
+from PyQt5 import QtWidgets, QtGui,QtCore
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+from PyQt5.uic import loadUiType
+from geopy import Nominatim
+import requests
+from bs4 import BeautifulSoup as soup
+from yahoo_fin import stock_info
+from dotenv import load_dotenv
+
+load_dotenv()
+
+EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+DEFAULT_RECEIVER = os.getenv("DEFAULT_RECEIVER")
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
+flags = QtCore.Qt.WindowFlags(QtCore.Qt.FramelessWindowHint)
+
+def speak_helper(audio):
+    """Runs text-to-speech in a separate process so the GUI does not freeze while speaking."""
+    try:
+        import pyttsx3
+        import ctypes
+        ctypes.windll.ole32.CoInitialize(None)
+        
+        engine = pyttsx3.init('sapi5')
+        voices = engine.getProperty('voices')
+        engine.setProperty('voice', voices[0].id)
+        engine.setProperty('rate', 180)
+        engine.say(audio)
+        engine.runAndWait()
+    except Exception:
+        pass
+
+def speak(audio):
+    """Spawns speak_helper in its own process and waits for it to finish."""
+    p = multiprocessing.Process(target=speak_helper, args=(audio,))
+    p.start()
+    p.join()
+
+def wish():
+    """Greets the user with a time-appropriate message on startup."""
+    hour = int(datetime.datetime.now().hour)
+    if hour>=0 and hour <12:
+        speak("hello sir Good morning i am jarvis")
+    elif hour>=12 and hour<18:
+        speak("hello sir Good Afternoon i am jarvis")
+    else:
+        speak("hello sir Good evening i am jarvis")
+
+def sendEmail(to, content):
+    """Sends an email via Gmail SMTP using credentials loaded from .env."""
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.ehlo()
+    server.starttls()
+
+    server.login(
+        EMAIL_ADDRESS,
+        EMAIL_PASSWORD
+    )
+
+    server.sendmail(
+        EMAIL_ADDRESS,
+        to,
+        content
+    )
+
+    server.close()
+
+class mainT(QThread):
+    """Background thread running the voice assistant loop so the GUI stays responsive."""
+    def __init__(self):
+        super(mainT,self).__init__()
+    
+    def run(self):
+        self.JARVIS()
+    
+    def STT(self):
+        """Speech-to-text: listens via microphone, returns the recognized command as lowercase text."""
+        R = sr.Recognizer()
+        with sr.Microphone() as source:
+            R.adjust_for_ambient_noise(source)
+            speak("please tell me what to do")
+            audio = R.listen(source)
+        try:
+            speak("wait Recognizing")
+            text = R.recognize_google(audio,language='en-in')
+        except Exception:
+            return "none"
+        text = text.lower()
+        return text
+
+    def JTT(self):
+        """Speech-to-text for follow-up prompts, separate from the main command listener."""
+        R = sr.Recognizer()
+        with sr.Microphone() as source:
+            R.adjust_for_ambient_noise(source)
+            speak("listening")
+            audio = R.listen(source)
+        try:
+            speak("wait Recognizing")
+            text1 = R.recognize_google(audio,language='en-in')
+        except Exception:
+            speak("not able to recognize")
+            return ""
+        text1 = text1.lower()
+        return text1
+
+    def JARVIS(self):
+        """Main assistant loop: listens for a command, then routes it to the matching action below."""
+        speak("starting")
+        speak("initiating the system")
+        speak("loading")
+        wish()
+        while True:
+
+            self.query = self.STT()
+
+            # Exit commands
+            if ('bye' in self.query or 'quit' in self.query or 'bye bye'in self.query or 'leave' in self.query or "nothing" in self.query or "shutdown" in self.query):
+                speak('Bye Sir. Have a nice day')
+                winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+                sys.exit()
+
+            # Greeting
+            elif ("hello" in self.query):
+                hour = int(datetime.datetime.now().hour)
+                if hour >= 0 and hour < 12:
+                    speak("hello sir Good morning")
+                elif hour >= 12 and hour < 18:
+                    speak("hello sir Good Afternoon")
+                else:
+                    speak("hello sir Good evening")
+
+            # Play a random song from the configured music directory
+            elif ('music' in self.query or 'refresh' in self.query or 'anything' in self.query or 'song' in self.query):
+                if('music' in self.query or 'song' in self.query):
+                    speak("wait i am playing music")
+                else:
+                    speak("ok then i am playing music to refresh ur mind")
+                self.music_dir = os.environ.get("JARVIS_MUSIC_DIR", str(Path.home() / "Music"))
+                self.musics = os.listdir(self.music_dir)
+                num = random.randint(0, len(self.musics) - 1)
+                os.startfile(os.path.join(self.music_dir, self.musics[num]))
+
+            # Wikipedia lookup
+            elif 'wikipedia' in self.query:
+                self.query = self.query.replace("wikipedia", "")
+                if self.query:
+                    speak("Searching Wikipedia...")
+                    self.results = wikipedia.summary(self.query, sentences=2)
+                    speak("According to Wikipedia")
+                    speak(self.results)
+                else:
+                    speak("sorry sir not recognizing")
+                    pass
+
+            # Tell the current system time
+            elif 'time' in self.query:
+                strTime = datetime.datetime.now().strftime("%H:%M:%S")
+                speak("The time is: ")
+                speak(strTime)
+
+            # Launch VS Code (path resolved via env var or PATH lookup)
+            elif 'launch vs code' in self.query:
+                speak("please wait i am launching v s code")
+                code_exe = os.environ.get("VSCODE_CMD") or shutil.which("code") or shutil.which("code.exe")
+                if code_exe:
+                    os.startfile(code_exe)
+                else:
+                    speak("Unable to locate Visual Studio Code executable")
+
+            # Launch IntelliJ IDEA (path resolved via env var or PATH lookup)
+            elif ('launch java') in self.query:
+                speak("please wait i am launching intelli j")
+                idea_exe = os.environ.get("INTELLIJ_CMD") or shutil.which("idea") or shutil.which("idea64") or shutil.which("idea64.exe")
+                if idea_exe:
+                    os.startfile(idea_exe)
+                else:
+                    speak("Unable to locate IntelliJ IDEA executable")
+
+            # Launch Notepad (path resolved via env var or PATH lookup)
+            elif ('launch notepad') in self.query:
+                speak("please wait i am launching notepad")
+                notepad_exe = os.environ.get("NOTEPAD_CMD") or shutil.which("notepad")
+                if notepad_exe:
+                    os.startfile(notepad_exe)
+                else:
+                    speak("Unable to locate Notepad executable")
+
+            # Send an email: asks for message content, sends to DEFAULT_RECEIVER
+            elif 'email' in self.query:
+                try:
+                    speak("What should i say?")
+                    self.content = self.STT()
+                    to = DEFAULT_RECEIVER
+                    sendEmail(to, self.content)
+                    speak("Email has been sent!")
+                except Exception as e:
+                    winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+                    speak("Sorry! i m not able to send this email")
+                    pass
+
+            # Open a website by name (special-cased for YouTube/Google search)
+            elif 'open' in self.query:
+                speak("please wait")
+                self.reg_ex = re.search('open (.+)', self.query)
+                if self.reg_ex:
+                    self.domain = self.reg_ex.group(1)
+                    if (self.domain == "youtube"):
+                        speak("what to search")
+                        self.line = self.JTT()
+                        if self.line:
+                            speak("Hold on, searching " + self.line)
+                            self.url = "https://www.youtube.com/results?search_query=" + self.line
+                            webbrowser.open(self.url)
+                        else:
+                            speak("so opening youtube")
+                            self.url = "https://www.youtube.com"
+                            webbrowser.open(self.url)
+                    elif (self.domain == "google"):
+                        speak("what to search")
+                        self.line = self.JTT()
+                        if self.line:
+                            speak("Hold on, searching " + self.line)
+                            self.url = 'https://www.google.com/search?q=' + self.line
+                            webbrowser.open(self.url)
+                        else:
+                            speak("so opening google")
+                            self.url = "https://www.google.com"
+                            webbrowser.open(self.url)
+                    else:
+                        self.url = "https://www." + self.domain + ".com"
+                        webbrowser.open(self.url)
+                        speak('The website you have requested has been opened for you Sir.')
+                else:
+                    winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+                    speak("sorry sir not able to recognize")
+                    pass
+
+            # Tell a random joke via icanhazdadjoke.com
+            elif 'joke' in self.query:
+                speak("please wait searching for joke")
+                res = requests.get('https://icanhazdadjoke.com/', headers={"Accept": "application/json"})
+                if res.status_code == requests.codes.ok:
+                    speak(str(res.json()['joke']))
+                    winsound.PlaySound('hahaha.wav', winsound.SND_FILENAME|winsound.SND_NOWAIT)
+
+                else:
+                    winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+                    speak('oops!I ran out of jokes')
+                    pass
+
+            # Read the top headlines from Google News RSS
+            elif 'news' in self.query:
+                speak("please wait sir searching for latest news")
+                try:
+                    news_url = "https://news.google.com/news/rss"
+                    Client = urlopen(news_url)
+                    xml_page = Client.read()
+                    Client.close()
+                    soup_page = soup(xml_page, "xml")
+                    news_list = soup_page.findAll("item")
+                    speak("latest news is")
+                    for news in news_list[:2]:
+                        print(news.title.text)
+                        print("-" * 60)
+                        speak(news.title.text.encode('utf-8'))
+                except Exception as e:
+                    winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+                    speak("sorry sir not able to get the news")
+                    pass
+
+            # Fetch current weather for a spoken city name via OpenWeatherMap
+            elif ('weather' in self.query or 'temperature' in self.query):
+                api_key = OPENWEATHER_API_KEY
+                base_url = "http://api.openweathermap.org/data/2.5/weather?"
+                speak("which city sir")
+                city_name = self.JTT()
+                if city_name:
+                    complete_url = base_url + "appid=" + api_key + "&q=" + city_name
+                    response = requests.get(complete_url)
+                    x = response.json()
+                    if x["cod"] != "404":
+                        y = x["main"]
+                        c_temperature = y["temp"] - 272.15
+                        current_temperature = "{:.2f}".format(c_temperature)
+                        z = x["weather"]
+                        weather_description = z[0]["description"]
+                        speak(" Temperature (in celcius unit) = " +
+                              str(current_temperature) +
+                              "\n description = " +
+                              str(weather_description))
+                    else:
+                        winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+                        speak(" City Not Found Sir ")
+                        pass
+                else:
+                    pass
+
+            # List available voice commands
+            elif 'help me' in self.query:
+                speak("""
+                        You can use these commands and I'll help you out:
+                        1. bye/ bye bye/ leave/ quit/ shutdown/ nothing : to stop the program
+                        2. Open xyz : replace xyz with any website name
+                        3. email : Follow up questions such as recipient name, content will be asked in order.
+                        4. weather/temperature : Tells you the current condition and temperture
+                        5. music/ song/ anything/ refresh/ song : to randomly play a song
+                        6. wikipedia xyz : to search xyz on wikipedia
+                        7. google xyz : search xyz on google
+                        8. news : top news of today
+                        9. time : Current system time
+                        10. city/ state/ location : to find the location of that city/ state
+                        11. joke : to tell joke
+                        12. stock : to know the current stock price of amazon
+                        13. hello : i will greet you
+                        14. launch xyz : to open xyz app
+                        15. who are you/ about youself : to know about me
+                        16. your age/ old : to know my age
+                        17. good/ keep it up/ well done : to praise me
+                        """)
+
+            # Look up a city or state's location via geocoding
+            elif ('city' in self.query or 'state' in self.query or 'location' in self.query):
+                geolocator = Nominatim(user_agent="geoapiExercises")
+                speak("PLease tell city or state name")
+                self.line = self.JTT()
+                if self.line:
+                    location = geolocator.geocode(self.line)
+                    speak("Country location is:" + str(location))
+                else:
+                    pass
+
+            # Search Google for a spoken term (opens in Chrome if available)
+            elif "google" in self.query:
+                reg_ex = re.search("google (.+)", self.query)
+                if reg_ex:
+                    search = reg_ex.group(1)
+                    speak("Hold on, I will search " + search)
+                    url = 'https://www.google.com/search?q=' + search
+                    chrome_path = os.environ.get("CHROME_PATH") or shutil.which("chrome") or shutil.which("google-chrome") or shutil.which("chromium-browser") or shutil.which("chromium")
+                    if chrome_path:
+                        webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
+                        webbrowser.get('chrome').open_new_tab(url)
+                    else:
+                        webbrowser.open_new_tab(url)
+                else:
+                    speak("sorry sir not able to recognize")
+                    pass
+
+            # Read out Amazon's current live stock price
+            elif "stock" in self.query:
+                stock_info.get_live_price("AMZN")
+                speak("stock price of amazon is")
+                speak(str(stock_info.get_live_price("AMZN")))
+
+            # Small-talk: identity
+            elif ("about yourself" in self.query or "who are you" in self.query):
+                speak("hi, i m jarvis. i m the personal assistant of suryansh sir. i m multitalented")
+
+            # Small-talk: age
+            elif ("your age" in self.query or "old" in self.query):
+                speak("i am immortal sir")
+
+            # Small-talk: compliments
+            elif ('good' in self.query or 'keep it up' in self.query or 'well done' in self.query):
+                speak("thank u sir")
+
+            # Speech recognition failed silently; loop again
+            elif "none" in self.query:
+                pass
+
+            else:
+                winsound.PlaySound("SystemExit", winsound.SND_ALIAS)
+                speak("sorry sir not able to recognize")
+
+
+FROM_MAIN,_ = loadUiType(os.path.join(os.path.dirname(__file__),"./scifi.ui"))
+
+class Main(QMainWindow,FROM_MAIN):
+    """Main application window: sets up the GUI and starts the assistant thread."""
+    def __init__(self,parent=None):
+        super(Main,self).__init__(parent)
+        self.setupUi(self)
+        self.setFixedSize(1920,1080)
+        self.label_8 = QLabel
+        self.exitB.setStyleSheet("background-image:url(./lib/exit.png);\n"
+        "border:none;")
+        self.exitB.clicked.connect(self.close)
+        self.setWindowFlags(flags)
+        self.Dspeak = mainT()
+        self.label_8 = QMovie("./lib/initiating system.gif", QByteArray(), self)
+        self.label_8.setCacheMode(QMovie.CacheAll)
+        self.label_6.setMovie(self.label_8)
+        self.label_8.start()
+        self.label_9 = QMovie("./lib/loading.gif", QByteArray(), self)
+        self.label_9.setCacheMode(QMovie.CacheAll)
+        self.label_7.setMovie(self.label_9)
+        self.label_9.start()
+        self.Dspeak.start()
+        self.label.setPixmap(QPixmap("./lib/tuse.png"))
+
+if __name__ == "__main__":
+    multiprocessing.freeze_support()
+    app = QtWidgets.QApplication(sys.argv)
+    main = Main()
+    main.show()
+    sys.exit(app.exec_())

@@ -4,6 +4,22 @@ A deep learning-based fashion recommendation system that suggests visually simil
 
 ---
 
+## Implementation methods
+
+This folder collects different ways of building a visual fashion recommender, so the
+trade-offs between them can be compared directly.
+
+| Method | Location | Approach | Dataset |
+|---|---|---|---|
+| **Pretrained VGG16 features** | [`fashion_recommendation_system_using_image_features.ipynb`](fashion_recommendation_system_using_image_features.ipynb) *(documented below)* | Frozen VGG16 as an off-the-shelf feature extractor, cosine similarity for retrieval — no training | Women's fashion images (Google Drive) |
+| **Trained CNN embeddings** | [`CNN_Embeddings_FashionMNIST/`](CNN_Embeddings_FashionMNIST/README.md) | A CNN is trained to classify garments, then its penultimate layer is reused as a 128-D embedding for k-NN retrieval — classification **and** recommendation from one model, scored with precision@k against a raw-pixel baseline | Fashion-MNIST (ships with Keras, no download) |
+
+The first shows transfer learning from a pretrained backbone; the second shows how a
+classifier you train yourself doubles as a feature extractor, with retrieval quality measured
+rather than eyeballed.
+
+---
+
 ## Overview
 
 This project builds a content-based image recommendation system for fashion products. Given an input image, the model analyzes its visual features and retrieves similar fashion items from the dataset.

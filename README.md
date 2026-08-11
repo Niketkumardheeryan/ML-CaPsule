@@ -31,6 +31,8 @@
 [![Star Repo](https://img.shields.io/badge/⭐_Star_this_Repo-Support_Us-gold?style=for-the-badge&logo=github)](https://github.com/Niketkumardheeryan/ML-CaPsule/stargazers)
 [![Contribute](https://img.shields.io/badge/🤝_Contribute-Join_Us-orange?style=for-the-badge&logo=github)](https://github.com/Niketkumardheeryan/ML-CaPsule/blob/master/CONTRIBUTING.md)
 
+[![Project Index](https://img.shields.io/badge/📚_Project_Index-Open_Index-45FFAA?style=for-the-badge)](./docs/index.html)
+
 <br>
 
 <img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" width="500" alt="Machine Learning Animation"/>
@@ -41,7 +43,7 @@
 
 ## 🚀 About
 
-**[ML-CaPsule](https://github.com/Niketkumardheeryan/ML-CaPsule)** is a comprehensive, open-source learning hub for aspiring and experienced data science enthusiasts. Whether you lack a mentor or want structured, project-based learning — this repository helps you master **Machine Learning**, **Deep Learning**, **NLP**, **Computer Vision**, and more through **500+ real-world projects**.
+**[ML-CaPsule]([https://github.com/Niketkumardheeryan/ML-CaPsule](https://niketkumardheeryan.github.io/ML-CaPsule/))** is a comprehensive, open-source learning hub for aspiring and experienced data science enthusiasts. Whether you lack a mentor or want structured, project-based learning — this repository helps you master **Machine Learning**, **Deep Learning**, **NLP**, **Computer Vision**, and more through **500+ real-world projects**.
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
@@ -366,7 +368,7 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | 45 | [Scaling Methods](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Different_types_of_scaling_Method) | 46 | [Diseases Prediction](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Diseases_Prediction) | 47 | [Drowsiness Detection](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Driver_Drowsiness_Detection) | 48 | [Duplicate Questions](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Duplicate_Question_pair) |
 | 49 | [Ionosphere EDA](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main) | 50 | [Email Classifier](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Email%20Classifier) | 51 | [Emotion Recognition](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Emotion%20Recognition%20Based%20on%20NLP) | 52 | [Eye Gaze Tracking](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Eye_Gaze_Tracking_Attention_Estimation) |
 | 53 | [Bank Marketing](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Portuguese_Bank_Marketing) | 54 | [Constellation Classification](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Constellation_Classification) | 55 | [Crime Analytics](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Crime_Analytics) | 56 | [CBOW PyTorch](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/CBOW_PyTorch) |
-| 57 | [Mental Health Risk Scorer](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Mental_Health_Text_Analysis_%26_Depression_Risk_Scorer) | | | | |
+| 57 | [Mental Health Risk Scorer](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Mental_Health_Text_Analysis_%26_Depression_Risk_Scorer) | 58 | [Fashion Recommendation System](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Deep-Fashion-Recommendation-system/CNN_Embeddings_FashionMNIST) | | | | |
 
 > 📌 **& many more...** Explore the full repository for 500+ additional projects!
 
@@ -396,6 +398,7 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | Yoga Pose Detection | Computer Vision | Intermediate | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Yoga%20Pose%20Detection) |
 | Speech-to-Image Generator | Deep Learning | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Speech-to-Image-Generator) |
 | Weapon Detection System | Computer Vision | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Weapon-Detection-System) |
+| Fashion Recommendation System | Deep Learning & Recommenders | Intermediate | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Deep-Fashion-Recommendation-system/CNN_Embeddings_FashionMNIST) |
 
 </details>
 
@@ -616,7 +619,11 @@ This project is licensed under the **MIT License**.
 </div>
 
 <!-- Projects start -->
-### 🧭 Suggested Learning Path
+<details>
+<summary><b>🧭 Suggested Learning Path</b> — Click to expand</summary>
+
+<br>
+
 Start with beginner-friendly projects, then move to intermediate and advanced ones as your confidence grows. The table below adds quick difficulty and time guidance for each project.
 
 | Project | Difficulty | Estimated Time |
@@ -665,7 +672,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [CBT_ChatBot](CBT_ChatBot) | 🟡 Intermediate | 3-6 hours |
 | [Chatbot Using RASA](Chatbot%20Using%20RASA) | 🟡 Intermediate | 3-6 hours |
 | [Cheat Sheets](Cheat%20Sheets) | 🟢 Beginner | 1-3 hours |
-| [chess image classification](chess%20image%20classification) | 🟡 Intermediate | 3-6 hours |
+| [Chess Based Project](Chess%20Based%20Project) | 🟡 Intermediate | 3-6 hours |
 | [Chi-Square Test](Chi-Square%20Test) | 🟡 Intermediate | 3-6 hours |
 | [Chicken_Disease_Classification](Chicken_Disease_Classification) | 🟡 Intermediate | 3-6 hours |
 | [Chronic Kidney Disease Prediction](Chronic%20Kidney%20Disease%20Prediction) | 🟡 Intermediate | 3-6 hours |
@@ -710,6 +717,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Different_types_of_scaling_Method](Different_types_of_scaling_Method) | 🟡 Intermediate | 3-6 hours |
 | [Digital Image Tampering Detection](Digital%20Image%20Tampering%20Detection) | 🟡 Intermediate | 3-6 hours |
 | [Diseases_Prediction](Diseases_Prediction) | 🟡 Intermediate | 3-6 hours |
+| [docs](docs) | 🟡 Intermediate | 3-6 hours |
 | [dog vs cat](dog%20vs%20cat) | 🟡 Intermediate | 3-6 hours |
 | [Driver_Drowsiness_Detection](Driver_Drowsiness_Detection) | 🟡 Intermediate | 3-6 hours |
 | [Duplicate_Question_pair](Duplicate_Question_pair) | 🟡 Intermediate | 3-6 hours |
@@ -762,7 +770,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Google Teachable Machine](Google%20Teachable%20Machine) | 🟡 Intermediate | 3-6 hours |
 | [GRAD-CAM-Visualizer](GRAD-CAM-Visualizer) | 🟡 Intermediate | 3-6 hours |
 | [Grad_CAM_VGG16_ImageNet](Grad_CAM_VGG16_ImageNet) | 🟡 Intermediate | 3-6 hours |
-| [GUI-JARVIS](GUI-JARVIS) | 🟡 Intermediate | 3-6 hours |
+| [GUI-JARVIS-2026](GUI-JARVIS-2026) | 🟡 Intermediate | 3-6 hours |
 | [Hand-Written-Digit-Recognition](Hand-Written-Digit-Recognition) | 🟡 Intermediate | 3-6 hours |
 | [hand_sign_project](hand_sign_project) | 🟡 Intermediate | 3-6 hours |
 | [Handwritten character recognition](Handwritten%20character%20recognition) | 🟡 Intermediate | 3-6 hours |
@@ -881,6 +889,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [salary-prediction-using-RF](salary-prediction-using-RF) | 🟡 Intermediate | 3-6 hours |
 | [SalesProject](SalesProject) | 🟡 Intermediate | 3-6 hours |
 | [Scam_SMS_Detector](Scam_SMS_Detector) | 🟡 Intermediate | 3-6 hours |
+| [scripts](scripts) | 🟡 Intermediate | 3-6 hours |
 | [Sentiment analysis for depression based on social media posts](Sentiment%20analysis%20for%20depression%20based%20on%20social%20media%20posts) | 🟡 Intermediate | 3-6 hours |
 | [Sentiment-Analysis](Sentiment-Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Sentiment-Analysis-on-IMDb-reviews](Sentiment-Analysis-on-IMDb-reviews) | 🟡 Intermediate | 3-6 hours |
@@ -912,7 +921,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [TCS Stock Analysis](TCS%20Stock%20Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Tensorflow.js Demo](Tensorflow.js%20Demo) | 🟡 Intermediate | 3-6 hours |
 | [Terrain_Classificaton](Terrain_Classificaton) | 🟡 Intermediate | 3-6 hours |
-| [tests](tests) | 🟡 Intermediate | 3-6 hours |
 | [Text Summarization Model](Text%20Summarization%20Model) | 🟡 Intermediate | 3-6 hours |
 | [Theatre-audience-forecasting](Theatre-audience-forecasting) | 🟡 Intermediate | 3-6 hours |
 | [Time Series Forecasting with Python](Time%20Series%20Forecasting%20with%20Python) | 🟢 Beginner | 1-3 hours |
@@ -942,4 +950,5 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [XgBoost_Algorithm](XgBoost_Algorithm) | 🟡 Intermediate | 3-6 hours |
 | [Youtube Comment Analysis](Youtube%20Comment%20Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Zomato Restaurant & Price EDA](Zomato%20Restaurant%20&%20Price%20EDA) | 🟢 Beginner | 1-3 hours |
+</details>
 <!-- Projects end -->
