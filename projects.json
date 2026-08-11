@@ -3605,15 +3605,6 @@
     "hasReadme": true
   },
   {
-    "name": "tests",
-    "folder": "tests",
-    "category": "Other",
-    "difficulty": "Unknown",
-    "tech": [],
-    "hasRequirements": false,
-    "hasReadme": false
-  },
-  {
     "name": "website ML CaPsule",
     "folder": "website ML-CaPsule",
     "category": "Other",
