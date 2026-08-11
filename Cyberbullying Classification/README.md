@@ -1,28 +1,37 @@
 # Cyberbullying Classification
 
 ## Overview
-The goal is to analyze tweets to classify them into categories of cyberbullying and non-cyberbullying using NLP techniques and machine learning models.
+
+This project classifies text into age, ethnicity, gender, religion, other cyberbullying, or non-cyberbullying categories. It includes a reproducible ensemble-training script and a Streamlit dashboard.
 
 ## Dataset
-The dataset contains over 47,000 tweets labeled into six categories: Age, Ethnicity, Gender, Religion, Other type of cyberbullying, and Not cyberbullying.
 
-Link to the dataset: [Cyberbullying Classification Dataset](https://www.kaggle.com/datasets/andrewmvd/cyberbullying-classification/data)
+The training script downloads the [Cyberbullying Classification dataset](https://www.kaggle.com/datasets/andrewmvd/cyberbullying-classification) through KaggleHub. It contains more than 47,000 labelled tweets across six categories.
 
+## Model
 
-## Models Used
+The classifier is a hard-voting ensemble of logistic regression, multinomial naive Bayes, and random forest models. Text is transformed using TF-IDF word and bigram features.
 
-1. Logistic Regression
-2. Naive Bayes
-3. Random Forest Classifier
-4. Voting Classifier (Ensemble Model): Combines predictions from the above models using a majority voting scheme.
+## Setup
 
-## How to run dashboard?
+From the `Cyberbullying Classification` directory, install the dependencies:
 
-- Run all cells in training notebook to train and save model weights
-- Run
+```bash
+python -m pip install -r requirements.txt
+```
+
+Generate the model artifacts:
+
+```bash
+python train_model.py
+```
+
+The command downloads the dataset and creates `models/Voting.pkl` and `models/tfidf.pkl`. These generated artifacts are ignored by the repository and must be created locally.
+
+Run the dashboard:
+
 ```bash
 streamlit run app.py
 ```
 
-## Contribution
-Contributions are welcome! Feel free to submit issues, feature requests, or pull requests to improve the system.
+If either artifact is missing or invalid, the dashboard shows recovery instructions instead of crashing during startup.
