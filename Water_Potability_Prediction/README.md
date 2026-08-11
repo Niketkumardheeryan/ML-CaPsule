@@ -144,44 +144,6 @@ Based on the recorded results, **Random Forest** performs best overall, achievin
 
 The ROC-AUC score is useful here because the target classes are imbalanced.
 
-## 🔄 Machine Learning Pipeline
-
-The main workflow is:
-
-```text
-Raw Dataset
-     ↓
-Train-Test Split
-     ↓
-Preprocessing
-     ├── Median Imputation
-     └── Standard Scaling
-     ↓
-SMOTE
-     ↓
-Machine Learning Classifier
-     ↓
-Predictions
-     ↓
-Evaluation
-     ├── Accuracy
-     ├── Precision
-     ├── Recall
-     ├── F1-Score
-     └── ROC-AUC
-```
-
-## 📁 Project Structure
-
-```text
-Water-Potability-Prediction/
-│
-├── Water_Potability_prediction.ipynb
-├── water_potability.csv
-├── README.md
-└── requirements.txt
-```
-
 ## ⚙️ Installation
 
 Clone the repository and move into the project directory:
@@ -204,44 +166,3 @@ pip install -r requirements.txt
 3. Open the notebook using Jupyter Notebook, JupyterLab, VS Code, or Google Colab.
 4. Run the cells from top to bottom.
 
-If using Jupyter Notebook:
-
-```bash
-jupyter notebook
-```
-
-## 💻 Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Imbalanced-learn
-- XGBoost
-- Jupyter Notebook / Google Colab
-
-## ⚠️ Important Note
-
-The results reported in this README are the results recorded in the supplied notebook. They may vary slightly if the dataset, library versions, random seeds, or model configurations are changed.
-
-This project is intended for **educational and machine learning practice purposes** and should not be used as a real-world water safety certification system.
-
-## 🚀 Future Improvements
-
-Possible improvements include:
-
-- Hyperparameter tuning using GridSearchCV or RandomizedSearchCV
-- Feature selection and engineering
-- Cross-validation
-- More detailed threshold analysis
-- Calibration of predicted probabilities
-- Comparing additional ensemble models
-- Saving the best trained pipeline for deployment
-- Building a Streamlit web application
-- Adding explainability using SHAP
-
-## 👩‍💻 Author
-
-**Water Potability Prediction — Machine Learning Classification Project**
