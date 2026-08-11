@@ -84,11 +84,7 @@ Example supported queries include:
 
 ### 🏏 Cricket Prediction
 
-AI-JARVIS includes integration with a pre-trained deep learning model:
-
-```text
-model.h5
-```
+Cricket prediction support is planned, but the required model file (`model.h5`) is not included in this directory yet.
 
 The model can be used for cricket-related predictions, including:
 
