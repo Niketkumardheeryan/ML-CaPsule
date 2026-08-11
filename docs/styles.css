@@ -1,16 +1,2 @@
-:root{
-  --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#45FFAA;
-}
-*{box-sizing:border-box}
-body{font-family:Inter,Segoe UI,Arial;background:var(--bg);color:#e6eef8;margin:0;padding:24px}
-header{max-width:1000px;margin:0 auto 18px}
-h1{margin:0 0 6px}
-.filters{display:flex;gap:8px;max-width:1000px;margin:0 auto 18px}
-.filters input,.filters select{flex:1;padding:8px;border-radius:6px;border:1px solid #233242;background:#071022;color:#e6eef8}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;max-width:1000px;margin:0 auto}
-.card{background:var(--card);padding:12px;border-radius:8px;border:1px solid #1b2b3b}
-.card h3{margin:0 0 6px}
-.meta{font-size:13px;color:var(--muted);margin-bottom:8px}
-.tags{display:flex;flex-wrap:wrap;gap:6px}
-.tag{background:#0e2230;padding:4px 8px;border-radius:999px;color:var(--muted);font-size:12px}
-footer{max-width:1000px;margin:18px auto;color:var(--muted)}
+:root { --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#45ffaa; --text:#e6eef8; --border:#233242; }
+*{box-sizing:border-box} body{font-family:Inter,'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:24px;line-height:1.5} header,main,footer{max-width:1100px;margin:0 auto} header{margin-bottom:18px} h1{margin:0 0 6px;font-size:clamp(1.6rem,2.4vw,2.3rem)} header p{margin:0;color:var(--muted)} .filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 auto 18px}.filters input,.filters select{flex:1 1 220px;padding:10px 12px;border-radius:8px;border:1px solid var(--border);background:#071022;color:var(--text)} .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}.card{background:var(--card);padding:14px;border-radius:10px;border:1px solid var(--border);box-shadow:0 4px 18px rgba(0,0,0,.2)}.card h3{margin:0 0 6px;font-size:1.05rem}.meta{font-size:13px;color:var(--muted);margin-bottom:8px}.tags{display:flex;flex-wrap:wrap;gap:6px}.tag{background:#0e2230;padding:4px 8px;border-radius:999px;color:var(--muted);font-size:12px} a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline} footer{margin-top:24px;color:var(--muted)} @media (max-width:640px){body{padding:16px}.filters{flex-direction:column}}
