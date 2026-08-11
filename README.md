@@ -43,7 +43,7 @@
 
 ## 🚀 About
 
-**[ML-CaPsule](https://github.com/Niketkumardheeryan/ML-CaPsule)** is a comprehensive, open-source learning hub for aspiring and experienced data science enthusiasts. Whether you lack a mentor or want structured, project-based learning — this repository helps you master **Machine Learning**, **Deep Learning**, **NLP**, **Computer Vision**, and more through **500+ real-world projects**.
+**[ML-CaPsule]([https://github.com/Niketkumardheeryan/ML-CaPsule](https://niketkumardheeryan.github.io/ML-CaPsule/))** is a comprehensive, open-source learning hub for aspiring and experienced data science enthusiasts. Whether you lack a mentor or want structured, project-based learning — this repository helps you master **Machine Learning**, **Deep Learning**, **NLP**, **Computer Vision**, and more through **500+ real-world projects**.
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
