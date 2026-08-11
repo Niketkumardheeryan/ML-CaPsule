@@ -1,1 +1,3616 @@
-[]
+[
+  {
+    "name": "AI Based QR Code Detection",
+    "folder": "AI-Based QR Code Detection",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NLP",
+      "OpenCV",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "AI Based  Resume Gap Detector",
+    "folder": "AI_Based__Resume_Gap_Detector",
+    "category": "Computer Vision",
+    "difficulty": "Advanced",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "AI Language Learning Assistant",
+    "folder": "AI_Language_Learning_Assistant",
+    "category": "Audio",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "AI Resume Analyzer",
+    "folder": "AI_Resume Analyzer",
+    "category": "NLP",
+    "difficulty": "Advanced",
+    "tech": [
+      "NLP"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "ANN Energy Consumption Predictor",
+    "folder": "ANN_Energy_Consumption_Predictor",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "ANPR PI",
+    "folder": "ANPR_PI",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "PyTorch"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Accent Neutralizer for Speech",
+    "folder": "Accent_Neutralizer_for_Speech",
+    "category": "Audio",
+    "difficulty": "Unknown",
+    "tech": [
+      "Audio",
+      "Transformers"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Advanced Visualizations",
+    "folder": "Advanced Visualizations",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Air quality prediction",
+    "folder": "Air_quality_prediction",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "LightGBM",
+      "NumPy",
+      "Pandas",
+      "PyTorch",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Algorithmic Trading Strategy Optimization Using Genetic Algorithms",
+    "folder": "Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Alzheimer's Disease Predictor",
+    "folder": "Alzheimer's Disease Predictor",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Analysis & predict Black friday sale",
+    "folder": "Analysis_&_predict_Black_friday_sale",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Animal Cancer Disease Prediction",
+    "folder": "Animal_Cancer_Disease_Prediction",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Animal Detection Alert System",
+    "folder": "Animal_Detection_Alert_System",
+    "category": "Computer Vision",
+    "difficulty": "Intermediate",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Anime Data Analysis and Prediction",
+    "folder": "Anime Data Analysis and Prediction",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Anomaly Detection in Transactions using Deep Learning",
+    "folder": "Anomaly Detection in Transactions using Deep Learning",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Artificial neural network from scratch",
+    "folder": "Artificial neural network from scratch",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Association Rule Implementation",
+    "folder": "Association Rule Implementation",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Attention and Transformers",
+    "folder": "Attention_and_Transformers",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NLP",
+      "PyTorch",
+      "Transformers"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Audio Classification",
+    "folder": "Audio Classification",
+    "category": "Audio",
+    "difficulty": "Unknown",
+    "tech": [
+      "Audio",
+      "NumPy"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Audio Deepfake Detection",
+    "folder": "Audio_Deepfake_Detection",
+    "category": "Audio",
+    "difficulty": "Advanced",
+    "tech": [
+      "Audio",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Autism Identification System",
+    "folder": "Autism Identification System",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "AutoML Tabular Pipeline",
+    "folder": "AutoML_Tabular_Pipeline",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Automated Financial Reporting with Deep Learning",
+    "folder": "Automated Financial Reporting with Deep Learning",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Automatic Comment Generation",
+    "folder": "Automatic Comment Generation",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "Transformers"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Automatic Summarization of Scientific Papers",
+    "folder": "Automatic Summarization of Scientific Papers",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Autonomous Research AI Agent",
+    "folder": "Autonomous Research AI Agent",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Basics of ML and DL",
+    "folder": "Basics of ML and DL",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NLP",
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Basics of Power Bi",
+    "folder": "Basics of Power Bi",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Basics of the Python",
+    "folder": "Basics of the Python",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Bidirectional LSTM",
+    "folder": "Bidirectional LSTM",
+    "category": "Audio",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP",
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Bike Price Prediction",
+    "folder": "Bike Price Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Bird Species Classification Web App",
+    "folder": "Bird Species Classification Web App",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Bitcoin Price Prediction Web App",
+    "folder": "Bitcoin Price Prediction Web App",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "LightGBM",
+      "NumPy",
+      "Pandas",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Bitcoin Price Predictor",
+    "folder": "Bitcoin Price Predictor",
+    "category": "Time Series",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Bitcoin Price Prediction Mobile App",
+    "folder": "Bitcoin_Price_Prediction_Mobile_App",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Brain Tumor Detection",
+    "folder": "Brain Tumor Detection",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Breast Cancer Detection using DL with Webapp",
+    "folder": "Breast Cancer Detection using DL with Webapp",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "CBOW PyTorch",
+    "folder": "CBOW_PyTorch",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "PyTorch"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "CBT ChatBot",
+    "folder": "CBT_ChatBot",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "COVID 19 DATA ANALYSIS",
+    "folder": "COVID_19-DATA-ANALYSIS",
+    "category": "Audio",
+    "difficulty": "Advanced",
+    "tech": [
+      "Audio",
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Chatbot Using RASA",
+    "folder": "Chatbot Using RASA",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NLP"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Cheat Sheets",
+    "folder": "Cheat Sheets",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "PyTorch"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Chess Based Project",
+    "folder": "Chess Based Project",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Chi Square Test",
+    "folder": "Chi-Square Test",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Chicken Disease Classification",
+    "folder": "Chicken_Disease_Classification",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Chronic Kidney Disease Prediction",
+    "folder": "Chronic Kidney Disease Prediction",
+    "category": "Other",
+    "difficulty": "Advanced",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "ChurnScope",
+    "folder": "ChurnScope",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Class Imbalance problem",
+    "folder": "Class Imbalance problem",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Classification Algorithms",
+    "folder": "Classification Algorithms",
+    "category": "Other",
+    "difficulty": "Advanced",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Cloud Details",
+    "folder": "Cloud Details",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Clustering Algorithms",
+    "folder": "Clustering Algorithms",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Company Bankruptcy Using unsupervised",
+    "folder": "Company Bankruptcy Using unsupervised",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Concept Drift Detection and Adaptive Retraining Pipeline",
+    "folder": "Concept_Drift_Detection_and_Adaptive_Retraining_Pipeline",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Constellation Classification",
+    "folder": "Constellation_Classification",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Consumer Complaint Dataset",
+    "folder": "Consumer Complaint Dataset",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Continuous Handwriting Text Recognition",
+    "folder": "Continuous Handwriting Text Recognition",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP",
+      "Transformers"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Core Utilty Functions for robust model handling",
+    "folder": "Core-Utilty-Functions-for-robust-model-handling",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Covid19 forecasting with prophet",
+    "folder": "Covid19 forecasting with prophet",
+    "category": "Audio",
+    "difficulty": "Advanced",
+    "tech": [
+      "Audio",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Covid Third Wave Forecasting",
+    "folder": "Covid_Third_Wave_Forecasting",
+    "category": "Audio",
+    "difficulty": "Beginner",
+    "tech": [
+      "Audio",
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Credit Card Fraud Anomaly Detection",
+    "folder": "Credit_Card_Fraud_Anomaly_Detection",
+    "category": "Other",
+    "difficulty": "Advanced",
+    "tech": [
+      "LightGBM",
+      "XGBoost"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Crime Analytics",
+    "folder": "Crime_Analytics",
+    "category": "NLP",
+    "difficulty": "Advanced",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Crop Recommendation System",
+    "folder": "Crop Recommendation System",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "CrowdAI Plant Disease",
+    "folder": "CrowdAI Plant Disease",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Crude oil forecasting",
+    "folder": "Crude oil forecasting",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Customer Segmentation USvAlgorithm",
+    "folder": "Customer Segmentation USvAlgorithm",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Customer Segmentation using Machine Learning",
+    "folder": "Customer Segmentation using Machine Learning",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Customer Review Sentiment Analyzer",
+    "folder": "Customer_Review_Sentiment_Analyzer",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NLP",
+      "NumPy",
+      "Pandas",
+      "Transformers",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Cyberbullying Classification",
+    "folder": "Cyberbullying Classification",
+    "category": "NLP",
+    "difficulty": "Advanced",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Dark Pattern Detection",
+    "folder": "Dark Pattern Detection",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Data Cleaning Techniques",
+    "folder": "Data Cleaning Techniques",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Data Filling and Cleaning Techniques",
+    "folder": "Data Filling and Cleaning Techniques",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Dataset Resources",
+    "folder": "Dataset_Resources",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Deep Fashion Recommendation system",
+    "folder": "Deep-Fashion-Recommendation-system",
+    "category": "Computer Vision",
+    "difficulty": "Advanced",
+    "tech": [
+      "NumPy",
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Deepfake image analyzer",
+    "folder": "Deepfake_image_analyzer",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Deepfake video detection",
+    "folder": "Deepfake_video_detection",
+    "category": "Computer Vision",
+    "difficulty": "Advanced",
+    "tech": [
+      "NumPy",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Defective Captcha Image Recognition",
+    "folder": "Defective Captcha Image Recognition",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Detection Transformer DETR",
+    "folder": "Detection_Transformer_DETR",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "PyTorch",
+      "Transformers"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Diabetes Prediction",
+    "folder": "Diabetes Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Diabetes Prediction",
+    "folder": "Diabetes_Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Different types of Clustering",
+    "folder": "Different types of Clustering",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Different types of feature selection techniques",
+    "folder": "Different types of feature selection techniques",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Different types of scaling Method",
+    "folder": "Different_types_of_scaling_Method",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Digital Image Tampering Detection",
+    "folder": "Digital Image Tampering Detection",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Diseases Prediction",
+    "folder": "Diseases_Prediction",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Driver Drowsiness Detection",
+    "folder": "Driver_Drowsiness_Detection",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Duplicate Question pair",
+    "folder": "Duplicate_Question_pair",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Dynamic Hedging Strategies using Reinforcement Learning",
+    "folder": "Dynamic Hedging Strategies using Reinforcement Learning",
+    "category": "Reinforcement Learning",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "E Waste Impact Calculator Recycling Locator",
+    "folder": "E-Waste_Impact_Calculator_Recycling_Locator",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "EDA StackOverflow Survey 2023",
+    "folder": "EDA StackOverflow Survey 2023",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "EDA and Perform Modelling on Ionosphere Dataset main",
+    "folder": "EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Email Classifier",
+    "folder": "Email Classifier",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Email Intent Classification DistilBERT",
+    "folder": "Email_Intent_Classification_DistilBERT",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP",
+      "NumPy",
+      "Pandas",
+      "PyTorch",
+      "Transformers",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Emotion Recognition Based on NLP",
+    "folder": "Emotion Recognition Based on NLP",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Emotion based music recommendation",
+    "folder": "Emotion-based music recommendation",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Employee attrittion prediction using ML",
+    "folder": "Employee_attrittion_prediction_using_ML",
+    "category": "Computer Vision",
+    "difficulty": "Advanced",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "XGBoost"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Engineering Career Role Prediction",
+    "folder": "Engineering Career Role Prediction",
+    "category": "Computer Vision",
+    "difficulty": "Advanced",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Ensemble Methods in ML",
+    "folder": "Ensemble Methods in ML",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Explaination and Example for P value with code",
+    "folder": "Explaination and Example for P value with code",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Exploratory data analysis",
+    "folder": "Exploratory-data-analysis",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Extract Text from PDF using Python",
+    "folder": "Extract_Text_from_PDF_using_Python",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Eye Gaze Tracking Attention Estimation",
+    "folder": "Eye_Gaze_Tracking_Attention_Estimation",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "OpenCV"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "FIFA World Cup 2022 Winner Prediction",
+    "folder": "FIFA_World_Cup_2022_Winner_Prediction",
+    "category": "NLP",
+    "difficulty": "Intermediate",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Face Mask Detection",
+    "folder": "Face-Mask-Detection",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Fake Currency Detetction with logistic regression",
+    "folder": "Fake_Currency_Detetction_with_logistic_regression",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Fake News Detection",
+    "folder": "Fake_News_Detection",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP",
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Fake Review Detection",
+    "folder": "Fake_Review_Detection",
+    "category": "NLP",
+    "difficulty": "Advanced",
+    "tech": [
+      "NLP",
+      "NumPy",
+      "Pandas",
+      "PyTorch",
+      "Transformers",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Feature Eye Disease Classified RNN",
+    "folder": "Feature Eye Disease Classified RNN",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Feature Scaling Techniques",
+    "folder": "Feature Scaling Techniques",
+    "category": "Computer Vision",
+    "difficulty": "Intermediate",
+    "tech": [
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Feature Selection using Genetic ALgorithm",
+    "folder": "Feature Selection using Genetic ALgorithm",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Feature Engineering",
+    "folder": "Feature-Engineering",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Feature Selection Analysis",
+    "folder": "Feature_Selection_Analysis",
+    "category": "Other",
+    "difficulty": "Intermediate",
+    "tech": [
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Feed Forward Neural Networks (Deep Learning Algorithm)",
+    "folder": "Feed-Forward Neural Networks (Deep Learning Algorithm)",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "File of SQL Commands",
+    "folder": "File of SQL Commands",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Finan AI Financial Advisor",
+    "folder": "Finan_AI Financial Advisor",
+    "category": "NLP",
+    "difficulty": "Advanced",
+    "tech": [
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Financial Crisis Early Warning System",
+    "folder": "Financial Crisis Early Warning System",
+    "category": "Time Series",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Financial Impact Forecasting",
+    "folder": "Financial_Impact_Forecasting",
+    "category": "Time Series",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Fire Detection Using Python OpenCV",
+    "folder": "Fire-Detection-Using-Python-OpenCV",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "OpenCV"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Fire Detection Mask RCNN",
+    "folder": "Fire_Detection_Mask_RCNN",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Fish Weight Estimation",
+    "folder": "Fish-Weight-Estimation",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Flight delay prediction project",
+    "folder": "Flight_delay_prediction_project",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Flood Prediction models",
+    "folder": "Flood_Prediction models",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Flower classification android app",
+    "folder": "Flower_classification_android_app",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Football Analyser using YOLO",
+    "folder": "Football_Analyser_using_YOLO",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "Pandas",
+      "PyTorch",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Foreign Exchange Rate Prediction",
+    "folder": "Foreign Exchange Rate Prediction",
+    "category": "Time Series",
+    "difficulty": "Advanced",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "GDP Prediction",
+    "folder": "GDP Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "GRAD CAM Visualizer",
+    "folder": "GRAD-CAM-Visualizer",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "GUI JARVIS",
+    "folder": "GUI-JARVIS",
+    "category": "Audio",
+    "difficulty": "Beginner",
+    "tech": [
+      "Audio"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Gender Pay Gap Analysis",
+    "folder": "Gender Pay Gap Analysis",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Generating 3D Design Voxels using GANs",
+    "folder": "Generating 3D Design Voxels using GANs",
+    "category": "Other",
+    "difficulty": "Advanced",
+    "tech": [
+      "NumPy",
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Gesture Related Projects",
+    "folder": "Gesture Related Projects",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "GitHub Topic Scraper",
+    "folder": "GitHub Topic Scraper",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "Pandas"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Google Teachable Machine",
+    "folder": "Google Teachable Machine",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Grad CAM VGG16 ImageNet",
+    "folder": "Grad_CAM_VGG16_ImageNet",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "PyTorch"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Hand Written Digit Recognition",
+    "folder": "Hand-Written-Digit-Recognition",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Handwritten Equation Solver using CNN",
+    "folder": "Handwritten Equation Solver using CNN",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Handwritten character recognition",
+    "folder": "Handwritten character recognition",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Health prediction",
+    "folder": "Health prediction",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Heart Disease Prediction",
+    "folder": "Heart_Disease_Prediction",
+    "category": "Audio",
+    "difficulty": "Beginner",
+    "tech": [
+      "Audio",
+      "NumPy",
+      "Pandas",
+      "Transformers",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Heart Predection",
+    "folder": "Heart_Predection",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Heart Prediction",
+    "folder": "Heart_Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": false
+  },
+  {
+    "name": "Hindi Letter Classification",
+    "folder": "Hindi_Letter_Classification",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "House Price Prediction",
+    "folder": "House_Price_Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Household monthly bill prediction",
+    "folder": "Household_monthly_bill_prediction",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Housing Prediction",
+    "folder": "Housing_Prediction",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "HyperParameter Tuning",
+    "folder": "HyperParameter Tuning",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "IMDB Box Office Prediction",
+    "folder": "IMDB Box Office Prediction",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "IPL Cricket Match Win Prediction",
+    "folder": "IPL Cricket Match Win Prediction",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "LightGBM",
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Image Captioning",
+    "folder": "Image Captioning",
+    "category": "Computer Vision",
+    "difficulty": "Intermediate",
+    "tech": [
+      "NLP"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Image Stitching",
+    "folder": "Image Stitching",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "ImageGen using GANs",
+    "folder": "ImageGen using GANs",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Indian Currency Detection using DL",
+    "folder": "Indian Currency Detection using DL",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Indian Elections",
+    "folder": "Indian Elections",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Infant Health Prediction",
+    "folder": "Infant_Health_Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Instagram Reach Prediction",
+    "folder": "Instagram Reach Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Intelligent Network Intrusion Detection System using Machine Learning",
+    "folder": "Intelligent Network Intrusion Detection System using Machine Learning",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "LightGBM",
+      "XGBoost"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Interactive ML Algorithm Recommendation Guide for Beginners",
+    "folder": "Interactive ML Algorithm Recommendation Guide for Beginners",
+    "category": "Audio",
+    "difficulty": "Beginner",
+    "tech": [
+      "Audio",
+      "LightGBM",
+      "NLP",
+      "Transformers",
+      "XGBoost"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Internship Spam Detect",
+    "folder": "Internship Spam Detect",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Irrigation Prediction",
+    "folder": "Irrigation_Prediction",
+    "category": "Other",
+    "difficulty": "Intermediate",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "K Means Clustering",
+    "folder": "K Means Clustering",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "KNN Imputation Example",
+    "folder": "KNN_Imputation_Example",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "LLM Copilot Extension for VS Code IDE",
+    "folder": "LLM Copilot Extension for VS Code IDE",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "LSTM from Scratch",
+    "folder": "LSTM from Scratch",
+    "category": "Other",
+    "difficulty": "Intermediate",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Lane Line Detection [OPEN CV]",
+    "folder": "Lane Line Detection [OPEN CV]",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "OpenCV"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "LanguageDetection",
+    "folder": "LanguageDetection",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Learning Rules In ANN",
+    "folder": "Learning Rules In ANN",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Loan Repayment Prediction",
+    "folder": "Loan Repayment Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Loan Prediction main",
+    "folder": "Loan-Prediction-main",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "MIXUP&CUTMIX DASHBOARD",
+    "folder": "MIXUP&CUTMIX-DASHBOARD",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "PyTorch"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "MLOps for Beginners",
+    "folder": "MLOps-for-Beginners",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "MLOps Learning Module",
+    "folder": "MLOps_Learning_Module",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "ML Capsule Cross Platform App",
+    "folder": "ML_Capsule_Cross_Platform_App",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NLP"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "MNIST English Classification",
+    "folder": "MNIST English Classification",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "PyTorch",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Malicious Url Detection",
+    "folder": "Malicious Url Detection",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Mars Weather Prediction",
+    "folder": "Mars_Weather_Prediction",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Maternal Health Risk Prediction",
+    "folder": "Maternal Health Risk Prediction",
+    "category": "Other",
+    "difficulty": "Advanced",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Math for ML",
+    "folder": "Math_for_ML",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Medical Charges for Smokers and Non smoker",
+    "folder": "Medical Charges for Smokers and Non-smoker",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Medical Insurance Cost Prediction",
+    "folder": "Medical Insurance Cost Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Medical Cost Prediction",
+    "folder": "Medical_Cost_Prediction",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "LightGBM",
+      "NumPy",
+      "Pandas",
+      "Transformers",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Medical Help Chatbot",
+    "folder": "Medical_Help_Chatbot",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NLP"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Mental Health Text Analysis & Depression Risk Scorer",
+    "folder": "Mental_Health_Text_Analysis_&_Depression_Risk_Scorer",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Meteorite Landing Data Analysis",
+    "folder": "Meteorite Landing Data Analysis",
+    "category": "Other",
+    "difficulty": "Advanced",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Migraine Type Prediction",
+    "folder": "Migraine Type Prediction",
+    "category": "Other",
+    "difficulty": "Advanced",
+    "tech": [
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Mobile Price Prediction",
+    "folder": "Mobile Price Prediction",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Model Selection Tool",
+    "folder": "Model Selection Tool",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Molecule Property Analysis",
+    "folder": "Molecule_Property_Analysis",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "PyTorch",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Movie Genre Classification",
+    "folder": "Movie Genre Classification",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Movie Recommendation System",
+    "folder": "Movie-Recommendation-System",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Movie Recommender System using python",
+    "folder": "Movie-Recommender-System using python",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Music Generation using LSTM",
+    "folder": "Music Generation using LSTM",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "NLP Project",
+    "folder": "NLP-Project",
+    "category": "Audio",
+    "difficulty": "Beginner",
+    "tech": [
+      "NLP",
+      "NumPy",
+      "Pandas",
+      "PyTorch"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "NLP Techniques",
+    "folder": "NLP_Techniques",
+    "category": "NLP",
+    "difficulty": "Advanced",
+    "tech": [
+      "NLP",
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "NLTK Documentation",
+    "folder": "NLTK Documentation",
+    "category": "Audio",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "NMT English German Attention",
+    "folder": "NMT_English_German_Attention",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "PyTorch"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Naive Bayes Documentation",
+    "folder": "Naive Bayes Documentation",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Nasa Asteroids Dataset Analysis",
+    "folder": "Nasa-Asteroids-Dataset-Analysis",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "NumPy   Basics",
+    "folder": "NumPy - Basics",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Number of people counter",
+    "folder": "Number_of_people_counter",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "OpenCV"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "OCR Medicine Reader",
+    "folder": "OCR-Medicine-Reader",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Object Detection",
+    "folder": "Object Detection",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Ola Bike Ride Request Demand Forecast",
+    "folder": "Ola Bike Ride Request Demand Forecast",
+    "category": "Time Series",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Online Shoppers Intention Prediction",
+    "folder": "Online Shoppers Intention Prediction",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "OnlinePaymentFraudDetection",
+    "folder": "OnlinePaymentFraudDetection",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Optical character recognition (OCR)",
+    "folder": "Optical character recognition (OCR)",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Optimizing Dividend Capture Strategies Using Genetics Algorithms",
+    "folder": "Optimizing_Dividend_Capture_Strategies_Using_Genetics_Algorithms",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Outlier Detection",
+    "folder": "Outlier Detection",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "PCOD Detection Using Ensemble Learning XAI",
+    "folder": "PCOD_Detection_Using_Ensemble_Learning_XAI",
+    "category": "Other",
+    "difficulty": "Advanced",
+    "tech": [
+      "LightGBM",
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Pandas Basics",
+    "folder": "Pandas-Basics",
+    "category": "Time Series",
+    "difficulty": "Beginner",
+    "tech": [
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Pension Fund Optimization",
+    "folder": "Pension Fund Optimization",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Perceptron From Scratch",
+    "folder": "Perceptron From Scratch",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Plagiarism detector using machine learning main",
+    "folder": "Plagiarism-detector-using-machine-learning-main",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Plant Disease Prediction",
+    "folder": "Plant Disease Prediction",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Plant Seedlings Classification",
+    "folder": "Plant Seedlings Classification",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "PyTorch",
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Playing Card Detection YOLOv8",
+    "folder": "Playing-Card-Detection-YOLOv8",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "OpenCV",
+      "PyTorch"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Pneumonia Classification using Chest X Ray",
+    "folder": "Pneumonia Classification using Chest X-Ray",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Poker Hand Prediction",
+    "folder": "Poker Hand Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "PortFolio Optimaization Using Genetic ALgorithm",
+    "folder": "PortFolio Optimaization Using Genetic ALgorithm",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Portuguese Bank Marketing",
+    "folder": "Portuguese_Bank_Marketing",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Pothole Detection",
+    "folder": "Pothole_Detection",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "OpenCV"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Predicting Next Sequence Of Numbers Using LSTM",
+    "folder": "Predicting Next Sequence Of Numbers Using LSTM",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Projects",
+    "folder": "Projects",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Prompt Engineering Techniques",
+    "folder": "Prompt_Engineering_Techniques",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "PulseLangX",
+    "folder": "PulseLangX",
+    "category": "NLP",
+    "difficulty": "Advanced",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "PyPI Package",
+    "folder": "PyPI Package",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "PyScript Tutorial",
+    "folder": "PyScript Tutorial",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Q Learning From Scratch",
+    "folder": "Q-Learning From Scratch",
+    "category": "Reinforcement Learning",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "QnA Conversational Agent",
+    "folder": "QnA Conversational Agent",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "PyTorch",
+      "Transformers"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Quantitative Finance Strategy Development",
+    "folder": "Quantitative Finance Strategy Development",
+    "category": "Time Series",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "R language",
+    "folder": "R language",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Rainfall Trend Analysis and Forecasting",
+    "folder": "Rainfall_Trend_Analysis_and_Forecasting",
+    "category": "Time Series",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Random Oversampler",
+    "folder": "Random Oversampler",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Random forest from scratch",
+    "folder": "Random forest from scratch",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Random forest test",
+    "folder": "Random forest test",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Rating Prediction",
+    "folder": "Rating_Prediction",
+    "category": "Other",
+    "difficulty": "Advanced",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Road accident Analysis using Power BI",
+    "folder": "Road accident Analysis using Power BI",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Rock Paper Scissors Python Game",
+    "folder": "Rock Paper Scissors Python Game",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Roommate Compatibility",
+    "folder": "Roommate-Compatibility",
+    "category": "NLP",
+    "difficulty": "Advanced",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "PyTorch",
+      "Transformers",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "SQL injection detection",
+    "folder": "SQL injection detection",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "SalesProject",
+    "folder": "SalesProject",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Scam SMS Detector",
+    "folder": "Scam_SMS_Detector",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP",
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Sentiment analysis for depression based on social media posts",
+    "folder": "Sentiment analysis for depression based on social media posts",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Sentiment Analysis",
+    "folder": "Sentiment-Analysis",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Sentiment Analysis on IMDb reviews",
+    "folder": "Sentiment-Analysis-on-IMDb-reviews",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Sign Language Translator",
+    "folder": "Sign-Language-Translator",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Simulating Self Driving Cars",
+    "folder": "Simulating Self Driving Cars",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Skin Disease Predictor",
+    "folder": "Skin Disease Predictor",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "SkinGen CGAN Skin Cancer",
+    "folder": "SkinGen_CGAN_Skin_Cancer",
+    "category": "Computer Vision",
+    "difficulty": "Advanced",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Sleep Alarm Detector",
+    "folder": "Sleep_Alarm_Detector",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Sleep Disorder Prediction",
+    "folder": "Sleep_Disorder_Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Smart Container Risk Prediction",
+    "folder": "Smart_Container_Risk_Prediction",
+    "category": "Other",
+    "difficulty": "Advanced",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Smart Home Energy Forecasting",
+    "folder": "Smart_Home_Energy_Forecasting",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Smartphone processor classification",
+    "folder": "Smartphone processor classification",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Social Media Fake Accounts Detection with Interactive UI",
+    "folder": "Social Media Fake Accounts Detection with Interactive UI",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "SongGenreClassifier",
+    "folder": "SongGenreClassifier",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NLP",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Spam Mail Classifier",
+    "folder": "Spam Mail Classifier",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NLP",
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Spam Mail Detection",
+    "folder": "Spam Mail Detection",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": false
+  },
+  {
+    "name": "Speech to Image Generator",
+    "folder": "Speech-to-Image Generator",
+    "category": "Audio",
+    "difficulty": "Unknown",
+    "tech": [
+      "PyTorch",
+      "Transformers"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Speech Emotion Recognition",
+    "folder": "Speech_Emotion_Recognition",
+    "category": "Audio",
+    "difficulty": "Advanced",
+    "tech": [
+      "Audio"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Spelling Corrector",
+    "folder": "Spelling Corrector",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Sports Analytics Project",
+    "folder": "Sports Analytics Project",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Sports Image Classification",
+    "folder": "Sports Image Classification",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "Startup Profit Prediction",
+    "folder": "Startup_Profit_Prediction",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Statistical modeling python",
+    "folder": "Statistical_modeling_python",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Stock Price Analysis",
+    "folder": "Stock Price Analysis",
+    "category": "Time Series",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Student Placement Predictor",
+    "folder": "Student Placement Predictor",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Sudoku Solver using CNN",
+    "folder": "Sudoku Solver using CNN",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "TCS Stock Analysis",
+    "folder": "TCS Stock Analysis",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Tensorflow.js Demo",
+    "folder": "Tensorflow.js Demo",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Terrain Classificaton",
+    "folder": "Terrain_Classificaton",
+    "category": "Computer Vision",
+    "difficulty": "Advanced",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Text Summarization Model",
+    "folder": "Text Summarization Model",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP",
+      "NumPy"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Theatre audience forecasting",
+    "folder": "Theatre-audience-forecasting",
+    "category": "Time Series",
+    "difficulty": "Unknown",
+    "tech": [
+      "LightGBM",
+      "NumPy",
+      "Pandas",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Time Series Forecasting with Python",
+    "folder": "Time Series Forecasting with Python",
+    "category": "Time Series",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Time Series LSTM Model",
+    "folder": "Time-Series LSTM Model",
+    "category": "Time Series",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Traffic Sign Recognition",
+    "folder": "Traffic Sign Recognition",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Traffic Demand Prediction",
+    "folder": "Traffic_Demand_Prediction",
+    "category": "NLP",
+    "difficulty": "Advanced",
+    "tech": [
+      "LightGBM"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Transfer Learning",
+    "folder": "Transfer Learning",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "TweetMiner AI",
+    "folder": "TweetMiner_AI",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NLP",
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Tweets Classification",
+    "folder": "Tweets Classification",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Unique Chatbot",
+    "folder": "Unique Chatbot",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NLP"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Various Plots using Matplot,Seaborn,Pandas",
+    "folder": "Various Plots using Matplot,Seaborn,Pandas",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Vehicles and Pedestrian Detection",
+    "folder": "Vehicles and Pedestrian Detection",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "OpenCV"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Virtual Drag and Drop Using OpenCV",
+    "folder": "Virtual Drag and Drop Using OpenCV",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "WEAPON DETECTION SYSTEM",
+    "folder": "WEAPON-DETECTION-SYSTEM",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Waste Management through Reinforcement Learning",
+    "folder": "Waste Management through Reinforcement Learning",
+    "category": "Reinforcement Learning",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Weather Prediction",
+    "folder": "Weather Prediction",
+    "category": "Time Series",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Web Traffic Time series forecasting",
+    "folder": "Web Traffic Time series forecasting",
+    "category": "Audio",
+    "difficulty": "Advanced",
+    "tech": [
+      "Audio",
+      "NLP"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Web Scraping with Beautiful Soup master",
+    "folder": "Web-Scraping-with-Beautiful-Soup-master",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Website Classification",
+    "folder": "Website Classification",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Wildfire Survival Prediction",
+    "folder": "Wildfire_Survival_Prediction",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "Pandas"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "Windy Grid World RL",
+    "folder": "Windy_Grid_World_RL",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "PyTorch"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Wine Quality Prediction",
+    "folder": "Wine_Quality_Prediction",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "XgBoost Algorithm",
+    "folder": "XgBoost_Algorithm",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "Pandas",
+      "XGBoost"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "Youtube Comment Analysis",
+    "folder": "Youtube Comment Analysis",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "dog vs cat",
+    "folder": "dog vs cat",
+    "category": "Computer Vision",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "ensemble methods notebooks master",
+    "folder": "ensemble-methods-notebooks-master",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "LightGBM",
+      "Pandas",
+      "TensorFlow",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "experiment capsule",
+    "folder": "experiment_capsule",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "face recognition",
+    "folder": "face-recognition",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "OpenCV",
+      "Pandas",
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "hand sign project",
+    "folder": "hand_sign_project",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "TensorFlow"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "heart failure",
+    "folder": "heart failure",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "LightGBM",
+      "NumPy",
+      "Pandas",
+      "XGBoost",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "heat stroke risk predictor",
+    "folder": "heat_stroke_risk_predictor",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "job Advertisement detection",
+    "folder": "job_Advertisement_detection",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "Pandas",
+      "TensorFlow"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "kmeans vs spectral clustering",
+    "folder": "kmeans_vs_spectral_clustering",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "market basket recommendation",
+    "folder": "market-basket-recommendation",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "optimized the trading strategy based on sentiment analysis",
+    "folder": "optimized the trading strategy based on sentiment analysis",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "personalityPrediction",
+    "folder": "personalityPrediction",
+    "category": "NLP",
+    "difficulty": "Unknown",
+    "tech": [
+      "XGBoost"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "pytorch tabular",
+    "folder": "pytorch_tabular",
+    "category": "Other",
+    "difficulty": "Beginner",
+    "tech": [
+      "PyTorch"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "railway person detection",
+    "folder": "railway_person_detection",
+    "category": "Computer Vision",
+    "difficulty": "Unknown",
+    "tech": [
+      "OpenCV",
+      "PyTorch"
+    ],
+    "hasRequirements": true,
+    "hasReadme": true
+  },
+  {
+    "name": "recommendation system",
+    "folder": "recommendation_system",
+    "category": "NLP",
+    "difficulty": "Beginner",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "salary prediction using RF",
+    "folder": "salary-prediction-using-RF",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [
+      "NumPy",
+      "Pandas",
+      "scikit-learn"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "scripts",
+    "folder": "scripts",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  },
+  {
+    "name": "solar panel defect detection",
+    "folder": "solar-panel-defect-detection",
+    "category": "Computer Vision",
+    "difficulty": "Advanced",
+    "tech": [
+      "TensorFlow",
+      "Transformers"
+    ],
+    "hasRequirements": false,
+    "hasReadme": true
+  },
+  {
+    "name": "website ML CaPsule",
+    "folder": "website ML-CaPsule",
+    "category": "Other",
+    "difficulty": "Unknown",
+    "tech": [],
+    "hasRequirements": false,
+    "hasReadme": false
+  }
+]
