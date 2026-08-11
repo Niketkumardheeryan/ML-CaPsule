@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ML-CaPsule — Project Index</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ML-CaPsule — Project Index</h1>
+      <p>Filter projects by category, difficulty, or technology.</p>
+    </header>
+
+    <main>
+      <section class="filters">
+        <input id="search" placeholder="Search projects..." />
+        <select id="category">
+          <option value="">All Categories</option>
+        </select>
+        <select id="difficulty">
+          <option value="">All Difficulty</option>
+        </select>
+        <select id="tech">
+          <option value="">All Technologies</option>
+        </select>
+      </section>
+
+      <section id="grid" class="grid"></section>
+    </main>
+
+    <footer>
+      <small>Generated from <a href="/projects.json">projects.json</a></small>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
