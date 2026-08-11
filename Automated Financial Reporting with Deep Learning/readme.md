@@ -1,26 +1,43 @@
 # Automated Financial Reporting with Deep Learning
 
 ## Overview
-This project aims to automate the generation of financial reports using deep learning, reducing manual effort and errors. The project involves creating a synthetic dataset, training a deep learning model, and generating financial reports.
+
+This project trains a neural network to predict equity from synthetic financial data and presents test-set results in an interactive Streamlit report.
 
 ## Dataset
-The dataset contains the following columns:
-- `Date`: The date of the observation.
-- `Revenue`: The revenue for the period.
-- `Expenses`: The expenses for the period.
-- `Profit`: The profit for the period.
-- `Assets`: The total assets value.
-- `Liabilities`: The total liabilities value.
-- `Equity`: The total equity value.
 
-## Project Structure
-- `financial_data.csv`: The synthetic dataset file.
-- `generate_dataset.py`: Script to generate the synthetic dataset.
-- `train_model.py`: Script to train the deep learning model.
-- `evaluate_model.py`: Script to evaluate the trained model.
-- `generate_report.py`: Script to generate financial reports.
+`financial_data.csv` contains monthly revenue, expenses, profit, assets, liabilities, and equity values. The first five numerical fields are model inputs and equity is the prediction target.
+
+## Project structure
+
+```text
+├── app.py                 # Streamlit reporting dashboard
+├── train_model.py         # Reproducible model training and export
+├── financial_data.csv     # Synthetic dataset
+├── requirements.txt       # Project dependencies
+└── readme.md              # Project documentation
+```
+
+The generated `financial_model.keras` is excluded from Git. The previously committed `financial_model.h5` was an HTML document rather than a valid HDF5 model and could not be loaded by Keras.
 
 ## Setup
-1. Install the required packages:
-   ```bash
-   pip install pandas numpy scikit-learn tensorflow
+
+From this project directory, install the dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Generate a valid Keras model:
+
+```bash
+python train_model.py
+```
+
+Start the dashboard:
+
+```bash
+streamlit run app.py
+```
+
+The dashboard evaluates the model on a deterministic test split, aligns predictions with their original dates, and provides downloadable prediction and summary reports.

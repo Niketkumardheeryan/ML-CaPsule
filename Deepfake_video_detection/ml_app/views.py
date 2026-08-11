@@ -80,8 +80,8 @@ class validation_dataset(Dataset):
             try:
               top,right,bottom,left = faces[0]
               frame = frame[top:bottom,left:right,:]
-            except:
-              pass
+            except Exception as e:
+                print(f"Error processing detected face: {e}")
             frames.append(self.transform(frame))
             if(len(frames) == self.count):
                 break
@@ -175,8 +175,8 @@ def get_accurate_model(sequence_length):
             seq = i.split("_")[3]
             if (int(seq) == sequence_length):
                 sequence_model.append(i)
-        except:
-            pass
+        except Exception as e:
+            print(f"Error parsing model filename '{i}': {e}")
 
     if len(sequence_model) > 1:
         accuracy = []
@@ -356,7 +356,8 @@ def predict_page(request):
                 return render(request, predict_template_name, {'preprocessed_images': preprocessed_images, 'heatmap_images': heatmap_images, "faces_cropped_images": faces_cropped_images, "original_video": video_file_name, "models_location": models_location, "output": output, "confidence": confidence})
             else:
                 return render(request, predict_template_name, {'preprocessed_images': preprocessed_images, 'heatmap_images': heatmap_images, "faces_cropped_images": faces_cropped_images, "original_video": production_video_name, "models_location": models_location, "output": output, "confidence": confidence})
-        except:
+        except Exception as e:
+            print(f"Prediction failed: {e}")
             return render(request, 'cuda_full.html')
 def about(request):
     return render(request, about_template_name)

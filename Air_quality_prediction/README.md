@@ -20,22 +20,38 @@ A real-time Air Quality Index (AQI) prediction dashboard built with Streamlit. T
 ## 📁 Project Structure
 ```text
 ├── app.py               # Main Streamlit application script
-├── weights.pkl          # Serialized dictionary containing the PyTorch model, LightGBM model, scaler, and encoders
+├── AQI_pred.ipynb       # Trains the models and exports weights.pkl
+├── weights.pkl          # Generated model artifact (not stored in Git)
 ├── requirements.txt     # Python dependencies
 └── README.md            # Project documentation
 ```
-# ⚙️ Installation & Setup
-- Install dependencies:
+## ⚙️ Installation and setup
+
+From the repository root, enter the project directory and install the dependencies:
+
 ```bash
-pip install scikit-learn pandas numpy torch streamlit lightgbm joblib
+cd Air_quality_prediction
+python -m pip install -r requirements.txt
 ```
 
-- 💻 Usage
-Run the Streamlit application locally:
+### Generate the model artifact
+
+Trained model artifacts are not stored in Git. Start Jupyter from this directory, open `AQI_pred.ipynb`, and run all cells:
+
+```bash
+jupyter notebook AQI_pred.ipynb
+```
+
+The notebook downloads the dataset through KaggleHub, trains both models, and creates `weights.pkl`. Confirm that the file exists in `Air_quality_prediction` before starting the dashboard.
+
+### Run the dashboard
+
 ```bash
 streamlit run app.py
 ```
 The dashboard will open in your default web browser (usually at http://localhost:8501). Enter the temporal, geographic, and weather details to generate an instant AQI prediction.
+
+If `weights.pkl` is missing or invalid, the dashboard displays recovery instructions instead of terminating with an unhandled exception.
 
 ## 🧠 Model Architecture Details
 
