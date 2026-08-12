@@ -1,90 +1,88 @@
-import streamlit as st
+from pathlib import Path
+
 import pandas as pd
-import numpy as np
+import streamlit as st
 import tensorflow as tf
-from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
 
-# Load the dataset
-df = pd.read_csv('financial_data.csv')
-df['Date'] = pd.to_datetime(df['Date'])
+PROJECT_DIR = Path(__file__).resolve().parent
+DATA_PATH = PROJECT_DIR / "financial_data.csv"
+MODEL_PATH = PROJECT_DIR / "financial_model.keras"
+FEATURE_COLUMNS = ["Revenue", "Expenses", "Profit", "Assets", "Liabilities"]
+TARGET_COLUMN = "Equity"
 
-# Load the trained model
-model = tf.keras.models.load_model('financial_model.h5')
 
-# Prepare features and target
-X = df.drop('Date', axis=1).iloc[:, :-1]
-y = df.drop('Date', axis=1).iloc[:, -1]
+@st.cache_data
+def load_data():
+    data = pd.read_csv(DATA_PATH)
+    data["Date"] = pd.to_datetime(data["Date"])
+    return data
 
-# Split dataset
-X_train, X_test, y_train, y_test = train_test_split(
+
+@st.cache_resource
+def load_model():
+    return tf.keras.models.load_model(MODEL_PATH)
+
+
+st.set_page_config(page_title="Automated Financial Reporting", layout="wide")
+st.title("Automated Financial Reporting with Deep Learning")
+
+if not MODEL_PATH.is_file():
+    st.error("The trained financial model has not been generated.")
+    st.code("python train_model.py", language="bash")
+    st.info("Run this command from the project directory, then restart the app.")
+    st.stop()
+
+try:
+    model = load_model()
+except (OSError, ValueError) as error:
+    st.error("The financial model is invalid or incompatible.")
+    st.code(f"{type(error).__name__}: {error}")
+    st.info("Delete the generated model and run `python train_model.py` again.")
+    st.stop()
+
+df = load_data()
+X = df[FEATURE_COLUMNS]
+y = df[TARGET_COLUMN]
+X_train, X_test, _, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-# Normalize data
 scaler = MinMaxScaler()
-
-X_train_scaled = scaler.fit_transform(X_train)
+scaler.fit(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-# Make predictions
-y_pred = model.predict(X_test_scaled)
+test_loss, test_mae = model.evaluate(X_test_scaled, y_test, verbose=0)
+predictions = model.predict(X_test_scaled, verbose=0).reshape(-1)
 
-# Reconstruct for inverse transform
-y_pred_original = scaler.inverse_transform(
-    np.c_[X_test_scaled, y_pred]
-)[:, -1]
+# Preserve test indices so predictions remain paired with their source rows.
+comparison = df.loc[X_test.index, ["Date", TARGET_COLUMN]].copy()
+comparison = comparison.rename(columns={TARGET_COLUMN: "Actual"})
+comparison["Predicted"] = predictions
+comparison = comparison.sort_values("Date").set_index("Date")
 
-# Add predictions to the DataFrame
-df['Predicted_Equity'] = y_pred_original
+st.subheader("Actual vs Predicted Equity Values")
+st.dataframe(comparison, use_container_width=True)
+st.line_chart(comparison[["Actual", "Predicted"]])
 
-# Streamlit app
-st.title("Automated Financial Reporting with Deep Learning")
+metric_col1, metric_col2 = st.columns(2)
+metric_col1.metric("Test loss (MSE)", f"{test_loss:,.2f}")
+metric_col2.metric("Test MAE", f"{test_mae:,.2f}")
 
-st.write("""
-### Actual vs Predicted Equity Values
-""")
+st.subheader("Dataset Summary Statistics")
+summary = df.describe(include="number")
+st.dataframe(summary, use_container_width=True)
 
-# Display a sample of the actual vs predicted values
-comparison = pd.DataFrame({
-    'Actual': df['Equity'],
-    'Predicted': df['Predicted_Equity']
-})
-
-st.write(comparison.head())
-
-# Plot the actual vs predicted values
-st.line_chart(comparison)
-
-# Display the model's performance metrics
-st.write(f"Test Loss: 0.08456173539161682, Test MAE: 0.2604014575481415")
-
-st.write("""
-### Training Metrics
-""")
-
-# Display the training metrics
-training_metrics = {
-    "Epoch": list(range(1, 11)),
-    "Training Loss": [0.4236, 0.3555, 0.3024, 0.2610, 0.2237, 0.1883, 0.1559, 0.1281, 0.1029, 0.0861],
-    "Training MAE": [0.5733, 0.5171, 0.4694, 0.4267, 0.3849, 0.3473, 0.3104, 0.2799, 0.2553, 0.2352],
-    "Validation Loss": [0.3441, 0.2862, 0.2406, 0.2011, 0.1643, 0.1300, 0.1004, 0.0776, 0.0596, 0.0456],
-    "Validation MAE": [0.5352, 0.4826, 0.4356, 0.3896, 0.3425, 0.3015, 0.2623, 0.2264, 0.1929, 0.1670]
-}
-
-metrics_df = pd.DataFrame(training_metrics)
-st.line_chart(metrics_df[['Training Loss', 'Validation Loss']])
-st.line_chart(metrics_df[['Training MAE', 'Validation MAE']])
-
-st.write("""
-### Summary Statistics
-""")
-
-# Display summary statistics
-summary = df.describe()
-st.write(summary)
-
-# Save the report to a CSV file
-df.to_csv('financial_report.csv', index=False)
-summary.to_csv('financial_summary.csv')
-st.write("Financial report and summary generated successfully. Check the generated CSV files for details.")
+st.download_button(
+    "Download prediction report",
+    comparison.reset_index().to_csv(index=False),
+    file_name="financial_report.csv",
+    mime="text/csv",
+)
+st.download_button(
+    "Download summary statistics",
+    summary.to_csv(),
+    file_name="financial_summary.csv",
+    mime="text/csv",
+)

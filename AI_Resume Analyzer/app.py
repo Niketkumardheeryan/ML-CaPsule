@@ -4,6 +4,7 @@ from skills import job_roles
 import matplotlib.pyplot as plt
 from nlp_utils import extract_entities
 from ai_suggestions import generate_suggestions
+from pdf_report import generate_pdf_report
 
 # ---------------------------
 # PAGE CONFIG
@@ -273,3 +274,25 @@ if uploaded_file:
     )
 
     st.pyplot(fig)
+
+    # ---------------------------
+    # PDF REPORT
+    # ---------------------------
+
+    st.subheader("📄 Download Report")
+
+    pdf_file = generate_pdf_report(
+        selected_role=selected_role,
+        score=score,
+        found_skills=found_skills,
+        missing_skills=missing_skills,
+        entities=entities,
+        ai_feedback=ai_feedback
+    )
+
+    st.download_button(
+        label="📥 Download PDF Report",
+        data=pdf_file,
+        file_name="AI_Resume_Analysis_Report.pdf",
+        mime="application/pdf"
+    )

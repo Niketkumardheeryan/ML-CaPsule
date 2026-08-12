@@ -1,0 +1,7 @@
+# Fashion Recommendation System - Fashion-MNIST
+# The dataset ships with Keras, so nothing has to be downloaded manually.
+
+tensorflow>=2.13.0      # CNN training and the embedding feature extractor
+numpy>=1.24.0           # array handling
+scikit-learn>=1.2.0     # nearest-neighbour retrieval, PCA, evaluation metrics
+matplotlib>=3.6.0       # training curves, confusion matrix, recommendation grids

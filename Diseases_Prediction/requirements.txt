@@ -4,3 +4,5 @@ scikit-learn
 catboost
 langchain-openai
 langchain
+openai
+python-dotenv

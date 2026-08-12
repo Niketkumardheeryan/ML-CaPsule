@@ -4,6 +4,11 @@ import numpy as np
 import joblib
 import torch
 import torch.nn as nn
+from pathlib import Path
+
+
+PROJECT_DIR = Path(__file__).resolve().parent
+MODEL_PATH = PROJECT_DIR / "weights.pkl"
 
 class AstraeaNet(nn.Module):
     def __init__(self, cat_dims, num_dim):
@@ -38,9 +43,28 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 @st.cache_resource
 def load_artifacts():
-    return joblib.load("weights.pkl")
+    if not MODEL_PATH.is_file():
+        raise FileNotFoundError(
+            f"Model artifact not found at {MODEL_PATH}. "
+            "Run AQI_pred.ipynb to generate weights.pkl first."
+        )
+    return joblib.load(MODEL_PATH)
 
-data = load_artifacts()
+try:
+    data = load_artifacts()
+except FileNotFoundError as error:
+    st.error("The trained AQI model is not available yet.")
+    st.info(
+        "Open `AQI_pred.ipynb`, run all cells, and confirm that "
+        "`weights.pkl` is created in the `Air_quality_prediction` folder."
+    )
+    st.code(str(error))
+    st.stop()
+except (KeyError, OSError, ValueError) as error:
+    st.error("The AQI model artifact could not be loaded.")
+    st.info("Regenerate `weights.pkl` by running all cells in `AQI_pred.ipynb`.")
+    st.code(f"{type(error).__name__}: {error}")
+    st.stop()
 
 nn_model = data["model"].to(DEVICE)
 nn_model.eval()

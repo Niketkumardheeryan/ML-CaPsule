@@ -1,22 +1,23 @@
-from src.preprocess import pre_processing_custom
-import pickle
 import pandas as pd
-import joblib
 
-tfidf = joblib.load("./models/tfidf.pkl")
 
-cyberbullying_type = ['not_cyberbullying', 'gender', 'religion', 'age', 'ethnicity']
+CYBERBULLYING_TYPES = [
+    "not_cyberbullying",
+    "gender",
+    "religion",
+    "age",
+    "ethnicity",
+    "other_cyberbullying",
+]
 
 # Defing our custom prediction function
-def predict(model, texts):
-    clean_texts = [pre_processing_custom(text) for text in texts]
-    text_data = tfidf.transform(clean_texts)
+def predict(model, vectorizer, texts):
+    """Classify texts using explicitly supplied, cached model artifacts."""
+    text_data = vectorizer.transform(texts)
     prediction = model.predict(text_data)
-
-    data = []
-    for text, prediction in zip(texts, prediction):
-        data.append((text, prediction))
-
-    df = pd.DataFrame(data, columns = ['text','type'])
-    df = df.replace([0,1,2,3,4], cyberbullying_type)
-    return df
+    result = pd.DataFrame({"text": texts, "type": prediction})
+    if result["type"].dtype.kind in "iu":
+        result["type"] = result["type"].replace(
+            dict(enumerate(CYBERBULLYING_TYPES))
+        )
+    return result
