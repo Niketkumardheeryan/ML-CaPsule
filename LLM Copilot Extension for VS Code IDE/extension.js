@@ -1,9 +1,18 @@
 const vscode = require('vscode');
 const axios = require('axios');
+require('dotenv').config();
 
-const TOGETHER_AI_API_KEY = 'your_actual_api_key_here';
-const GROQ_AI_API_KEY = 'your_actual_api_key_here';
-const LLAMA_API_KEY = 'your_actual_api_key_here';
+const TOGETHER_AI_API_KEY = process.env.TOGETHER_API_KEY;
+const GROQ_AI_API_KEY = process.env.GROQ_API_KEY;
+const LLAMA_API_KEY = process.env.LLAMA_API_KEY;
+
+function assertKeysConfigured() {
+    const missing = [];
+    if (!TOGETHER_AI_API_KEY) missing.push('TOGETHER_API_KEY');
+    if (!GROQ_AI_API_KEY) missing.push('GROQ_API_KEY');
+    if (!LLAMA_API_KEY) missing.push('LLAMA_API_KEY');
+    return missing;
+}
 
 async function getTogetherAIResponse(prompt) {
     const response = await axios.post('https://api.together.ai/v1/text/completion', {
@@ -43,6 +52,13 @@ async function getLlamaResponse(prompt) {
 
 function activate(context) {
     let disposable = vscode.commands.registerCommand('my-ext.helloWorld', async () => {
+        const missingKeys = assertKeysConfigured();
+        if (missingKeys.length > 0) {
+            vscode.window.showErrorMessage(
+                `Missing API key(s) in your .env file: ${missingKeys.join(', ')}. See .env.example for setup.`
+            );
+            return;
+        }
         const prompt = await vscode.window.showInputBox({ prompt: 'Enter your prompt' });
 
         if (prompt) {

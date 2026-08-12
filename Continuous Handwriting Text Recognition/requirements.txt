@@ -1,0 +1,13 @@
+datasets
+matplotlib
+nltk
+numpy
+opencv-python
+pillow
+requests
+textblob
+torch
+torchmetrics
+torchvision
+tqdm
+wordninja

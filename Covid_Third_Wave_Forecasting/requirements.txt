@@ -1,0 +1,8 @@
+keras
+matplotlib
+numpy
+pandas
+pmdarima
+prophet
+scikit-learn
+statsmodels

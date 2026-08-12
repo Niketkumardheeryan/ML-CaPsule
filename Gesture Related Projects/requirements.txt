@@ -1,0 +1,12 @@
+google
+joblib
+matplotlib
+mediapipe
+numpy
+opencv-python
+pandas
+pyautogui
+requests
+scikit-learn
+streamlit
+streamlit_webrtc

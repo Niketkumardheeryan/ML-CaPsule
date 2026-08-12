@@ -1,0 +1,4 @@
+apyori
+matplotlib
+pandas
+streamlit

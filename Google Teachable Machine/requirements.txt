@@ -1,0 +1,5 @@
+keras
+numpy
+pandas
+pillow
+tensorflow

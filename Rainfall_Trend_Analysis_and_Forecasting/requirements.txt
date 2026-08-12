@@ -1,0 +1,6 @@
+gdown
+pandas
+plotly
+prophet
+scikit-learn
+scipy

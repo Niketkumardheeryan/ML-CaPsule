@@ -1,0 +1,10 @@
+matplotlib
+mpl_rdkit_utils
+networkx
+numpy
+pandas
+rdkit
+scikit-learn
+torch
+torch_geometric
+tqdm

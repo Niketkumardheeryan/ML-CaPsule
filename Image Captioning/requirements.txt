@@ -1,0 +1,9 @@
+keras
+matplotlib
+nltk
+numpy
+opencv-python
+pandas
+pillow
+tensorflow
+tqdm

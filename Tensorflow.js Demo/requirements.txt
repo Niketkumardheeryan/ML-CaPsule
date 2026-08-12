@@ -1,0 +1,2 @@
+# No Python dependencies.
+# This demo is implemented with browser JavaScript assets.

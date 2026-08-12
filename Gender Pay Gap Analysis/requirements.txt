@@ -1,0 +1,6 @@
+matplotlib
+numpy
+pandas
+pandas_profiling
+plotly
+seaborn

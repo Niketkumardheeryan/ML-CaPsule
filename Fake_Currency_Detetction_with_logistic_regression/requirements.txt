@@ -1,0 +1,11 @@
+joblib
+kagglehub
+matplotlib
+model
+numpy
+pandas
+pillow
+scikit-learn
+scipy
+seaborn
+streamlit
