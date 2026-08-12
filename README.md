@@ -43,7 +43,7 @@
 
 ## 🚀 About
 
-**[ML-CaPsule](https://github.com/Niketkumardheeryan/ML-CaPsule)** is a comprehensive, open-source learning hub for aspiring and experienced data science enthusiasts. Whether you lack a mentor or want structured, project-based learning — this repository helps you master **Machine Learning**, **Deep Learning**, **NLP**, **Computer Vision**, and more through **500+ real-world projects**.
+**[ML-CaPsule]([https://github.com/Niketkumardheeryan/ML-CaPsule](https://niketkumardheeryan.github.io/ML-CaPsule/))** is a comprehensive, open-source learning hub for aspiring and experienced data science enthusiasts. Whether you lack a mentor or want structured, project-based learning — this repository helps you master **Machine Learning**, **Deep Learning**, **NLP**, **Computer Vision**, and more through **500+ real-world projects**.
 
 > 💡 **No mentor? No problem.** Learn by building, become interview-ready, and grow with a thriving open-source community.
 
@@ -628,7 +628,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 
 | Project | Difficulty | Estimated Time |
 |---------|------------|----------------|
-| [.vscode](.vscode) | 🟡 Intermediate | 3-6 hours |
 | [Accent_Neutralizer_for_Speech](Accent_Neutralizer_for_Speech) | 🟡 Intermediate | 3-6 hours |
 | [Advanced Visualizations](Advanced%20Visualizations) | 🟢 Beginner | 1-3 hours |
 | [AI-Based QR Code Detection](AI-Based%20QR%20Code%20Detection) | 🟡 Intermediate | 3-6 hours |
@@ -671,7 +670,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [CBT_ChatBot](CBT_ChatBot) | 🟡 Intermediate | 3-6 hours |
 | [Chatbot Using RASA](Chatbot%20Using%20RASA) | 🟡 Intermediate | 3-6 hours |
 | [Cheat Sheets](Cheat%20Sheets) | 🟢 Beginner | 1-3 hours |
-| [chess image classification](chess%20image%20classification) | 🟡 Intermediate | 3-6 hours |
+| [Chess Based Project](Chess%20Based%20Project) | 🟡 Intermediate | 3-6 hours |
 | [Chi-Square Test](Chi-Square%20Test) | 🟡 Intermediate | 3-6 hours |
 | [Chicken_Disease_Classification](Chicken_Disease_Classification) | 🟡 Intermediate | 3-6 hours |
 | [Chronic Kidney Disease Prediction](Chronic%20Kidney%20Disease%20Prediction) | 🟡 Intermediate | 3-6 hours |
@@ -739,6 +738,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [face-recognition](face-recognition) | 🟡 Intermediate | 3-6 hours |
 | [Fake_Currency_Detetction_with_logistic_regression](Fake_Currency_Detetction_with_logistic_regression) | 🟡 Intermediate | 3-6 hours |
 | [Fake_News_Detection](Fake_News_Detection) | 🟡 Intermediate | 3-6 hours |
+| [Fake_Review_Detection](Fake_Review_Detection) | 🟡 Intermediate | 3-6 hours |
 | [Feature Eye Disease Classified RNN](Feature%20Eye%20Disease%20Classified%20RNN) | 🟡 Intermediate | 3-6 hours |
 | [Feature Scaling Techniques](Feature%20Scaling%20Techniques) | 🟡 Intermediate | 3-6 hours |
 | [Feature Selection using Genetic ALgorithm](Feature%20Selection%20using%20Genetic%20ALgorithm) | 🟠 Advanced | 6-12 hours |
@@ -766,7 +766,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Google Teachable Machine](Google%20Teachable%20Machine) | 🟡 Intermediate | 3-6 hours |
 | [GRAD-CAM-Visualizer](GRAD-CAM-Visualizer) | 🟡 Intermediate | 3-6 hours |
 | [Grad_CAM_VGG16_ImageNet](Grad_CAM_VGG16_ImageNet) | 🟡 Intermediate | 3-6 hours |
-| [GUI-JARVIS](GUI-JARVIS) | 🟡 Intermediate | 3-6 hours |
+| [GUI-JARVIS-2026](GUI-JARVIS-2026) | 🟡 Intermediate | 3-6 hours |
 | [Hand-Written-Digit-Recognition](Hand-Written-Digit-Recognition) | 🟡 Intermediate | 3-6 hours |
 | [hand_sign_project](hand_sign_project) | 🟡 Intermediate | 3-6 hours |
 | [Handwritten character recognition](Handwritten%20character%20recognition) | 🟡 Intermediate | 3-6 hours |
@@ -917,7 +917,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [TCS Stock Analysis](TCS%20Stock%20Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Tensorflow.js Demo](Tensorflow.js%20Demo) | 🟡 Intermediate | 3-6 hours |
 | [Terrain_Classificaton](Terrain_Classificaton) | 🟡 Intermediate | 3-6 hours |
-| [tests](tests) | 🟡 Intermediate | 3-6 hours |
 | [Text Summarization Model](Text%20Summarization%20Model) | 🟡 Intermediate | 3-6 hours |
 | [Theatre-audience-forecasting](Theatre-audience-forecasting) | 🟡 Intermediate | 3-6 hours |
 | [Time Series Forecasting with Python](Time%20Series%20Forecasting%20with%20Python) | 🟢 Beginner | 1-3 hours |
