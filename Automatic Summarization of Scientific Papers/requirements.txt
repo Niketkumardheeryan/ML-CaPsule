@@ -1,0 +1,7 @@
+matplotlib
+nltk
+numpy
+pandas
+tqdm
+transformers
+wordcloud

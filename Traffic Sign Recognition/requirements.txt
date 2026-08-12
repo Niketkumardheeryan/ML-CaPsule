@@ -1,0 +1,6 @@
+keras
+matplotlib
+numpy
+pandas
+pillow
+scikit-learn

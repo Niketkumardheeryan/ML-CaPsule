@@ -1,0 +1,6 @@
+beautifulsoup4
+matplotlib
+pandas
+plotly
+scikit-learn
+seaborn
