@@ -1,0 +1,16 @@
+# Environment variables / secrets
+.env
+
+# Dependencies
+node_modules/
+
+# Compiled output
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+.vscode-test/
+
