@@ -1,0 +1,6 @@
+gdown
+IPython
+matplotlib
+numpy
+opencv-python
+ultralytics

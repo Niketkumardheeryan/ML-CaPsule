@@ -1,0 +1,6 @@
+gymnasium
+imageio
+IPython
+matplotlib
+numpy
+seaborn

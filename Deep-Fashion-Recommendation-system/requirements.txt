@@ -1,0 +1,7 @@
+fashion_recommender
+matplotlib
+numpy
+pillow
+scikit-learn
+scipy
+tensorflow

@@ -1,0 +1,3 @@
+mediapipe
+opencv-python
+pyttsx3

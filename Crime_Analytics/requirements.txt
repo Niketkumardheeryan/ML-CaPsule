@@ -1,0 +1,7 @@
+crime_analytics
+matplotlib
+numpy
+pandas
+plotly
+seaborn
+streamlit

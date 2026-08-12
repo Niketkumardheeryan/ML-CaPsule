@@ -1,0 +1,8 @@
+IPython
+librosa
+matplotlib
+numpy
+pandas
+tensorflow
+tensorflow_addons
+tqdm

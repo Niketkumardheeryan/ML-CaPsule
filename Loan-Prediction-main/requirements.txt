@@ -1,0 +1,10 @@
+flask
+imbalanced-learn
+matplotlib
+missingno
+numpy
+pandas
+scikit-learn
+scipy
+seaborn
+xgboost
