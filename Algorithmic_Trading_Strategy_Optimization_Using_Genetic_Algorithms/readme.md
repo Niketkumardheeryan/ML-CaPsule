@@ -1,61 +1,55 @@
 # Algorithmic Trading Strategy Optimization Using Genetic Algorithms
 
-A production-grade, extensible framework for evolving algorithmic trading strategies using **Real Parameter Evolution with Genetic Algorithms (GA)**.
+A production-grade, extensible framework for evolving algorithmic trading strategies using **Real Parameter Evolution with Genetic Algorithms (GA)** embedded inside a self-contained Jupyter Notebook.
 
 ---
 
-## Architecture & Features
+## Dataset Link
+- **Raw Market Dataset**: [trading_data.csv](https://raw.githubusercontent.com/Rakshak05/ML-CaPsule/master/Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms/trading_data.csv)
 
-This module replaces static demo functions with real numerical gene evolution across multi-indicator trading rules and risk management criteria.
+---
 
-### Real Parameter Evolution (Chromosome Genes)
-Each individual in the population encodes numerical strategy parameters:
-- **RSI Thresholds**: `rsi_buy_threshold` (15-45) and `rsi_sell_threshold` (55-85)
-- **Moving Average Windows**: `sma_short_period` (5-30) and `sma_long_period` (35-100)
-- **MACD Parameters**: `macd_fast` (8-16), `macd_slow` (20-40), `macd_signal` (5-15)
-- **Risk Management**: `stop_loss_pct` (1%-10%) and `take_profit_pct` (2%-25%)
+## Project Structure
+```text
+Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms/
+├── tests/
+│   └── test_ga_trading_strategy.py                        # Unit tests suite
+├── Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms.ipynb # Single executed codebase notebook
+├── GA_Trading_Strategy_Report.pdf                         # Comprehensive technical report
+└── readme.md                                              # Project documentation
+```
 
-### Core Components
-1. **Data Preprocessing & Validation (`data_loader.py`)**: Loads OHLCV datasets, validates price integrity (`High >= max(Open, Close)` and `Low <= min(Open, Close)`), handles missing values, and computes SMA, RSI, and MACD indicators.
-2. **Strategy Gene & Signal Generator (`strategy.py`)**: Evaluates multi-condition indicator rules with strict boundary sanitization.
-3. **Backtesting Simulator (`backtest.py`)**: Event-driven backtester supporting Stop-Loss / Take-Profit intra-trade exits and calculating:
-   - Total Return (%)
-   - Risk-Adjusted Sharpe Ratio
-   - Maximum Drawdown (MDD %)
-   - Win Rate (%)
-   - Profit Factor
-4. **Genetic Algorithm Optimizer (`ga_optimizer.py`)**: Diverse random population initialization, multi-component fitness function, tournament selection, uniform/blend crossover (BLX-$\alpha$), bounded Gaussian jitter mutation, and elitism preservation.
-5. **Visualization Engine (`visualizer.py`)**: Automatically plots GA fitness convergence, In-Sample/Out-of-Sample Equity Curves against Buy & Hold baselines, and performance dashboard charts.
+---
+
+## Core Pipeline Components (Notebook)
+
+1. **Data Ingestion & Indicator Computation**: Direct URL loading, OHLC integrity validation (`High >= max(Open, Close)` and `Low <= min(Open, Close)`), and derivation of `SMA`, `RSI`, and `MACD` indicators.
+2. **Strategy Chromosome Representation**: 9 numerical strategy parameters encoding indicator trigger thresholds (`RSI`, `SMA`, `MACD`) and risk management controls (`Stop-Loss` / `Take-Profit`).
+3. **Event-Driven Backtester**: Simulates trades with intra-trade Stop-Loss and Take-Profit exits, computing Total Return, Sharpe Ratio, Maximum Drawdown, Win Rate, and Profit Factor.
+4. **Genetic Algorithm Optimizer**: Evolves population parameters across generations using tournament selection, BLX-$\alpha$ crossover, bounded Gaussian mutation, and elitism.
+5. **Visual Evaluation & Dashboard**: Renders inline Matplotlib charts for GA fitness convergence, In-Sample & Out-of-Sample equity curves against Buy & Hold benchmarks, and performance metric bar charts.
 
 ---
 
 ## Quick Start
 
 ### Installation
-Ensure dependencies are installed:
+Ensure required libraries are installed:
 ```bash
-pip install numpy pandas matplotlib
+pip install numpy pandas matplotlib jupyter
 ```
 
-### Run Optimization Pipeline
-To execute the full end-to-end GA optimization, backtesting, and visualization:
+### Running the Notebook
+Open and execute all cells in Jupyter Notebook or JupyterLab:
 ```bash
-python Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms/main.py
+jupyter notebook Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms/Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms.ipynb
 ```
 
 ---
 
 ## Unit Tests
 
-Run unit tests to verify data loading, indicator calculations, backtesting metrics, crossover/mutation, and GA convergence:
+Run the test suite inside the project directory:
 ```bash
-python -m unittest tests/test_ga_trading_strategy.py
+python -m unittest Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms/tests/test_ga_trading_strategy.py
 ```
-
----
-
-## Sample Output Charts
-Executing `main.py` generates the following visualizations:
-- `ga_fitness_progression.png`: Convergence curve of Best & Mean fitness per generation.
-- `equity_curves.png`: Strategy equity vs. Buy & Hold benchmark on Train & Test splits.
-- `strategy_dashboard.png`: Summary metric dashboard.
