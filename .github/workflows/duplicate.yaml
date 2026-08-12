@@ -8,6 +8,9 @@ on:
 jobs:
   detect-duplicate:
     runs-on: ubuntu-latest
+    env:
+      HF_HOME: ${{ github.workspace }}/.cache/huggingface
+      SENTENCE_TRANSFORMERS_HOME: ${{ github.workspace }}/.cache/huggingface
     
     # Required permissions for the GITHUB_TOKEN to add comments and labels
     permissions:
@@ -22,6 +25,7 @@ jobs:
         with:
           sparse-checkout: |
             .github/scripts/check_for_duplicates.py
+            .github/workflows/duplicate.yaml
           sparse-checkout-cone-mode: false
 
       - name: Set up Python
@@ -48,6 +52,5 @@ jobs:
           Token: ${{ secrets.GITHUB_TOKEN }}
           Issue: ${{ github.event.issue.number }}
           Repo: ${{ github.repository }}
-          HF_HOME: ~/.cache/huggingface 
         run: |
           python .github/scripts/check_for_duplicates.py

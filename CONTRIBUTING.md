@@ -101,23 +101,6 @@ When adding a new project directory to `ML-CaPsule`, ensure it contains:
 
 ---
 
-## 🔐 Security & Credential Management Guidelines
-
-1. **NEVER Hardcode Secrets**: Never commit real API keys, secret tokens, passwords, or personal credentials directly into `.py` scripts or `.ipynb` notebooks.
-2. **Use `.env.example`**: Refer to the root `.env.example` file for standard environment variable names across projects.
-3. **Use `utils/load_credentials.py`**:
-   Load API keys using `get_credential` or `os.environ.get()`:
-   ```python
-   from utils.load_credentials import get_credential
-
-   # Securely load API key (checks environment, .env file, or Google Colab secrets)
-   api_key = get_credential("GEMINI_API_KEY", required=True)
-   ```
-4. **Local Development**: Copy `.env.example` to `.env` in the root directory and add your local testing keys. The `.env` file is automatically ignored by `.gitignore`.
-5. **Secret Scanning**: Automated pre-commit hooks and GitHub Actions secret scanners will check PRs to prevent accidental credential leaks.
-
----
-
 ## 🎗Coding Style
 
 We want your work to be readable by others; therefore, we encourage you to note the following:

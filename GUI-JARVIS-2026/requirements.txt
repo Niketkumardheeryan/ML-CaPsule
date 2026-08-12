@@ -1,0 +1,13 @@
+# Dependencies for GUI-JARVIS project
+PyQt5>=5.15.0,<6.0.0
+pyttsx3>=2.90
+SpeechRecognition>=3.10.0
+PyAudio>=0.2.11
+wikipedia>=1.4.0
+geopy>=2.3.0
+requests>=2.28.0,<3.0.0
+beautifulsoup4>=4.12.0,<5.0.0
+yahoo-fin>=0.8.9
+numpy>=1.24.0,<3.0.0
+lxml
+python-dotenv

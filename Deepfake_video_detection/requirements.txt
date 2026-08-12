@@ -1,0 +1,12 @@
+# Dependencies for Deepfake Video Detection project
+django>=4.2.0,<5.0.0
+torch>=2.0.0,<3.0.0
+torchvision>=0.15.0,<1.0.0
+tensorflow>=2.12.0,<3.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0,<3.0.0
+pandas>=2.0.0,<3.0.0
+scikit-learn>=1.3.0,<2.0.0
+matplotlib>=3.7.0,<4.0.0
+face-recognition>=1.3.0
+Pillow>=9.0.0
