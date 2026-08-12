@@ -47,10 +47,15 @@ def take_screenshot(output_dir: str = "screenshots") -> str:
         str: Status message with absolute filepath.
     """
     try:
-        os.makedirs(output_dir, exist_ok=True)
+        # Sanitize output_dir: normalize path, resolve absolute path, and set secure directory permissions
+        if not output_dir or not str(output_dir).strip():
+            output_dir = "screenshots"
+        safe_output_dir = os.path.abspath(os.path.normpath(str(output_dir).strip()))
+        os.makedirs(safe_output_dir, mode=0o755, exist_ok=True)
+
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"screenshot_{timestamp}.png"
-        filepath = os.path.abspath(os.path.join(output_dir, filename))
+        filepath = os.path.abspath(os.path.join(safe_output_dir, filename))
 
         # Try pyautogui first, fallback to PIL.ImageGrab
         captured = False
