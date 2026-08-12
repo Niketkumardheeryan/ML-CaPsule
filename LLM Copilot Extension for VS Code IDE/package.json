@@ -10,7 +10,7 @@
     "Other"
   ],
   "activationEvents": [],
-  "main": "./out/extension.js",
+  "main": "./extension.js",
   "contributes": {
     "commands": [
       {
@@ -20,21 +20,16 @@
     ]
   },
   "scripts": {
-    "compile": "tsc -p ./",
-    "watch": "tsc -w -p ./",
-    "lint": "eslint src --ext js",
-    "pretest": "npm run compile && npm run lint",
-    "test": "node ./out/test/runTest.js"
+    "lint": "eslint . --ext js",
+    "pretest": "npm run lint",
+    "test": "node ./test/extension.test.js"
   },
   "devDependencies": {
-    "@types/node": "20.x",
-    "@types/vscode": "^1.92.0",
     "eslint": "^8.57.0",
-    "typescript": "^5.4.5",
-    "vscode-test": "^1.6.1"
+    "@vscode/test-electron": "^2.4.1"
   },
   "dependencies": {
-    "axios": "^1.7.3",
+    "axios": "^1.13.2",
     "dotenv": "^16.4.5"
   }
 }
