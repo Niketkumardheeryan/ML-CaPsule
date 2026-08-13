@@ -53,33 +53,33 @@ The dataset contains restaurant details across major Indian metro cities (Bengal
    - Multi-feature correlation matrix heatmap.
 5. **Insights Synthesis**: Formulate key findings and actionable business recommendations.
 
+## 📄 Unified Visualizations PDF
+
+All EDA visualization plots have been compiled into a single, high-resolution PDF document: **[Zomato_EDA_Report.pdf](Zomato_EDA_Report.pdf)**. This keeps the repository clean by removing loose PNG image files while providing a complete visual analysis document.
+
 ---
 
 ## 📈 Visualizations & Key Findings
 
+For the complete set of visual plots and charts, please refer to **[Zomato_EDA_Report.pdf](Zomato_EDA_Report.pdf)**.
+
 ### 1. Aggregate Rating Distribution
-![Rating Distribution](images/rating_distribution.png)
 - Ratings follow a unimodal distribution centered around **3.79**, with the majority of active establishments falling between **3.5 and 4.2**.
 
 ### 2. Pricing Tiers & Cost Distribution
-![Cost Distribution](images/cost_distribution.png)
 - **Mid-Range (400–800 INR)** and **Budget (Under 400 INR)** represent the highest volume of establishments, while **Luxury (>1500 INR)** venues exhibit high cost variance.
 
 ### 3. Cost vs. Rating Dynamics & Table Booking
-![Cost vs Rating](images/cost_vs_rating.png)
 - A positive correlation exists between higher average dining cost and higher customer ratings ($r \approx 0.40$), with **Table Booking** being overwhelmingly present in premium pricing tiers.
 
 ### 4. Online Delivery & Table Booking Impact
-![Delivery & Booking Impact](images/delivery_booking_impact.png)
 - Establishments offering **Online Delivery** maintain consistently higher average customer ratings.
 - Establishments offering **Table Booking** command significantly higher average cost per meal.
 
 ### 5. Top Offered Cuisines
-![Top Cuisines](images/top_cuisines.png)
 - **North Indian**, **South Indian**, **Fast Food**, and **Chinese** lead market penetration across metro cities.
 
 ### 6. Feature Correlation Heatmap
-![Correlation Heatmap](images/correlation_heatmap.png)
 - Strongest positive correlations exist between `Price_range` and `Average_Cost_for_two` ($r = 0.89$) as well as `Has_Table_booking_num` and `Average_Cost_for_two` ($r = 0.58$).
 
 ---
@@ -103,7 +103,7 @@ pip install -r requirements.txt
 ```bash
 python zomato_eda.py
 ```
-*This will perform data preprocessing, print summary statistics, and regenerate all high-resolution charts in the `images/` directory.*
+*This will perform data preprocessing, print summary statistics, and regenerate the high-resolution charts in the `Zomato_EDA_Report.pdf` report.*
 
 ### 3. Launch the Jupyter Notebook
 ```bash
