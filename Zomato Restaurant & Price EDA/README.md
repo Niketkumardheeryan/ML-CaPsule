@@ -13,6 +13,9 @@ The goal of this project is to perform comprehensive Exploratory Data Analysis (
 
 ## 📊 Dataset Overview
 
+- **Local Dataset**: [`zomato.csv`](zomato.csv)
+- **Dataset Link (Kaggle)**: [Zomato Restaurants Dataset on Kaggle](https://www.kaggle.com/datasets/shrutimehta/zomato-restaurants-data)
+
 The dataset contains restaurant details across major Indian metro cities (Bengaluru, Mumbai, New Delhi, Hyderabad, Pune, Chennai, Kolkata).
 
 | Feature | Type | Description |
