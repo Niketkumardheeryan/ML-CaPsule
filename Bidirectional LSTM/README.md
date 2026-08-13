@@ -62,13 +62,17 @@ pip install sklearn
 pip install keras
 ```
 
+#### NOTEBOOK
+
+[Temperature Prediction using Bidirectional LSTM Notebook](./temperature-prediction-using-bidirectional-lstm.ipynb)
+
 #### DATASET
 
-[](./Models/my_best_model.epoch05-loss0.00.hdf5)
+[Delhi Climate Dataset](./Dataset/testset.csv) - Available on Kaggle: [Daily Climate time series data in Delhi](https://www.kaggle.com/datasets/sumanthvrao/daily-climate-time-series-data)
 
 #### MODEL
 
-[](./Models/testset.csv)
+[Trained Keras Model](./Models/my_best_model.epoch05-loss0.00.hdf5)
 
 The model has a very high accuracy of 99.99928 % .
 
