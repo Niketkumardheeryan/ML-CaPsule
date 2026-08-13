@@ -637,6 +637,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Air_quality_prediction](Air_quality_prediction) | 🟡 Intermediate | 3-6 hours |
 | [Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms](Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms) | 🟠 Advanced | 6-12 hours |
 | [Alzheimer's Disease Predictor](Alzheimer's%20Disease%20Predictor) | 🟡 Intermediate | 3-6 hours |
+| [Amortized_Linear_Regression_Weights_Prediction](Amortized_Linear_Regression_Weights_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Analysis_&_predict_Black_friday_sale](Analysis_&_predict_Black_friday_sale) | 🟡 Intermediate | 3-6 hours |
 | [Animal_Cancer_Disease_Prediction](Animal_Cancer_Disease_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Animal_Detection_Alert_System](Animal_Detection_Alert_System) | 🟡 Intermediate | 3-6 hours |
