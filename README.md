@@ -690,7 +690,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Covid_Third_Wave_Forecasting](Covid_Third_Wave_Forecasting) | 🟡 Intermediate | 3-6 hours |
 | [Credit_Card_Fraud_Anomaly_Detection](Credit_Card_Fraud_Anomaly_Detection) | 🟡 Intermediate | 3-6 hours |
 | [Crime_Analytics](Crime_Analytics) | 🟡 Intermediate | 3-6 hours |
-| [Crop Recommendation System](Crop%20Recommendation%20System) | 🟡 Intermediate | 3-6 hours |
+| [Crop_Based_Project](Crop_Based_Project) | 🟡 Intermediate | 3-6 hours |
 | [CrowdAI Plant Disease](CrowdAI%20Plant%20Disease) | 🟡 Intermediate | 3-6 hours |
 | [Crude oil forecasting](Crude%20oil%20forecasting) | 🟡 Intermediate | 3-6 hours |
 | [Customer Segmentation using Machine Learning](Customer%20Segmentation%20using%20Machine%20Learning) | 🟡 Intermediate | 3-6 hours |
