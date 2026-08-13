@@ -509,6 +509,9 @@ ML-CaPsule/
 
 ## Frequently Asked Questions & Troubleshooting
 
+> For the full troubleshooting guide covering installation, environment setup, runtime errors, and git workflow issues, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
+
+
 <details>
 <summary><b>Q1: How do I choose which project to start with?</b></summary>
 
