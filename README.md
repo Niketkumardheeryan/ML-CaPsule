@@ -628,7 +628,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 
 | Project | Difficulty | Estimated Time |
 |---------|------------|----------------|
-| [.pytest_cache](.pytest_cache) | 🟡 Intermediate | 3-6 hours |
 | [Accent_Neutralizer_for_Speech](Accent_Neutralizer_for_Speech) | 🟡 Intermediate | 3-6 hours |
 | [Advanced Visualizations](Advanced%20Visualizations) | 🟢 Beginner | 1-3 hours |
 | [AI-Based QR Code Detection](AI-Based%20QR%20Code%20Detection) | 🟡 Intermediate | 3-6 hours |
@@ -645,7 +644,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [ANN_Energy_Consumption_Predictor](ANN_Energy_Consumption_Predictor) | 🟡 Intermediate | 3-6 hours |
 | [Anomaly Detection in Transactions using Deep Learning](Anomaly%20Detection%20in%20Transactions%20using%20Deep%20Learning) | 🟡 Intermediate | 3-6 hours |
 | [ANPR_PI](ANPR_PI) | 🟡 Intermediate | 3-6 hours |
-| [Artifical neural network from scratch](Artifical%20neural%20network%20from%20scratch) | 🟡 Intermediate | 3-6 hours |
 | [Artificial neural network from scratch](Artificial%20neural%20network%20from%20scratch) | 🟡 Intermediate | 3-6 hours |
 | [Association Rule Implementation](Association%20Rule%20Implementation) | 🟡 Intermediate | 3-6 hours |
 | [Attention_and_Transformers](Attention_and_Transformers) | 🟠 Advanced | 6-12 hours |
@@ -668,7 +666,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Bitcoin_Price_Prediction_Mobile_App](Bitcoin_Price_Prediction_Mobile_App) | 🟡 Intermediate | 3-6 hours |
 | [Brain Tumor Detection](Brain%20Tumor%20Detection) | 🟡 Intermediate | 3-6 hours |
 | [Breast Cancer Detection using DL with Webapp](Breast%20Cancer%20Detection%20using%20DL%20with%20Webapp) | 🟡 Intermediate | 3-6 hours |
-| [catboost_info](catboost_info) | 🟡 Intermediate | 3-6 hours |
 | [CBOW_PyTorch](CBOW_PyTorch) | 🟡 Intermediate | 3-6 hours |
 | [CBT_ChatBot](CBT_ChatBot) | 🟡 Intermediate | 3-6 hours |
 | [Chatbot Using RASA](Chatbot%20Using%20RASA) | 🟡 Intermediate | 3-6 hours |
@@ -682,7 +679,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Classification Algorithms](Classification%20Algorithms) | 🟡 Intermediate | 3-6 hours |
 | [Cloud Details](Cloud%20Details) | 🟡 Intermediate | 3-6 hours |
 | [Clustering Algorithms](Clustering%20Algorithms) | 🟡 Intermediate | 3-6 hours |
-| [Code Vulnerability Classifier](Code%20Vulnerability%20Classifier) | 🟡 Intermediate | 3-6 hours |
 | [Company Bankruptcy Using unsupervised](Company%20Bankruptcy%20Using%20unsupervised) | 🟡 Intermediate | 3-6 hours |
 | [Concept_Drift_Detection_and_Adaptive_Retraining_Pipeline](Concept_Drift_Detection_and_Adaptive_Retraining_Pipeline) | 🟡 Intermediate | 3-6 hours |
 | [Constellation_Classification](Constellation_Classification) | 🟡 Intermediate | 3-6 hours |
@@ -702,7 +698,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Customer_Review_Sentiment_Analyzer](Customer_Review_Sentiment_Analyzer) | 🟡 Intermediate | 3-6 hours |
 | [Cyberbullying Classification](Cyberbullying%20Classification) | 🟡 Intermediate | 3-6 hours |
 | [Dark Pattern Detection](Dark%20Pattern%20Detection) | 🟡 Intermediate | 3-6 hours |
-| [data](data) | 🟡 Intermediate | 3-6 hours |
 | [Data Cleaning Techniques](Data%20Cleaning%20Techniques) | 🟢 Beginner | 1-3 hours |
 | [Data Filling and Cleaning Techniques](Data%20Filling%20and%20Cleaning%20Techniques) | 🟢 Beginner | 1-3 hours |
 | [Dataset_Resources](Dataset_Resources) | 🟡 Intermediate | 3-6 hours |
@@ -797,6 +792,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Instagram Reach Prediction](Instagram%20Reach%20Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Intelligent Network Intrusion Detection System using Machine Learning](Intelligent%20Network%20Intrusion%20Detection%20System%20using%20Machine%20Learning) | 🟡 Intermediate | 3-6 hours |
 | [Interactive ML Algorithm Recommendation Guide for Beginners](Interactive%20ML%20Algorithm%20Recommendation%20Guide%20for%20Beginners) | 🟡 Intermediate | 3-6 hours |
+| [Internet_Speed_Prediction](Internet_Speed_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Internship Spam Detect](Internship%20Spam%20Detect) | 🟡 Intermediate | 3-6 hours |
 | [IPL Cricket Match Win Prediction](IPL%20Cricket%20Match%20Win%20Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Irrigation_Prediction](Irrigation_Prediction) | 🟡 Intermediate | 3-6 hours |
@@ -922,19 +918,16 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [TCS Stock Analysis](TCS%20Stock%20Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Tensorflow.js Demo](Tensorflow.js%20Demo) | 🟡 Intermediate | 3-6 hours |
 | [Terrain_Classificaton](Terrain_Classificaton) | 🟡 Intermediate | 3-6 hours |
-| [tests](tests) | 🟡 Intermediate | 3-6 hours |
 | [Text Summarization Model](Text%20Summarization%20Model) | 🟡 Intermediate | 3-6 hours |
 | [Theatre-audience-forecasting](Theatre-audience-forecasting) | 🟡 Intermediate | 3-6 hours |
 | [Time Series Forecasting with Python](Time%20Series%20Forecasting%20with%20Python) | 🟢 Beginner | 1-3 hours |
 | [Time-Series LSTM Model](Time-Series%20LSTM%20Model) | 🟡 Intermediate | 3-6 hours |
-| [Tiny_Council_Multi_Agent_AI_Decision_System](Tiny_Council_Multi_Agent_AI_Decision_System) | 🟡 Intermediate | 3-6 hours |
 | [Traffic Sign Recognition](Traffic%20Sign%20Recognition) | 🟡 Intermediate | 3-6 hours |
 | [Traffic_Demand_Prediction](Traffic_Demand_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Transfer Learning](Transfer%20Learning) | 🟡 Intermediate | 3-6 hours |
 | [TweetMiner_AI](TweetMiner_AI) | 🟡 Intermediate | 3-6 hours |
 | [Tweets Classification](Tweets%20Classification) | 🟡 Intermediate | 3-6 hours |
 | [Unique Chatbot](Unique%20Chatbot) | 🟡 Intermediate | 3-6 hours |
-| [utils](utils) | 🟡 Intermediate | 3-6 hours |
 | [Various Plots using Matplot,Seaborn,Pandas](Various%20Plots%20using%20Matplot,Seaborn,Pandas) | 🟢 Beginner | 1-3 hours |
 | [Vehicles and Pedestrian Detection](Vehicles%20and%20Pedestrian%20Detection) | 🟡 Intermediate | 3-6 hours |
 | [Virtual Drag and Drop Using OpenCV](Virtual%20Drag%20and%20Drop%20Using%20OpenCV) | 🟠 Advanced | 6-12 hours |
@@ -951,6 +944,5 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Wine_Quality_Prediction](Wine_Quality_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [XgBoost_Algorithm](XgBoost_Algorithm) | 🟡 Intermediate | 3-6 hours |
 | [Youtube Comment Analysis](Youtube%20Comment%20Analysis) | 🟡 Intermediate | 3-6 hours |
-| [Zomato Restaurant & Price EDA](Zomato%20Restaurant%20&%20Price%20EDA) | 🟢 Beginner | 1-3 hours |
 </details>
 <!-- Projects end -->
