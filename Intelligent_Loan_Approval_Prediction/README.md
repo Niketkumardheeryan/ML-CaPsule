@@ -18,6 +18,7 @@ The project compares multiple classification algorithms and uses preprocessing, 
 ## Dataset
 
 The project uses `loan-train.csv`.
+link: https://www.kaggle.com/datasets/dingxinlong/loan-data-setcsv
 
 ### Dataset Size
 
