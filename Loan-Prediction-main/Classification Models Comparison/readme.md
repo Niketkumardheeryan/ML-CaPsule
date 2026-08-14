@@ -119,6 +119,25 @@ The notebook produces:
 - Classification Report
 - Loan Approval Predictions
 
+## 📊 Model Comparison
+
+The implemented classification models are evaluated and compared using Accuracy, Precision, Recall, and F1-Score.
+
+| Model | Accuracy | Precision | Recall | F1-Score |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 83.00% | 74.03% | 80.28% | 77.03% |
+| K-Nearest Neighbors (KNN) | 69.00% | 57.89% | 46.48% | 51.56% |
+| Naive Bayes | 80.00% | 70.13% | 76.06% | 72.97% |
+
+### 📌 Best Performing Model
+
+Based on the current evaluation results, **Logistic Regression** provides the best overall performance among the three models, achieving:
+
+- **Accuracy:** 83.00%
+- **Precision:** 74.03%
+- **Recall:** 80.28%
+- **F1-Score:** 77.03%
+
 ---
 
 ## 📌 Project Structure
