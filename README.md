@@ -684,6 +684,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Classification Algorithms](Classification%20Algorithms) | 🟡 Intermediate | 3-6 hours |
 | [Cloud Details](Cloud%20Details) | 🟡 Intermediate | 3-6 hours |
 | [Clustering Algorithms](Clustering%20Algorithms) | 🟡 Intermediate | 3-6 hours |
+| [Code Vulnerability Classifier](Code%20Vulnerability%20Classifier) | 🟡 Intermediate | 3-6 hours |
 | [Company Bankruptcy Using unsupervised](Company%20Bankruptcy%20Using%20unsupervised) | 🟡 Intermediate | 3-6 hours |
 | [Concept_Drift_Detection_and_Adaptive_Retraining_Pipeline](Concept_Drift_Detection_and_Adaptive_Retraining_Pipeline) | 🟡 Intermediate | 3-6 hours |
 | [Constellation_Classification](Constellation_Classification) | 🟡 Intermediate | 3-6 hours |
@@ -761,6 +762,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Flight_delay_prediction_project](Flight_delay_prediction_project) | 🟡 Intermediate | 3-6 hours |
 | [Flood_Prediction models](Flood_Prediction%20models) | 🟡 Intermediate | 3-6 hours |
 | [Flower_classification_android_app](Flower_classification_android_app) | 🟡 Intermediate | 3-6 hours |
+| [Food_Delivery_Time_Prediction](Food_Delivery_Time_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Football_Analyser_using_YOLO](Football_Analyser_using_YOLO) | 🟠 Advanced | 6-12 hours |
 | [Foreign Exchange Rate Prediction](Foreign%20Exchange%20Rate%20Prediction) | 🟡 Intermediate | 3-6 hours |
 | [GDP Prediction](GDP%20Prediction) | 🟡 Intermediate | 3-6 hours |
