@@ -4,8 +4,6 @@
 
 This project performs **exploratory data analysis (EDA)** on smartphone battery-drain data. The goal is to understand how device usage, system-resource utilization, environmental/device conditions, and categorical usage factors are associated with **battery drain per hour**.
 
-This is an **analysis-only project**. It does not include a deployment, web application, FastAPI backend, or predictive-model deployment.
-
 ## Objective
 
 The main objective is to investigate patterns and relationships between:
@@ -55,11 +53,10 @@ The notebook follows these major steps:
 6. Generate descriptive statistics
 7. Analyze numerical-variable distributions
 8. Identify potential outliers using box plots
-9. Study correlations using a correlation heatmap
-10. Analyze relationships with `Battery_Drop_Per_Hour` using scatter plots
-11. Compare battery drain across categorical variables using box/count plots
-12. Use a pair plot for an overall view of numerical relationships
-13. Draw conclusions from the exploratory analysis
+9. Analyze relationships with `Battery_Drop_Per_Hour` using scatter plots
+10. Compare battery drain across categorical variables using box/count plots
+11. Use a pair plot for an overall view of numerical relationships
+12. Draw conclusions from the exploratory analysis
 
 ## Data Cleaning
 
@@ -75,41 +72,6 @@ The notebook removes rows containing missing values before continuing the analys
 This results in approximately **2,493 observations** being used for the subsequent analysis.
 
 Because the amount of missing data is very small relative to the original dataset, removing these records has limited impact on the overall dataset size.
-
-## Exploratory Data Analysis
-
-### Numerical Analysis
-
-The notebook examines the distributions and relationships of:
-
-- Screen-on time
-- CPU usage
-- Battery temperature
-- Battery drain per hour
-- Brightness
-- RAM usage
-
-The analysis uses:
-
-- Histograms
-- KDE plots
-- Box plots
-- Scatter plots
-- Correlation heatmap
-- Pair plot
-
-These visualizations help identify distributions, possible outliers, trends, and associations between variables.
-
-### Categorical Analysis
-
-Battery drain is also examined across:
-
-- Applications
-- Network types
-- Charging states
-- Usage modes
-
-Box plots are useful here because they allow comparison of the central tendency and spread of battery-drain values across categories.
 
 # Key Findings
 
@@ -138,27 +100,6 @@ The following findings are supported by the analysis performed in the notebook:
 
 8. **The analysis is exploratory rather than causal.**  
    Correlation and visualization can identify associations, but they cannot establish that one variable directly causes battery drain. More rigorous statistical testing or predictive modeling would be required for causal or predictive claims.
-
-## Important Interpretation Note
-
-The project should use terms such as **"associated with", "related to", or "shows a relationship with"** rather than claiming that a variable **"causes"** battery drain.
-
-For example:
-
-> Higher CPU usage is associated with battery drain.
-
-is more appropriate than:
-
-> Higher CPU usage causes battery drain.
-
-## Limitations
-
-- The project is based on exploratory analysis and does not establish causality.
-- Missing rows are removed rather than imputed.
-- Correlation alone does not measure statistical significance.
-- No predictive model is required because this project is focused on analysis.
-- The analysis does not control for all possible confounding factors.
-- Stronger conclusions would require statistical hypothesis testing and/or a predictive modeling stage.
 
 ## Technologies Used
 
@@ -199,10 +140,3 @@ jupyter notebook Battery_Drain_Analysis.ipynb
 
 You can also open the notebook directly in **JupyterLab** or **Google Colab**.
 
-## Conclusion
-
-The analysis provides an exploratory view of smartphone battery consumption by examining both numerical usage characteristics and categorical operating conditions. It highlights the importance of considering multiple factors when studying `Battery_Drop_Per_Hour`.
-
-The project successfully demonstrates a complete EDA workflow: data inspection, missing-value handling, descriptive analysis, visualization, correlation analysis, categorical comparison, and interpretation.
-
-Further work could extend this analysis with statistical significance tests or predictive modeling if required, but these are **not necessary for the current analysis-only project**.
