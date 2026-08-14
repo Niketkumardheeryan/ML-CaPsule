@@ -823,6 +823,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Mental_Health_Text_Analysis_&_Depression_Risk_Scorer](Mental_Health_Text_Analysis_&_Depression_Risk_Scorer) | 🟡 Intermediate | 3-6 hours |
 | [Meteorite Landing Data Analysis](Meteorite%20Landing%20Data%20Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Migraine Type Prediction](Migraine%20Type%20Prediction) | 🟡 Intermediate | 3-6 hours |
+| [Milk_Classification_Project](Milk_Classification_Project) | 🟡 Intermediate | 3-6 hours |
 | [MIXUP&CUTMIX-DASHBOARD](MIXUP&CUTMIX-DASHBOARD) | 🟡 Intermediate | 3-6 hours |
 | [ML_Capsule_Cross_Platform_App](ML_Capsule_Cross_Platform_App) | 🟡 Intermediate | 3-6 hours |
 | [MLOps-for-Beginners](MLOps-for-Beginners) | 🟡 Intermediate | 3-6 hours |
@@ -918,6 +919,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Statistical_modeling_python](Statistical_modeling_python) | 🟢 Beginner | 1-3 hours |
 | [Stock Price Analysis](Stock%20Price%20Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Student Placement Predictor](Student%20Placement%20Predictor) | 🟡 Intermediate | 3-6 hours |
+| [Student_Dropout_Prediction](Student_Dropout_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Sudoku Solver using CNN](Sudoku%20Solver%20using%20CNN) | 🟡 Intermediate | 3-6 hours |
 | [TCS Stock Analysis](TCS%20Stock%20Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Tensorflow.js Demo](Tensorflow.js%20Demo) | 🟡 Intermediate | 3-6 hours |
