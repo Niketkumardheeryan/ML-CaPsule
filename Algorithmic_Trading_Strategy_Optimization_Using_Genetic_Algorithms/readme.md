@@ -1,37 +1,55 @@
-# Algorithmic Trading Strategy Optimization Using Genetic Algorithms (Numba-JIT Accelerated)
+# Algorithmic Trading Strategy Optimization Using Genetic Algorithms
 
-## Objective
-Optimize algorithmic trading strategies using Genetic Algorithms (GA) with **Numba-JIT compiler acceleration**.
+A production-grade, extensible framework for evolving algorithmic trading strategies using **Real Parameter Evolution with Genetic Algorithms (GA)** embedded inside a self-contained Jupyter Notebook.
 
-## Description
-This project leverages Genetic Algorithms to discover optimal technical indicator decision thresholds (RSI, SMA ratios, MACD signal differentials) for long-only trading strategies. Core fitness evaluations and backtesting iterations are accelerated using **Numba JIT compilation** (`@njit(fastmath=True, parallel=True)`), converting heavy Python loops into C-level machine instructions for 300x-1000x computational speedup.
+---
 
-## Steps & Methodology
-1. **Data Preprocessing**: Compute technical indicators (RSI, SMA-20, SMA-50, MACD) on historical asset data.
-2. **Chromosome Encoding**: Represent trading strategies as 6 real-valued decision threshold genes.
-3. **Numba-JIT Fitness Evaluation**: Compute Sharpe Ratios and drawdown penalties at C-level speeds using raw NumPy array passing and parallel CPU multithreading.
-4. **GA Operators**: Apply Tournament Selection, BLX-α (Blend) Crossover, Gaussian Mutation, and 10% Elitism.
-5. **Generational Optimization**: Evolve population over 60-100 generations.
-6. **Out-of-Sample Backtesting**: Validate evolved strategies on a 70/30 train-test split against a Buy-and-Hold baseline.
+## Dataset Link
+- **Raw Market Dataset**: [trading_data.csv](https://raw.githubusercontent.com/Rakshak05/ML-CaPsule/master/Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms/trading_data.csv)
 
-## Requirements
-- Python 3.8+
-- NumPy
-- Pandas
-- Numba >= 0.58.0
-- Matplotlib
+---
 
-## Usage
-1. Open and execute `Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms (1).ipynb`.
-2. Review technical indicator calculations, Chromosome gene mappings, and JIT-compiled backtest functions.
-3. Run the **Numba-JIT Benchmark Cell** to observe 100-generation simulation speedups vs. native Python.
-4. Train the GA model on the 70% historical split and evaluate test performance.
+## Project Structure
+```text
+Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms/
+├── tests/
+│   └── test_ga_trading_strategy.py                        # Unit tests suite
+├── Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms.ipynb # Single executed codebase notebook
+├── GA_Trading_Strategy_Report.pdf                         # Comprehensive technical report
+└── readme.md                                              # Project documentation
+```
 
-## Benchmark Results
+---
 
-Testing over a **100-generation simulation pass** (80 individuals = 8,000 backtests) on financial market data:
+## Core Pipeline Components (Notebook)
 
-| Execution Engine | 100-Generation Time | Speedup Factor | Numerical Parity |
-| :--- | :--- | :--- | :--- |
-| Native Python Loops | ~4,170 - 16,890 ms | 1.0x (Baseline) | Exact |
-| **Numba-JIT (Parallel)** | **~12 - 15 ms** | **>300x - 1,000x** | **Exact** |
+1. **Data Ingestion & Indicator Computation**: Direct URL loading, OHLC integrity validation (`High >= max(Open, Close)` and `Low <= min(Open, Close)`), and derivation of `SMA`, `RSI`, and `MACD` indicators.
+2. **Strategy Chromosome Representation**: 9 numerical strategy parameters encoding indicator trigger thresholds (`RSI`, `SMA`, `MACD`) and risk management controls (`Stop-Loss` / `Take-Profit`).
+3. **Event-Driven Backtester**: Simulates trades with intra-trade Stop-Loss and Take-Profit exits, computing Total Return, Sharpe Ratio, Maximum Drawdown, Win Rate, and Profit Factor.
+4. **Genetic Algorithm Optimizer**: Evolves population parameters across generations using tournament selection, BLX-$\alpha$ crossover, bounded Gaussian mutation, and elitism.
+5. **Visual Evaluation & Dashboard**: Renders inline Matplotlib charts for GA fitness convergence, In-Sample & Out-of-Sample equity curves against Buy & Hold benchmarks, and performance metric bar charts.
+
+---
+
+## Quick Start
+
+### Installation
+Ensure required libraries are installed:
+```bash
+pip install numpy pandas matplotlib jupyter
+```
+
+### Running the Notebook
+Open and execute all cells in Jupyter Notebook or JupyterLab:
+```bash
+jupyter notebook Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms/Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms.ipynb
+```
+
+---
+
+## Unit Tests
+
+Run the test suite inside the project directory:
+```bash
+python -m unittest Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms/tests/test_ga_trading_strategy.py
+```
