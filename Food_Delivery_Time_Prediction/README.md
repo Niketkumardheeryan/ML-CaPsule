@@ -37,15 +37,6 @@ The dataset contains delivery-related features including:
 - **RMSE:** Root Mean Squared Error — lower is better.
 - **R² Score:** Proportion of target variation explained by the model — higher is better.
 
-## Visualizations
-The notebook includes relevant EDA and model visualizations such as:
-- Delivery-time distribution
-- Feature vs. delivery-time plots
-- Correlation analysis
-- Model performance comparison
-- Actual vs. predicted values
-- Feature importance
-
 ## Workflow
 ```text
 Data Loading
@@ -84,16 +75,6 @@ jupyter notebook Food_Delivery_Time_Prediction.ipynb
 
 ## Note on Outliers
 Because `Delivery_Time_min` is the target variable, extreme values should be inspected before being removed or capped. Genuine long delivery times may be valid observations.
-
-## Project Structure
-```text
-Food-Delivery-Time-Prediction/
-├── Food_Delivery_Time_Prediction.ipynb
-├── README.md
-├── requirements.txt
-└── dataset/
-    └── food_delivery.csv
-```
 
 ## Expected Outcome
 The project provides an end-to-end, beginner-friendly regression workflow for predicting food delivery time and comparing different machine learning models.
