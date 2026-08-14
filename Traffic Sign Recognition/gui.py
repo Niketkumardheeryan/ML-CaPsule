@@ -95,8 +95,8 @@ def upload_image():
         sign_image.image = im
         label.configure(text='')
         show_classify_button(file_path)
-    except:
-        pass
+    except Exception as e:
+        print(f"Error uploading image '{file_path}': {e}")
 
 
 upload = Button(top, text="Upload an image", command=upload_image, padx=10, pady=5)

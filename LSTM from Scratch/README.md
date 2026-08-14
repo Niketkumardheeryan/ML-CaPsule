@@ -22,11 +22,13 @@ pip install matplotlib
 
 #### DATASET
 
-[Link to Dataset](https://www.kaggle.com/datasets/kaggle/us-baby-names?select=NationalNames.csv)
+- **Dataset**: US Baby Names Dataset
+- **Download**: [Link to Dataset on Kaggle](https://www.kaggle.com/datasets/kaggle/us-baby-names?select=NationalNames.csv)
 
 #### MODEL
 
-The model has an accuracy of 84 % .
+- **Model Weights**: [best_lstm_scratch_weights.npz](./Models/best_lstm_scratch_weights.npz)
+- **Performance**: The model achieves an accuracy of ~84%.
 
 ## References
 

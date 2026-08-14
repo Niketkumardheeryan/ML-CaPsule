@@ -1,43 +1,24 @@
-# Heart Predection
+# Heart Prediction
 
-This project aims to Find a model with good accuracy to identify if a person has a Heart disease or not. 
+This project aims to build a machine learning model to identify whether a person is likely to have heart disease.
 
-In the model Data Analysis has also been performed
+The project also includes data analysis and visualization to understand the dataset and evaluate the model.
 
+## Dataset
 
-### Dataset
+The dataset used for this project can be downloaded from [Kaggle](https://www.kaggle.com/datasets/ronitf/heart-disease-uci).
 
-Dataset used can be dowloaded from [here](https://www.kaggle.com/datasets/ronitf/heart-disease-uci) 
-<br>
-
-
-## Setup instructions
-<br>
+## Setup Instructions
 
 ### Prerequisites
-Experience with jupyter notebook or google colab.
 
-Knowledge of following is recomended:
+- Python 3.8 or later
+- Jupyter Notebook or Google Colab
+- Basic knowledge of Python and Jupyter Notebook
 
-pandas
+### Installation
 
-matplotlib
+Install the required dependencies using:
 
-### Steps followed
-
-Step 1. Data Preprocessing.
-
-Step 2. Data visualization of data.
-
-Step 3. Standardisation.
-
-Step 4. Applying different models.
-
-### Conclusion
-
-* Logistic regression gives the best accuray that is 85%.
-
-## Author
-
-[A.S.L.Manasa](https://github.com/ASLManasa)
-
+```bash
+pip install -r requirements.txt

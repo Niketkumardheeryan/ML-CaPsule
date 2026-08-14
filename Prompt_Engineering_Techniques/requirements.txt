@@ -1,0 +1,5 @@
+groq
+IPython
+ipywidgets
+matplotlib
+pandas

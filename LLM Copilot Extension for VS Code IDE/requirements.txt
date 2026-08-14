@@ -1,0 +1,2 @@
+# No Python dependencies.
+# This project is a VS Code extension; runtime dependencies are managed in package.json.

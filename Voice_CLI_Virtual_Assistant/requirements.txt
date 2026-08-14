@@ -1,0 +1,8 @@
+pyttsx3>=2.90
+SpeechRecognition>=3.10.0
+wikipedia>=1.4.0
+requests>=2.28.0
+pyautogui>=0.9.54
+psutil>=5.9.0
+pyperclip>=1.8.2
+pytest>=7.0.0

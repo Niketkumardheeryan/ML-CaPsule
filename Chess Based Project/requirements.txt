@@ -1,0 +1,17 @@
+dotenv
+google
+matplotlib
+numpy
+opencv-python
+pandas
+pillow
+pyyaml
+requests
+roboflow
+scikit-learn
+seaborn
+streamlit
+tensorflow
+torch
+tqdm
+ultralytics

@@ -1,0 +1,8 @@
+matplotlib
+numpy
+pandas
+pytorch_tabular
+scikit-learn
+seaborn
+tensorflow
+xgboost

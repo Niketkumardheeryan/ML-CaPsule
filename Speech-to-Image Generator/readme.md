@@ -11,9 +11,10 @@ This Streamlit application allows users to convert spoken words or text input in
 
 ## Features
 
-- **Speech Recognition**: Uses the microphone to capture spoken input and convert it into text.
-- **Text Input**: Users can also type in the text if they prefer not to use speech.
-- **Image Generation**: The app uses the Stable Diffusion model to generate images based on the text or speech input.
+- **Speech Recognition with Ambient Noise Calibration**: Uses the microphone to capture spoken input, with configurable ambient noise calibration, energy sensitivity, timeout, and phrase limits for noisy environments.
+- **Editable Prompt Workflow**: Captured speech seamlessly populates an editable text prompt, allowing users to review and adjust the text before generating images.
+- **Text Input**: Users can also type in the text manually if preferred.
+- **Image Generation**: Generates high-quality images from prompts using the Stable Diffusion model.
 
 ## Requirements
 
@@ -46,8 +47,9 @@ See the `requirements.txt` file for more details.
 
 ## Usage
 
-- **Speech Input**: Click the button to start listening for speech input, and the application will convert it to text and generate an image based on the recognized text.
-- **Text Input**: Alternatively, you can type in a description to generate an image.
+- **Speech Recognition Settings**: Adjust ambient noise calibration duration, sensitivity factor, timeout, and phrase limit in the sidebar for optimal performance in noisy environments.
+- **Speech Input**: Click "🎙️ Recognize Speech", remain quiet during initial background noise calibration, and speak your prompt.
+- **Edit & Generate**: Review or edit the recognized text in the prompt field, then click "🎨 Generate Image" to produce the image with Stable Diffusion.
 
 ## Demo Video/Image 
 

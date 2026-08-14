@@ -1,0 +1,8 @@
+h5py
+lightgbm
+matplotlib
+nltk
+numpy
+scikit-learn
+scipy
+visualization
