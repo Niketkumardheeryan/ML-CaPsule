@@ -17,6 +17,7 @@ EXCLUDED_NAMES = {
     "LICENSE",
     ".gitignore",
     ".DS_Store",
+    ".pytest_cache",
     "ROADMAP.md",
     "img",
     "ml img.jpg",

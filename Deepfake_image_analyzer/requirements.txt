@@ -1,0 +1,6 @@
+google
+joblib
+numpy
+pillow
+scikit-learn
+tensorflow

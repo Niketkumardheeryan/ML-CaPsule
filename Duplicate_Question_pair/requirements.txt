@@ -1,0 +1,13 @@
+beautifulsoup4
+distance
+fuzzywuzzy
+helper
+matplotlib
+nltk
+numpy
+pandas
+plotly
+scikit-learn
+seaborn
+streamlit
+xgboost

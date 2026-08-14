@@ -1,0 +1,15 @@
+catboost
+google
+imageio
+IPython
+keras
+lightgbm
+matplotlib
+mlxtend
+numpy
+pandas
+plotly
+scikit-learn
+seaborn
+streamlit
+tensorflow

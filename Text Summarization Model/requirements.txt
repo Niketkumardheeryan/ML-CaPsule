@@ -1,0 +1,3 @@
+networkx
+nltk
+numpy

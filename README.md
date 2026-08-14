@@ -413,6 +413,7 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 | TweetMiner AI | NLP | Beginner | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/TweetMiner_AI) |
 | Intelligent Network Intrusion Detection System | ML | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Intelligent%20Network%20Intrusion%20Detection%20System%20using%20Machine%20Learning) |
 | Mental Health Risk Scorer | NLP & Transformers | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Mental_Health_Text_Analysis_%26_Depression_Risk_Scorer) |
+| Code Vulnerability Classifier | ML & Transformers | Advanced | [View →](https://github.com/Niketkumardheeryan/ML-CaPsule/tree/master/Code%20Vulnerability%20Classifier) |
 
 </details>
 
@@ -511,6 +512,9 @@ ML-CaPsule/
 ---
 
 ## Frequently Asked Questions & Troubleshooting
+
+> For the full troubleshooting guide covering installation, environment setup, runtime errors, and git workflow issues, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md).
+
 
 <details>
 <summary><b>Q1: How do I choose which project to start with?</b></summary>
@@ -637,6 +641,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Air_quality_prediction](Air_quality_prediction) | 🟡 Intermediate | 3-6 hours |
 | [Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms](Algorithmic_Trading_Strategy_Optimization_Using_Genetic_Algorithms) | 🟠 Advanced | 6-12 hours |
 | [Alzheimer's Disease Predictor](Alzheimer's%20Disease%20Predictor) | 🟡 Intermediate | 3-6 hours |
+| [Amortized_Linear_Regression_Weights_Prediction](Amortized_Linear_Regression_Weights_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Analysis_&_predict_Black_friday_sale](Analysis_&_predict_Black_friday_sale) | 🟡 Intermediate | 3-6 hours |
 | [Animal_Cancer_Disease_Prediction](Animal_Cancer_Disease_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Animal_Detection_Alert_System](Animal_Detection_Alert_System) | 🟡 Intermediate | 3-6 hours |
@@ -690,7 +695,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Covid_Third_Wave_Forecasting](Covid_Third_Wave_Forecasting) | 🟡 Intermediate | 3-6 hours |
 | [Credit_Card_Fraud_Anomaly_Detection](Credit_Card_Fraud_Anomaly_Detection) | 🟡 Intermediate | 3-6 hours |
 | [Crime_Analytics](Crime_Analytics) | 🟡 Intermediate | 3-6 hours |
-| [Crop Recommendation System](Crop%20Recommendation%20System) | 🟡 Intermediate | 3-6 hours |
+| [Crop_Based_Project](Crop_Based_Project) | 🟡 Intermediate | 3-6 hours |
 | [CrowdAI Plant Disease](CrowdAI%20Plant%20Disease) | 🟡 Intermediate | 3-6 hours |
 | [Crude oil forecasting](Crude%20oil%20forecasting) | 🟡 Intermediate | 3-6 hours |
 | [Customer Segmentation using Machine Learning](Customer%20Segmentation%20using%20Machine%20Learning) | 🟡 Intermediate | 3-6 hours |
@@ -792,6 +797,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Instagram Reach Prediction](Instagram%20Reach%20Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Intelligent Network Intrusion Detection System using Machine Learning](Intelligent%20Network%20Intrusion%20Detection%20System%20using%20Machine%20Learning) | 🟡 Intermediate | 3-6 hours |
 | [Interactive ML Algorithm Recommendation Guide for Beginners](Interactive%20ML%20Algorithm%20Recommendation%20Guide%20for%20Beginners) | 🟡 Intermediate | 3-6 hours |
+| [Internet_Speed_Prediction](Internet_Speed_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Internship Spam Detect](Internship%20Spam%20Detect) | 🟡 Intermediate | 3-6 hours |
 | [IPL Cricket Match Win Prediction](IPL%20Cricket%20Match%20Win%20Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Irrigation_Prediction](Irrigation_Prediction) | 🟡 Intermediate | 3-6 hours |
@@ -818,6 +824,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Mental_Health_Text_Analysis_&_Depression_Risk_Scorer](Mental_Health_Text_Analysis_&_Depression_Risk_Scorer) | 🟡 Intermediate | 3-6 hours |
 | [Meteorite Landing Data Analysis](Meteorite%20Landing%20Data%20Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Migraine Type Prediction](Migraine%20Type%20Prediction) | 🟡 Intermediate | 3-6 hours |
+| [Milk_Classification_Project](Milk_Classification_Project) | 🟡 Intermediate | 3-6 hours |
 | [MIXUP&CUTMIX-DASHBOARD](MIXUP&CUTMIX-DASHBOARD) | 🟡 Intermediate | 3-6 hours |
 | [ML_Capsule_Cross_Platform_App](ML_Capsule_Cross_Platform_App) | 🟡 Intermediate | 3-6 hours |
 | [MLOps-for-Beginners](MLOps-for-Beginners) | 🟡 Intermediate | 3-6 hours |
@@ -913,6 +920,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Statistical_modeling_python](Statistical_modeling_python) | 🟢 Beginner | 1-3 hours |
 | [Stock Price Analysis](Stock%20Price%20Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Student Placement Predictor](Student%20Placement%20Predictor) | 🟡 Intermediate | 3-6 hours |
+| [Student_Dropout_Prediction](Student_Dropout_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Sudoku Solver using CNN](Sudoku%20Solver%20using%20CNN) | 🟡 Intermediate | 3-6 hours |
 | [TCS Stock Analysis](TCS%20Stock%20Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Tensorflow.js Demo](Tensorflow.js%20Demo) | 🟡 Intermediate | 3-6 hours |
@@ -930,6 +938,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Various Plots using Matplot,Seaborn,Pandas](Various%20Plots%20using%20Matplot,Seaborn,Pandas) | 🟢 Beginner | 1-3 hours |
 | [Vehicles and Pedestrian Detection](Vehicles%20and%20Pedestrian%20Detection) | 🟡 Intermediate | 3-6 hours |
 | [Virtual Drag and Drop Using OpenCV](Virtual%20Drag%20and%20Drop%20Using%20OpenCV) | 🟠 Advanced | 6-12 hours |
+| [Voice_CLI_Virtual_Assistant](Voice_CLI_Virtual_Assistant) | 🟡 Intermediate | 3-6 hours |
 | [Waste Management through Reinforcement Learning](Waste%20Management%20through%20Reinforcement%20Learning) | 🟠 Advanced | 6-12 hours |
 | [WEAPON-DETECTION-SYSTEM](WEAPON-DETECTION-SYSTEM) | 🟡 Intermediate | 3-6 hours |
 | [Weather Prediction](Weather%20Prediction) | 🟡 Intermediate | 3-6 hours |
@@ -942,5 +951,6 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Wine_Quality_Prediction](Wine_Quality_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [XgBoost_Algorithm](XgBoost_Algorithm) | 🟡 Intermediate | 3-6 hours |
 | [Youtube Comment Analysis](Youtube%20Comment%20Analysis) | 🟡 Intermediate | 3-6 hours |
+| [Zomato Restaurant & Price EDA](Zomato%20Restaurant%20&%20Price%20EDA) | 🟢 Beginner | 1-3 hours |
 </details>
 <!-- Projects end -->

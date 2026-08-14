@@ -1,0 +1,6 @@
+flask
+google
+langextract
+numpy
+pandas
+scikit-learn

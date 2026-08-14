@@ -1,0 +1,6 @@
+kagglehub
+keras_tuner
+matplotlib
+numpy
+pandas
+tensorflow

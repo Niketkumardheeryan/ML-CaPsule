@@ -1,0 +1,6 @@
+gradio
+matplotlib
+pillow
+requests
+torch
+torchvision

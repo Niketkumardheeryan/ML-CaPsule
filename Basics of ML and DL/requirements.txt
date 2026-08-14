@@ -1,0 +1,16 @@
+datasets
+gdown
+gymnasium
+keras
+kneed
+matplotlib
+nltk
+numpy
+pandas
+pymongo
+scikit-learn
+scipy
+seaborn
+tensorflow
+torch
+torchvision

@@ -1,0 +1,8 @@
+clusteval
+kneed
+matplotlib
+numpy
+pandas
+scikit-learn
+scipy
+seaborn
