@@ -91,7 +91,15 @@ Training and evaluating multiple regression models:
 - **Decision Tree Regressor**: Non-linear patterns
 - **Random Forest Regressor**: Ensemble learning
 - **Gradient Boosting**: XGBoost/LightGBM for optimal performance
-- **Support Vector Regression (SVR)**: Kernel-based approach
+
+## 🏆 Best Model
+
+After comparing all the regression models, **XGBoost Regressor** achieved the best performance.
+
+- **Best Model:** XGBoost Regressor
+- **R² Score:** **88.17%**
+
+An R² score of **88.17%** indicates that the XGBoost model explains approximately **88.17% of the variation in annual medical costs**, making it the best-performing model among the algorithms evaluated.
 
 ### 6. Model Evaluation
 - Cross-validation for generalization
