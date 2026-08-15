@@ -663,6 +663,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Basics of ML and DL](Basics%20of%20ML%20and%20DL) | 🟢 Beginner | 1-3 hours |
 | [Basics of Power Bi](Basics%20of%20Power%20Bi) | 🟢 Beginner | 1-3 hours |
 | [Basics of the Python](Basics%20of%20the%20Python) | 🟢 Beginner | 1-3 hours |
+| [Battery_Drain_Analysis](Battery_Drain_Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Bidirectional LSTM](Bidirectional%20LSTM) | 🟡 Intermediate | 3-6 hours |
 | [Bike Price Prediction](Bike%20Price%20Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Bird Species Classification Web App](Bird%20Species%20Classification%20Web%20App) | 🟡 Intermediate | 3-6 hours |
