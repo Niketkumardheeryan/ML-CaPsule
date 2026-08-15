@@ -727,6 +727,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [E-Waste_Impact_Calculator_Recycling_Locator](E-Waste_Impact_Calculator_Recycling_Locator) | 🟡 Intermediate | 3-6 hours |
 | [EDA StackOverflow Survey 2023](EDA%20StackOverflow%20Survey%202023) | 🟢 Beginner | 1-3 hours |
 | [EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main](EDA-and-Perform-Modelling-on-Ionosphere-Dataset-main) | 🟢 Beginner | 1-3 hours |
+| [Electric_Vehicle_Price_Prediction](Electric_Vehicle_Price_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Email Classifier](Email%20Classifier) | 🟡 Intermediate | 3-6 hours |
 | [Email_Intent_Classification_DistilBERT](Email_Intent_Classification_DistilBERT) | 🟡 Intermediate | 3-6 hours |
 | [Emotion Recognition Based on NLP](Emotion%20Recognition%20Based%20on%20NLP) | 🟡 Intermediate | 3-6 hours |
@@ -924,6 +925,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Student Placement Predictor](Student%20Placement%20Predictor) | 🟡 Intermediate | 3-6 hours |
 | [Student_Dropout_Prediction](Student_Dropout_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Sudoku Solver using CNN](Sudoku%20Solver%20using%20CNN) | 🟡 Intermediate | 3-6 hours |
+| [Taxi_Trip_Price_Prediction](Taxi_Trip_Price_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [TCS Stock Analysis](TCS%20Stock%20Analysis) | 🟡 Intermediate | 3-6 hours |
 | [Tensorflow.js Demo](Tensorflow.js%20Demo) | 🟡 Intermediate | 3-6 hours |
 | [Terrain_Classificaton](Terrain_Classificaton) | 🟡 Intermediate | 3-6 hours |
