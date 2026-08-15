@@ -1,5 +1,8 @@
 # Taxi Trip Price Prediction
 
+## Dataset
+https://gist.githubusercontent.com/anu-006/8ee05be0720e06ea7bc55002f56fb409/raw/82db807b5287a09283a9d64ba4db09c248643afc/taxi_trip_pricing.csv 
+
 ## Project Overview
 
 This project uses Machine Learning to predict taxi trip prices based on trip-related features such as distance, passenger count, fare rates, trip duration, time of day, traffic conditions, and weather.
