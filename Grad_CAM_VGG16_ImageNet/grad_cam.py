@@ -212,6 +212,9 @@ transform = transforms.Compose([
     transforms.Normalize(mean=IMAGENET_MEAN, std=IMAGENET_STD)
 ])
 
+import os
+import glob
+
 def preprocess_image(image_path):
     """Load and preprocess image for Grad-CAM"""
 
@@ -223,6 +226,19 @@ def preprocess_image(image_path):
         response.raise_for_status() # Raise an exception for bad status codes
         img = Image.open(BytesIO(response.content)).convert('RGB')
     else:
+        if not os.path.exists(image_path):
+            filename = os.path.basename(image_path)
+            synset = os.path.basename(os.path.dirname(image_path))
+            found_paths = (
+                glob.glob(f"/content/data/**/{synset}/*.JPEG", recursive=True) +
+                glob.glob(f"/content/data/**/{synset}/*.jpg", recursive=True) +
+                glob.glob(f"/content/data/**/{filename}", recursive=True) +
+                glob.glob(f"./**/{filename}", recursive=True)
+            )
+            if found_paths:
+                image_path = found_paths[0]
+            else:
+                raise FileNotFoundError(f"Image file not found: {image_path}. Please verify dataset extraction path or provide a valid URL/file path.")
         img = Image.open(image_path).convert('RGB')
 
     # Original image for visualization
@@ -332,15 +348,36 @@ def run_gradcam(image_path, target_class=None):
     return cam, target_class
 
 
-# Test with sample images from the downloaded ImageNet mini dataset
-# Using local paths to avoid rate-limiting from external URLs
-test_image_paths = [
-    "/content/data/imagenet-mini/train/n02099712/n02099712_1000.JPEG", # Labrador retriever
-    "/content/data/imagenet-mini/train/n02123597/n02123597_1000.JPEG", # Siamese cat
-    "/content/data/imagenet-mini/train/n02504458/n02504458_1000.JPEG", # African elephant
+# Helper to dynamically find local sample image path or fallback to URL
+def get_valid_image_path(synset_id, sample_filename, fallback_url):
+    direct_paths = [
+        f"/content/data/imagenet-mini/train/{synset_id}/{sample_filename}",
+        f"/content/data/imagenet-mini/val/{synset_id}/{sample_filename}",
+        f"/content/data/imagenet-mini/imagenet-mini/train/{synset_id}/{sample_filename}",
+        f"/content/data/imagenet-mini/imagenet-mini/val/{synset_id}/{sample_filename}",
+    ]
+    for p in direct_paths:
+        if os.path.exists(p):
+            return p
+
+    synset_matches = (
+        glob.glob(f"/content/data/**/{synset_id}/*.JPEG", recursive=True) +
+        glob.glob(f"/content/data/**/{synset_id}/*.jpg", recursive=True)
+    )
+    if synset_matches:
+        return synset_matches[0]
+
+    return fallback_url
+
+test_image_candidates = [
+    ("n02099712", "n02099712_1000.JPEG", "https://upload.wikimedia.org/wikipedia/commons/3/34/Labrador_on_Quantock_%282175262184%29.jpg"), # Labrador retriever
+    ("n02123597", "n02123597_1000.JPEG", "https://upload.wikimedia.org/wikipedia/commons/2/25/Siam_lilacpoint.jpg"), # Siamese cat
+    ("n02504458", "n02504458_1000.JPEG", "https://upload.wikimedia.org/wikipedia/commons/b/bf/African_Elephant_%28Loxodonta_africana%29_male_%2817289351322%29.jpg"), # African elephant
 ]
 
-print("Running Grad-CAM for downloaded images:")
+test_image_paths = [get_valid_image_path(synset, fname, url) for synset, fname, url in test_image_candidates]
+
+print("Running Grad-CAM for test images:")
 for img_path in test_image_paths:
     run_gradcam(img_path)
     print("\n")
