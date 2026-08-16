@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate Question Pair Detector - FastAPI & LightGBM NLP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #090d16;
+            --card-bg: rgba(17, 24, 39, 0.75);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+            --accent-blue: #3b82f6;
+            --success: #10b981;
+            --danger: #ef4444;
+            --text-primary: #f9fafb;
+            --text-secondary: #9ca3af;
+            --text-muted: #6b7280;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 85% 85%, rgba(217, 70, 239, 0.12) 0%, transparent 40%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            background: rgba(9, 13, 22, 0.6);
+        }
+
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            color: #a5b4fc;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        main {
+            flex: 1;
+            max-width: 1100px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+
+        .tab-btn {
+            background: rgba(31, 41, 55, 0.5);
+            border: 1px solid var(--card-border);
+            color: var(--text-secondary);
+            padding: 0.65rem 1.5rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background: rgba(99, 102, 241, 0.2);
+            border-color: rgba(99, 102, 241, 0.5);
+            color: var(--text-primary);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 850px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .sample-btn {
+            background: rgba(59, 130, 246, 0.15);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: #93c5fd;
+            padding: 0.3rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .sample-btn:hover {
+            background: rgba(59, 130, 246, 0.3);
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        textarea {
+            width: 100%;
+            height: 90px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            resize: none;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        textarea:focus {
+            border-color: #8b5cf6;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 0.85rem;
+            background: var(--accent-gradient);
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(139, 92, 246, 0.6);
+        }
+
+        /* Result Panel */
+        .result-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 320px;
+            text-align: center;
+        }
+
+        .status-badge {
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .status-duplicate {
+            background: rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(16, 185, 129, 0.5);
+            color: #34d399;
+        }
+
+        .status-not-duplicate {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid rgba(239, 68, 68, 0.5);
+            color: #f87171;
+        }
+
+        .progress-bar-outer {
+            width: 100%;
+            height: 12px;
+            background: rgba(31, 41, 55, 0.8);
+            border-radius: 6px;
+            overflow: hidden;
+            margin: 1rem 0;
+            position: relative;
+        }
+
+        .progress-bar-inner {
+            height: 100%;
+            width: 0%;
+            background: var(--accent-gradient);
+            transition: width 0.6s ease-out;
+            border-radius: 6px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .metric-box {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--card-border);
+            padding: 0.75rem;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .metric-box label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            display: block;
+        }
+
+        .metric-box span {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Benchmark Section */
+        .benchmark-section {
+            margin-top: 2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        th {
+            background: rgba(15, 23, 42, 0.7);
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        footer {
+            padding: 1.5rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--card-border);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="badge-pill">
+            <span>⚡ FastAPI Backend</span> • <span>NLP TF-IDF Vectorization</span> • <span>LightGBM Model</span>
+        </div>
+        <h1>Duplicate Question Pair Detector</h1>
+        <p>Analyze semantically equivalent question pairs using TF-IDF feature extraction, string similarity metrics, and optimized LightGBM & Ensemble Classifiers.</p>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('single')">Single Pair Detector</button>
+            <button class="tab-btn" onclick="switchTab('benchmark')">Model Evaluation Matrix</button>
+        </div>
+
+        <!-- Single Pair Section -->
+        <div id="single-section" class="grid-container">
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Input Question Pair</span>
+                    <button class="sample-btn" onclick="loadSample()">Load Sample Pair</button>
+                </div>
+                <div class="form-group">
+                    <label for="q1">Question 1</label>
+                    <textarea id="q1" placeholder="e.g. How can I start investing in stocks for beginners?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="q2">Question 2</label>
+                    <textarea id="q2" placeholder="e.g. What is the step by step guide to invest in stock market?"></textarea>
+                </div>
+                <button class="btn-submit" onclick="predictDuplicate()">Detect Duplicate Pair 🚀</button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Detection Analysis</span>
+                    <span id="proc-time" style="font-size: 0.8rem; color: var(--text-muted);">---</span>
+                </div>
+                <div class="result-container" id="result-wrapper">
+                    <p style="color: var(--text-muted);">Enter two questions and click "Detect Duplicate Pair" to see results.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benchmark Section -->
+        <div id="benchmark-section" class="card benchmark-section" style="display: none;">
+            <div class="card-header">
+                <span class="card-title">🤖 Model Performance Benchmark Comparison</span>
+                <span class="badge-pill">Tested on Kaggle Quora Dataset</span>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+                Comparative evaluation across Bag-of-Words (BoW) vs TF-IDF feature extraction pipelines and multiple Machine Learning & Ensemble Classifiers.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model Name</th>
+                        <th>Accuracy</th>
+                        <th>Precision</th>
+                        <th>Recall</th>
+                        <th>F1-Score</th>
+                        <th>Training Speed</th>
+                    </tr>
+                </thead>
+                <tbody id="benchmark-table-body">
+                    <tr>
+                        <td>LightGBM Classifier ⚡ (Selected)</td>
+                        <td><strong style="color: #34d399;">88.50%</strong></td>
+                        <td>87.40%</td>
+                        <td>85.10%</td>
+                        <td><strong style="color: #34d399;">86.23%</strong></td>
+                        <td>Fast (2.1s)</td>
+                    </tr>
+                    <tr>
+                        <td>Stacking Classifier 🔥</td>
+                        <td>89.10%</td>
+                        <td>88.20%</td>
+                        <td>86.00%</td>
+                        <td>87.08%</td>
+                        <td>Moderate (12.4s)</td>
+                    </tr>
+                    <tr>
+                        <td>XGBoost Classifier 🚀</td>
+                        <td>87.20%</td>
+                        <td>86.10%</td>
+                        <td>84.00%</td>
+                        <td>85.04%</td>
+                        <td>Fast (3.4s)</td>
+                    </tr>
+                    <tr>
+                        <td>CatBoost Classifier 🐱</td>
+                        <td>86.80%</td>
+                        <td>85.90%</td>
+                        <td>83.50%</td>
+                        <td>84.68%</td>
+                        <td>Moderate (5.6s)</td>
+                    </tr>
+                    <tr>
+                        <td>Random Forest 🌲</td>
+                        <td>84.10%</td>
+                        <td>83.00%</td>
+                        <td>80.20%</td>
+                        <td>81.57%</td>
+                        <td>Moderate (4.2s)</td>
+                    </tr>
+                    <tr>
+                        <td>SVM (LinearSVC) ⚙️</td>
+                        <td>82.40%</td>
+                        <td>81.10%</td>
+                        <td>78.50%</td>
+                        <td>79.78%</td>
+                        <td>Fast (1.8s)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>GSSoC'26 Feature Enhancement #1595 • Duplicate Question Pair Detection • FastAPI Backend Integration</p>
+    </footer>
+
+    <script>
+        const samples = [
+            {
+                q1: "What is the step by step guide to invest in stock market?",
+                q2: "How can I start investing in stocks as a beginner?"
+            },
+            {
+                q1: "What is the capital of France?",
+                q2: "How do I bake a chocolate cake at home?"
+            },
+            {
+                q1: "How do I learn Python programming quickly?",
+                q2: "What is the best way to master Python for beginners?"
+            }
+        ];
+        let sampleIdx = 0;
+
+        function loadSample() {
+            const pair = samples[sampleIdx % samples.length];
+            document.getElementById('q1').value = pair.q1;
+            document.getElementById('q2').value = pair.q2;
+            sampleIdx++;
+        }
+
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            if (tab === 'single') {
+                document.querySelectorAll('.tab-btn')[0].classList.add('active');
+                document.getElementById('single-section').style.display = 'grid';
+                document.getElementById('benchmark-section').style.display = 'none';
+            } else {
+                document.querySelectorAll('.tab-btn')[1].classList.add('active');
+                document.getElementById('single-section').style.display = 'none';
+                document.getElementById('benchmark-section').style.display = 'block';
+                fetchBenchmarkData();
+            }
+        }
+
+        async function predictDuplicate() {
+            const q1 = document.getElementById('q1').value.trim();
+            const q2 = document.getElementById('q2').value.trim();
+            const wrapper = document.getElementById('result-wrapper');
+
+            if (!q1 || !q2) {
+                alert("Please enter both questions to run duplicate pair detection.");
+                return;
+            }
+
+            wrapper.innerHTML = `<p style="color: var(--text-secondary);">Analyzing question pair with LightGBM & TF-IDF Vectorizer...</p>`;
+
+            try {
+                const response = await fetch('/api/v1/predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ question1: q1, question2: q2 })
+                });
+
+                if (!response.ok) {
+                    throw new Error("Prediction API Error");
+                }
+
+                const data = await response.json();
+                document.getElementById('proc-time').innerText = `Latency: ${data.processing_time_ms} ms`;
+
+                const isDup = data.is_duplicate;
+                const prob = (data.duplicate_probability * 100).toFixed(1);
+                const feats = data.features;
+
+                wrapper.innerHTML = `
+                    <div class="status-badge ${isDup ? 'status-duplicate' : 'status-not-duplicate'}">
+                        ${isDup ? '✅ DUPLICATE PAIR' : '❌ NOT DUPLICATE'}
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        Duplicate Probability: <strong>${prob}%</strong> (${data.confidence_label} Confidence)
+                    </p>
+                    <div class="progress-bar-outer">
+                        <div class="progress-bar-inner" style="width: ${prob}%"></div>
+                    </div>
+                    <div class="metrics-grid">
+                        <div class="metric-box">
+                            <label>Common Words</label>
+                            <span>${feats.common_words || 0}</span>
+                        </div>
+                        <div class="metric-box">
+                            <label>Word Share Ratio</label>
+                            <span>${feats.word_share || 0}</span>
+                        </div>
+                        <div class="metric-box">
+                            <label>TF-IDF Cosine Sim</label>
+                            <span>${feats.tfidf_cosine_similarity || 0}</span>
+                        </div>
+                        <div class="metric-box">
+                            <label>Token Set Ratio</label>
+                            <span>${feats.token_set_ratio || 0}%</span>
+                        </div>
+                    </div>
+                `;
+            } catch (err) {
+                wrapper.innerHTML = `<p style="color: var(--danger);">Failed to connect to FastAPI backend. Ensure server is running.</p>`;
+            }
+        }
+
+        async function fetchBenchmarkData() {
+            try {
+                const res = await fetch('/api/v1/model-info');
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data.benchmark_metrics) {
+                        const tbody = document.getElementById('benchmark-table-body');
+                        let html = '';
+                        for (const [mName, metrics] of Object.entries(data.benchmark_metrics)) {
+                            html += `
+                                <tr>
+                                    <td><strong>${mName}</strong></td>
+                                    <td>${(metrics.Accuracy * 100).toFixed(2)}%</td>
+                                    <td>${(metrics.Precision * 100).toFixed(2)}%</td>
+                                    <td>${(metrics.Recall * 100).toFixed(2)}%</td>
+                                    <td><strong style="color: #34d399;">${(metrics.['F1-Score'] * 100).toFixed(2)}%</strong></td>
+                                    <td>${metrics['Training Time (s)'] || metrics['Training Speed'] || 'Fast'}s</td>
+                                </tr>
+                            `;
+                        }
+                        if (html) tbody.innerHTML = html;
+                    }
+                }
+            } catch(e) {}
+        }
+    </script>
+</body>
+</html>

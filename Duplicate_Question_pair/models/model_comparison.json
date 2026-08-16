@@ -1,0 +1,50 @@
+{
+  "Random Forest": {
+    "Accuracy": 0.7693,
+    "Precision": 0.673,
+    "Recall": 0.7101,
+    "F1-Score": 0.6911,
+    "Training Time (s)": 0.449,
+    "Inference Time (s)": 0.053
+  },
+  "SVM": {
+    "Accuracy": 0.747,
+    "Precision": 0.6584,
+    "Recall": 0.6312,
+    "F1-Score": 0.6445,
+    "Training Time (s)": 0.507,
+    "Inference Time (s)": 0.001
+  },
+  "XGBoost": {
+    "Accuracy": 0.7733,
+    "Precision": 0.6857,
+    "Recall": 0.6945,
+    "F1-Score": 0.6901,
+    "Training Time (s)": 1.455,
+    "Inference Time (s)": 0.005
+  },
+  "CatBoost": {
+    "Accuracy": 0.771,
+    "Precision": 0.6827,
+    "Recall": 0.6908,
+    "F1-Score": 0.6867,
+    "Training Time (s)": 3.895,
+    "Inference Time (s)": 0.016
+  },
+  "LightGBM": {
+    "Accuracy": 0.775,
+    "Precision": 0.6841,
+    "Recall": 0.7073,
+    "F1-Score": 0.6955,
+    "Training Time (s)": 1.295,
+    "Inference Time (s)": 0.012
+  },
+  "Stacking Classifier": {
+    "Accuracy": 0.7743,
+    "Precision": 0.6791,
+    "Recall": 0.7183,
+    "F1-Score": 0.6982,
+    "Training Time (s)": 17.675,
+    "Inference Time (s)": 17.788
+  }
+}
