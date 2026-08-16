@@ -672,6 +672,7 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Bitcoin_Price_Prediction_Mobile_App](Bitcoin_Price_Prediction_Mobile_App) | 🟡 Intermediate | 3-6 hours |
 | [Brain Tumor Detection](Brain%20Tumor%20Detection) | 🟡 Intermediate | 3-6 hours |
 | [Breast Cancer Detection using DL with Webapp](Breast%20Cancer%20Detection%20using%20DL%20with%20Webapp) | 🟡 Intermediate | 3-6 hours |
+| [catboost_info](catboost_info) | 🟡 Intermediate | 3-6 hours |
 | [CBOW_PyTorch](CBOW_PyTorch) | 🟡 Intermediate | 3-6 hours |
 | [CBT_ChatBot](CBT_ChatBot) | 🟡 Intermediate | 3-6 hours |
 | [Chatbot Using RASA](Chatbot%20Using%20RASA) | 🟡 Intermediate | 3-6 hours |
@@ -934,12 +935,14 @@ Start with beginner-friendly projects, then move to intermediate and advanced on
 | [Theatre-audience-forecasting](Theatre-audience-forecasting) | 🟡 Intermediate | 3-6 hours |
 | [Time Series Forecasting with Python](Time%20Series%20Forecasting%20with%20Python) | 🟢 Beginner | 1-3 hours |
 | [Time-Series LSTM Model](Time-Series%20LSTM%20Model) | 🟡 Intermediate | 3-6 hours |
+| [Tiny_Council_Multi_Agent_AI_Decision_System](Tiny_Council_Multi_Agent_AI_Decision_System) | 🟡 Intermediate | 3-6 hours |
 | [Traffic Sign Recognition](Traffic%20Sign%20Recognition) | 🟡 Intermediate | 3-6 hours |
 | [Traffic_Demand_Prediction](Traffic_Demand_Prediction) | 🟡 Intermediate | 3-6 hours |
 | [Transfer Learning](Transfer%20Learning) | 🟡 Intermediate | 3-6 hours |
 | [TweetMiner_AI](TweetMiner_AI) | 🟡 Intermediate | 3-6 hours |
 | [Tweets Classification](Tweets%20Classification) | 🟡 Intermediate | 3-6 hours |
 | [Unique Chatbot](Unique%20Chatbot) | 🟡 Intermediate | 3-6 hours |
+| [utils](utils) | 🟡 Intermediate | 3-6 hours |
 | [Various Plots using Matplot,Seaborn,Pandas](Various%20Plots%20using%20Matplot,Seaborn,Pandas) | 🟢 Beginner | 1-3 hours |
 | [Vehicles and Pedestrian Detection](Vehicles%20and%20Pedestrian%20Detection) | 🟡 Intermediate | 3-6 hours |
 | [Virtual Drag and Drop Using OpenCV](Virtual%20Drag%20and%20Drop%20Using%20OpenCV) | 🟠 Advanced | 6-12 hours |
