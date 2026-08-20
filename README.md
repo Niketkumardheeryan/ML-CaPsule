@@ -345,6 +345,8 @@ Multidisciplinary field combining statistics, ML, computing, and domain expertis
 
 [![Live Repository](https://img.shields.io/badge/🌐_Live_Repository-ML--CaPsule-45FFAA?style=for-the-badge&logo=github)](https://github.com/Niketkumardheeryan/ML-CaPsule)
 
+### 🔗 [**See it in website format →**](https://niketkumardheeryan.github.io/ML-CaPsule/)
+
 </div>
 
 <details>
