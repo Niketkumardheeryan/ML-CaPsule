@@ -68,22 +68,21 @@ print("Calculating cosine similarities")
 
 scores = cosine_similarity(target_embedding.reshape(1, -1), issue_embeddings)[0]
 df['similarity_score'] = scores
+# Use the calculated similarity score directly
+df['avg_sim'] = df['similarity_score']
 
 print("Done!")
 print("Checking for similar issues")
 
-# Calculate the combined average similarity score
-df['avg_sim'] = (0.35*df['sim_title'] + 0.65*df['sim_body'])
-
 # Find the row with the maximum similarity
-max_sim_idx = df['similarity_score'].idxmax()
-max_sim_score = df['similarity_score'].max()
+max_sim_idx = df['avg_sim'].idxmax()
+max_sim_score = df['avg_sim'].max()
 sim_issue_id = df.loc[max_sim_idx, 'ids']
 
 if max_sim_score > 0.85:
     print(f"Duplicate found! Issue #{sim_issue_id} with score {max_sim_score:.2f}")
     target_issue.create_comment(
-        f"Found a similar issue #{sim_issue_id} with a similarity score of {max_sim_score:.2f}. Please explain the differences to respective maintainer or collaborator eith write access if you feel the bot made a false positive. The issue will be reopened if found genuine"
+        f"Found a similar issue #{sim_issue_id} with a similarity score of {max_sim_score:.2f}. Please explain the differences to respective maintainer or collaborator with write access if you feel the bot made a false positive. The issue will be reopened if found genuine"
     )
     target_issue.add_to_labels("duplicate")
     target_issue.add_to_labels("needs-issue-review")
